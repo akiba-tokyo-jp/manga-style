@@ -1,0 +1,40 @@
+{
+  "changes": [
+    {
+      "path": "costlab-auth/manga/compare/records.json",
+      "source_sha256": "7700e907cec92c415c23ee43e2b56a926a65aa4c3ffb6df6d837356ff0a8189c",
+      "current_sha256": "d9c8f01423dc0ade60d4f9429747252697b297db085dc80b21402cf425e9caee",
+      "change": "Release source token updated to the private manga-style repository; split regression registered and download repo assertion added; catalogue/image records unchanged."
+    },
+    {
+      "path": "costlab-auth/manga/tests/test_pair_release.py",
+      "source_sha256": "b14ded15ad77a4063d7d48e9c4a5d1f93dc556b41f1bb49ff4b9657f592d89bd",
+      "current_sha256": "dc5a3f6c8e4ba26bcdfa34efd46618a721659a1d7625bc2d625467e9c603de93",
+      "change": "Release source token updated to the private manga-style repository; split regression registered and download repo assertion added; catalogue/image records unchanged."
+    },
+    {
+      "path": "tools/manga_catalog/explanatory_bundles.json",
+      "source_sha256": "227fc758812e47ddfce77c75c109f708cbf50589003161c4adb15e31959c6faf",
+      "current_sha256": "c357a5802e8049eadce4ce7e9fa849d93534e7ccf7498075d59b49fec6a98963",
+      "change": "Release source token updated to the private manga-style repository; split regression registered and download repo assertion added; catalogue/image records unchanged."
+    },
+    {
+      "path": "tools/manga_catalog/prepare_explanatory.py",
+      "source_sha256": "773d7f829e91e60d1f6b9fe40714b2d2c34505bf5d79209e165fbfcba23040f8",
+      "current_sha256": "4afbd30ce5ce967e814ec41f9d5ecff10f0c0e094e04de8cb475f58d33e4d47e",
+      "change": "Release source token updated to the private manga-style repository; split regression registered and download repo assertion added; catalogue/image records unchanged."
+    },
+    {
+      "path": "tools/manga_catalog/sample_bundles.json",
+      "source_sha256": "fd0251b3a97f839e3346f32a6fd6320fe41d52caf3f0ca45f5c83054544a7fd4",
+      "current_sha256": "0bd438f517ee00b5660190ac4a2dd957311fc374725db625b48dca7ce820fe27",
+      "change": "Release source token updated to the private manga-style repository; split regression registered and download repo assertion added; catalogue/image records unchanged."
+    },
+    {
+      "path": "tools/manga_catalog/validate_explanatory.py",
+      "source_sha256": "3b8a3cf2646b46a3eeaa08a7efc7dcb6006fe53726ee97d6819b0bd9ee7df63b",
+      "current_sha256": "7e0d9095e9eb49be35d8c112968e74e97bafcf3990dbd18f91a4b886aa44b836",
+      "change": "Release source token updated to the private manga-style repository; split regression registered and download repo assertion added; catalogue/image records unchanged."
+    }
+  ]
+}

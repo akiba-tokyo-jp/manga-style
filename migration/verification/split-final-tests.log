@@ -1,0 +1,22 @@
+verified and staged 1 explanatory pairs
+test_split_regression_is_registered_in_routine_entrypoint (test_split_repository.RepositorySplitTests.test_split_regression_is_registered_in_routine_entrypoint) ... ok
+test_verified_bundle_accepts_own_private_repository (test_split_repository.RepositorySplitTests.test_verified_bundle_accepts_own_private_repository) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.119s
+
+OK
+
+verified and staged 2 explanatory pairs
+verified and staged 1 explanatory pairs
+test_archive_validation_rejects_tampering_duplicates_and_traversal (test_pair_release.ReleaseTests.test_archive_validation_rejects_tampering_duplicates_and_traversal) ... ok
+test_invalid_second_image_keeps_old_state_on_disk (test_pair_release.ReleaseTests.test_invalid_second_image_keeps_old_state_on_disk) ... ok
+test_normal_startup_imports_pair_once_and_preserves_later_pending_edit (test_pair_release.ReleaseTests.test_normal_startup_imports_pair_once_and_preserves_later_pending_edit) ... ok
+test_prepare_shards_then_normal_store_imports_both_branches (test_pair_release.ReleaseTests.test_prepare_shards_then_normal_store_imports_both_branches) ... ok
+test_release_asset_download_is_verified_before_staging (test_pair_release.ReleaseTests.test_release_asset_download_is_verified_before_staging) ... ok
+test_release_checks_are_registered_in_routine_entrypoints (test_pair_release.ReleaseTests.test_release_checks_are_registered_in_routine_entrypoints) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 3.828s
+
+OK

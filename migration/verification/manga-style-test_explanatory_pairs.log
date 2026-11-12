@@ -1,0 +1,35 @@
+COMMAND uv run --no-project --python 3.12 --with-requirements C:\GitHub\manga-style\costlab-auth\manga\requirements.txt --with httpx --with pyyaml python -m unittest discover -s costlab-auth/manga/tests -p test_explanatory_pairs.py -v
+C:\Users\User\AppData\Local\uv\cache\archive-v0\I0yumqk-rn8LclCX\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_api_returns_both_saved_samples_and_primary_reference (test_explanatory_pairs.PairTests.test_api_returns_both_saved_samples_and_primary_reference) ... ok
+test_atomic_pair_preserves_aspect_and_is_idempotent (test_explanatory_pairs.PairTests.test_atomic_pair_preserves_aspect_and_is_idempotent) ... ok
+test_changed_style_cannot_keep_either_old_picture (test_explanatory_pairs.PairTests.test_changed_style_cannot_keep_either_old_picture) ... ok
+test_complete_style_and_both_pictures_change_in_one_commit (test_explanatory_pairs.PairTests.test_complete_style_and_both_pictures_change_in_one_commit) ... ok
+test_complete_style_refuses_single_image_update (test_explanatory_pairs.PairTests.test_complete_style_refuses_single_image_update) ... ok
+test_detail_page_shows_two_labeled_images_and_prompts (test_explanatory_pairs.PairTests.test_detail_page_shows_two_labeled_images_and_prompts) ... ok
+test_invalid_second_picture_or_style_leaves_original_unchanged (test_explanatory_pairs.PairTests.test_invalid_second_picture_or_style_leaves_original_unchanged) ... ok
+test_legacy_word_override_cannot_override_new_style_or_change_children (test_explanatory_pairs.PairTests.test_legacy_word_override_cannot_override_new_style_or_change_children) ... ok
+test_loopback_pair_import_and_external_denial (test_explanatory_pairs.PairTests.test_loopback_pair_import_and_external_denial) ... ok
+test_old_pixels_cannot_be_relabelled_with_changed_scene_prompt (test_explanatory_pairs.PairTests.test_old_pixels_cannot_be_relabelled_with_changed_scene_prompt) ... ok
+test_pair_import_without_complete_style_still_refuses_single_image (test_explanatory_pairs.PairTests.test_pair_import_without_complete_style_still_refuses_single_image) ... ok
+test_pair_state_save_failure_preserves_previous_state_and_files (test_explanatory_pairs.PairTests.test_pair_state_save_failure_preserves_previous_state_and_files) ... ok
+test_pending_edit_rejects_old_images_then_commits_new_pair (test_explanatory_pairs.PairTests.test_pending_edit_rejects_old_images_then_commits_new_pair) ... ok
+test_pending_pair_reset_and_cancel_preserve_confirmed_style (test_explanatory_pairs.PairTests.test_pending_pair_reset_and_cancel_preserve_confirmed_style) ... ok
+test_pending_pair_survives_failed_import_and_restart (test_explanatory_pairs.PairTests.test_pending_pair_survives_failed_import_and_restart) ... ok
+test_pending_style_is_visible_in_admin_form_not_public_prompt (test_explanatory_pairs.PairTests.test_pending_style_is_visible_in_admin_form_not_public_prompt) ... ok
+test_single_replacement_drops_old_application (test_explanatory_pairs.PairTests.test_single_replacement_drops_old_application) ... ok
+test_stale_complete_style_cannot_cancel_pending_edit (test_explanatory_pairs.PairTests.test_stale_complete_style_cannot_cancel_pending_edit) ... ok
+test_tags_only_edit_queues_pair_without_changing_publication (test_explanatory_pairs.PairTests.test_tags_only_edit_queues_pair_without_changing_publication) ... ok
+test_later_bad_shard_keeps_original_error_when_flushing_also_fails (test_explanatory_pairs.SeedStartupPersistenceTests.test_later_bad_shard_keeps_original_error_when_flushing_also_fails) ... ok
+test_later_bad_shard_preserves_earlier_valid_pairs (test_explanatory_pairs.SeedStartupPersistenceTests.test_later_bad_shard_preserves_earlier_valid_pairs) ... ok
+test_manual_save_remains_immediate_after_startup (test_explanatory_pairs.SeedStartupPersistenceTests.test_manual_save_remains_immediate_after_startup) ... ok
+test_resume_after_pair_commit_before_seed_marker_does_not_bump_twice (test_explanatory_pairs.SeedStartupPersistenceTests.test_resume_after_pair_commit_before_seed_marker_does_not_bump_twice) ... ok
+test_startup_commits_all_seed_pairs_once (test_explanatory_pairs.SeedStartupPersistenceTests.test_startup_commits_all_seed_pairs_once) ... ok
+test_state_commit_failure_leaves_previous_disk_bytes (test_explanatory_pairs.SeedStartupPersistenceTests.test_state_commit_failure_leaves_previous_disk_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 95.190s
+
+OK
+
+EXIT 0

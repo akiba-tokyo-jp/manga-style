@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="api-doc">
+  <h1>{{ doc.title }}</h1>
+  <p class="lead">{{ doc.lead }}</p>
+  {%- for sec in doc.sections %}
+  <section>
+    <h2>{{ sec.heading }}</h2>
+    {%- for b in sec.blocks %}
+    {%- if b.p is defined %}
+    <p>{{ b.p | replace("{origin}", origin) }}</p>
+    {%- elif b.code is defined %}
+    <pre><code>{{ b.code | replace("{origin}", origin) }}</code></pre>
+    {%- elif b.ol is defined %}
+    <ol>{% for t in b.ol %}<li>{{ t }}</li>{% endfor %}</ol>
+    {%- elif b.ul is defined %}
+    <ul>{% for t in b.ul %}<li>{{ t }}</li>{% endfor %}</ul>
+    {%- endif %}
+    {%- endfor %}
+  </section>
+  {%- endfor %}
+  <section>
+    <h2>{{ doc.tree_heading }}</h2>
+    <dl class="fields">
+      {%- for name, text in tree_fields %}
+      <dt><code>{{ name }}</code></dt><dd>{{ text }}</dd>
+      {%- endfor %}
+    </dl>
+  </section>
+  <section>
+    <h2>{{ doc.style_heading }}</h2>
+    <dl class="fields">
+      {%- for name, text in style_fields %}
+      <dt><code>{{ name }}</code></dt><dd>{{ text }}</dd>
+      {%- endfor %}
+    </dl>
+  </section>
+  <section>
+    <h2>{{ doc.examples_heading }}</h2>
+    <ul class="examples">
+      {%- for url in examples %}
+      <li><a href="{{ url }}"><code>{{ url }}</code></a></li>
+      {%- endfor %}
+    </ul>
+  </section>
+</article>
+{% endblock %}

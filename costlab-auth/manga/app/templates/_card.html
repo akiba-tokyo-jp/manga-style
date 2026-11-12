@@ -1,0 +1,23 @@
+{#- One link card for the top page, the "choose the next level" grid and the search results.
+    c = {id, title, summary, path (the upper levels as one line, "" at level 1), url, thumb_url (or null),
+         count_label (or null)}. The path is shown above the title because a title alone does not
+    identify a style (the same title exists under other categories). -#}
+{% macro card(c) -%}
+<a class="card" href="{{ c.url }}">
+  {%- if c.thumb_url %}
+  <span class="card-thumb"><img src="{{ c.thumb_url }}" alt="" loading="lazy"></span>
+  {%- else %}
+  <span class="card-thumb tone"></span>
+  {%- endif %}
+  <span class="card-body">
+    {%- if c.path %}
+    <span class="card-path">{{ c.path }}</span>
+    {%- endif %}
+    <span class="card-title">{{ c.title }}</span>
+    <span class="card-summary">{{ c.summary }}</span>
+    {%- if c.count_label %}
+    <span class="card-count">{{ c.count_label }}</span>
+    {%- endif %}
+  </span>
+</a>
+{%- endmacro %}

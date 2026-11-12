@@ -1,0 +1,259 @@
+/* Admin pages (on top of site.css). */
+
+.admin-bar {
+  flex-wrap: wrap;
+}
+
+.admin-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .25rem 1rem;
+}
+
+.admin-nav a,
+.linklike {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.admin-nav form {
+  margin: 0;
+}
+
+.flash {
+  padding: .75rem 1rem;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  font-weight: 700;
+}
+
+.flash.ng {
+  border-width: 3px;
+  background: var(--grey-1);
+}
+
+.panel {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem 1.25rem;
+  border: 2px solid var(--ink);
+}
+
+.panel h3 {
+  margin: 1.5rem 0 .5rem;
+  font-size: 1.0625rem;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stats li {
+  padding: .25rem .75rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+}
+
+.muted {
+  color: var(--ink-muted);
+}
+
+.small-text {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0 .5rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.7;
+  white-space: nowrap;
+}
+
+.badge.on {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.badge.off {
+  background: var(--tone-bg);
+}
+
+.inline-form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin: .5rem 0;
+}
+
+.stack-form {
+  display: grid;
+  gap: .5rem;
+  max-width: 48rem;
+  margin: .5rem 0 1rem;
+}
+
+.stack-form .button {
+  justify-self: start;
+}
+
+.url-input.short {
+  max-width: 20rem;
+}
+
+.button.small {
+  min-height: 2.25rem;
+  padding: .25rem .75rem;
+  font-size: .875rem;
+}
+
+.new-token {
+  display: grid;
+  gap: .5rem;
+  margin: .5rem 0 1rem;
+  padding: .75rem;
+  border: 3px solid var(--ink);
+}
+
+.new-token .button {
+  justify-self: start;
+}
+
+.token-list {
+  margin: .5rem 0;
+  padding-left: 1.25rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.node-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .9375rem;
+}
+
+.node-table th,
+.node-table td {
+  padding: .5rem;
+  border-bottom: 1px solid var(--grey-2);
+  text-align: left;
+  vertical-align: top;
+}
+
+.node-table form {
+  margin: 0;
+}
+
+.node-table .button {
+  white-space: nowrap;
+}
+
+.node-table tr.is-hidden td {
+  background: var(--grey-1);
+}
+
+.admin-sample {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.admin-sample img {
+  width: 12rem;
+  border: 2px solid var(--ink);
+}
+
+.meta dt {
+  font-weight: 700;
+}
+
+.meta dd {
+  margin: 0 0 .5rem;
+}
+
+.queue {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Phones: each row of the branch table becomes a small card.
+   Name on top; state, sample and version below; the button on the right. */
+@media (max-width: 40em) {
+  .node-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .node-table,
+  .node-table tbody {
+    display: block;
+  }
+
+  .node-table tr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .375rem .75rem;
+    padding: .75rem .5rem;
+    border-bottom: 1px solid var(--grey-2);
+  }
+
+  .node-table tr.is-hidden {
+    background: var(--grey-1);
+  }
+
+  .node-table td,
+  .node-table tr.is-hidden td {
+    display: block;
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+
+  .node-table td:first-child {
+    flex: 1 1 100%;
+  }
+
+  .node-table td[data-label]::before {
+    content: attr(data-label) "：";
+    color: var(--ink-muted);
+    font-size: .8125rem;
+  }
+
+  .node-table td:last-child {
+    margin-left: auto;
+  }
+
+  .node-table .button.small {
+    min-height: var(--tap);
+    padding: .25rem 1rem;
+  }
+}
+

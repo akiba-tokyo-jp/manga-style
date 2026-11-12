@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% from "_card.html" import card %}
+{% block content %}
+<div class="intro">
+  <h1>{{ ui.site_name }}</h1>
+  <p class="lead">{{ ui.tagline }}</p>
+</div>
+<form class="search-form search-form-top" action="/search" method="get" role="search">
+  <label class="field-label" for="search-q">{{ ui.search_heading }}</label>
+  <div class="search-row">
+    <input class="search-input" id="search-q" name="q" type="search" placeholder="{{ ui.search_placeholder }}" maxlength="100" autocomplete="off">
+    <input type="hidden" name="lang" value="{{ lang }}">
+    {%- if genko %}
+    <input type="hidden" name="client" value="genko">
+    {%- endif %}
+    <button class="button button-primary" type="submit">{{ ui.search_button }}</button>
+  </div>
+</form>
+{%- if cards %}
+<ul class="card-grid">
+  {%- for c in cards %}
+  <li>{{ card(c) }}</li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+{% endblock %}

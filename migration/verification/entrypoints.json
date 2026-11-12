@@ -1,0 +1,32 @@
+{
+  "final_selected_entrypoints": [
+    {
+      "repository": "manga-style",
+      "case": "test_pair_release.py",
+      "exit_code": 0,
+      "seconds": 10.585,
+      "log": "C:\\Users\\User\\AppData\\Local\\hermes\\reports\\service-split-20261112\\manga-style-test_pair_release.log",
+      "output_tail": "verified and staged 1 explanatory pairs\ntest_archive_validation_rejects_tampering_duplicates_and_traversal (test_pair_release.ReleaseTests.test_archive_validation_rejects_tampering_duplicates_and_traversal) ... ok\ntest_invalid_second_image_keeps_old_state_on_disk (test_pair_release.ReleaseTests.test_invalid_second_image_keeps_old_state_on_disk) ... ok\ntest_normal_startup_imports_pair_once_and_preserves_later_pending_edit (test_pair_release.ReleaseTests.test_normal_startup_imports_pair_once_and_preserves_later_pending_edit) ... ok\ntest_prepare_shards_then_normal_store_imports_both_branches (test_pair_release.ReleaseTests.test_prepare_shards_then_normal_store_imports_both_branches) ... ok\ntest_release_asset_download_is_verified_before_staging (test_pair_release.ReleaseTests.test_release_asset_download_is_verified_before_staging) ... ok\ntest_release_checks_are_registered_in_routine_entrypoints (test_pair_release.ReleaseTests.test_release_checks_are_registered_in_routine_entrypoints) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 8.290s\n\nOK\n"
+    },
+    {
+      "repository": "manga-style",
+      "case": "test_explanatory_pairs.py",
+      "exit_code": 0,
+      "seconds": 99.271,
+      "log": "C:\\Users\\User\\AppData\\Local\\hermes\\reports\\service-split-20261112\\manga-style-test_explanatory_pairs.log",
+      "output_tail": "_keeps_original_error_when_flushing_also_fails (test_explanatory_pairs.SeedStartupPersistenceTests.test_later_bad_shard_keeps_original_error_when_flushing_also_fails) ... ok\ntest_later_bad_shard_preserves_earlier_valid_pairs (test_explanatory_pairs.SeedStartupPersistenceTests.test_later_bad_shard_preserves_earlier_valid_pairs) ... ok\ntest_manual_save_remains_immediate_after_startup (test_explanatory_pairs.SeedStartupPersistenceTests.test_manual_save_remains_immediate_after_startup) ... ok\ntest_resume_after_pair_commit_before_seed_marker_does_not_bump_twice (test_explanatory_pairs.SeedStartupPersistenceTests.test_resume_after_pair_commit_before_seed_marker_does_not_bump_twice) ... ok\ntest_startup_commits_all_seed_pairs_once (test_explanatory_pairs.SeedStartupPersistenceTests.test_startup_commits_all_seed_pairs_once) ... ok\ntest_state_commit_failure_leaves_previous_disk_bytes (test_explanatory_pairs.SeedStartupPersistenceTests.test_state_commit_failure_leaves_previous_disk_bytes) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 95.190s\n\nOK\n"
+    },
+    {
+      "repository": "manga-style",
+      "case": "test_model_gallery.py",
+      "exit_code": 0,
+      "seconds": 69.162,
+      "log": "C:\\Users\\User\\AppData\\Local\\hermes\\reports\\service-split-20261112\\manga-style-test_model_gallery.log",
+      "output_tail": "e_filter) ... ok\ntest_no_mandatory_topic_for_search (test_model_gallery.ModelGalleryTests.test_no_mandatory_topic_for_search) ... ok\ntest_not_found_keeps_selected_model_in_header (test_model_gallery.ModelGalleryTests.test_not_found_keeps_selected_model_in_header) ... ok\ntest_pure_UI_requests_do_not_change_GPT_state_or_prompts (test_model_gallery.ModelGalleryTests.test_pure_UI_requests_do_not_change_GPT_state_or_prompts) ... ok\ntest_search_action_does_not_shrink_or_wrap (test_model_gallery.ModelGalleryTests.test_search_action_does_not_shrink_or_wrap) ... ok\ntest_topic_is_optional_filter_not_an_extra_page (test_model_gallery.ModelGalleryTests.test_topic_is_optional_filter_not_an_extra_page) ... ok\ntest_unknown_model_is_rejected_without_fallback (test_model_gallery.ModelGalleryTests.test_unknown_model_is_rejected_without_fallback) ... ok\ntest_model_gallery_suite_is_registered_exactly_once (test_model_gallery.RunnerInventoryTests.test_model_gallery_suite_is_registered_exactly_once) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 65.940s\n\nOK\n"
+    }
+  ],
+  "not_full_suite": true,
+  "docker_available": false,
+  "production_tested": false,
+  "baseline_notes": "Original auth checks had Windows temporary SQLite cleanup issue; collected connections in the runner and reran unchanged assertions. Initial inviteapp smoke used wrong cwd; reran with original Docker app cwd. Failed attempts are retained."
+}

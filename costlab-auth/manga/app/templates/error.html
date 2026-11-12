@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="error-panel">
+  <h1>{{ ui.not_found_title }}</h1>
+  <p>{{ ui.not_found_body }}</p>
+  <p><a class="button button-primary" href="/?lang={{ lang }}{% if genko %}&amp;client=genko{% endif %}">{{ ui.back_home }}</a></p>
+</div>
+{% endblock %}

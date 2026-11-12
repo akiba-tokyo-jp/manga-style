@@ -1,0 +1,764 @@
+{
+  "schema": 1,
+  "repository": "akiba-tokyo-jp/manga-style",
+  "private_required": true,
+  "source_repository": "akiba-tokyo-jp/akiba-infra",
+  "source_commit": "ec37450c4ded797a0e1da85711d3d3acdcfb210d",
+  "history": "source snapshot; complete upstream history remains in source repository",
+  "status": "source_extracted; production_not_cut_over",
+  "build_context": "costlab-auth/manga",
+  "files": [
+    {
+      "source_path": ".github/disabled-workflows/manga-style-validate.yml",
+      "path": "migration/upstream-workflows/disabled-workflows/manga-style-validate.yml",
+      "role": "inactive_workflow",
+      "mode": "100644",
+      "blob": "ff98a09d6881f729c8ee5d0f436e207c3d1deac7",
+      "sha256": "739dd4c46f08c2936a3866b962deb1db17cbacaae2eea315ddbf9fb24e5d7634",
+      "bytes": 12178
+    },
+    {
+      "source_path": ".github/workflows/costlab-auth-deploy.yml",
+      "path": "migration/upstream-workflows/workflows/costlab-auth-deploy.yml",
+      "role": "inactive_workflow",
+      "mode": "100644",
+      "blob": "65332127c2ac2598c39b2e720d2779c99cd98a19",
+      "sha256": "4e8842501bec372c622e33566de0fd9412c81b48bf914bd857b007dad58ff6a5",
+      "bytes": 1662
+    },
+    {
+      "source_path": ".gitignore",
+      "path": ".gitignore",
+      "role": "reference",
+      "mode": "100644",
+      "blob": "fbdab60c8eb8d45596acb24265be3a64298bf306",
+      "sha256": "3559d8cad85538a4eeb6984fee9ee06c0b023047efb8d1e498abae2e714b0722",
+      "bytes": 806
+    },
+    {
+      "source_path": "caddy/Caddyfile",
+      "path": "caddy/Caddyfile",
+      "role": "reference",
+      "mode": "100644",
+      "blob": "d82a3913013b345ad20a1d62ad98de2cfb9e7ec8",
+      "sha256": "14d5cc4196fedbf97b259f0cd7cb2c72b028fc50d4fb6ea7f8fd9e50e1990020",
+      "bytes": 30269
+    },
+    {
+      "source_path": "ci/publish-guard/check_denylist.py",
+      "path": "ci/publish-guard/check_denylist.py",
+      "role": "reference",
+      "mode": "100644",
+      "blob": "0a359efe2b2998cb0dcf9e8bf6b7e05a920822ef",
+      "sha256": "2ba2091d9abdc33890a6f35af4ff11ad1b2f8f3de858073ef28f45679ce13bc4",
+      "bytes": 3639
+    },
+    {
+      "source_path": "ci/publish-guard/denylist.txt",
+      "path": "ci/publish-guard/denylist.txt",
+      "role": "reference",
+      "mode": "100644",
+      "blob": "cbffb71903005c9744c8172433370ff0a7322bc9",
+      "sha256": "f13074005a6fcb78332bf96edfe80f5d6b8010e5ea2912720b3c4760f704ae13",
+      "bytes": 1804
+    },
+    {
+      "source_path": "ci/publish-guard/judge_prompt.md",
+      "path": "ci/publish-guard/judge_prompt.md",
+      "role": "reference",
+      "mode": "100644",
+      "blob": "6549b4e4c394382b45d5abe836bd90a48ab27d15",
+      "sha256": "31df57d6b3f6d6498820a77e3c64b0683e655d94581e9fbb51953f2ca1a9358d",
+      "bytes": 3078
+    },
+    {
+      "source_path": "costlab-auth/docker-compose.yml",
+      "path": "costlab-auth/docker-compose.yml",
+      "role": "reference",
+      "mode": "100644",
+      "blob": "44757b0eccc01f87380584b796314ad1c7e295bb",
+      "sha256": "edaabab6c83ee5f2cf43e7ffa767528a100846a33d91319b578338868652f2c9",
+      "bytes": 4253
+    },
+    {
+      "source_path": "costlab-auth/manga/.dockerignore",
+      "path": "costlab-auth/manga/.dockerignore",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "1a97e34e8bcfe0a74ba60d6a10e0a6f5e6fce0c7",
+      "sha256": "efa239602f37ce187f76ca99ecd1af9ab886736fcb1d6ead85e4eb5352a05976",
+      "bytes": 125
+    },
+    {
+      "source_path": "costlab-auth/manga/Dockerfile",
+      "path": "costlab-auth/manga/Dockerfile",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "3d616ccbd8e2b863c6829ce42a6cb03e04a052ed",
+      "sha256": "537ddbd8ccb3a1d6864efa59d43d769a213141824ed360a33438cb907ae3b336",
+      "bytes": 2260
+    },
+    {
+      "source_path": "costlab-auth/manga/app/__init__.py",
+      "path": "costlab-auth/manga/app/__init__.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source_path": "costlab-auth/manga/app/api_doc.py",
+      "path": "costlab-auth/manga/app/api_doc.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "7c74f34f288ef03456f8517b369967340b73e53a",
+      "sha256": "a57829cc00d606192747354eefa8d366e2db7231880e53d9a1227e57c4ad9b07",
+      "bytes": 12591
+    },
+    {
+      "source_path": "costlab-auth/manga/app/catalog.json",
+      "path": "costlab-auth/manga/app/catalog.json",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "6d738f33be220c5cc338a2cff2f1e5ef9f2496e9",
+      "sha256": "a8d205793cbfda28196ea6d900161879e98aa6d3f32df6f02ac767099f13b45b",
+      "bytes": 1853148
+    },
+    {
+      "source_path": "costlab-auth/manga/app/catalogue.py",
+      "path": "costlab-auth/manga/app/catalogue.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "c3448486ddcbf8efeadbfc1a790bb6624b28bac9",
+      "sha256": "30ee2645c512345b1d44b4f7f3279d3e8fee94d96df34db49a1ec0d517d584f5",
+      "bytes": 9997
+    },
+    {
+      "source_path": "costlab-auth/manga/app/cli.py",
+      "path": "costlab-auth/manga/app/cli.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "3b4a5665cc71599ab61e3ca427e4a2d03f3d3f8d",
+      "sha256": "45cfbc24e5dc2e8d48c2103a82c9ef0b1ef6e3af305bc4bef166c07643c00500",
+      "bytes": 4159
+    },
+    {
+      "source_path": "costlab-auth/manga/app/main.py",
+      "path": "costlab-auth/manga/app/main.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "d91301a66b04f099ee60a887bb60ab27101ab613",
+      "sha256": "d3857eee8ba856cf1d4270ef847110c30aac9247494ce2c2565a1b3f1e547714",
+      "bytes": 37995
+    },
+    {
+      "source_path": "costlab-auth/manga/app/pair_seed.py",
+      "path": "costlab-auth/manga/app/pair_seed.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "9e0e8e03977c151282f253c72460fa92ac8cf291",
+      "sha256": "546eb0b5784144c7819a21699cf547c97c298634b7f69613e8786c84feaf94ff",
+      "bytes": 3379
+    },
+    {
+      "source_path": "costlab-auth/manga/app/seed/manifest.json",
+      "path": "costlab-auth/manga/app/seed/manifest.json",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "421b993e179bba003015e068759e27755b1bcc18",
+      "sha256": "34d9a09f8858ca9067b8962a2d10055cd3e875b198d1d53fa0f12ff39ef6ed27",
+      "bytes": 9656
+    },
+    {
+      "source_path": "costlab-auth/manga/app/seed/shojo-magical-shojo-classic.jpg",
+      "path": "costlab-auth/manga/app/seed/shojo-magical-shojo-classic.jpg",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "2283e3a7bd5b8e409f223dc75f983a12022f0741",
+      "sha256": "c9c933cc6e92937cd2a0e45114cf298b383180fce8290e1a3e459865063f46fc",
+      "bytes": 284849
+    },
+    {
+      "source_path": "costlab-auth/manga/app/seed/shonen-battle-bold-black.jpg",
+      "path": "costlab-auth/manga/app/seed/shonen-battle-bold-black.jpg",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "b27916c4d042c6e61ac9070fbbc62ae89532d445",
+      "sha256": "e7135a6b2b1938be8204fb59ee398adccbc58802d954cb3ec39f664c120159f3",
+      "bytes": 249414
+    },
+    {
+      "source_path": "costlab-auth/manga/app/static/admin.css",
+      "path": "costlab-auth/manga/app/static/admin.css",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "f92a7e32659d47047aaf3410212a40258ccddd5b",
+      "sha256": "22326eacbd38f992a8768ef8bc321684818419f1b0e85dd780decdf8a584a1fa",
+      "bytes": 3834
+    },
+    {
+      "source_path": "costlab-auth/manga/app/static/gallery.css",
+      "path": "costlab-auth/manga/app/static/gallery.css",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "4cc41ecf1c20964ba27dd6e28dadacd3002c8fd7",
+      "sha256": "23f6b2501fb4f098eb366762132fbf058d57113f305d0dc181718ba0db30cd3d",
+      "bytes": 10727
+    },
+    {
+      "source_path": "costlab-auth/manga/app/static/site.css",
+      "path": "costlab-auth/manga/app/static/site.css",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "a1684915725904dfc9b307a8696c3183ee16cb7f",
+      "sha256": "5119b73783412c0ca434c6f797cd23073b5a3275b00a9a55aeff3bc13e50c1ff",
+      "bytes": 16914
+    },
+    {
+      "source_path": "costlab-auth/manga/app/static/site.js",
+      "path": "costlab-auth/manga/app/static/site.js",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "6ba48be4f91c1c5eeb477b982df9d7bfb62fb5ad",
+      "sha256": "0d032e68d7f620410dc43b2a0888ff6934a59f8cd01d3111e7a625992f3f8c78",
+      "bytes": 4406
+    },
+    {
+      "source_path": "costlab-auth/manga/app/store.py",
+      "path": "costlab-auth/manga/app/store.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "32c98a4303907c292789a283560004eb6c272568",
+      "sha256": "b70c83683b972b1f1bd1a4c7398ec095583812020e7e1e292bba4a667d6cd849",
+      "bytes": 43356
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/_admin_rows.html",
+      "path": "costlab-auth/manga/app/templates/_admin_rows.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "8f25d724dbeff3ae6ed2e98be8064ed46b48508d",
+      "sha256": "261166512754fc48be753137dda1fe5fdbc58252ba52c1ca44f9e1f4f7cb9455",
+      "bytes": 1757
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/_card.html",
+      "path": "costlab-auth/manga/app/templates/_card.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "09dffa9d973ae2c8e23396e0e796e6d25072f178",
+      "sha256": "98d033c4158df84d201c99b295d24472711248afa43a41d23ef3541167159731",
+      "bytes": 956
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/_model_empty.html",
+      "path": "costlab-auth/manga/app/templates/_model_empty.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "e2d84790bb33232934ed5741f0e27dd51cd5ebc0",
+      "sha256": "0646779f878cc826b092f8dea6532bf38bc4a2e7d9bf4e0d465403eeb37913b3",
+      "bytes": 697
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/admin_base.html",
+      "path": "costlab-auth/manga/app/templates/admin_base.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "aa43f8d1b085f9781bab48622cc97045a076a995",
+      "sha256": "335e0c2ca4c6fe65e0d48cb674557dd8e56b944767f3d97cfe41bfdad02c46c5",
+      "bytes": 1200
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/admin_denied.html",
+      "path": "costlab-auth/manga/app/templates/admin_denied.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "9513258b00a59f4e3fd8e32d3bb058bb42c7d447",
+      "sha256": "2aa804c28df636730d40b86e60744cadfb9512b610a31850e17eb53d9536c4c9",
+      "bytes": 710
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/admin_index.html",
+      "path": "costlab-auth/manga/app/templates/admin_index.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "e511471029b652c7597a8c1ec0489a3885f34500",
+      "sha256": "99dbc8a62d8dec63612084e03b703f6a388966fecad9bba0dff69edf4c43f182",
+      "bytes": 2922
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/admin_node.html",
+      "path": "costlab-auth/manga/app/templates/admin_node.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "07245a0df7cf9945eae8df311e929a04c283da71",
+      "sha256": "98e6e55a540f4478b8078be233d4ba26277fa2feb7d45ca906e05d15558997c2",
+      "bytes": 7368
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/admin_queue.html",
+      "path": "costlab-auth/manga/app/templates/admin_queue.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "d966e56c7b985290cf1b568566318af7a9bfca7a",
+      "sha256": "5a61aadde00d20d3397e27779332b19403ced72bfd719395f704f3f7c2814626",
+      "bytes": 1077
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/api.html",
+      "path": "costlab-auth/manga/app/templates/api.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "e39c4d19bb80b448a9c385dd37c98c7f229c1f3b",
+      "sha256": "eebb6cf8aa4ff1685f43addf82893885b8fae3cc8b8c5762b097c757462eea96",
+      "bytes": 1354
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/base.html",
+      "path": "costlab-auth/manga/app/templates/base.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "ae4478aae4fc42ebe1285221b9c92c92d06d42f6",
+      "sha256": "1e0d5e7ea40d1f48a8ec5b930c90ba1f3bd3a34d91bb46a8f54695a887956912",
+      "bytes": 2181
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/error.html",
+      "path": "costlab-auth/manga/app/templates/error.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "ed530e39caf950e2e89bf22b34b971c81e858f15",
+      "sha256": "0dd53f4b98b38e17f249ede53f65f80f0dfa12eba8bc601fc8b1c8153141e918",
+      "bytes": 295
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/gallery.html",
+      "path": "costlab-auth/manga/app/templates/gallery.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "56e11874fd33cabfab649e2bc176777f14f5d69c",
+      "sha256": "973166f9ffbc007ece405830792dc8d4fe3baff057ecd2252a34d15ff2402738",
+      "bytes": 4476
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/index.html",
+      "path": "costlab-auth/manga/app/templates/index.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "15e025ca197124bd979b04b913a14162ab8de6e1",
+      "sha256": "df47d61f01a1bbcf60406a6ee1be09149762a04369be24827fe88fd3f3e6d425",
+      "bytes": 906
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/model_empty.html",
+      "path": "costlab-auth/manga/app/templates/model_empty.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "e78ecbd1be039095743586be575d41a10a194c7b",
+      "sha256": "748c2b2f357da14f0fd4204426bddecb224ae597139c40adeec86da18c7a79d4",
+      "bytes": 444
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/node.html",
+      "path": "costlab-auth/manga/app/templates/node.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "3ab41a3a13794c53af6c188c10e95d06b8a8c802",
+      "sha256": "4315790a40e4d232b346b1f512e9d56d4440f3f543f3f5fd05f7586f9273e6a1",
+      "bytes": 5768
+    },
+    {
+      "source_path": "costlab-auth/manga/app/templates/search.html",
+      "path": "costlab-auth/manga/app/templates/search.html",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "fec73424b73a1e51bfd039a84becafd67db0f4ad",
+      "sha256": "8dffbbd0c14e3ffd519c6c7d969646e9624d6be7cafa406c89bb7d5c2ad120cb",
+      "bytes": 1307
+    },
+    {
+      "source_path": "costlab-auth/manga/app/ui.py",
+      "path": "costlab-auth/manga/app/ui.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "7844e3fafa886e5a05cd9691ece140215df18746",
+      "sha256": "be022cab386144929725aebce21cf44d00c7fd7c4d8d6961110cf8fb7003e941",
+      "bytes": 7844
+    },
+    {
+      "source_path": "costlab-auth/manga/compare/records.json",
+      "path": "costlab-auth/manga/compare/records.json",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "8a2cc6b8a5a92261b486474c231054202513ffc0",
+      "sha256": "7700e907cec92c415c23ee43e2b56a926a65aa4c3ffb6df6d837356ff0a8189c",
+      "bytes": 113703
+    },
+    {
+      "source_path": "costlab-auth/manga/requirements.txt",
+      "path": "costlab-auth/manga/requirements.txt",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "81fa77a56fcb976f73e547acc53799dcbbaaf615",
+      "sha256": "d99ff00c3a104b318f94e21bcf9ec5df1633791755eaf885549d99fe03d414f8",
+      "bytes": 116
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/caddy_routing.py",
+      "path": "costlab-auth/manga/tests/caddy_routing.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "6e4bcfd12eb4271641624bacd10d791df7b519b7",
+      "sha256": "89cb7cfb0fa9a0af5c2907a083f9c494821d2a9171b80e4d5a68e24909a55322",
+      "bytes": 13819
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/checks.py",
+      "path": "costlab-auth/manga/tests/checks.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "1dbf9bfc3f9d2d1c38259505ad4df09ddffd242a",
+      "sha256": "2303a5fd83200d1574e97f5c4aaca7b8d95a0b0c590eea090d056f05ac105b6e",
+      "bytes": 53381
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/power.py",
+      "path": "costlab-auth/manga/tests/power.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "60456cfa1a5bdc039dc3b0a781ffa3948dbf5df1",
+      "sha256": "f007940fffd8dd3158f062c511b9fc2e808e9b433f3e0f0f08380fce73c0b24c",
+      "bytes": 7259
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/test_commercial_additions.py",
+      "path": "costlab-auth/manga/tests/test_commercial_additions.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "3f5c4165dd0518d0b8d7c19ddaee0c8aeef8315c",
+      "sha256": "389a9d69f31e6f01f9bde4abb5038ca9e7afd51ca6fa1157d6dcb1c5e5a5e180",
+      "bytes": 3252
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/test_compare.py",
+      "path": "costlab-auth/manga/tests/test_compare.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "c06634d3a31dcd800159cb57aeb773e71bbfa20c",
+      "sha256": "55e879f2172917220cf8a0138898f742ab679856380725bd3160e9aba10e0586",
+      "bytes": 13289
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/test_explanatory_pairs.py",
+      "path": "costlab-auth/manga/tests/test_explanatory_pairs.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "7dff9300eeb1fe7bb6b3ba73d127a8e210d2e487",
+      "sha256": "893d55f90ba8726c4da30c59e8a3556e6e5437368b59673ce2b25e45a92bc67c",
+      "bytes": 23842
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/test_fanza_additions.py",
+      "path": "costlab-auth/manga/tests/test_fanza_additions.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "e4e269f8f3841aa694596a62a990a191017d2ae2",
+      "sha256": "e2189a963ee29c885446b3c2ebb18698d6a1b41df723ec136dd56fe6188b44b9",
+      "bytes": 2803
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/test_model_gallery.py",
+      "path": "costlab-auth/manga/tests/test_model_gallery.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "b5b6139aeec415047faa6a960e2f9995629b5804",
+      "sha256": "96d1ab888ac378066e731fb6b63ca8694fdac70e30edaad3e3c35047b716a3d7",
+      "bytes": 11400
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/test_pair_release.py",
+      "path": "costlab-auth/manga/tests/test_pair_release.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "2f725f352f1985a26aeb55fd3386b3ab3e2c6821",
+      "sha256": "b14ded15ad77a4063d7d48e9c4a5d1f93dc556b41f1bb49ff4b9657f592d89bd",
+      "bytes": 10553
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/test_picturebook_additions.py",
+      "path": "costlab-auth/manga/tests/test_picturebook_additions.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "327bfbce4aba1e1362c0fc83bbcdbfe10223f7f1",
+      "sha256": "e01d66f1934208836769f8e1c1b8da7c1aeaf60167e798fd7a440b66c9e5e60f",
+      "bytes": 3285
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/test_ranking_additions.py",
+      "path": "costlab-auth/manga/tests/test_ranking_additions.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "1fe88778ea27c0528b8ab24278b7c5a938d97597",
+      "sha256": "3b82bf9dda9d9b2f80a47aca23f71069e3f3ae91d2b0d2575d6e2db102abb7a2",
+      "bytes": 7786
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/test_repairs.py",
+      "path": "costlab-auth/manga/tests/test_repairs.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "6074d2d68d24699a42d588a3faefed55caf1083a",
+      "sha256": "58432f62ba86bc3ab47ab3fc78d5f846c02d1f3cb78f73d567a761ebbdf9d344",
+      "bytes": 3521
+    },
+    {
+      "source_path": "costlab-auth/manga/tests/test_x100_additions.py",
+      "path": "costlab-auth/manga/tests/test_x100_additions.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "9e99f25b2a52f85ceddf0958d4dc0ac5a43bdc70",
+      "sha256": "5b178ddc9d44a6b14208f777bf2323918f6f65d649b6067ff439598c715dfc9e",
+      "bytes": 2102
+    },
+    {
+      "source_path": "docs/manga-style.md",
+      "path": "docs/manga-style.md",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "f827ed3ef1875b7db25d1e648cf0f602ceb34370",
+      "sha256": "0c0e7cc96f416bf51ab0c0e3e113941be5da3bcf44c38c325024ca84676fd7fd",
+      "bytes": 231734
+    },
+    {
+      "source_path": "ops/tools/check_secrets_scope.py",
+      "path": "ops/tools/check_secrets_scope.py",
+      "role": "reference",
+      "mode": "100644",
+      "blob": "d235c229420a430392ec7c83e63818fe5ecc1895",
+      "sha256": "b6ce451d4e0a4ea6be87a1a1afff5aa991560d5a07b9fa724ebe523dc9aee299",
+      "bytes": 5559
+    },
+    {
+      "source_path": "tools/manga_catalog/.gitignore",
+      "path": "tools/manga_catalog/.gitignore",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "d972362972d2a5b00151f3603311bf9b3ea87129",
+      "sha256": "8acea1fa6739c79088f642894f44f31e1928cb6a706ca22a5b9af6bc1c69522f",
+      "bytes": 136
+    },
+    {
+      "source_path": "tools/manga_catalog/approved_samples.json",
+      "path": "tools/manga_catalog/approved_samples.json",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "d8e6abd3102b7972b7f2957c0dec537211542adf",
+      "sha256": "51429af65f82eac068df2e6205eb55ab3e1425c02c51c9a0c87af523272a5137",
+      "bytes": 1122410
+    },
+    {
+      "source_path": "tools/manga_catalog/build_tree.py",
+      "path": "tools/manga_catalog/build_tree.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "f75fe4138c2958b8fb422d71bedabe1e1332a683",
+      "sha256": "502d81064770f67869d48cefaa6a0d15c70215bc6da0b61c9f3cc6ced794c479",
+      "bytes": 35707
+    },
+    {
+      "source_path": "tools/manga_catalog/check_pairs.py",
+      "path": "tools/manga_catalog/check_pairs.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "81b7afd2981a9a90751a6ed31eb3f31e88daf67b",
+      "sha256": "ef7b328d4a407e4fb1cd743a35ef536c0ba266d591dd17fd73a52cd10218abd0",
+      "bytes": 3361
+    },
+    {
+      "source_path": "tools/manga_catalog/commercial_additions.py",
+      "path": "tools/manga_catalog/commercial_additions.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "dcb77657b1e33d3d683857e8b9f35f17f2280b3d",
+      "sha256": "a7550480a47c90e555e463303e0358ca57b407b506ac5c41dbc1de37b890b2a5",
+      "bytes": 3069
+    },
+    {
+      "source_path": "tools/manga_catalog/explanatory_bundles.json",
+      "path": "tools/manga_catalog/explanatory_bundles.json",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "db1a3770c23002059f60572b65c6963c293c7057",
+      "sha256": "227fc758812e47ddfce77c75c109f708cbf50589003161c4adb15e31959c6faf",
+      "bytes": 132982
+    },
+    {
+      "source_path": "tools/manga_catalog/export_site_tree.py",
+      "path": "tools/manga_catalog/export_site_tree.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "72e1abfa5d5e0eba4a39f7071868e208a44c153e",
+      "sha256": "64bcc089947484c6034d7e9a26429c538b65751c9738119c09342489230e42b1",
+      "bytes": 5249
+    },
+    {
+      "source_path": "tools/manga_catalog/fanza_additions.py",
+      "path": "tools/manga_catalog/fanza_additions.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "34eecb64320a7e0993695ff91c6a62ad2899a29e",
+      "sha256": "8d7a26d3cab78385292d708aa30ea323508d4a11283fc58078d40ab38a0f9f18",
+      "bytes": 1101
+    },
+    {
+      "source_path": "tools/manga_catalog/generate_explanatory.py",
+      "path": "tools/manga_catalog/generate_explanatory.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "df899a219c707954937fcaff2ce75ae99cb73832",
+      "sha256": "86c92502f129fe93f4039dab4eb293c3278c2b78d41af8c0bcbf80db416dec09",
+      "bytes": 10180
+    },
+    {
+      "source_path": "tools/manga_catalog/genres.py",
+      "path": "tools/manga_catalog/genres.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "20c2af8a6d88731fbd0e1bae792eb1c62a2b9094",
+      "sha256": "53ce1451109ac96fc26885cd4ef5c5f38ffce3e0fecfaf59ec7858c4bb7482d2",
+      "bytes": 122956
+    },
+    {
+      "source_path": "tools/manga_catalog/i18n_en.py",
+      "path": "tools/manga_catalog/i18n_en.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "8f0bfacae81e2f0faf08770475eee7d69eca07c4",
+      "sha256": "2643067fb03ed77b44c46081c82d814c46ff580949d070bbfdf27fdc12b4a5de",
+      "bytes": 24071
+    },
+    {
+      "source_path": "tools/manga_catalog/l3_scenes.py",
+      "path": "tools/manga_catalog/l3_scenes.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "43a87869613b44e0fbaba28172e063014ffbf913",
+      "sha256": "79e16d85eea9a9ad6627a00e8404c6a216c64d5d964b73a1d9acaaaf38575b11",
+      "bytes": 139199
+    },
+    {
+      "source_path": "tools/manga_catalog/picturebook_additions.py",
+      "path": "tools/manga_catalog/picturebook_additions.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "57f2c4df7b64e2c99a092c2fccea33b906167777",
+      "sha256": "e90944c50e33343147486687a9575b343d488f4bdeabfbe06100f174f9b92c0b",
+      "bytes": 5189
+    },
+    {
+      "source_path": "tools/manga_catalog/prepare_compare.py",
+      "path": "tools/manga_catalog/prepare_compare.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "a7eea86625ab0255f65eead70532480224e79d5b",
+      "sha256": "ed319cfb320f753622fa04f333056420989d9d5c20159d14c96e8634dd30d3b1",
+      "bytes": 7769
+    },
+    {
+      "source_path": "tools/manga_catalog/prepare_explanatory.py",
+      "path": "tools/manga_catalog/prepare_explanatory.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "e275a941b12aaa2ba20f4731aadeccb0c4aef6a4",
+      "sha256": "773d7f829e91e60d1f6b9fe40714b2d2c34505bf5d79209e165fbfcba23040f8",
+      "bytes": 6349
+    },
+    {
+      "source_path": "tools/manga_catalog/prepare_samples.py",
+      "path": "tools/manga_catalog/prepare_samples.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "72a17dec19948400638efa798216a567aba9d1d3",
+      "sha256": "b89965f1439ae62b9f2f7d61354b0fa915258a9f73d76fc403b4227cd77cd1e8",
+      "bytes": 5701
+    },
+    {
+      "source_path": "tools/manga_catalog/ranking_additions.py",
+      "path": "tools/manga_catalog/ranking_additions.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "0637ae599a35f718f799263730cf4e60db33c84f",
+      "sha256": "b9cda5b715309b255b055c8f8315043cd59ba9f14457e48e38ee84c4b37595a3",
+      "bytes": 4271
+    },
+    {
+      "source_path": "tools/manga_catalog/repairs.py",
+      "path": "tools/manga_catalog/repairs.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "40ead30a3b19c4aeef5f08200537ee7ca30feb34",
+      "sha256": "d7915dcdf468befef42485d35d4d3f54ede68a3b919628c91a6e6d03a7d2b85f",
+      "bytes": 14817
+    },
+    {
+      "source_path": "tools/manga_catalog/sample_bundles.json",
+      "path": "tools/manga_catalog/sample_bundles.json",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "4b5fee890ed0939ae9082f135b0fef755e4cc6ce",
+      "sha256": "fd0251b3a97f839e3346f32a6fd6320fe41d52caf3f0ca45f5c83054544a7fd4",
+      "bytes": 11796
+    },
+    {
+      "source_path": "tools/manga_catalog/styles.py",
+      "path": "tools/manga_catalog/styles.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "1cec0940166328c08a8f5234413adc18b8e1f4d4",
+      "sha256": "8734a8d2603ef8cc9f0300bdb069012931ecd4c2f8e0c6a885acaf6ed4209973",
+      "bytes": 52071
+    },
+    {
+      "source_path": "tools/manga_catalog/test_explanatory_generation.py",
+      "path": "tools/manga_catalog/test_explanatory_generation.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "ed5b7418af67752567813ee33d1f65f82fe56858",
+      "sha256": "1c978401de910a76f0bb5cf7629990f1904257af29fbd068fb7f92fe8d8f401a",
+      "bytes": 3242
+    },
+    {
+      "source_path": "tools/manga_catalog/test_sample_bundles.py",
+      "path": "tools/manga_catalog/test_sample_bundles.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "4ec6388d0f1b714fe4921e730110f5b3647c0cdd",
+      "sha256": "c92c42d9bee2d7ffea12105a7e0ca5336e4c439ebae4cda772c5ceea9a39a8fc",
+      "bytes": 4841
+    },
+    {
+      "source_path": "tools/manga_catalog/validate_explanatory.py",
+      "path": "tools/manga_catalog/validate_explanatory.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "ca15c309aa6bccc0079f786354435db132f6bae1",
+      "sha256": "3b8a3cf2646b46a3eeaa08a7efc7dcb6006fe53726ee97d6819b0bd9ee7df63b",
+      "bytes": 3428
+    },
+    {
+      "source_path": "tools/manga_catalog/x100_additions.py",
+      "path": "tools/manga_catalog/x100_additions.py",
+      "role": "owned",
+      "mode": "100644",
+      "blob": "d721fe748f7ebe44ad7fe15dc26027c4f24092b3",
+      "sha256": "40097c481685d72064148d51d1fa7ba40d6e89f55f45d5b45350bb8989849040",
+      "bytes": 3091
+    }
+  ],
+  "production_dependencies": [
+    "管理画面のcostlab-auth認証",
+    "本番volume costlab-auth_manga_style_data（今回移動しない）"
+  ],
+  "workflow_policy": "Archived outside .github/workflows; Actions disabled at repository level; no schedules or deployment secrets copied."
+}

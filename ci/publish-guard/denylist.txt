@@ -1,0 +1,80 @@
+# 公開ガードの禁止リスト（檻の一部。変更 PR は自動マージ禁止・人がレビューする）
+#
+# articles/**・drafts/** に**書いてはいけない語**。1 行 1 語（大文字小文字は無視、
+# 部分一致）。`#` で始まる行と空行は無視される。
+#
+# ⚠ ここに載せる語は「見つかったら必ず赤にしてよい」ものだけにする。
+#   日常語を載せると記事が書けなくなる（誤検知はレビューの信頼を削る）。
+#   逆に、載せ忘れは LLM 判定と人のレビューが最後の網になる。
+
+# --- 内部ホスト名・非公開サブドメイン ---
+keiba.cost-lab.jp
+stock.cost-lab.jp
+proxy.cost-lab.jp
+akiba.tokyo.jp
+sakura vps
+さくらvps
+さくらのvps
+
+# --- トークン・環境変数名（接頭辞で網を張る） ---
+KEIBA_
+ANTHROPIC_API_KEY
+GITHUB_TOKEN
+VPS_SSH_KEY
+VPS_HOST
+VPS_PORT
+VPS_USER
+GEMINI_API_KEY
+pds.env
+
+# --- 秘密の置き場・内部パス ---
+/opt/keiba
+/opt/akiba
+/home/deploy
+/usr/local/sbin
+/var/www
+GitHub Secrets
+
+# --- 認証方式の詳細 ---
+id_ed25519
+known_hosts
+sudoers
+鍵認証
+デプロイ鍵
+デプロイ専用ユーザー
+
+# --- モデル・特徴量の詳細（公開しないと決めているもの） ---
+m_popularity
+m_win_odds
+h_avg_finish
+h_avg_speed
+h_best_speed
+h_last1
+e_head_count
+e_body_weight
+j_win_rate
+j_track_top3
+d_track_top3
+jh_top3
+lambdarank
+LightGBM
+
+# --- 檻の保護パス・検査ロジックの実装詳細（思想は書いてよい。名前は書かない） ---
+cage-guard
+cage guard
+asof.py
+leakcheck.py
+backtest.py
+leak_checks.py
+edge_checks.py
+judge.py
+publish_public.py
+keiba-run.sh
+NORTH_STAR.md
+publish-guard
+denylist.txt
+
+# --- stock 関連（cost-lab の非公開プロジェクト） ---
+stock
+株価
+株式

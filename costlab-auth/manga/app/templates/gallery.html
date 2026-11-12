@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% from "_model_empty.html" import empty %}
+{% block content %}
+<section class="gallery-intro">
+  <div><p class="eyebrow">{{ model_info.name }} · {{ registered_count }} {{ '絵柄を登録済み' if lang == 'ja' else 'registered styles' }}</p><h1>{{ gallery_title }}</h1><p>{{ newui.intro }}</p></div>
+  <form class="gallery-search" action="/search" method="get" role="search">
+    <label for="gallery-query">{{ newui.search }}</label><div class="search-row"><input id="gallery-query" name="q" type="search" value="{{ q }}" maxlength="100" placeholder="{{ newui.placeholder }}"><button class="button button-primary" type="submit">{{ ui.search_button }}</button></div>
+    <input type="hidden" name="lang" value="{{ lang }}"><input type="hidden" name="model" value="{{ active_model }}">{% if selected.root %}<input type="hidden" name="root" value="{{ selected.root }}">{% endif %}{% if genko %}<input type="hidden" name="client" value="genko">{% endif %}
+  </form>
+</section>
+<nav class="category-strip" aria-label="{{ newui.category }}">
+  <a href="{{ home_url }}"{% if not selected.root %} aria-current="true"{% endif %}>{{ newui.all }}</a>
+  {% for c in roots %}<a href="{{ c.url }}"{% if selected.root == c.id %} aria-current="true"{% endif %}>{{ c.title }}</a>{% endfor %}
+</nav>
+{% if active_model != 'gpt-image' %}
+{{ empty(newui) }}
+{% else %}
+<div class="gallery-layout">
+  <details class="filter-panel" open>
+    <summary>{{ newui.filter }}</summary>
+    <form action="/search" method="get" class="gallery-filters">
+      <input type="hidden" name="lang" value="{{ lang }}"><input type="hidden" name="model" value="{{ active_model }}"><input type="hidden" name="q" value="{{ q }}">{% if genko %}<input type="hidden" name="client" value="genko">{% endif %}
+      <label>{{ newui.category }}<select name="root"><option value="">{{ newui.all }}</option>{% for c in roots %}<option value="{{ c.id }}"{% if c.id == selected.root %} selected{% endif %}>{{ c.title }}</option>{% endfor %}</select></label>
+      <label>{{ newui.topic }}<select name="topic"><option value="">{{ newui.all }}</option>{% for t in topics %}<option value="{{ t.id }}"{% if t.id == selected.topic %} selected{% endif %}>{{ t.title }}</option>{% endfor %}</select></label>
+      {% for name, options in facet_options.items() %}<label>{{ newui[name] }}<select name="{{ name }}"><option value="">{{ newui.all }}</option>{% for opt in options %}<option value="{{ opt.value }}"{% if selected[name] == opt.value %} selected{% endif %}>{{ opt.label }}</option>{% endfor %}</select></label>{% endfor %}
+      <button class="button button-primary" type="submit">{{ newui.apply }}</button><a class="filter-clear" href="{{ clear_url }}">{{ newui.clear }}</a><p class="filter-note">{{ newui.filter_note }}</p>
+    </form>
+  </details>
+  <section class="gallery-results" id="gallery-results" aria-label="{{ newui.results.format(n=total) }}">
+    <div class="results-bar"><h2>{{ newui.results.format(n=total) }}</h2><span>{{ newui.page.format(page=page, pages=pages) }}</span></div>
+    {% if topic_basic_url %}<p><a class="text-link" href="{{ topic_basic_url }}">{{ newui.topic_basic }}</a></p>{% endif %}
+    {% if category_basic_genko and genko %}<p><a class="text-link" href="{{ category_basic_genko }}">{{ ui.use_style }} — {{ gallery_title }}</a></p>{% endif %}
+    {% if cards %}<ul class="gallery-grid">{% for c in cards %}<li><a class="gallery-card" data-style-id="{{ c.id }}" data-level="{{ c.level }}" href="{{ c.url }}"><span class="gallery-image">{% if c.thumb_url %}<img src="{{ c.thumb_url }}" alt="{{ c.title }}" loading="lazy" width="384" height="512">{% else %}<span class="gallery-no-image">{{ ui.no_sample }}</span>{% endif %}</span><span class="gallery-card-body"><span class="card-path">{{ c.path or newui.basic }}</span><strong>{{ c.title }}</strong><span class="gallery-card-bottom"><span>{{ c.model_name }}</span><code>{{ c.id }}</code></span></span></a></li>{% endfor %}</ul>
+    {% else %}<p class="gallery-no-results">{{ newui.none }}</p>{% endif %}
+    <nav class="pagination" aria-label="{{ 'ページ' if lang == 'ja' else 'Pages' }}">{% if previous_url %}<a class="page-link" href="{{ previous_url }}">← {{ newui.previous }}</a>{% endif %}<span>{{ newui.page.format(page=page, pages=pages) }}</span>{% if next_url %}<a class="page-link" href="{{ next_url }}">{{ newui.next }} →</a>{% endif %}</nav>
+  </section>
+</div>
+{% endif %}
+{% endblock %}

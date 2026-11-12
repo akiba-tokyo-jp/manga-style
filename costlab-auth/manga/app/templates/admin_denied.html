@@ -1,0 +1,14 @@
+{% extends "admin_base.html" %}
+{% block title %}入れませんでした{% endblock %}
+{% block content %}
+<div class="panel">
+  <h1>管理画面に入れませんでした</h1>
+  {%- if reason == "origin" %}
+  <p>この操作は、管理画面の中のボタンからしか受け付けません。管理画面を開き直して、もう一度押してください。</p>
+  <p><a class="button button-primary" href="/admin">管理画面を開く</a></p>
+  {%- else %}
+  <p>ログインを確かめられませんでした。もう一度ログインしてください。</p>
+  <p><a class="button button-primary" href="/__auth/login?next=/admin">ログインする</a></p>
+  {%- endif %}
+</div>
+{% endblock %}

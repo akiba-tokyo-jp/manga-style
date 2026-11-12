@@ -1,0 +1,107 @@
+services:
+  costlab-auth:
+    build: .
+    container_name: costlab-auth
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      # 登録済みパスキーの**公開鍵**だけが入る。秘密鍵も生体情報も端末から出てこない。
+      - costlab_auth_data:/data
+    networks:
+      - web
+    # ★ 認証だけのサービスなので小さい。上限を切って、暴走しても他所へ波及させない。
+    mem_limit: 256m
+
+  # proxy.cost-lab.jp の WEB Proxy。認証はアプリ自身（初期 test/test、サイト内で変更）。
+  # ★ 別コンテナ。ここが落ちても keiba / stock のログインは生きる。
+  # ★ 資格情報は volume。デプロイで消えない。
+  webproxy:
+    build: ./proxy
+    container_name: webproxy
+    restart: always
+    volumes:
+      - webproxy_data:/data
+    networks:
+      - web
+    mem_limit: 256m
+
+  # game.akiba.tokyo.jp/kanban の閲覧専用 projection API（docs/kanban/CONTRACT.md, OPERATIONS.md）。
+  # ★ 独立 sibling。costlab-auth の image / .env / アカウント / キーは共用しない。
+  #   env_file を**付けない**（共有 .env の秘密を流し込まないため）。非秘密設定だけを明示する。
+  # ★ 閲覧は公開read-only。同期はPC内の秘密鍵で署名し、imageの公開鍵だけで検証する。
+  #   旧資格volumeはrollback用に保持するが、公開modeでは読み込まない。人の秘密投入は不要。
+  # ★ web network 内 8081 のみ。ホスト port は公開しない（外側 Caddy が /kanban/api|ingest だけ転送）。
+  # ★ 単一 uvicorn worker（session はメモリ、再起動で失効）。projection は /data の SQLite。
+  kanban-viewer:
+    build: ./kanban
+    container_name: kanban-viewer
+    restart: always
+    user: "10001:10001"
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      KANBAN_BOARD: game-dev
+      # 本番 source の固定 UUID（秘密ではない）。exporter のローカル設定と一致させる。
+      # 変更は再 bootstrap 扱い（OPERATIONS.md「source ID の再 bootstrap」）。
+      KANBAN_SOURCE_ID: 448de060-b6b8-4d2b-ac83-f3c0960de41a
+      KANBAN_PUBLIC_VIEWER: "true"
+      KANBAN_PUBLISHER_PUBLIC_KEY_FILE: /srv/kanban/publisher-public.pem
+      KANBAN_DATA_DIR: /data
+      # production は固定 origin。app 既定と同じ値を明示（test origin は test board 専用）。
+      KANBAN_ORIGIN: https://game.akiba.tokyo.jp
+    volumes:
+      - kanban_projection_data:/data
+      - kanban_viewer_credentials:/run/kanban-secrets:ro
+    networks:
+      - web
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 128
+
+  # マンガの絵柄カタログ（manga.akiba.tokyo.jp）。ソースは ./manga、手順は docs/manga-style.md。
+  # ★ .env（costlab-auth の資格情報）は渡さない。管理画面の認証は costlab-auth に問い合わせるだけ。
+  # ★ 見本の画像と管理の状態は manga_style_data（/data）に置く。git には入れない（約2,300枚になる）。
+  manga-style:
+    build: ./manga
+    container_name: manga-style
+    restart: always
+    user: "10002:10002"
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      MANGA_SITE_ORIGIN: https://manga.akiba.tokyo.jp
+      MANGA_DATA_DIR: /data
+      MANGA_ADMIN_VERIFY_URL: http://costlab-auth:8000/__auth/verify
+    volumes:
+      - manga_style_data:/data
+    networks:
+      - web
+    mem_limit: 384m
+    cpus: 0.5
+    pids_limit: 128
+
+volumes:
+  costlab_auth_data:
+  webproxy_data:
+  # kanban-viewer 専用。projection（再構築可能な表示コピー）と資格ファイル。
+  # ★ deploy の tar 差し替え・rollback 対象外。compose project 名 costlab-auth が
+  #   変わらない限り再 deploy でも保持される（tests/kanban_delivery/docker-runtime.sh で実測）。
+  kanban_projection_data:
+  kanban_viewer_credentials:
+  # manga-style の見本の画像と管理の状態（state.json）。
+  manga_style_data:
+
+networks:
+  web:
+    external: true

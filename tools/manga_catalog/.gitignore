@@ -1,0 +1,5 @@
+# review outputs of build_tree.py (the site bundle is costlab-auth/manga/app/catalog.json)
+tree.json
+tree.html
+summary.txt
+__pycache__/

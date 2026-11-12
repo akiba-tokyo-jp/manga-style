@@ -1,0 +1,26 @@
+*.env
+.env*
+*.pem
+# Public verification key only; private signing keys stay outside Git.
+!costlab-auth/kanban/publisher-public.pem
+*.key
+id_rsa*
+id_ed25519*
+secrets/
+*.bak
+*.bak-*
+__pycache__/
+*.pyc
+
+# 曲テンプレは生成物（固定シードで毎回同じ内容）。実行時に tools/ から作るのでコミットしない。
+# 経緯: docs/uta-implementation-plan.md §0-2
+uta/templates/
+
+# STRUWALTZ のモデル本体は akiba-tokyo-jp/struwaltz が正。ここにはコミットしない。
+sites/struwaltz-preview/public/models/
+
+# 見本の追加画像は Release から検証して build 時に配置する（画像の正本は git 外）。
+costlab-auth/manga/app/seed/additions/
+costlab-auth/manga/app/seed/pairs/
+costlab-auth/manga/compare/files/
+costlab-auth/manga/compare/files.new/

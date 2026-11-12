@@ -1,0 +1,118 @@
+{% extends "admin_base.html" %}
+{% from "_admin_rows.html" import node_table %}
+{% block title %}{{ node.title.ja }}{% endblock %}
+{% block content %}
+<nav class="breadcrumb" aria-label="現在地">
+  <ol>
+    <li><a href="/admin">管理画面</a></li>
+    {%- for c in crumbs %}
+    <li><span class="sep" aria-hidden="true">&gt;</span>{% if loop.last %}<span aria-current="page">{{ c.title }}</span>{% else %}<a href="{{ c.url }}">{{ c.title }}</a>{% endif %}</li>
+    {%- endfor %}
+  </ol>
+</nav>
+
+<h1>{{ node.title.ja }} <span class="muted small-text">{{ node.title.en }}</span></h1>
+<p><code>{{ node.id }}</code> ・ {{ node.level }}段目 ・ 版 {{ node.version }}（{{ node.updated_at }}）</p>
+
+<section class="panel">
+  <h2>公開</h2>
+  <p>
+    {%- if not node.published %}<span class="badge off">隠している</span> サイトと API に出ていません。
+    {%- elif hidden_by %}<span class="badge off">親が非公開</span> 上の段（{{ hidden_by | join('、') }}）を隠しているので、出ていません。
+    {%- else %}<span class="badge on">公開中</span> <a href="{{ public_url }}">公開ページを見る</a>
+    {%- endif %}
+  </p>
+  <form method="post" action="{{ row.url }}/{{ 'hide' if node.published else 'publish' }}" class="inline-form">
+    <button class="button {{ '' if node.published else 'button-primary' }}" type="submit">{{ '隠す' if node.published else '公開する' }}</button>
+  </form>
+</section>
+
+<section class="panel">
+  <h2>見本の絵</h2>
+  <div class="admin-sample">
+    {%- if sample %}
+    <img src="{{ sample.url }}" width="384" height="512" alt="{{ node.title.ja }} の見本">
+    <dl class="meta">
+      <dt>モデル</dt><dd>{{ sample.model.id }} / {{ sample.model.version }}</dd>
+      <dt>作成</dt><dd>{{ sample.created_at }}（{{ sample.origin }}）</dd>
+      <dt>ファイル</dt><dd>{{ sample.file }}（{{ (sample.bytes / 1024) | round | int }} KB）</dd>
+    </dl>
+    {%- else %}
+    <p class="muted">見本の絵はまだありません。</p>
+    {%- endif %}
+  </div>
+
+  <h3>作り直しを頼む</h3>
+  {%- if node.regen %}
+  <p><span class="badge">作り直し待ち</span> {{ node.regen.requested_at }} {% if node.regen.note %}「{{ node.regen.note }}」{% endif %}</p>
+  <form method="post" action="{{ row.url }}/regen-cancel" class="inline-form"><button class="button small" type="submit">依頼を取り消す</button></form>
+  {%- else %}
+  <p class="muted">頼むと「作り直しの一覧」に載ります。絵は Hermes が下のプロンプトで作り、ここへ入れます。</p>
+  <form method="post" action="{{ row.url }}/regen" class="stack-form">
+    <label class="field-label" for="regen-note">直してほしい点（任意）</label>
+    <input class="url-input" id="regen-note" name="note" type="text" maxlength="300">
+    <button class="button" type="submit">作り直しを頼む</button>
+  </form>
+  {%- endif %}
+
+  <h3>絵を差し替える</h3>
+  <form method="post" action="{{ row.url }}/sample" enctype="multipart/form-data" class="stack-form">
+    <label class="field-label" for="sample-image">画像（PNG か JPEG、20MB まで。白黒 768×1024 に直して保存します）</label>
+    <input id="sample-image" name="image" type="file" accept="image/png,image/jpeg" required>
+    <label class="field-label" for="sample-model">モデルの版</label>
+    <input class="url-input short" id="sample-model" name="model_version" type="text" maxlength="80" value="{{ default_model }}">
+    <label class="field-label" for="sample-prompt-ja">使ったプロンプト（日本語。空なら下の「見本を作るプロンプト」）</label>
+    <textarea class="prompt-text" id="sample-prompt-ja" name="prompt_ja" rows="3"></textarea>
+    <label class="field-label" for="sample-prompt-en">使ったプロンプト（英語。空なら下の「見本を作るプロンプト」）</label>
+    <textarea class="prompt-text" id="sample-prompt-en" name="prompt_en" rows="3"></textarea>
+    <button class="button button-primary" type="submit">差し替える</button>
+  </form>
+
+  <details class="sample-prompt">
+    <summary>見本を作るプロンプト（日本語）</summary>
+    <p lang="ja">{{ gen_prompt.ja }}</p>
+  </details>
+  <details class="sample-prompt">
+    <summary>見本を作るプロンプト（英語）</summary>
+    <p lang="en">{{ gen_prompt.en }}</p>
+  </details>
+</section>
+
+<section class="panel">
+  <h2>名前・説明・言葉の修正</h2>
+  <p class="muted">言葉を変えると、その言葉を使う枝の API の版が上がります（2段目の言葉は下の3段目にも入る。1段目の言葉は1段目だけ）。プロンプトは絵と組なので、ほかの言葉で作った見本の絵がある枝は、自動で「作り直しの一覧」に載ります。実在の作家・作品の名前やかぎかっこは保存できません。</p>
+  <form method="post" action="{{ row.url }}/edit" class="stack-form">
+    <label class="field-label" for="f-title-ja">表示名（日本語）</label>
+    <input class="url-input" id="f-title-ja" name="title_ja" type="text" maxlength="{{ limits.title_ja }}" value="{{ fields.title_ja }}" required>
+    <label class="field-label" for="f-title-en">表示名（英語）</label>
+    <input class="url-input" id="f-title-en" name="title_en" type="text" maxlength="{{ limits.title_en }}" value="{{ fields.title_en }}" required>
+    <label class="field-label" for="f-summary-ja">説明（日本語）</label>
+    <input class="url-input" id="f-summary-ja" name="summary_ja" type="text" maxlength="{{ limits.summary_ja }}" value="{{ fields.summary_ja }}" required>
+    <label class="field-label" for="f-summary-en">説明（英語）</label>
+    <input class="url-input" id="f-summary-en" name="summary_en" type="text" maxlength="{{ limits.summary_en }}" value="{{ fields.summary_en }}" required>
+    <label class="field-label" for="f-words-ja">この段の言葉（日本語）</label>
+    <textarea class="prompt-text" id="f-words-ja" name="words_ja" rows="4" maxlength="{{ limits.words_ja }}" required>{{ fields.words_ja }}</textarea>
+    <label class="field-label" for="f-words-en">この段の言葉（英語）</label>
+    <textarea class="prompt-text" id="f-words-en" name="words_en" rows="4" maxlength="{{ limits.words_en }}" required>{{ fields.words_en }}</textarea>
+    <label class="field-label" for="f-words-tags">タグ</label>
+    <input class="url-input" id="f-words-tags" name="words_tags" type="text" maxlength="{{ limits.words_tags }}" value="{{ fields.words_tags }}" required>
+    <button class="button button-primary" type="submit">保存する</button>
+  </form>
+  {%- if node.edited %}
+  <form method="post" action="{{ row.url }}/reset" class="inline-form"><button class="button small" type="submit">元の内容に戻す</button></form>
+  {%- endif %}
+  <details class="sample-prompt">
+    <summary>API に出すプロンプト（共通の言葉＋この枝の段の言葉。2段目から下は1段目の言葉を入れない）</summary>
+    <p lang="ja">{{ style_prompt.ja }}</p>
+    <p lang="en">{{ style_prompt.en }}</p>
+    <p>{{ style_prompt.tags }}</p>
+  </details>
+</section>
+
+{%- if rows %}
+<section class="panel">
+  <h2>下の段（{{ rows | length }}）</h2>
+  {{ node_table(rows, node.id) }}
+</section>
+{%- endif %}
+{% endblock %}

@@ -1,0 +1,27 @@
+{#- Rows of child nodes with publish / hide buttons. rows: list of admin_row(); back: node id to return to ("" = top). -#}
+{% macro node_table(rows, back) -%}
+<div class="table-wrap">
+<table class="node-table">
+  <thead>
+    <tr><th scope="col">枝</th><th scope="col">状態</th><th scope="col">見本</th><th scope="col">版</th><th scope="col">操作</th></tr>
+  </thead>
+  <tbody>
+  {%- for r in rows %}
+    <tr class="{{ 'is-hidden' if not r.published else '' }}">
+      <td>{% if r.path %}<span class="muted">{{ r.path }} ›</span><br>{% endif %}<a href="{{ r.url }}">{{ r.title }}</a><br><code>{{ r.id }}</code>{% if r.kids %} <span class="muted">（下に {{ r.kids }}）</span>{% endif %}{% if r.edited %} <span class="badge">修正あり</span>{% endif %}</td>
+      <td>{% if not r.published %}<span class="badge off">隠している</span>{% elif not r.visible %}<span class="badge off">親が非公開</span>{% else %}<span class="badge on">公開中</span>{% endif %}</td>
+      <td data-label="見本">{% if r.has_sample %}あり{% else %}<span class="muted">なし</span>{% endif %}{% if r.regen %} <span class="badge">作り直し待ち</span>{% endif %}</td>
+      <td data-label="版">{{ r.version }}</td>
+      <td>
+        {%- if r.published %}
+        <form method="post" action="{{ r.url }}/hide"><input type="hidden" name="back" value="{{ back }}"><button class="button small" type="submit">隠す</button></form>
+        {%- else %}
+        <form method="post" action="{{ r.url }}/publish"><input type="hidden" name="back" value="{{ back }}"><button class="button small button-primary" type="submit">公開する</button></form>
+        {%- endif %}
+      </td>
+    </tr>
+  {%- endfor %}
+  </tbody>
+</table>
+</div>
+{%- endmacro %}

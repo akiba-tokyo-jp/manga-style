@@ -1,0 +1,33 @@
+{%- set other_lang = "en" if lang == "ja" else "ja" -%}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page_title %}{{ page_title }} | {% endif %}{{ newui.site_name }}</title>
+<link rel="stylesheet" href="/static/site.css">
+<link rel="stylesheet" href="/static/gallery.css">
+<script src="/static/site.js" defer></script>
+</head>
+<body data-active-model="{{ active_model }}">
+<a class="skip-link" href="#main-content">{{ '本文へ' if lang == 'ja' else 'Skip to content' }}</a>
+<header class="site-header">
+  <div class="wrap header-top">
+    <a class="site-name" href="{{ home_url }}">{{ newui.site_name }}</a>
+    <div class="header-links">
+      <a class="header-search" href="{{ search_url }}">{{ ui.search_link }}</a>
+      <a class="lang-switch" href="{{ lang_switch_url }}" hreflang="{{ other_lang }}" aria-label="{{ ui.lang_label }}: {{ other_lang_label }}"><span lang="{{ other_lang }}">{{ other_lang_label }}</span></a>
+    </div>
+  </div>
+  <nav class="wrap model-switch" aria-label="{{ newui.model_label }}">
+    <span class="model-switch-label">{{ newui.model_label }}</span>
+    {% for m in model_tabs %}<a class="model-tab{{ ' active' if m.active else '' }}" href="{{ m.url }}"{% if m.active %} aria-current="true"{% endif %}>{{ m.name }}{% if m.status == 'preparing' %}<span class="model-status">{{ '準備中' if lang == 'ja' else 'Coming soon' }}</span>{% endif %}</a>{% endfor %}
+  </nav>
+</header>
+{% if breadcrumb %}
+<nav class="breadcrumb wrap" aria-label="{{ ui.path_label }}"><ol><li><a href="{{ home_url }}">{{ ui.home }}</a></li>{% for item in breadcrumb %}<li><span class="sep" aria-hidden="true">›</span>{% if loop.last %}<span aria-current="page">{{ item.title }}</span>{% else %}<a href="{{ item.url }}">{{ item.title }}</a>{% endif %}</li>{% endfor %}</ol></nav>
+{% endif %}
+<main class="wrap" id="main-content">{% block content %}{% endblock %}</main>
+<footer class="site-footer"><div class="wrap"><p class="footer-api"><a href="{{ api_guide_url }}">{{ ui.api_guide_link }}</a></p><p>{{ ui.footer_terms }}</p></div></footer>
+</body>
+</html>

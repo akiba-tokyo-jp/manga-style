@@ -1,0 +1,12 @@
+{% macro empty(newui) %}
+<section class="model-empty" aria-labelledby="empty-heading">
+  <p class="eyebrow">Anima Turbo</p>
+  <h2 id="empty-heading">{{ newui.empty_heading }}</h2>
+  <p>{{ newui.empty_text }}</p>
+  <div class="empty-slots" aria-label="{{ newui.registered }}">
+    <div class="empty-slot"><span class="empty-slot-mark" aria-hidden="true">＋</span><span>{{ newui.empty_sample }}</span><small>{{ newui.registered }}</small></div>
+    <div class="empty-slot"><span class="empty-slot-mark" aria-hidden="true">Aa</span><span>{{ newui.empty_prompt }}</span><small>{{ newui.registered }}</small></div>
+  </div>
+  <p class="quiet-note">{{ newui.empty_note }}</p>
+</section>
+{% endmacro %}

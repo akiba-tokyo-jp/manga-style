@@ -1,0 +1,2216 @@
+{
+ "format": 1,
+ "repository": "akiba-tokyo-jp/manga-style",
+ "note": "Comparison pictures: the English sample prompt (samples[reference].prompt.en) drawn unchanged by another image model. Pictures are release assets; tools/manga_catalog/prepare_compare.py verifies and stages them.",
+ "model": {
+  "id": "wai-illustrious-sdxl-v17.0",
+  "version": "v17.0",
+  "name": "WAI-Illustrious-SDXL"
+ },
+ "settings": {
+  "seed": 20261018,
+  "steps": 20,
+  "cfg_scale": 5,
+  "sampler": "euler_a",
+  "size": "768x1024",
+  "negative_prompt": null
+ },
+ "bundles": [
+  {
+   "tag": "manga-compare-wai-20261018-01",
+   "asset": "manga-compare-wai-20261018-01.zip",
+   "sha256": "921c581e563a17df5c12825773c2c168b817118e12b91382732075e0266878e4",
+   "bytes": 28930022,
+   "nodes": [
+    "shonen",
+    "shonen-battle",
+    "shonen-battle-chibi-comic",
+    "shonen-battle-retro-showa",
+    "shonen-battle-fine-clean",
+    "shonen-battle-round-eyes-bright",
+    "shonen-battle-rough-energy",
+    "shonen-battle-comic-lively",
+    "shonen-battle-graphic-flat",
+    "shonen-battle-fine-tall",
+    "shonen-battle-effect-power",
+    "shonen-battle-pen-classic",
+    "shonen-battle-digital-modern",
+    "shonen-battle-dense-quiet",
+    "shonen-battle-dark-fine",
+    "shonen-battle-bold-black",
+    "shonen-battle-sharp-stylish",
+    "shonen-battle-cinematic-light",
+    "shonen-battle-shadow-dramatic",
+    "shonen-battle-nineties-sharp",
+    "shonen-battle-ink-splash",
+    "shonen-battle-tone-layered-hot",
+    "shonen-battle-american-comic",
+    "shonen-battle-realistic-dense",
+    "shonen-battle-brush-wild",
+    "shonen-battle-scratchy-dry",
+    "shonen-battle-muscle-hatch",
+    "shonen-sports",
+    "shonen-sports-chibi-comic",
+    "shonen-sports-retro-showa",
+    "shonen-sports-fine-clean",
+    "shonen-sports-round-eyes-bright",
+    "shonen-sports-rough-energy",
+    "shonen-sports-comic-lively",
+    "shonen-sports-graphic-flat",
+    "shonen-sports-fine-tall",
+    "shonen-sports-effect-power",
+    "shonen-sports-gentle-soft",
+    "shonen-sports-pencil-soft",
+    "shonen-romcom",
+    "shonen-fantasy",
+    "shonen-mystery",
+    "shonen-scifi",
+    "shonen-adventure",
+    "shonen-school",
+    "shonen-delinquent",
+    "shonen-period",
+    "shonen-carved",
+    "shonen-linecarved",
+    "shojo",
+    "shojo-school",
+    "shojo-romcom",
+    "shojo-fantasy",
+    "shojo-palace",
+    "shojo-magical",
+    "shojo-showbiz",
+    "shojo-dance",
+    "shojo-suspense",
+    "shojo-drama",
+    "shojo-scifi",
+    "shojo-otome",
+    "shojo-starry",
+    "shojo-penonly",
+    "seinen",
+    "seinen-action",
+    "seinen-noir",
+    "seinen-scifi",
+    "seinen-darkfantasy",
+    "seinen-war",
+    "seinen-gambling",
+    "seinen-gourmet",
+    "seinen-profession",
+    "seinen-daily",
+    "seinen-suspense",
+    "seinen-warped",
+    "seinen-penscape",
+    "seinen-plainreal",
+    "seinen-clumsy",
+    "josei",
+    "josei-romance",
+    "josei-office",
+    "josei-family",
+    "josei-love",
+    "josei-yuri",
+    "josei-drama",
+    "josei-period",
+    "josei-lifestyle",
+    "josei-comedy",
+    "josei-suspense",
+    "josei-tanbi",
+    "kodomo",
+    "kodomo-hobby",
+    "kodomo-adventure",
+    "kodomo-gag",
+    "kodomo-animal",
+    "kodomo-learning",
+    "kodomo-magical",
+    "kodomo-school",
+    "kodomo-sports",
+    "kodomo-mystery",
+    "kodomo-monster",
+    "kodomo-geometric",
+    "yonkoma",
+    "yonkoma-family",
+    "yonkoma-school",
+    "yonkoma-office",
+    "yonkoma-slice",
+    "yonkoma-animal",
+    "yonkoma-newspaper",
+    "yonkoma-story",
+    "yonkoma-gag",
+    "yonkoma-fantasy",
+    "yonkoma-hobby",
+    "yonkoma-mochi",
+    "gag",
+    "gag-slapstick",
+    "gag-surreal",
+    "gag-school",
+    "gag-chibi",
+    "gag-black",
+    "gag-romcom",
+    "gag-sports",
+    "gag-fantasy",
+    "gag-horror",
+    "gag-retro",
+    "gag-hetauma",
+    "gag-grimy",
+    "gag-deadpan",
+    "horror",
+    "horror-kaidan",
+    "horror-psychological",
+    "horror-cosmic",
+    "horror-folk",
+    "horror-school",
+    "horror-shojo",
+    "horror-creature",
+    "horror-urban",
+    "horror-yokai",
+    "horror-panic",
+    "essay",
+    "essay-diary",
+    "essay-parenting",
+    "essay-travel",
+    "essay-food",
+    "essay-work",
+    "essay-health",
+    "essay-pet",
+    "essay-hobby",
+    "essay-report",
+    "essay-love",
+    "gekiga",
+    "gekiga-samurai",
+    "gekiga-yakuza",
+    "gekiga-crime",
+    "gekiga-war",
+    "gekiga-hardboiled",
+    "gekiga-social",
+    "gekiga-sports",
+    "gekiga-kaiki",
+    "gekiga-historical",
+    "gekiga-adventure",
+    "gekiga-grotesque",
+    "gekiga-bearded"
+   ]
+  },
+  {
+   "tag": "manga-compare-wai-20261018-02",
+   "asset": "manga-compare-wai-20261018-02.zip",
+   "sha256": "04d1a8116c9372976605847bcf8f3226274578aac824012674117623e09b3c02",
+   "bytes": 7873011,
+   "nodes": [
+    "shonen-sports-sweat-fresh",
+    "shonen-sports-pen-classic",
+    "shonen-sports-digital-modern",
+    "shonen-sports-dense-quiet",
+    "shonen-sports-bold-black",
+    "shonen-sports-sharp-stylish",
+    "shonen-sports-cinematic-light",
+    "shonen-sports-shadow-dramatic",
+    "shonen-sports-nineties-sharp",
+    "shonen-sports-tone-layered-hot",
+    "shonen-sports-realistic-dense",
+    "shonen-sports-muscle-hatch",
+    "shonen-sports-muscle-mass",
+    "shonen-romcom-chibi-comic",
+    "shonen-romcom-retro-showa",
+    "shonen-romcom-fine-clean",
+    "shonen-romcom-round-eyes-bright",
+    "shonen-romcom-rough-energy",
+    "shonen-romcom-comic-lively",
+    "shonen-romcom-graphic-flat",
+    "shonen-romcom-fine-tall",
+    "shonen-romcom-effect-power",
+    "shonen-romcom-gentle-soft",
+    "shonen-romcom-pencil-soft",
+    "shonen-romcom-pen-classic",
+    "shonen-romcom-digital-modern",
+    "shonen-romcom-dense-quiet",
+    "shonen-romcom-blush-cute",
+    "shonen-romcom-sharp-stylish",
+    "shonen-romcom-cinematic-light",
+    "shonen-romcom-shadow-dramatic",
+    "shonen-romcom-nineties-sharp",
+    "shonen-romcom-realistic-dense",
+    "shonen-fantasy-chibi-comic",
+    "shonen-fantasy-retro-showa",
+    "shonen-fantasy-fine-clean",
+    "shonen-fantasy-round-eyes-bright",
+    "shonen-fantasy-rough-energy",
+    "shonen-fantasy-comic-lively",
+    "shonen-fantasy-fine-tall",
+    "shonen-fantasy-effect-power",
+    "shonen-fantasy-gentle-soft"
+   ]
+  },
+  {
+   "tag": "manga-compare-wai-20261018-03",
+   "asset": "manga-compare-wai-20261018-03.zip",
+   "sha256": "5342c2faa8f9457b9ea6b30185f27e27af8ae05e25353ae38f1db45ac896e431",
+   "bytes": 1908969,
+   "nodes": [
+    "shonen-fantasy-pencil-soft",
+    "shonen-fantasy-pen-classic",
+    "shonen-fantasy-digital-modern",
+    "shonen-fantasy-dense-quiet",
+    "shonen-fantasy-dark-fine",
+    "shonen-fantasy-bold-black",
+    "shonen-fantasy-sharp-stylish",
+    "shonen-fantasy-cinematic-light",
+    "shonen-fantasy-fantasy-ornate",
+    "shonen-fantasy-shadow-dramatic",
+    "shonen-fantasy-nineties-sharp",
+    "shonen-fantasy-tone-layered-hot"
+   ]
+  }
+ ],
+ "samples": {
+  "shonen": {
+   "sha256": "e740d5d2bb57df259c0a706ca853c802c6361d29875cd0ef6d19a7071375737c",
+   "bytes": 203383,
+   "prompt_sha256": "f74bdcf6d41e5375dee7bd9841e9dbe23c130d30d5c7be3ba9c92c4021cf7429",
+   "reference_sha256": "6c146b6ffcadc3b7d33a04808502d6a0ce7df6ebc1dd0de30fb49262a5ab4848",
+   "png_sha256": "6cba691511ec2d35149701bddbe267c92f2c887f1d5f4ace0237f4e93d182641",
+   "native_job_id": "6ad440f2000013a20000000e0000000e",
+   "created_at": "2026-10-18T03:35:57Z"
+  },
+  "shonen-battle": {
+   "sha256": "236cf445e4428fe4254d4d1b7c6b2ced6e90fc2420cdb368ab3e7f62c3821cda",
+   "bytes": 136912,
+   "prompt_sha256": "37bd35829a622652066d865f460891dbf73f3857a90d627162e489efad194ba5",
+   "reference_sha256": "f40e7a0af75cfdb41166a029738d5b1618e6c1294127d0563ef138f006b2eac4",
+   "png_sha256": "4c3ecd5ad183eddb7745541fb1246f41166c6126f5e96b6aba02ce0a29f63170",
+   "native_job_id": "6ad453ae0000181e0000000300000003",
+   "created_at": "2026-10-18T04:55:47Z"
+  },
+  "shonen-battle-chibi-comic": {
+   "sha256": "f78bf12b7219eb0254d403232f2713e9428ef7ea9ee32364d7ccee1e80f40ed0",
+   "bytes": 52641,
+   "prompt_sha256": "e303d30b5cd09a6154d229c624e983186d5847aa6e0a218e7624e99e01b39c89",
+   "reference_sha256": "ea03955ce737aaf36de5c57de52e5ac7a21f694fad4721bae86cae3c361934fe",
+   "png_sha256": "db9b8f9d5cd39e76cfe47ce002d7e36fc0abbf1c1e900cd688874bed13ab00a3",
+   "native_job_id": "6ad4781e000019370000001b0000001b",
+   "created_at": "2026-10-18T07:31:16Z"
+  },
+  "shonen-battle-retro-showa": {
+   "sha256": "f420266a6003d63e9b727bca4b06a332a2835b14c62abe9809e34b5fe1f6b8a2",
+   "bytes": 160481,
+   "prompt_sha256": "de5da062672eeeb6058ce80dd28ab3ae502b17bd6a9f1851a458429131a3796d",
+   "reference_sha256": "da4e348db8d93fc72161502f82fa0682c4f9d9143102484b07c7c90f0c2c4afe",
+   "png_sha256": "3921f42254296c60d0073c0353961348a02f97d16187d57f8a036ab6b2502d1a",
+   "native_job_id": "6ad47869000019370000001c0000001c",
+   "created_at": "2026-10-18T07:32:31Z"
+  },
+  "shonen-battle-fine-clean": {
+   "sha256": "e78643b37f6a9f430a1f3835bd8283092a17ab18dac2ed51bc802c23bf18375d",
+   "bytes": 230513,
+   "prompt_sha256": "8ffab64dad4eefe5c035ad429e350b0a155c40da4aa12276c4f01736f8b3d01c",
+   "reference_sha256": "cdc0177dab52250d725fca25dd01b0eb6f711e97ddc5315e9dae9bdb53819d0d",
+   "png_sha256": "b5a1c86492d22907da7a9a357d3b13703b65148ced13397c1692f7de3a27956a",
+   "native_job_id": "6ad478b4000019370000001d0000001d",
+   "created_at": "2026-10-18T07:33:47Z"
+  },
+  "shonen-battle-round-eyes-bright": {
+   "sha256": "56f0ae91797d477a28e52d8942807b0883b634bcb44adf3d45f3ba456be61839",
+   "bytes": 174720,
+   "prompt_sha256": "bf006c8983c4b6e84a011fd49b5e68164f4b854ec2a6e0207b34fd866853665b",
+   "reference_sha256": "f2ba877145f68cb2f897d86674026d4516082576dc9da54fea3090e4c938850b",
+   "png_sha256": "5efe12e824af0d54be8f8d9c44d8f204e09385bd3342e2eae0d16b86558a8e4c",
+   "native_job_id": "6ad47900000019370000001e0000001e",
+   "created_at": "2026-10-18T07:35:02Z"
+  },
+  "shonen-battle-rough-energy": {
+   "sha256": "0da7f1f5b93cdf0df3b61c7f23081b318adbfac8e16d9a9e6ea12b7c2afc2f26",
+   "bytes": 222651,
+   "prompt_sha256": "916a9f928762e1b6f15d24cc2ad3f0fabc0d0382ea31aef928b726f77c17aa19",
+   "reference_sha256": "56b66333431688133b2a4337e2d181a9e7853608171bba67370c8f5ea01bf619",
+   "png_sha256": "e5c766fd6c6ddf152c5e0b3223de790d97802176259172e7a16ce8479d7d43a1",
+   "native_job_id": "6ad4794b000019370000001f0000001f",
+   "created_at": "2026-10-18T07:36:18Z"
+  },
+  "shonen-battle-comic-lively": {
+   "sha256": "1d008dba76b344c00ae08ca780840bf3271a2e1d3416f508716303de5c6a966c",
+   "bytes": 236224,
+   "prompt_sha256": "46850acf5523f29bc08069baa85bd9d5407d4fafe92431115bd955f5ccc50fb5",
+   "reference_sha256": "51a1559d0eec3265395fc2c7caa1f6c1ca17e2ae1abe44598a44e0068c376f2e",
+   "png_sha256": "4228d564bc145070fb1a09448cd79e25301fa777d9e49d1433bcbd2363154a79",
+   "native_job_id": "6ad47997000019370000002000000020",
+   "created_at": "2026-10-18T07:37:33Z"
+  },
+  "shonen-battle-graphic-flat": {
+   "sha256": "485b3fe0f08f46026264fe454baa83fedf4c78ebe8fab772d9525789045fe125",
+   "bytes": 156412,
+   "prompt_sha256": "a815c74d3e8f60f81bc864fd8769264478afa6464eb406601fc7a56ea318ec9b",
+   "reference_sha256": "72e757676567ed96cf4a002c81723ae2ed611975d30a55ade164995abe5954bc",
+   "png_sha256": "2b35990ad0b44430df20861f6f58da153bdc9032a7cf655fafa55eeaa7775a2d",
+   "native_job_id": "6ad479e2000019370000002100000021",
+   "created_at": "2026-10-18T07:38:48Z"
+  },
+  "shonen-battle-fine-tall": {
+   "sha256": "cea009520ef16328ac5fdc6dd37ffd7da578a56540c50c205d29e42af5bd7d50",
+   "bytes": 193761,
+   "prompt_sha256": "b0ef1a4e1ccd5feeb9e5d7912a027f3a8ce9921d049372fcdc7475d3a895ed6a",
+   "reference_sha256": "a044dd3696eb5ff982cd72e91254b272bd47c2a51ce4950581b79b6ee8d68175",
+   "png_sha256": "f80894b6abb281581e6612b67e692e74dacf0f36498448884a0c09f7a767af09",
+   "native_job_id": "6ad47a2d000019370000002200000022",
+   "created_at": "2026-10-18T07:40:03Z"
+  },
+  "shonen-battle-effect-power": {
+   "sha256": "7875a90d23312d354ff11a56925bbf81b504234984c184450de4970d11c1c759",
+   "bytes": 245661,
+   "prompt_sha256": "02f1bf674e1e7c33f66b4bb5e8344938329344771be9e85fc48942724b8f5391",
+   "reference_sha256": "25a47c7b6cb27b740a5178e186464293238b246f5a7a38722aadabc26d6a80c8",
+   "png_sha256": "1ec4db9e95c93486a8baa6c402e1098ce0f5b1a6b4bd74a1a24e35f70b6a864b",
+   "native_job_id": "6ad47a78000019370000002300000023",
+   "created_at": "2026-10-18T07:41:18Z"
+  },
+  "shonen-battle-pen-classic": {
+   "sha256": "5d4a5bd8ed4ef85763fc7e3efddb36a99c7d488d4683f7539fc12d18b6b1ee3a",
+   "bytes": 205273,
+   "prompt_sha256": "fe856b6b3b5334749a426b05825995c41efba68db9537f185bc43fa5ef00eccd",
+   "reference_sha256": "e34f0c20f2b41045458ded607fe5e63cc0c96e8846f3be0fbbc1d550ec026aef",
+   "png_sha256": "eab68ae24faef04b791b31004ce995dc8314eb5a8ff3009e0e41e62fc33570f3",
+   "native_job_id": "6ad47ac3000019370000002400000024",
+   "created_at": "2026-10-18T07:42:34Z"
+  },
+  "shonen-battle-digital-modern": {
+   "sha256": "84d36d685c3c9d2b5a815be3a720eb0a04fe41112660733bb1cf5bfe0a270bde",
+   "bytes": 215404,
+   "prompt_sha256": "ed1c37f9eddb1615437375a4fcc98290f36f711eadce8251eb7f610266f61de9",
+   "reference_sha256": "f7b271322ece399f47f5a73928e65fac7afaec6daef533a67ca275133d609301",
+   "png_sha256": "791db5193a8a0ed41cb050c1f31e5431f373fd5be5ce879b530e3f6d39d181e9",
+   "native_job_id": "6ad47b0f000019370000002500000025",
+   "created_at": "2026-10-18T07:43:49Z"
+  },
+  "shonen-battle-dense-quiet": {
+   "sha256": "76640190eb8613fca15ccb0bdbbd29e5f4dd9e08c5f4f698eb61c0cfa7451608",
+   "bytes": 199143,
+   "prompt_sha256": "f2c64f4b0284659fc4264e8c307e52f5e012fcef6bbbce62dd747f6294ec9a1c",
+   "reference_sha256": "fb8c486dc96425ae8af55f3e4f98be8620a5376d7ffb42aac182de3dccf1dbb7",
+   "png_sha256": "09e346f8917241d9001f5f7fb266cf167e16deb7f0cd19ffedfa6540ad1f787b",
+   "native_job_id": "6ad47b5a000019370000002600000026",
+   "created_at": "2026-10-18T07:45:05Z"
+  },
+  "shonen-battle-dark-fine": {
+   "sha256": "255221d86fdc15b6246b5c8244b1fc0e4e916eec48bae749d27fb9eadd7c74ac",
+   "bytes": 172298,
+   "prompt_sha256": "ea58a1aaa736c13d04e89ae8fbcf81ca650ca43fabf7a05def71f3982eb53d5c",
+   "reference_sha256": "6272653a186186703408a317c5849a16d55a7cfffc5fa243a1b8b54cce8842d0",
+   "png_sha256": "6b991c92a223dd6cfbe188337f82a6391749df49b94520a14aaa3f289b9f758e",
+   "native_job_id": "6ad47ba6000019370000002700000027",
+   "created_at": "2026-10-18T07:46:20Z"
+  },
+  "shonen-battle-bold-black": {
+   "sha256": "aadc43221109a7f8115ac3164eca207d4940cd65c9b15c255cbd200e4c8ccfb3",
+   "bytes": 171146,
+   "prompt_sha256": "4159a20843fe2e39e4e34360c097dafe89b614b3470ae223c5c95f4d476ae25d",
+   "reference_sha256": "e26a8b1a59036a65dce1c2ea85c61ee1301778c9713a694085bdf5ec39f16964",
+   "png_sha256": "ea51d9bfd1f2150ae828631e3fd23c60ca2f519ead7b1a101c0b37800bbab903",
+   "native_job_id": "6ad47bf1000019370000002800000028",
+   "created_at": "2026-10-18T07:47:35Z"
+  },
+  "shonen-battle-sharp-stylish": {
+   "sha256": "5c0049ee471c8e0517fbfd21e63beb05370d24a4a516763c3087a31dd254da6b",
+   "bytes": 172944,
+   "prompt_sha256": "d4ae0a422630c940e2982db68499c6373c98b3e2b2892efd51b6e8a97401990b",
+   "reference_sha256": "713789e3cd37d64da4930a05174baeb3572fd6c11ca1cd39becede60248c4612",
+   "png_sha256": "d2e83cfb80b30993dde26f7a90265308ebc65cf1c8e9fc95ee2fbb5e84de6b60",
+   "native_job_id": "6ad47c3d000019370000002900000029",
+   "created_at": "2026-10-18T07:48:51Z"
+  },
+  "shonen-battle-cinematic-light": {
+   "sha256": "d824442ead24e03cf9a8f562caa0fc9d2a80630749b1d324e8a5a0d74d7c9e1a",
+   "bytes": 234800,
+   "prompt_sha256": "260cefa2f5e7231e5401059b7449556bc4c7085bbe8268c3ebae6eb9d38ec410",
+   "reference_sha256": "38aa8f57bdf33193678e7fa5e28d9736eb846be9d1c2f7e5901272748cebf06f",
+   "png_sha256": "0f9f0870294a8efc92af12ed63976dc7ebbcc15802de9eaecb9069aeec7783a6",
+   "native_job_id": "6ad47c88000019370000002a0000002a",
+   "created_at": "2026-10-18T07:50:06Z"
+  },
+  "shonen-battle-shadow-dramatic": {
+   "sha256": "ee6e8d7b4a6c5aec11677a00f64b9916825d606796298c87cca262c624ad1bb2",
+   "bytes": 194864,
+   "prompt_sha256": "f42b0e71e6d251270b04abd205e5b0e698f39ce86b6b6874cf3769617aa949c6",
+   "reference_sha256": "31dd34338b0e7c3b45f162c97d8e7a5ff00dc15efd36e69b12d6aa978da3791d",
+   "png_sha256": "c2002eca3246fd7021dcac18bdbbc1fe56156c9732fe49b6c2e993e7a05a43e9",
+   "native_job_id": "6ad47cd3000019370000002b0000002b",
+   "created_at": "2026-10-18T07:51:22Z"
+  },
+  "shonen-battle-nineties-sharp": {
+   "sha256": "f0d15229ee07908881b30900d9026982fe2e4387888e363ab00c974320ec7093",
+   "bytes": 199642,
+   "prompt_sha256": "744e8cf743432d78df5fbabeec863f883a779477f7e58ab7eeea0fba0e769af2",
+   "reference_sha256": "de2662f47f9c9543cb6e4343d5af06b7b2cc0eb9e77ee8136f7cb085106b9d61",
+   "png_sha256": "7d02d5f40cbbf505b5cb6d912b95a12f74c1347aadd6a672814eaad2a85c4b4c",
+   "native_job_id": "6ad47d1f000019370000002c0000002c",
+   "created_at": "2026-10-18T07:52:37Z"
+  },
+  "shonen-battle-ink-splash": {
+   "sha256": "618a056edeb38f3c699b5a27b1f5f2cae04f69b9d99d1ee6c8d3b358243120e4",
+   "bytes": 189884,
+   "prompt_sha256": "7a13cb4b82826eaf9b17788baaa4375635af0e091d12a26e65c919f56a2a327d",
+   "reference_sha256": "2db92fc38bd1f3f019f797c30d80368ee4a331ae63d52d8567790ed8bc70146b",
+   "png_sha256": "b49a7f8ec958eca6c16eb213538e598703fc260129206e0ba25340422674ba56",
+   "native_job_id": "6ad47d6a000019370000002d0000002d",
+   "created_at": "2026-10-18T07:53:53Z"
+  },
+  "shonen-battle-tone-layered-hot": {
+   "sha256": "7e9f17929f0329fbcb582fd0f45960922056bdb2bde054a90775c16e76f5d428",
+   "bytes": 217159,
+   "prompt_sha256": "d9382bba4116fae05b9053bd22a950fbfa8bf757e15fa4436c11b13ba724ea51",
+   "reference_sha256": "974e0df094530709f16cc5563584af097ad85e4724076a3025f34ba489a0c5fd",
+   "png_sha256": "c1569ad182deba887fc5a93152b3f05afcdaab0e329e294b82cd2a5044954e59",
+   "native_job_id": "6ad47db6000019370000002e0000002e",
+   "created_at": "2026-10-18T07:55:09Z"
+  },
+  "shonen-battle-american-comic": {
+   "sha256": "0d57ec8011578987553661673170726a61c068fb8c69feb34a5716c9c4ad02ff",
+   "bytes": 205795,
+   "prompt_sha256": "2679d04f965cc2599bff74f1cbd26377077e8c5bd51218ac3678367115f1844a",
+   "reference_sha256": "ba35cfa591f5d41d78d21ed3c81a045444f71de5f4218d384c4abed9d748cae0",
+   "png_sha256": "5574c3cba1af14458ca0d20d0fecb8b1b4a757408cbc60358c6c6352515525a7",
+   "native_job_id": "6ad47e02000019370000002f0000002f",
+   "created_at": "2026-10-18T07:56:24Z"
+  },
+  "shonen-battle-realistic-dense": {
+   "sha256": "a61e3532e0f5127d8be08aeafe9cfb11a407d3230869cb119e634358290d6c3b",
+   "bytes": 166642,
+   "prompt_sha256": "d476614dd0bf74718f05f0728582d0c1bd804c08af5ad3c0877866988dee67cb",
+   "reference_sha256": "533d03f330c27d2419a13aecde74579c4a51224cb5ab0e9a61959d21344dcffc",
+   "png_sha256": "c2410f0ccefbf6fa8139af9a9e54838025f2039e2704d1dbb961606a330b67a4",
+   "native_job_id": "6ad47e4d000019370000003000000030",
+   "created_at": "2026-10-18T07:57:39Z"
+  },
+  "shonen-battle-brush-wild": {
+   "sha256": "36536532f3e85c892fc8d42b512ef8cb3b4a9b40df3ab1c988d66d05e44c16a4",
+   "bytes": 204439,
+   "prompt_sha256": "8b0bd412b5c350a46fb06c35114ec8628a025748e32048b41e15d5071df6b919",
+   "reference_sha256": "57914cf5897af479ed950a8adec6da4cd52f8555e7ef1ed75f31c2bbb1c305c7",
+   "png_sha256": "5f0dcef11a30e045bfd1aca040f7ff1eb8897a5551a21ccb739022936f1191ad",
+   "native_job_id": "6ad47e98000019370000003100000031",
+   "created_at": "2026-10-18T07:58:55Z"
+  },
+  "shonen-battle-scratchy-dry": {
+   "sha256": "3c5b898f41b1f66c5a2303ebb1aba7fddd192bdc3870173260a6398d5b4bd5b9",
+   "bytes": 193152,
+   "prompt_sha256": "5381679f8d93359f39d20be2cef85f82ae5a641070e63b91cf0669ab6f390d96",
+   "reference_sha256": "4da1f934564d69fc6e5ac38e12f64da9681a5a01980c1628791a21e9f239a9cb",
+   "png_sha256": "6fc2bf16528969069d2d968b3143442c044c9dde517ffc9fb0c57665b4d0181a",
+   "native_job_id": "6ad47ee4000019370000003200000032",
+   "created_at": "2026-10-18T08:00:10Z"
+  },
+  "shonen-battle-muscle-hatch": {
+   "sha256": "3473cfa93786f7336baa43d9cfe788c9b8c154dfb119433a2381b60dc5fd9213",
+   "bytes": 215698,
+   "prompt_sha256": "b804eca9f5c4c279a4b3f163873da12dfd17dd3c67ad12bf831e5519d22daf8c",
+   "reference_sha256": "2e96cefd7c606c1591154401fb04ffc0775f58d68a6c4cc24bb73c7afcc47d16",
+   "png_sha256": "d728ff3cf30a60bcd9c3b9ebb56da90de99a4b3122b568ea71535e6f8a71b907",
+   "native_job_id": "6ad47f2f000019370000003300000033",
+   "created_at": "2026-10-18T08:01:26Z"
+  },
+  "shonen-sports": {
+   "sha256": "50efc4809df73dc64a255515831514339d96424e329e81fd531141a027efb154",
+   "bytes": 214448,
+   "prompt_sha256": "8f46e7784687106db342b35e888c6c54f34f619f401083746b85afe648507946",
+   "reference_sha256": "18b88b981c766b1f3c76884bac810def54f1109ca27815d8687899b371b245cc",
+   "png_sha256": "73782411198590aedd5557941dedd7f6695734d63925bbd10ba9ed26c2d7e73e",
+   "native_job_id": "6ad453f80000181e0000000400000004",
+   "created_at": "2026-10-18T04:57:02Z"
+  },
+  "shonen-sports-chibi-comic": {
+   "sha256": "ab08537a7cdb0fd3eee5b29205b214658610f688d8e075a06ddca440ce8dcf32",
+   "bytes": 254574,
+   "prompt_sha256": "7256a88d82b58d9866241a0463a9c3fc1399f8b4eb2131aac10b602116c75921",
+   "reference_sha256": "150f1bdae83137f0463bb28540d1109fb1b42c3a7027921f2353105e25a230f1",
+   "png_sha256": "e67856e1292da1e7ec30a7dda975c95287a93d69e3c25f4edde93036a7f97648",
+   "native_job_id": "6ad47f7b000019370000003400000034",
+   "created_at": "2026-10-18T08:02:41Z"
+  },
+  "shonen-sports-retro-showa": {
+   "sha256": "f294a5f90b9eb303852f1a4f2aa88f2a91344a6d13bfd9819cc39dcf5e438c64",
+   "bytes": 258828,
+   "prompt_sha256": "46af9e72fd1ff76ab5140c75fdf1ff762397f84477757f65cd92eb5245f93f04",
+   "reference_sha256": "5c72f973db7a83240088de26184d7d7db550036ed776c8de95e9620d68b1f996",
+   "png_sha256": "d1744d92f3b491aac91a7db5a993d7004a5426d57445379cda80f8e52dd881ef",
+   "native_job_id": "6ad47fc6000019370000003500000035",
+   "created_at": "2026-10-18T08:03:55Z"
+  },
+  "shonen-sports-fine-clean": {
+   "sha256": "f36dca2ab4b3dac65b4dbcd526974d1dfccaad6c7420fd59f0fd47e15456a102",
+   "bytes": 238765,
+   "prompt_sha256": "eab59dd2dc14e45e573af5a941bb9f1c4f002aee64ca1901d1718330ba3e79ef",
+   "reference_sha256": "69514d758e074f462dd1e0701cd82f00c280dd626b28baef6699239a20ece720",
+   "png_sha256": "3dc400abc924964474fe870b4eb0c842787676fbd84ff6a207bba4816fda5ea3",
+   "native_job_id": "6ad48011000019370000003600000036",
+   "created_at": "2026-10-18T08:05:10Z"
+  },
+  "shonen-sports-round-eyes-bright": {
+   "sha256": "873d815d27bf1a1c5419f9bac58aafbe8168e4e25a2a8034b5c0d5a1e71cf510",
+   "bytes": 253236,
+   "prompt_sha256": "89f60ef93d4a4ce108d077998f8dede0d13fa0968e57c5caec512085d97f761c",
+   "reference_sha256": "e39c27bcb9410942f36138004b1f1102e486f8b70ed169904e4fe93deee1d9ff",
+   "png_sha256": "51beb4a6bd6c724cf2c5ad2053a3d4c751a5eabe8ccf6b7096ae27869d6d107b",
+   "native_job_id": "6ad4805b000019370000003700000037",
+   "created_at": "2026-10-18T08:06:25Z"
+  },
+  "shonen-sports-rough-energy": {
+   "sha256": "ebd1bc7ef4333042319ff5b1f7fb7a67aaa5ed89e5fb2a96eff9b5e6008603aa",
+   "bytes": 251616,
+   "prompt_sha256": "6ff516513a574cbed3c48908b4e0830ba9578463cc5d4f76f0617de97d91602d",
+   "reference_sha256": "c1ecf74f960906f63c9e339ff716f0d96185c13a1b6cb7cccbeb4e796655fff4",
+   "png_sha256": "2c68d2ca2a1c0e2b5c53d4c185eed15c9ba387cf87d227a8890506e2ed47da00",
+   "native_job_id": "6ad480a6000019370000003800000038",
+   "created_at": "2026-10-18T08:07:39Z"
+  },
+  "shonen-sports-comic-lively": {
+   "sha256": "e08203915152303e853ee47b1a656291c76d8ae0194d658d9fe028fa22eaed16",
+   "bytes": 231019,
+   "prompt_sha256": "d54225251e5389ac72ff7e7d8c5499a74a2e87d0c6ef3d96e359e5d73f26a1b8",
+   "reference_sha256": "4744775d8c2058cdb3a856182297aa3c317e60390ded8998800702f2e4fa91e5",
+   "png_sha256": "20766d28c6bf97523c9d147a5f5c752999373bb2f32854d5469efb38a52fa179",
+   "native_job_id": "6ad480f0000019370000003900000039",
+   "created_at": "2026-10-18T08:08:54Z"
+  },
+  "shonen-sports-graphic-flat": {
+   "sha256": "066ef87bb9039fbe38b73851358ca77dbd457fc505127396570354de7951a339",
+   "bytes": 206689,
+   "prompt_sha256": "439d14b87c471dcc980c52c01b47bc760c5e34e6b282bd5d99c57171f5706923",
+   "reference_sha256": "ffcce3c7ec99e9bd1b589955bf9e8b429052b3b2e2ec65814d6beea38ec9cc03",
+   "png_sha256": "bf2ab0d6d4257c27102799cc8ff47abe2ecd9a5e1d4a9ecbd0d2224e4e30fe61",
+   "native_job_id": "6ad4813b000019370000003a0000003a",
+   "created_at": "2026-10-18T08:10:08Z"
+  },
+  "shonen-sports-fine-tall": {
+   "sha256": "b08ca9e2e61fd5a471befe83e186ed251d0714684d94fe3f0431f6785c93bfb0",
+   "bytes": 272912,
+   "prompt_sha256": "9f292cd08a116cf565300c8c12d5aec89e911cf227d21b866740819a24dcb173",
+   "reference_sha256": "d72c21dbf320b8227b7fe19e2c6088285e666a30c58e5c9a61be244dd961ac0f",
+   "png_sha256": "4c4a25691a3f576af92750ba28ad6e476fbdbadaf52a70f1085e35d27bb0d91f",
+   "native_job_id": "6ad48185000019370000003b0000003b",
+   "created_at": "2026-10-18T08:11:23Z"
+  },
+  "shonen-sports-effect-power": {
+   "sha256": "ef532628e5e694ede3d4e11e5ab02e8065c191354aaae1ca1cb9b2b6cd8c4d7d",
+   "bytes": 231282,
+   "prompt_sha256": "c5e61b98ad020f9cd14b81090f25b23a9fc672f5ecffae065124766d39b1e7d0",
+   "reference_sha256": "3cb339192a3a6a332b85af808a1ebbd7c5d71ec8bc09dc932305199adde42025",
+   "png_sha256": "fc23c8f8ccb20fc3d2d2a7a8c8dfbb7b0586d297474036df9cad0d9fcad9020f",
+   "native_job_id": "6ad481d0000019370000003c0000003c",
+   "created_at": "2026-10-18T08:12:38Z"
+  },
+  "shonen-sports-gentle-soft": {
+   "sha256": "295cd78a08255bf5e507779a0333be53cddd8fa80248de10570aca879987796f",
+   "bytes": 236220,
+   "prompt_sha256": "11b9dbe5304a5cd18c7fe4899f8a44071b900dfa4657bc71a9f7e6782961da9b",
+   "reference_sha256": "ada01c68b33e1425324eab2a65584b84abf64a121e43710e06ec81933454f29d",
+   "png_sha256": "2e80eea64e6271c738251e79c8c1355326841fff79cb5f136f34c83ac452c627",
+   "native_job_id": "6ad4821b000019370000003d0000003d",
+   "created_at": "2026-10-18T08:13:53Z"
+  },
+  "shonen-sports-pencil-soft": {
+   "sha256": "eeb40899300bf91162f24ef6a4ab5ad98f467035755f730076bf6e07a14aad45",
+   "bytes": 230111,
+   "prompt_sha256": "4461602589abd461b1da7c7d13e2dcc854095124ebd903526edfa3c9e861799b",
+   "reference_sha256": "84b3a00af04f27cc21ee2f193ebb83d246c2e4f53d53b674d9a6b5fa7559c63d",
+   "png_sha256": "4e0275be41575d58a47afa77ebd17014459d127c132d303d2b668d4968aacc7d",
+   "native_job_id": "6ad48266000019370000003e0000003e",
+   "created_at": "2026-10-18T08:15:07Z"
+  },
+  "shonen-sports-sweat-fresh": {
+   "sha256": "12568627860a6303e9fc9dd2ae36411c4253b083ead8503cd16f331ed4d87c32",
+   "bytes": 239914,
+   "prompt_sha256": "f4a2383524675b5a3a3a23f0f36f162de3a17a87ee5049ead3963ba1bcbbe907",
+   "reference_sha256": "7b901af65598580185546d4c94c9a826609e8d6d01654a581dbed00b5c060611",
+   "png_sha256": "a4fabfd65e7e92047600d38d2419f81ff26a7c2bbca0aee84b288697da68c322",
+   "native_job_id": "6ad482b0000019370000003f0000003f",
+   "created_at": "2026-10-18T08:16:22Z"
+  },
+  "shonen-sports-pen-classic": {
+   "sha256": "b1998f3f03b9e28f84269b93d7a1b7529195a4bf50239e400884df342284b493",
+   "bytes": 215262,
+   "prompt_sha256": "a9a425ff0055861c07adef47a786fe893b6a061cee952c54d499da463e02135b",
+   "reference_sha256": "26eb1c0f1c74dbd14751be317a910b823e3a83718090c1f49cb927389fa71ab7",
+   "png_sha256": "0f8f3483013209c1f6a846eb178f436980b7e36686896165bc7f110a2e576cd3",
+   "native_job_id": "6ad482fb000019370000004000000040",
+   "created_at": "2026-10-18T08:17:36Z"
+  },
+  "shonen-sports-digital-modern": {
+   "sha256": "590268fd068d5462067a48053f46313390404c117d9efe0e6891942a6ac9615a",
+   "bytes": 201602,
+   "prompt_sha256": "8bb0ba0c1c9c4e4904d6e51b8ee83f946afcc4934eefe412ff83e759a8fb53cf",
+   "reference_sha256": "92122fcf60d1a1f699e9e75674249790a50a9514a15a09123f7e77e7a2ba79de",
+   "png_sha256": "2b3cce937b173ee90dea77212b743b8684627b0a9f15333cc40c1acd1f1d5fa6",
+   "native_job_id": "6ad48345000019370000004100000041",
+   "created_at": "2026-10-18T08:18:52Z"
+  },
+  "shonen-sports-dense-quiet": {
+   "sha256": "7e2de0bf4bb5188d4dfe6fa7301706e95542c6bca802b820d5fada40108d586c",
+   "bytes": 235097,
+   "prompt_sha256": "66dcc2528c8986259b6722fbc2b5174f186491ac896c3b4a94d5c7a6f327a4e2",
+   "reference_sha256": "b10bcb4af4684e079c80c5c8fafe516a70200b3e05ff56e6c2c6afacbbb82d83",
+   "png_sha256": "2b42d712de6a77336671ce7e89fbceec5b03daead7a51dde9bb2a65fd49c6e90",
+   "native_job_id": "6ad48391000019370000004200000042",
+   "created_at": "2026-10-18T08:20:07Z"
+  },
+  "shonen-sports-bold-black": {
+   "sha256": "7a2106180daad6a366854b2c3f2fc387281fb13a5c45cad5d47a1a7f0dd089ac",
+   "bytes": 225234,
+   "prompt_sha256": "cba06fcdb47e4858fac3edd11fab2b33a34af06ae04a04e19db183709513e909",
+   "reference_sha256": "499b31cc488f153f02d8ba251bc3d8d8e947e279d469406eb00d6307d7d81884",
+   "png_sha256": "b632da4816b4517cd2f546b45d70c752cedd0903722e47c45e416189e30f71ea",
+   "native_job_id": "6ad483dc000019370000004300000043",
+   "created_at": "2026-10-18T08:21:22Z"
+  },
+  "shonen-sports-sharp-stylish": {
+   "sha256": "047f85cb854fc275dc1177645dd7e9055bce903cf56df4677a210adc4f4c6156",
+   "bytes": 184942,
+   "prompt_sha256": "769759ed5bd22aab6d847f50f6bacde87743c66adf474220ed294ecbfb8f49d2",
+   "reference_sha256": "0217ff59c16a96ee2bd1adf7467d5bd96048281d7d7dd84ad50f39af5365d156",
+   "png_sha256": "8c312be7dd95b9e332f7b136452ffb512b62a40ed3e369d319e61a03acc17873",
+   "native_job_id": "6ad48427000019370000004400000044",
+   "created_at": "2026-10-18T08:22:36Z"
+  },
+  "shonen-sports-cinematic-light": {
+   "sha256": "287d3723fef0ff337fa56f3648e2812168467595e375dbd040b7ad8d30e640ff",
+   "bytes": 233701,
+   "prompt_sha256": "89d805d8b0158a70c6ef5cc5a0fb3caa56eb337e58fe1616636fd0a371c6613b",
+   "reference_sha256": "98d30c7e0c14a9a0491d2a21a56224956492690e693b75ed961e8262ff2797ca",
+   "png_sha256": "2bcec14002fe3091ce47f2391bee5e0267593407fcd21aff2a6543df2af698d2",
+   "native_job_id": "6ad48471000019370000004500000045",
+   "created_at": "2026-10-18T08:23:51Z"
+  },
+  "shonen-sports-shadow-dramatic": {
+   "sha256": "4c08ad47e91f57f08c606671bd4687ab5e34ee5b0faadd8a5fbbb51cb1da6e34",
+   "bytes": 199288,
+   "prompt_sha256": "759b6c8a8ffc69b15041b2d40f9dcc6d6f5d66fc4317478e260191a3c2c21174",
+   "reference_sha256": "2904015aa02f006324fb4465bd42abcdd5d467e78d2249f1b7f4128175bd823b",
+   "png_sha256": "7483d4960f666cdbd23a9f7da961e445f971f21420345eec40537e62135b2e95",
+   "native_job_id": "6ad484bc000019370000004600000046",
+   "created_at": "2026-10-18T08:25:05Z"
+  },
+  "shonen-sports-nineties-sharp": {
+   "sha256": "9197fd673546a1226b0dea7660fc0373b9061f17c6424fab2501e495ce77dc80",
+   "bytes": 295195,
+   "prompt_sha256": "090b1bc62e9085a9ce180a0877f344a63a62fe383bef7a9280f09aff27fdeaa9",
+   "reference_sha256": "4fcb5d64672fe3d22cfb4a5c1b4efa72a2ea622755ad7f285b97ab8f09a3c6a8",
+   "png_sha256": "3a78c632ba2c40405f6846a259f996765cfa8a90b1c32fa5f01903ebf1814262",
+   "native_job_id": "6ad48506000019370000004700000047",
+   "created_at": "2026-10-18T08:26:21Z"
+  },
+  "shonen-sports-tone-layered-hot": {
+   "sha256": "5d67f011632056f8a5974e2d4ecfde1607bc0e6797a4b55d2e18706598ba34d0",
+   "bytes": 238071,
+   "prompt_sha256": "f26f9cacc910dfdcbf39aa9eecb629a9fc605b2af586225d9d8ef97a216877b3",
+   "reference_sha256": "58c82d19466195717e5285dfe99aabb1c86c4bfd4bd0a377eceacffb9bf60fbd",
+   "png_sha256": "0ab7a9769f5b8ef94d998f362920c2d64eb4ae66aad69d5fc57fda9f28869bf9",
+   "native_job_id": "6ad48552000019370000004800000048",
+   "created_at": "2026-10-18T08:27:37Z"
+  },
+  "shonen-sports-realistic-dense": {
+   "sha256": "bb22b3e29ac7c39a109f262c23d2247c4bc11410c134806fa80fd5fcf5111dfd",
+   "bytes": 228897,
+   "prompt_sha256": "1161e8115e6dbd95137ed7c72f72ab286cd100c9f4db4e8b04e5a0502a6c011b",
+   "reference_sha256": "4417203cf3c925a4a0cd4a36f1ec01d29d41f5896457acc74df851c3d20345e7",
+   "png_sha256": "b58b0bc80447927660ceef57e2daa9a816645c0ca8404561c1538250ee3bd329",
+   "native_job_id": "6ad4859e000019370000004900000049",
+   "created_at": "2026-10-18T08:28:52Z"
+  },
+  "shonen-sports-muscle-hatch": {
+   "sha256": "c07d478b7275af2b422b62ac694d00c040b87f38d7ea87b2a97b0172e17d2245",
+   "bytes": 225293,
+   "prompt_sha256": "67cb124dd88698180cf1b3714b1e368ea31e0241fb15e343e71a5bc825832144",
+   "reference_sha256": "2a5fc22ec1216bf34c0e51aae02c4a8de573a213ea75411efa295f49543b42e7",
+   "png_sha256": "51c280060afcab0f88736e960ebd49f9a3b274808f69c931e28456ade0686cd7",
+   "native_job_id": "6ad485e9000019370000004a0000004a",
+   "created_at": "2026-10-18T08:30:07Z"
+  },
+  "shonen-sports-muscle-mass": {
+   "sha256": "536c526904cbebd55e6ca13815316c595a25252d68612476ed744d1bfd037cde",
+   "bytes": 219483,
+   "prompt_sha256": "cf83a530104fdf9f2a26eb01daeccffccf1a896cddc8acbe89fc899d6c729725",
+   "reference_sha256": "9b187db1010b105d79a8d744139bc46e9ba2684f9201c80e76ec4ed42c3bb136",
+   "png_sha256": "f57f7335c5d18bb38d0c80874124a789f7c9ddbf8500e11df2005fb49a62b470",
+   "native_job_id": "6ad48634000019370000004b0000004b",
+   "created_at": "2026-10-18T08:31:20Z"
+  },
+  "shonen-romcom": {
+   "sha256": "6baf661bd872d52fbf1634eccc260584c00329e6368bd03190046c90347f66c4",
+   "bytes": 228583,
+   "prompt_sha256": "1861e3b86c93838ed25fe0a75c95e763f23ba5f0195ef7e380945a3e39f5d293",
+   "reference_sha256": "3517191e4ab815f611a42c68801e899a12f3e96d0cd196c4232da1848aabcb9d",
+   "png_sha256": "66d783711790f05ccdef4604c9fef73f749e3d65d653d4b7a0db94f985f30d28",
+   "native_job_id": "6ad454430000181e0000000500000005",
+   "created_at": "2026-10-18T04:58:16Z"
+  },
+  "shonen-romcom-chibi-comic": {
+   "sha256": "d4c25c732a9a9270b5bb1a658cd7e45fa030ae5eb2671dfa325d69857e67a7ee",
+   "bytes": 185280,
+   "prompt_sha256": "8aae81022be1344d2652e0fd26213aea719a616e3d79f90f9530ef48b8181392",
+   "reference_sha256": "398e811529fb1f6a688f5903c28caad6415c70d990756220957c00640b17ba15",
+   "png_sha256": "15f380eb468977aa8f480387d28d66bfa081f82620583b2c03fff362b4fe75c7",
+   "native_job_id": "6ad4867d000019370000004c0000004c",
+   "created_at": "2026-10-18T08:32:32Z"
+  },
+  "shonen-romcom-retro-showa": {
+   "sha256": "82426b21a22caf7893e7150e3d0e62e635cd34a47882376835e7e1b47205b652",
+   "bytes": 227503,
+   "prompt_sha256": "a5f889910718a0b7fd456c1f9104f1e3efc5e28256ebb854eb4c1e34f148b08c",
+   "reference_sha256": "1b0bc67655751a423fb0484712924d01fa0aaa3f7c9c10f067b2de0394f8d95e",
+   "png_sha256": "6f61bddefd0b64db05f3f087e083a825867235f6ab06b9d9ff368b6442aa1102",
+   "native_job_id": "6ad486c5000019370000004d0000004d",
+   "created_at": "2026-10-18T08:33:44Z"
+  },
+  "shonen-romcom-fine-clean": {
+   "sha256": "579b8cd0d9be07bd263e9470d6827f2591a20af987b4903bf7c02716ebaceaec",
+   "bytes": 156464,
+   "prompt_sha256": "5babc81402616546583ab568cdd65868392adf827419af5ca3bfa7a14fc66235",
+   "reference_sha256": "c7cd8534bcd43a3ac881556f08a07edd93974c02d64edcdf3ac24455bcdc52d3",
+   "png_sha256": "29ed529f1a969fc41ec731dd2be734845917a8ba0f1a457c6e89c9c148ccac13",
+   "native_job_id": "6ad4870d000019370000004e0000004e",
+   "created_at": "2026-10-18T08:34:57Z"
+  },
+  "shonen-romcom-round-eyes-bright": {
+   "sha256": "6a4f154487a77a96de30353454983c3f71a09914417ef2df39a7269f03341f73",
+   "bytes": 242164,
+   "prompt_sha256": "b6e71af43f313ab7fa7fdb7eec24d983bf73392798920ef91850e2f6e2e76432",
+   "reference_sha256": "2425ed02acd34f88b359e35d19460c545d7360b7e43ce0c8813051110f84c9a2",
+   "png_sha256": "c3a7389c41716bbbc7ee5e9fec3632d3ee7898bb26bf8345ecb238bf4332ce98",
+   "native_job_id": "6ad48756000019370000004f0000004f",
+   "created_at": "2026-10-18T08:36:09Z"
+  },
+  "shonen-romcom-rough-energy": {
+   "sha256": "2813c599eaacfa5a7d7afae419864e3b309c9acbb55cddf7099bc34e5eeaa6c0",
+   "bytes": 216494,
+   "prompt_sha256": "d12585cc38b5e48cf8ee72d62381c99f2398ca94000bd13f084e2017d376ba0b",
+   "reference_sha256": "a21085b9c831b263dacb83373b2ed36d0e4fc17a0d85baf40ca27a1676c19566",
+   "png_sha256": "a58018f32ef56678be1b84a0733828211823cf6fcde8c93f174934b8d2d18399",
+   "native_job_id": "6ad4879e000019370000005000000050",
+   "created_at": "2026-10-18T08:37:24Z"
+  },
+  "shonen-romcom-comic-lively": {
+   "sha256": "ebbb29a12de92db819931bcf73413933589eabd7e25f5fd76ae5da41733cf1de",
+   "bytes": 159852,
+   "prompt_sha256": "530b63c607a0b48fc8910c91d01321a4e1089c1258524de6e9f98ac342ec0ae3",
+   "reference_sha256": "b5a7c8435f70a2bf29d2d410d709b2ff0976137c85bfdfd18e9a4b5e28a7cf0f",
+   "png_sha256": "5a8d41fe4fd230af55c211214949ec33eea05bfc949bc860a48052e91779310b",
+   "native_job_id": "6ad487e9000019370000005100000051",
+   "created_at": "2026-10-18T08:38:38Z"
+  },
+  "shonen-romcom-graphic-flat": {
+   "sha256": "033b214ad177e746b7080db8dd2038250ea22981cd86acaf0ddf8411899c53c6",
+   "bytes": 117135,
+   "prompt_sha256": "a5a72c41c1000012263c61937b9ea60d3c9e921ff7dad14af82d6f5a13fb247a",
+   "reference_sha256": "4a70f56f77387e826173b77c6c1deea09410167d79bc7e2b9a6b103b284f52a9",
+   "png_sha256": "f2102dfd565e89540fdd0a60eb843573fc59acf24edbe84abc7393ee21480615",
+   "native_job_id": "6ad48833000019370000005200000052",
+   "created_at": "2026-10-18T08:39:51Z"
+  },
+  "shonen-romcom-fine-tall": {
+   "sha256": "05005385593e0902e91a4cebbcfaf5900d1e64063af582e0582f772f5dd5d361",
+   "bytes": 142382,
+   "prompt_sha256": "3bba244169fe0d53c0cab7e3f61f5497a76622d2839df8bcbc5d92038237770e",
+   "reference_sha256": "84621b3fd91b07fffc1e12e0dfb14fa963a68dfc40cc77602a3895e5c7e14da2",
+   "png_sha256": "ed0e2f01f745ca41d36be0c18774b607a66a1e33ac2c145aa9b946b735e224be",
+   "native_job_id": "6ad4887c000019370000005300000053",
+   "created_at": "2026-10-18T08:41:03Z"
+  },
+  "shonen-romcom-effect-power": {
+   "sha256": "37c78637d5ce19d6a2232de4863834ea9c175abb206d73dd52c3883ae730fffc",
+   "bytes": 206040,
+   "prompt_sha256": "fb39df3682ce34c1635a4307b9f9c0db1828e097e8f2c1050af0ffe27388150d",
+   "reference_sha256": "7b243fbc50299c77f63c8878a67cee85ac1a60b51fbbe3ce08ae3670fe61fb70",
+   "png_sha256": "96bd93585474ef65f10a78280d0f54cd40afb308ea9308015dd96c0f2afea9e6",
+   "native_job_id": "6ad488c4000019370000005400000054",
+   "created_at": "2026-10-18T08:42:15Z"
+  },
+  "shonen-romcom-gentle-soft": {
+   "sha256": "758bcbb7f2bde156c918b2551671b0660a11e4b2c9574d29ce5af47ecbd54717",
+   "bytes": 165324,
+   "prompt_sha256": "9f8be684c5173630d65adca5cf7225c3cd287b22d9a3387706031e3a202ff3a3",
+   "reference_sha256": "c6dc90a1eedad2749a35974ab3ef7de1265f6ca921874d07a4facc581e00413d",
+   "png_sha256": "cab4f0ac63f0f22ff3aecdc418d0ac30133831adff343427e5282274577a75ac",
+   "native_job_id": "6ad4890d000019370000005500000055",
+   "created_at": "2026-10-18T08:43:28Z"
+  },
+  "shonen-romcom-pencil-soft": {
+   "sha256": "be4ccf4663a6380578b0a3edacf67b8e568946095038322068a841e54e466a84",
+   "bytes": 161335,
+   "prompt_sha256": "1942a8c1f069d7ac16eefb827e010c339b9496e88b6644b087e68985e015cf60",
+   "reference_sha256": "bd822f60f927752555d4b14fcb57b3c9aeb50c4d6e6291777d2f90a68228511f",
+   "png_sha256": "99b4325438ef7c2fa3dec48c5902266b0533b5cbaa12240b13039ef537dd1dc0",
+   "native_job_id": "6ad48955000019370000005600000056",
+   "created_at": "2026-10-18T08:44:42Z"
+  },
+  "shonen-romcom-pen-classic": {
+   "sha256": "98ddb348217a2c5d9c822ab9a2f60bda00fc92ff309a6826add601cb3b9aeb7c",
+   "bytes": 202075,
+   "prompt_sha256": "442a5fb061e73d9e9db3b3025777b9ca49b445dc197b42449aa106fbf00abaf8",
+   "reference_sha256": "e1f6cd2240e79c22fd83a6bbe95e8775ba201c13543628e08cb5316c48b04ce2",
+   "png_sha256": "4a160129f382dd1412cdd00b529295f1aaa0b69b417213e01cb4ceeac200c65d",
+   "native_job_id": "6ad4899f000019370000005700000057",
+   "created_at": "2026-10-18T08:45:57Z"
+  },
+  "shonen-romcom-digital-modern": {
+   "sha256": "b20734220b18f47f1dcdd2fb7944589deb566c383f193c5fc1de53acea1d20c0",
+   "bytes": 203739,
+   "prompt_sha256": "df3ceace06db9d76b62cb5aa7c4775f11f867e61b1044cfc69c29b75984a8604",
+   "reference_sha256": "f6310e976821d33856f470facd14cd6dabfde219ea13f9e1956d42b6ffc54cca",
+   "png_sha256": "29cfaadc7b5466cc6b303cffcd22da40d96c159e2a0fec5b7cd8bf9a7a50b93d",
+   "native_job_id": "6ad489ea000019370000005800000058",
+   "created_at": "2026-10-18T08:47:11Z"
+  },
+  "shonen-romcom-dense-quiet": {
+   "sha256": "ff9d04e390ca2f35a157dbde4448bdd097035089c2fa04a2f9eec4f6356005c7",
+   "bytes": 125589,
+   "prompt_sha256": "6d952d5678146c00c862bb314b72dd5cbdb9edf0b50de654a464b4cfd10b66ae",
+   "reference_sha256": "c4947b5efc75e73221e4103e6e15f4aba1c5f5007767c44f3b19fc0336623eea",
+   "png_sha256": "40de8e3ca8a436d980ee7c49c4d56c7941a09a94d16e33750ecc50067571c554",
+   "native_job_id": "6ad48a34000019370000005900000059",
+   "created_at": "2026-10-18T08:48:26Z"
+  },
+  "shonen-romcom-blush-cute": {
+   "sha256": "9d651f635ab228660cfe33797a8bd2891746c2a13afb9983bae258bff1c8606a",
+   "bytes": 227762,
+   "prompt_sha256": "10519c6f94630174f0e97638c0c30e44983264aeb3d7daedd7e105b45b1f30df",
+   "reference_sha256": "1cf51dd53d5e4e68487ad5cc1270644907ad297ec2ddfc08e45e047ed22c08b3",
+   "png_sha256": "00f56ed4fb3c66ac9f75c972bc685b917b53a1e3e313145f71287b43973f73f2",
+   "native_job_id": "6ad48a7f000019370000005a0000005a",
+   "created_at": "2026-10-18T08:49:40Z"
+  },
+  "shonen-romcom-sharp-stylish": {
+   "sha256": "eb6bd24008849cc83b9ab3eee00ede159507203a92180a7e5c0ddb9941382b61",
+   "bytes": 226959,
+   "prompt_sha256": "bf0c13b23353d589b2291fc3ca1cb3dae9add4d983f7b86f597f8a3739a1b404",
+   "reference_sha256": "0aa1f3b1be89f8e662f868bf645357cb621ef56c5c1c6c4df4a28ea603196424",
+   "png_sha256": "f94aab6e6cb7a5770f77c70ab0b67ba74e8454dcd51b30791e6934f485cec0b7",
+   "native_job_id": "6ad48ac9000019370000005b0000005b",
+   "created_at": "2026-10-18T08:50:54Z"
+  },
+  "shonen-romcom-cinematic-light": {
+   "sha256": "cd7d283cb5bacce9430cb900e1c533cdcd2be7e3cb6a003b6303cf482aa3a8e8",
+   "bytes": 231457,
+   "prompt_sha256": "38b98136a74809a0512d848069cc3c5526193f1574230a0ab9e6a9fdfc3c05d1",
+   "reference_sha256": "0dca74446b2e3f903c35f1bccb1d5231bcb7199e4f12f166ed55a0f3db73320d",
+   "png_sha256": "0bb2f858118fd37de74a013ec0bbffdc0dc86b7cf8c5713066c4c4562fc482df",
+   "native_job_id": "6ad48b14000019370000005c0000005c",
+   "created_at": "2026-10-18T08:52:07Z"
+  },
+  "shonen-romcom-shadow-dramatic": {
+   "sha256": "37124dec4b24a6fe6e3c3cea1d0cf28cec5be277c1e117f53517687d710fe6fa",
+   "bytes": 188285,
+   "prompt_sha256": "864620ab3ac381265aa3d7b1ccdd0a93126e17fde451935bbbc3d84a525d9a54",
+   "reference_sha256": "4e2ba9238a7f11279b3cd421c2feb6f616e2169edf1c1b8c753a19731cec60e3",
+   "png_sha256": "f2a6aafa324dd70008c9bdc2a4dad1d836a0dfeca78681a1a2c89519bd524845",
+   "native_job_id": "6ad48b5c000019370000005d0000005d",
+   "created_at": "2026-10-18T08:53:29Z"
+  },
+  "shonen-romcom-nineties-sharp": {
+   "sha256": "1f60526b60ec1b534e203707355e6e3282bd9c864e6556e30dcbfbefcb21f30d",
+   "bytes": 221721,
+   "prompt_sha256": "5edfcb7d7a04eb4d90c6b4f4f0c3cce17c963fd824c4dca958d47c243236204e",
+   "reference_sha256": "3419afad1aa6a8f0873731ac856be3035cc101cd1e2ab50e0094df202ebfde16",
+   "png_sha256": "f0fb098f25920bf4dd918438b02a527c3888a81d4c4822f7e61191bac17154a9",
+   "native_job_id": "6ad48bae000019370000005e0000005e",
+   "created_at": "2026-10-18T08:54:44Z"
+  },
+  "shonen-romcom-realistic-dense": {
+   "sha256": "9ee014c8fe2b147521827784651d691c95b2e0bc86af94b3b53197ef6a99786f",
+   "bytes": 136638,
+   "prompt_sha256": "4099c37b9ccb6b2539e3c9bfd0d931795506d957425cf1e688b0b18082fe0349",
+   "reference_sha256": "6e2f2b7fe37fb537ffae124d6f7f0d23a0092eb9e342f3c170c6deeb06c169ec",
+   "png_sha256": "3c7795ced81714b7e651670cbd4ee3f528accac6bf876b4b0571c3ab7e8dd8d5",
+   "native_job_id": "6ad48bf9000019370000005f0000005f",
+   "created_at": "2026-10-18T08:55:58Z"
+  },
+  "shonen-fantasy": {
+   "sha256": "b2e121504e850d9ed01b4e39d1594ae409fc5f285ecff95f340eb37d0ef390b5",
+   "bytes": 107849,
+   "prompt_sha256": "5b7e114b8a77e079d4b47fcc93bd13746b36c12f89919ec0dbc464368723e2b1",
+   "reference_sha256": "4e7187c4057b0b1e44db3098d0d0943140fbbe17ae8412e02a5c6d988be83249",
+   "png_sha256": "78a7d3db4b4d7d76ec56dacbebd93afbe27a3bf2c1d7139bb8baa43d8dd68c69",
+   "native_job_id": "6ad4548d0000181e0000000600000006",
+   "created_at": "2026-10-18T04:59:30Z"
+  },
+  "shonen-fantasy-chibi-comic": {
+   "sha256": "0bdcce829d5bbb5bf765168cb213f61c9f373c105565036cf1d9e04699d7e96e",
+   "bytes": 107853,
+   "prompt_sha256": "c95c7b06eff4b5df22828b3f435a0e4e1ca3b140e9ee3c1fe02309295dc4a40e",
+   "reference_sha256": "3f934a5e8c7ef8a880d94bbc6195272e8e4fa53415b12f39ea7cc416dae24a69",
+   "png_sha256": "dc8e12ee2bbb61382f5f3824fb055594ea5a605e39dd1c6b8e29c8fbe61cd2b6",
+   "native_job_id": "6ad48c44000019370000006000000060",
+   "created_at": "2026-10-18T08:57:13Z"
+  },
+  "shonen-fantasy-retro-showa": {
+   "sha256": "11f760aeb5beed3c659c0d41f244759f65637ea11d60dff0ca3b6c09d725b552",
+   "bytes": 114972,
+   "prompt_sha256": "cc9cfdfd9df5cd42299fc0c33b792dd79dac10fef6d64df22bd6b2b5f9a6fc9b",
+   "reference_sha256": "b82d27d5ba199d1512975fc757ebe3682f978d9e336d125504e7758d624018e4",
+   "png_sha256": "bd62e53392ce33508e92b6c13c276f971c260e054f0e63a96b1b8bd8f0ceb3c0",
+   "native_job_id": "6ad48c8e000019370000006100000061",
+   "created_at": "2026-10-18T08:58:27Z"
+  },
+  "shonen-fantasy-fine-clean": {
+   "sha256": "f695d153db40ee24655bf9a70b961550f73466d8835021e1f06e9936c75a9f3a",
+   "bytes": 116916,
+   "prompt_sha256": "44ff33534a566ddeda91ce79ab819aa47be0b47203ad984d0f93e4d7d300d716",
+   "reference_sha256": "8ca8a6c705a881523e35183174092a6779c499be87385fd63f78ce323a067f47",
+   "png_sha256": "b1c717666dc94ee01c30a3510de4b6f69a8d0148a29d9eb7f6c453ab736028be",
+   "native_job_id": "6ad48cd8000019370000006200000062",
+   "created_at": "2026-10-18T08:59:42Z"
+  },
+  "shonen-fantasy-round-eyes-bright": {
+   "sha256": "3dc329305c51c83a6d27afa39708e2e8e4673d0e063b65a56e7fe632d4bb1f40",
+   "bytes": 147161,
+   "prompt_sha256": "6b5ee56429140d693e03033934b83b1dbd4cc716d2f464e54824e9df1b35ef1c",
+   "reference_sha256": "2bde2bfc1e700501f00be2fe22abcbd73d739a42ab65f6390a21a05cff4ebf98",
+   "png_sha256": "6d7f55b22e3c240e90fa8f4635c97973094f9fc3e551b9b3e29e5d7a6b8366bd",
+   "native_job_id": "6ad48d25000019370000006300000063",
+   "created_at": "2026-10-18T09:00:58Z"
+  },
+  "shonen-fantasy-rough-energy": {
+   "sha256": "6b1c9310c3d8efc309200d30845dca42d7bb062c8726f18b9b85b9985346d044",
+   "bytes": 157433,
+   "prompt_sha256": "f51763ae6a4bae902f8afb6efe2cc56d953a59614d937f895416661432e79c26",
+   "reference_sha256": "faa4a9b872c9e89c3a554f12768dab6fbab4646ccce8edd68a1c4da647247b2c",
+   "png_sha256": "c71999e454ebe9f65f0562aee6a324a130142ade9636a8ecca5f4a1a3260b359",
+   "native_job_id": "6ad48d70000019370000006400000064",
+   "created_at": "2026-10-18T09:02:13Z"
+  },
+  "shonen-fantasy-comic-lively": {
+   "sha256": "c9add0ac3b1b4c410782f74e56c5d0a3835eab3b0edca04732547e1efb86f499",
+   "bytes": 132166,
+   "prompt_sha256": "df7b88ceafdfe754ce698b8ba7eb939dc5e9a28b32081cd819571f9636e2bf66",
+   "reference_sha256": "1976b42e2cd13a958ca86da50179e1b3728d921e08fd497505b73b4c9b0d0754",
+   "png_sha256": "40ef6feea8098e60f7733474907bdafcf154575f39d6f9790ae50a87cb5f0d1a",
+   "native_job_id": "6ad48dbb000019370000006500000065",
+   "created_at": "2026-10-18T09:03:29Z"
+  },
+  "shonen-fantasy-fine-tall": {
+   "sha256": "2779a7272d97f2a2973b834434b341732e37a7e122636539d6e34c2f1fc323f9",
+   "bytes": 151447,
+   "prompt_sha256": "53fb6cddfba97dc284972ef2baaf3f3d01552a46aa84278bb8dfba0003ef42a9",
+   "reference_sha256": "b56780c70dacc971e44d924b74d19e0d69814b0b7cd680273e77d6bed451711e",
+   "png_sha256": "3f1d812ce9b569e0a0d99435441e4215e2e935d1162ca9f9b4787495094596ad",
+   "native_job_id": "6ad48e06000019370000006600000066",
+   "created_at": "2026-10-18T09:04:44Z"
+  },
+  "shonen-fantasy-effect-power": {
+   "sha256": "bf1ac5ddd359284bb473ad2a3d5b3c02b62ddd00ab2ead6b46e0355c8d1ffb4c",
+   "bytes": 139557,
+   "prompt_sha256": "c986a9cf903c4b3d423183ea972aaca679fc42786dcdb450cc541c58b8aab793",
+   "reference_sha256": "67290212a2b3647b150e2cc2d9366354e9712d24e68e28f06037f0068db569f4",
+   "png_sha256": "03d19dbd8332e8af3e62bbabd51c41bf753662acf625e5238d1a2f50df611c2c",
+   "native_job_id": "6ad48e51000019370000006700000067",
+   "created_at": "2026-10-18T09:05:58Z"
+  },
+  "shonen-fantasy-gentle-soft": {
+   "sha256": "ad1bfe06b1b9cdc5cc5b40ef6f590d0afeddef8da6125a2e7307cff72be9303e",
+   "bytes": 113547,
+   "prompt_sha256": "ec3cb1f7e362d0b5f8b6c09e469cdb27a9117929d37323c14ef5b8b3988d014e",
+   "reference_sha256": "8d2b87004b33055b7b17cb2b5d25550ab6b2b6003cadf76ab780db456b920008",
+   "png_sha256": "0a3bbf19f2e0597bb7e955c09261a89b2c5c824d55f7edca968bc664185b8647",
+   "native_job_id": "6ad48e9b000019370000006800000068",
+   "created_at": "2026-10-18T09:07:13Z"
+  },
+  "shonen-fantasy-pencil-soft": {
+   "sha256": "a8ffda3e4b29e191315f87abe622496ba30cf4e3e44242cf88cadfe01e43dd8a",
+   "bytes": 167857,
+   "prompt_sha256": "e62c7d4cd219f3e68da4b4c4f0c50bc3707633e15c9d48175f8dd66175400546",
+   "reference_sha256": "e3d690d9cc03acc42fad57b8394ab91b5710fbe3e37087caa0f2793baae03fa6",
+   "png_sha256": "754e7c2b0e00d7d26a5500bffc416c7c4eff1b0b5435b8e16365e57008d17014",
+   "native_job_id": "6ad48ee6000019370000006900000069",
+   "created_at": "2026-10-18T09:08:27Z"
+  },
+  "shonen-fantasy-pen-classic": {
+   "sha256": "7e3e24f3700bc15c375731d31f21a53e43106449f1b898f0128378274c220a61",
+   "bytes": 199683,
+   "prompt_sha256": "b898271e2ef6e05c6cf53cca4e7d9b01f0e9e4104cc975b6e77884e5964ec884",
+   "reference_sha256": "865ef405f82e69a9a4b1d100a6d71eec2efe3919b1ddec1bcfca96f6c42dea86",
+   "png_sha256": "6273ad72024268c0802a882ed3dd0c4b70af09d7b63c94d004555b1599a6c7c6",
+   "native_job_id": "6ad48f30000019370000006a0000006a",
+   "created_at": "2026-10-18T09:09:42Z"
+  },
+  "shonen-fantasy-digital-modern": {
+   "sha256": "9c841e248d1657e0889f4b62167551fa0480793f601f4b69b5c9ebe9fa21aec8",
+   "bytes": 158650,
+   "prompt_sha256": "8a20ea3b16f24600d3a06485476548033c443b671d288909d0e3902e29f129f8",
+   "reference_sha256": "07d783b122f873f34a9882a98bbdda8fef493f5eff02a1b3905f7098a2e1752b",
+   "png_sha256": "4a67cd2bd1f18b2a823a8422de60f6b57631c0b1731b03a837d0a689b56c0685",
+   "native_job_id": "6ad48f7b000019370000006b0000006b",
+   "created_at": "2026-10-18T09:10:57Z"
+  },
+  "shonen-fantasy-dense-quiet": {
+   "sha256": "4e833a2e3fdcf527b2131282e63473d344eda6f92bebb5d276b1a20fa35ea567",
+   "bytes": 121578,
+   "prompt_sha256": "4f1ed60ce594eed3f56859f726ed282183593bdf688215ed453b9adb453032a5",
+   "reference_sha256": "056e5a388990071622b09d4621d5a7f1544bcc9afaee95805f58d7801c111385",
+   "png_sha256": "0f475e3bf9d734c628898316e8db237cf769c2c6ea3d0f8f4f07c45e69fe69d0",
+   "native_job_id": "6ad48fc6000019370000006c0000006c",
+   "created_at": "2026-10-18T09:12:12Z"
+  },
+  "shonen-fantasy-dark-fine": {
+   "sha256": "2850a46107d768f46c469f438d98d75b66fdc460589a8c37f4321c9933bca1c0",
+   "bytes": 185360,
+   "prompt_sha256": "1cd3b3361d508a1a024169d559144186978a1098a56527b4b1e414865cd9483e",
+   "reference_sha256": "cd4a0dcdd0a5d374990eaf535598ad1c3e4dd644f69640967f1456f2aece4650",
+   "png_sha256": "349c338cea6e909de37fe403a1aa517ab9b6952d497390f204f55ef548fab4e4",
+   "native_job_id": "6ad49011000019370000006d0000006d",
+   "created_at": "2026-10-18T09:13:26Z"
+  },
+  "shonen-fantasy-bold-black": {
+   "sha256": "83be7d4754e379eb0bb102c8b8165790f0cae83edb61d4ffc0314684ca5ee1dd",
+   "bytes": 119914,
+   "prompt_sha256": "527d9708ddf5df59ab9bd146261e6197bfb46423d60418e20bf85e8751d05306",
+   "reference_sha256": "91f85ad7c8318d257715f2d72076d66f59e095e08da2744aaa1e484ce5bc675a",
+   "png_sha256": "9455e41cdf7ccd4394d22077a0659dce36c902f4eb811a74f65a635d3f6e9185",
+   "native_job_id": "6ad4905b000019370000006e0000006e",
+   "created_at": "2026-10-18T09:14:40Z"
+  },
+  "shonen-fantasy-sharp-stylish": {
+   "sha256": "123def23b064f992e9c1965d39f866d53007c63979c5ec68e9de7dfcaa14356c",
+   "bytes": 187417,
+   "prompt_sha256": "4bd4633f4dc6bfcf44be7c1f7ce95be29b3aa10145e6961080e8f6183d3a3887",
+   "reference_sha256": "6f9c07ff099908066f4eec9c1d0ac57a4b514a3d20ed4343a1ae32ac289dbc6b",
+   "png_sha256": "52ed9557384b4092aeb57d26bb848ee57251b734078640f57512249a2e24343e",
+   "native_job_id": "6ad490a5000019370000006f0000006f",
+   "created_at": "2026-10-18T09:15:55Z"
+  },
+  "shonen-fantasy-cinematic-light": {
+   "sha256": "20e86dc1415f91ce3ece830ae3447fb1b3b4ae83b6fe07f41563316f1e4633a2",
+   "bytes": 126152,
+   "prompt_sha256": "c2814154fb613007dac76f6e5e5658406edc4fa511bce8f09c3a04e67313aa6d",
+   "reference_sha256": "860fdcefe874fcfa83d0bddadcd66530e69be4af09a242b806f26e803c0703b1",
+   "png_sha256": "2e6fc63dbe9deaa6a823896a89201c49231dca500dd1b9a04edc9ea5d1042d64",
+   "native_job_id": "6ad490f0000019370000007000000070",
+   "created_at": "2026-10-18T09:17:09Z"
+  },
+  "shonen-fantasy-fantasy-ornate": {
+   "sha256": "a5b7ac64966013b349981018a4e6d137330765a0df4bb157b95d12ac76454a90",
+   "bytes": 120501,
+   "prompt_sha256": "9275ca3ed60ad9d6f38d5e8bccb46ac61964ab4d361af2b15fe386eef75efb36",
+   "reference_sha256": "9e0667b25d24b940457a50f04558ea1f3a88dba8f6f53fcf2e822ce134c0ff82",
+   "png_sha256": "be00e5e3dcc4d6df2f3f034e5ce8b5d448c28b6929d30e53e1d573d09a6519ac",
+   "native_job_id": "6ad4913a000019370000007100000071",
+   "created_at": "2026-10-18T09:18:23Z"
+  },
+  "shonen-fantasy-shadow-dramatic": {
+   "sha256": "c82e618ab31301af82c39ba7dcbc855b9bcd25e8e086081f5a6101301f2f7605",
+   "bytes": 210322,
+   "prompt_sha256": "181775d8989fb6548978ba77c755726130d8e3f9a7708597fe91163e1bb9dfc6",
+   "reference_sha256": "183fbb3439ff3c2ad2531784b423566c0015d5e0401f4cbff63940e510c06821",
+   "png_sha256": "2b0fbfdfb07bc5ef6002582199d1530ebb98b8575514f72f7e309fefa4dcd6e8",
+   "native_job_id": "6ad49184000019370000007200000072",
+   "created_at": "2026-10-18T09:19:38Z"
+  },
+  "shonen-fantasy-nineties-sharp": {
+   "sha256": "83f97c6905bc4f43a1b44e15748239f5a5fe4d448ec13052129f2fb105452de8",
+   "bytes": 141039,
+   "prompt_sha256": "abbac46a068e13e55db329a67cd2599b5a47018ba6c186f0ccf03433d498952f",
+   "reference_sha256": "73c432d4d5cb7b0148a7ca4a9189b894535e5d647bc09af4fda9584a63c6f3a3",
+   "png_sha256": "4ddc2d0d5759c82d159dcee9ee2b0c122021c2081bf9d0f5053350b468e83af2",
+   "native_job_id": "6ad491cf000019370000007300000073",
+   "created_at": "2026-10-18T09:20:52Z"
+  },
+  "shonen-fantasy-tone-layered-hot": {
+   "sha256": "a0a88fd453f9cb2c8a9e9fbe716cbe076f922ae97939e1f65e430f51722fdebb",
+   "bytes": 168800,
+   "prompt_sha256": "45e4d67305068e6533106ffd901c2fd3196ddb6836c153168b9b37738c25a746",
+   "reference_sha256": "39f8983fe10e3b676cf5d37366fe3292166c5e71b2fc231ca1d9693e971bc538",
+   "png_sha256": "0704b94882289dbeb3a917800492d29e5e3f087fad4f7199fc9b78ba836c91f0",
+   "native_job_id": "6ad49219000019370000007400000074",
+   "created_at": "2026-10-18T09:22:06Z"
+  },
+  "shonen-mystery": {
+   "sha256": "0d379926576e92875ceed2c937d762b73877fbcadc9ff1c5a37e9b35a04c95d8",
+   "bytes": 222409,
+   "prompt_sha256": "8b0754cb4906a23e2209a7e1252e58fed3699fe4d8732297267fba7205e166f3",
+   "reference_sha256": "ec9e947b45610d1845db3b1525dcee4da869f025c8b95718b05f994583671bf7",
+   "png_sha256": "b5d805d345659fac00c53b04f60873c88a97c9c54ca62f1d5d56c41afa174026",
+   "native_job_id": "6ad454d70000181e0000000700000007",
+   "created_at": "2026-10-18T05:00:45Z"
+  },
+  "shonen-scifi": {
+   "sha256": "66006236a8dabbf56ac224a66f8188267aa3541a4c36ab1a8b8450fdafd8039e",
+   "bytes": 118928,
+   "prompt_sha256": "a1c21b85f4b4cc41a3934d1da13acc51a08b521c23eaf037f695a66399382751",
+   "reference_sha256": "75556639c01b3110b0b6aba5e3cc49994249c8eb486f2748a45881d8f34472b9",
+   "png_sha256": "e6a5ce78ab9b2dcd66528f8b357612016cb9428cdeb9e505650972ca3dd7b5fd",
+   "native_job_id": "6ad455220000181e0000000800000008",
+   "created_at": "2026-10-18T05:01:59Z"
+  },
+  "shonen-adventure": {
+   "sha256": "f3de46cf0dd26ec03335ff1d03e580613dcad4ee76bd6af58c4fbfaf87358195",
+   "bytes": 182952,
+   "prompt_sha256": "f8cf2d7b0b02aa4bc0f4cc7020d5a747934565ecbb645abe05ffc0dbf1068889",
+   "reference_sha256": "50cf7e22be1a61f20efc35011d5621076863de9598386793d15cf2213d242d3c",
+   "png_sha256": "9e3831f712bde47f2f70a4f4614d8ce013e365da054805a883dc4a9bbf2ed5a4",
+   "native_job_id": "6ad4556c0000181e0000000900000009",
+   "created_at": "2026-10-18T05:03:13Z"
+  },
+  "shonen-school": {
+   "sha256": "178aee0d2ea3bce1c94478a6096f02663afe5e8eee7caabf58a90164086f8826",
+   "bytes": 203462,
+   "prompt_sha256": "9b94847e427989ad350f12a73bcd3949b8c2e120737b83c4f5632354a3ca05ac",
+   "reference_sha256": "6608c27ca443ec05fb6a3cf321d05759a8c435950e6c39881ae0089a27264b47",
+   "png_sha256": "a34f41563c2b79d1f079dd40776667c1f1eecc18853cb16db9403efab76dc376",
+   "native_job_id": "6ad455b70000181e0000000a0000000a",
+   "created_at": "2026-10-18T05:04:28Z"
+  },
+  "shonen-delinquent": {
+   "sha256": "6fd3b276f929720ee1e49f22e74747859741474f48d2b6957892d369904d2b66",
+   "bytes": 126675,
+   "prompt_sha256": "1e1a6bbe9285bcfa0becca2c5687277808a2a35eb9dc3334ee07dba8f7d41f41",
+   "reference_sha256": "1b27a3ee29f0def2d3d612ee3a4161f819b3fe4e502ed3a5b05ab7378387511e",
+   "png_sha256": "c28f9ba56085f7091c1cde0dff17787699f47807f385ef85fe402d69bac02ad1",
+   "native_job_id": "6ad456010000181e0000000b0000000b",
+   "created_at": "2026-10-18T05:05:42Z"
+  },
+  "shonen-period": {
+   "sha256": "078ad457762ca34bb158f0fd37dedc5f8c261e0058ccec71e569b62987e7fc68",
+   "bytes": 215237,
+   "prompt_sha256": "824a991ce314b21854a793281d5e908bb4f063e4335c2cabd6a73d35a5c6365b",
+   "reference_sha256": "b8dd4c243b190e966d97c561310af2f35c8f7adab592cebcedc0312395841823",
+   "png_sha256": "df8269e2bba5f0b8135b6f83696fbd16ad32867b5e6f94ebc819ec8440a8c77e",
+   "native_job_id": "6ad4564b0000181e0000000c0000000c",
+   "created_at": "2026-10-18T05:06:56Z"
+  },
+  "shonen-carved": {
+   "sha256": "9a9a1e0058796f4202480fbe696dd83af111f49cd7d59a15746f8ce3183436cf",
+   "bytes": 145383,
+   "prompt_sha256": "3899acff6735ff5d62bc498d28d0a2a6d148d60d0b9bbb09bd84cdf9cd695d1b",
+   "reference_sha256": "210af325fecfdc891321e00903e21f1340129d2d6b7e13bde3aba7913ea54ac1",
+   "png_sha256": "53c284922050b18fd340716b30cee6be53b6caffc0926da23a9e178620b60b9e",
+   "native_job_id": "6ad456950000181e0000000d0000000d",
+   "created_at": "2026-10-18T05:08:10Z"
+  },
+  "shonen-linecarved": {
+   "sha256": "39c691d66acdae5dce18d4932e1c4262a6929e1043522eca073bc105bc6f20ac",
+   "bytes": 137346,
+   "prompt_sha256": "a44d723be66b901b8f3a708b3a4d23777738a3fe3c5286c4e15787fb547e03bf",
+   "reference_sha256": "a9eecfe06a7e8eac3dfcee0dc7fc0d8b9097172472e97810d64d51b8fdeb0486",
+   "png_sha256": "6f319902a9179ba6ca30a920c73822a387dade368e78337364cbdd5da718fbc8",
+   "native_job_id": "6ad456df0000181e0000000e0000000e",
+   "created_at": "2026-10-18T05:09:25Z"
+  },
+  "shojo": {
+   "sha256": "8e60f61c7e419ff0027e535bfbc43f02abb5c2590eff03a4acec4508d58f5eb4",
+   "bytes": 126206,
+   "prompt_sha256": "bb303996eefd49284534e26fef624a07e87faed8b9deda535e0b79aba013bdfe",
+   "reference_sha256": "ed05cdf616fc900ccbb660071db2fe0647ee666da0d4726ea8beb43526772778",
+   "png_sha256": "d2ac5c29f74796bee9ea20cd77708092e6808d9903a83fba8de284a303656c97",
+   "native_job_id": "6ad44142000013a20000000f0000000f",
+   "created_at": "2026-10-18T03:37:16Z"
+  },
+  "shojo-school": {
+   "sha256": "68441c29a67c3dbc0c92d02de87a3a0201ace87be7a5b069a7e8b5d6adafae5b",
+   "bytes": 115231,
+   "prompt_sha256": "2e9e134d7c85782a9411e0b477b1b7499996df74c747ca810eee787179393f8c",
+   "reference_sha256": "75853b7ce8e9c4d883cf0a7be81022894abf1c0700ab10906a2b6e0d5d6c775f",
+   "png_sha256": "6f80d884d72a6f990a8fc940d727bfd8fc4241e3235fb07d078c4e5733cd60f4",
+   "native_job_id": "6ad4572a0000181e0000000f0000000f",
+   "created_at": "2026-10-18T05:10:39Z"
+  },
+  "shojo-romcom": {
+   "sha256": "6f9c1410d9258edc545752623ea61e40ca700ec459d8ccd2405d559ec4228d45",
+   "bytes": 120265,
+   "prompt_sha256": "172fa143f4ebae99969ab6341ee54c8fa6d203217e4a3456d30ffbef02598fea",
+   "reference_sha256": "070d9666735248ccc7f7ff2218c6db5ba0807cafddc8739f5f1afe2e5e5ccc83",
+   "png_sha256": "ddf7bec1fbd6d8c28f274f23ea2e33504db4356051655bee55a78deacdd94c98",
+   "native_job_id": "6ad457740000181e0000001000000010",
+   "created_at": "2026-10-18T05:11:53Z"
+  },
+  "shojo-fantasy": {
+   "sha256": "fb7ee1f7db2477acecaeefaae17a1889f152615773fa9cef1033ac30117240f3",
+   "bytes": 145663,
+   "prompt_sha256": "ee8a4a5b6f6d0b2f6fda39a8afe87067a630aef818f40beaf4de5e9db6db8195",
+   "reference_sha256": "90ff7e4df43f59628f8e254298c8e5683d9573e965987fe48b527e563a082b1b",
+   "png_sha256": "5c477571d959bb8305db0ad7c64a2457b4ac28c1e44058eda72030ddcabc1850",
+   "native_job_id": "6ad457be0000181e0000001100000011",
+   "created_at": "2026-10-18T05:13:07Z"
+  },
+  "shojo-palace": {
+   "sha256": "66f61e6eb220c0a1fea26c58d3f5d00eba0588ebab36db5a25c812c84737c3e5",
+   "bytes": 108474,
+   "prompt_sha256": "97690d0cf365fe4156c243f89b4b54526ac76c320ba09497e30dc5d556d128b4",
+   "reference_sha256": "c55dca72bc6ac9a5c6e903776322f797e87231e49f8aa7688fa57e0206cccec7",
+   "png_sha256": "ddf65bf83ac9ff28aa9ecb88ddc954163592e0100eccda358b2883420998eadd",
+   "native_job_id": "6ad458080000181e0000001200000012",
+   "created_at": "2026-10-18T05:14:22Z"
+  },
+  "shojo-magical": {
+   "sha256": "de20d860100bd06044dcfc5cba487e99f93fcba95b7ad972eea00620b2bd745d",
+   "bytes": 106323,
+   "prompt_sha256": "5f2d2e9314c614e8aa8617c51bc619b768b12fac4166a86c15f53278de48f1f4",
+   "reference_sha256": "99d40a6df1e9dd280f22ae54d38b28a0c6fbf3f039da9ee499fe3251fbf8424b",
+   "png_sha256": "638ef9f6394a6173bd5e6b76b000b1533bb0e83ef180c0a337174c5b5041e3d6",
+   "native_job_id": "6ad458530000181e0000001300000013",
+   "created_at": "2026-10-18T05:15:36Z"
+  },
+  "shojo-showbiz": {
+   "sha256": "9940fb65b9b6a613923d7ac76fb6ed24722f755850801213b033ded5b6e6431e",
+   "bytes": 177298,
+   "prompt_sha256": "2d9137bc0d28ec7d37b24662f5bfd792b42392d7d2c702e5b8b8ee73dcf10e73",
+   "reference_sha256": "37729549ca8227adf706d9a0365bd069d95920fa9c070b905e6d4d334cf80031",
+   "png_sha256": "cb39e8dcce33996a5eb2aff2c00730b0d238010cc61be231c0b1eb37005533ec",
+   "native_job_id": "6ad4589d0000181e0000001400000014",
+   "created_at": "2026-10-18T05:16:48Z"
+  },
+  "shojo-dance": {
+   "sha256": "f4907fb9f4f6f18e48f21c9fead3cdf8f10cf97ad80742ed16f744ee40a72f19",
+   "bytes": 101777,
+   "prompt_sha256": "8ba45723a91e65a3557c457ed581569ba7a28bad2df9115b2cd0f49c0337d98e",
+   "reference_sha256": "45da98add04d1a78c398fcd97d56b7f5a55505f06fc0ee56ee2a5d2ee15ec3f3",
+   "png_sha256": "538144b293bc108f07f15363a1e92f823f67280a741735823bb006e3db8ffb3e",
+   "native_job_id": "6ad458e50000181e0000001500000015",
+   "created_at": "2026-10-18T05:18:02Z"
+  },
+  "shojo-suspense": {
+   "sha256": "c5fa31e006fcb5c596cdd4c7f5ca9e27464ab179e462bebef3561babe28b00cc",
+   "bytes": 113260,
+   "prompt_sha256": "44fa2a0fe9bac9294505acc557df9575ce04e192c78869fe3d39b7e287b52e16",
+   "reference_sha256": "e8be88de8659bb0846c43b2595132b60b6c13e785a466da4a69983ba2bdfce0e",
+   "png_sha256": "fb27b224d9b80c059269e4f16db2a992d0f456463283ca482247d231694df1a2",
+   "native_job_id": "6ad4592f0000181e0000001600000016",
+   "created_at": "2026-10-18T05:19:15Z"
+  },
+  "shojo-drama": {
+   "sha256": "5ba4541556c438bc099258bc9821ae7cf6c97bb5da4449923afc1df0e84fbdf2",
+   "bytes": 127592,
+   "prompt_sha256": "8a1376f7fcd0db163568f1aec220799a90271ebe236ccf30866fc442269c887e",
+   "reference_sha256": "d1de46223c2954e8487b9e64111a9e478caac114e65f8f4d616393f7c7bbe9e9",
+   "png_sha256": "0b845d094914e91cc90eb447491e90105961892be47d1e408d6f0f9b326e18a6",
+   "native_job_id": "6ad459780000181e0000001700000017",
+   "created_at": "2026-10-18T05:20:29Z"
+  },
+  "shojo-scifi": {
+   "sha256": "fe63cc8744b6579905c26f269ec9244f78550d0ffb00715ef00d30e33bcfcd79",
+   "bytes": 121219,
+   "prompt_sha256": "8b14ae29e6a82228a9c36e724bb202154cb777fa575333d51b0255a5e980b072",
+   "reference_sha256": "20da4418e282a203d284503d523fa8dfe441bab47b1602cd5afc016293eb6ade",
+   "png_sha256": "a910c6e49bcf716cab1db64816d2ad98ae560209e0bdcbd006cb9db7a42950c6",
+   "native_job_id": "6ad459c20000181e0000001800000018",
+   "created_at": "2026-10-18T05:21:43Z"
+  },
+  "shojo-otome": {
+   "sha256": "72293fd7db3e8aaf27eed5b7578ed3e6f3722fbcc7a1e1d7e270e7b4b9aebefe",
+   "bytes": 124590,
+   "prompt_sha256": "177242602d6655061f1173e61e627c66a336ec6289f7476e8dcaaef8d64e5737",
+   "reference_sha256": "28a6543d08604e069a508921ee990506386dd304a376344fa5587c47e4cfaa2a",
+   "png_sha256": "7d9bc390f16f389973584ae761f26f9579c56f654fd0035624918bf9c730845f",
+   "native_job_id": "6ad45a0c0000181e0000001900000019",
+   "created_at": "2026-10-18T05:22:57Z"
+  },
+  "shojo-starry": {
+   "sha256": "144f8bf4450927170df516b9d499f49691adf3ea3410b707ebe6c7ccadc92a33",
+   "bytes": 140680,
+   "prompt_sha256": "bceba5f825d63beb65e04d9f9ee1aad4b3723c1f74d9841ccc55c0cfd0e095da",
+   "reference_sha256": "172c3a035f184b6e352122bb0a2c2bf7d27743108392083699829ff61bf630cc",
+   "png_sha256": "b520f76b1cf1f1ec3d0f15e9cc9671c9930770c9dc51ea94806fee7a68e34e3a",
+   "native_job_id": "6ad45a560000181e0000001a0000001a",
+   "created_at": "2026-10-18T05:24:11Z"
+  },
+  "shojo-penonly": {
+   "sha256": "19e6eb50a7b82674e54c416251d72493c3e24cdf5760e880e0b3070ecda35bcf",
+   "bytes": 116577,
+   "prompt_sha256": "e216474b05fa2c78a223c7075e3394c96c3cd2c086c5b81bccb50f35db3744bb",
+   "reference_sha256": "175c41349152ba03ac07a2798d7e0bb801ecc301ddd1ed7a94b4a78db582824b",
+   "png_sha256": "bc61369cab503615313fef2d09daf8463787666919247c16f56fb794aa465983",
+   "native_job_id": "6ad45aa00000181e0000001b0000001b",
+   "created_at": "2026-10-18T05:25:25Z"
+  },
+  "seinen": {
+   "sha256": "daf245048e9708b836e96645124428edbb7bfe99d5b0e403bf4cc49bed2ea6c1",
+   "bytes": 117088,
+   "prompt_sha256": "c18826d1aed30a08cd79095273f10067f158f6b8f39c52d1bc392d31b4379b0d",
+   "reference_sha256": "ceb7f015c50c85bdf0c3b3d0e3c1be3ee1ba19d0f468cc9f03554102842971a2",
+   "png_sha256": "98dd8deb5f90272580323651a6aa62754b9bf858bd63da04bc3ea6b4dfdc6286",
+   "native_job_id": "6ad441ed000013a20000001000000010",
+   "created_at": "2026-10-18T03:40:14Z"
+  },
+  "seinen-action": {
+   "sha256": "0b8f849b98ba2ab1ff4d30bf1bd7a06a14f6a105e0dfc91855932ffc517239c4",
+   "bytes": 217217,
+   "prompt_sha256": "04e5534932b93b61d1ba7c6278907ecda96defdacc2a6052baa2024078d0aba0",
+   "reference_sha256": "51df95d11cb8b698c6a189c16bae8e5669dd6e417916d7e4f85919e35c42caca",
+   "png_sha256": "b06758bd1b1b4f7744884b78a8084c9c72105a5c50106aa87af9513e577b3b9f",
+   "native_job_id": "6ad45aea0000181e0000001c0000001c",
+   "created_at": "2026-10-18T05:26:38Z"
+  },
+  "seinen-noir": {
+   "sha256": "dea78770430eff8323276829f7515d3bc975852a1f4987c73bdd56d42cba9b02",
+   "bytes": 234303,
+   "prompt_sha256": "af8c40e4bc3103de5e27fd2eab076063d6ecc8359d9e5ed47510a6b16a54a040",
+   "reference_sha256": "a75e15c660afa624438017968e175fd6df76cb4ce894212d227afff38ba5f5a1",
+   "png_sha256": "1fbc56776bd963bc021db98fb4f9bd61dd9577644ff35a0df86866e40aad25f4",
+   "native_job_id": "6ad45b330000181e0000001d0000001d",
+   "created_at": "2026-10-18T05:27:50Z"
+  },
+  "seinen-scifi": {
+   "sha256": "d3e1853e9b6f576cb95e952b59f5141227ab5e134956ac5696e3f9d83f395fe7",
+   "bytes": 194938,
+   "prompt_sha256": "f9c9f463fbcde889130bc2aeea6a51efec303ba472e6bc4ead833c6225fadbaa",
+   "reference_sha256": "a0495acc915c66de50b3a13470c1303cabe4e91f51568a2965af1f5332f95581",
+   "png_sha256": "c77de2f365c4732a89248167871c6647e5f21960e057645b8030b575b5ed2866",
+   "native_job_id": "6ad45b7b0000181e0000001e0000001e",
+   "created_at": "2026-10-18T05:29:03Z"
+  },
+  "seinen-darkfantasy": {
+   "sha256": "c543927fd542137d52fd2ecfdd539a7dfc2a046cd76003674be11e6bdb03ea33",
+   "bytes": 251070,
+   "prompt_sha256": "0d6761adf6138a33afa5500d7e44926bec1077ceada592ae17490973d8010f82",
+   "reference_sha256": "3391c5aa08dd34d3d826d904bb8a3da54a1ea0db8fda94b3c0b129a723a19fd4",
+   "png_sha256": "66549e30505cf85386b3bc5fbdc77b9eeb8ef207a65b436301f7fbddf065c6df",
+   "native_job_id": "6ad45bc40000181e0000001f0000001f",
+   "created_at": "2026-10-18T05:30:16Z"
+  },
+  "seinen-war": {
+   "sha256": "0c1f41e0c01f2939f2211568aca660c61df3382894168b50861bd3ab57c676f1",
+   "bytes": 260238,
+   "prompt_sha256": "73c7cd23e5134f7653d77d4fe8838bb6971c3b425def2fe8035112272033ff2b",
+   "reference_sha256": "0fa021c55b4ea8ada7733223eb7aa6750e02bc5e9214062270036200a143e299",
+   "png_sha256": "0210c1258d23c7d9dc0b7d2df946930cdcc7aaf6c611ea705b85c98cf7cff5fd",
+   "native_job_id": "6ad45c0d0000181e0000002000000020",
+   "created_at": "2026-10-18T05:31:28Z"
+  },
+  "seinen-gambling": {
+   "sha256": "947e63cd8fbe53f56b419e00eea1c30a5be7344d01a90e9656857db005f6f61f",
+   "bytes": 186615,
+   "prompt_sha256": "26d73882424323d404da4a72deeded992c892450bb2289bb5c5c89be4a333680",
+   "reference_sha256": "986cbca2cbab4df3ec6e8038c45cb2c7f849f7ee07f4d0fe328b0d8ecef26530",
+   "png_sha256": "1a16f6ebb713edddc1f3d8ed37aa1b5bcb17179b634e0b81b63704e6ae515903",
+   "native_job_id": "6ad45c560000181e0000002100000021",
+   "created_at": "2026-10-18T05:32:41Z"
+  },
+  "seinen-gourmet": {
+   "sha256": "a36f8ff5a50f54de246ac48f66a137a047a690d1792c5026654d039fa08cb009",
+   "bytes": 162742,
+   "prompt_sha256": "633c9b7ba12738f2b28d33b2a3c5488b0fdca855ff93a985cc7ed7c7d30542b2",
+   "reference_sha256": "2b9f93c16b8f2b319df35b6d31ee534781dc96c47119592b863b45a4add3e36a",
+   "png_sha256": "24540c9f91b7f8a44447f1135d7b4efb0a275e9a337d5ba0798f40e03958f946",
+   "native_job_id": "6ad45c9e0000181e0000002200000022",
+   "created_at": "2026-10-18T05:33:53Z"
+  },
+  "seinen-profession": {
+   "sha256": "d6be2c5d92a0155629e2866e16853fd1b2e45ece53044ae982a3990caea6d201",
+   "bytes": 216624,
+   "prompt_sha256": "9939c22ffbf1d2ff0f923087a960a919656fa2f171df7935094cd3afdf6108c1",
+   "reference_sha256": "ee3ffd9afa951669cf063bb096db21a8ddaa32478e1e1779c6315db1acc02fcc",
+   "png_sha256": "c4fdbf3ecd9d640108cd151e1a250d60deb6c458c9994822c0a6d6fcf9d3fe84",
+   "native_job_id": "6ad45ce60000181e0000002300000023",
+   "created_at": "2026-10-18T05:35:06Z"
+  },
+  "seinen-daily": {
+   "sha256": "b306445ef91846274cdab4b76c83846e444816a3c65c65d6b7aaa7c2cfb924f4",
+   "bytes": 169168,
+   "prompt_sha256": "dfa01211ddc0e4217a14cb60748e455a254e754d8903143269f5b23aef3d2eff",
+   "reference_sha256": "4a656685f4cb57b639b105bee7612c8a995ea549d2b5cbea7535da6bb7a7902c",
+   "png_sha256": "3603e81e3ac00ac45bf404fed59eb361c5e7f7b23e25e722a4ceaf06ab67300a",
+   "native_job_id": "6ad45d2f0000181e0000002400000024",
+   "created_at": "2026-10-18T05:36:18Z"
+  },
+  "seinen-suspense": {
+   "sha256": "2b834adbedf5b31091af8a59ea979647dcf985afd69bbcda0df103cacf585a60",
+   "bytes": 176742,
+   "prompt_sha256": "5e459c6f771e3549c3891853a72f8e3096b78be218725a1c0c1c5ce0b8e93a13",
+   "reference_sha256": "c19bd37fceae765a3bd4baf401085705b361f4be5351c63dbac5ccf4edad90d9",
+   "png_sha256": "8cace0d064870413c771d67ae11e54b8b768530d92d52975df8e5d4d9f884697",
+   "native_job_id": "6ad45d770000181e0000002500000025",
+   "created_at": "2026-10-18T05:37:31Z"
+  },
+  "seinen-warped": {
+   "sha256": "9264322a653b4d4e677b2cab75688f8c580933431adfd8641a976e3cb1429a4f",
+   "bytes": 176314,
+   "prompt_sha256": "d5b5bd3c6074462b3ebe0cc0e7b64ca17c320c640e87f76964d4efc5f31d89be",
+   "reference_sha256": "873250b0140c83483e882cb19080ea51e7a29ee1c7482cc4c9022bf3c5cd009f",
+   "png_sha256": "c29c16e164d8506977172612e66b8e4bf406fc2d1890cd8b5d193c4d39e59245",
+   "native_job_id": "6ad45dc00000181e0000002600000026",
+   "created_at": "2026-10-18T05:38:43Z"
+  },
+  "seinen-penscape": {
+   "sha256": "2639b9c181820a015ced9926db9298552a9f9d75380f8e2abe1fab5832d571ef",
+   "bytes": 241266,
+   "prompt_sha256": "0021e76ad64ebeb67997e8b92f2fb6e5135e5b02531c5c26d8bf49aca051ba3f",
+   "reference_sha256": "20c4893f620ecfca556bd0f16c0cad555080a23b56ade9c5cf82862bf7c6577b",
+   "png_sha256": "46299f00e2ab141c1f56d82d6593a5ca8e7e2d1cd78430f6fdcaa9ef958ddedd",
+   "native_job_id": "6ad45e080000181e0000002700000027",
+   "created_at": "2026-10-18T05:39:56Z"
+  },
+  "seinen-plainreal": {
+   "sha256": "3c07b99ee09126e2d7b4cda3f61ee51de21290789bac8ada94464175be4f2aa4",
+   "bytes": 181422,
+   "prompt_sha256": "5d14b7ee8131b2f82b9d08a7a187c47392bd1937f1a27230c27b371153c3c573",
+   "reference_sha256": "c46b82edb8bc56f83dddc2904360e28c57968ebaa9bab1df9a3337f9564b14d0",
+   "png_sha256": "b1a733f61c1e151cbe29226249837ca9fadb386ed0aef8ede2bdc2dace286658",
+   "native_job_id": "6ad45e510000181e0000002800000028",
+   "created_at": "2026-10-18T05:41:08Z"
+  },
+  "seinen-clumsy": {
+   "sha256": "e7d47b0becf5993e1c1bdbfbeef110655fa1def19a1c1d13ec27a6835b67cc66",
+   "bytes": 161045,
+   "prompt_sha256": "2a654f485eba757bd8b2144d541702c8ec442e1f72c993dacc23725576e13a60",
+   "reference_sha256": "b0229507ffbeb282f94bcafdfb6c918a6c115258bead7f0a227176a39b0c8238",
+   "png_sha256": "7d76136a4485787e9b3dfac7ecaac467e0e57962f7081b21dac6bb6787e07e95",
+   "native_job_id": "6ad45e990000181e0000002900000029",
+   "created_at": "2026-10-18T05:42:20Z"
+  },
+  "josei": {
+   "sha256": "ca6818574641ecbd36c25e2d4a5f70f566a72e6f8de04aeb871e06e9a86e781c",
+   "bytes": 124516,
+   "prompt_sha256": "be558d9c97d70ab1c8bbe57dc89d3daffbed15e0108cd1c50564d16773ee1f64",
+   "reference_sha256": "3db6fb517d45130fe816f34bb9dbf81a0b10b5d855426cc5b040386c6b03dadb",
+   "png_sha256": "589d6175315ce3ad6b59caebf6d6f80e01181c5762a9b757e5847800f021e8be",
+   "native_job_id": "6ad4424c000013a20000001100000011",
+   "created_at": "2026-10-18T03:45:48Z"
+  },
+  "josei-romance": {
+   "sha256": "74c04cb42e42aa014d02ae99678cde7545937140c902075db1c7f1c778a58b5c",
+   "bytes": 168035,
+   "prompt_sha256": "8ff3d6b6ad2a10e20fd493557161f8baeb45218e5b994343fe43a79c049cc2a0",
+   "reference_sha256": "bf377e5c6226cae25f7a1004ec579467da88b197963cd7675d13a6cad4c72654",
+   "png_sha256": "b34ae97d2c209859c2837b83b65f4456cd04743b424d0f7d960ab23099a3b417",
+   "native_job_id": "6ad45ee10000181e0000002a0000002a",
+   "created_at": "2026-10-18T05:43:33Z"
+  },
+  "josei-office": {
+   "sha256": "ab72f305917c7b3920e742189f517247197a535b3eeb4e1b271b42ce49d1d075",
+   "bytes": 185349,
+   "prompt_sha256": "290f9c701bf843176ac1c54ce665850fb9bb2c684db90d5b83a589b68f481114",
+   "reference_sha256": "0603cf65e29c156194e5fc0558e59a555df488241a5831cb9e0e7ba0543e50ca",
+   "png_sha256": "8a4a6575b4d9a964f4367979f50dd86691c997a55945b37589b8ee348e902728",
+   "native_job_id": "6ad45f2a0000181e0000002b0000002b",
+   "created_at": "2026-10-18T05:44:45Z"
+  },
+  "josei-family": {
+   "sha256": "e123dc28cdf57cbbf20ebd448f24561b362fe1afc40239b290f4f332ea954cc2",
+   "bytes": 167620,
+   "prompt_sha256": "abf3417634ec778288241ef947c260a5ad5698ade9aa5c6bfa0c249d178c39ea",
+   "reference_sha256": "9b9d6410bb5c381c54939b5d5a2dceb045d4c9522439e85d384b6cc0fa6a3278",
+   "png_sha256": "c44f438dc768e15d30a34e9f3d5dd0090142d6a75ba4a7064fe69cb1a99e3084",
+   "native_job_id": "6ad45f720000181e0000002c0000002c",
+   "created_at": "2026-10-18T05:45:57Z"
+  },
+  "josei-love": {
+   "sha256": "a5070ed1637ecb151d4b9a3bcdc7c5cb6a0d2c2bbe9f0a1a67640fbc7d44c26d",
+   "bytes": 169837,
+   "prompt_sha256": "bc3ede4dc0c6dc04fb5665463fc876e15514804600a1067cf8f5604147090399",
+   "reference_sha256": "bd9040bc57bc521d9b09f6014e79ae93c86d5076bcd9247a117c159d8e3490d5",
+   "png_sha256": "d4ddc741e162ac8d44f394fc9b52982cf1bd6eefc6003ca23dab7269c3ed8bf6",
+   "native_job_id": "6ad45fba0000181e0000002d0000002d",
+   "created_at": "2026-10-18T05:47:07Z"
+  },
+  "josei-yuri": {
+   "sha256": "dc51246cc8cc7b9ff3c0ad1177b51b1804d42bc02f1f8db895596543fa84ae12",
+   "bytes": 162706,
+   "prompt_sha256": "2f7c2cfb1eefcc4a431c9b0bdcfe665d5a67c4298aae7e81ed287cbdd97a0924",
+   "reference_sha256": "a61584144e7b85e70eace745eb567b0e5cc52ed97046cf5e746392e8aec76e5d",
+   "png_sha256": "0145a8278d73122a785995ab2f547dc6aee3b38d902dbbd5c1bcaa06fd4bf488",
+   "native_job_id": "6ad460000000181e0000002e0000002e",
+   "created_at": "2026-10-18T05:48:20Z"
+  },
+  "josei-drama": {
+   "sha256": "566a0d25779d04fa1131ca108c78e062f71006ce65a7449a7a3946b0dadbfc44",
+   "bytes": 159929,
+   "prompt_sha256": "c921c922baba51c5877951317f9b2361a7a33c343f9b137572afbdbbb6d3b20b",
+   "reference_sha256": "c0c4ed9c8cb2326458b0fd8ef75c3a3d50341ca050ddca63afe41eb183f2d2fa",
+   "png_sha256": "0046421f561546b011327883f6f55112edc79803214afd92068c7a5648171c06",
+   "native_job_id": "6ad460490000181e0000002f0000002f",
+   "created_at": "2026-10-18T05:49:30Z"
+  },
+  "josei-period": {
+   "sha256": "211a4fcc7382df47fd6a971d473cf346edf108c99097f4ea39cf01650360a085",
+   "bytes": 180524,
+   "prompt_sha256": "35a423c26886ef355b44a09cc1be0aaf27d6c110ca968cb01fc00765ad92266d",
+   "reference_sha256": "c6764b8a225d3c96940c8673a53fc1717912e1c54885420c0aed787d6a218de4",
+   "png_sha256": "a622a9d72dc5807c32e7a60ea15832e4d85af9dfb498633ab1605a5f3fbe04e5",
+   "native_job_id": "6ad4608f0000181e0000003000000030",
+   "created_at": "2026-10-18T05:50:42Z"
+  },
+  "josei-lifestyle": {
+   "sha256": "9f835db0b8413e1a2ef4485418ef62818918aeec4f0bb11c80dba19eeb486661",
+   "bytes": 149492,
+   "prompt_sha256": "3a0a682250acbf25e4b6763415bba80d6d3bd7f31f9f7511084b47b0f21c4935",
+   "reference_sha256": "3c58ca02ee7b2530100faefab5317f302a1676e8eb444041b6e47d578bb416f1",
+   "png_sha256": "8bd2dfe6c2914c49fc75dfdabf7bf3465756d91919c47f8a68ad85d9f660351b",
+   "native_job_id": "6ad460d70000181e0000003100000031",
+   "created_at": "2026-10-18T05:51:55Z"
+  },
+  "josei-comedy": {
+   "sha256": "b4ead9e1f25af95d371247de29e0a8bdd1f4aa38bb8b6898e9b125faf8ee240f",
+   "bytes": 181311,
+   "prompt_sha256": "aa513f3cb6caae28a85be3c1b1938ca007855e21b38f14ad213932783e45d682",
+   "reference_sha256": "b5fc886f872e0be10c074103987d232e74378481f042636f8ae5a8c4a42448f1",
+   "png_sha256": "8a06cdfeda9f97eb8c9ba097252602e9fe00beddddec2c2c8ffd3ceff9b8ab88",
+   "native_job_id": "6ad461200000181e0000003200000032",
+   "created_at": "2026-10-18T05:53:07Z"
+  },
+  "josei-suspense": {
+   "sha256": "be028a9e853ae09fefe694168dd226d6b6902fad11d454015e66bca7cde080b7",
+   "bytes": 212499,
+   "prompt_sha256": "bf65551254ee5cd104770cce25d351225bab334e910e74a3323c90deff2eaf0c",
+   "reference_sha256": "d4ba1ecd0c1b764fd9d32788b6d572e890105b15f50f02d06cbaec13297e4ecf",
+   "png_sha256": "e0465c89599eb2c7eaa09eba61ac3b463982d83ea770af14a8b042e39f792b79",
+   "native_job_id": "6ad461680000181e0000003300000033",
+   "created_at": "2026-10-18T05:54:20Z"
+  },
+  "josei-tanbi": {
+   "sha256": "99df4a0bb04441d721c25462d4019c7aa5cf9d3c41a386655acde0b56c0578b7",
+   "bytes": 132172,
+   "prompt_sha256": "53df1ccd275cf73a456b6799c9ab6bc356c7be22ca435d71b7085cc70d45c8c7",
+   "reference_sha256": "61dc9376f96f4064bdf0e0a8a46fa82fc9e6c638ff5cc7e8bdd10351f3376d1e",
+   "png_sha256": "503b773d11bfb3d2d96f0976c33d2d063133ede8e967235c5514fd5d39463f0d",
+   "native_job_id": "6ad461b10000181e0000003400000034",
+   "created_at": "2026-10-18T05:55:32Z"
+  },
+  "kodomo": {
+   "sha256": "78e4efd78e4d754f0a80f85ad11db1ca340efe3497247310d7e29401b88b89af",
+   "bytes": 126348,
+   "prompt_sha256": "ec89878da57a6d46b802eedbdc080853a5f06d339b4a57008adde3d48f7dd2cf",
+   "reference_sha256": "8fa5ec38fed86897a2c33d0f2d0aa13fa592c38b66e96e5aeeb27b4ec96bc55b",
+   "png_sha256": "d2bb4ecda2f3d6bfe13e26d72030e9fc3a4b6b57eb5cc0e78d9f0193abf5f693",
+   "native_job_id": "6ad44391000013a20000001200000012",
+   "created_at": "2026-10-18T03:52:49Z"
+  },
+  "kodomo-hobby": {
+   "sha256": "0159790ec01786767c2fe349404a9580ea61d73297af855c62628d0af554a3bd",
+   "bytes": 84634,
+   "prompt_sha256": "d706e84928a708eac691b7cc2fcc67180677e593798f2a319e331daf3877c481",
+   "reference_sha256": "9ee9c4a6d338df0004bef15ea415070c8fbee4d6ec50a14baf7210044f98d626",
+   "png_sha256": "fb850e52936b7bcdf81aed2c03283b4ed1042f2c005d76fe988b692208ad1723",
+   "native_job_id": "6ad461f90000181e0000003500000035",
+   "created_at": "2026-10-18T05:56:44Z"
+  },
+  "kodomo-adventure": {
+   "sha256": "97ef4560d0f35eb0d731783af1b899863463754fb52eae3b25d336fb12573209",
+   "bytes": 110431,
+   "prompt_sha256": "3ac1371d86f969012e69697a4d6a2a4e0de9e786ff375a3c97ce0b24bb5bcf5d",
+   "reference_sha256": "496307d4328aaf2108c8f5012177965ef52a2dce05495bc1e60c70cd83d9e60e",
+   "png_sha256": "66e8db93e850122535d99689ca338c328409300b48d6d73e219507e3f15c1148",
+   "native_job_id": "6ad462410000181e0000003600000036",
+   "created_at": "2026-10-18T05:57:56Z"
+  },
+  "kodomo-gag": {
+   "sha256": "a6a0a82f6b15c6ea43999539ff0b3940735d90409bee007ca29a2a159ebe1b2b",
+   "bytes": 77119,
+   "prompt_sha256": "146b8a742020c5006b3ff5c1b3916c31c56bfcae1112057913ec2f1551a37ee1",
+   "reference_sha256": "10cf8eeba2b94758c84bf786e75959ae27748cdeb85da78c45b003827814b9ef",
+   "png_sha256": "088fb4eac8fdcf972c27fc205660618c889362ed01be2d8d53337b2e408528d7",
+   "native_job_id": "6ad462890000181e0000003700000037",
+   "created_at": "2026-10-18T05:59:09Z"
+  },
+  "kodomo-animal": {
+   "sha256": "1d1792573058e87fc52f1cb58a2e4084e5599d2f170a862d113febaeb5b6e744",
+   "bytes": 218471,
+   "prompt_sha256": "2058b00f77b8dd4d30dc2715aa458fe73aee37020e9f944b6bb82146c85bc7ca",
+   "reference_sha256": "737a2280bcfb9c2ebdb17f2f1df6c59f8b22538c92b7f6acb7f8c4bb0413d145",
+   "png_sha256": "87a4dbc27dae963092574c46c80696407f17839c3a8952fa08cc2c015fcb70f5",
+   "native_job_id": "6ad462d20000181e0000003800000038",
+   "created_at": "2026-10-18T06:00:21Z"
+  },
+  "kodomo-learning": {
+   "sha256": "9f14568061c9578cf2a1c8fc74ee0d5cf54a80369049ed22e8738835b33ee125",
+   "bytes": 154980,
+   "prompt_sha256": "8a4e310d10f55170ed9e4d5d6c30d17c057b7f7f82f286da829de2cda14b6f1c",
+   "reference_sha256": "04bbfb3a245babd41bff6b973c035aa0370ffc8757d5786ae0a1f2097b227286",
+   "png_sha256": "ef627f9c8a9dfed274b3d56bfddbe6166c4f103fb1271331e6d6d86bd9060a3c",
+   "native_job_id": "6ad4631a0000181e0000003900000039",
+   "created_at": "2026-10-18T06:01:33Z"
+  },
+  "kodomo-magical": {
+   "sha256": "50cf10f059445ae05618157f23f82295c58feb120fc525b6be10a0028752f9f8",
+   "bytes": 83005,
+   "prompt_sha256": "f26d95af34aa50de35ca5d1b0c094b7261418649559a26a92b30b082b345ab7e",
+   "reference_sha256": "15b0f8f6764d61b8d415ca86ba2b106394d2cc414946512343131752dd2c414b",
+   "png_sha256": "38dbbc49ea3fab01e51c0ce634be7057d587d00386c3275245dd22ea4960cb6e",
+   "native_job_id": "6ad463620000181e0000003a0000003a",
+   "created_at": "2026-10-18T06:02:46Z"
+  },
+  "kodomo-school": {
+   "sha256": "98f267dff4e98d8998f166fa0c02c741a3c9051354e78384f48814d668c57fdc",
+   "bytes": 84578,
+   "prompt_sha256": "3d3e333a9acd0d7aecb653500f09f50a98bac66b33df0497856a0a1f6034d036",
+   "reference_sha256": "b0a23aed2c85379d98b773fb7738e112320921cd14278f99dc0105ee12dd9fe9",
+   "png_sha256": "ea2ff8e672b4b536903b420a4d72827238e839d89b5c2792543424d3b5cbd131",
+   "native_job_id": "6ad463ab0000181e0000003b0000003b",
+   "created_at": "2026-10-18T06:03:58Z"
+  },
+  "kodomo-sports": {
+   "sha256": "3a5b4d005ac4aca787ff9e77e7830d6e9bf649fb2b7db8fee232d309ef401123",
+   "bytes": 182140,
+   "prompt_sha256": "cfe17b821766d274748100a44cd4bb5140d0e39615060f778790af49b3a1275f",
+   "reference_sha256": "b9d017f3ab8a2343b1408530180741c826d00c09ddcefd73f6de497709498f4d",
+   "png_sha256": "b4aafa54f5c93f3e1db0e2533a056503eb9d2277057753473d916d5b5421f54d",
+   "native_job_id": "6ad463f30000181e0000003c0000003c",
+   "created_at": "2026-10-18T06:05:10Z"
+  },
+  "kodomo-mystery": {
+   "sha256": "0dd3bacca392611b5ccff07fb9d2572ee86d1f5c918fa6c1c4ed68be332a11ac",
+   "bytes": 178407,
+   "prompt_sha256": "b1e24d9a6833dcaabdacaf51ab11bd974de503d9e72aba4faca4e18fd76754da",
+   "reference_sha256": "abc5403a0ec0989db95458cdb9495d4da8b36c37d34da644641c1fa9cd16b85e",
+   "png_sha256": "071d4b792baa34b31a3d9b9e4e3ada831c958f0c43a3d586d552cd4a25416027",
+   "native_job_id": "6ad4643b0000181e0000003d0000003d",
+   "created_at": "2026-10-18T06:06:22Z"
+  },
+  "kodomo-monster": {
+   "sha256": "72b0a24d1a132f221b6448b9e3edf85f9ed86d90bf1ed4a7e01ada54f3a42b86",
+   "bytes": 231565,
+   "prompt_sha256": "75dad8020ee07df748d57858f04608e255b03f6b0a4521b11ab8fdba25531e98",
+   "reference_sha256": "2093b22e1c5f56fd105ea04c80f16a8e0b2946426d967360ce0966f64098546d",
+   "png_sha256": "c152c406d610f947e4015bbaaab215f1122890d1f1939d4c006387716a1a9029",
+   "native_job_id": "6ad464830000181e0000003e0000003e",
+   "created_at": "2026-10-18T06:07:35Z"
+  },
+  "kodomo-geometric": {
+   "sha256": "0f2f1d2dc7d6323762c8c764ea6b89dcfd268df3d436e1536963f67d5749e8c1",
+   "bytes": 226822,
+   "prompt_sha256": "ab46995929cdf27e7acc8b90cf7381913bffab4e3514de8519f557bab31b8686",
+   "reference_sha256": "48a51059f2640be811c1c13a121dbd2884a6ceb62d523ed26ecde8dfff4108dc",
+   "png_sha256": "7afd967616df16d42eae900db6acac62d9a2f6678d034b46aaf722dbb176985c",
+   "native_job_id": "6ad464cc0000181e0000003f0000003f",
+   "created_at": "2026-10-18T06:08:47Z"
+  },
+  "yonkoma": {
+   "sha256": "1fddee2fcd51f00f2b90c9c721cc305314b6a1dbb962869c0bfe0e53722ba946",
+   "bytes": 106536,
+   "prompt_sha256": "02371ca4b158a05896392ecaf28f3cac12df203fb0a7414772e436f7badaf9af",
+   "reference_sha256": "32fc4ce9e712b18a680783927ce7533c2b9483167bc98653ebee60e38fb37f44",
+   "png_sha256": "763b3eca54fda750cbc03081570dafb0d3127824abc0a834c70ae493175ba8cd",
+   "native_job_id": "6ad44536000013a20000001300000013",
+   "created_at": "2026-10-18T03:59:48Z"
+  },
+  "yonkoma-family": {
+   "sha256": "cbc045661db800e6caeb05b426c2031ef2b4b48e811d3d0cd48a08194bce3462",
+   "bytes": 208864,
+   "prompt_sha256": "55a3389c97a2ce030cd54b422cddc395df0c6793a5ec1a866c2b0bb0af24269b",
+   "reference_sha256": "2ea962584ef25130daa821ea07a08e46bdf20ebf552ee1a49c5058e717e4191b",
+   "png_sha256": "8e002c29ad240fdca4abd24e26793c698a50102266a4f3c669f737acc7c711e2",
+   "native_job_id": "6ad465140000181e0000004000000040",
+   "created_at": "2026-10-18T06:09:57Z"
+  },
+  "yonkoma-school": {
+   "sha256": "563c02983b3b70ce7691a25f6796311c0a83d18bf13fd157ca9d518510d46de5",
+   "bytes": 185641,
+   "prompt_sha256": "85b38f69ae4ddb2a77b6d7eee747e83119f07b283173b5b7c8aa2843f9ec7236",
+   "reference_sha256": "f29e8c8ece63e01354c387e6c2a0f04b474327c176e40f88ee282c13251fb56a",
+   "png_sha256": "92857dacf83ad6e391deb887693541ca09b0a0831cc537fc484da73594e6c15b",
+   "native_job_id": "6ad4655b0000181e0000004100000041",
+   "created_at": "2026-10-18T06:11:08Z"
+  },
+  "yonkoma-office": {
+   "sha256": "be50dccca253816a7d298df51df8125cbdccb2d95521221728007e7839086d42",
+   "bytes": 226625,
+   "prompt_sha256": "56396c59d454f34775d60d04e8bc44626b4e00c4746c2700686aa04d88a50aa2",
+   "reference_sha256": "712826e9467e6081d2f07d0b8272ac5349cea7805d085fd41cfa04cd52a54b64",
+   "png_sha256": "11b2da13232963f4a298b625df29f5f3413b79ae19efbc34875aec40f205df6d",
+   "native_job_id": "6ad465a10000181e0000004200000042",
+   "created_at": "2026-10-18T06:12:18Z"
+  },
+  "yonkoma-slice": {
+   "sha256": "892494e7dc477b86227e928dc6ec47c805a9fd5d5ba3a6ee3731f54470950c71",
+   "bytes": 139866,
+   "prompt_sha256": "9d22b964750f6e3f311596cd12b9e0bca9b554f3319a18d8274387c2309eab9d",
+   "reference_sha256": "c5d1021cbbb6aa7bce7ffdd91d5c5296177022c05cfd9d4b8439b3ca6d0a21fe",
+   "png_sha256": "e606a7bfacd8273f4c7d13623c4b6d2aa6b0c60f6ad39bc5ab7f8e7508b68047",
+   "native_job_id": "6ad465e70000181e0000004300000043",
+   "created_at": "2026-10-18T06:13:29Z"
+  },
+  "yonkoma-animal": {
+   "sha256": "070882ce390fad34d1ed4f3b9375c1d88bb18368d3fd0fa58839a31172ba22e4",
+   "bytes": 213872,
+   "prompt_sha256": "875f55727897d76408211325213940ed8b63ad49348cb3fd059b5c0d9ab5289c",
+   "reference_sha256": "49e31875a992cf7e29f0cf421876fc194668aca7ff0a693dd82381185a5f1701",
+   "png_sha256": "fae6adeb4af754585b9ea351b8a263904ac5d5b5b8886b5ec08a5fab6242bed0",
+   "native_job_id": "6ad4662e0000181e0000004400000044",
+   "created_at": "2026-10-18T06:14:39Z"
+  },
+  "yonkoma-newspaper": {
+   "sha256": "f3103b1be4c24ec97f5a8d13f1068d41067b5ee71eb581fc04d86bf8e305be03",
+   "bytes": 206739,
+   "prompt_sha256": "1c1a45fb86493161d47567b5dd42c25c4a779e6ba6d3a0f59cfa00922280ad29",
+   "reference_sha256": "24e993c5fde7157fce7291f73805d681db8fe1b1271ec0c06747f9db0d60bd62",
+   "png_sha256": "3d4b591cc2f59d5766cab207f662ceaa8fb99bf038bbbcfa1d2d07568cf0a5d6",
+   "native_job_id": "6ad466740000181e0000004500000045",
+   "created_at": "2026-10-18T06:15:49Z"
+  },
+  "yonkoma-story": {
+   "sha256": "5db50eff83331e48077cb448368a3cd43a1bc6dc66e7ec0e904a4dfeef538348",
+   "bytes": 179574,
+   "prompt_sha256": "9a4dcfd889e3ad4bf5afa0dab5411ad214cff7ef8b72715d32d4ebed0e766fe6",
+   "reference_sha256": "51ef0e42a7588be720388086126b5b662d149ba6aba1a1f37230ccb080ef6b14",
+   "png_sha256": "96e5f488b0ae94418f37e4551a5dbbfa989e89e1210d234547c28bf0e8c9d966",
+   "native_job_id": "6ad466bb0000181e0000004600000046",
+   "created_at": "2026-10-18T06:17:00Z"
+  },
+  "yonkoma-gag": {
+   "sha256": "830643d3063abeff42656aaed303febea83c69f4730f01ba371aca96b3444623",
+   "bytes": 152075,
+   "prompt_sha256": "0c5bc87676573d17cbe013ba463df770d6ddcf0c5744a2a49a5ee8158030b32b",
+   "reference_sha256": "03cd3cf8d6c9c63d3de623b00eda98c5170fd92e74db044068e83e7af5cb69ac",
+   "png_sha256": "8eb28b9874b93ee04740255d7b981111501458d8b8c08600d72d1929aed67633",
+   "native_job_id": "6ad467010000181e0000004700000047",
+   "created_at": "2026-10-18T06:18:10Z"
+  },
+  "yonkoma-fantasy": {
+   "sha256": "ee968408be90d144dd8126cdb2ea4ca3e85f81e1b99c9b370fbf34f89d4e54e0",
+   "bytes": 222958,
+   "prompt_sha256": "5cdcd8f6bacbbf964290568814bd6149a8a9e42de49606f5ec61a6095b09cbca",
+   "reference_sha256": "856a93c3ac3a7c2b4e1cdd647dd0835c454bc45b625dd830744d25f186201769",
+   "png_sha256": "c08ed5db0462c395229a81e6584b594ef8fd65ed784ed331c18c5023ab969d85",
+   "native_job_id": "6ad467470000181e0000004800000048",
+   "created_at": "2026-10-18T06:19:21Z"
+  },
+  "yonkoma-hobby": {
+   "sha256": "e87613b2d6817595e99eb29459b6b378d5f06fc9fa152ee51c57cfdd830e2262",
+   "bytes": 213328,
+   "prompt_sha256": "1c60e3adfb1b027880a800b1c05262fc8103b1303a6d47658a9da70806fa691c",
+   "reference_sha256": "c616f92ca65d7d2d36b77b05b409ffff02938d508fa81c1355a7bafcb8e9c117",
+   "png_sha256": "30ef567f3f0999d346b354feddd6f1b31455abf22743ca654ab150a7ba035d77",
+   "native_job_id": "6ad4678e0000181e0000004900000049",
+   "created_at": "2026-10-18T06:20:31Z"
+  },
+  "yonkoma-mochi": {
+   "sha256": "797fdaa71c06384278f29b5b34db2beedc3f248fd42bea866ab48ed50c6a00e8",
+   "bytes": 126995,
+   "prompt_sha256": "244242139119a1348b5cd4d4240538f7f09ecd594a267d41c4a130d5c814e1d4",
+   "reference_sha256": "1a92673ea2eeac42837b825f619a7f8e309ecb300e69a2cb4a75f796115cd117",
+   "png_sha256": "4a2ff86fb1389f8784068a431fadf548d13baac13315eb122c6e460c60ab179f",
+   "native_job_id": "6ad467d40000181e0000004a0000004a",
+   "created_at": "2026-10-18T06:21:43Z"
+  },
+  "gag": {
+   "sha256": "6a0b9734bc902ff72897a9ab18c00f63525750d781dc625f2ff04c60a01aa4b3",
+   "bytes": 79764,
+   "prompt_sha256": "73fbbdbaebf615c72f90cb55192016acb22be1c3457742ffa709d262f5feb037",
+   "reference_sha256": "e7dd9a8107bfa778c210abcdaea7d6fc76cfb73f1a19774e1bafd21443cefa06",
+   "png_sha256": "aa854526bdd3f730a9f50aac043fa524cdf602ae7927f5f0618039e493ae0395",
+   "native_job_id": "6ad446d9000013a20000001400000014",
+   "created_at": "2026-10-18T04:06:49Z"
+  },
+  "gag-slapstick": {
+   "sha256": "9446e47306eddebef9812db0c2bc6318140f6e860cb22f5683f1b025fdf99e00",
+   "bytes": 165446,
+   "prompt_sha256": "463d364bd0c5adb35f168957894d90885e6b13dbebdfe541ad628f6cbe508d65",
+   "reference_sha256": "2662306945f2616bc5408acd5c17d19d4ce023c2d4147866ebc9f1c00e025fc3",
+   "png_sha256": "a5b5af5e4c30cea62b1a94a36eaf0c739ecf2cb90fbf4dd89502232b58cc3f50",
+   "native_job_id": "6ad4681c0000181e0000004b0000004b",
+   "created_at": "2026-10-18T06:22:54Z"
+  },
+  "gag-surreal": {
+   "sha256": "bba5b07b65d921dd99e7ea581e82a97f350cb86363da7f7ee29e3b0b74f26737",
+   "bytes": 159933,
+   "prompt_sha256": "2b5d9f536a14c1d2068ae3ded806791d9e33e5e016e4b8120929695db61b9518",
+   "reference_sha256": "ee5764b18f6d17a8e09ea2279f38cca47b6804d306176c5b9df79784a318da58",
+   "png_sha256": "7c873f0823c9bcb80f5fcce01f35764867c683e950816b894e8cf5b84dcc6fbc",
+   "native_job_id": "6ad468630000181e0000004c0000004c",
+   "created_at": "2026-10-18T06:24:04Z"
+  },
+  "gag-school": {
+   "sha256": "abe8e9eac5c545533d622afef83c25c80470c2a767b9eedf3b329df1ac88fcf0",
+   "bytes": 193743,
+   "prompt_sha256": "c2b7b6038f1d15f191ced8a8be4edf05cc7bb439ea1443fe700d4922e637a2e3",
+   "reference_sha256": "7ee0398dffe22b6e6b168bcecb51db6663635da673c23485cc7468a4ec0844d1",
+   "png_sha256": "51bfb83a2a58d000a8105943a4702532a1390d699bd8c45f065f8caf6df50d1c",
+   "native_job_id": "6ad468a90000181e0000004d0000004d",
+   "created_at": "2026-10-18T06:25:15Z"
+  },
+  "gag-chibi": {
+   "sha256": "09479ba83eacfefe7d64026ce923dd627a5ebd175295a3f3e1d98a11c68ab95e",
+   "bytes": 120076,
+   "prompt_sha256": "84fe73fe615d7c3b69a18ac62fc3027d7f87bbe2b99610894a1b4792732ee1da",
+   "reference_sha256": "e32272b7e027c48ac08cbcf9f60e81c23ba7eb597f9eb857e1e20ccaac1375a4",
+   "png_sha256": "18002b5afffb0553d0949a4f066769287df4729072615008aed8639b87f55df9",
+   "native_job_id": "6ad468f00000181e0000004e0000004e",
+   "created_at": "2026-10-18T06:26:25Z"
+  },
+  "gag-black": {
+   "sha256": "b6ec571a4cc796ecf4d5934c42663a23c16ebd9324670cc10110457fb02be95b",
+   "bytes": 71098,
+   "prompt_sha256": "ea44e1fa86f6a8488555df90f6f78ed70b400c247b7ded0922f4a645aa76fc21",
+   "reference_sha256": "b8930488d5d3877ad54464934e07786e36f634a8472bd6cc55ef3cf69aadd247",
+   "png_sha256": "72242d50a3dc627596d484d711c8708edc3235ba7965a3577d43da2df381219a",
+   "native_job_id": "6ad469360000181e0000004f0000004f",
+   "created_at": "2026-10-18T06:27:35Z"
+  },
+  "gag-romcom": {
+   "sha256": "14ec679cf5df7c08a044aa2452e2bd1c5f978bee4ae54b0ff826565ef676b6eb",
+   "bytes": 134068,
+   "prompt_sha256": "afed39dc7f18be4987db51697fb506c97f06d24e13310359c0baa2515ec5b4b6",
+   "reference_sha256": "66fd306068efdc7613f1937876712e5fed45c1ea584ff262c824dffc57458ced",
+   "png_sha256": "5fb006c62d7b852dd24a7cfad122258aeadb200af17a88d90a8cf2ba503bc8a4",
+   "native_job_id": "6ad4697c0000181e0000005000000050",
+   "created_at": "2026-10-18T06:28:46Z"
+  },
+  "gag-sports": {
+   "sha256": "2b9e37417126e952b5b22fb525d009b35a5245cad44fe99baa66070b2a0bcf38",
+   "bytes": 269382,
+   "prompt_sha256": "9fa100c342c37fb21ddbd89b9c034111ac0a4326ab0bc8881b96b3ccad98d325",
+   "reference_sha256": "40f30be994ecaffff5fac52035d7ff76c151e60eff5c98b08a99582b5b819f8a",
+   "png_sha256": "6d4b658dbd864827b80f44ebea5358f016e791be4a2c76820772415fac80f1b6",
+   "native_job_id": "6ad469c30000181e0000005100000051",
+   "created_at": "2026-10-18T06:29:56Z"
+  },
+  "gag-fantasy": {
+   "sha256": "5b774486b9ddd46965315174469f99c1cd1eac79d8f61cf1d0b6d45d5245f70b",
+   "bytes": 173016,
+   "prompt_sha256": "c0fa7cfde13c510aa68073d08ff86f90d1ce5c55dfe5069d24c4a665d70dfcf2",
+   "reference_sha256": "c6bc9bff406a60dfa2b0bf769d37ecde4eac79780573627153b4e52dabd4b0f6",
+   "png_sha256": "210f942eb767bf066a5e17821f18135b157c9a52be02c4f065b38be15d098008",
+   "native_job_id": "6ad46a090000181e0000005200000052",
+   "created_at": "2026-10-18T06:31:07Z"
+  },
+  "gag-horror": {
+   "sha256": "db4de8af8756bb7dd9ca63ceea85841e2d9c3cc08cc92d3a5cdf0c288a9cd0e1",
+   "bytes": 281628,
+   "prompt_sha256": "7cdcccd69282e6812fb02e6aca04b672d2f300f66b4fe2d179dc38d39aa2d873",
+   "reference_sha256": "9f3373a8584ce831ea8138bd101a68f52fb6e3ca08ee5e98356371ff6216763e",
+   "png_sha256": "ed7a44cfa1e98f4fbe5c26216e33b18f384f272367253b4a467be3739d69bf4a",
+   "native_job_id": "6ad46a500000181e0000005300000053",
+   "created_at": "2026-10-18T06:32:17Z"
+  },
+  "gag-retro": {
+   "sha256": "7ba75b8521467706d88a60cab854ee9a17c8f342ff1716636f9a5c87204ba8dc",
+   "bytes": 165867,
+   "prompt_sha256": "91beed55167c42272a6f5bfb0bc599b89febc99d189442a4bd537502c92141af",
+   "reference_sha256": "c7f5d98c43ee540cadd73b7aabb3e03d67b421ebf2b36f89e6aafa3571568083",
+   "png_sha256": "5ca703063cdccf5129dffeda62fa364701bd3d0b35be2594eb4d0cf268b20721",
+   "native_job_id": "6ad46a960000181e0000005400000054",
+   "created_at": "2026-10-18T06:33:27Z"
+  },
+  "gag-hetauma": {
+   "sha256": "302e7587ba228291a6dc5d6f7aaa432f68fe2a0b80f39ec69d5805fb635602c3",
+   "bytes": 176527,
+   "prompt_sha256": "fc8d12fbc77c6e2107b21bf1a37a5372a240581a4ea0fd25460f7816b29d4dff",
+   "reference_sha256": "6a65300fd2c31c2ae0740195e067b7011ab24bd4c5c2bb04d42e46d55a70476e",
+   "png_sha256": "bcbc54426be88b72ae34db3c63d2dddc8f5b57dde0db10a6ae3a76edfd90ce3e",
+   "native_job_id": "6ad46adc0000181e0000005500000055",
+   "created_at": "2026-10-18T06:34:40Z"
+  },
+  "gag-grimy": {
+   "sha256": "d6591b4e8179d92b0a8d505d18c6e0aa2a2cfbd04b0df79b2b23c223b3eff389",
+   "bytes": 164496,
+   "prompt_sha256": "e6c1fef2b4a3349570124656e99a88933b2974fb5a917d51e9a86cf42c31d530",
+   "reference_sha256": "945cf0f7c1763737233b8bb1309daa45aa31710555973a0926ebefc2f1cf424b",
+   "png_sha256": "55d2d8f9684a744ee7884a6c9ee631415881e01d38ea1328f45962df2ab5b236",
+   "native_job_id": "6ad46b250000181e0000005600000056",
+   "created_at": "2026-10-18T06:35:52Z"
+  },
+  "gag-deadpan": {
+   "sha256": "efb0ec91e52077ac71ee788b8fb38719e5e3ade3ba3d98407e8a1aab2c156842",
+   "bytes": 61010,
+   "prompt_sha256": "7d2cbee66b2fe1fa9d1e4a2d638d5ed176e49c8edb8adb515dfc182f5877f714",
+   "reference_sha256": "6851816329feda1319b59722b216158fb15c12148c7448a56f2a55b160c9ca2e",
+   "png_sha256": "bd9b87d9dd79dd6f97afe9ca3018bdabe6cc7a48b0b25175b01fe2f3844f4c42",
+   "native_job_id": "6ad46b6d0000181e0000005700000057",
+   "created_at": "2026-10-18T06:37:04Z"
+  },
+  "horror": {
+   "sha256": "549cd25e60fc0d7abe9c057bee5d5a8b068dd48f75e435bbd8376073a8fc00a9",
+   "bytes": 216390,
+   "prompt_sha256": "7f63fcfb9dc9e06b7399d51c80687fa287de56eba6a42773d4221b573fc11cdf",
+   "reference_sha256": "3c407c57541e18c2c5f97db864f20e09e99d3999cec35bacd6eb1e8c8b3fd028",
+   "png_sha256": "ecc92b1f5fa4c29882463294e03b7d803dc398db2bdf201b6d3775be56875f56",
+   "native_job_id": "6ad4487e000013a20000001500000015",
+   "created_at": "2026-10-18T04:13:52Z"
+  },
+  "horror-kaidan": {
+   "sha256": "6dfd8b85ae94915182895524c7da4e436f25f86cf3b13eee6a6d23af736332d8",
+   "bytes": 180657,
+   "prompt_sha256": "40e752c1942630b018544759f6dcd4dcf4c84750da1a8297a8b61571219abdf5",
+   "reference_sha256": "2e38db7ad564e509fee79c8ff38b1f59d6874ada32442b84a5378309a1ce235e",
+   "png_sha256": "0c4b7cfac8b71849edbf054a4dc34e9a0280dfae1f0a624c6333132a5c660ca6",
+   "native_job_id": "6ad46bb50000181e0000005800000058",
+   "created_at": "2026-10-18T06:38:15Z"
+  },
+  "horror-psychological": {
+   "sha256": "cf8178e0674d4fc82ff2614807574abac4f2429c7d354e286f94a02a3203d1c3",
+   "bytes": 207337,
+   "prompt_sha256": "25bf823e69cdb26d88db8b2a6858dd6910a450598771fdf9e53d1bb845c24e03",
+   "reference_sha256": "6031bf5024007fc038b4f3ce9e187c52418ec4e2dc9dea51b6bc6a33044b194d",
+   "png_sha256": "539439b9808318123671eacd890b281d84b23d540271e7a6a18d410febd5ea96",
+   "native_job_id": "6ad46bfd0000181e0000005900000059",
+   "created_at": "2026-10-18T06:39:26Z"
+  },
+  "horror-cosmic": {
+   "sha256": "b3366d41edb00851691bc3099639850e937a8419ebe9a801facccf63b6c0eb90",
+   "bytes": 246074,
+   "prompt_sha256": "510b33a468633a45fc51c4bfbf39d933a67f4ebfe88957f2e534fb012cbd7b7e",
+   "reference_sha256": "b0d58348a57d262dc5f3b453c605a3ab4dbd0b26c2bd4b0cd812c2dd96293600",
+   "png_sha256": "f8612d36872d403a11b20c2e36d90451e1948ed648716b9ce178390c71be9ab8",
+   "native_job_id": "6ad46c430000181e0000005a0000005a",
+   "created_at": "2026-10-18T06:40:37Z"
+  },
+  "horror-folk": {
+   "sha256": "a0246129360540f1c4f13cc04123b6849eb82b0c6faeab750d019294939745f3",
+   "bytes": 245202,
+   "prompt_sha256": "98af1ad3aabdf6f7f0f8e120d53ccd6a27cae4da31b51688692e8e82b9d818bb",
+   "reference_sha256": "3da17c7a54c4c8e89658b271f8de75292dd3d24956ff3b54d76884562d437577",
+   "png_sha256": "f3e323ea6df0581e20f8eb2e7fc2c6addf8c96729b999511ccf2c28dd9c55fca",
+   "native_job_id": "6ad46c8a0000181e0000005b0000005b",
+   "created_at": "2026-10-18T06:41:48Z"
+  },
+  "horror-school": {
+   "sha256": "96687121cb59ef34edf53594aad0e7836d32e561b83d4897fe36daf7c844eaa3",
+   "bytes": 131703,
+   "prompt_sha256": "c7f0550b22f7829a5234641c333ad69436e5983bc68ea122ffebe8996d02965c",
+   "reference_sha256": "29302429eda6666f0e39a4ce44b740113aceaf023348e4797c11cb4ceb2e626e",
+   "png_sha256": "4a1177ba27433e341ae5dd15af016136ee4f2554bffe7112f187defedb6726a9",
+   "native_job_id": "6ad46cd10000181e0000005c0000005c",
+   "created_at": "2026-10-18T06:42:56Z"
+  },
+  "horror-shojo": {
+   "sha256": "99fafa08cd23a6f78e0b790251d573746535bd39e9711640b5b6a451b792779a",
+   "bytes": 194829,
+   "prompt_sha256": "466775979260ea5929ba749125b7fb4d59ed8d823756ba2c8706aa697e542f9d",
+   "reference_sha256": "b2ea276cd85057aa30304e6d8805dd67a30a23f97c132ded42650c3f0f27eb77",
+   "png_sha256": "bc98c8b3c94240d42177b38c5b9377b1394626e21fb8a392d9b57d6a4a44ec79",
+   "native_job_id": "6ad46d150000181e0000005d0000005d",
+   "created_at": "2026-10-18T06:44:06Z"
+  },
+  "horror-creature": {
+   "sha256": "7b1752dd764f880b01da49f73092198277d318a5f8e107d14bdba9875025a51b",
+   "bytes": 249247,
+   "prompt_sha256": "e3d1351da4a8a7306b46da7489814ca1bd7d80a6108856c99699c7d399985d4d",
+   "reference_sha256": "c216793541db8b777734aee0af7b174c6ea8a2ab07dd160699d56ee82abfd4ac",
+   "png_sha256": "3ed9aa420e644f5d4b70bde476ea7d072889cf8dfb11f0e67fd2a45f9be7243a",
+   "native_job_id": "6ad46d5c0000181e0000005e0000005e",
+   "created_at": "2026-10-18T06:45:17Z"
+  },
+  "horror-urban": {
+   "sha256": "63049714208ae64a262623305ed80231f463a2a31672ea2d7e803ede4119c2a3",
+   "bytes": 212920,
+   "prompt_sha256": "1c54b5bcb65b29f74c48399796dc254ec6881ad9a9ccceff7c405c28742acf9e",
+   "reference_sha256": "f691704fe3528e54ae646923ba6e21ba51c6a1f841ad37b1a4330abf394dbe76",
+   "png_sha256": "168d3c6787ae94ab44b79805a39ac92e2c4fb7166a42331c71dbcdc80e47c243",
+   "native_job_id": "6ad47116000019370000000200000002",
+   "created_at": "2026-10-18T07:01:11Z"
+  },
+  "horror-yokai": {
+   "sha256": "d164c625797e45eac1219e0d3941dbf7d1b65eef1273562b08a545df1fbafa01",
+   "bytes": 247413,
+   "prompt_sha256": "d655b39f1d591d3d3d4cc65b726bc134d95e637e0293fb1efd280e4432fb15fb",
+   "reference_sha256": "91e688df065625d62f19c3d2385d170b22d4fb62097645b18fb8ab0d19107d0e",
+   "png_sha256": "a9cba38dcd8a3f69bf41b7c2410de0ddf1407ac534f05094b255aaec9b8c638e",
+   "native_job_id": "6ad4715c000019370000000300000003",
+   "created_at": "2026-10-18T07:02:22Z"
+  },
+  "horror-panic": {
+   "sha256": "e46db2c024d6ed0d55c9f428ba4d5c76e3ee5e68a3b83d49587710602af815b4",
+   "bytes": 247383,
+   "prompt_sha256": "a825e2b26bc063d8500983cc729bf130ed1d647842bd5fbf29ae77940a1db44e",
+   "reference_sha256": "b11cac241e00dcce3739396a3a8eb1cb2e6ef48d18f8138142d15c1d00072166",
+   "png_sha256": "88c69e1bd52782ca757982c224f37f34c3d274a73b0a6e64c59a999c7d46c365",
+   "native_job_id": "6ad471a3000019370000000400000004",
+   "created_at": "2026-10-18T07:03:33Z"
+  },
+  "essay": {
+   "sha256": "82654281802b7f74cd2f592deabb365215bf174e75236c2975403314ce271b6e",
+   "bytes": 74146,
+   "prompt_sha256": "5bece70f8eaddeee63417b29d275c4310f32bab2bc325a76de8a8c969c421350",
+   "reference_sha256": "afbcca16904c835f7c7790aac918fbaf901ebecafcb467a5f2bae4622cfb7989",
+   "png_sha256": "b4524077f2e7b58531bdac67561d84bb6783b055cb0172dc5417247ad8438226",
+   "native_job_id": "6ad44c6a000013a20000001700000017",
+   "created_at": "2026-10-18T04:27:53Z"
+  },
+  "essay-diary": {
+   "sha256": "6644d90d41815bac6ca950b8692781f38e568e009ab4e36ba47a7a15d5b2ed47",
+   "bytes": 118417,
+   "prompt_sha256": "5fe11780217df7a1ed9a960c936970e50d6ca53d706e4b9a4d14693eb8c770f9",
+   "reference_sha256": "2272d2d4e4f80a0585509c69e031a0804b4057b68b33f64c7626131cba09cd95",
+   "png_sha256": "01146e51fb2e8530be5a36310c7c53f241d22e0a7a356819fe425c2153cfdecc",
+   "native_job_id": "6ad471ea000019370000000500000005",
+   "created_at": "2026-10-18T07:04:43Z"
+  },
+  "essay-parenting": {
+   "sha256": "1fae1ae631e0dcfefb59b7725e881ad65534a55499b4a4ec88c38795a158e7b9",
+   "bytes": 110597,
+   "prompt_sha256": "3b16163aeb233fa48e6e4b74c16e74948c57b8001e8324a8c8525e4c6b98b0b1",
+   "reference_sha256": "9dff6b95fb3d15818b48cbcc08c2634ec1a431fb7d4f47322488fe2cab1272c4",
+   "png_sha256": "d10860131d58410b7feb832d4b2f538af98860ee125177cfd41a62aa598df6cd",
+   "native_job_id": "6ad47231000019370000000600000006",
+   "created_at": "2026-10-18T07:05:56Z"
+  },
+  "essay-travel": {
+   "sha256": "d29b46c6a16ee9d4502d2ee9ec0f0db6d78d853482acc0fd3421bea1c9a4e48c",
+   "bytes": 93216,
+   "prompt_sha256": "bab0ce09e70c3aa3060cb19180b82756f77aa2665a203fd6d9c8a406431d83cd",
+   "reference_sha256": "d868e2bf262faafc101d06ad003961a449bf280a096de6b70c9eec4c3dc21f7e",
+   "png_sha256": "bba2efb73f23c73e2e3b9b29e6708fe7193026a9cc11bde6137b7f11740696e5",
+   "native_job_id": "6ad47279000019370000000700000007",
+   "created_at": "2026-10-18T07:07:08Z"
+  },
+  "essay-food": {
+   "sha256": "37469f5add4f2d15e667017fdb2769c4dbbd6ce1d8840f207c1759dcd084c2fd",
+   "bytes": 130828,
+   "prompt_sha256": "22223ef8e36153b00834d63acf7fd6e7929344102e276f0534e28366b792fd39",
+   "reference_sha256": "d745b872265a3efce73094344dfdaa6f027500dfdbc69317c8d2cc83a6dc2066",
+   "png_sha256": "e8dc9072c7986142d09ae78f0fb5e9faec182f01ecefea459e081c2d228a829f",
+   "native_job_id": "6ad472c1000019370000000800000008",
+   "created_at": "2026-10-18T07:08:20Z"
+  },
+  "essay-work": {
+   "sha256": "b29650fb1bbc95f57047a46f0878239713868427333d34118b777944b6973240",
+   "bytes": 141071,
+   "prompt_sha256": "41e89d644654bc76b6209cd9fa79cc0a3d6b55d0300a79cbf8117351f02e5883",
+   "reference_sha256": "e0de1b45512d3a043161e38e3ebfe820c7842c7c874fec06edb8d63ba1506929",
+   "png_sha256": "642653563ea33c1232b8aba84cc0ad2b034032a482291525c16517633cb74b17",
+   "native_job_id": "6ad47309000019370000000900000009",
+   "created_at": "2026-10-18T07:09:33Z"
+  },
+  "essay-health": {
+   "sha256": "12f0f372b7e58e19c3b5ec3396f7b42e3e3d2bddfb9a66a3effe8f832e70c709",
+   "bytes": 123263,
+   "prompt_sha256": "113859884a619b931b7933bedf6272564844c7121cff2241eff7a8ebed37e640",
+   "reference_sha256": "60bfa9b64111cf7cc40f4244c3e0240a0c5107046c70dbfc4922949c3fb11e28",
+   "png_sha256": "4330059648a95b64ae600e6442fe7bbea9e4d802f0c109fdf08a0d4b850cb647",
+   "native_job_id": "6ad47352000019370000000a0000000a",
+   "created_at": "2026-10-18T07:10:43Z"
+  },
+  "essay-pet": {
+   "sha256": "96d30f4ef3d2edec30e2dd294524962fc658b5f3bec21da8b58d03460fc0c9d8",
+   "bytes": 132459,
+   "prompt_sha256": "3148cbae559a30294b4a1fd65ede94c26247f7cde651e367e7f14d22d9020aaa",
+   "reference_sha256": "cf5fab8b8c54f77fd824bc2022092b98339dc5e9d0233110b2bbddc90285fb87",
+   "png_sha256": "56563651e0089e87d72ae89ef6bbe3b0b171104bba56bea6fd5afef20475d3e7",
+   "native_job_id": "6ad47398000019370000000b0000000b",
+   "created_at": "2026-10-18T07:11:56Z"
+  },
+  "essay-hobby": {
+   "sha256": "e4c1f91a5bc3cdca5fc58b83fd18e5724e26498cdafca70b346d230c65e288e9",
+   "bytes": 111471,
+   "prompt_sha256": "0be4db103312acccc87898a95de532d54cda3f6bd7aaef62d9176ebb0155c776",
+   "reference_sha256": "cf15f3a692888b61c3f6b0f665742ca10d26e241756b4c6917c4539de4399297",
+   "png_sha256": "977c50f03933bacfaadbea0a6c9b62aca26f9943b923150a20e7bc8e4fd85fa5",
+   "native_job_id": "6ad473e1000019370000000c0000000c",
+   "created_at": "2026-10-18T07:13:08Z"
+  },
+  "essay-report": {
+   "sha256": "b039aac671efed1d3ce2d4749ab43902df8444daffc0fb274b18a1c94a43688e",
+   "bytes": 114177,
+   "prompt_sha256": "2acfb522f953891aab52f7d165faabf9ddc245c3c391561eb635efba259da798",
+   "reference_sha256": "6391e46cd2292c369c569310d1a1bd3763eb35c40edf11ee6cbf9d1dc4c19f03",
+   "png_sha256": "3820f2a223eef5a6e8f89dba063f24304d175449f5dab7947ecb9f463f4e5efb",
+   "native_job_id": "6ad47429000019370000000d0000000d",
+   "created_at": "2026-10-18T07:14:21Z"
+  },
+  "essay-love": {
+   "sha256": "ff45ad816840de06e1d7f15fca0fadf0a7cc5c8a210a1d14d896d569d8aadd97",
+   "bytes": 143427,
+   "prompt_sha256": "3edbf8089ff9e05db268859e112e811fd46b3c96a9fed4b1679a055463c3b632",
+   "reference_sha256": "01a1a156aac3479e241d19c5152a8a17ef0b47d27e551854cd12b4302af63c4b",
+   "png_sha256": "cee6167e84b70b19a7f4ff05d5c102bc45ece38bf2ccf193dd659a0dc624475f",
+   "native_job_id": "6ad47472000019370000000e0000000e",
+   "created_at": "2026-10-18T07:15:31Z"
+  },
+  "gekiga": {
+   "sha256": "6acf33f6d18b6e004a04a60b8b1acbf5f1602a41bfa44996542ae5cba1e90eaf",
+   "bytes": 155731,
+   "prompt_sha256": "0d806f849e43f138dacd072f86ffffe8c5ee86d01821eda1324c61813b692b71",
+   "reference_sha256": "782dff846643c8d49f6e9f443b64229587dc946d55dcdcdeabe8bcb11a8acc6a",
+   "png_sha256": "4c7c5621d654d76de1179633070afbb7bd94bdd90766267e87bf94bd83dd2160",
+   "native_job_id": "6ad44d6e000013a20000001800000018",
+   "created_at": "2026-10-18T04:34:54Z"
+  },
+  "gekiga-samurai": {
+   "sha256": "35a0ab6514e11c1a8f2614281796023d7a74bec8640fa17bb0bbf46b25bca872",
+   "bytes": 144386,
+   "prompt_sha256": "e3436feb5809f2d32d0def849bed7c3585da2df66330c41c29cd8f682a422a21",
+   "reference_sha256": "3090d62ad9f34d0a8709812333b4e550d8a829fd0ae06a975be22595c8551522",
+   "png_sha256": "12e21d81b6d5a9e9bd8a98051e15a7e7a9d1d297a4cc5b8ed59bf577ed8bde3e",
+   "native_job_id": "6ad474b8000019370000000f0000000f",
+   "created_at": "2026-10-18T07:16:43Z"
+  },
+  "gekiga-yakuza": {
+   "sha256": "57c90b8a6636d2038e65f8a0b0f7d6352966dfc1781e7a080de7b2e1b7187f25",
+   "bytes": 244711,
+   "prompt_sha256": "e687e6dd7262e16655ab37b5c9952c30560e70f49a9cc84cde1ae345f6ba28f5",
+   "reference_sha256": "7603be1ba8ac2c2273b394b556985fb9be78c3e89c31e2570c1703ccef2a4dbf",
+   "png_sha256": "4c89f82a286dfbebc022317e7ce3de006ad6ccd8764b02d066c062fc0f6b2007",
+   "native_job_id": "6ad47500000019370000001000000010",
+   "created_at": "2026-10-18T07:17:56Z"
+  },
+  "gekiga-crime": {
+   "sha256": "8f6abda7baa997e20b3857652e71a2059d16ec0c00916a1e8cbacf3aa3bf0c5a",
+   "bytes": 208726,
+   "prompt_sha256": "e8c312ff21832cd3af34e61a9b0b6235d2551c735e5a4490b8a39e646577e186",
+   "reference_sha256": "fc79417dda374588289acb2c08b4aa22bbeba4c2ef51f7a8d5f132718f461283",
+   "png_sha256": "eb1d99feeecbfa9983a3febcd4ca65209b7544e4e0ffeffbfb37251f0ac8e99f",
+   "native_job_id": "6ad47549000019370000001100000011",
+   "created_at": "2026-10-18T07:19:08Z"
+  },
+  "gekiga-war": {
+   "sha256": "d0f5fd138a0187326a9c5a26fc57fb59869d617339046086c0032ff40eb70531",
+   "bytes": 188087,
+   "prompt_sha256": "dc66a9ac9124b2a19fc4a19f97473934226baee966e3e28699b51271dd8d6327",
+   "reference_sha256": "4367b3c4545d4acf0fe32b34919e3dcfaa07f849e0e4f022ab5b7a2369c3c149",
+   "png_sha256": "3b01f8faa7999df4a52e66cca8d08a3ec3a0133e595a5a99f94d7cf9729650ab",
+   "native_job_id": "6ad47591000019370000001200000012",
+   "created_at": "2026-10-18T07:20:21Z"
+  },
+  "gekiga-hardboiled": {
+   "sha256": "574712dd0a1634368e53801fdfba8bd607592ec14e7472e36cda01100718afc5",
+   "bytes": 216024,
+   "prompt_sha256": "6cb0ee89e0a8b698e319dbb86a75c5774a7d1273ecced142bf829a2aa7bdf8c4",
+   "reference_sha256": "5359bdfb48f8c4eee96625d81d3c0173443019110d5b6ccd773ca04b538711bc",
+   "png_sha256": "a57dc8069f49fc619cb17706cd221ba81b43a4c163274688cd61d1cc9975342e",
+   "native_job_id": "6ad475da000019370000001300000013",
+   "created_at": "2026-10-18T07:21:33Z"
+  },
+  "gekiga-social": {
+   "sha256": "915f2a281ac80b35d4b4cdb4c655a882a0b596d80af81add3808862e025092ac",
+   "bytes": 252472,
+   "prompt_sha256": "eb41078170b8c82eebdc31961d9e5ace2980a50f94cd5a26eb7698ff68ab5341",
+   "reference_sha256": "be01f2436e6a288f4379cee9814d2fe817858e7eb909e080de904223f0be40a4",
+   "png_sha256": "876af0b65410be9b3bbf72c794c0c9cea7183b736fa254e9fd57b97707a134cf",
+   "native_job_id": "6ad47622000019370000001400000014",
+   "created_at": "2026-10-18T07:22:46Z"
+  },
+  "gekiga-sports": {
+   "sha256": "46426ab8cebc875cdf3141907e880374d86a8c632b86a2b980df7989e9940384",
+   "bytes": 211733,
+   "prompt_sha256": "e086edd73ce939bd5f6cf1429b1b399b7ac28176900981208d0286221924b05a",
+   "reference_sha256": "905fd09e8ea16b1038e73e04f5bfc22257f5e7ddeace35702a693c0cf2c0b03b",
+   "png_sha256": "08e2310210460ecf4c947ae84106ed753a6e88a444b372f2b8128539655cfcb2",
+   "native_job_id": "6ad4766b000019370000001500000015",
+   "created_at": "2026-10-18T07:23:58Z"
+  },
+  "gekiga-kaiki": {
+   "sha256": "273dd7f20f375171d224c727bc4de09384feac7c75bab25950eb4b81e639362d",
+   "bytes": 228065,
+   "prompt_sha256": "c95167cdd25e1849ad88031177fc9fca66fe556317d3261a56d5e614930d654f",
+   "reference_sha256": "a443d02e269bf480f17d7710a63819ddb89d77124e05dce4357097a06a4989e1",
+   "png_sha256": "5d621d79f2fa829360e350db8cfb12332467ec626ebd9e827ecf81dd77c78e49",
+   "native_job_id": "6ad476b3000019370000001600000016",
+   "created_at": "2026-10-18T07:25:11Z"
+  },
+  "gekiga-historical": {
+   "sha256": "0e008a8fc706d5a02d354988d2a63e462d6ea44466ec4365df49b1676f89dfae",
+   "bytes": 209357,
+   "prompt_sha256": "f6263d727f27cd1a6451e659804ba62675eee8964a19bdc058be915c19efb6a3",
+   "reference_sha256": "e37e0eb5a07503c683dd451d1931ae7863ed125d174f05d47bb7aea0e4078303",
+   "png_sha256": "f27d0d4da0dd1affcf26a05be970a82daa66510f9edc41e7cc787235a4d570ed",
+   "native_job_id": "6ad476fc000019370000001700000017",
+   "created_at": "2026-10-18T07:26:23Z"
+  },
+  "gekiga-adventure": {
+   "sha256": "d00788b6003bcebeeeb31127dce3f9577da475a4b4a2ceb6fc8b61a2376e1bf7",
+   "bytes": 186941,
+   "prompt_sha256": "8309aed937e70a84314c43e26311a115b37e467cf70f3f70db1c181aba12a89a",
+   "reference_sha256": "f26bce66eb8bc7ead981e597df3710a47198381fd983ba7089bdf6711f548b81",
+   "png_sha256": "f203163d9ff0a7bd72977043a74ad939a6c7df99da8786aebcee7914d62771ea",
+   "native_job_id": "6ad47744000019370000001800000018",
+   "created_at": "2026-10-18T07:27:36Z"
+  },
+  "gekiga-grotesque": {
+   "sha256": "81681a92f1035cb4004acb3175133848fe53a174f91769fe3325cbd3511a31b5",
+   "bytes": 209109,
+   "prompt_sha256": "03f8884067f917da5004801391ef8611a3306b4ae3bbe817ef9ddf03871a7118",
+   "reference_sha256": "a85f34306e422f1ed2c797bf24ea46a6607923a290c2282684d9322791cde932",
+   "png_sha256": "b5fa547100ea78f4b5b181aaac4d4f609431176eb563a0d237e7ebbcfe577e75",
+   "native_job_id": "6ad4778d000019370000001900000019",
+   "created_at": "2026-10-18T07:28:48Z"
+  },
+  "gekiga-bearded": {
+   "sha256": "0d061d24330f52b9b23715751298b2be7960b67982314ccac3b329574749ecc6",
+   "bytes": 200025,
+   "prompt_sha256": "022feb4fb47ae9c9bddd43350634c21cfac906b1e446824cabb4b73e0a6a997e",
+   "reference_sha256": "4878f9ea42ec9eac053e6a689177eabf7a2251328cb8989b1540ba6609d2ddef",
+   "png_sha256": "cba7474927d85210ab09d8b18d3482ff322487ca9f2f4cd02265e594df04c29e",
+   "native_job_id": "6ad477d5000019370000001a0000001a",
+   "created_at": "2026-10-18T07:30:01Z"
+  }
+ }
+}

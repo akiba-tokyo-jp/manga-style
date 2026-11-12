@@ -1,0 +1,959 @@
+/*
+ * Manga style catalogue: white paper, black ink, grey screentone.
+ * The only colour is the focus outline. Mobile first; wider layouts are in
+ * the media queries near the end.
+ */
+
+:root {
+  --paper: #fff;
+  --ink: #111;
+  --ink-soft: #3d3d3d;
+  --ink-muted: #595959;
+  --grey-1: #f3f3f3;
+  --grey-2: #dcdcdc;
+  --tone-bg: #ebebeb;
+  --tone-dot: #9a9a9a;
+  --focus: #0a5cff;
+  --tap: 2.75rem;
+  --radius: .375rem;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: system-ui, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+h1,
+h2 {
+  margin: 0 0 .5em;
+  font-weight: 800;
+  line-height: 1.35;
+  word-break: auto-phrase;
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  font-size: 1.625rem;
+}
+
+h2 {
+  padding-left: .5rem;
+  border-left: .375rem solid var(--ink);
+  font-size: 1.1875rem;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .2em;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Frame: header, breadcrumb, main, footer */
+
+.wrap {
+  width: 100%;
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+main {
+  flex: 1 0 auto;
+  padding-top: 1.25rem;
+  padding-bottom: 3rem;
+}
+
+.site-header {
+  border-bottom: 3px solid var(--ink);
+}
+
+.site-header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .25rem .75rem;
+  min-height: 3.75rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+.site-name {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.3;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.lang-switch {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--tap);
+  min-height: var(--tap);
+  padding: 0 1rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  font-size: .9375rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: .25rem 0 0;
+  list-style: none;
+  font-size: .875rem;
+  line-height: 1.4;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.breadcrumb a,
+.breadcrumb [aria-current="page"] {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  overflow-wrap: anywhere;
+}
+
+.breadcrumb [aria-current="page"] {
+  font-weight: 700;
+}
+
+.breadcrumb .sep {
+  margin: 0 .625em;
+  color: var(--ink-muted);
+}
+
+.site-footer {
+  border-top: 3px solid var(--ink);
+  color: var(--ink-soft);
+  font-size: .8125rem;
+}
+
+.site-footer .wrap {
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer .footer-api {
+  margin-bottom: .75rem;
+  font-size: .9375rem;
+  font-weight: 700;
+}
+
+.site-footer .footer-api a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+}
+
+/* API guide (/api) */
+.api-doc {
+  max-width: 48rem;
+}
+
+.api-doc section {
+  margin-top: 2rem;
+}
+
+.api-doc pre {
+  margin: 0 0 .75rem;
+  padding: .625rem .875rem;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--grey-1);
+  /* 長い URL もスマホの幅で折り返して、横にスクロールしなくても全部読めるようにする */
+  white-space: pre-wrap;
+}
+
+.api-doc code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .9375rem;
+  overflow-wrap: anywhere;
+}
+
+.api-doc ol,
+.api-doc ul {
+  margin: 0 0 1em;
+  padding-left: 1.5rem;
+}
+
+.api-doc li + li {
+  margin-top: .375rem;
+}
+
+.api-doc .fields dt {
+  margin-top: .875rem;
+  font-weight: 700;
+}
+
+.api-doc .fields dd {
+  margin: .125rem 0 0;
+  color: var(--ink-soft);
+}
+
+.api-doc .examples a {
+  display: inline-block;
+  padding: .25rem 0;
+}
+
+/* Buttons, read-only fields and copy messages */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap);
+  padding: .5rem 1.25rem;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.button-primary {
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 4px 4px 0 var(--tone-dot);
+}
+
+.button-large {
+  width: 100%;
+  min-height: 3.5rem;
+  padding: .75rem 1.5rem;
+  font-size: 1.125rem;
+}
+
+.field-label {
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.url-input,
+.prompt-text {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--grey-1);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.url-input {
+  min-height: var(--tap);
+  padding: .5rem .75rem;
+}
+
+.prompt-text {
+  min-height: 10rem;
+  padding: .75rem .875rem;
+  line-height: 1.7;
+  resize: vertical;
+}
+
+.copy-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem 1rem;
+  margin-top: .75rem;
+}
+
+.copy-status {
+  justify-self: start;
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* A small speech balloon while a message is shown. */
+.copy-status:not(:empty) {
+  padding: .25rem .875rem;
+  border: 2px solid var(--ink);
+  border-radius: 1.25rem;
+  background: var(--paper);
+}
+
+/* Cards */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card-grid > li {
+  display: flex;
+  min-width: 0;
+}
+
+.card {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.card-thumb {
+  display: block;
+  position: relative;
+  flex: none;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-bottom: 2px solid var(--ink);
+  background-color: var(--grey-1);
+}
+
+.card-thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: .25rem;
+  padding: .5rem .625rem .625rem;
+}
+
+.card-title {
+  font-size: .9375rem;
+  font-weight: 800;
+  line-height: 1.4;
+  word-break: auto-phrase;
+  overflow-wrap: anywhere;
+}
+
+.card-path {
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.card-summary {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  color: var(--ink-soft);
+  font-size: .8125rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.card-count {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0 .5rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/* Screentone: grey dots on light grey (45° grid), fading out towards the top left. */
+.tone,
+.error-panel::before {
+  background-color: var(--tone-bg);
+  background-image:
+    linear-gradient(160deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0) 60%),
+    radial-gradient(circle, var(--tone-dot) 1.5px, transparent 2px),
+    radial-gradient(circle, var(--tone-dot) 1.5px, transparent 2px);
+  background-position: 0 0, 0 0, 5px 5px;
+  background-size: 100% 100%, 10px 10px, 10px 10px;
+}
+
+/* Top page */
+
+.intro {
+  margin-bottom: 1.5rem;
+}
+
+.lead {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+/* Explanatory samples keep their original framing; thumbnails alone use a padded 3:4 box. */
+.sample-pair { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+.sample-pair figure { min-width: 0; margin: 0; }
+.sample-pair figcaption { font-weight: 700; margin-top: .5rem; }
+.sample-pair .sample-image { width: 100%; height: auto; }
+@media (min-width: 48em) {
+  .sample-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .node.has-sample.has-pair {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas: "sample sample" "prompt actions";
+    grid-template-rows: auto auto;
+  }
+}
+
+/* Style page */
+
+.node {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.75rem;
+}
+
+.level-label {
+  display: inline-block;
+  margin: 0 0 .5rem;
+  padding: .125rem .625rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: .8125rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.node-summary {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+/* The category path right above the title and the id below it: a title alone does not identify a style. */
+.node-path ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 .125rem;
+  padding: 0;
+  list-style: none;
+  font-size: .9375rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.node-path li {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.node-path a,
+.node-path [aria-current="page"] {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  overflow-wrap: anywhere;
+}
+
+.node-path .sep {
+  margin: 0 .5em;
+}
+
+.node-path .sep,
+.card-path {
+  color: var(--ink-muted);
+}
+
+.node-id {
+  margin: .5rem 0 0;
+  color: var(--ink-soft);
+  font-size: .875rem;
+}
+
+.node-id code,
+.same-title-list code {
+  overflow-wrap: anywhere;
+}
+
+/* The same-name notice sits in the bottom section, under the API URL (the owner's request, 2026-09-28). */
+.same-title-notice {
+  margin: 0 0 .75rem;
+  padding: .5rem .75rem;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  font-size: .9375rem;
+  font-weight: 700;
+}
+
+.same-title {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 3px solid var(--ink);
+}
+
+.same-title-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.same-title-list li {
+  margin: .25rem 0;
+}
+
+.same-title-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  overflow-wrap: anywhere;
+}
+
+.copy-note,
+.use-style-note,
+.search-hint {
+  margin: .5rem 0 0;
+  color: var(--ink-soft);
+  font-size: .875rem;
+}
+
+.use-style {
+  margin-bottom: 1.5rem;
+}
+
+/* Hidden field used for a moment by the copy buttons (older browsers). */
+.copy-scratch {
+  position: fixed;
+  top: 0;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.header-links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .5rem;
+  margin-left: auto;
+}
+
+.header-search {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 .5rem;
+  font-size: .9375rem;
+  font-weight: 700;
+}
+
+.search-form {
+  margin: 0 0 1.5rem;
+}
+
+.search-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: .5rem;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  min-height: var(--tap);
+  padding: .5rem .75rem;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+
+.search-results h2 {
+  margin-top: .5rem;
+}
+
+.url-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: .5rem;
+}
+
+.url-field .field-label,
+.url-field .copy-status {
+  grid-column: 1 / -1;
+}
+
+.sample-image {
+  width: 100%;
+  border: 2px solid var(--ink);
+  background: var(--tone-bg);
+}
+
+.sample-figure {
+  margin: 0;
+}
+
+.sample-figure figcaption {
+  margin-top: .375rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+/* The sample and the comparison picture side by side (two columns already on a phone: 3:4 pictures
+   of about 170px each are enough to see the difference, and the reader never scrolls between them). */
+.compare-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+}
+
+.compare-note,
+.compare-how {
+  margin: .5rem 0 0;
+  color: var(--ink-soft);
+  font-size: .8125rem;
+  overflow-wrap: anywhere;
+}
+
+.no-sample {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 9rem;
+  padding: 1rem;
+  border: 2px solid var(--ink);
+}
+
+.no-sample p {
+  margin: 0;
+  padding: .5rem 1.25rem;
+  border: 2px solid var(--ink);
+  border-radius: 1.5rem;
+  background: var(--paper);
+  font-weight: 700;
+  text-align: center;
+}
+
+.tags {
+  margin: 1.25rem 0 0;
+  font-size: .875rem;
+}
+
+.tags dt {
+  font-weight: 700;
+}
+
+.tags dd {
+  margin: .25rem 0 0;
+  color: var(--ink-soft);
+  overflow-wrap: anywhere;
+}
+
+.sample-prompt {
+  margin-top: 1.25rem;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+}
+
+.sample-prompt summary {
+  min-height: var(--tap);
+  padding: .625rem .875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.sample-prompt[open] summary {
+  border-bottom: 2px solid var(--ink);
+}
+
+.sample-prompt p {
+  margin: 0;
+  padding: .75rem .875rem;
+  font-size: .9375rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.node-head {
+  margin-bottom: 1.5rem;
+}
+
+.children {
+  margin: 0 0 2rem;
+}
+
+/* The prompt and the API URL come after the choices, separated by a rule. */
+.children + .node {
+  padding-top: 1.5rem;
+  border-top: 3px solid var(--ink);
+}
+
+.children-note {
+  color: var(--ink-soft);
+}
+
+/* Prompt language switch (日本語 / English) */
+.prompt-langs ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0 0 .75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.prompt-lang {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6.5rem;
+  min-height: var(--tap);
+  padding: .25rem 1rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  font-size: .9375rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.prompt-lang.current {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* Error page */
+
+.error-panel {
+  max-width: 36rem;
+  margin: 1rem auto;
+  padding: 0 1.5rem 1.5rem;
+  border: 3px solid var(--ink);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.error-panel::before {
+  content: "";
+  display: block;
+  height: 3.5rem;
+  margin: 0 -1.5rem 1.25rem;
+  border-bottom: 3px solid var(--ink);
+}
+
+.error-panel p:last-child {
+  margin-bottom: 0;
+}
+
+/* Hover only with a real pointer, so a tap does not leave it stuck. */
+@media (hover: hover) {
+  a:hover {
+    text-decoration-thickness: .15em;
+  }
+
+  .site-name:hover {
+    text-decoration: underline;
+  }
+
+  .lang-switch:hover {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .button:hover {
+    background: var(--grey-1);
+  }
+
+  .button-primary:hover {
+    background: #333;
+  }
+
+  .card:hover {
+    box-shadow: 4px 4px 0 var(--ink);
+  }
+
+  .card:hover .card-title {
+    text-decoration: underline;
+  }
+}
+
+.button:active {
+  background: var(--grey-2);
+}
+
+.button-primary:active {
+  background: #000;
+  box-shadow: none;
+}
+
+@media (min-width: 30em) {
+  .url-field {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+}
+
+@media (min-width: 36em) {
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .wrap {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+/* Wide screens */
+@media (min-width: 48em) {
+  main {
+    padding-top: 2rem;
+  }
+
+  h1 {
+    font-size: 2.125rem;
+  }
+
+  h2 {
+    font-size: 1.3125rem;
+  }
+
+  /* The sample on the left; the prompt and, below it, the API URL on the right. */
+  .node.has-sample {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "sample prompt"
+      "sample actions";
+    gap: 1.5rem 2.5rem;
+    align-items: start;
+  }
+
+  /* With a comparison the sample column holds two pictures: give it half of the width. */
+  .node.has-sample.has-compare {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .node.has-sample .sample {
+    grid-area: sample;
+  }
+
+  .node.has-sample .prompt {
+    grid-area: prompt;
+  }
+
+  .node.has-sample .actions {
+    grid-area: actions;
+  }
+
+  .no-sample {
+    aspect-ratio: 3 / 4;
+  }
+
+  .button-large {
+    width: auto;
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 54em) {
+  .card-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 70em) {
+  .card-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

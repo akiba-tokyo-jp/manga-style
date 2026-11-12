@@ -1,0 +1,33 @@
+COMMAND uv run --no-project --python 3.12 --with-requirements C:\GitHub\manga-style\costlab-auth\manga\requirements.txt --with httpx --with pyyaml python -m unittest discover -s costlab-auth/manga/tests -p test_model_gallery.py -v
+C:\Users\User\AppData\Local\uv\cache\archive-v0\I0yumqk-rn8LclCX\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_API_legacy_default_is_GPT_and_ignores_UI_cookie (test_model_gallery.ModelGalleryTests.test_API_legacy_default_is_GPT_and_ignores_UI_cookie) ... ok
+test_anima_API_is_empty_instead_of_GPT_fallback (test_model_gallery.ModelGalleryTests.test_anima_API_is_empty_instead_of_GPT_fallback) ... ok
+test_anima_detail_never_reuses_GPT_prompt_image_copy_or_Genko (test_model_gallery.ModelGalleryTests.test_anima_detail_never_reuses_GPT_prompt_image_copy_or_Genko) ... ok
+test_anima_explicit_file_request_does_not_return_GPT_image (test_model_gallery.ModelGalleryTests.test_anima_explicit_file_request_does_not_return_GPT_image) ... ok
+test_api_guide_language_link_explicitly_keeps_model (test_model_gallery.ModelGalleryTests.test_api_guide_language_link_explicitly_keeps_model) ... ok
+test_category_opens_flat_gallery_not_second_level_gate (test_model_gallery.ModelGalleryTests.test_category_opens_flat_gallery_not_second_level_gate) ... ok
+test_detail_copy_identifies_model_and_keeps_actual_prompt (test_model_gallery.ModelGalleryTests.test_detail_copy_identifies_model_and_keeps_actual_prompt) ... ok
+test_explicit_URL_model_wins_over_saved_preference (test_model_gallery.ModelGalleryTests.test_explicit_URL_model_wins_over_saved_preference) ... ok
+test_gallery_pagination_retains_filters_and_model (test_model_gallery.ModelGalleryTests.test_gallery_pagination_retains_filters_and_model) ... ok
+test_hidden_style_is_not_in_any_gallery_or_model (test_model_gallery.ModelGalleryTests.test_hidden_style_is_not_in_any_gallery_or_model) ... ok
+test_look_based_second_level_stays_a_selectable_style (test_model_gallery.ModelGalleryTests.test_look_based_second_level_stays_a_selectable_style) ... ok
+test_model_choice_survives_navigation_language_search_and_revisit (test_model_gallery.ModelGalleryTests.test_model_choice_survives_navigation_language_search_and_revisit) ... ok
+test_model_registry_exposes_empty_anima_status (test_model_gallery.ModelGalleryTests.test_model_registry_exposes_empty_anima_status) ... ok
+test_model_switch_overrides_the_spread_header_rule (test_model_gallery.ModelGalleryTests.test_model_switch_overrides_the_spread_header_rule) ... ok
+test_model_tabs_keep_search_filters_and_page_position (test_model_gallery.ModelGalleryTests.test_model_tabs_keep_search_filters_and_page_position) ... ok
+test_negative_screentone_tag_is_not_positive_tone_filter (test_model_gallery.ModelGalleryTests.test_negative_screentone_tag_is_not_positive_tone_filter) ... ok
+test_no_mandatory_topic_for_search (test_model_gallery.ModelGalleryTests.test_no_mandatory_topic_for_search) ... ok
+test_not_found_keeps_selected_model_in_header (test_model_gallery.ModelGalleryTests.test_not_found_keeps_selected_model_in_header) ... ok
+test_pure_UI_requests_do_not_change_GPT_state_or_prompts (test_model_gallery.ModelGalleryTests.test_pure_UI_requests_do_not_change_GPT_state_or_prompts) ... ok
+test_search_action_does_not_shrink_or_wrap (test_model_gallery.ModelGalleryTests.test_search_action_does_not_shrink_or_wrap) ... ok
+test_topic_is_optional_filter_not_an_extra_page (test_model_gallery.ModelGalleryTests.test_topic_is_optional_filter_not_an_extra_page) ... ok
+test_unknown_model_is_rejected_without_fallback (test_model_gallery.ModelGalleryTests.test_unknown_model_is_rejected_without_fallback) ... ok
+test_model_gallery_suite_is_registered_exactly_once (test_model_gallery.RunnerInventoryTests.test_model_gallery_suite_is_registered_exactly_once) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 65.940s
+
+OK
+
+EXIT 0

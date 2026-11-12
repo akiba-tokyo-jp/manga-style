@@ -1,0 +1,609 @@
+# GitOps managed - do not edit on the server
+{
+	email leaf@tea-leaf.jp
+}
+
+mail.akiba.tokyo.jp {
+	# ★ 2026-10-21 緊急遮断: PHP の未認証 RCE（CVE-2026-109618 / CVE-2026-109619）。
+	#   mailcow の Web は php-fpm 8.2.29（修正版 8.2.35 未満）で動き、/ も /admin も API も
+	#   Autodiscover も PHP を通るため、Web 全体を外から閉じる（アプリより前に攻撃が届く）。
+	#   メールの送受信（SMTP / IMAP / POP3 / Sieve）は Caddy を通らないので影響しない。
+	#   ★ 解除はオーナーの指示があってから。mailcow の phpfpm を修正版にしたことを
+	#   確かめたうえで、下の @acme / handle を元の reverse_proxy だけに戻す。
+	# 証明書の HTTP-01 だけは通す（mailcow nginx の静的配信で PHP を通らない）。
+	@acme path /.well-known/acme-challenge/*
+	handle @acme {
+		reverse_proxy https://mailcowdockerized-nginx-mailcow-1:8443 {
+			transport http {
+				tls_insecure_skip_verify
+			}
+		}
+	}
+	handle {
+		header Content-Type "text/plain; charset=utf-8"
+		header Cache-Control "no-store"
+		header X-Robots-Tag "noindex, nofollow"
+		respond "mailcow の Web 画面はセキュリティ対応のため一時停止しています。メールの送受信は通常どおり使えます。" 503
+	}
+}
+
+akiba.tokyo.jp {
+	tls /etc/letsencrypt/live/akiba.tokyo.jp/fullchain.pem /etc/letsencrypt/live/akiba.tokyo.jp/privkey.pem
+
+	# 静的ページの配信元
+	root * /srv/top
+
+	# トップ（/）へのアクセスで、自作ページ（/srv/top/index.html）が
+	# 「実在するときだけ」自作ページを配信する。
+	# 未配置なら @home は不成立となり、下の PDS へフォールバックする
+	# （＝ファイルが無くても 404 にせず、今まで通り PDS を出す）。
+	@home {
+		path /
+		file {
+			try_files /index.html
+		}
+	}
+	handle @home {
+		file_server
+	}
+
+	# 音楽室は www 側に一本化した（訪問者が来るトップが www で、ページは inviteapp が
+	# この町のデザインで描くため）。apex に来たぶんは www へ送る。
+	# PDS が使うパス（/xrpc, /.well-known, /oauth）とは衝突しないので、PDS への
+	# フォールバックより先に置いてよい。
+	# {uri} には /music/... がそのまま入っているので、行き先に /music を書き足さないこと
+	#（書くと https://www.akiba.tokyo.jp/music/music/... と二重になる。実測で確認）。
+	redir /music* https://www.akiba.tokyo.jp{uri} permanent
+
+	# ゲームセンターも www 側に置く（ページは inviteapp が描く）。apex に来たぶんは www へ。
+	# {uri} には /game がそのまま入っているので、行き先に /game を書き足さないこと。
+	redir /game* https://www.akiba.tokyo.jp{uri} permanent
+
+	# 本屋さんは 2026-08-14 に cost-lab.jp へ移した。apex に来たぶんも同じ行き先へ。
+	redir /books* https://cost-lab.jp{uri} permanent
+
+	# それ以外（/xrpc, /.well-known, /oauth など PDS が使う全パス）
+	# および 自作ページ未配置時の / も、今まで通り PDS へ
+	handle {
+		reverse_proxy pds:3000
+	}
+}
+
+# MATERIAL: activate only after the material delivery PR has completed.
+# Reuses the existing wildcard certificate and /var/www -> /srv mount.
+material.akiba.tokyo.jp {
+	tls /etc/letsencrypt/live/akiba.tokyo.jp/fullchain.pem /etc/letsencrypt/live/akiba.tokyo.jp/privkey.pem
+	root * /srv/material
+	header X-Content-Type-Options nosniff
+	header Cache-Control "public, max-age=300, must-revalidate"
+	encode zstd gzip
+	file_server
+}
+
+*.akiba.tokyo.jp {
+	tls /etc/letsencrypt/live/akiba.tokyo.jp/fullchain.pem /etc/letsencrypt/live/akiba.tokyo.jp/privkey.pem
+
+	# 住民サブドメイン（例 denko.akiba.tokyo.jp）のトップ（/）だけ自作ページを配信する。
+	# 配信元は /srv/handles。ハンドル名は {http.request.host.labels.3}
+	#（jp=0 / tokyo=1 / akiba=2 / <handle>=3）。単一ラベルなのでパストラバーサル不可。
+	root * /srv/handles
+
+	# 専用ページ（/srv/handles/<handle>/index.html）があればそれを配信（例: denko）
+	@custom {
+		path /
+		file {
+			try_files /{http.request.host.labels.3}/index.html
+		}
+	}
+	handle @custom {
+		try_files /{http.request.host.labels.3}/index.html
+		file_server
+	}
+
+	# 専用ページが無ければ、住民共通ページ（/srv/handles/index.html）を配信。
+	# この1枚を全住民で共有するので、新しい住民が増えても自動で共通ページになる。
+	@common {
+		path /
+		file {
+			try_files /index.html
+		}
+	}
+	handle @common {
+		try_files /index.html
+		file_server
+	}
+
+	# それ以外（/.well-known/atproto-did, /xrpc, /oauth など）は今まで通り PDS へ。
+	# ファイル未配置時の / も、ここで PDS にフォールバックする（404 にしない）。
+	handle {
+		reverse_proxy pds:3000
+	}
+}
+
+www.akiba.tokyo.jp {
+	tls /etc/letsencrypt/live/akiba.tokyo.jp/fullchain.pem /etc/letsencrypt/live/akiba.tokyo.jp/privkey.pem
+
+	# 音楽室の**楽譜と MusicXML の実ファイル**だけをここで直接配る（1曲300KB以上あり、
+	# アプリを通す意味がないため）。**ページ本体は inviteapp が描く**ので、下の
+	# reverse_proxy に任せる＝この町のデザイン（6テーマ・ウィンドウ枠）にそろう。
+	# ★ 配信元は /opt/akiba-uta/out ではなく public。out には未公開の候補と品質チェック
+	#   不合格の回が混ざっており、ディレクトリ名は日時なので推測もできる。
+	# reverse_proxy より先に置くこと（後ろに置くと全部 inviteapp に吸われる）。
+	handle_path /music/songs/* {
+		root * /srv-uta
+		file_server
+		encode gzip
+		# 楽譜は差し替わらないが songs.json は増えるので、短めにして再検証させる。
+		header Cache-Control "public, max-age=600, must-revalidate"
+	}
+
+	# 本屋さんは 2026-08-14 に cost-lab.jp へ移した。
+	# ナビからも外したが、古い URL・検索結果が 404 にならないよう転送だけ残す。
+	# {uri} には /books?... がそのまま入るので、行き先に /books を書き足さないこと。
+	redir /books* https://cost-lab.jp{uri} permanent
+
+	handle {
+		reverse_proxy inviteapp:8000
+	}
+}
+
+# Struharmonia Web MMO。旧 struwaltz サーバとは別コンテナ・別データ。
+# TLS は既存証明書を利用。/auth と /ws を含め同一オリジンで配る。
+game.akiba.tokyo.jp {
+	tls /etc/letsencrypt/live/akiba.tokyo.jp/fullchain.pem /etc/letsencrypt/live/akiba.tokyo.jp/privkey.pem
+
+	# /kanban 閲覧サービス（docs/kanban/CONTRACT.md §1/§4, OPERATIONS.md）。
+	# ★ 動的 API/ingest だけを costlab-auth compose の kanban-viewer（web network 内 8081、
+	#   ホスト port 公開なし）へ。静的 shell（sites/game/public/kanban/）は game deploy の
+	#   struharmonia-web が配る。この順（API/ingest → /kanban 静的 → 通常 game）を崩さない。
+	# ★ 秘密・ボード内容はここに書かない。header だけを最終応答で上書きする。
+	# ★ 検査: tests/kanban_delivery/test_outer_caddy.py（実 Caddy + 実 game/Caddyfile）。
+	@kanban_dynamic path /kanban/api /kanban/api/* /kanban/ingest /kanban/ingest/*
+	handle @kanban_dynamic {
+		# app 側も同じ header を付ける契約。502/503 等でも欠けないよう外側でも固定する。
+		header {
+			defer
+			Cache-Control "private, no-store"
+			X-Content-Type-Options nosniff
+			Referrer-Policy no-referrer
+			X-Robots-Tag "noindex, nofollow"
+		}
+		# snapshot は最大 8MiB の JSON（非表示タブも1分ごとに取得）。対応ブラウザには圧縮して返す。
+		# 512 bytes 未満（ingest の受理応答等）と添付の octet-stream は既定どおり圧縮されない。
+		# 要求 body は伸張しない（ingest の署名 digest は送られた bytes のまま）。秘密は応答に含まれない。
+		encode zstd gzip
+		reverse_proxy kanban-viewer:8081
+	}
+
+	# /kanban → /kanban/（308）。Cookie Path=/kanban/ と相対 URL を一致させる。
+	handle /kanban {
+		header {
+			Cache-Control "private, no-store"
+			X-Content-Type-Options nosniff
+			Referrer-Policy no-referrer
+			X-Robots-Tag "noindex, nofollow"
+			Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'"
+		}
+		# ★ `*` を省くと /kanban/ が matcher と解釈され、redir が効かない（harness で確認）。
+		redir * /kanban/ 308
+	}
+
+	# 静的 shell。上流 game/Caddyfile の `public, max-age=0, must-revalidate` /
+	# `Referrer-Policy same-origin` を **defer で最終応答に上書き**する（事前付与では負ける）。
+	handle /kanban/* {
+		header {
+			defer
+			Cache-Control "private, no-store"
+			X-Content-Type-Options nosniff
+			Referrer-Policy no-referrer
+			X-Robots-Tag "noindex, nofollow"
+			Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'"
+			-Last-Modified
+			-ETag
+		}
+		reverse_proxy struharmonia-web:8080
+	}
+
+	# 通常の game（従来どおり。header は上流のまま）。
+	handle {
+		reverse_proxy struharmonia-web:8080
+	}
+
+	# 上流停止（502 等）は通常の handle の header を通らない。/kanban 配下だけ
+	# 同じ4 header を付ける。通常 game のエラー応答は従来どおり（空 body＋status）。
+	handle_errors {
+		@kanban_error path /kanban /kanban/*
+		header @kanban_error {
+			Cache-Control "private, no-store"
+			X-Content-Type-Options nosniff
+			Referrer-Policy no-referrer
+			X-Robots-Tag "noindex, nofollow"
+		}
+	}
+}
+
+# STRUWALTZ ゲームサーバ（コンテナ struwaltz、compose は akiba-tokyo-jp/struwaltz）。
+# ワイルドカード *.akiba.tokyo.jp より前に置く。DNS は既存のワイルドカード A。
+# WebSocket /ws は reverse_proxy が Upgrade する。
+struwaltz.akiba.tokyo.jp {
+	tls /etc/letsencrypt/live/akiba.tokyo.jp/fullchain.pem /etc/letsencrypt/live/akiba.tokyo.jp/privkey.pem
+	encode gzip
+	reverse_proxy struwaltz:5080
+}
+
+# STRUWALTZ の 3D 確認用ビューア（非公開）。ゲーム資産なので公開ディレクトリに出さない。
+# DNS は既存の *.akiba.tokyo.jp ワイルドカード。tls も同じ証明書。
+# ★ struwaltz.akiba.tokyo.jp（ゲームサーバ）とは別ホスト。上の reverse_proxy は触らない。
+# ★ 認証は costlab-auth。/__auth/* を守るとログイン不能になる（2026-08-01 に踏んだ）。
+preview.akiba.tokyo.jp {
+	tls /etc/letsencrypt/live/akiba.tokyo.jp/fullchain.pem /etc/letsencrypt/live/akiba.tokyo.jp/privkey.pem
+
+	handle /__auth/* {
+		reverse_proxy costlab-auth:8000
+	}
+
+	# ★ マッチャで /__auth/* を必ず除外すること。forward_auth は handle より先に走る。
+	@needs_auth not path /__auth/*
+	forward_auth @needs_auth costlab-auth:8000 {
+		uri /__auth/verify
+		copy_headers Cookie
+	}
+
+	header X-Robots-Tag "noindex, nofollow, noarchive"
+	header Cache-Control "private, no-store"
+
+	root * /srv/struwaltz-preview
+	file_server
+	encode gzip
+}
+
+# マンガの絵柄カタログ（Genko Studio 向け。コンテナ manga-style、compose は costlab-auth/docker-compose.yml、
+# ソースは costlab-auth/manga、手順は docs/manga-style.md）。
+# 公開ページ・見本の画像・/v1/（Genko が読む API）は誰でも読める。**/admin だけ** costlab-auth のログイン。
+# DNS は既存の *.akiba.tokyo.jp ワイルドカード。tls も同じ証明書。完全一致なので住民サブドメイン（→ PDS）より優先される。
+# ★ /__auth/* を守るとログイン不能になる（2026-08-01 に踏んだ）。forward_auth は /admin の下だけに掛ける。
+# ★ app 側も /admin で costlab-auth に同じ確認をもう一度する（ここが外れても開かない）。
+# ★ /internal/* はコンテナ内の操作用（docker exec の CLI）。外からは 404。
+manga.akiba.tokyo.jp {
+	tls /etc/letsencrypt/live/akiba.tokyo.jp/fullchain.pem /etc/letsencrypt/live/akiba.tokyo.jp/privkey.pem
+	encode gzip
+
+	handle /__auth/* {
+		reverse_proxy costlab-auth:8000
+	}
+
+	# ★ copy_headers Cookie は書かない。Caddy 2.11 以降は、認証の応答に Cookie が無いとき（204 には無い）
+	#   元のリクエストの Cookie を消して app へ渡すため、app 側のログイン再確認が必ず失敗する
+	#   （2026-09-26、ログインしても {"error":"forbidden"} になった）。書かなくても Cookie は
+	#   costlab-auth へも app へも元のまま届く。検査: costlab-auth/manga/tests/caddy_routing.py（本番と同じ caddy:latest）。
+	@admin path /admin /admin/*
+	forward_auth @admin costlab-auth:8000 {
+		uri /__auth/verify
+	}
+
+	@internal path /internal /internal/*
+	respond @internal 404
+
+	reverse_proxy manga-style:8080
+}
+
+# お試し場（sandbox1 / sandbox2 / sandbox3）。
+# 2026-09-03 に sandbox → sandbox1 へ改名し、同日 sys-you.jp から cost-lab.jp へ移設。
+# 別ドメイン(cost-lab.jp)なので tls 行なし＝自動HTTPS。
+# 配信元は /srv/sandbox1 など（sites/sandbox1 のデプロイ先）。compose のマウント追加は不要。
+#
+# ★ **中身は cost-lab.jp 本体（keiba / stock）とも無関係**。
+#   ホストを間借りしているだけで、世界観も配色も共有しない
+#   （docs/sandbox.md の「あきば町の世界観から切り離す」と同じ扱い）。
+# ★ cost-lab.jp と違い **検索避けもログインも掛けない**（お試しの公開ページなので）。
+# ★ DNS は 2026-08-01 の *.cost-lab.jp ワイルドカードで既に解決するため、レコード追加は不要。
+sandbox1.cost-lab.jp {
+	root * /srv/sandbox1
+	file_server
+	encode gzip
+}
+
+sandbox2.cost-lab.jp {
+	root * /srv/sandbox2
+	file_server
+	encode gzip
+}
+
+sandbox3.cost-lab.jp {
+	root * /srv/sandbox3
+	file_server
+	encode gzip
+}
+
+# 旧ホスト。**リンクを切らないための転送だけ**残す。
+# ※ sandbox*.sys-you.jp は移設前の公開 URL。DNS は *.sys-you.jp のワイルドカードで
+#   まだ VPS に向いているので、ブロックごと消すと証明書を発行できず TLS のエラーになる。
+# ※ sandbox.cost-lab.jp は番号なしの旧名。正は sandbox1.cost-lab.jp。
+sandbox1.sys-you.jp {
+	redir https://sandbox1.cost-lab.jp{uri} permanent
+}
+
+sandbox2.sys-you.jp {
+	redir https://sandbox2.cost-lab.jp{uri} permanent
+}
+
+sandbox3.sys-you.jp {
+	redir https://sandbox3.cost-lab.jp{uri} permanent
+}
+
+sandbox.sys-you.jp {
+	redir https://sandbox1.cost-lab.jp{uri} permanent
+}
+
+sandbox.cost-lab.jp {
+	redir https://sandbox1.cost-lab.jp{uri} permanent
+}
+
+# WEB Proxy（cost-lab.jp 配下・**非公開**）。
+#
+# ★ **公開領域には出さない。** cost-lab.jp のトップ・サイトマップからリンクを張らないこと。
+# ★ 認証はアプリ自身（初期 ID/パスワードはサイト内の設定から変更する）。
+#   keiba / stock の costlab-auth とは別。資格情報を混ぜない。
+# ★ DNS は *.cost-lab.jp のワイルドカードで解決する。
+# ★ 配信は webproxy コンテナ（costlab-auth の compose で一緒に上がる。
+#   別プロセスなので、ここが落ちても keiba/stock のログインは生きる）。
+proxy.cost-lab.jp {
+	header X-Robots-Tag "noindex, nofollow, noarchive"
+	header Cache-Control "private, no-store"
+	reverse_proxy webproxy:8000
+}
+
+# 株式クロスセクショナル分析のダッシュボード（cost-lab.jp 配下・**非公開**）。
+#
+# ★ **公開領域には一切出さない。** 特定銘柄の売買推奨を第三者に提供する行為は
+#   投資助言業（金融商品取引業）の登録を要する。この画面は個人が自分の記録を見るためのもので、
+#   cost-lab.jp のトップ・サイトマップからリンクを張らないこと。
+# ★ 認証は **akiba.tokyo.jp（inviteapp の ADMIN_USER / ADMIN_PASS）と同じ ID・パスワード**。
+#   ただし Caddy には平文ではなく **bcrypt ハッシュ**を置く（`caddy hash-password` で作る）。
+#   実体は VPS の /opt/caddy/.env（リポジトリには置かない）。
+#   ⚠ パスワードを変えるときは **inviteapp の .env と /opt/caddy/.env の2か所**を直す。
+# ⚠ DNS は **レコードの追加が要る**。当初「*.cost-lab.jp のワイルドカードで解決する」と
+#   書いていたが誤りで、ワイルドカードがあるのは sys-you.jp のほうだった
+#   （sandbox.cost-lab.jp が個別レコードで引けていたため取り違えた）。
+#   2026-08-01 に *.cost-lab.jp の CNAME を追加して解決した。
+#   **新しいサブドメインを足すときは caddy-deploy の前に `dig +short <名前>` で確認する。**
+# ★ 配信元は /opt/akiba-stock/public を :ro でマウントしたもの。
+#   **SQLite 本体（/opt/akiba-stock/data）はマウントしない**——認証を1か所間違えただけで
+#   全履歴が流出するため、公開物とデータを物理的に分けてある。
+stock.cost-lab.jp {
+	# ★ 2026-08-01、basic_auth をやめて costlab-auth（ログイン画面 ＋ Cookie ＋ パスキー）に
+	#   統合した。keiba と**同じ認証サービス・同じ ID・同じパスキー**を使う。
+	#   ⚠ **basic_auth はホーム画面の Web アプリ（standalone）と相性が悪い。**
+	#     401 の本文は空で、standalone では認証ダイアログが出ないことがあるため、
+	#     **画面が真っ白になって何もできない**（keiba 側が実機で踏んだ）。
+	#     stock も直前にホーム画面対応を入れたので、同じ問題を踏む手前だった。
+	#   ★ さらに**標準の認証ダイアログは iCloud キーチェーンの自動入力に対応しない**ため、
+	#     basic_auth のままでは Face ID が使えない。ログイン画面なら使える。
+	#   ★ costlab-auth は RP_ID=cost-lab.jp・Cookie ドメイン=.cost-lab.jp なので、
+	#     **keiba で登録したパスキーがそのまま stock でも通り、一度のログインで両方見られる**。
+	#
+	# 認証サービス自身は認証の外に置く（ここを守ると誰もログインできない）。
+	handle /__auth/* {
+		reverse_proxy costlab-auth:8000
+	}
+
+	# それ以外は Cookie を検査してから通す。
+	# ★ **マッチャで /__auth/* を必ず除外すること。**
+	#   Caddy はディレクティブを**書いた順ではなく内蔵の優先順**で評価し、
+	#   `forward_auth` は `handle` より**先**に走る。上の `handle /__auth/*` で
+	#   認証の外に出したつもりでも、マッチャが無いと**ログイン画面まで守られて
+	#   しまい、誰もログインできなくなる**（keiba 側が 2026-08-01 に実際に踏んだ。
+	#   stock も同じ書き方をしていて、CI の検査に止めてもらった）。
+	@needs_auth not path /__auth/*
+	# ★ forward_auth は**中身を渡さない**。costlab-auth はヘッダだけ見て
+	#   204（通す）か 303（ログイン画面へ）を返す。
+	#   2xx 以外は**認証サーバの応答がそのまま client に返る**ので、
+	#   リダイレクトは costlab-auth 側で組み立てている（Caddy 側では作れない）。
+	forward_auth @needs_auth costlab-auth:8000 {
+		uri /__auth/verify
+		copy_headers Cookie
+	}
+
+	# robots.txt を読まないクローラにも効かせる。実効の要は上の認証だが、
+	# 認証を外した瞬間に無防備にならないよう二重にする。
+	header X-Robots-Tag "noindex, nofollow, noarchive"
+	# 個人の記録なので、共有キャッシュにも中間装置にも残さない。
+	header Cache-Control "private, no-store"
+
+	root * /srv-stock
+	file_server
+	encode gzip
+}
+
+# 競馬モデルの検証結果と予測（cost-lab.jp 配下・**非公開**）。
+#
+# ★ **公開領域には出さない。** 当初は cost-lab.jp/keiba/ で公開していたが、
+#   認証を掛ける方針になったので公開ハンドルは撤去してこちらへ移した
+#   （認証を足しても、同じ中身が公開のまま残っていては意味がない）。
+#   cost-lab.jp のトップ・サイトマップからリンクを張らないこと。
+# ★ 認証は **costlab-auth**（ログイン画面 ＋ 署名付き Cookie ＋ パスキー）。
+#   ID・パスワードは あきば町（inviteapp の ADMIN_USER / ADMIN_PASS）と同じものを
+#   costlab-auth の .env に置く。**Caddy 側には資格情報を持たせない**。
+#   ⚠ 2026-08-01 に basic_auth から移行した。理由は下のブロック内のコメント。
+# ★ DNS は 2026-08-01 に足した *.cost-lab.jp のワイルドカードで解決する。
+#   ⚠ それ以前は cost-lab.jp にワイルドカードが無く、stock を出すときに踏んだ。
+#   **caddy-deploy の前に `dig +short keiba.cost-lab.jp` で引けることを確かめる**
+#   （引けないまま reload すると ACME が失敗して証明書が取れない）。
+# ★ 配信元は静的な器（/var/www/keiba）と、学習 cron が書く JSON（/opt/akiba-shared）だけ。
+#   **SQLite 本体（/opt/keiba/data）はマウントしない**——認証を1か所間違えただけで
+#   全データが流出するため、公開物とデータを物理的に分けてある（stock と同じ考え方）。
+keiba.cost-lab.jp {
+	# ★ 2026-08-01、basic_auth をやめて costlab-auth（ログイン画面 ＋ Cookie）にした。
+	#   ⚠ **basic_auth はホーム画面の Web アプリ（standalone）と相性が悪い。**
+	#     401 の本文は空で、standalone では認証ダイアログが出ないことがあるため、
+	#     **画面が真っ白になって何もできない**（実機で踏んだ）。
+	#     ログイン画面なら 401 でも必ず何かが出るし、パスキー（Face ID）も使える。
+	#
+	# 認証サービス自身は認証の外に置く（ここを守ると誰もログインできない）。
+	handle /__auth/* {
+		reverse_proxy costlab-auth:8000
+	}
+
+	# それ以外は Cookie を検査してから通す。
+	# ★ **マッチャで /__auth/* を必ず除外すること。**
+	#   Caddy はディレクティブを**書いた順ではなく内蔵の優先順**で評価し、
+	#   `forward_auth` は `handle` より**先**に走る。上の `handle /__auth/*` で
+	#   認証の外に出したつもりでも、マッチャが無いと**ログイン画面まで守られて
+	#   しまい、誰もログインできなくなる**（2026-08-01 に実際に踏んだ）。
+	@needs_auth not path /__auth/*
+	# ★ forward_auth は**中身を渡さない**。costlab-auth はヘッダだけ見て
+	#   204（通す）か 303（ログイン画面へ）を返す。
+	#   2xx 以外は**認証サーバの応答がそのまま client に返る**ので、
+	#   リダイレクトは costlab-auth 側で組み立てている（Caddy 側では作れない）。
+	forward_auth @needs_auth costlab-auth:8000 {
+		uri /__auth/verify
+		copy_headers Cookie
+	}
+
+	# robots.txt を読まないクローラにも効かせる。実効の要は上の認証だが、
+	# 認証を外した瞬間に無防備にならないよう二重にする。
+	header X-Robots-Tag "noindex, nofollow, noarchive"
+	# 個人の記録なので、共有キャッシュにも中間装置にも残さない。
+	header Cache-Control "private, no-store"
+
+	# ★ 並び順が意味を持つ。JSON の handle を静的配信より**前**に置くこと。
+	#   handle は書いた順に評価され、先に一致したものだけが処理する。逆にすると
+	#   JSON が静的ファイルとして探されて 404 になる（画面が永久に空になる）。
+	@results path /data.json
+	handle @results {
+		root * /srv-shared
+		rewrite * /keiba_results.json
+		file_server
+	}
+	@predictions path /predictions.json
+	handle @predictions {
+		root * /srv-shared
+		rewrite * /keiba_predictions.json
+		file_server
+	}
+	# 日次の状態だけを明示配信。台帳や共有ディレクトリ全体は配信しない。
+	@prediction_status path /prediction-status.json
+	handle @prediction_status {
+		root * /srv-shared
+		rewrite * /keiba_prediction_status.json
+		file_server
+	}
+	# 内容hashで固定した表示chunkだけを許可する。私有cache/manifest/tempは配信しない。
+	handle /race-view/* {
+		@race_view_archive_data path_regexp archive_data ^/race-view/archive/data/([0-9a-f]{64})[.]json$
+		handle @race_view_archive_data {
+			root * /srv-shared/keiba-archive
+			rewrite * /{re.archive_data.1}.json
+			file_server
+		}
+		@race_view_archive path_regexp archive ^/race-view/archive/(catalog|[0-9a-f]{64})[.]json$
+		handle @race_view_archive {
+			root * /srv-shared/keiba-race-view/outcome/archive
+			rewrite * /{re.archive.1}.json
+			file_server
+		}
+		@race_view_chunk path_regexp race_view ^/race-view/(forecast|outcome)/([0-9]{4}-[0-9]{2}-[0-9]{2})/([0-9a-f]{64})[.]json$
+		handle @race_view_chunk {
+			root * /srv-shared/keiba-race-view
+			rewrite * /{re.race_view.1}/{re.race_view.2}/{re.race_view.3}.json
+			file_server
+		}
+		handle {
+			respond 404
+		}
+	}
+
+	# 精算の派生状態のみ。元判断・生データ・私有台帳は公開しない。
+	@settlement_status path /settlement-status.json
+	handle @settlement_status {
+		root * /srv-shared
+		rewrite * /keiba_settlement_status.json
+		file_server
+	}
+
+	handle {
+		root * /srv/keiba
+		file_server
+	}
+
+	encode gzip
+}
+
+# コストラボ（別ブランド・別ドメイン）。apex と www を同じ静的サイトへ。
+# このドメインは akiba.tokyo.jp の証明書とは別なので、tls 行を書かず Caddy の自動HTTPS(ACME)に任せる
+# （冒頭の email 設定で Let's Encrypt を自動発行。DNS を VPS の IP に向けておくこと）。
+#
+# ★ 2026-08-16、「商品まとめサイト」から「データ解析プロジェクトの公開面（ポータル）」へ転換した。
+#   商品データの JSON 配信（/data.json・/curated/* 等）と発掘記事（/pick/*）はここから撤去済み。
+#   経緯は docs/notes.md 2026-08-16。keiba.cost-lab.jp / stock.cost-lab.jp（非公開・下のブロック）は無関係。
+cost-lab.jp, www.cost-lab.jp {
+	encode gzip
+
+	# 共通認証 costlab-auth（keiba/stock と同じサービス）。
+	# Cookie は .cost-lab.jp に付き、apex でのパスキー登録（COSTLAB_ORIGINS）にも使う。
+	# /fig/ が保護領域。認証サービス自身の結線は変えない。
+	# 認証サービス自身（/__auth/*）は認証の外に置く（ここを守ると誰もログインできない）。
+	handle /__auth/* {
+		reverse_proxy costlab-auth:8000
+	}
+	# /fig/ はフィギュア AR（私的利用）。公開ポータルのトップ・サイトマップからリンクしない。
+	# ★ forward_auth は handle より先に走るので、マッチャで /fig に限定する。
+	#   マッチャ無しだと apex 全体が守られ、公開面までログイン必須になる。
+	@fig path /fig /fig/*
+	forward_auth @fig costlab-auth:8000 {
+		uri /__auth/verify
+		copy_headers Cookie
+	}
+	header @fig X-Robots-Tag "noindex, nofollow, noarchive"
+	header @fig Cache-Control "private, no-store"
+	redir /fig /fig/ 308
+
+	# 未認証（401）はログイン画面へ。元の場所は next= で持ち回す。
+	# ★ 2026-08-16 時点で apex に 401 を出す保護領域は /fig/ のみ。
+	#   フォールバックは残す（costlab-auth は通常 303 を返す）。
+	handle_errors {
+		@unauth expression {err.status_code} == 401
+		handle @unauth {
+			redir * /__auth/login?next={uri} 303
+		}
+	}
+
+	# 商品発掘（旧 hakkutsu・廃止済み）の記事は 2026-08-16 に公開終了（経緯は docs/notes.md）。
+	# 検索結果・外部リンクを 404 にしないため、/pick 配下はトップへ恒久転送する。
+	# ※ redir は handle より先に評価されるので、置き場所はどこでも /pick* を拾える。
+	redir /pick* / permanent
+
+	# 本屋さん（Web小説ランキング）。中身は inviteapp が描く。
+	# 2026-08-14 に akiba.tokyo.jp/books から移した。パスは /books のまま。
+	# ★ handle は書いた順で first-match。下の静的配信より前に置くこと。
+	#   後ろに置くと /srv/costlab/books を探して 404 になる。
+	@books path /books /books/
+	handle @books {
+		reverse_proxy inviteapp:8000
+	}
+
+	# 旧カテゴリまとめページ（gadget SSG 時代の URL）。独立静的サイトには置かないので、
+	# トップへの転送だけ残す（検索結果・外部リンクを 404 にしない。/pick* と同じ扱い）。
+	@oldcats path /ai.html /gadget.html /game.html /fashion.html /cosme.html
+	redir @oldcats / permanent
+
+	# サイト本体（sites/costlab の素の静的サイト。Actions の Site costlab deploy が
+	# /var/www/costlab に配置する）。2026-08-16 に gadget の SSG から切り出した
+	# （それまでは /srv/gadget-site を配信。経緯は docs/notes.md）。
+	# キャッシュ方針: assets が安定名（内容ハッシュ無し）になったので長期キャッシュは張らない。
+	# HTML も assets も短命＋必ず再検証（サイトが小さいので分ける利得が無い）。
+	handle {
+		root * /srv/costlab
+		header Cache-Control "public, max-age=300, must-revalidate"
+		file_server
+	}
+}
+
+# sys-you.jp は 2026-09-03 に廃止（PortalX / sysyou 撤去）。
+# DNS がまだ VPS に向いているあいだはブロックを残す（消すと証明書を出せず TLS エラーになる）。
+# レコードを消したら、このブロックも消してよい。
+# お試し場の旧ホスト（sandbox*.sys-you.jp）は上の 301 転送のまま残す。
+sys-you.jp, www.sys-you.jp {
+	header X-Robots-Tag "noindex, nofollow, noarchive"
+	respond "gone" 410
+}

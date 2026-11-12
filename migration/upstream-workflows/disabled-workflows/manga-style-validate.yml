@@ -1,0 +1,201 @@
+name: manga-style validate
+
+# マンガの絵柄カタログ（manga.akiba.tokyo.jp。costlab-auth/manga、docs/manga-style.md）。
+# ★ 検査の要点: Genko が読む API の形と固定値、隠した枝が画面・API・画像から消えること、
+#   管理画面が costlab-auth のログインなしでは開かないこと、日英の切り替え。
+# ★ 検査そのものの検出力も見る（tests/power.py がわざと壊して、落ちることを確かめる）。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'costlab-auth/manga/**'
+      - 'costlab-auth/docker-compose.yml'
+      - 'tools/manga_catalog/**'
+      - 'caddy/Caddyfile'
+      - '.github/workflows/manga-style-validate.yml'
+  pull_request:
+    paths:
+      - 'costlab-auth/manga/**'
+      - 'costlab-auth/docker-compose.yml'
+      - 'tools/manga_catalog/**'
+      - 'caddy/Caddyfile'
+      - '.github/workflows/manga-style-validate.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: manga-style-validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    # 検出力の試験（tests/power.py）は、わざと壊すごとに checks を全部流す。23 件で約 10 分になり、
+    # 10 分の上限で打ち切られた（2026-09-28、Genko の試験の修正で 8 件足したとき）。
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: install
+        run: pip install --quiet -r costlab-auth/manga/requirements.txt 'httpx==0.28.1' 'PyYAML==6.0.2'
+
+      # 木の定義（tools/manga_catalog）と、コンテナに入る catalog.json が食い違っていないこと。
+      # 木の検査（id・段と枝の数・見分けやすさ・実在の名前）も export の中で走る。
+      - name: catalog.json is generated from the tree definition
+        run: python3 tools/manga_catalog/export_site_tree.py --check
+
+      # 絵とプロンプトは組で変わる（2026-09-27 本人「プロンプトを更新する場合は、必ず絵も更新しなさい　これは絶対です」）。
+      # 見本の記録（approved_samples.json）を向き先の版と比べ、言葉だけ変わって絵が同じ枝があれば落とす。
+      - name: a prompt never changes without its picture
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+          python3 tools/manga_catalog/check_pairs.py --self-test
+          want="${BASE_REF:-$BEFORE}"
+          if [ -n "$want" ] && [ "$want" != "0000000000000000000000000000000000000000" ] \
+             && git fetch --quiet --depth=1 origin "$want" \
+             && git cat-file -e "FETCH_HEAD:tools/manga_catalog/approved_samples.json" 2>/dev/null; then
+            git show "FETCH_HEAD:tools/manga_catalog/approved_samples.json" > "$RUNNER_TEMP/base_samples.json"
+            python3 tools/manga_catalog/check_pairs.py "$RUNNER_TEMP/base_samples.json"
+          else
+            echo "no base approved_samples.json to compare with ($want)"
+          fi
+
+      - name: checks
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/manga_catalog/prepare_samples.py
+          python3 -m unittest discover -s tools/manga_catalog -p 'test_sample_bundles.py' -v
+          python3 -m unittest discover -s costlab-auth/manga/tests -p 'test_repairs.py' -v
+          python3 -m unittest discover -s costlab-auth/manga/tests -p 'test_ranking_additions.py' -v
+          python3 -m unittest discover -s costlab-auth/manga/tests -p 'test_picturebook_additions.py' -v
+          python3 -m unittest discover -s costlab-auth/manga/tests -p 'test_x100_additions.py' -v
+          python3 -m unittest discover -s costlab-auth/manga/tests -p 'test_fanza_additions.py' -v
+          python3 -m unittest discover -s costlab-auth/manga/tests -p 'test_commercial_additions.py' -v
+          python3 -m unittest discover -s costlab-auth/manga/tests -p 'test_compare.py' -v
+          cd costlab-auth/manga
+          python -W ignore -m unittest discover -s tests -p 'checks.py' -v
+
+      - name: detection power (each deliberate break must be caught)
+        run: python costlab-auth/manga/tests/power.py
+
+      - name: compose and Caddy wiring
+        run: |
+          python3 - <<'PY'
+          import re, yaml
+          doc = yaml.safe_load(open("costlab-auth/docker-compose.yml", encoding="utf-8"))
+          svc = doc["services"]["manga-style"]
+          assert svc["build"] == "./manga" and svc["container_name"] == "manga-style", svc
+          assert "env_file" not in svc and "ports" not in svc, "no shared .env, no published port"
+          assert svc["read_only"] is True and svc["cap_drop"] == ["ALL"], svc
+          assert svc["volumes"] == ["manga_style_data:/data"], svc["volumes"]
+          assert "manga_style_data" in doc["volumes"]
+          for key in svc.get("environment", {}):
+              assert not re.search(r"PASS|TOKEN|SECRET|HASH|KEY", key), key
+          for name, other in doc["services"].items():
+              if name != "manga-style":
+                  assert "manga_style_data" not in str(other.get("volumes", [])), name
+          src = open("caddy/Caddyfile", encoding="utf-8").read()
+          m = re.search(r"^manga\.akiba\.tokyo\.jp \{$(.*?)^\}$", src, re.M | re.S)
+          assert m, "manga.akiba.tokyo.jp block missing"
+          block = m.group(1)
+          assert "reverse_proxy manga-style:8080" in block
+          assert re.search(r"@admin path /admin /admin/\*", block)
+          assert re.search(r"forward_auth @admin costlab-auth:8000", block)
+          assert "handle /__auth/*" in block
+          assert re.search(r"respond @internal 404", block)
+          assert src.index("manga.akiba.tokyo.jp {") < src.index("sandbox1.cost-lab.jp {")
+          print("ok: compose and Caddy wiring")
+          PY
+
+      # 本番の Caddy（caddy/docker-compose.yml は caddy:latest）と同じ版で、manga.akiba.tokyo.jp の
+      # ブロックそのものを動かす。ログイン後に Cookie が app まで届くこと、/admin 以外にログインを掛けないこと。
+      # ★ 2026-09-26: Caddy 2.11 の copy_headers Cookie が Cookie を消し、ログイン後も forbidden になった。
+      #   偽の認証サーバの単体テストでは見えない。本物の Caddy でしか捕まらない。
+      - name: real Caddy routing (same tag as production) + detection power
+        run: |
+          set -euo pipefail
+          id=$(docker create caddy:latest)
+          docker cp "$id:/usr/bin/caddy" "$RUNNER_TEMP/caddy"
+          docker rm "$id" >/dev/null
+          "$RUNNER_TEMP/caddy" version
+          CADDY_BIN="$RUNNER_TEMP/caddy" python3 costlab-auth/manga/tests/caddy_routing.py --require
+          CADDY_BIN="$RUNNER_TEMP/caddy" python3 costlab-auth/manga/tests/caddy_routing.py --power
+
+      - name: docker build
+        run: docker build -t manga-style:ci costlab-auth/manga
+
+      # 実イメージを read-only・uid 10002・空の volume で起動し、公開の入口を叩く。
+      - name: container smoke (empty volume, read-only, uid 10002)
+        run: |
+          set -euo pipefail
+          docker volume create manga-ci-data >/dev/null
+          docker run -d --name manga-ci --read-only --tmpfs /tmp:size=64m --cap-drop ALL \
+            --security-opt no-new-privileges:true -v manga-ci-data:/data -p 127.0.0.1:18080:8080 \
+            -e MANGA_SITE_ORIGIN=https://manga.akiba.tokyo.jp manga-style:ci >/dev/null
+          ok=""
+          for i in $(seq 1 40); do
+            if curl -fsS http://127.0.0.1:18080/healthz >/dev/null 2>&1; then ok=yes; break; fi
+            sleep 1
+          done
+          if [ -z "$ok" ]; then docker logs manga-ci; exit 1; fi
+          test "$(docker exec manga-ci id -u)" = 10002
+          curl -fsS http://127.0.0.1:18080/v1/tree | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["version"]==1 and len(d["nodes"])==2756, len(d["nodes"])'
+          curl -fsS http://127.0.0.1:18080/v1/styles/shonen-battle-bold-black | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["license"]=={"generated":True,"artist_names":False,"terms":d["license"]["terms"]} and len(d["samples"])==1'
+          curl -fsS -o /dev/null http://127.0.0.1:18080/files/shonen-battle-bold-black/upper_body-v1.jpg
+          # 配布した追加画像が実イメージに入り、起動時に記録どおり取り込まれること。
+          python3 - <<'PY'
+          import hashlib, json
+          from urllib.parse import urlsplit
+          from urllib.request import urlopen
+          origin = "http://127.0.0.1:18080"
+          registry = json.load(open("tools/manga_catalog/sample_bundles.json"))
+          approved = json.load(open("tools/manga_catalog/approved_samples.json"))["samples"]
+          for bundle in registry["bundles"]:
+              for nid in bundle["nodes"]:
+                  style = json.load(urlopen(origin + "/v1/styles/" + nid))
+                  assert len(style["samples"]) == 1, nid
+                  image = urlopen(origin + urlsplit(style["samples"][0]["url"]).path).read()
+                  assert hashlib.sha256(image).hexdigest() == approved[nid]["sha256"], nid
+          print("ok: additional samples in the container")
+          # 比較の絵（compare/）が実イメージに入り、記録の数だけ読み込まれること。
+          records = json.load(open("costlab-auth/manga/compare/records.json"))
+          health = json.load(urlopen(origin + "/healthz"))
+          assert health["comparisons"] == len(records["samples"]), (health, len(records["samples"]))
+          print(f"ok: {health['comparisons']} comparison pictures in the container")
+          PY
+          curl -fsS "http://127.0.0.1:18080/?lang=en" | grep -q 'Manga Style Catalogue'
+          code=$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:18080/admin)
+          test "$code" = 403
+          docker exec manga-ci python -m app.cli prompt shonen --lang ja | grep -q '少年漫画'
+          # 承認済みの見本の取り込み（app.cli import）: 記録したプロンプトのまま入り、2 回入れても版が変わらない
+          python3 - > "$RUNNER_TEMP/one.jsonl" <<'PY'
+          import base64, io, json
+          from PIL import Image
+          buf = io.BytesIO()
+          Image.new("L", (900, 1200), 128).save(buf, "PNG")
+          print(json.dumps({"id": "gag", "image_b64": base64.b64encode(buf.getvalue()).decode(),
+                            "prompt": {"ja": "記録したプロンプト", "en": "the recorded prompt"},
+                            "model_version": "gpt-image-2.5-sunburst", "created_at": "2026-09-26T15:00:00Z"}))
+          PY
+          docker exec -i manga-ci python -m app.cli import < "$RUNNER_TEMP/one.jsonl" | grep -q 'imported 1'
+          v1=$(curl -fsS http://127.0.0.1:18080/v1/styles/gag | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["samples"][0]["prompt"]=={"ja":"記録したプロンプト","en":"the recorded prompt"}, d["samples"]; print(d["version"])')
+          docker exec -i manga-ci python -m app.cli import < "$RUNNER_TEMP/one.jsonl" >/dev/null
+          v2=$(curl -fsS http://127.0.0.1:18080/v1/styles/gag | python3 -c 'import json,sys; print(json.load(sys.stdin)["version"])')
+          test "$v1" = "$v2"
+          curl -fsS http://127.0.0.1:18080/v1/styles/shonen-battle | python3 -c 'import json,sys; p=json.load(sys.stdin)["prompt"]["en"]; assert "shonen manga art" not in p, "level-1 words must not be added below level 1"'
+          docker restart manga-ci >/dev/null
+          for i in $(seq 1 40); do curl -fsS http://127.0.0.1:18080/healthz >/dev/null 2>&1 && break; sleep 1; done
+          curl -fsS http://127.0.0.1:18080/v1/styles/shonen-battle-bold-black | python3 -c 'import json,sys; assert json.load(sys.stdin)["version"]==1, "restart must keep the state"'
+          docker rm -f manga-ci >/dev/null
+          docker volume rm manga-ci-data >/dev/null
+          echo "ok: container smoke"

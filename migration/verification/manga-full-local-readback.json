@@ -1,0 +1,15 @@
+{
+  "source": "extracted private manga-style working tree; local ASGI, not production",
+  "health": {
+    "ok": true,
+    "nodes": 2756,
+    "comparisons": 217
+  },
+  "tree_nodes": 2756,
+  "explanatory_pairs": 2756,
+  "verified_sample_image_hashes": 5512,
+  "selected_html_api_image_routes": "passed",
+  "anima_empty_contract": "passed",
+  "anonymous_admin_internal_denied": true,
+  "seconds": 315.828
+}

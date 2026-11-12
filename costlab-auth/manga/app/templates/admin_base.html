@@ -1,0 +1,30 @@
+{#- Admin pages: Japanese only, same stylesheet as the public site plus admin.css. -#}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>{% block title %}管理画面{% endblock %} | マンガの絵柄カタログ</title>
+<link rel="stylesheet" href="/static/site.css">
+<link rel="stylesheet" href="/static/admin.css">
+<script src="/static/site.js" defer></script>
+</head>
+<body class="admin">
+<header class="site-header">
+  <div class="wrap admin-bar">
+    <a class="site-name" href="/admin">絵柄カタログ 管理画面</a>
+    <nav class="admin-nav" aria-label="管理メニュー">
+      <a href="/admin/queue">作り直しの一覧</a>
+      <a href="/?lang=ja">公開サイト</a>
+      <form method="post" action="/__auth/logout"><button class="linklike" type="submit">ログアウト</button></form>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{%- if msg %}<p class="flash ok" role="status">{{ msg }}</p>{% endif %}
+{%- if err %}<p class="flash ng" role="alert">{{ err }}</p>{% endif %}
+{% block content %}{% endblock %}
+</main>
+</body>
+</html>

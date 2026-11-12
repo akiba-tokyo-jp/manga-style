@@ -1,0 +1,58 @@
+{% extends "admin_base.html" %}
+{% from "_admin_rows.html" import node_table %}
+{% block title %}トップ{% endblock %}
+{% block content %}
+<h1>管理画面</h1>
+<ul class="stats">
+  <li>枝 <b>{{ stats.total }}</b></li>
+  <li>公開中 <b>{{ stats.visible }}</b></li>
+  <li>隠している <b>{{ stats.hidden }}</b></li>
+  <li>見本あり <b>{{ stats.samples }}</b></li>
+  <li>修正あり <b>{{ stats.edited }}</b></li>
+  <li>作り直し待ち <b><a href="/admin/queue">{{ stats.queue }}</a></b></li>
+</ul>
+
+<section class="panel">
+  <h2>API の公開の方法</h2>
+  <p>いまは <b>{{ '誰でも読める（公開）' if api_mode == 'public' else '限定公開（トークンが必要）' }}</b> です。
+     限定公開にすると、/v1/ の API は <code>Authorization: Bearer &lt;トークン&gt;</code> を付けたときだけ応えます（画面と画像は公開のまま）。</p>
+  <form method="post" action="/admin/api-mode" class="inline-form">
+    {%- if api_mode == 'public' %}
+    <input type="hidden" name="mode" value="token"><button class="button" type="submit">限定公開にする</button>
+    {%- else %}
+    <input type="hidden" name="mode" value="public"><button class="button" type="submit">公開に戻す</button>
+    {%- endif %}
+  </form>
+
+  <h3>トークン</h3>
+  {%- if new_token %}
+  <div class="new-token">
+    <label class="field-label" for="new-token">新しいトークン（この画面を閉じると二度と表示されません）</label>
+    <input class="url-input" id="new-token" type="text" value="{{ new_token }}" readonly>
+    <button class="button button-primary" type="button" data-copy-target="new-token" data-copied="コピーしました" data-failed="コピーできませんでした">コピー</button>
+    <span class="copy-status" aria-live="polite"></span>
+  </div>
+  {%- endif %}
+  {%- if tokens %}
+  <ul class="token-list">
+    {%- for t in tokens %}
+    <li><b>{{ t.label }}</b> <span class="muted">{{ t.created_at }}</span>
+      <form method="post" action="/admin/tokens/{{ t.id }}/revoke" class="inline-form"><button class="button small" type="submit">消す</button></form></li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p class="muted">トークンはまだありません。</p>
+  {%- endif %}
+  <form method="post" action="/admin/tokens" class="inline-form">
+    <label class="field-label" for="token-label">名前</label>
+    <input class="url-input short" id="token-label" name="label" type="text" maxlength="60" placeholder="Genko">
+    <button class="button" type="submit">トークンを作る</button>
+  </form>
+</section>
+
+<section class="panel">
+  <h2>1段目</h2>
+  <p class="muted">枝の名前を押すと、その枝の修正・絵の作り直し・下の段の一覧に進みます。隠した枝は、その下の段も含めてサイトと API に出ません。</p>
+  {{ node_table(rows, "top") }}
+</section>
+{% endblock %}

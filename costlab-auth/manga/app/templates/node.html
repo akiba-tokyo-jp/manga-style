@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% from "_model_empty.html" import empty %}
+{% block content %}
+<a class="text-link detail-back" href="{{ back_to_gallery }}">← {{ newui.back }}</a>
+<div class="node-head">
+  {% if node.path_upper %}<nav class="node-path" aria-label="{{ ui.path_label }}"><ol>{% for item in path_crumbs[:-1] %}<li><a href="{{ item.url }}">{{ item.title }}</a><span class="sep" aria-hidden="true">›</span></li>{% endfor %}<li><span aria-current="page">{{ node.title }}</span></li></ol></nav>{% endif %}
+  <p class="eyebrow">{{ model_info.name }} · {{ newui.detail }}</p>
+  <h1>{{ node.title }}</h1><p class="node-summary">{{ node.summary }}</p>
+  <p class="node-id">{{ ui.id_label }}: <code>{{ node.id }}</code></p>
+  <p class="quiet-note">{{ newui.model_note }}{% if requested_versions %} {{ newui.requested_version }}: {{ requested_versions | join(' / ') }}{% endif %}</p>
+  <a class="compare-link" href="{{ compare_url }}">{{ newui.compare }}</a>
+</div>
+{% if compare_models %}<div class="model-comparison"><div><h2>GPT Image</h2>{% endif %}
+<div class="node{{ ' has-sample' if sample else '' }}{{ ' has-pair' if sample_pair else '' }}">
+  <section class="sample">
+    <h2>{{ ui.sample_heading }}</h2>
+    {% if sample_pair %}<div class="sample-pair">{% for item in sample_pair %}<figure class="sample-figure">
+      <img class="sample-image" src="{{ item.url }}" width="{{ item.width }}" height="{{ item.height }}" alt="{{ item.alt }}">
+      <figcaption>{{ item.label }}</figcaption>
+      <details class="sample-prompt"><summary>{{ ui.sample_prompt_heading }}</summary><p id="sample-prompt-{{ loop.index0 }}" lang="{{ prompt.lang }}">{{ item.prompt }}</p><button class="button" type="button" data-copy-target="sample-prompt-{{ loop.index0 }}" data-copy-prefix="{{ copy_head.prompt }}" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ newui.sample_copy }}</button><span class="copy-status" aria-live="polite"></span></details>
+    </figure>{% endfor %}</div>
+    {% elif sample %}<img class="sample-image" src="{{ sample.url }}" width="{{ sample.width }}" height="{{ sample.height }}" alt="{{ sample.alt }}">
+    {% if sample_prompt %}<details class="sample-prompt"><summary>{{ ui.sample_prompt_heading }}</summary><p id="sample-prompt-0" lang="{{ prompt.lang }}">{{ sample_prompt }}</p><button class="button" type="button" data-copy-target="sample-prompt-0" data-copy-prefix="{{ copy_head.prompt }}" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ newui.sample_copy }}</button><span class="copy-status" aria-live="polite"></span></details>{% endif %}
+    {% else %}<div class="no-sample tone"><p>{{ ui.no_sample }}</p></div>{% endif %}
+  </section>
+  <section class="prompt">
+    <h2 id="prompt-heading">{{ ui.prompt_heading }}</h2>
+    <nav class="prompt-langs" aria-label="{{ ui.prompt_lang_label }}"><ul>{% for pl in prompt_langs %}<li>{% if pl.current %}<span class="prompt-lang current" aria-current="true" lang="{{ pl.code }}">{{ pl.label }}</span>{% else %}<a class="prompt-lang" href="{{ pl.url }}" hreflang="{{ pl.code }}" lang="{{ pl.code }}">{{ pl.label }}</a>{% endif %}</li>{% endfor %}</ul></nav>
+    <textarea class="prompt-text" id="prompt-text" rows="10" readonly spellcheck="false" lang="{{ prompt.lang }}" aria-labelledby="prompt-heading">{{ prompt.text }}</textarea>
+    <div class="copy-row"><button class="button" type="button" data-copy-target="prompt-text" data-copy-prefix="{{ copy_head.prompt }}" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ newui.style_copy }}</button><span class="copy-status" aria-live="polite"></span></div>
+    <p class="copy-note">{{ 'コピーにはモデル名・分類・id が付きます。' if lang == 'ja' else 'Copied text includes the model, category, and id.' }}</p>
+    {% if prompt.tags %}<dl class="tags"><dt>{{ ui.tags_label }}</dt><dd>{{ prompt.tags }}</dd></dl>{% endif %}
+  </section>
+  <div class="actions">
+    {% if genko %}<a class="button button-primary button-large" href="{{ node.genko_url }}">{{ ui.use_style }}</a>
+    {% else %}<div class="use-style"><a class="button button-primary button-large" href="{{ node.genko_url }}">{{ ui.use_style }}</a><p class="use-style-note">{{ ui.use_style_note }}</p></div><div class="url-field"><label class="field-label" for="api-url">{{ ui.api_url_label }}</label><input class="url-input" id="api-url" type="text" value="{{ node.api_url }}" readonly><button class="button button-primary" type="button" data-copy-target="api-url" data-copy-prefix="{{ copy_head.url }}" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ ui.copy_url }}</button><span class="copy-status" aria-live="polite"></span></div>{% endif %}
+  </div>
+</div>
+{% if compare_models %}</div><div>{{ empty(newui) }}</div></div><p class="quiet-note">{{ newui.compare_note }}</p>{% endif %}
+{% if compare %}<details class="legacy-comparison"><summary>{{ compare.label }}</summary><img class="sample-image" src="{{ compare.url }}" width="{{ compare.width }}" height="{{ compare.height }}" alt="{{ compare.alt }}"><p>{{ compare.how }}</p><p>{{ compare.note }}</p></details>{% endif %}
+{% if children %}<details class="related-styles"><summary>{{ '関連する絵柄' if lang == 'ja' else 'Related styles' }}</summary><ul>{% for c in children %}<li><a href="{{ c.url }}">{{ c.title }}</a></li>{% endfor %}</ul></details>{% endif %}
+{% if same_title %}<section class="same-title" id="same-title"><h2>{{ ui.same_title_heading }}</h2><p class="same-title-notice">{{ ui.same_title_notice.format(n=same_title | length) }}</p><ul class="same-title-list">{% for o in same_title %}<li><a href="{{ o.url }}">{{ o.path }}</a> <code>{{ o.id }}</code></li>{% endfor %}</ul></section>{% endif %}
+{% endblock %}

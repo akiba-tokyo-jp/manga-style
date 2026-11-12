@@ -1,0 +1,52 @@
+name: costlab-auth deploy
+
+# *.cost-lab.jp の認証サービス。
+# ★ **ここが落ちると keiba も stock も見られなくなる。** デプロイスクリプトは
+#   up -d のあとに /healthz が応答することまで確かめ、駄目ならバックアップへ戻す。
+
+# 自動起動は akiba-deploy.yml。ここは手で回す退路。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: costlab-auth-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup ssh
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          echo "${{ secrets.VPS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: pack and send
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/manga_catalog/prepare_samples.py
+          tar czf costlab-auth.tar.gz --exclude='__pycache__' --exclude='.env' costlab-auth
+          scp -i ~/.ssh/id_ed25519 -P "${{ secrets.VPS_PORT }}" \
+            costlab-auth.tar.gz \
+            "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/home/deploy/incoming/costlab-auth.tar.gz"
+
+      - name: deploy
+        run: |
+          ssh -i ~/.ssh/id_ed25519 -p "${{ secrets.VPS_PORT }}" \
+            "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" \
+            "sudo /usr/local/sbin/costlab-auth-deploy.sh"
+
+      - name: cleanup key
+        if: always()
+        run: rm -f ~/.ssh/id_ed25519
