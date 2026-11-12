@@ -6,6 +6,7 @@
 <h1>{{ title }}</h1><p class="node-summary">{{ summary }}</p>
 <p class="node-id">ID: <code>{{ entry.id }}</code></p>
 <p class="quiet-note">{{ limitation }}</p>
+{% if category_notice %}<p class="quiet-note category-notice">{{ category_notice }}</p>{% endif %}
 </div>
 <div class="node has-sample">
 <section class="sample">

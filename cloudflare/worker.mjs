@@ -122,15 +122,17 @@ export default {
       const node = path.match(/^\/(n|styles)\/([a-z0-9]+(?:-[a-z0-9]+)*)$/);
       if (node || ['/', '/search', '/api'].includes(path)) {
         const meta = await routes(env, url);
-        const rootCategory = node?.[1] === 'n' && meta.roots.includes(node[2]);
+        const modelRoots = meta.model_roots?.[model] ?? meta.roots;
+        const modelMeta = { ...meta, roots: modelRoots };
+        const rootCategory = node?.[1] === 'n' && modelRoots.includes(node[2]);
         const visible = model === GPT ? (meta.model_visible?.[GPT] || meta.visible) : meta.visible;
         if (node && !rootCategory && !visible.includes(node[2])) {
           const body = await (await asset(env, url, `/_data/error/${lang}-${model}.html`, true)).text();
           return result(body.replaceAll(PLACEHOLDER, url.origin), request, { status: 404, type: 'text/html; charset=utf-8', model });
         }
-        const root = node?.[1] === 'n' && meta.roots.includes(node[2]) ? node[2] : '';
+        const root = node?.[1] === 'n' && modelRoots.includes(node[2]) ? node[2] : '';
         if (path === '/' || path === '/search' || root) {
-          try { validateFilters(meta, url.searchParams, root); } catch { return error(request, 400, 'invalid gallery filter'); }
+          try { validateFilters(modelMeta, url.searchParams, root); } catch { return error(request, 400, 'invalid gallery filter'); }
           return page(await (await asset(env, url, `/_data/gallery/${lang}-${model}.html`, true)).text(), request, lang, model, meta);
         }
         if (path === '/api') return page(await (await asset(env, url, `/_data/guide/${lang}-${model}.html`, true)).text(), request, lang, model, meta);

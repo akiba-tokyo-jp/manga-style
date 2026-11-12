@@ -16,6 +16,11 @@
       "tag": "anima-contemporary-003",
       "asset": "anima-contemporary-003.zip",
       "sha256": "b6f44f2d10ce8db3872914eaa79c3d0d02c718ceeb1f16589b64bb42805c670c"
+    },
+    {
+      "tag": "anima-genre-other-001",
+      "asset": "anima-genre-other-001.zip",
+      "sha256": "f82bc34915774c5fa755e342b3240209e99f30f8778fb35daba56a5b6e210cb6"
     }
   ],
   "entries": [
@@ -941,6 +946,160 @@
       },
       "version": 1,
       "updated_at": "2026-11-12T14:00:21Z"
+    },
+    {
+      "id": "anima-other-maturelid-even",
+      "category": "other",
+      "reference_context": "adult-manga",
+      "sample_content": "non-explicit-fully-clothed-adult",
+      "title": {
+        "ja": "細線と白場の落ち着いた成人顔",
+        "en": "Quiet adult face with fine lines and white space"
+      },
+      "summary": {
+        "ja": "成人に見える単独の着衣全身像。卵形から細い顎、控えめな目鼻口、細い輪郭と顎下・袖・膝裾の軽いハッチング、白場の多い描き方。指定した年齢・8頭身・瞳形への適合は確認していません。手指は小さく密集し、末端の精度は未確立です。",
+        "en": "One fully clothed adult-looking figure with an oval face tapering to a narrow chin, restrained features, fine contours and light hatching under the jaw and at sleeve and trouser folds. The requested age, eight-head proportions and exact eye shape are not verified. Small clustered fingers remain an unresolved precision limit."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "realistic"
+        ],
+        "finish": [
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Clearly mature almond eyes with a thick upper lash line, subtle lower-lid folds, a long adult face and naturally outlined lips; balanced eight-head-tall adult proportions. Very thin even continuous ink outlines, delicate internal detail, white-paper hair separated by sparse fine strands, a few pale flat halftone patches and broad clean white space."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "4345d0b502e0e4481e1598781ae524c50bc877a52498d4a2f74d4438605e6d4f.png",
+        "sha256": "4345d0b502e0e4481e1598781ae524c50bc877a52498d4a2f74d4438605e6d4f",
+        "width": 576,
+        "height": 1024,
+        "thumb": "744265c405168b92b46005a6296755627da9ca0bf5ae1d187371a2cfff20d0c8.jpg",
+        "thumb_sha256": "744265c405168b92b46005a6296755627da9ca0bf5ae1d187371a2cfff20d0c8",
+        "prompt": {
+          "en": "monochrome manga, fine clean lineart, original character, solo, full body. A single adult woman aged 38, drawn once, standing with both feet visible and arms relaxed. Fully clothed in a plain long-sleeved shirt and full-length trousers, an ordinary nonsexual pose. Clearly mature almond eyes with a thick upper lash line, subtle lower-lid folds, a long adult face and naturally outlined lips; balanced eight-head-tall adult proportions. Very thin even continuous ink outlines, delicate internal detail, white-paper hair separated by sparse fine strands, a few pale flat halftone patches and broad clean white space. Plain unmarked white background, one uninterrupted unlettered drawing with wide empty margins."
+        },
+        "native_job_id": "6af5d7e6000002560000002700000027",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5d7e6000002560000002700000027",
+          "api_seconds": 17.412
+        },
+        "max_rgb_channel_delta": 12
+      },
+      "references": [
+        {
+          "title": "失楽天2026年11月号・公式公開表紙の顔の描法のみ",
+          "url": "https://www.wani.com/magazine/13878_202611/"
+        }
+      ],
+      "limitations": {
+        "ja": "成人向け漫画の顔や線の一般的な描法を参考にした別枠です。見本は成人の着衣・非露骨な表現。原PNGは未加工で色味が残る場合があり、別人物・別場面での絵柄再現性も未検証です。",
+        "en": "A separate category studying general face and line construction in adult manga. Examples show fully clothed adults in non-explicit poses. Original PNGs are unmodified and may retain a tint; cross-subject and cross-scene repeatability remains untested."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T15:27:42Z"
+    },
+    {
+      "id": "anima-other-maturelid-bold",
+      "category": "other",
+      "reference_context": "adult-manga",
+      "sample_content": "non-explicit-fully-clothed-adult",
+      "title": {
+        "ja": "太い輪郭と黒面の成熟した顔",
+        "en": "Mature face with bold contours and black shapes"
+      },
+      "summary": {
+        "ja": "成人に見える単独の着衣全身像。太い眉と明瞭な鼻口、太い外輪郭、髪・顎下・脇・裾などの黒面で形を作る白黒表現。衣服や指先は様式的に省略され、指定した8頭身・細い顔との一致は未確認。手指・足指の本数は一部判別しづらいままです。",
+        "en": "One fully clothed adult-looking figure with strong brows and clearly outlined features, thick outer contours and broad black hair, jaw and clothing shadows. Clothing and extremities are stylized; agreement with the requested eight-head slender construction is not established. Some finger and toe counts remain difficult to resolve."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Clearly mature almond eyes with a thick upper lash line, subtle lower-lid folds, a long adult face and naturally outlined lips; balanced eight-head-tall adult proportions. Thick rounded outlines, simplified interior marks, broad flat areas of pure black and white, black hair and large clothing-shadow silhouettes, with no gray shading or fine texture."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "18110d52a7bbed1a61981b62771619091c0c38aef95f9e828f62a3fabb8e8687.png",
+        "sha256": "18110d52a7bbed1a61981b62771619091c0c38aef95f9e828f62a3fabb8e8687",
+        "width": 576,
+        "height": 1024,
+        "thumb": "139c08fe46d83297133b2bffff6743655c4880a45eda350235a375cc5685af56.jpg",
+        "thumb_sha256": "139c08fe46d83297133b2bffff6743655c4880a45eda350235a375cc5685af56",
+        "prompt": {
+          "en": "monochrome manga, bold graphic ink, heavy black shapes, original character, solo, full body. A single adult woman aged 38, drawn once, standing with both feet visible and arms relaxed. Fully clothed in a plain long-sleeved shirt and full-length trousers, an ordinary nonsexual pose. Clearly mature almond eyes with a thick upper lash line, subtle lower-lid folds, a long adult face and naturally outlined lips; balanced eight-head-tall adult proportions. Thick rounded outlines, simplified interior marks, broad flat areas of pure black and white, black hair and large clothing-shadow silhouettes, with no gray shading or fine texture. Plain unmarked white background, one uninterrupted unlettered drawing with wide empty margins."
+        },
+        "native_job_id": "6af5d905000002560000003700000037",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5d905000002560000003700000037",
+          "api_seconds": 17.515
+        },
+        "max_rgb_channel_delta": 10
+      },
+      "references": [
+        {
+          "title": "失楽天2026年11月号・公式公開表紙の顔の描法のみ",
+          "url": "https://www.wani.com/magazine/13878_202611/"
+        }
+      ],
+      "limitations": {
+        "ja": "成人向け漫画の顔や線の一般的な描法を参考にした別枠です。見本は成人の着衣・非露骨な表現。原PNGは未加工で色味が残る場合があり、別人物・別場面での絵柄再現性も未検証です。",
+        "en": "A separate category studying general face and line construction in adult manga. Examples show fully clothed adults in non-explicit poses. Original PNGs are unmodified and may retain a tint; cross-subject and cross-scene repeatability remains untested."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T15:27:42Z"
     }
   ]
 }

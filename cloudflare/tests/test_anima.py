@@ -81,6 +81,47 @@ class AnimaCatalogTests(unittest.TestCase):
             self.assertNotEqual(old['ja']['model']['id'],'anima-turbo')
             self.assertEqual(main.MODELS['anima-turbo']['status'],'preparing')
 
+    def test_other_category_requires_explicit_nonsexual_adult_sample_classification(self):
+        module=self.module()
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);path,registry,_=self.fixture(root)
+            entry=registry['entries'][0]
+            entry.update(category='other',reference_context='adult-manga',sample_content='non-explicit-fully-clothed-adult')
+            path.write_text(json.dumps(registry),encoding='utf-8')
+            self.assertEqual(module.load_catalog(path,root)[0]['category'],'other')
+            for field,bad in [('reference_context',None),('sample_content','unspecified')]:
+                value=json.loads(json.dumps(registry));value['entries'][0][field]=bad;path.write_text(json.dumps(value),encoding='utf-8')
+                with self.assertRaises(ValueError):module.load_catalog(path,root)
+
+    def test_other_export_is_anima_only_and_retains_nonexplicit_notice(self):
+        sys.path.insert(0,str(ROOT/'costlab-auth/manga'))
+        from app.store import Store
+        spec=importlib.util.spec_from_file_location('export_cloudflare',ROOT/'tools/manga_catalog/export_cloudflare.py')
+        exporter=importlib.util.module_from_spec(spec);spec.loader.exec_module(exporter)
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);path,registry,_=self.fixture(root)
+            registry['entries'][0].update(category='other',reference_context='adult-manga',sample_content='non-explicit-fully-clothed-adult')
+            path.write_text(json.dumps(registry),encoding='utf-8')
+            store=Store(root/'store',seed_dir=root/'none',compare_dir=root/'none')
+            keep=store.chain('shonen-battle-chibi-comic')
+            for nid in store.order:store.state['nodes'][nid]['published']=nid in keep
+            output=root/'assets';receipt=exporter.export_store(store,output,anima_catalog=path,archive_dir=root)
+            self.assertEqual(receipt['anima_styles'],1)
+            routes=json.loads((output/'_data/routes.json').read_text())
+            self.assertNotIn('other',routes['roots'])
+            self.assertNotIn('other',routes['model_roots']['gpt-image'])
+            self.assertIn('other',routes['model_roots']['anima-turbo'])
+            index=json.loads((output/'_public/catalogue.json').read_text())
+            self.assertFalse(any(r['id']=='other' for r in index['records']))
+            self.assertEqual(index['category_labels']['anima-turbo']['other']['ja'],'その他・成人向け参考')
+            gallery=(output/'_data/gallery/ja-anima-turbo.html').read_text()
+            self.assertIn('その他・成人向け参考',gallery)
+            payload=json.loads((output/'_data/styles/anima-turbo/anima-example.json').read_text())['ja']
+            self.assertEqual(payload['reference_context'],'adult-manga')
+            self.assertEqual(payload['sample_content'],'non-explicit-fully-clothed-adult')
+            pages=json.loads((output/'_data/pages/anima-example.json').read_text())
+            self.assertIn('着衣・非露骨',pages['ja']['anima-turbo']['en'])
+
     def test_http_verifier_keeps_the_legacy_filter_oracle_model_scoped(self):
         sys.path.insert(0,str(ROOT/'costlab-auth/manga'))
         spec=importlib.util.spec_from_file_location('verify_public',ROOT/'cloudflare/tests/verify_public.py')

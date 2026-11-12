@@ -20,11 +20,11 @@ export function validateFilters(routes, params, rootOverride = '') {
 }
 
 export function selectPage(index, params, lang, rootOverride = '') {
-  const roots = index.records.filter(record => record.level === 1).map(record => record.id);
+  const model = params.get('model') || 'gpt-image';
+  const roots = index.model_roots?.[model] ?? index.records.filter(record => record.level === 1).map(record => record.id);
   const topics = Object.fromEntries(index.records.filter(record => record.level === 2).map(record => [record.id, record.chain[0]]));
   const filters = validateFilters({ roots, topics, facets: Object.fromEntries(Object.entries(index.facets).map(([key, values]) => [key, values.map(v => v[0])])) }, params, rootOverride);
   const words = foldText(filters.q, index.casefold).split(PY_SPACE).filter(Boolean);
-  const model = params.get('model') || 'gpt-image';
   const matches = index.records.filter(record => {
     if ((record.model || 'gpt-image') !== model) return false;
     if (filters.root && record.chain[0] !== filters.root) return false;
