@@ -6,6 +6,11 @@
       "tag": "anima-contemporary-001",
       "asset": "anima-contemporary-001.zip",
       "sha256": "2aaa96645aa82e9c6f41841f56e898040ade27b81d398733ef33ae3a3e1af623"
+    },
+    {
+      "tag": "anima-contemporary-002",
+      "asset": "anima-contemporary-002.zip",
+      "sha256": "78f78ae570a49d3e9f933eef6c5da218f8cfc51bea5ba440c362635f781ec252"
     }
   ],
   "entries": [
@@ -553,6 +558,234 @@
       },
       "version": 1,
       "updated_at": "2026-11-12T12:37:55Z"
+    },
+    {
+      "id": "anima-soft-tearful-eyes",
+      "category": "shojo",
+      "title": {
+        "ja": "細い顎と潤む大きな瞳",
+        "en": "Slender chin and tearful large eyes"
+      },
+      "summary": {
+        "ja": "細い顎、大きな瞳と太い上まつ毛、目下の涙粒、閉じ気味の口、黒髪と白抜き。頬の斜線と服の網点・交差線はやや多い。腕と手は画外。人物重複・文字様印・フキダシなし。",
+        "en": "Fine chin, large eyes with heavy upper lashes, small tears below the eyes, a nearly closed mouth and black hair with white strand highlights. Cheek hatching and clothing tone are stronger than intended. Arms and hands are cropped. No duplicate figure, text-like marks or balloons observed."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "A black-and-white emotional manga drawing with a fine tapered chin, a tiny nose mark, very large dark irises with white glints, heavy upper eyelashes, eyebrows drawn inward and a small trembling curved mouth. A tear at one lower eyelid and short cheek strokes. Long black hair with narrow white strand highlights, delicate face contours, sparse flat halftone on clothing and broad white space."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "9c82c686d81b39271bab92b1c74bd5205cabe083a954ea3f5f73165d78344e2c.png",
+        "sha256": "9c82c686d81b39271bab92b1c74bd5205cabe083a954ea3f5f73165d78344e2c",
+        "width": 1024,
+        "height": 1024,
+        "thumb": "9e94aafb90019faab85233c15e0eb11378407136bad36e8d9963f92a53b81d84.jpg",
+        "thumb_sha256": "9e94aafb90019faab85233c15e0eb11378407136bad36e8d9963f92a53b81d84",
+        "prompt": {
+          "en": "Exactly one original adult woman aged 26 in a plain collared blouse, viewed from the waist up in a quiet room. Her long hair is loose and she looks sideways with a restrained vulnerable expression. A black-and-white emotional manga drawing with a fine tapered chin, a tiny nose mark, very large dark irises with white glints, heavy upper eyelashes, eyebrows drawn inward and a small trembling curved mouth. A tear at one lower eyelid and short cheek strokes. Long black hair with narrow white strand highlights, delicate face contours, sparse flat halftone on clothing and broad white space. One scene only; no duplicate people, insets, text, lettering, speech bubbles, signature, watermark or panel borders. Monochrome."
+        },
+        "native_job_id": "6af5baf6000002560000001200000012",
+        "requested_settings": {
+          "aspect_ratio": "square",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "1024x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5baf6000002560000001200000012",
+          "api_seconds": 30.823
+        },
+        "max_rgb_channel_delta": 24
+      },
+      "references": [
+        {
+          "title": "怪獣８号",
+          "url": "https://shonenjumpplus.com/episode/13933686331674116123"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not established. The unmodified monochrome-requested image may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T13:20:17Z"
+    },
+    {
+      "id": "anima-rough-motion-ink",
+      "category": "shonen",
+      "title": {
+        "ja": "黒い服と強い顔影の動作漫画",
+        "en": "Black clothing and deep-shadow motion comics"
+      },
+      "summary": {
+        "ja": "単一人物の全身、前へ踏み出す脚と開いた腕、黒い服の面、強い顔影とハッチング。輪郭は荒い多重線というより明瞭、動線はない。人物は男性的で服は黒スーツ寄り。指定の女性・横方向ステップ・ラフ重ね線の完全再現ではない。文字様印・フキダシ・明白な身体破綻なし。",
+        "en": "One full-length figure stepping forward with arms apart, broad black clothing areas, heavy facial shadow and hatching. Contours are clearer than the intended rough overlapping strokes, and no motion lines appear. The figure reads as masculine in a black suit rather than the requested woman stepping sideways. No text-like marks, balloons or obvious anatomy defects observed."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "rough",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "A kinetic black-and-white manga drawing made from forceful uneven pen contours and rough short overlapping strokes. Angular clothing folds, large connected black shadow shapes, fine diagonal hatching and a few parallel motion strokes. A small tapered face with narrow alert eyes, pointed dark hair clumps, clearly separated limbs and a lean adult body. Keep the setting simple and leave white space around the silhouette."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "07ece89016dbbd6caf17d0308297c182786460ebdeaabe8b6b9916d90d7a714c.png",
+        "sha256": "07ece89016dbbd6caf17d0308297c182786460ebdeaabe8b6b9916d90d7a714c",
+        "width": 576,
+        "height": 1024,
+        "thumb": "c6043a388bc0e23ebfcfe084419fd4a05f7e5772cc2958c9bce77cd1934dc7fc.jpg",
+        "thumb_sha256": "c6043a388bc0e23ebfcfe084419fd4a05f7e5772cc2958c9bce77cd1934dc7fc",
+        "prompt": {
+          "en": "Exactly one original adult woman aged 29 in a loose plain jacket and trousers makes a quick sideways step on an empty walkway. A single full-length figure with both feet visible and both arms separated from her torso. One continuous scene, not repeated poses. A kinetic black-and-white manga drawing made from forceful uneven pen contours and rough short overlapping strokes. Angular clothing folds, large connected black shadow shapes, fine diagonal hatching and a few parallel motion strokes. A small tapered face with narrow alert eyes, pointed dark hair clumps, clearly separated limbs and a lean adult body. Keep the setting simple and leave white space around the silhouette. One scene only; no duplicate people, insets, text, lettering, speech bubbles, signature, watermark or panel borders. Monochrome."
+        },
+        "native_job_id": "6af5bb99000002560000001400000014",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5bb99000002560000001400000014",
+          "api_seconds": 17.85
+        },
+        "max_rgb_channel_delta": 36
+      },
+      "references": [
+        {
+          "title": "幼稚園WARS",
+          "url": "https://shonenjumpplus.com/episode/4855956445109234830"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not established. The unmodified monochrome-requested image may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T13:20:17Z"
+    },
+    {
+      "id": "anima-round-glasses-comedy",
+      "category": "gag",
+      "title": {
+        "ja": "丸眼鏡と丸頬の人情コメディ",
+        "en": "Round glasses and full-cheek human comedy"
+      },
+      "summary": {
+        "ja": "丸頬と丸顎、丸眼鏡、太い弓形眉、小さめの目、歯を見せた笑顔。大きい頭と幅広い胴、短い首、黒髪の白抜き、太い外輪郭と細いしわ線。シャツの網点は濃く広い。手と下半身は画外。人物重複・文字様印・フキダシなし。",
+        "en": "Full cheeks, a rounded jaw, round glasses, thick arched brows, smaller eyes and a toothy smile. A large head above a broad torso, short neck, black hair with white highlights, heavy outer contours and fine creases. Dense tone covers much of the shirt. Hands and lower body are cropped. No duplicate figure, text-like marks or balloons observed."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "An expressive black-and-white human-comedy manga drawing with rounded full cheeks, a softly rounded chin, round wire-rim glasses, small lively eyes, thick curved eyebrows and a broad open smiling mouth. A slightly large head and a broad ordinary adult torso. Short hair flicks outward in a few black clumps with white gaps. Strong rounded outlines, fine facial creases, a few flat halftone areas and simple furniture lines, no glamorous polish."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "d0d5f52a3cf59f21a6694e1fbc86e377206c5d396b367753719fd420ef719dfe.png",
+        "sha256": "d0d5f52a3cf59f21a6694e1fbc86e377206c5d396b367753719fd420ef719dfe",
+        "width": 1024,
+        "height": 1024,
+        "thumb": "1ff69e1ebca0e9fee3bdeeed40f603947ac904237ee6d5c924914dbd0a10c556.jpg",
+        "thumb_sha256": "1ff69e1ebca0e9fee3bdeeed40f603947ac904237ee6d5c924914dbd0a10c556",
+        "prompt": {
+          "en": "Exactly one original man aged 46 in a plain casual collared shirt, waist-up at a small neighborhood meeting room, leaning slightly forward with a friendly amused reaction. No objects held. An expressive black-and-white human-comedy manga drawing with rounded full cheeks, a softly rounded chin, round wire-rim glasses, small lively eyes, thick curved eyebrows and a broad open smiling mouth. A slightly large head and a broad ordinary adult torso. Short hair flicks outward in a few black clumps with white gaps. Strong rounded outlines, fine facial creases, a few flat halftone areas and simple furniture lines, no glamorous polish. One scene only; no duplicate people, insets, text, lettering, speech bubbles, signature, watermark or panel borders. Monochrome."
+        },
+        "native_job_id": "6af5bc79000002560000001700000017",
+        "requested_settings": {
+          "aspect_ratio": "square",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "1024x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5bc79000002560000001700000017",
+          "api_seconds": 30.521
+        },
+        "max_rgb_channel_delta": 26
+      },
+      "references": [
+        {
+          "title": "あかね噺",
+          "url": "https://shonenjumpplus.com/episode/316190246999430065"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not established. The unmodified monochrome-requested image may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T13:20:17Z"
     }
   ]
 }
