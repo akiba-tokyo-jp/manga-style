@@ -107,17 +107,26 @@ test('Anima gallery, exact English prompts, images and clipboard are live model-
   const id = await page.locator('.gallery-card').first().getAttribute('data-style-id');
   const api = await (await request.get('/v1/styles/' + id + '?model=anima-turbo&lang=ja')).json();
   expect(api.prompt.ja).toBeUndefined();
-  expect(api.samples[0].prompt.ja).toBeUndefined();
+  expect(api.samples).toHaveLength(2);
+  expect(api.samples.map(sample => sample.subject)).toEqual(['mixed-gender', 'showcase']);
+  expect(new Set(api.samples.map(sample => sample.sha256)).size).toBe(2);
+  expect(new Set(api.samples.map(sample => sample.native_job_id)).size).toBe(2);
   await page.locator('.gallery-card').first().click();
   await expect(page.locator('#prompt-text')).toHaveAttribute('lang', 'en');
   await expect(page.locator('#prompt-text')).toHaveValue(api.prompt.en);
-  await expect(page.locator('#sample-prompt-0')).toHaveText(api.samples[0].prompt.en);
-  await expect.poll(() => page.locator('.sample-image').evaluate(image => image.complete && image.naturalWidth > 0)).toBe(true);
+  await expect(page.locator('.sample-image')).toHaveCount(2);
   await context.grantPermissions(['clipboard-read', 'clipboard-write']);
-  await page.locator('.sample-prompt > summary').click();
-  await expect(page.locator('button[data-copy-target=sample-prompt-0]')).toBeVisible();
-  await page.locator('button[data-copy-target=sample-prompt-0]').click();
-  await expect.poll(() => page.evaluate(() => navigator.clipboard.readText())).toContain(api.samples[0].prompt.en);
+  for (let i = 0; i < api.samples.length; i++) {
+    const sample = api.samples[i];
+    expect(sample.prompt.ja).toBeUndefined();
+    await expect(page.locator('#sample-prompt-' + i)).toHaveText(sample.prompt.en);
+    const image = page.locator('.sample-image').nth(i);
+    await image.scrollIntoViewIfNeeded();
+    await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
+    await page.locator('.sample-prompt > summary').nth(i).click();
+    await page.locator('button[data-copy-target=sample-prompt-' + i + ']').click();
+    await expect.poll(() => page.evaluate(() => navigator.clipboard.readText())).toContain(sample.prompt.en);
+  }
   await page.screenshot({ path: `dist/verification/${test.info().project.name}-anima-detail.png` });
   await page.locator('.lang-switch').click();
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');

@@ -24,7 +24,7 @@ def require(condition,message):
 
 def read_manifest(path):
     value=json.loads(Path(path).read_text(encoding='utf-8'))
-    require(isinstance(value,dict) and value.get('schema')==1 and value.get('repository')==REPOSITORY,'Invalid Anima manifest')
+    require(isinstance(value,dict) and value.get('schema') in (1,2) and value.get('repository')==REPOSITORY,'Invalid Anima manifest')
     require(isinstance(value.get('bundles'),list) and isinstance(value.get('entries'),list),'Invalid Anima lists')
     return value
 
@@ -64,26 +64,43 @@ def load_catalog(path,archive_dir):
             require(isinstance(reference,dict) and isinstance(reference.get('title'),str) and isinstance(reference.get('url'),str),'Invalid Anima reference')
             url=urlsplit(reference['url'])
             require(url.scheme=='https' and url.hostname and not url.username and not url.password,'Unsafe Anima reference URL')
-        for prompt in (entry.get('prompt'),entry.get('sample',{}).get('prompt')):
+        for prompt in (entry.get('prompt'),):
             require(isinstance(prompt,dict) and set(prompt)=={'en'} and isinstance(prompt['en'],str) and prompt['en'].strip(),'Anima requires exact English-only prompts')
         require(isinstance(entry.get('features'),dict) and set(entry['features'])==set(FACETS),'Invalid Anima facets')
         for key,values in entry['features'].items():
             require(isinstance(values,list) and all(v in FACETS[key] for v in values),'Unknown Anima facet value')
-        sample=entry['sample'];reported=sample.get('reported_settings',{});requested=sample.get('requested_settings',{})
-        require(reported.get('model')==entry['model_version'] and requested.get('model')==entry['model_version'] and reported.get('provider')=='ps5-anima','Anima provenance model mismatch')
-        require(isinstance(sample.get('native_job_id'),str) and re.fullmatch(r'[0-9a-f]{32}',sample['native_job_id']) and reported.get('native_job_id')==sample['native_job_id'],'Missing native generation job')
-        for file_key,sha_key,kind in (('file','sha256','PNG'),('thumb','thumb_sha256','JPEG')):
-            digest=sample.get(sha_key,'');name=sample.get(file_key,'');ext='.png' if kind=='PNG' else '.jpg'
-            require(isinstance(digest,str) and SHA.fullmatch(digest) and name==digest+ext,'Unsafe or unpinned Anima image')
-            member=sid+'/'+name;require(member in members,'Missing Anima image');used.add(member)
-            data=members[member];require(hashlib.sha256(data).hexdigest()==digest,'Anima image SHA mismatch')
-            try:
-                with Image.open(io.BytesIO(data)) as image:
-                    expected=(sample.get('width'),sample.get('height')) if kind=='PNG' else (384,512)
-                    require(image.format==kind and image.size==expected,'Unexpected Anima image format/size')
-                    image.verify()
-            except (OSError,SyntaxError) as exc:raise ValueError('Invalid Anima image') from exc
-            entry['image_bytes' if kind=='PNG' else 'thumb_bytes']=data
+        samples=entry.get('samples') if manifest['schema']==2 else [entry.get('sample')]
+        require(isinstance(samples,list) and len(samples)==(2 if manifest['schema']==2 else 1),'Anima requires two original samples')
+        if manifest['schema']==2:
+            require(all(isinstance(s,dict) for s in samples) and [s.get('role') for s in samples]==['mixed-gender','showcase'],'Required sample roles/order missing')
+            require(len({s.get('native_job_id') for s in samples})==2 and len({s.get('sha256') for s in samples})==2,'Two independent original generations required')
+        for sample in samples:
+            require(isinstance(sample,dict),'Invalid Anima sample')
+            prompt=sample.get('prompt')
+            require(isinstance(prompt,dict) and set(prompt)=={'en'} and isinstance(prompt['en'],str) and prompt['en'].strip(),'Anima requires exact English-only prompts')
+            if manifest['schema']==2:
+                require(entry['prompt']['en'] in prompt['en'],'Sample omits the exact shared style recipe')
+                review=sample.get('visual_review')
+                require(isinstance(review,dict) and review.get('status')=='self-reviewed' and review.get('sha256')==sample.get('sha256'),'Missing hash-bound visual review')
+                observation=review.get('observation')
+                require(isinstance(observation,dict) and all(isinstance(observation.get(lang),str) and observation[lang].strip() for lang in ('ja','en')),'Missing per-image observations')
+            reported=sample.get('reported_settings',{});requested=sample.get('requested_settings',{})
+            require(reported.get('model')==entry['model_version'] and requested.get('model')==entry['model_version'] and reported.get('provider')=='ps5-anima','Anima provenance model mismatch')
+            require(isinstance(sample.get('native_job_id'),str) and re.fullmatch(r'[0-9a-f]{32}',sample['native_job_id']) and reported.get('native_job_id')==sample['native_job_id'],'Missing native generation job')
+            for file_key,sha_key,kind in (('file','sha256','PNG'),('thumb','thumb_sha256','JPEG')):
+                digest=sample.get(sha_key,'');name=sample.get(file_key,'');ext='.png' if kind=='PNG' else '.jpg'
+                require(isinstance(digest,str) and SHA.fullmatch(digest) and name==digest+ext,'Unsafe or unpinned Anima image')
+                member=sid+'/'+name;require(member in members,'Missing Anima image');used.add(member)
+                data=members[member];require(hashlib.sha256(data).hexdigest()==digest,'Anima image SHA mismatch')
+                try:
+                    with Image.open(io.BytesIO(data)) as image:
+                        expected=(sample.get('width'),sample.get('height')) if kind=='PNG' else (384,512)
+                        require(image.format==kind and image.size==expected,'Unexpected Anima image format/size')
+                        image.verify()
+                except (OSError,SyntaxError) as exc:raise ValueError('Invalid Anima image') from exc
+                sample['image_bytes' if kind=='PNG' else 'thumb_bytes']=data
+        entry['samples']=samples;entry['sample']=samples[0]
+        entry['image_bytes']=samples[0]['image_bytes'];entry['thumb_bytes']=samples[0]['thumb_bytes']
         rows.append(entry)
     require(set(members)==used,'Unreferenced Anima assets are not publishable')
     return rows
@@ -106,7 +123,7 @@ def add_to_export(stage,rows,store,main,write,image_records):
     index['model_roots']=copy.deepcopy(routes['model_roots'])
     index['category_labels']={MODEL:{sid:EXTRA_CATEGORIES[sid] for sid in anima_roots if sid in EXTRA_CATEGORIES}}
     def category_title(sid,lang):return EXTRA_CATEGORIES[sid][lang] if sid in EXTRA_CATEGORIES else store.title(sid,lang)
-    def image_url(row,key):return main.SITE_ORIGIN+'/files/'+MODEL+'/'+row['id']+'/'+row['sample'][key]
+    def image_url(row,key,sample=None):return main.SITE_ORIGIN+'/files/'+MODEL+'/'+row['id']+'/'+(row['sample'] if sample is None else sample)[key]
     def context(lang,path,title):
         other='en' if lang=='ja' else 'ja'
         ctx=main.base_ctx(lang,False,model_url(path,other,False,MODEL),title,[])
@@ -118,19 +135,21 @@ def add_to_export(stage,rows,store,main,write,image_records):
     for row in rows:
         sid=row['id'];sample=row['sample'];root=row['category']
         require(root in anima_roots,'Anima category is not publicly visible')
-        for key,body in (('file',row['image_bytes']),('thumb',row['thumb_bytes'])):
-            path='files/'+MODEL+'/'+sid+'/'+sample[key]
-            target=stage/path;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(body)
-            image_records['/'+path]={'sha256':hashlib.sha256(body).hexdigest(),'bytes':len(body)}
+        for current in row['samples']:
+            for key,body in (('file',current['image_bytes']),('thumb',current['thumb_bytes'])):
+                path='files/'+MODEL+'/'+sid+'/'+current[key]
+                target=stage/path;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(body)
+                image_records['/'+path]={'sha256':hashlib.sha256(body).hexdigest(),'bytes':len(body)}
         payloads={};pages={};labels={}
         for lang in UI:
             title=row['title'][lang];summary=row['summary'][lang]
             payload={'id':sid,'path':[],'level':1,'category':root,'title':title,'summary':summary,
                      'expression':row['features']['expression'][0],
                      'model':{'id':MODEL,'version':row['model_version']},'prompt':row['prompt'],'avoid':[],
-                     'samples':[{'subject':'example','url':image_url(row,'file'),'prompt':sample['prompt'],
-                                 'settings':sample['requested_settings'],'reported_settings':sample['reported_settings'],
-                                 'sha256':sample['sha256'],'native_job_id':sample['native_job_id']}],
+                     'samples':[{'subject':s.get('role','example'),'url':image_url(row,'file',s),'prompt':s['prompt'],
+                                 'settings':s['requested_settings'],'reported_settings':s['reported_settings'],
+                                 'sha256':s['sha256'],'native_job_id':s['native_job_id'],
+                                 'visual_review':s.get('visual_review')} for s in row['samples']],
                      'reference':0,'children':[],'comparisons':[],'version':row.get('version',1),'updated_at':row.get('updated_at'),
                      'license':{'generated':True,'artist_names':False,'terms':main.LICENSE_TERMS},
                      'limitations':row['limitations'][lang],'references':row.get('references',[])}
@@ -138,7 +157,8 @@ def add_to_export(stage,rows,store,main,write,image_records):
             if root=='other':payload.update(reference_context=row['reference_context'],sample_content=row['sample_content'])
             ctx=context(lang,'/styles/'+sid,title)
             ctx.update(entry=row,title=title,summary=summary,limitation=row['limitations'][lang],
-                       image_url=image_url(row,'file'),sample=sample,style_text=row['prompt']['en'],
+                       sample_views=[{'sample':s,'url':image_url(row,'file',s),'observation':s.get('visual_review',{}).get('observation',{}).get(lang,'')} for s in row['samples']],
+                       sample=sample,style_text=row['prompt']['en'],
                        full_prompt=sample['prompt']['en'],api_url=main.SITE_ORIGIN+'/v1/styles/'+sid+'?model='+MODEL,
                        copy_prefix='Anima Turbo / '+category_title(root,lang)+' / '+sid,
                        category_notice=(('成人向け漫画の描法を参考にした別枠です。見本は成人の着衣・非露骨な表現です。' if lang=='ja' else 'A separate adult-manga drawing-reference category. Samples show fully clothed adults in non-explicit scenes.') if root=='other' else None))
