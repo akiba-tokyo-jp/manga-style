@@ -1,0 +1,2127 @@
+{
+  "schema": 1,
+  "repository": "akiba-tokyo-jp/manga-style",
+  "complete": true,
+  "private": true,
+  "actions_enabled": false,
+  "release_count": 182,
+  "binary_asset_count": 121,
+  "legacy_archive_count": 6,
+  "all_verified_archives": 127,
+  "binary_bytes": 951631649,
+  "legacy_bytes": 7639132,
+  "total_archive_bytes": 959270781,
+  "releases": [
+    {
+      "tag": "manga-compare-wai-20261018-01",
+      "release_id": 442456196,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-compare-wai-20261018-01",
+      "body_sha256": "ecb448fc702fe8b393fef435bae103a1cd668c41b546b9ed030c11c493f2a40f"
+    },
+    {
+      "tag": "manga-compare-wai-20261018-02",
+      "release_id": 442456374,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-compare-wai-20261018-02",
+      "body_sha256": "c585f17884ae769b5adc76981714175a02bfcd7934088eaef65bb29f1ffd5fcc"
+    },
+    {
+      "tag": "manga-compare-wai-20261018-03",
+      "release_id": 442456480,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-compare-wai-20261018-03",
+      "body_sha256": "c585f17884ae769b5adc76981714175a02bfcd7934088eaef65bb29f1ffd5fcc"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "release_id": 442456555,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-explanatory-20261110-l3-gag-mono286",
+      "body_sha256": "6274e873af8e660b3062a145f0a1503a0522778bef8547e87ab27f95ec90b1a9"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "release_id": 442457321,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-explanatory-20261110-l3-horror-mono216",
+      "body_sha256": "2b52c11e322aa3e7008b9f739d6058871ca8263a604e797e7f530f35edb18f90"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "release_id": 442457977,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-explanatory-20261110-l3-yonkoma-repack",
+      "body_sha256": "4b1463f4227ce3d17285c68045ea7dabf8a8806f13fed8851666bf880128efee"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "release_id": 442463503,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-explanatory-20261111-l3-essay-mono220",
+      "body_sha256": "52acf1f872cc67d13c00a3a833739b55c44a57797c6079b8649bb87c1a9bf593"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "release_id": 442464210,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-explanatory-20261111-l3-gekiga-mono245",
+      "body_sha256": "c47d8ff3185ab6a71890ccab71eceeac9a3a6eb05ac2696318f3e077ddecf12a"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-other-media20",
+      "release_id": 442465072,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-explanatory-20261111-l3-other-media20",
+      "body_sha256": "e139a880595eaf3820efce127067b210677e5e8780da12630b6c878b51602621"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-scene-replacement20",
+      "release_id": 442465160,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-explanatory-20261111-l3-scene-replacement20",
+      "body_sha256": "0aeffe9bbc028b9498926ef4e8217ffee92e85cb6d0fefd4be8326d81d718e12"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color",
+      "release_id": 442465290,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color",
+      "body_sha256": "b87ab527223a73a4246facbc3a5c045fd114785bc78e849e9c96875bba1d0e19"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part10",
+      "release_id": 442465330,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part10",
+      "body_sha256": "48cfc2e786eba429f48231681d6632545f5918697e79850ab1f2988ac958bd27"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part11",
+      "release_id": 442465382,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part11",
+      "body_sha256": "04108fdc7d1bb568729cba695b8070bc1e40105b33bf6a6e7455eaa1c897e3b0"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part12",
+      "release_id": 442465412,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part12",
+      "body_sha256": "9cc9ea4f87888bece327a85d347d5702d0b0e00846a14a2f8467a7bb915a1b0d"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part13",
+      "release_id": 442465454,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part13",
+      "body_sha256": "bf408873984927bda8b4eb67022f29134adf6ed84193e3743179fd7439e3203f"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part14",
+      "release_id": 442465500,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part14",
+      "body_sha256": "95fdd0664740ec6b49692f6fac049f526c03b4c1a768ff87b799dfe9991b5168"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part15",
+      "release_id": 442465542,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part15",
+      "body_sha256": "71ae695bbee661a947352d5f19dfbeb613812383f2c5e835ffd26f0c2220ff15"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part16",
+      "release_id": 442465599,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part16",
+      "body_sha256": "39ecc3e468e3c8fa1110f39c6097fc1421740dd8c1429eae9df3de822b4c61a0"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part17",
+      "release_id": 442465634,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part17",
+      "body_sha256": "66d72f80c6f50bc0217e7ddd40222fde87e9c778c5d31ca1ca034adcb97ba120"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part18",
+      "release_id": 442465677,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part18",
+      "body_sha256": "86cfdd2a4305071f035b6759fa874633cab3a80a3bba8bb7028842ce24f8523d"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part19",
+      "release_id": 442465713,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part19",
+      "body_sha256": "577318d1ea4e2fa115975a5efdea6e08b68ae3123cb69030d8cf81042c10b2ce"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part2",
+      "release_id": 442465759,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part2",
+      "body_sha256": "8c2b26c4187ef1d3866d715040d123e7ae36b613a817a460d40f7f2481b02797"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part20",
+      "release_id": 442465808,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part20",
+      "body_sha256": "617f2ac77fe78e4df596a649acd837c33fecaf9d3529bcbc5a6904e9c84c13e4"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part21",
+      "release_id": 442465849,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part21",
+      "body_sha256": "05d2cc31b27f59482d7f2ab784628fae1eeea609f24cbea27b47f8e00abaa8ed"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part22",
+      "release_id": 442465895,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part22",
+      "body_sha256": "66b26a5ec8d409b8eb78ee3d6dc39acadadff527554830785b8ec368aa1d42e7"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part23",
+      "release_id": 442465936,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part23",
+      "body_sha256": "78275cc4c94ba0e408b86ff22fd674a155dd9d1ab9dc13f8cfe93466dc0d0114"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part24",
+      "release_id": 442465978,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part24",
+      "body_sha256": "e6cb94c0b52ff2d612d5a679ccf57e64061905641ceb144640a44e7adbd4e107"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part25",
+      "release_id": 442466016,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part25",
+      "body_sha256": "b0ee7360d41551306b12f6b8fc4a14864551d60051690b3db71a617f351d05d2"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part3",
+      "release_id": 442466051,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part3",
+      "body_sha256": "31a5cc1479f53d26f9bf769a62aa648708c334a078de0531d4bf598095ae0a4c"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part4",
+      "release_id": 442466099,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part4",
+      "body_sha256": "f4dc117a2763941b924636f0b93cb8171d0885e5b83e3c2b57ec8da40176d02e"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part5",
+      "release_id": 442466152,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part5",
+      "body_sha256": "37324331b343a120cbf4886bc6dce76be481b242c59260094b2162941184a7e7"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part6",
+      "release_id": 442466202,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part6",
+      "body_sha256": "0749171a9c6adc9cc419e5eb0e04c3136dcd42d37be6746229e58f8c6d37059a"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part7",
+      "release_id": 442466238,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part7",
+      "body_sha256": "d867fffe39cccb36a19fc84f132c3de56b563a41a66000c7ac70fe84f187348f"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part8",
+      "release_id": 442466276,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part8",
+      "body_sha256": "aaea7c31777af832d51170785d5354c6822b4244c2d8bf03d26c072c3da5cd61"
+    },
+    {
+      "tag": "manga-samples-20261011-distinct-color-part9",
+      "release_id": 442466316,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-distinct-color-part9",
+      "body_sha256": "fedd0280e54b0f08c81507b997bc840dc47ec40fb976403268ae67d4f1140b62"
+    },
+    {
+      "tag": "manga-samples-20261011-natural",
+      "release_id": 442466357,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural",
+      "body_sha256": "ec95c1c00e78c1a4c3f5b7a11b8eb4ff87cdcaa832f69e5acb669462431a365e"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part10",
+      "release_id": 442466397,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part10",
+      "body_sha256": "6c9e6979097a6f3d58e14ceeb92169d2a4bb8443ff751bfeee0dd62193fd321c"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part11",
+      "release_id": 442466440,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part11",
+      "body_sha256": "1150e706fa320b67240ca834af5a087af6ca0a5eae38067671f3ffa64fb1aea1"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part12",
+      "release_id": 442466483,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part12",
+      "body_sha256": "b6409651d071e7ef9e64a9533842c515c22545ee966e1c58317d2ac5cfdf19ca"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part13",
+      "release_id": 442466520,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part13",
+      "body_sha256": "93a755c7e4aa683208baeaa2ce442f245add7525954741b41c3d2ad6beb82386"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part14",
+      "release_id": 442466566,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part14",
+      "body_sha256": "c5ed2ba3c67915b2b2c61c69532ba4a09533d852ea2a6f7c8fc306006503b804"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part15",
+      "release_id": 442466612,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part15",
+      "body_sha256": "0507ec31350f2cb9854512f4ef0da58ef3c2f29763fcea06ff16c5d88a5cccde"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part16",
+      "release_id": 442466652,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part16",
+      "body_sha256": "792d132ab5cf9f6b892a9cb520180974eaf9538f5a8316dddfb17a1b1aa79fb3"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part17",
+      "release_id": 442466695,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part17",
+      "body_sha256": "07f4982684f38a0721a7f0aebd886a5480623f76784627068927805a923a54b4"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part18",
+      "release_id": 442466734,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part18",
+      "body_sha256": "dfa271f119d6f6e9d83d874d489616d3adc7d683025daf0d4a5d852dc22049db"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part19",
+      "release_id": 442466778,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part19",
+      "body_sha256": "a70cdef82e1a070fb4e4962e504ab731831f90afe0c31a60f63ed3f728d451ab"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part2",
+      "release_id": 442466823,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part2",
+      "body_sha256": "a1d29ac1a70ccab7852df54dae0ee047ad16cfc1040532cb6d63676b8709abb6"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part20",
+      "release_id": 442466857,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part20",
+      "body_sha256": "3cff6855492d6e395d613047adce6f691d340644979f723f3734269fa2e9aded"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part21",
+      "release_id": 442466905,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part21",
+      "body_sha256": "67486b8877bfe2306b6f3b0580587af7ee7532ea7ad5cad04fffdbcf64dc60ee"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part22",
+      "release_id": 442466954,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part22",
+      "body_sha256": "fdbc104f460c2c1d181cd4019bfc1b81509087eab69888aee0d5ca069b42f571"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part23",
+      "release_id": 442467007,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part23",
+      "body_sha256": "b78f1f5062379f0e9241fad12a78f6a67d6b65a24bcdc8f7664326d5570484f6"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part24",
+      "release_id": 442467045,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part24",
+      "body_sha256": "e306552afb8431a46751f64c3e6b63adf6bbc9c7f929e68401a680d817a9f478"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part25",
+      "release_id": 442467092,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part25",
+      "body_sha256": "9dc6fba87e829104e4dd3ce3675a35bbe034672652e4720c42f566a6f1f5ddab"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part26",
+      "release_id": 442467133,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part26",
+      "body_sha256": "556b2ca24f8ff087fb7ec7f370059c609c5754bb792e05c588a19c8ff294c043"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part27",
+      "release_id": 442467189,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part27",
+      "body_sha256": "268c206378ecdb601c4783d15aa938f872467d4fc1c69fa9ab92a0ba309905e0"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part28",
+      "release_id": 442467237,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part28",
+      "body_sha256": "ca73dacd4281320bdf8a3a52bde584138ef92d5420bc1ff350af86c61a214db4"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part29",
+      "release_id": 442467290,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part29",
+      "body_sha256": "9c71454dd3d5fc8a7c207823c9e782e33b45aa279f64da00b2a2145e33d62300"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part3",
+      "release_id": 442467320,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part3",
+      "body_sha256": "c1df279ab78640599606f84d5b594e741c1c100f60883165903066963fbf573d"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part30",
+      "release_id": 442467351,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part30",
+      "body_sha256": "e33e79b9794ddff08763de18f95a17c23720d1bb17ce2898d413572a2b6ed580"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part31",
+      "release_id": 442467390,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part31",
+      "body_sha256": "7300d309c644b209ebb49fa6d80af959fb6d3eb94c98f7f22c362e7121cc0887"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part32",
+      "release_id": 442467446,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part32",
+      "body_sha256": "892d1bdd4e291203f0e7b199f4ae065559982e5a50a1ab17a4acfd2722e72bbc"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part33",
+      "release_id": 442467488,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part33",
+      "body_sha256": "58856725ae00fb6c1c227a916a965e1a29622895ba22fe1a26d53823b60a7fcd"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part34",
+      "release_id": 442467532,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part34",
+      "body_sha256": "6412adffbba505f1e148b55fb7581479a0d506380fe604b6e9f6be6f9848bc72"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part35",
+      "release_id": 442467577,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part35",
+      "body_sha256": "d843b379da1289e7d1bb5014b65ded47bbf970fdfa4530834f8e56174ebd0013"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part36",
+      "release_id": 442467621,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part36",
+      "body_sha256": "5806ac6e0bc93c6c18763cc86ca2cdcdb97f2028b55d4de5cd1b27605a7f8da2"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part37",
+      "release_id": 442467683,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part37",
+      "body_sha256": "53a2b656ae28460f53e043c82d028e386120da855989126203e83399c2aa9841"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part38",
+      "release_id": 442467729,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part38",
+      "body_sha256": "77a87b5a7fdd6f011fcf8028ad20d6286ffeb28c009cc84900b5a6d1f411db96"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part39",
+      "release_id": 442467767,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part39",
+      "body_sha256": "2f949d0a35834a43aa31faa58e01128b6a7ea09ff2d6df4fc35af2692cd6cb19"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part4",
+      "release_id": 442467819,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part4",
+      "body_sha256": "e12fdfebab16cad7b1853bfdd1b0349797d67753e53bab17cd83b22ec4167613"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part40",
+      "release_id": 442467856,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part40",
+      "body_sha256": "c99e70b0eb636ef24d02273eee47edb6e16ed5afdf39bd576d40588a713e9171"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part41",
+      "release_id": 442467887,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part41",
+      "body_sha256": "e8ac2df5d5864892d31ae13d9c774597482504407cfeebb0762b452076f55277"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part42",
+      "release_id": 442467922,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part42",
+      "body_sha256": "cceb63f2394d842c3451556994d51cea4983251f8e3b14155088b804bdcacb13"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part43",
+      "release_id": 442467963,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part43",
+      "body_sha256": "ae32dd445094a10a5850f095798e7be4254a055f66953ae5813cee9970967e6f"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part44",
+      "release_id": 442468002,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part44",
+      "body_sha256": "bcae778f6d026f00289e1b01aa32aa470de1fad59a3519881c3faaaf640cbdb8"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part45",
+      "release_id": 442468041,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part45",
+      "body_sha256": "5d3be4fdda07d74581e5da6907cec0682e3e1a7fec68a43b9fbb557423ef60f8"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part46",
+      "release_id": 442468090,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part46",
+      "body_sha256": "80521c8758d79cb15a6fd3119e26abec35470890803cb0216b57644dde65ad7a"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part47",
+      "release_id": 442468133,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part47",
+      "body_sha256": "bda06dcfdef87a40a945c3c14f607a5ea2479e21706dacc7ccb0d49c27bbc46b"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part48",
+      "release_id": 442468167,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part48",
+      "body_sha256": "055d3d1ac1fcf293d8aa51cb13bfe66117e982e0b468d2b090ddfe37748a24a5"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part49",
+      "release_id": 442468213,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part49",
+      "body_sha256": "5f76e4f53f6e7f53e5d05fda0b5b7d815c92426cee525d93ece45daa743f82ec"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part5",
+      "release_id": 442468254,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part5",
+      "body_sha256": "44be7b4d437ccde7603691f410ce0d55eac75729fcc1d2781dd63bf66b628854"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part50",
+      "release_id": 442468294,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part50",
+      "body_sha256": "de8f708ec10713d2ef0240764163133dc214713a7f81cc8157fd016aecb0db3b"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part51",
+      "release_id": 442468339,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part51",
+      "body_sha256": "9d760471ea5178666a25b6e743821fcebb43ffb89ae063e8cdb7c65fb739006d"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part52",
+      "release_id": 442468371,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part52",
+      "body_sha256": "391db61e44e7d5f5cc57f3eef531f2d3faa2b6a40252721d8d41afac93957723"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part53",
+      "release_id": 442468406,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part53",
+      "body_sha256": "7dd8ef101fc957901b8251d289deadf39346008c39402128aef950fec30c6b7c"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part54",
+      "release_id": 442468451,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part54",
+      "body_sha256": "e878c36ef34f9aceb35b8ac71572bb4172f3eae39df973c6b3d66618c6787b9c"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part55",
+      "release_id": 442468487,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part55",
+      "body_sha256": "055575a56c7b98a412565263a687f6a99a66cb6cfeb79d904a5424a9aa7f3d0b"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part56",
+      "release_id": 442468527,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part56",
+      "body_sha256": "8ea7d9306e35e02ed5c46eddfac3ab3d62771a99ca1b013905d2affa19d06eb8"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part57",
+      "release_id": 442468568,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part57",
+      "body_sha256": "d721999ef807d79859b2b349c1da217feedea4e08d42491d16239521f1187a93"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part58",
+      "release_id": 442468605,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part58",
+      "body_sha256": "658b554fa7cfc8b83881e0e8299edaebeefcc9f0c993d6af34677260772c7f32"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part59",
+      "release_id": 442468640,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part59",
+      "body_sha256": "87a636e24de68a2b500d11dddb36c25945cd45beec1f9bd26a347dcde209f509"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part6",
+      "release_id": 442468675,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part6",
+      "body_sha256": "b71706e34270d9d6c1a2ed619b7085b12ed2669463df2bf83b69ae44920ba20e"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part60",
+      "release_id": 442468701,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part60",
+      "body_sha256": "d12c0511fd6427319cbd2df5e8bbfa08d1597d18e930ea43ff0765a7a1e467a4"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part61",
+      "release_id": 442468738,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part61",
+      "body_sha256": "832457209c14a6281b90dce7785a846afd0023c3efa85a554e6e3a799f6114c9"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part62",
+      "release_id": 442468780,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part62",
+      "body_sha256": "874e74e0b0629325926471670614b756b9ee118c71407869f10c44334ca409d8"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part63",
+      "release_id": 442468816,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part63",
+      "body_sha256": "63f09381c8b29102488983861e6cce62a55d70d5028b84538724547c1b54026b"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part64",
+      "release_id": 442468858,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part64",
+      "body_sha256": "349ef880be09bf51290c1c458222143c6860d4f270ea30f21fe9a8eda4899bfc"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part65",
+      "release_id": 442468908,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part65",
+      "body_sha256": "f5dd53b3785588fe20fc234579dd2ce2c8c1fc5a146dfc9b1b63f982c099b569"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part66",
+      "release_id": 442468951,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part66",
+      "body_sha256": "46aaa94a221bcdc56599e84f04fb7cdfdf7c7a9310a8122f2aa05d883e330fcb"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part67",
+      "release_id": 442468983,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part67",
+      "body_sha256": "15c1cbf98670b79df4b00fb196628906b763829a4d96af8c7ca215c1ecd73ddc"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part68",
+      "release_id": 442469017,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part68",
+      "body_sha256": "238d499eb6b0cc8f49771c2492c897a36ce07f2fc4d9bf61c60cac1c828cc2c6"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part69",
+      "release_id": 442469054,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part69",
+      "body_sha256": "91f03963bf51c2422f2bcc97270a2c358397a702327127169b1b7594d12fd454"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part7",
+      "release_id": 442469094,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part7",
+      "body_sha256": "fdada4b532c2445c4c962d62f8b0ce3c277217089d83899eec87806ae177e249"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part70",
+      "release_id": 442469135,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part70",
+      "body_sha256": "582b957601508cf471b84468a34ed57494f9badeab59852762abb83e2983943d"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part71",
+      "release_id": 442469174,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part71",
+      "body_sha256": "857033fdaf396df9d3eb7016ff30e8972ace2e99727e933fcdf6702b7526cbfa"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part72",
+      "release_id": 442469228,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part72",
+      "body_sha256": "3583301fcaeb3285771178d3db02ad70005ab38d83828e1bcff900f9e223ff48"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part73",
+      "release_id": 442469273,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part73",
+      "body_sha256": "374520dd1716fcb2606b5dcafef566832f159be932b4faa2644f99f8ab8463c5"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part74",
+      "release_id": 442469319,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part74",
+      "body_sha256": "08cfff7fcc60d6d8bd600705da728e595ccf6523c08afd4ef9eab13515eb6635"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part75",
+      "release_id": 442469361,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part75",
+      "body_sha256": "038b7d404b227814fa7764b1fa7962d37ec1a873503db07159db3e5c804bf7d1"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part76",
+      "release_id": 442469394,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part76",
+      "body_sha256": "43d8517193e03d1c90f2da900d7b194ba4afc0c931adbdb908dba820b5e49c73"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part77",
+      "release_id": 442469433,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part77",
+      "body_sha256": "1b99475578fe1d6622ce56cc5372e32d006030f80518e8800ce8b6c76a25e9e7"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part78",
+      "release_id": 442469474,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part78",
+      "body_sha256": "e3c540a862eb71326592681c20e79a07f9a9f35e1a4f25d2c9664b1bbddf87b5"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part79",
+      "release_id": 442469523,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part79",
+      "body_sha256": "d9b5934f08ea3f86644ae08ea98b02a5730e9d68575ab32cc629c4c4c9759162"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part8",
+      "release_id": 442469558,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part8",
+      "body_sha256": "1c021e2c344580d625c717524985ff44520699af3a3fa2c860354694becd264a"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part80",
+      "release_id": 442469599,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part80",
+      "body_sha256": "288d94545ef6f3adb3c54eead4665a6a748ee6236511e2ee1be5303b07dbcca9"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part81",
+      "release_id": 442469631,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part81",
+      "body_sha256": "904920385acd49f201da34d4a03316f7c7cb720acd34964a1bce022eb456e0b3"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part82",
+      "release_id": 442469674,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part82",
+      "body_sha256": "09a00c71030ee1dd1bb9ff7ead69d81c7d05b02b69260bac43a647db694a21ae"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part83",
+      "release_id": 442469700,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part83",
+      "body_sha256": "54447b8da7f652565baef157009a218e37e783cde9413f87ecea93734126e935"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part84",
+      "release_id": 442469724,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part84",
+      "body_sha256": "7a2d29bc60d86c86b61ce4a9fb708481b005b229131f4724ee80a3bee6c5c33d"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part85",
+      "release_id": 442469762,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part85",
+      "body_sha256": "aac6633c741eba239c9cd01a22419547325b7edc9cb8b497b41a81e6903a09f4"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part86",
+      "release_id": 442469807,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part86",
+      "body_sha256": "0283cd7cb92adb67a06dd770e386785c1e0dd61397abbdfb6a0a6fd4dc458abe"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part87",
+      "release_id": 442469838,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part87",
+      "body_sha256": "8189b7705634e1a08114cacba9db16e11140e975da43dfa61ffc8cbe2bae1d3f"
+    },
+    {
+      "tag": "manga-samples-20261011-natural-part9",
+      "release_id": 442469874,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261011-natural-part9",
+      "body_sha256": "eb2ab3757d67ee74a58506a484ec23eab8a8f6b3540410a83251a7e474663397"
+    },
+    {
+      "tag": "manga-samples-20261015-commercial",
+      "release_id": 442469921,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-commercial",
+      "body_sha256": "39266837b8f4f23dad03423a578ab0004948fcb226ca0fa25ed4a55a267b7e7e"
+    },
+    {
+      "tag": "manga-samples-20261015-commercial-part2",
+      "release_id": 442469961,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-commercial-part2",
+      "body_sha256": "2a8457202c871815bca4c07421f9a2864a3ce08fceca1c6516805fad1ada7b65"
+    },
+    {
+      "tag": "manga-samples-20261015-commercial-part3",
+      "release_id": 442469992,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-commercial-part3",
+      "body_sha256": "910d8634feeeb8055a5483ec013e03e37b09c9c42123c1f2528279239b8eb453"
+    },
+    {
+      "tag": "manga-samples-20261015-commercial-part4",
+      "release_id": 442470033,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-commercial-part4",
+      "body_sha256": "951a49f19cb50d88259d034a78dca1d3e3e05c50766a989775842d2b2a67fe60"
+    },
+    {
+      "tag": "manga-samples-20261015-commercial-part5",
+      "release_id": 442470072,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-commercial-part5",
+      "body_sha256": "48493dd0a15cb08f3fb6eda6cef029ef61515cc71f8d5a7216d9047e8be22a4a"
+    },
+    {
+      "tag": "manga-samples-20261015-commercial-part6",
+      "release_id": 442470107,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-commercial-part6",
+      "body_sha256": "51f36d5252f6ffc4e993c1bdc1c9f7ee6ecbdab5b2f7cc299e8e07aa14a63d12"
+    },
+    {
+      "tag": "manga-samples-20261015-commercial-part7",
+      "release_id": 442470145,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-commercial-part7",
+      "body_sha256": "2d55fbc03bcf5755d17d275a1a8e4e3f4a17d442b8aa3bcf4c94bd008b2bdba3"
+    },
+    {
+      "tag": "manga-samples-20261015-commercial-part8",
+      "release_id": 442470176,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-commercial-part8",
+      "body_sha256": "0a6ed8ff64726272584e58d9c964f9e05743b240c7ef899ba8ea13054b858e1a"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza",
+      "release_id": 442470215,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza",
+      "body_sha256": "385c3a32243655bb7420c328e1e2eaf930c8f4e382d98fb6852b77fad43c046b"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part10",
+      "release_id": 442470248,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part10",
+      "body_sha256": "9965ce3da51adf00ca9a3368f751236b258d7d9d9d40e3d4c3349b3b8c311821"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part11",
+      "release_id": 442470279,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part11",
+      "body_sha256": "f477cdf63ace6e1431d258dc8a8038f8d0e0e4ff84a9ba7d00ef0b0210af014a"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part12",
+      "release_id": 442470308,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part12",
+      "body_sha256": "f74a86c74a4c02159d05d8e80b0c046d1055f8c7bea82d49a95501110045e975"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part2",
+      "release_id": 442470351,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part2",
+      "body_sha256": "722ab0b1dca564715b681285de9694d2f99d06bc4e4a32817489ab610eabb1df"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part3",
+      "release_id": 442470388,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part3",
+      "body_sha256": "c702656d3e1e70687838063d87b00b568cc3f0c5098841650d3614556105583d"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part4",
+      "release_id": 442470438,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part4",
+      "body_sha256": "a2b8bee833b7bb738a0391a2d6800e00c26c2666b9a8f876bb5a555035ebb77f"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part5",
+      "release_id": 442470480,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part5",
+      "body_sha256": "7e636c5292102e4cc47887fbd6aa1d1a72f95d7cd430e3d2ccae9adbc979be01"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part6",
+      "release_id": 442470531,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part6",
+      "body_sha256": "ae686a45c15dd15b68df604eb64184a0a04c5d30e393e3d82f28b2dc74a53911"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part7",
+      "release_id": 442470584,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part7",
+      "body_sha256": "2717fab56a1f8ea4c339a0768723c2b6f665e777cc20b74c3202645b29f690c0"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part8",
+      "release_id": 442470625,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part8",
+      "body_sha256": "67f31d10702d6f72892d6f5f734833fa4c8077ab8a608d67dc1781770dde1578"
+    },
+    {
+      "tag": "manga-samples-20261015-fanza-part9",
+      "release_id": 442470678,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-fanza-part9",
+      "body_sha256": "a724468bd2ac9807d6f0b92563de98b2bb2d406a36d9c1d8f3e4cf8dc0790acf"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks",
+      "release_id": 442470725,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks",
+      "body_sha256": "c20b3ec9c8010f23bd809014bd619c7dc6c618d2be7567f1c14b6fab81274669"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part10",
+      "release_id": 442470768,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part10",
+      "body_sha256": "b5f0b05fab2551429efd904761313d2757d6a93f34ef79486016c00814521d65"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part11",
+      "release_id": 442470806,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part11",
+      "body_sha256": "75301a29da3daeb1cb70486cb4d95d23f3026308c09a2bdbee8f217bea30c441"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part12",
+      "release_id": 442470862,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part12",
+      "body_sha256": "8a9be2d2c7557f57899cc0ad64f5d7aa220b8e3d8343a2f642da0ac826a725f2"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part13",
+      "release_id": 442470909,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part13",
+      "body_sha256": "b4aa804f8e186aac419e49dd86d7477d0c03478ba481b859c6af7a140dd90a39"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part14",
+      "release_id": 442470958,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part14",
+      "body_sha256": "299c596ba568f3052e7f440923d52421cb8f46ea51e90e434fb6adfb1e763382"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part15",
+      "release_id": 442470999,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part15",
+      "body_sha256": "75c956340bb9d278d01dce7de9670098211a882b707ed6d90329b7c863e0205c"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part16",
+      "release_id": 442471046,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part16",
+      "body_sha256": "106e489eca5038b7649a07be26633e0ab332a213bd478a56f68948bc9b0af894"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part17",
+      "release_id": 442471083,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part17",
+      "body_sha256": "1da90b152efbcf3b3dc4d3ee1cd4988614162deb123cacc588be5db1fcde76a6"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part18",
+      "release_id": 442471117,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part18",
+      "body_sha256": "003300cc336348687ab8fa0c35a0b8e1c7316af758058d3389805edfa1c29ad0"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part19",
+      "release_id": 442471154,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part19",
+      "body_sha256": "9ef96b1d4e7083791af08ffd8e82c492def54faff0a14e42281719f6c18dd9ee"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part2",
+      "release_id": 442471205,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part2",
+      "body_sha256": "0ecfc7562c44b77afd27ebeb4a9f5604fcdd612bea0bc6b81bb0bbceb2894271"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part20",
+      "release_id": 442471249,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part20",
+      "body_sha256": "b36d287fb47be39a91beda0e5796386e76d7c53f69e6f96e789c60455290151b"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part21",
+      "release_id": 442471291,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part21",
+      "body_sha256": "ba63b3e869a9d32eefa573134f24a78cdcc9354dfd692826d2ece5f3ed7d616d"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part22",
+      "release_id": 442471329,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part22",
+      "body_sha256": "a1646555d3f80397db7f0817481563453e559dfaa6dc78837d4a05048380d753"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part23",
+      "release_id": 442471373,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part23",
+      "body_sha256": "b01c8f8da38bb7846ddf4afa5bec6f3e1c5a488a2baa30042c7524bd6ce1d2cc"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part24",
+      "release_id": 442471412,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part24",
+      "body_sha256": "86fd0eb5ed836e833ffae84d1e06c2606e8953a55dc02ede73a1f2a4d46135f9"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part25",
+      "release_id": 442471452,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part25",
+      "body_sha256": "ae278e5f1841b489d277769ffa09c630adab27e81c7d42c9818e784fdb537780"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part26",
+      "release_id": 442471489,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part26",
+      "body_sha256": "26959693766e60ab6b48062057e5482a61ae53d8ffea3f3948d1c0adc98eb9ff"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part27",
+      "release_id": 442471532,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part27",
+      "body_sha256": "64efa97ad5f3d043b3e5a7c673726abbc2ed8820b3b28bfd44c6437a869392c5"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part3",
+      "release_id": 442471564,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part3",
+      "body_sha256": "403facf5790d03d19343221ef60de3eaa69dc38b79896da675d27c2531cb016a"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part4",
+      "release_id": 442471604,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part4",
+      "body_sha256": "90bc1bee1c7e1b404506a41e35dc9c5b60bf892396e59bd5348313deec7483dd"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part5",
+      "release_id": 442471644,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part5",
+      "body_sha256": "a42d70a86a38fd19bd3faecff334796056f1ed3b81bbc7a2142eed8c1810a893"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part6",
+      "release_id": 442471697,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part6",
+      "body_sha256": "791d4cc03fc7a724910ca535066351bf5cdc59e865bb3ea7f9123a911ee5b1f7"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part7",
+      "release_id": 442471736,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part7",
+      "body_sha256": "c855972b636e2b6e9461966f36b0f90398a0f611d3afc763ea728b09ddf4389d"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part8",
+      "release_id": 442471772,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part8",
+      "body_sha256": "5321f4107aed56edb2a43d657d8d1796ba1d34fd858db544ee59d47c828b40ce"
+    },
+    {
+      "tag": "manga-samples-20261015-picturebooks-part9",
+      "release_id": 442471809,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-picturebooks-part9",
+      "body_sha256": "bcbfcfa9d101faa7db81cb48cc9b747fd6f6dfc50f255081797d9bf3cb7e6183"
+    },
+    {
+      "tag": "manga-samples-20261015-x100",
+      "release_id": 442471847,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100",
+      "body_sha256": "406713e9b6fa35820d3c908d99853c579e5aa26af27094e6b55932bf7dda5a87"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part10",
+      "release_id": 442471892,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part10",
+      "body_sha256": "92221897c07ba87bc657f80264e0b5ec3afd638305144301fe466707496505c2"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part11",
+      "release_id": 442471925,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part11",
+      "body_sha256": "a472f2796cf19b0eefba4d01d6d8058430caa9e9b3e86fe8057beaa4f5d2a82e"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part12",
+      "release_id": 442471962,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part12",
+      "body_sha256": "5ceef5d7d2260bb8239cbe5a823bd510e10979748d7f2fb1ef5071b2129cd9fc"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part13",
+      "release_id": 442472013,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part13",
+      "body_sha256": "e7e36c5750f95e626e7f13daca00aaa93eb7e86e4ff316578c4320889303f4f9"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part2",
+      "release_id": 442472041,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part2",
+      "body_sha256": "d418d953ddc9ef592e07e1d6a0ab4b0b186c4b7bc6b5398950702a8f820f6238"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part3",
+      "release_id": 442472083,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part3",
+      "body_sha256": "f9b3e963a7eb2878e9d574294f7d44bbde53f9cd3e431b77c1f640ffa7741eda"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part4",
+      "release_id": 442472127,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part4",
+      "body_sha256": "95b88d796fc3b4204402c040a9c3e37e016fc4516f4e27dccd811c26f89ec14e"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part5",
+      "release_id": 442472146,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part5",
+      "body_sha256": "db6b90ba0426e72c6c95ac702121e8a1d90d9247fb2ced6cd74ca2fdee5febde"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part6",
+      "release_id": 442472182,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part6",
+      "body_sha256": "066dc426041edd78006a80d851b1f9848a6b992f2a27603d17edc86f4d5ec33d"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part7",
+      "release_id": 442472220,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part7",
+      "body_sha256": "27ffb3b5eecaecca2d278c58e3543030de2c9bc6f8ec4a5157beb9672b247cfd"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part8",
+      "release_id": 442472268,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part8",
+      "body_sha256": "d44e888e57c89229d33020fadf070da1c53eac19b54085fde852a37886aa0d2a"
+    },
+    {
+      "tag": "manga-samples-20261015-x100-part9",
+      "release_id": 442472311,
+      "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/tag/manga-samples-20261015-x100-part9",
+      "body_sha256": "74d0a0551cdac87aa32a9a6cbc492886358b2d7416aa4e9dec41fd25ac895226"
+    }
+  ],
+  "binary_assets": [
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-01.zip",
+      "asset_id": 737892379,
+      "sha256": "5f47177d6fe33124720aa79c005d04daa634c72b53b05aaa511e445128822db2",
+      "bytes": 7130294,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737892379"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-02.zip",
+      "asset_id": 737892598,
+      "sha256": "c2a6e98ded146420e2fd3a67f484fb5a4e509346017149dfb0509c49bfba3dfb",
+      "bytes": 7861559,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737892598"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-03.zip",
+      "asset_id": 737892825,
+      "sha256": "a50e585b634552900e9df03501f271946b93765083129d3182b1811ce7bfa945",
+      "bytes": 8094364,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737892825"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-04.zip",
+      "asset_id": 737893015,
+      "sha256": "d3a5d24f6531db0f04235375a4d7e03ce493a63ed451338df7b31d1ae69ff590",
+      "bytes": 8122306,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737893015"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-05.zip",
+      "asset_id": 737893259,
+      "sha256": "336c078f39d93de6e0509e7e372d68dd19828751a7b3fce4b8ae944b90aabe45",
+      "bytes": 8052822,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737893259"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-06.zip",
+      "asset_id": 737893635,
+      "sha256": "759da711d923c33a1e70d491ae5aeab1b18f61475517173ba090791d3d7db45e",
+      "bytes": 8155077,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737893635"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-07.zip",
+      "asset_id": 737893955,
+      "sha256": "780d9c232cf3bee0d3b0ba9467b040fdfbb7fa9a553b02bbab3268a29261c768",
+      "bytes": 8072648,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737893955"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-08.zip",
+      "asset_id": 737894265,
+      "sha256": "9d5f8d37a1d2c878a3c51be8c79325604e1868aa05288a2f10e3460a3123bfe9",
+      "bytes": 8155377,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737894265"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-09.zip",
+      "asset_id": 737894561,
+      "sha256": "ae01e0746b6b7e3adaced9ebcc2a29077ab8e6eebb17b817dad72b14cc8d9191",
+      "bytes": 7995036,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737894561"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-10.zip",
+      "asset_id": 737894794,
+      "sha256": "fda86554febf77d34005376e82836b3c2609282f4c4a2ca5784244b981c5289e",
+      "bytes": 8167717,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737894794"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-11.zip",
+      "asset_id": 737894978,
+      "sha256": "dcb16f53ad94d9b5960ac1f8ea3331b00548df4fa7bb3c0119af6218098f54d2",
+      "bytes": 7912023,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737894978"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-12.zip",
+      "asset_id": 737895321,
+      "sha256": "8d9906df3437a412c4e467075d8ab31bdcbefd72df6d314a66ac8e648a407a2e",
+      "bytes": 8204911,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737895321"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-13.zip",
+      "asset_id": 737895578,
+      "sha256": "0a16366485ff8eae82451fefd6ac4299c9d61c48f5cb88b6de58727e9648538d",
+      "bytes": 8077919,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737895578"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-14.zip",
+      "asset_id": 737895830,
+      "sha256": "bd3b939cfbc9553af59541dabe692f41a4947097fabe260207bd43c98717fb92",
+      "bytes": 8054361,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737895830"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-15.zip",
+      "asset_id": 737896277,
+      "sha256": "3d2b1a610eb4badc6bc3fe3a7fff8226dfd5c2bcc3f1662e94390cf2025a55bb",
+      "bytes": 8090425,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737896277"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-16.zip",
+      "asset_id": 737896665,
+      "sha256": "2d649b4dcd8998a39e65f6df0a29204956582e5714c9fd4ed307eccd739bcba9",
+      "bytes": 8063013,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737896665"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-17.zip",
+      "asset_id": 737896964,
+      "sha256": "d976abdf4ca5090f142638c8e728a2a2b91c8ca6a9a60ff74a641fdb09ef7d1e",
+      "bytes": 8065880,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737896964"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-18.zip",
+      "asset_id": 737897262,
+      "sha256": "6cd114ee33ace82e8e92515ba2e186efdad7dca42013aa4521300e405b63dbc8",
+      "bytes": 7907115,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737897262"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-19.zip",
+      "asset_id": 737897563,
+      "sha256": "76b2b81ea6eead7de44cce1055d37c524fc069320735360b50d2032a5f609247",
+      "bytes": 8024613,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737897563"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-20.zip",
+      "asset_id": 737897990,
+      "sha256": "a08fdfbeb4025a25f4c4f84de58c87ec875208eed0945b49c6c541c289ce410c",
+      "bytes": 7717497,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737897990"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-21.zip",
+      "asset_id": 737898231,
+      "sha256": "ae1b0c18301fa8c2c369f2404f357e14eb5ef3e3f4c3352abcf84976799c11e4",
+      "bytes": 8214965,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737898231"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-22.zip",
+      "asset_id": 737898478,
+      "sha256": "2bfd50352c2a10da092baff217588ec7bec2e3afb848f61ad9bb72e642919507",
+      "bytes": 8021310,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737898478"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-23.zip",
+      "asset_id": 737898761,
+      "sha256": "ab98a970af0a83ce67a985d285eaeb24056869024e193123775c35bb3718e446",
+      "bytes": 7949077,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737898761"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-24.zip",
+      "asset_id": 737899038,
+      "sha256": "678b9e5df0277d86ef8dcff9c8e525c8a3ea67c84e0890f4156c0026cc5dc2da",
+      "bytes": 7901426,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737899038"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-25.zip",
+      "asset_id": 737899365,
+      "sha256": "a181088c425ba304b48f452481e5c23828beb29eb21fc203cfbec557c53b6456",
+      "bytes": 7802602,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737899365"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-26.zip",
+      "asset_id": 737899688,
+      "sha256": "b8c3a5a02fd4b1b5d156e4559971e14eeb5f5466756da9ad54225e6d13dea471",
+      "bytes": 7855097,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737899688"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-27.zip",
+      "asset_id": 737899971,
+      "sha256": "6f66a67c41f32f36eafa47fe4808b6490da79200799a1a6e6bdad4a63d601517",
+      "bytes": 7937045,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737899971"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-28.zip",
+      "asset_id": 737900251,
+      "sha256": "151c4eaf77344c3599711494577351d7173c13b6e0fcdf4fa7d7af59e6469e94",
+      "bytes": 8137790,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737900251"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-29.zip",
+      "asset_id": 737900539,
+      "sha256": "9c6fccbaca449e69b120a204d818eca915fcc48e1d9858613fa89b49bd0bd49b",
+      "bytes": 8112017,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737900539"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-30.zip",
+      "asset_id": 737900811,
+      "sha256": "d5181c2fccecf0a2962bfc7ae5b5b9126b36efd6edeb69edaeb3aa59b776a05b",
+      "bytes": 7963026,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737900811"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-31.zip",
+      "asset_id": 737901135,
+      "sha256": "76dc3c32cf63d16d7ab334313ff4e861cebb42c3d3475b93c030cb172375b4d1",
+      "bytes": 7973407,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737901135"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-32.zip",
+      "asset_id": 737901400,
+      "sha256": "09423de633761d412152e58884d18a664defd28e8855c3b53ff0fcf24ea23bd2",
+      "bytes": 7886199,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737901400"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-33.zip",
+      "asset_id": 737901701,
+      "sha256": "8f5e3f346057993090c225b7959557cc58873311432f712c086d9bc7cd3a7f62",
+      "bytes": 7986939,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737901701"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-34.zip",
+      "asset_id": 737902005,
+      "sha256": "f98ac14d6d51f66914960cfceddcd38c7e9e168cb537a085d0062177407bf38a",
+      "bytes": 7731860,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737902005"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-35.zip",
+      "asset_id": 737902267,
+      "sha256": "3483f21df4e5d828d21b688ec34108becd0e9da733a578adf896ff2e8e11a18e",
+      "bytes": 7993660,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737902267"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-36.zip",
+      "asset_id": 737902509,
+      "sha256": "480e5966ea48f7fda861378ad4a456af2c718e60000cf576a5c0c81ce568f27e",
+      "bytes": 8106578,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737902509"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-37.zip",
+      "asset_id": 737902798,
+      "sha256": "48223847cfd561af01052a69128794582d052959ec27cdd52b4fc1a7d68d2ddf",
+      "bytes": 8127801,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737902798"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-38.zip",
+      "asset_id": 737903056,
+      "sha256": "e9496440fd0b4d68b0a44d5146f0ed70e714f66df029784240c7e5c80a352bbb",
+      "bytes": 7933479,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737903056"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-39.zip",
+      "asset_id": 737903304,
+      "sha256": "1193575fccbc1a654a25540c442d8c30b6391165d681e7ff2039c3ffb85dd114",
+      "bytes": 7911493,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737903304"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-40.zip",
+      "asset_id": 737903515,
+      "sha256": "59333dbd2852f182428bced9784223d0ab83b9bfda855d02fec468f5a1adf6a1",
+      "bytes": 8106577,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737903515"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-41.zip",
+      "asset_id": 737903803,
+      "sha256": "41bd17dc95ea8dd8ab0b5eca4382398d253b8569c84284e201dce41ee3329794",
+      "bytes": 7925706,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737903803"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-42.zip",
+      "asset_id": 737904098,
+      "sha256": "182fd4ce023762f8864ca0c6ee6a895f15cc7c58258360ecda2340f4bf30387a",
+      "bytes": 8183957,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737904098"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-43.zip",
+      "asset_id": 737904319,
+      "sha256": "32d62c1ae09834ef62dbb542ca02b536ab5165b14e24bac263153c342323753d",
+      "bytes": 7934456,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737904319"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-44.zip",
+      "asset_id": 737904554,
+      "sha256": "426b348e8b9dbfd85ba0084601e14c56ad5c145b0521dfdad2b55b7249da7232",
+      "bytes": 8183458,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737904554"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-45.zip",
+      "asset_id": 737904920,
+      "sha256": "a68f6c61e37cac3532cfb52fe22540cbc934f5820e269d9310c2f1c415705e29",
+      "bytes": 8138951,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737904920"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-46.zip",
+      "asset_id": 737905149,
+      "sha256": "dea40cff43fbecb45dcc6db9a8ab5b9c503270991521a61f533a73bab1f33d1c",
+      "bytes": 8172169,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737905149"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-47.zip",
+      "asset_id": 737905482,
+      "sha256": "0fc21e19538d202b807ff1b76e4774fbd22c691b926a9418ad81faadf441e5f1",
+      "bytes": 8135766,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737905482"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-48.zip",
+      "asset_id": 737905718,
+      "sha256": "928593dd068fd2b4ce5df0785db1c339e66ddd7b4c5f43f52f5c74eaa4aad052",
+      "bytes": 7803034,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737905718"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-49.zip",
+      "asset_id": 737906156,
+      "sha256": "d83aa93628389ac861468a4d16729987ccaba346b2452f23a884de0bb0ed381a",
+      "bytes": 8084217,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737906156"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-50.zip",
+      "asset_id": 737906374,
+      "sha256": "b00cf920c7d4b51071794bd41cf843f0190e7e9a0fec56aa96cc9778fb5e7b3e",
+      "bytes": 8178250,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737906374"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-51.zip",
+      "asset_id": 737906594,
+      "sha256": "db9a9dd8768e2976b15684a447ac2758f41790b8bb8ead895ac2e05a4b010ee7",
+      "bytes": 7948207,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737906594"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-52.zip",
+      "asset_id": 737906727,
+      "sha256": "ff6cd170d67afc5a4f098621fe91ef4e68f5e9a29b9d9204f81e480f3632639e",
+      "bytes": 8193292,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737906727"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-53.zip",
+      "asset_id": 737906894,
+      "sha256": "3b9a51faa9eccd3bd86d79240b02e3479169a60c5b66ae9a60dd43de3aae0e5c",
+      "bytes": 8205219,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737906894"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-54.zip",
+      "asset_id": 737907112,
+      "sha256": "bcd30f18f47e8e4c617b3949b25cc84377689ddc004e67f982144101c943555a",
+      "bytes": 8224147,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737907112"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-55.zip",
+      "asset_id": 737907399,
+      "sha256": "779f89aef982e75b515fb221881b5b3a0d927651b7a6db95f1ed9c768b0387ab",
+      "bytes": 8115629,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737907399"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-56.zip",
+      "asset_id": 737907667,
+      "sha256": "c93bcc8b2d722c3a9af0b273ea7f473b404f36863a1e0f1fe9e93fb4c91b5c75",
+      "bytes": 8147060,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737907667"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-57.zip",
+      "asset_id": 737907930,
+      "sha256": "63c9b65acbb8cdd7f9cafcd9125ca2d9441c41da8f7311f9ae72234606904969",
+      "bytes": 8092041,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737907930"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-58.zip",
+      "asset_id": 737908169,
+      "sha256": "4a32e2cdf2bd6b1ad7a1cbc82d4e212531084c46e5d201372a69b3c0b6a339c8",
+      "bytes": 8093645,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737908169"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-59.zip",
+      "asset_id": 737908648,
+      "sha256": "3ca2e5db48d4695da0cada51793a0b2ac9ced9d34ffd4194331a58877ef93d6c",
+      "bytes": 7952502,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737908648"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-60.zip",
+      "asset_id": 737908913,
+      "sha256": "247d8aa9b1faaff8055c64f2e8d1bf1bababb5ac922d3a04fdf2fb55efc439cb",
+      "bytes": 8032992,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737908913"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-61.zip",
+      "asset_id": 737909168,
+      "sha256": "0b52c8401e9498e9ed942fe7508cc5e0c05156309f3b4061b4932110caf3cf87",
+      "bytes": 8168455,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737909168"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-62.zip",
+      "asset_id": 737909543,
+      "sha256": "fc4f2521d69f4a4c0c14e657d2d3e6291b030bf0ba31f8432dc5f4302d66b5b8",
+      "bytes": 8120387,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737909543"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-63.zip",
+      "asset_id": 737909825,
+      "sha256": "7cbb98122d8ba8865ee6dab5cefbd04bb663b166c58a4f341f98dd26980385a3",
+      "bytes": 7985209,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737909825"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-64.zip",
+      "asset_id": 737910121,
+      "sha256": "572ef61f35e005f63b281c79acdd7edfb1fbdc9a2559faa6b5f19f500d9b2352",
+      "bytes": 8116309,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737910121"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-65.zip",
+      "asset_id": 737910353,
+      "sha256": "b40670e0b3e0691bf4d6af726ae369cb723e2de42eb0966e3a2e3016b791f451",
+      "bytes": 8122471,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737910353"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-66.zip",
+      "asset_id": 737913470,
+      "sha256": "d6c3b26977ba41c82273345f4b88422ebd899b5bf12d6e414c440cca11839bf2",
+      "bytes": 7584734,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737913470"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-67.zip",
+      "asset_id": 737914932,
+      "sha256": "b9316c16427d2f52ca6bb2b828b9b4d708cfed6b8893298bf1781f0504204ae6",
+      "bytes": 7709413,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737914932"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-68.zip",
+      "asset_id": 737915436,
+      "sha256": "bc5675fc18808eb73b2295868324fc91910c57a75bdb3d2a0089094604e55ff5",
+      "bytes": 8079457,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737915436"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-69.zip",
+      "asset_id": 737915744,
+      "sha256": "5b72b211f7457bd37bfc43c01d26a70dfafc7145efa7f2fcbb69a92556297eb2",
+      "bytes": 7974847,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737915744"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-yonkoma-repack",
+      "asset": "manga-explanatory-20261110-l3-yonkoma-repack-70.zip",
+      "asset_id": 737916096,
+      "sha256": "2e8cca73a09b036375f48d6965c8b08d20b5cc54bfefad2045135b8419925df0",
+      "bytes": 6619322,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737916096"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-01.zip",
+      "asset_id": 737885749,
+      "sha256": "789cc1c89696cf204ce7c69b5d5bfd9ea39dd180c2abae33714f6cf3a9e0bddb",
+      "bytes": 8097339,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737885749"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-02.zip",
+      "asset_id": 737886101,
+      "sha256": "a53ff741b79f0dc2e3a6df8e7f57ad2051f414c24364bb8f21c79652885b5a6d",
+      "bytes": 7696343,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737886101"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-03.zip",
+      "asset_id": 737886458,
+      "sha256": "6057c8fa5084fa95915ee887c6b6e2f6b654d9b748fa527921d4d27824d019d0",
+      "bytes": 7837756,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737886458"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-04.zip",
+      "asset_id": 737886779,
+      "sha256": "7505b8d0fdf77e49e2b89256e0c246a2c5dcbf545010c2b806f2d3d6c8992758",
+      "bytes": 7672738,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737886779"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-05.zip",
+      "asset_id": 737887138,
+      "sha256": "3f2e6bcb928d67f7aced82cff5809a350213d96247cb69661d5bc60f1e92bd16",
+      "bytes": 7997653,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737887138"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-06.zip",
+      "asset_id": 737887489,
+      "sha256": "67626b06541a01dbb1b8348af3f349bd2360595761a68873c85df9cb00644a7d",
+      "bytes": 8031028,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737887489"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-07.zip",
+      "asset_id": 737887726,
+      "sha256": "c617c83f270a72c17d93667baa597ec35fb13e217d1833a1e834378ffecd5b26",
+      "bytes": 8038067,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737887726"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-08.zip",
+      "asset_id": 737888061,
+      "sha256": "ab0390f546c85ff7bac0a131eb602617f49259de394155adf497699a2c482cf4",
+      "bytes": 8033691,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737888061"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-09.zip",
+      "asset_id": 737888249,
+      "sha256": "64cb5bead094da19e853e0c15ceb3bc58fecd13653d00278b6dd34bee79a20f9",
+      "bytes": 7479247,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737888249"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-10.zip",
+      "asset_id": 737888479,
+      "sha256": "dd53dc6c898ca3e9118294b720c5cebfc1b0d5337288c52aec50d9da7a3e1294",
+      "bytes": 8101799,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737888479"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-11.zip",
+      "asset_id": 737888691,
+      "sha256": "0c0ce79d96b46ebf2ff6cc21f905aeb8c1b80b19d204c4e9eaefa813349e8670",
+      "bytes": 7450668,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737888691"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-gag-mono286",
+      "asset": "manga-explanatory-20261110-l3-gag-mono286-12.zip",
+      "asset_id": 737888981,
+      "sha256": "7330c261e6823017d3adc33dfeae448636c5a73dd5d7422c5cc6a815574b9908",
+      "bytes": 5030600,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737888981"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "asset": "manga-explanatory-20261110-l3-horror-mono216-01.zip",
+      "asset_id": 737889459,
+      "sha256": "5bb5ef98a682a74df4ed71cf6590d3eba8c7598f568895c0e08f3e91bc5d311f",
+      "bytes": 7868626,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737889459"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "asset": "manga-explanatory-20261110-l3-horror-mono216-02.zip",
+      "asset_id": 737889739,
+      "sha256": "364429a67a822f3e295c9d53e38a00adfb3db90046552693fa8ab6e2fd82b0f1",
+      "bytes": 7932842,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737889739"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "asset": "manga-explanatory-20261110-l3-horror-mono216-03.zip",
+      "asset_id": 737890026,
+      "sha256": "3a8650537dba7b8adcfc4e0d1984573fff9f19cd792639b93bf3da58a63c89b1",
+      "bytes": 8063557,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737890026"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "asset": "manga-explanatory-20261110-l3-horror-mono216-04.zip",
+      "asset_id": 737890305,
+      "sha256": "0c2c75c8682b0bfd5c0a28ad96186178a88d0e90c42a38503f18047de0fc0c11",
+      "bytes": 7989555,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737890305"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "asset": "manga-explanatory-20261110-l3-horror-mono216-05.zip",
+      "asset_id": 737890625,
+      "sha256": "3a29fb5eab59d92babca539684617e509a961939f640ac791b669df662667bcb",
+      "bytes": 8197092,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737890625"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "asset": "manga-explanatory-20261110-l3-horror-mono216-06.zip",
+      "asset_id": 737890891,
+      "sha256": "380a2fa50693ddf07a462def121d23ccbf5ed47e6ba28e57bcddb0847bb2226d",
+      "bytes": 7765489,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737890891"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "asset": "manga-explanatory-20261110-l3-horror-mono216-07.zip",
+      "asset_id": 737891179,
+      "sha256": "4a670271b6e5f23aeabf67aed492bc2868e600b0a0ee49b6028aabbac1a1dc0d",
+      "bytes": 7926740,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737891179"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "asset": "manga-explanatory-20261110-l3-horror-mono216-08.zip",
+      "asset_id": 737891387,
+      "sha256": "b444b868656b196e24dd192399ba80702c76b1b9b0b1740dba5687e92a65ab5f",
+      "bytes": 7549033,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737891387"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "asset": "manga-explanatory-20261110-l3-horror-mono216-09.zip",
+      "asset_id": 737891704,
+      "sha256": "3bc3e37e28ffc24d1487987d683e098c7591c1b3ca3522e1ff6b926176ca6b94",
+      "bytes": 8072852,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737891704"
+    },
+    {
+      "tag": "manga-explanatory-20261110-l3-horror-mono216",
+      "asset": "manga-explanatory-20261110-l3-horror-mono216-10.zip",
+      "asset_id": 737892025,
+      "sha256": "1388f30b7810109a772fb5746fd89f175532a43e27652a8797f2ff6ad7557e45",
+      "bytes": 3182661,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737892025"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "asset": "manga-explanatory-20261111-l3-essay-mono220-01.zip",
+      "asset_id": 737916522,
+      "sha256": "11a8d8e7b5cb2dbf9cc3cf642e7407b5f2abcf1c8e9c8a3102c9e3a3ea79f020",
+      "bytes": 8135831,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737916522"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "asset": "manga-explanatory-20261111-l3-essay-mono220-02.zip",
+      "asset_id": 737916780,
+      "sha256": "26305f36a2beb5c6a5fefacb6edcde221daa95fb5ab94a66e06482061a7b1c70",
+      "bytes": 8061742,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737916780"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "asset": "manga-explanatory-20261111-l3-essay-mono220-03.zip",
+      "asset_id": 737916989,
+      "sha256": "36d4d219087b6c322b24e5ccca41f0a02710027f73c097b55e783d86dec8e34c",
+      "bytes": 7697803,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737916989"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "asset": "manga-explanatory-20261111-l3-essay-mono220-04.zip",
+      "asset_id": 737917180,
+      "sha256": "198959ddf25b95bff96b1a44497f5343eae6359707b566290e247701f5ed5ca6",
+      "bytes": 7877477,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737917180"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "asset": "manga-explanatory-20261111-l3-essay-mono220-05.zip",
+      "asset_id": 737917407,
+      "sha256": "52c33f8ba6bf21c08a6abbc0c31c160ef9d9ba38673a10ea7177221bb4026bb8",
+      "bytes": 8167691,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737917407"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "asset": "manga-explanatory-20261111-l3-essay-mono220-06.zip",
+      "asset_id": 737917619,
+      "sha256": "c97a07c8ed6466032517b0207c901ef88b42d8afc0176d529ff33f91076ebc98",
+      "bytes": 8188651,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737917619"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "asset": "manga-explanatory-20261111-l3-essay-mono220-07.zip",
+      "asset_id": 737917862,
+      "sha256": "249536791ab2d5aad7e830b8d91839ffbfd064dc43b59c9ab98b07b97e2d811c",
+      "bytes": 7884413,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737917862"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "asset": "manga-explanatory-20261111-l3-essay-mono220-08.zip",
+      "asset_id": 737918149,
+      "sha256": "686cdc845e41a80cad61259c358ef5e99570d79ac17530f19eadcb226ba8e3da",
+      "bytes": 8099215,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737918149"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "asset": "manga-explanatory-20261111-l3-essay-mono220-09.zip",
+      "asset_id": 737918418,
+      "sha256": "186e86261e5ed6e02a0a83d875a429d92a4f689d78786c70a32ac1bdea264539",
+      "bytes": 8126914,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737918418"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-essay-mono220",
+      "asset": "manga-explanatory-20261111-l3-essay-mono220-10.zip",
+      "asset_id": 737918721,
+      "sha256": "83ce81abb96d0c6bc88cb8f7edfd2409ffafe789851d3a651bdd830fabcc4814",
+      "bytes": 409091,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737918721"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-01.zip",
+      "asset_id": 737918980,
+      "sha256": "f54972f39b308e748d1e5b4adf36a054b7ce36257dff8d21a6928611c097b5b1",
+      "bytes": 8238117,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737918980"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-02.zip",
+      "asset_id": 737919217,
+      "sha256": "6ce22c72e0cbc2f13d59a5068fee2d9ac44c56a6de35bf8be021ca0256fe3d3f",
+      "bytes": 8198804,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737919217"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-03.zip",
+      "asset_id": 737919506,
+      "sha256": "2c3a3d2f6c8fa2e605c7d65c7075666e0efaf0e57f0d9b46772841106a3362aa",
+      "bytes": 7935157,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737919506"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-04.zip",
+      "asset_id": 737919807,
+      "sha256": "74adee6acad1df88e57f4bc4a38e0c89deb6dc1dd65345db75f95062e7083e94",
+      "bytes": 7960943,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737919807"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-05.zip",
+      "asset_id": 737920065,
+      "sha256": "6b9aaa734a417a82d3a9190b9af092b16b35260bc0fad60a6b177ba1f2077529",
+      "bytes": 7919812,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737920065"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-06.zip",
+      "asset_id": 737920393,
+      "sha256": "0f9806094697235fd106e0715cc012f6599c3a36dd7b2ece10a6ab25ed3105b3",
+      "bytes": 7902710,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737920393"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-07.zip",
+      "asset_id": 737920666,
+      "sha256": "0c7201084748e60d69c9be39226dda72706df911984be5f3dadae5304971e5db",
+      "bytes": 7817404,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737920666"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-08.zip",
+      "asset_id": 737921000,
+      "sha256": "92f08132553e8f8d801b6bbf65fc2247233a207e819b62be6f05d5a00176bb89",
+      "bytes": 7976106,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737921000"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-09.zip",
+      "asset_id": 737921290,
+      "sha256": "ed181612af513f2bfa3ace5880b6938197d1c55e3e60902ba03fd31fe2bea0e3",
+      "bytes": 7988033,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737921290"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-10.zip",
+      "asset_id": 737921570,
+      "sha256": "73bbb48e7bde9f3c5b5a080667e81c44387f145ac47322e30f97e15d80ce5589",
+      "bytes": 7740644,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737921570"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-11.zip",
+      "asset_id": 737921819,
+      "sha256": "4a9deb8a72b454d7288edc6024c1f12aee61c58e7fce9a5f064070236926b593",
+      "bytes": 8122795,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737921819"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-12.zip",
+      "asset_id": 737922038,
+      "sha256": "a77276a6366d8c610767b64b2ac622e13bc1a2e2b9dd7f4c1b55375aa338a95c",
+      "bytes": 8080893,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737922038"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-gekiga-mono245",
+      "asset": "manga-explanatory-20261111-l3-gekiga-mono245-13.zip",
+      "asset_id": 737922242,
+      "sha256": "70b64f89a8d4c09c55cf395fc01a77c0b8f3117a93cf3ad5e6367aa8abbab8bc",
+      "bytes": 4608646,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737922242"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-other-media20",
+      "asset": "manga-explanatory-20261111-l3-other-media20-01.zip",
+      "asset_id": 737922605,
+      "sha256": "2bda6e4bcd49451677fd9947ad80b27476eeef3ffeb539b1946fc4660cc37d57",
+      "bytes": 5171636,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737922605"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-scene-replacement20",
+      "asset": "manga-explanatory-20261111-l3-scene-replacement20-01.zip",
+      "asset_id": 737923071,
+      "sha256": "eb8cf93c6c5ca7c3af361ad20e2c7a3b03afc2602df313295808696238cdd8c9",
+      "bytes": 7981837,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737923071"
+    },
+    {
+      "tag": "manga-explanatory-20261111-l3-scene-replacement20",
+      "asset": "manga-explanatory-20261111-l3-scene-replacement20-02.zip",
+      "asset_id": 737923311,
+      "sha256": "fe7e549c01900543017443c631d97cd51fa84f633580cbd1f196c23436bda428",
+      "bytes": 809299,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737923311"
+    },
+    {
+      "tag": "manga-compare-wai-20261018-01",
+      "asset": "manga-compare-wai-20261018-01.zip",
+      "asset_id": 737884070,
+      "sha256": "921c581e563a17df5c12825773c2c168b817118e12b91382732075e0266878e4",
+      "bytes": 28930022,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737884070"
+    },
+    {
+      "tag": "manga-compare-wai-20261018-02",
+      "asset": "manga-compare-wai-20261018-02.zip",
+      "asset_id": 737884890,
+      "sha256": "04d1a8116c9372976605847bcf8f3226274578aac824012674117623e09b3c02",
+      "bytes": 7873011,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737884890"
+    },
+    {
+      "tag": "manga-compare-wai-20261018-03",
+      "asset": "manga-compare-wai-20261018-03.zip",
+      "asset_id": 737885341,
+      "sha256": "5342c2faa8f9457b9ea6b30185f27e27af8ae05e25353ae38f1db45ac896e431",
+      "bytes": 1908969,
+      "url": "https://api.github.com/repos/akiba-tokyo-jp/manga-style/releases/assets/737885341"
+    }
+  ],
+  "legacy_archives": [
+    {
+      "asset": "manga-samples-20261011-natural.zip",
+      "sha256": "f83544e409729f6d4449593a3b05ea919f0085b18465d33405895395c06d701f",
+      "bytes": 3914860,
+      "source": "reconstructed exclusively from new private repo release bodies"
+    },
+    {
+      "asset": "manga-samples-20261011-distinct-color.zip",
+      "sha256": "405bc909a104307f1e410b9818db18cb1da04b8fe30f1ff60f67382ace6d3833",
+      "bytes": 1110302,
+      "source": "reconstructed exclusively from new private repo release bodies"
+    },
+    {
+      "asset": "manga-samples-20261015-picturebooks.zip",
+      "sha256": "fae339e5b04d6094753eac721a1263d9ce73ccdc62e42f0fc3c7c86d7121e618",
+      "bytes": 1177930,
+      "source": "reconstructed exclusively from new private repo release bodies"
+    },
+    {
+      "asset": "manga-samples-20261015-x100.zip",
+      "sha256": "95ae2e6ab6cb28de47c1f30ae3962717474ed24fdf4d1efa1e00929cdabb5bee",
+      "bytes": 583875,
+      "source": "reconstructed exclusively from new private repo release bodies"
+    },
+    {
+      "asset": "manga-samples-20261015-fanza.zip",
+      "sha256": "6c6669177b1d8a05bce708fdbce48fb485992fcde9b7dcb66cefe47b390fbe4b",
+      "bytes": 499034,
+      "source": "reconstructed exclusively from new private repo release bodies"
+    },
+    {
+      "asset": "manga-samples-20261015-commercial.zip",
+      "sha256": "05431d1d03f9e4374d1719b27a4b0bd62a0efc8958b51e5b23bb7bc33a829f5a",
+      "bytes": 353131,
+      "source": "reconstructed exclusively from new private repo release bodies"
+    }
+  ],
+  "actual_binary_download_sample": {
+    "repository": "akiba-tokyo-jp/manga-style",
+    "tag": "manga-compare-wai-20261018-03",
+    "asset": "manga-compare-wai-20261018-03.zip",
+    "bytes": 1908969,
+    "downloaded_sha256": "5342c2faa8f9457b9ea6b30185f27e27af8ae05e25353ae38f1db45ac896e431",
+    "initial_large_download": "timeout after 180s; partial file retained, not accepted",
+    "method": "authenticated asset API byte readback"
+  },
+  "source_snapshot_commit": "b41ce9a8d5e9618305f77f55eb12b11cce3989b2",
+  "production_cutover": false
+}
