@@ -89,12 +89,15 @@ test('Anima gallery, exact English prompts, images and clipboard are live model-
   const models = await (await request.get('/v1/models')).json();
   const count = models.models.find(model => model.id === 'anima-turbo').style_count;
   expect(count).toBeGreaterThan(0);
+  const catalogue = await (await request.get('/_public/catalogue.json')).json();
+  const visibleCount = Math.min(count, catalogue.page_size);
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('/search?lang=ja&model=anima-turbo');
   await expect(page.locator('body')).toHaveAttribute('data-gallery-ready', 'true');
-  await expect(page.locator('.gallery-card')).toHaveCount(count);
+  await expect(page.locator('.gallery-card')).toHaveCount(visibleCount);
   expect(await page.locator('.gallery-card').evaluateAll(cards => cards.every(card => card.dataset.styleId.startsWith('anima-')))).toBe(true);
+  await expect(page.locator('.gallery-card img')).toHaveCount(visibleCount);
   for (const image of await page.locator('.gallery-card img').all()) {
     await image.scrollIntoViewIfNeeded();
     await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
@@ -123,8 +126,31 @@ test('Anima gallery, exact English prompts, images and clipboard are live model-
   await page.goto('/');
   await expect(page.locator('body')).toHaveAttribute('data-active-model', 'anima-turbo');
   await expect(page.locator('body')).toHaveAttribute('data-gallery-ready', 'true');
-  await expect(page.locator('.gallery-card')).toHaveCount(count);
+  await expect(page.locator('.gallery-card')).toHaveCount(visibleCount);
   expect(errors).toEqual([]);
+});
+
+test('Anima-only other category keeps its labels and drops unsupported GPT filters', async ({ page, request }) => {
+  const tree = await (await request.get('/v1/tree?model=anima-turbo&lang=ja')).json();
+  const others = tree.nodes.filter(node => node.category === 'other');
+  expect(others.length).toBeGreaterThan(0);
+  const response = await page.goto('/n/other?lang=ja&model=anima-turbo');
+  expect(response.status()).toBe(200);
+  await expect(page.locator('body')).toHaveAttribute('data-gallery-ready', 'true');
+  await expect(page.locator('.gallery-intro h1')).toHaveText('その他・成人向け参考');
+  await expect(page.locator('.gallery-card')).toHaveCount(others.length);
+  await page.locator('.gallery-card').first().click();
+  await expect(page.locator('.category-notice')).toContainText('着衣・非露骨');
+  await page.goto('/n/other?lang=ja&model=anima-turbo');
+  await expect(page.locator('body')).toHaveAttribute('data-gallery-ready', 'true');
+  await page.locator('.lang-switch').click();
+  await expect(page.locator('body')).toHaveAttribute('data-gallery-ready', 'true');
+  await expect(page.locator('.gallery-intro h1')).toHaveText('Other / adult-manga references');
+  await page.screenshot({ path: `dist/verification/${test.info().project.name}-anima-other.png` });
+  await page.locator('.model-tab', { hasText: 'GPT Image' }).click();
+  await expect(page.locator('body')).toHaveAttribute('data-gallery-ready', 'true');
+  expect(new URL(page.url()).searchParams.has('root')).toBe(false);
+  expect((await request.get('/n/other?model=gpt-image')).status()).toBe(404);
 });
 
 test('category routes, facet filters, pagination, Genko mode and denied routes', async ({ page, request }) => {

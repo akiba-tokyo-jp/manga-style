@@ -26,3 +26,24 @@ test('Anima API and namespaced images are independent from legacy GPT', async ()
   assert.equal((await get('/files/anima-turbo/anima-example/missing.png')).status, 404);
   assert.ok(seen.includes('/_data/styles/anima-turbo/anima-example.json'));
 });
+
+test('Anima-only category routes never admit the same category under GPT', async () => {
+  const meta = { roots: ['shonen'], topics: {}, facets: {}, visible: ['anima-example'],
+    model_visible: { 'gpt-image': [], 'anima-turbo': ['anima-example'] },
+    model_roots: { 'gpt-image': ['shonen'], 'anima-turbo': ['shonen', 'other'] } };
+  const env = { ASSETS: { async fetch(request) {
+    const path = new URL(request.url).pathname;
+    if (path === '/_data/routes.json') return Response.json(meta);
+    if (path === '/_data/gallery/ja-anima-turbo.html') return new Response('ANIMA GALLERY');
+    if (path === '/_data/gallery/ja-gpt-image.html') return new Response('GPT GALLERY');
+    if (path === '/_data/error/ja-gpt-image.html') return new Response('GPT NOT FOUND');
+    return new Response('missing', { status: 404 });
+  } } };
+  const get = path => worker.fetch(new Request('https://preview.example' + path), env);
+  assert.equal((await get('/n/other?model=anima-turbo')).status, 200);
+  assert.equal((await get('/search?root=other&model=anima-turbo')).status, 200);
+  assert.equal((await get('/n/other?model=gpt-image')).status, 404);
+  assert.equal((await get('/n/other')).status, 404);
+  assert.equal((await get('/search?root=other&model=gpt-image')).status, 400);
+  assert.deepEqual(meta.roots, ['shonen']);
+});

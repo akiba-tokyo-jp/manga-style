@@ -30,7 +30,8 @@ async function render() {
     return path + '?' + params;
   }
   const conditions = { root: selected.root, topic: selected.topic, q: selected.q, ...selected.facets };
-  document.querySelector('.gallery-intro h1').textContent = selected.root ? byId.get(selected.root).labels[lang].title : text.heading;
+  const categoryTitle = index.category_labels?.[model]?.[selected.root]?.[lang] ?? byId.get(selected.root)?.labels[lang].title;
+  document.querySelector('.gallery-intro h1').textContent = selected.root ? categoryTitle : text.heading;
   document.querySelector('#gallery-query').value = selected.q;
   for (const form of document.querySelectorAll('form')) {
     for (const [key, value] of Object.entries({ ...conditions, lang, model })) {
@@ -60,6 +61,11 @@ async function render() {
     const target = new URL(anchor.href);
     target.pathname = '/search';
     for (const [key, value] of Object.entries(conditions)) value ? target.searchParams.set(key, value) : target.searchParams.delete(key);
+    const targetRoots = index.model_roots?.[target.searchParams.get('model')] ?? selected.roots;
+    if (selected.root && !targetRoots.includes(selected.root)) {
+      target.searchParams.delete('root');
+      target.searchParams.delete('topic');
+    }
     for (const key of ['page', 'plang', 'view']) {
       if (current.searchParams.has(key)) target.searchParams.set(key, current.searchParams.get(key));
     }

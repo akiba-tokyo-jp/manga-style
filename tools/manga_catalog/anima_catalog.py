@@ -11,7 +11,8 @@ from PIL import Image
 
 MODEL='anima-turbo'
 REPOSITORY='akiba-tokyo-jp/manga-style'
-CATEGORIES={'shonen','shojo','seinen','josei','kodomo','yonkoma','gag','horror','essay','gekiga'}
+CATEGORIES={'shonen','shojo','seinen','josei','kodomo','yonkoma','gag','horror','essay','gekiga','other'}
+EXTRA_CATEGORIES={'other':{'ja':'その他・成人向け参考','en':'Other / adult-manga references'}}
 FACETS={'expression':{'mono','color'},'line':{'thin','thick','rough'},'proportion':{'chibi','standard','realistic'},'finish':{'solid','tone','lineonly'}}
 ID=re.compile(r'anima-[a-z0-9]+(?:-[a-z0-9]+)*\Z')
 SHA=re.compile(r'[0-9a-f]{64}\Z')
@@ -51,6 +52,8 @@ def load_catalog(path,archive_dir):
         entry=copy.deepcopy(source);sid=entry.get('id','')
         require(isinstance(sid,str) and ID.fullmatch(sid) and sid not in seen,'Invalid or duplicate Anima id');seen.add(sid)
         require(entry.get('category') in CATEGORIES,'Unknown Anima category')
+        if entry['category']=='other':
+            require(entry.get('reference_context')=='adult-manga' and entry.get('sample_content')=='non-explicit-fully-clothed-adult','Other entries require explicit adult-reference/nonsexual-sample classification')
         require(entry.get('model_version')=='anima-turbo-v1.1','Unverified Anima model')
         for field in ('title','summary','limitations'):
             require(isinstance(entry.get(field),dict) and all(isinstance(entry[field].get(lang),str) and entry[field][lang] for lang in ('ja','en')),'Missing bilingual Anima description')
@@ -97,6 +100,12 @@ def add_to_export(stage,rows,store,main,write,image_records):
     routes=json.loads((stage/'_data/routes.json').read_text(encoding='utf-8'))
     require(not any(row['id'] in routes['visible'] for row in rows),'Anima/GPT identifier collision')
     old_visible=list(routes['visible'])
+    anima_roots=list(routes['roots'])
+    anima_roots.extend(sid for sid in EXTRA_CATEGORIES if any(row['category']==sid for row in rows))
+    routes['model_roots']={'gpt-image':list(routes['roots']),MODEL:anima_roots}
+    index['model_roots']=copy.deepcopy(routes['model_roots'])
+    index['category_labels']={MODEL:{sid:EXTRA_CATEGORIES[sid] for sid in anima_roots if sid in EXTRA_CATEGORIES}}
+    def category_title(sid,lang):return EXTRA_CATEGORIES[sid][lang] if sid in EXTRA_CATEGORIES else store.title(sid,lang)
     def image_url(row,key):return main.SITE_ORIGIN+'/files/'+MODEL+'/'+row['id']+'/'+row['sample'][key]
     def context(lang,path,title):
         other='en' if lang=='ja' else 'ja'
@@ -108,7 +117,7 @@ def add_to_export(stage,rows,store,main,write,image_records):
         return ctx
     for row in rows:
         sid=row['id'];sample=row['sample'];root=row['category']
-        require(root in routes['roots'],'Anima category is not publicly visible')
+        require(root in anima_roots,'Anima category is not publicly visible')
         for key,body in (('file',row['image_bytes']),('thumb',row['thumb_bytes'])):
             path='files/'+MODEL+'/'+sid+'/'+sample[key]
             target=stage/path;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(body)
@@ -126,14 +135,16 @@ def add_to_export(stage,rows,store,main,write,image_records):
                      'license':{'generated':True,'artist_names':False,'terms':main.LICENSE_TERMS},
                      'limitations':row['limitations'][lang],'references':row.get('references',[])}
             payloads[lang]=payload
+            if root=='other':payload.update(reference_context=row['reference_context'],sample_content=row['sample_content'])
             ctx=context(lang,'/styles/'+sid,title)
             ctx.update(entry=row,title=title,summary=summary,limitation=row['limitations'][lang],
                        image_url=image_url(row,'file'),sample=sample,style_text=row['prompt']['en'],
                        full_prompt=sample['prompt']['en'],api_url=main.SITE_ORIGIN+'/v1/styles/'+sid+'?model='+MODEL,
-                       copy_prefix='Anima Turbo / '+store.title(root,lang)+' / '+sid)
+                       copy_prefix='Anima Turbo / '+category_title(root,lang)+' / '+sid,
+                       category_notice=(('成人向け漫画の描法を参考にした別枠です。見本は成人の着衣・非露骨な表現です。' if lang=='ja' else 'A separate adult-manga drawing-reference category. Samples show fully clothed adults in non-explicit scenes.') if root=='other' else None))
             rendered=main.env.get_template('anima_style.html').render(**ctx)
             pages[lang]={MODEL:{'en':rendered,'ja':rendered}}
-            labels[lang]={'id':sid,'level':3,'title':title,'summary':summary,'path':store.title(root,lang),
+            labels[lang]={'id':sid,'level':3,'title':title,'summary':summary,'path':category_title(root,lang),
                           'model_name':'Anima Turbo','thumb_url':'/files/'+MODEL+'/'+sid+'/'+sample['thumb'],
                           'url':model_url('/styles/'+sid,lang,False,MODEL),
                           'hay':' '.join([sid,*row['title'].values(),*row['summary'].values(),row['prompt']['en']]).casefold()}
@@ -157,7 +168,7 @@ def add_to_export(stage,rows,store,main,write,image_records):
              'summary':r['summary'][lang],'thumbnail_url':image_url(r,'thumb'),'path':[r['title'][lang]]} for r in rows]}
         write('_data/tree/'+lang+'-'+MODEL+'.json',tree)
         ctx=context(lang,'/search',TEXT[lang]['heading'])
-        roots=[{'id':sid,'title':store.title(sid,lang),'url':model_url('/n/'+sid,lang,False,MODEL)} for sid in routes['roots']]
+        roots=[{'id':sid,'title':category_title(sid,lang),'url':model_url('/n/'+sid,lang,False,MODEL)} for sid in anima_roots]
         selected={k:'' for k in ('root','topic','q',*UI_FACETS)}
         cards=[record['labels'][lang] for record in index['records'] if record.get('model')==MODEL]
         ctx.update(gallery_title=TEXT[lang]['heading'],registered_count=len(rows),model_ready=True,q='',selected=selected,
