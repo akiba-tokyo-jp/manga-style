@@ -1,0 +1,558 @@
+{
+  "schema": 1,
+  "repository": "akiba-tokyo-jp/manga-style",
+  "bundles": [
+    {
+      "tag": "anima-contemporary-001",
+      "asset": "anima-contemporary-001.zip",
+      "sha256": "2aaa96645aa82e9c6f41841f56e898040ade27b81d398733ef33ae3a3e1af623"
+    }
+  ],
+  "entries": [
+    {
+      "id": "anima-urban-dense-ink",
+      "category": "shonen",
+      "title": {
+        "ja": "黒髪の面と細密線の現代漫画",
+        "en": "Dense ink and black hair masses"
+      },
+      "summary": {
+        "ja": "強弱輪郭、髪の黒面と白抜き、細密な背景。目は指定より大きく、網点よりハッチングが中心。画角は胸上寄り。文字・フキダシなし。",
+        "en": "Variable ink contours, black hair masses with white strands and detailed architecture. Fine hatching is stronger than halftone; the eyes are larger than intended."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Contemporary black-and-white manga drawing. The outer contours vary sharply between thin and thick ink, while small facial features and fabric seams use fine pen strokes. A tapered jaw, a slender neck, horizontally shaped eyes with strong upper eyelids and modest irises, natural adult proportions. Dark hair is grouped into broad solid-black masses cut by narrow white strands. Clothing alternates white areas, solid-black shadows, sparse fine hatching and flat screentone. Precise architectural lines in the background contrast with white space around the face. Not a glossy anime portrait."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "aedf4392fe2a856ae58d024b836f26c1df392992bfe99dba251e16863c89716a.png",
+        "sha256": "aedf4392fe2a856ae58d024b836f26c1df392992bfe99dba251e16863c89716a",
+        "width": 1024,
+        "height": 1024,
+        "thumb": "108938c13bb27d3b77ec280518b21779af80781e0dc487308db4eb839e7eaa26.jpg",
+        "thumb_sha256": "108938c13bb27d3b77ec280518b21779af80781e0dc487308db4eb839e7eaa26",
+        "prompt": {
+          "en": "Contemporary black-and-white manga drawing. The outer contours vary sharply between thin and thick ink, while small facial features and fabric seams use fine pen strokes. A tapered jaw, a slender neck, horizontally shaped eyes with strong upper eyelids and modest irises, natural adult proportions. Dark hair is grouped into broad solid-black masses cut by narrow white strands. Clothing alternates white areas, solid-black shadows, sparse fine hatching and flat screentone. Precise architectural lines in the background contrast with white space around the face. Not a glossy anime portrait. An original adult woman aged 27 with short dark tousled hair, wearing a plain zip-front jacket over a light shirt, steps into a city underpass. Three-quarter view from the waist up, one shoulder forward, mouth slightly open as she notices something off-frame. No weapons or supernatural features. Single original character, single illustration. Black and white only. No text, no lettering, no numbers, no speech bubbles, no sound-effect lettering, no signature, no watermark, no panel borders. No named or recognizable copyrighted character."
+        },
+        "native_job_id": "6af5af61000002560000000700000007",
+        "requested_settings": {
+          "aspect_ratio": "square",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "1024x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5af61000002560000000700000007",
+          "api_seconds": 30.275
+        },
+        "max_rgb_channel_delta": 18
+      },
+      "references": [
+        {
+          "title": "ダンダダン",
+          "url": "https://shonenjumpplus.com/episode/3269632237310729754"
+        },
+        {
+          "title": "SPY×FAMILY",
+          "url": "https://shonenjumpplus.com/episode/10834108156648240735"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not yet established. The unmodified monochrome-requested output may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T12:37:55Z"
+    },
+    {
+      "id": "anima-half-lidded-everyday",
+      "category": "seinen",
+      "title": {
+        "ja": "半眼と小さな口の淡々日常",
+        "en": "Dry everyday half-lidded eyes"
+      },
+      "summary": {
+        "ja": "半開き横長眼と小口、白い顔服と黒髪の対比。瞳はまだ大きく、服と背景の線が多い。手と下半身は画面外。文字・フキダシなし。",
+        "en": "Half-lidded eyes, a small mouth, white clothing and black hair. The irises and the interior line detail remain stronger than intended."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "A restrained slice-of-life black-and-white manga drawing. Slightly rounded cheeks, half-closed horizontal eyes with small dark pupils, almost straight eyebrows, a tiny nose mark and a small understated mouth. The expression is dry and mildly tired rather than glamorous. Slightly heavy outer contours and thin economical interior lines, a natural adult head-to-body relationship. Hair is a compact solid-black shape broken into a few pointed bangs and narrow white gaps. The face and most clothing remain white, with only short parallel hatch marks beneath the chin and inside folds. Everyday furniture and door frames are drawn with simple clear straight lines."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "94a6b1a0bb6aab43623cf41c648d134425c7d480ed0052290c2a6448c1617335.png",
+        "sha256": "94a6b1a0bb6aab43623cf41c648d134425c7d480ed0052290c2a6448c1617335",
+        "width": 1024,
+        "height": 1024,
+        "thumb": "d2e48c61612ed80a06582f6975c9838a939ff2107fa78b1ac55dc2fb4e2a474a.jpg",
+        "thumb_sha256": "d2e48c61612ed80a06582f6975c9838a939ff2107fa78b1ac55dc2fb4e2a474a",
+        "prompt": {
+          "en": "A restrained slice-of-life black-and-white manga drawing. Slightly rounded cheeks, half-closed horizontal eyes with small dark pupils, almost straight eyebrows, a tiny nose mark and a small understated mouth. The expression is dry and mildly tired rather than glamorous. Slightly heavy outer contours and thin economical interior lines, a natural adult head-to-body relationship. Hair is a compact solid-black shape broken into a few pointed bangs and narrow white gaps. The face and most clothing remain white, with only short parallel hatch marks beneath the chin and inside folds. Everyday furniture and door frames are drawn with simple clear straight lines. An original adult woman aged 29 with a straight dark chin-length bob and a plain loose sweatshirt stands in a small apartment doorway. Three-quarter view from the hips up, arms relaxed at her sides. She glances sideways with a mildly tired, matter-of-fact expression. A door frame and one low shoe shelf behind her. Single original character, single illustration. Black and white only. No text, no lettering, no numbers, no speech bubbles, no sound-effect lettering, no signature, no watermark, no panel borders. No named or recognizable copyrighted character."
+        },
+        "native_job_id": "6af5afa5000002560000000800000008",
+        "requested_settings": {
+          "aspect_ratio": "square",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "1024x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5afa5000002560000000800000008",
+          "api_seconds": 30.043
+        },
+        "max_rgb_channel_delta": 13
+      },
+      "references": [
+        {
+          "title": "ルリドラゴン",
+          "url": "https://shonenjumpplus.com/episode/17106371853091617526"
+        },
+        {
+          "title": "ふつうの軽音部",
+          "url": "https://shonenjumpplus.com/episode/16457717013869519536"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not yet established. The unmodified monochrome-requested output may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T12:37:55Z"
+    },
+    {
+      "id": "anima-rounded-pop-romance",
+      "category": "shonen",
+      "title": {
+        "ja": "丸い輪郭と表情のポップラブコメ",
+        "en": "Rounded expressive romantic comedy"
+      },
+      "summary": {
+        "ja": "丸めの輪郭、見開く目、大きく開く笑口、頬線。首肩はしっかりしておりコンパクトな胴は確認不能。胸上寄り。文字・フキダシなし。",
+        "en": "Rounded contours, wide eyes, an open laughing mouth and cheek strokes. The cropped view does not establish compact body proportions."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "A playful contemporary romantic-comedy manga illustration in black and white. Bouncy rounded contours, softly full cheeks, a slightly large head over a slim compact adult torso, no elongated fashion-model legs. Large open rounded eyes, lively eyebrows, a wide asymmetric smiling mouth and a few short blush strokes communicate an unguarded reaction. Hair is constructed from a few broad curved locks with clean black fills and white highlights. Facial details are economical rather than polished or realistic. Light flat screentone and generous white areas, with only a few simple geometric background shapes."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "184ec56a2602a271ecf6af635f8c63ff46e69962c40479ef1511866f25e33f8e.png",
+        "sha256": "184ec56a2602a271ecf6af635f8c63ff46e69962c40479ef1511866f25e33f8e",
+        "width": 1024,
+        "height": 1024,
+        "thumb": "83255efa0749460de385286c6a1126a2e49cbc959e8659576de99974fa0fdfdb.jpg",
+        "thumb_sha256": "83255efa0749460de385286c6a1126a2e49cbc959e8659576de99974fa0fdfdb",
+        "prompt": {
+          "en": "A playful contemporary romantic-comedy manga illustration in black and white. Bouncy rounded contours, softly full cheeks, a slightly large head over a slim compact adult torso, no elongated fashion-model legs. Large open rounded eyes, lively eyebrows, a wide asymmetric smiling mouth and a few short blush strokes communicate an unguarded reaction. Hair is constructed from a few broad curved locks with clean black fills and white highlights. Facial details are economical rather than polished or realistic. Light flat screentone and generous white areas, with only a few simple geometric background shapes. An original adult man aged 25 with medium-length wavy dark hair and a loose plain shirt laughs in surprise while standing outside a community art classroom. Three-quarter view from the hips up, shoulders lifted slightly. One plain wall and a simple open doorway behind him. Single original character, single illustration. Black and white only. No text, no lettering, no numbers, no speech bubbles, no sound-effect lettering, no signature, no watermark, no panel borders. No named or recognizable copyrighted character."
+        },
+        "native_job_id": "6af5afe9000002560000000900000009",
+        "requested_settings": {
+          "aspect_ratio": "square",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "1024x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5afe9000002560000000900000009",
+          "api_seconds": 29.936
+        },
+        "max_rgb_channel_delta": 25
+      },
+      "references": [
+        {
+          "title": "正反対な君と僕",
+          "url": "https://shonenjumpplus.com/episode/3269754496899770338"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not yet established. The unmodified monochrome-requested output may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T12:37:55Z"
+    },
+    {
+      "id": "anima-clean-slim-romance",
+      "category": "shojo",
+      "title": {
+        "ja": "細首と流れる髪のすっきり青春",
+        "en": "Slender clean youth romance"
+      },
+      "summary": {
+        "ja": "単一人物の全身、細い顎首、小頭長身、流れる髪と瞳の白光。淡い陰影は網点よりハッチング・点描寄り。指先は簡略、服しわは硬め、頭上の弧線が残る。文字・フキダシなし。",
+        "en": "A slender full-length figure, flowing hair and white eye glints. Shading is mostly fine hatching and stippling rather than flat halftone."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "A light, clean black-and-white youth-romance manga illustration. Fine tapered contour lines, slightly stronger upper eyelids and overlapping hair locks, a narrow tapered chin, a slender neck and a small head above a tall slim adult body. The eyes have clear dark irises and distinct white glints, with an attentive but restrained expression and a small mouth. Hair flows in long clean curved strands, alternating white paper, pale screentone and a few black accents. Very light flat halftone shading, a largely white face and broad white margins; background architecture is suggested with a few thin precise lines. No airbrushed gradients or ornate floral decoration."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "c7d59b365655eb33cffff11dffa12072d73afd0f40329ab5119a52b9b043b49a.png",
+        "sha256": "c7d59b365655eb33cffff11dffa12072d73afd0f40329ab5119a52b9b043b49a",
+        "width": 576,
+        "height": 1024,
+        "thumb": "263b10898da2990544fb2380dc51e1256247310740454112fb7d4ad63004bf73.jpg",
+        "thumb_sha256": "263b10898da2990544fb2380dc51e1256247310740454112fb7d4ad63004bf73",
+        "prompt": {
+          "en": "Full-length illustration of exactly one adult woman standing alone on a quiet street. One continuous scene, one figure only, no inset face, no collage, no character sheet, no repeated person. Her entire body is visible with space above the head and below both shoes. She is aged 26, has long flowing dark hair, a plain cardigan and straight trousers, both arms resting at her sides, and an attentive small smile. A light clean black-and-white romance-comic drawing with fine tapered contour lines, slightly stronger upper eyelids, a narrow tapered chin, slender neck, small head and tall slim body. Clear dark irises with white glints. Long curved hair strands alternate white paper, pale screentone and a few black accents. Very light flat halftone, white face and broad white margins. Suggest one distant storefront using a few thin precise lines. Draw only this one standing woman once. No airbrushed gradients, ornate flowers, text, lettering, numbers, speech bubbles, sound effects, signature, watermark or panel borders."
+        },
+        "native_job_id": "6af5b1f8000002560000000f0000000f",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5b1f8000002560000000f0000000f",
+          "api_seconds": 18.555
+        },
+        "max_rgb_channel_delta": 16
+      },
+      "references": [
+        {
+          "title": "正反対な君と僕",
+          "url": "https://shonenjumpplus.com/episode/3269754496899770338"
+        },
+        {
+          "title": "メダリスト",
+          "url": "https://comic-days.com/episode/13933686331653168477"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not yet established. The unmodified monochrome-requested output may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T12:37:55Z"
+    },
+    {
+      "id": "anima-tailored-urban-drama",
+      "category": "seinen",
+      "title": {
+        "ja": "角のある顔と端正な都会劇",
+        "en": "Angular tailored urban drama"
+      },
+      "summary": {
+        "ja": "角張った顎、明瞭鼻筋、細い目、成熟顔、首肩襟の接続、太細線と上着黒面、街の遠近。全身指定だが膝下は画面外。文字・フキダシなし。",
+        "en": "Angular jaw, a clear nose bridge, mature face, solid-black jacket and precise city perspective. The legs are cropped below the thighs."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "realistic"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "A polished black-and-white urban-drama manga drawing. Angular cheek and jaw planes, a clearly drawn straight nose bridge, narrow alert eyes, restrained mouth and a mature composed face. Realistic adult shoulder breadth, a clearly separated ear, neck and clothing collar. Fine hair strokes grouped into a few swept locks over the forehead. Firm variable-width outer contours, precise thin clothing seams, bold solid-black jacket areas, white facial planes and a little directional hatching. Ordered building windows, pavement and street furniture establish clear perspective behind the person. No chibi proportions or round baby face."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "5971e3ee23f81a1bad6508f3e41af45e7ddaa494621320b218383faa675851f7.png",
+        "sha256": "5971e3ee23f81a1bad6508f3e41af45e7ddaa494621320b218383faa675851f7",
+        "width": 576,
+        "height": 1024,
+        "thumb": "ef845650cbe6f671fde422e5457a64c946e4c64037f7ebeda556c971a7228977.jpg",
+        "thumb_sha256": "ef845650cbe6f671fde422e5457a64c946e4c64037f7ebeda556c971a7228977",
+        "prompt": {
+          "en": "A polished black-and-white urban-drama manga drawing. Angular cheek and jaw planes, a clearly drawn straight nose bridge, narrow alert eyes, restrained mouth and a mature composed face. Realistic adult shoulder breadth, a clearly separated ear, neck and clothing collar. Fine hair strokes grouped into a few swept locks over the forehead. Firm variable-width outer contours, precise thin clothing seams, bold solid-black jacket areas, white facial planes and a little directional hatching. Ordered building windows, pavement and street furniture establish clear perspective behind the person. No chibi proportions or round baby face. An original adult man aged 34 with side-parted hair and a plain tailored jacket over a collared shirt stands on an ordinary city pavement. Show his complete body from head to shoes, hands inside his jacket pockets, shoulders level, face turned slightly to the side. A row of building windows and one distant streetlamp. Single original character, single illustration. Black and white only. No text, no lettering, no numbers, no speech bubbles, no sound-effect lettering, no signature, no watermark, no panel borders. No named or recognizable copyrighted character."
+        },
+        "native_job_id": "6af5b0f7000002560000000c0000000c",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5b0f7000002560000000c0000000c",
+          "api_seconds": 19.628
+        },
+        "max_rgb_channel_delta": 17
+      },
+      "references": [
+        {
+          "title": "SPY×FAMILY",
+          "url": "https://shonenjumpplus.com/episode/10834108156648240735"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not yet established. The unmodified monochrome-requested output may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T12:37:55Z"
+    },
+    {
+      "id": "anima-intense-eye-sports",
+      "category": "shonen",
+      "title": {
+        "ja": "濃い上瞼と大きな瞳の感情スポーツ",
+        "en": "Intense eyes and emotional sports"
+      },
+      "summary": {
+        "ja": "大きく縦に開く目、濃い上瞼、複数白光、緊張眉と開口、汗、首の斜線と服の点描。小瞳孔の分離は不明瞭。胸上で全体体型は未確認。文字・フキダシなし。",
+        "en": "Wide vertical eyes, heavy upper eyelids, white glints and a tense open mouth with sweat. Small pupils are not clearly separated."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "An emotionally intense contemporary sports-manga illustration in black and white. Large vertically open eyes, very dark thick upper eyelids, small pupils inside defined irises with several crisp white reflections, raised tense eyebrows and an open determined mouth. A tapered cheek-to-chin contour, thin neck, lean athletic adult shoulders and clearly constructed elbows. Pointed hair locks alternate solid black and thin white strands. Strong outer ink contours and fine short strokes on cheeks and cloth, a few sweat drops, black beneath the jaw and sparse halftone on clothes. White space around the face and a few diagonal energy strokes, not a fully filled speed-line background."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "c1afa393355d37fb2d63b5ce24b57ebc0853efc732d145aec38e81cf96a48dce.png",
+        "sha256": "c1afa393355d37fb2d63b5ce24b57ebc0853efc732d145aec38e81cf96a48dce",
+        "width": 1024,
+        "height": 1024,
+        "thumb": "41b3a6a1668f8f65149dc52e2543f272cbf2b543b905b6b5bd122890800684bf.jpg",
+        "thumb_sha256": "41b3a6a1668f8f65149dc52e2543f272cbf2b543b905b6b5bd122890800684bf",
+        "prompt": {
+          "en": "An emotionally intense contemporary sports-manga illustration in black and white. Large vertically open eyes, very dark thick upper eyelids, small pupils inside defined irises with several crisp white reflections, raised tense eyebrows and an open determined mouth. A tapered cheek-to-chin contour, thin neck, lean athletic adult shoulders and clearly constructed elbows. Pointed hair locks alternate solid black and thin white strands. Strong outer ink contours and fine short strokes on cheeks and cloth, a few sweat drops, black beneath the jaw and sparse halftone on clothes. White space around the face and a few diagonal energy strokes, not a fully filled speed-line background. An original adult woman aged 24 with a short high ponytail and a plain athletic training jacket stands beside an indoor sports hall. Three-quarter view from the waist up, lean shoulders, head raised with a determined open-mouthed expression as she looks toward something off-frame. A distant plain railing, no equipment held. Single original character, single illustration. Black and white only. No text, no lettering, no numbers, no speech bubbles, no sound-effect lettering, no signature, no watermark, no panel borders. No named or recognizable copyrighted character."
+        },
+        "native_job_id": "6af5b12f000002560000000d0000000d",
+        "requested_settings": {
+          "aspect_ratio": "square",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "1024x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5b12f000002560000000d0000000d",
+          "api_seconds": 30.234
+        },
+        "max_rgb_channel_delta": 19
+      },
+      "references": [
+        {
+          "title": "メダリスト",
+          "url": "https://comic-days.com/episode/13933686331653168477"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not yet established. The unmodified monochrome-requested output may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T12:37:55Z"
+    },
+    {
+      "id": "anima-big-head-reaction",
+      "category": "gag",
+      "title": {
+        "ja": "大頭短胴のコミカルリアクション",
+        "en": "Big-head compact comic reactions"
+      },
+      "summary": {
+        "ja": "単一人物の全身、大頭短胴短手足、太い丸線、少ない内部線、見開き目と開口、汗。目視約1.5〜2頭身で指定3頭身より低い。余分な手足・文字・フキダシなし。",
+        "en": "One compact full-length chibi figure with rounded ink lines and a large surprise expression. The output is closer to 1.5–2 heads than the intended three."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "chibi"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "A super-deformed reaction drawing from a contemporary comedy manga, black and white. The adult character is deliberately constructed with a very large round head, a short squat torso, short arms and short legs, roughly three heads tall when fully visible. Wide open oval eyes, bold raised eyebrows, a large open angular mouth, a few short blush marks and one oversized sweat bead show comic surprise. Hair becomes a few clear chunky shapes. Thick rounded outer contours and very few interior marks, white clothing with just a few folds, black hair masses and almost no gray shading. Empty white background with two or three small angular emphasis marks. Not a normal-proportioned portrait with only a bigger face."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "025426a3bc8b34ef6ef2cb896d659b502cc47b1aa97b71d87a2bebc24f98bd4d.png",
+        "sha256": "025426a3bc8b34ef6ef2cb896d659b502cc47b1aa97b71d87a2bebc24f98bd4d",
+        "width": 576,
+        "height": 1024,
+        "thumb": "303bce082597ad32ca2c91fdc168f0a503f688938dd4726911ac859c374c19ca.jpg",
+        "thumb_sha256": "303bce082597ad32ca2c91fdc168f0a503f688938dd4726911ac859c374c19ca",
+        "prompt": {
+          "en": "Exactly ONE chibi adult man, drawn ONCE in the center of an otherwise empty white page. One full-length figure only, no collage, no repeated poses, no duplicate heads, no character sheet. His complete body and both feet are visible. He is aged 30 with a short side-swept dark fringe, a plain white T-shirt and black trousers. A very large round head, a short squat torso, short arms, short legs, a clearly three-head-tall compact body. He leans backward in comic surprise with his two short arms lifted out to either side. Wide open oval eyes, bold raised eyebrows, one large open angular mouth, short blush marks and a single large sweat bead. One small blank folder on the floor beside his feet. Contemporary black-and-white comedy-comic drawing, thick rounded outlines, very few interior marks, chunky black hair, white shirt with only a few folds. Draw only this one man once. No gray shading, extra people, additional poses, text, lettering, numbers, speech bubbles, sound effects, signature, watermark or panel borders."
+        },
+        "native_job_id": "6af5b22b000002560000001000000010",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5b22b000002560000001000000010",
+          "api_seconds": 19.555
+        },
+        "max_rgb_channel_delta": 13
+      },
+      "references": [
+        {
+          "title": "正反対な君と僕",
+          "url": "https://shonenjumpplus.com/episode/3269754496899770338"
+        },
+        {
+          "title": "メダリスト",
+          "url": "https://comic-days.com/episode/13933686331653168477"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not yet established. The unmodified monochrome-requested output may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T12:37:55Z"
+    }
+  ]
+}

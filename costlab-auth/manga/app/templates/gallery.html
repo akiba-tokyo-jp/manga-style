@@ -12,7 +12,7 @@
   <a href="{{ home_url }}"{% if not selected.root %} aria-current="true"{% endif %}>{{ newui.all }}</a>
   {% for c in roots %}<a href="{{ c.url }}"{% if selected.root == c.id %} aria-current="true"{% endif %}>{{ c.title }}</a>{% endfor %}
 </nav>
-{% if active_model != 'gpt-image' %}
+{% if active_model != 'gpt-image' and not model_ready|default(false) %}
 {{ empty(newui) }}
 {% else %}
 <div class="gallery-layout">

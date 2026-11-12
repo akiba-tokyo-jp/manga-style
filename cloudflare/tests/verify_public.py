@@ -22,7 +22,7 @@ from app.catalogue import FACETS, GPT, catalogue_page
 class PublicReader:
     """Feed the original Python filter actual exported public API projections."""
     def __init__(self, index, assets):
-        self.records = {row['id']: row for row in index['records']}
+        self.records = {row['id']: row for row in index['records'] if row.get('model', GPT) == GPT}
         self.order = list(self.records)
         self.base = {nid: {'level': row['level']} for nid, row in self.records.items()}
         self.styles = {nid: json.loads((assets / '_data/styles' / (nid + '.json')).read_text(encoding='utf-8'))['ja'] for nid in self.order}
@@ -58,7 +58,7 @@ def main():
     index = json.loads((assets / '_public/catalogue.json').read_text(encoding='utf-8'))
     if set(meta['visible']) != {row['id'] for row in index['records']}:
         raise RuntimeError('Catalogue route/index identity mismatch')
-    actual_images = {'/' + p.relative_to(assets).as_posix() for p in (assets / 'files').rglob('*.jpg')}
+    actual_images = {'/' + p.relative_to(assets).as_posix() for p in (assets / 'files').rglob('*') if p.suffix in ('.jpg', '.png')}
     if actual_images != set(receipt['images']):
         raise RuntimeError('Exported image inventory differs from receipt')
     tasks = [('json', '/v1/models', json.loads((assets / '_data/models.json').read_text(encoding='utf-8')))]
@@ -66,9 +66,11 @@ def main():
         for model in ('gpt-image', 'anima-turbo'):
             tasks.append(('json', f'/v1/tree?lang={lang}&model={model}', json.loads((assets / f'_data/tree/{lang}-{model}.json').read_text(encoding='utf-8'))))
     for nid in meta['visible']:
-        values = json.loads((assets / '_data/styles' / (nid + '.json')).read_text(encoding='utf-8'))
+        model = 'anima-turbo' if nid in meta.get('model_visible', {}).get('anima-turbo', []) else GPT
+        folder = assets / '_data/styles' / ('anima-turbo' if model != GPT else '')
+        values = json.loads((folder / (nid + '.json')).read_text(encoding='utf-8'))
         for lang in ('ja', 'en'):
-            tasks.append(('json', f'/v1/styles/{nid}?lang={lang}', values[lang]))
+            tasks.append(('json', f'/v1/styles/{nid}?lang={lang}&model={model}', values[lang]))
     tasks.extend(('image', path, record) for path, record in receipt['images'].items())
     def check(task):
         kind, path, expected = task
@@ -79,7 +81,8 @@ def main():
             if kind == 'image':
                 if len(raw) != expected['bytes'] or hashlib.sha256(raw).hexdigest() != expected['sha256']:
                     raise RuntimeError(f'Image bytes/SHA mismatch: {path}')
-                if response.headers.get_content_type() != 'image/jpeg':
+                expected_type = 'image/png' if path.endswith('.png') else 'image/jpeg'
+                if response.headers.get_content_type() != expected_type:
                     raise RuntimeError(f'Image Content-Type mismatch: {path}')
             else:
                 expected = json.loads(json.dumps(expected, ensure_ascii=False).replace('https://static.manga.invalid', base))
@@ -130,7 +133,7 @@ for (const item of cases) {
 console.log('Original Python catalogue_page / browser filter parity:', cases.length, 'cases passed');
 """
     subprocess.run(['node', '--input-type=module', '-e', js], cwd=ROOT, check=True)
-    report = {'api_responses_verified': counts['json'], 'jpeg_responses_sha256_verified': counts['image'],
+    report = {'api_responses_verified': counts['json'], 'image_responses_sha256_verified': counts['image'],
               'visible_nodes': len(meta['visible']), 'filter_parity_cases': len(cases),
               'seconds': round(time.monotonic() - start, 3), 'base_url': base, 'passed': True}
     (directory / 'http-readback.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

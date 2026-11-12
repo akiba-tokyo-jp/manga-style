@@ -16,6 +16,7 @@ from urllib.parse import urlencode
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'costlab-auth/manga'))
+sys.path.insert(0, str(ROOT / 'tools/manga_catalog'))
 from starlette.requests import Request
 from app import main
 
@@ -81,7 +82,8 @@ def snapshot_store(snapshot, scratch, *, compare_dir=None):
     return clone
 
 
-def export_store(store, output, *, max_files=20000, max_asset_bytes=25 * 1024 * 1024):
+def export_store(store, output, *, max_files=20000, max_asset_bytes=25 * 1024 * 1024,
+                 anima_catalog=None, archive_dir=None):
     """Read the approved public projection; replace a previous export only after success.
 
     The supplied Store must be an isolated copy, never the production volume.
@@ -89,9 +91,11 @@ def export_store(store, output, *, max_files=20000, max_asset_bytes=25 * 1024 * 
     """
     from app.catalogue import FACETS, GPT, LOOK_GROUPS, MODELS, PAGE_SIZE, TEXT, features_match
     from app.ui import UI
+    from anima_catalog import load_catalog, add_to_export
 
     if store.api_mode() != 'public':
         raise ValueError('Token-mode snapshots cannot be published as a public static API')
+    anima_rows = load_catalog(anima_catalog, archive_dir) if anima_catalog is not None else []
     output = Path(output).resolve()
     data = store.data_dir.resolve()
     if output == ROOT or output in ROOT.parents or output == data or data in output.parents or output in data.parents:
@@ -106,6 +110,7 @@ def export_store(store, output, *, max_files=20000, max_asset_bytes=25 * 1024 * 
     output.parent.mkdir(parents=True, exist_ok=True)
     old_store, old_origin = main._store, main.SITE_ORIGIN
     old_same_title = store.same_title
+    old_anima_status = MODELS['anima-turbo']['status']
     # Avoid re-scanning the whole catalogue for every translated detail page.
     names = {lang: defaultdict(list) for lang in UI}
     for lang in UI:
@@ -118,6 +123,8 @@ def export_store(store, output, *, max_files=20000, max_asset_bytes=25 * 1024 * 
     store.same_title = same_title
     image_records = {}
     try:
+        if anima_rows:
+            MODELS['anima-turbo']['status'] = 'available'
         main._store, main.SITE_ORIGIN = store, ASSET_ORIGIN
         with tempfile.TemporaryDirectory(prefix='manga-static-', dir=output.parent) as temp:
             stage = Path(temp) / 'assets'
@@ -162,6 +169,12 @@ def export_store(store, output, *, max_files=20000, max_asset_bytes=25 * 1024 * 
                                         for plang in UI},
                                    'anima-turbo': {'ja': main.direct_style(request('/styles/' + nid, lang=lang,
                                                                                   model='anima-turbo'), nid).body.decode()}}
+                if anima_rows:
+                    for lang in UI:
+                        empty_page = pages[lang]['anima-turbo']['ja']
+                        heading = 'この絵柄の Anima 見本は未登録です' if lang == 'ja' else 'No Anima example is registered for this style.'
+                        detail = '別の絵柄は Anima の一覧から探せます。' if lang == 'ja' else 'Browse the Anima gallery for other styles.'
+                        pages[lang]['anima-turbo']['ja'] = empty_page.replace(html.escape(TEXT[lang]['empty_heading']), heading).replace(html.escape(TEXT[lang]['empty_text']), detail)
                 write(f'_data/pages/{nid}.json', pages)
                 for sample in store.samples(nid):
                     copy_image(nid, sample['file'], sample['sha256'])
@@ -200,13 +213,14 @@ def export_store(store, output, *, max_files=20000, max_asset_bytes=25 * 1024 * 
                 write('static/' + name, source.read_text(encoding='utf-8'))
             write('robots.txt', main.robots())
             write('.manga-static-output', '1\n')
+            add_to_export(stage, anima_rows, store, main, write, image_records)
             assets = [p for p in stage.rglob('*') if p.is_file()]
             if len(assets) > max_files:
                 raise ValueError(f'Static asset count {len(assets)} exceeds limit {max_files}')
             oversized = [p.relative_to(stage).as_posix() for p in assets if p.stat().st_size > max_asset_bytes]
             if oversized:
                 raise ValueError(f'Static assets exceed per-file limit: {oversized}')
-            receipt = {'visible_nodes': len(visible), 'file_count': len(assets),
+            receipt = {'visible_nodes': len(visible), 'anima_styles': len(anima_rows), 'file_count': len(assets),
                        'total_bytes': sum(p.stat().st_size for p in assets),
                        'max_asset_bytes': max(p.stat().st_size for p in assets), 'images': image_records}
             backup = Path(temp) / 'previous'
@@ -220,6 +234,7 @@ def export_store(store, output, *, max_files=20000, max_asset_bytes=25 * 1024 * 
                 raise
             return receipt
     finally:
+        MODELS['anima-turbo']['status'] = old_anima_status
         store.same_title = old_same_title
         main._store, main.SITE_ORIGIN = old_store, old_origin
 
@@ -248,7 +263,8 @@ def check_snapshot_write_paths(snapshot, output, archives):
 def cli():
     import argparse
     from app.store import Store
-    from cloudflare_assets import fetch_archives
+    from cloudflare_assets import fetch_archives, bundle_specs
+    from anima_catalog import read_manifest
     import prepare_samples
     import prepare_compare
     import prepare_explanatory
@@ -264,14 +280,20 @@ def cli():
     parser.add_argument('--output', type=Path, default=ROOT / 'dist/assets')
     args = parser.parse_args()
     check_snapshot_write_paths(args.snapshot_dir, args.output, args.archive_dir)
-    fetch_archives(args.archive_dir)
+    anima_path = ROOT / 'content/anima-turbo/catalog.json'
+    specs = bundle_specs()
+    if anima_path.exists():
+        specs += read_manifest(anima_path)['bundles']
+    fetch_archives(args.archive_dir, specs=specs)
     prepare_samples.prepare(args.archive_dir)
     prepare_compare.prepare(args.archive_dir)
     prepare_explanatory.prepare(args.archive_dir)
     with tempfile.TemporaryDirectory(prefix='manga-export-data-') as temp:
         scratch = Path(temp) / 'data'
         store = snapshot_store(args.snapshot_dir, scratch) if args.snapshot_dir else Store(scratch)
-        receipt = export_store(store, args.output)
+        receipt = export_store(store, args.output,
+                               anima_catalog=anima_path if anima_path.exists() else None,
+                               archive_dir=args.archive_dir)
         receipt['input_mode'] = 'snapshot' if args.snapshot_dir else 'seed-preview'
         receipt['catalogue_sha256'] = hashlib.sha256((main.APP_DIR / 'catalog.json').read_bytes()).hexdigest()
         receipt_path = args.output.parent / 'build-report.json'

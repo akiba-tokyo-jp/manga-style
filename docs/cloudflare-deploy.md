@@ -79,7 +79,7 @@ Cloudflare Buildsのseedビルドはこの本番snapshotを自動取得しませ
 - 日本語/英語、`lang`と`plang`の独立指定、`model`、モデル選択cookie、Genko用リンクとUser-Agent、`view=compare`
 - 既存CSS、詳細ページの2枚組と実生成prompt、コピー時のモデル・分類・id、同名絵柄の識別
 - カテゴリ・題材・特徴・AND検索・48件ずつのページ送り（**一覧の絞り込みにはJavaScriptが必要**）
-- Animaは準備中の空モデル。GPTのpromptや画像をAnimaの生成物として返さない。
+- Anima は `content/anima-turbo/catalog.json` の実生成見本だけを独立配信する。日本語は名称・説明、生成プロンプトは英語。GPTのpromptや画像をAnimaの生成物として返さない。追加と公開手順は [Anima作成・公開](anima-authoring.md) を参照。
 
 公開APIのoriginはアクセス先から組み立てるため、previewでも独自ドメインでも画像URLが同じ配信先を指します。`/admin*`、`/internal*`、state、token hash、待機prompt、再生成queue、pair-history、未参照画像は配備しません。管理・生成処理は引き続き保護された旧環境またはローカル側で行い、新しい静的snapshotの承認・ビルドが必要です。token認証の公開APIが必要になった場合は別実装が必要で、token-mode snapshotを公開に変換して配信することはしません。
 
