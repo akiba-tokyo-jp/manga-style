@@ -5,13 +5,13 @@
 ## 最初に区別すること
 
 - **対応コードのmainマージ ≠ 本番切替**。この設定には独自ドメイン、DNS変更、本番volume操作、GitHub Actionsの有効化を含めていません。
-- GitHubのソースはprivateのままです。`workers.dev`に配備すると、従来と同じ公開カタログ/APIがインターネットから読めます。
+- GitHubのソースとReleaseはpublicです。画像アーカイブの取得にGitHubトークンは不要です。`workers.dev`に配備すると、従来と同じ公開カタログ/APIがインターネットから読めます。
 - 初回はseedから作ったpreviewを`workers.dev`で確認してください。本番に管理画面での変更・公開停止・版がある場合は、**本番から取得した静止snapshot**で最終ビルドし、差分を確認してからドメインを切り替えます。
 - Cloudflare Pagesの「出力フォルダだけ配信」ではありません。`/v1/tree`などの既存URL・query・CORS・モデル切替を保持するため、**Workers**を選んでください。
 
 ## ローカルで確認
 
-必要: Node.js 22.12以降、Python 3（uvがない場合のbootstrap用）、private Releaseの読取権限。uvが既にある場合はその実行ファイルを使い、ない場合は`.build/bootstrap`のvenvに固定版uvを導入し、Python 3.12とビルド依存を隔離します。
+必要: Node.js 22.12以降、Python 3（uvがない場合のbootstrap用）。uvが既にある場合はその実行ファイルを使い、ない場合は`.build/bootstrap`のvenvに固定版uvを導入し、Python 3.12とビルド依存を隔離します。
 
 ```sh
 npm ci
@@ -21,7 +21,7 @@ npm run dev
 
 `http://127.0.0.1:8787`で確認します。Windowsで再ビルドする場合は、先に`npm run dev`を停止してください。ファイル監視が`dist/assets`をロックし、正常な出力の置き換えを妨げることがあります。`npm run build`は次を行います。
 
-1. このprivate repoのReleaseを取得する。アーカイブ全体SHA、既存prepare処理のmanifest・画像・promptの検証に合格した資産だけを使う。
+1. このrepoの公開Releaseを取得する。アーカイブ全体SHA、既存prepare処理のmanifest・画像・promptの検証に合格した資産だけを使う。
 2. 一時Storeを初期化し、既存アプリの公開readerからHTMLとAPI JSONを生成する。
 3. `visible`、採用中のsample、失効していないcomparisonだけを書き出す。画像は再生成・再エンコードせず元のbytesでコピーする。
 4. ファイル数20,000以下、1ファイル25 MiB以下を確認し、成功した出力だけを`dist/assets`へ置き換える。
@@ -35,23 +35,23 @@ npm run build -- --archive-dir /absolute/path/to/verified-archives
 
 同じ指定は環境変数`MANGA_ARCHIVE_DIR`でも可能です。既存cacheのSHAが違う場合は上書きせずエラーにします。
 
-認証は`GH_TOKEN`または`GITHUB_TOKEN`を使用します。ローカルだけは、どちらもなければログイン済み`gh auth token`から取得します。値を表示・ファイル保存しません。Cloudflare Buildsにgh CLIは不要です。
+通常は認証不要です。127アーカイブを公開Releaseの直接ダウンロードURLから取得するため、GitHub APIの匿名60回/時の制限も消費しません。旧形式6アーカイブも、内容・SHAを変えずに通常のRelease assetとして追加しています。明示的に`GH_TOKEN`または`GITHUB_TOKEN`を設定した場合だけ、従来の認証付きAPI取得を使います。値を表示・ファイル保存しません。gh CLIやログインは不要です。
 
 ## Cloudflare管理画面の設定
 
 Workers & Pages → **Workers** → Gitリポジトリから作成し、次を設定します。
 
-- リポジトリ: `akiba-tokyo-jp/manga-style`（privateのまま）
+- リポジトリ: `akiba-tokyo-jp/manga-style`（public）
 - Production branch: `main`
 - Worker名: `manga-style`（`wrangler.jsonc`と一致させる）
 - Root directory: リポジトリのルート
 - Build command: `npm ci && npm run build`
 - Deploy command: `npx wrangler deploy`
 - ビルド環境変数: `NODE_VERSION=22`、`PYTHON_VERSION=3.12`（環境側で既に満たす場合は追加不要）
-- ビルド用secret: `GH_TOKEN` — このrepoだけの **Contents: Read-only** を持つfine-grained GitHub token
+- 画像取得用のビルドsecret: **不要**（`GH_TOKEN`/`GITHUB_TOKEN`の設定は不要）
 - はじめは独自ドメインを追加しない。公開先は`manga-style.<account-subdomain>.workers.dev`
 
-GitHub Appでprivate repoを接続できることと、ビルド中にprivate Releaseをダウンロードできることは別です。`GH_TOKEN`は**ビルド用secret**に置き、Worker runtimeのvars・ブラウザ用変数・ソース・distに入れないでください。Cloudflare配備権限はWorkers Builds側で管理します。
+このrepoのRelease取得にGitHub認証は不要です。Cloudflareへの配備権限は別で、Workers Builds側で管理します。任意で認証情報を設定する場合でも、Worker runtimeのvars・ブラウザ用変数・ソース・distには入れないでください。
 
 `wrangler.jsonc`がWorker入口、`ASSETS` binding、`dist/assets`を指定するため、Pages用の出力ディレクトリ欄は使いません。`run_worker_first: true`と`not_found_handling: none`は必要です。削除すると内部の配信用bundleが直接返ったり、欠落API/画像がHTMLの200になったりします。
 

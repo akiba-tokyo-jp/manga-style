@@ -1,12 +1,10 @@
-"""Portable build-only private GitHub Release retrieval; no gh binary required."""
+"""Build-only GitHub Release retrieval; public archives need no credentials."""
 import base64
 import concurrent.futures
 import hashlib
 import json
 import os
 import re
-import shutil
-import subprocess
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -30,6 +28,18 @@ def github_bytes(path, token, *, binary=False):
         'Accept': 'application/octet-stream' if binary else 'application/vnd.github+json',
         'X-GitHub-Api-Version': '2022-11-28',
     })
+    return release_bytes(request, binary=binary)
+
+
+def public_bytes(tag, asset):
+    # Direct public URLs avoid GitHub API's anonymous 60-request/hour limit.
+    request = urllib.request.Request(
+        f'https://github.com/{REPOSITORY}/releases/download/{tag}/{asset}',
+        headers={'User-Agent': 'manga-style-static-build'})
+    return release_bytes(request, binary=True)
+
+
+def release_bytes(request, *, binary=False):
     limit = MAX_ARCHIVE if binary else 2 * 1024 * 1024
     opener = urllib.request.build_opener(NoRedirect)
     try:
@@ -86,14 +96,12 @@ def fetch_archives(directory, *, specs=None, token=None):
         return
     if token is None:
         token = os.environ.get('GH_TOKEN') or os.environ.get('GITHUB_TOKEN')
-        if not token and shutil.which('gh'):
-            result = subprocess.run(['gh', 'auth', 'token'], capture_output=True, text=True, check=True)
-            token = result.stdout.strip()
-    if not token:
-        raise ValueError('Missing private Release access: set GH_TOKEN as a build secret (Contents: read)')
     directory.mkdir(parents=True, exist_ok=True)
     def download(spec):
-        if spec.get('release_bodies'):
+        if not token:
+            tag = (spec.get('release_bodies') or [spec.get('release_tag') or spec['tag']])[0]
+            raw = public_bytes(tag, spec['asset'])
+        elif spec.get('release_bodies'):
             marker = '<!-- manga-explanatory-base64\n' if spec['asset'].startswith('manga-explanatory-') else '<!-- manga-samples-base64\n'
             encoded = []
             for tag in spec['release_bodies']:
