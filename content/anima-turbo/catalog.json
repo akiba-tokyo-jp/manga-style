@@ -21,6 +21,11 @@
       "tag": "anima-genre-other-001",
       "asset": "anima-genre-other-001.zip",
       "sha256": "f82bc34915774c5fa755e342b3240209e99f30f8778fb35daba56a5b6e210cb6"
+    },
+    {
+      "tag": "anima-genres-001",
+      "asset": "anima-genres-001.zip",
+      "sha256": "31f4ce904ea9794cd71f10ceb37d76be033a74626096718fca615294594ed204"
     }
   ],
   "entries": [
@@ -1100,6 +1105,602 @@
       },
       "version": 1,
       "updated_at": "2026-11-12T15:27:42Z"
+    },
+    {
+      "id": "anima-josei-defined-even",
+      "category": "josei",
+      "title": {
+        "ja": "細線と淡い網点の面長顔",
+        "en": "Long face in fine lines and pale halftone"
+      },
+      "summary": {
+        "ja": "細い顎の面長顔と長髪、細身の単独全身像。細い輪郭と首の細密線、ズボンの淡い網状中間調、白場を多く残す描き方。手指・足趾は重なりがあり、末端の本数や接続の精度は未確認です。",
+        "en": "One slender full-body figure with a long face, narrow chin and long hair. Fine contours, closely drawn neck shadows, pale mesh-like trouser tone and broad white space. Overlapping finger and toe lines leave extremity counts and connections unverified."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Mature almond eyes with a clear upper eyelid, natural lower-lid creases, subtly outlined lips and a gently squared jaw; balanced six-and-a-half-head-tall adult proportions. Very thin even continuous ink outlines, delicate internal detail, white-paper hair separated by sparse fine strands, a few pale flat halftone patches and broad clean white space."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "ab928267f1e1c2abe7bcd7b76d7753d5cfead779121e399b5f5786107c1187da.png",
+        "sha256": "ab928267f1e1c2abe7bcd7b76d7753d5cfead779121e399b5f5786107c1187da",
+        "width": 576,
+        "height": 1024,
+        "thumb": "d81a637adf16bd74d20929ecdf104588c1f44651977dd028463670d1a79e564b.jpg",
+        "thumb_sha256": "d81a637adf16bd74d20929ecdf104588c1f44651977dd028463670d1a79e564b",
+        "prompt": {
+          "en": "monochrome manga, fine clean lineart, original character, solo, full body. A single adult woman aged 32, drawn once, standing with both feet visible and arms relaxed. Fully clothed in a plain long-sleeved shirt and full-length trousers, an ordinary nonsexual pose. Mature almond eyes with a clear upper eyelid, natural lower-lid creases, subtly outlined lips and a gently squared jaw; balanced six-and-a-half-head-tall adult proportions. Very thin even continuous ink outlines, delicate internal detail, white-paper hair separated by sparse fine strands, a few pale flat halftone patches and broad clean white space. Plain unmarked white background, one uninterrupted unlettered drawing with wide empty margins."
+        },
+        "native_job_id": "6af5d7a0000002560000002300000023",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5d7a0000002560000002300000023",
+          "api_seconds": 17.449
+        },
+        "max_rgb_channel_delta": 24
+      },
+      "references": [
+        {
+          "title": "違国日記・公式販売表紙の描法",
+          "url": "https://ebookstore.sony.jp/title/10320231/"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の原PNGです。単体の絵柄見本で、物語の完成ページではありません。指定からの残差と末端の不確かさがあり、未指定seedやネガティブは推測していません。紙地風の色味を含む場合も未加工で保持し、別人物・別場面での再現性は未検証です。",
+        "en": "An actual unmodified generated PNG, a standalone drawing-style example rather than a finished story page. Prompt residuals and uncertain extremities remain; unspecified seed/negative values are not inferred. Paper-like tints are preserved and cross-subject/cross-scene repeatability is untested."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T16:02:31Z"
+    },
+    {
+      "id": "anima-josei-defined-taper",
+      "category": "josei",
+      "title": {
+        "ja": "丸顔と太い強弱線の生活漫画",
+        "en": "Round face and emphatic everyday-comic lines"
+      },
+      "summary": {
+        "ja": "丸みのある広い顔と小さめの目、幅のある体型の単独全身像。太い強弱輪郭、顔・服・脚の広い斜線と黒面、生成りの紙目風の地。手指と足趾は省略・重なりが強く、細部は未確定です。",
+        "en": "One broad-bodied full figure with a round wide face and small eyes. Strong variable-width contours, broad diagonal hatching and black areas over face and clothing, with cream paper-like texture. Simplified and overlapping fingers and toes remain unresolved in detail."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Mature almond eyes with a clear upper eyelid, natural lower-lid creases, subtly outlined lips and a gently squared jaw; balanced six-and-a-half-head-tall adult proportions. Crisp tapered dip-pen contours with strong thick-to-thin variation, a compact solid-black hair mass with a few white cuts, small firm black clothing shadows and a mostly white face."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "906620c6cf1e64aeecf78cf9702fe4642428d0d594076df24399b34138a884b1.png",
+        "sha256": "906620c6cf1e64aeecf78cf9702fe4642428d0d594076df24399b34138a884b1",
+        "width": 576,
+        "height": 1024,
+        "thumb": "54c0a611d7cf829ae04c42e830e62192e4f763f8322273a532b03b015a786b5e.jpg",
+        "thumb_sha256": "54c0a611d7cf829ae04c42e830e62192e4f763f8322273a532b03b015a786b5e",
+        "prompt": {
+          "en": "monochrome manga, tapered dip-pen lineart, black hair, original character, solo, full body. A single adult woman aged 32, drawn once, standing with both feet visible and arms relaxed. Fully clothed in a plain long-sleeved shirt and full-length trousers, an ordinary nonsexual pose. Mature almond eyes with a clear upper eyelid, natural lower-lid creases, subtly outlined lips and a gently squared jaw; balanced six-and-a-half-head-tall adult proportions. Crisp tapered dip-pen contours with strong thick-to-thin variation, a compact solid-black hair mass with a few white cuts, small firm black clothing shadows and a mostly white face. Plain unmarked white background, one uninterrupted unlettered drawing with wide empty margins."
+        },
+        "native_job_id": "6af5d82f000002560000002b0000002b",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5d82f000002560000002b0000002b",
+          "api_seconds": 18.694
+        },
+        "max_rgb_channel_delta": 59
+      },
+      "references": [
+        {
+          "title": "違国日記・公式販売表紙の描法",
+          "url": "https://ebookstore.sony.jp/title/10320231/"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の原PNGです。単体の絵柄見本で、物語の完成ページではありません。指定からの残差と末端の不確かさがあり、未指定seedやネガティブは推測していません。紙地風の色味を含む場合も未加工で保持し、別人物・別場面での再現性は未検証です。",
+        "en": "An actual unmodified generated PNG, a standalone drawing-style example rather than a finished story page. Prompt residuals and uncertain extremities remain; unspecified seed/negative values are not inferred. Paper-like tints are preserved and cross-subject/cross-scene repeatability is untested."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T16:02:31Z"
+    },
+    {
+      "id": "anima-kodomo-circle-even",
+      "category": "kodomo",
+      "title": {
+        "ja": "大きい円顔と点目の白場漫画",
+        "en": "Large circle face and dot eyes in white space"
+      },
+      "summary": {
+        "ja": "非常に大きい円い顔、点状の目と小さな笑口、わずかな頭髪。細く均一寄りの輪郭と少ない衣服のしわ、顎下・足首の淡い網点でまとめた単独全身像。丸めた手指は省略され、本数や接続の完全な検証はできていません。",
+        "en": "One full-body cartoon with an extremely large circular face, dot-like eyes, a small smile and sparse hair. Thin nearly uniform contours, few clothing folds and pale jaw and ankle tone. Rounded simplified hands do not permit complete finger-count or connection verification."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "chibi"
+        ],
+        "finish": [
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Two simple dot eyes, a tiny curved mouth and a very large circular head; a fully clothed adult mascot rendered in two-and-a-half-head-tall cartoon proportions. Very thin even continuous ink outlines, delicate internal detail, white-paper hair separated by sparse fine strands, a few pale flat halftone patches and broad clean white space."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "0e5b1adce46afe4cbdee7e278b24e909157a2b63d3dc6e90cf4b6c6500bf4992.png",
+        "sha256": "0e5b1adce46afe4cbdee7e278b24e909157a2b63d3dc6e90cf4b6c6500bf4992",
+        "width": 576,
+        "height": 1024,
+        "thumb": "2d0caf50b676af7fca873612f7444b0b78544bfc37ef24840bc96d7d76fd9041.jpg",
+        "thumb_sha256": "2d0caf50b676af7fca873612f7444b0b78544bfc37ef24840bc96d7d76fd9041",
+        "prompt": {
+          "en": "monochrome manga, fine clean lineart, original character, solo, full body. A single adult man aged 32, drawn once, standing with both feet visible and arms relaxed. Fully clothed in a plain long-sleeved shirt and full-length trousers, an ordinary nonsexual pose. Two simple dot eyes, a tiny curved mouth and a very large circular head; a fully clothed adult mascot rendered in two-and-a-half-head-tall cartoon proportions. Very thin even continuous ink outlines, delicate internal detail, white-paper hair separated by sparse fine strands, a few pale flat halftone patches and broad clean white space. Plain unmarked white background, one uninterrupted unlettered drawing with wide empty margins."
+        },
+        "native_job_id": "6af5da69000002560000004b0000004b",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5da69000002560000004b0000004b",
+          "api_seconds": 17.477
+        },
+        "max_rgb_channel_delta": 13
+      },
+      "references": [
+        {
+          "title": "運命の巻戻士・公式無料公開第1話",
+          "url": "https://www.corocoro.jp/chapter/3270296674366181081/viewer"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の原PNGです。単体の絵柄見本で、物語の完成ページではありません。指定からの残差と末端の不確かさがあり、未指定seedやネガティブは推測していません。紙地風の色味を含む場合も未加工で保持し、別人物・別場面での再現性は未検証です。",
+        "en": "An actual unmodified generated PNG, a standalone drawing-style example rather than a finished story page. Prompt residuals and uncertain extremities remain; unspecified seed/negative values are not inferred. Paper-like tints are preserved and cross-subject/cross-scene repeatability is untested."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T16:02:31Z"
+    },
+    {
+      "id": "anima-kodomo-circle-taper",
+      "category": "kodomo",
+      "title": {
+        "ja": "横広の点目顔と斜線の児童漫画",
+        "en": "Wide dot-eye face with comic hatching"
+      },
+      "summary": {
+        "ja": "横広で顎の平たい顔、点状の目と笑口、黒い短髪。強弱のある輪郭、首・服・手の斜線、ズボンと靴の密な線影で作る単独全身像。紙地は灰色がかり、丸めた手の指の分離は不明瞭です。",
+        "en": "One full figure with a wide flat-chinned face, dot-like eyes, smile and short black hair. Variable-width contours, neck and sleeve hatching and dense trouser and shoe shadows. A grayish paper-like ground and indistinct separation of curled fingers remain."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "chibi"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Two simple dot eyes, a tiny curved mouth and a very large circular head; a fully clothed adult mascot rendered in two-and-a-half-head-tall cartoon proportions. Crisp tapered dip-pen contours with strong thick-to-thin variation, a compact solid-black hair mass with a few white cuts, small firm black clothing shadows and a mostly white face."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "f72e8c2d623c98d0846e3b626937eaf1fbb90c589ca556e0766a8c40e350eb30.png",
+        "sha256": "f72e8c2d623c98d0846e3b626937eaf1fbb90c589ca556e0766a8c40e350eb30",
+        "width": 576,
+        "height": 1024,
+        "thumb": "dbe9536cb93f3f9cd07d8fa90012b49b76863268f0b3f637b9fc5e805d7560fa.jpg",
+        "thumb_sha256": "dbe9536cb93f3f9cd07d8fa90012b49b76863268f0b3f637b9fc5e805d7560fa",
+        "prompt": {
+          "en": "monochrome manga, tapered dip-pen lineart, black hair, original character, solo, full body. A single adult man aged 32, drawn once, standing with both feet visible and arms relaxed. Fully clothed in a plain long-sleeved shirt and full-length trousers, an ordinary nonsexual pose. Two simple dot eyes, a tiny curved mouth and a very large circular head; a fully clothed adult mascot rendered in two-and-a-half-head-tall cartoon proportions. Crisp tapered dip-pen contours with strong thick-to-thin variation, a compact solid-black hair mass with a few white cuts, small firm black clothing shadows and a mostly white face. Plain unmarked white background, one uninterrupted unlettered drawing with wide empty margins."
+        },
+        "native_job_id": "6af5da9e000002560000004e0000004e",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5da9e000002560000004e0000004e",
+          "api_seconds": 18.613
+        },
+        "max_rgb_channel_delta": 13
+      },
+      "references": [
+        {
+          "title": "運命の巻戻士・公式無料公開第1話",
+          "url": "https://www.corocoro.jp/chapter/3270296674366181081/viewer"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の原PNGです。単体の絵柄見本で、物語の完成ページではありません。指定からの残差と末端の不確かさがあり、未指定seedやネガティブは推測していません。紙地風の色味を含む場合も未加工で保持し、別人物・別場面での再現性は未検証です。",
+        "en": "An actual unmodified generated PNG, a standalone drawing-style example rather than a finished story page. Prompt residuals and uncertain extremities remain; unspecified seed/negative values are not inferred. Paper-like tints are preserved and cross-subject/cross-scene repeatability is untested."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T16:02:31Z"
+    },
+    {
+      "id": "anima-yonkoma-dots-even",
+      "category": "yonkoma",
+      "title": {
+        "ja": "点目と小口の軽い均一線",
+        "en": "Dot eyes and small mouth in light even lines"
+      },
+      "summary": {
+        "ja": "丸く大きい顔に点状の目、鼻の省略、小さい横口。細く直線的な体を均一寄りの線と少量の淡い陰影で描く単独像。指定した短い頭身との一致は未測定。手指は輪郭中心の省略で、本数や関節は未確認です。",
+        "en": "One figure with a large round face, dot-like eyes, omitted nose and small horizontal mouth. Thin straight-bodied construction, fairly even lines and sparse pale shadows. Agreement with the requested short proportions is unmeasured; simplified fingers do not establish counts or joint precision."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [],
+        "finish": [
+          "lineonly"
+        ]
+      },
+      "prompt": {
+        "en": "Two pin-dot eyes, no drawn nose and one small curved mouth inside an almost perfect circular face; an adult in simple two-head-tall icon proportions. Very thin even continuous ink outlines, delicate internal detail, white-paper hair separated by sparse fine strands, a few pale flat halftone patches and broad clean white space."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "2319aed350efb74ac2975e91d4b057c01142a0022993a9d8a1a5e4b70bf9a8df.png",
+        "sha256": "2319aed350efb74ac2975e91d4b057c01142a0022993a9d8a1a5e4b70bf9a8df",
+        "width": 576,
+        "height": 1024,
+        "thumb": "d14758f7a27c72c7e9c48221cef6afa54cd1d762e3bc5c0380ea7c950c9b78be.jpg",
+        "thumb_sha256": "d14758f7a27c72c7e9c48221cef6afa54cd1d762e3bc5c0380ea7c950c9b78be",
+        "prompt": {
+          "en": "monochrome manga, fine clean lineart, original character, solo, full body. A single adult man aged 32, drawn once, standing with both feet visible and arms relaxed. Fully clothed in a plain long-sleeved shirt and full-length trousers, an ordinary nonsexual pose. Two pin-dot eyes, no drawn nose and one small curved mouth inside an almost perfect circular face; an adult in simple two-head-tall icon proportions. Very thin even continuous ink outlines, delicate internal detail, white-paper hair separated by sparse fine strands, a few pale flat halftone patches and broad clean white space. Plain unmarked white background, one uninterrupted unlettered drawing with wide empty margins."
+        },
+        "native_job_id": "6af5da7b000002560000004c0000004c",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5da7b000002560000004c0000004c",
+          "api_seconds": 17.535
+        },
+        "max_rgb_channel_delta": 13
+      },
+      "references": [
+        {
+          "title": "悪役令嬢の四畳半・公式公開0588",
+          "url": "https://sai-zen-sen.jp/comics/twi4/yojouhan/0588.html"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の原PNGです。単体の絵柄見本で、物語の完成ページではありません。指定からの残差と末端の不確かさがあり、未指定seedやネガティブは推測していません。紙地風の色味を含む場合も未加工で保持し、別人物・別場面での再現性は未検証です。",
+        "en": "An actual unmodified generated PNG, a standalone drawing-style example rather than a finished story page. Prompt residuals and uncertain extremities remain; unspecified seed/negative values are not inferred. Paper-like tints are preserved and cross-subject/cross-scene repeatability is untested."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T16:02:32Z"
+    },
+    {
+      "id": "anima-yonkoma-dots-taper",
+      "category": "yonkoma",
+      "title": {
+        "ja": "縦長の黒目と強い斜線の喜劇顔",
+        "en": "Vertical dark eyes and emphatic comic hatching"
+      },
+      "summary": {
+        "ja": "太い眉と縦長の黒目、鼻の省略、丸い開口、厚みのある体。強弱線と黒面、密な斜線で立体化した単独全身像。指定の点目とは異なり、左右端に縦線が残ります。両手は指と影が重なり、末端の細部は未確定です。",
+        "en": "One full figure with strong brows, vertical dark eyes, omitted nose, round open mouth and a substantial body. Variable lines, black areas and dense hatching create volume. Eyes differ from requested dots, vertical edge lines remain, and overlapping finger shadows leave hand detail unresolved."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Two pin-dot eyes, no drawn nose and one small curved mouth inside an almost perfect circular face; an adult in simple two-head-tall icon proportions. Crisp tapered dip-pen contours with strong thick-to-thin variation, a compact solid-black hair mass with a few white cuts, small firm black clothing shadows and a mostly white face."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "449b0ec19b36df75e0df4fd9642fd2c813cc015d00b632ee21a4594c845ffd13.png",
+        "sha256": "449b0ec19b36df75e0df4fd9642fd2c813cc015d00b632ee21a4594c845ffd13",
+        "width": 576,
+        "height": 1024,
+        "thumb": "68402442bcfb16d3eb5deb0b8c79d45ca2bcfd1b0a0da4a512b0c1ac78cf6695.jpg",
+        "thumb_sha256": "68402442bcfb16d3eb5deb0b8c79d45ca2bcfd1b0a0da4a512b0c1ac78cf6695",
+        "prompt": {
+          "en": "monochrome manga, tapered dip-pen lineart, black hair, original character, solo, full body. A single adult man aged 32, drawn once, standing with both feet visible and arms relaxed. Fully clothed in a plain long-sleeved shirt and full-length trousers, an ordinary nonsexual pose. Two pin-dot eyes, no drawn nose and one small curved mouth inside an almost perfect circular face; an adult in simple two-head-tall icon proportions. Crisp tapered dip-pen contours with strong thick-to-thin variation, a compact solid-black hair mass with a few white cuts, small firm black clothing shadows and a mostly white face. Plain unmarked white background, one uninterrupted unlettered drawing with wide empty margins."
+        },
+        "native_job_id": "6af5dab0000002560000004f0000004f",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5dab0000002560000004f0000004f",
+          "api_seconds": 17.569
+        },
+        "max_rgb_channel_delta": 17
+      },
+      "references": [
+        {
+          "title": "悪役令嬢の四畳半・公式公開0588",
+          "url": "https://sai-zen-sen.jp/comics/twi4/yojouhan/0588.html"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の原PNGです。単体の絵柄見本で、物語の完成ページではありません。指定からの残差と末端の不確かさがあり、未指定seedやネガティブは推測していません。紙地風の色味を含む場合も未加工で保持し、別人物・別場面での再現性は未検証です。",
+        "en": "An actual unmodified generated PNG, a standalone drawing-style example rather than a finished story page. Prompt residuals and uncertain extremities remain; unspecified seed/negative values are not inferred. Paper-like tints are preserved and cross-subject/cross-scene repeatability is untested."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T16:02:32Z"
+    },
+    {
+      "id": "anima-essay-pentagon-even",
+      "category": "essay",
+      "title": {
+        "ja": "小さい点目と滑らかな細線の日常画",
+        "en": "Small dot eyes and smooth fine everyday lines"
+      },
+      "summary": {
+        "ja": "面長寄りの顔、点状の目と太眉、短い横口、細身で自然寄りの体。滑らかな均一輪郭と髪・ズボン・靴の細かな網状陰影、白い上衣でまとめた単独全身像。手指は簡略化され、全指の分離や本数は未確認です。",
+        "en": "One slender full figure with a fairly long face, dot-like eyes, strong brows and short horizontal mouth. Smooth even contours, fine mesh shadows in hair, trousers and shoes, and a mostly white top. Simplified hands do not establish every finger's separation or count."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Small widely separated dot eyes, no detailed nose and a little curved mouth inside a softly pentagonal head; an adult in loose five-head-tall proportions. Very thin even continuous ink outlines, delicate internal detail, white-paper hair separated by sparse fine strands, a few pale flat halftone patches and broad clean white space."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "3a6085cd4715c61453909128405cc076606dfd455b9d49734d7e182f6d5579d8.png",
+        "sha256": "3a6085cd4715c61453909128405cc076606dfd455b9d49734d7e182f6d5579d8",
+        "width": 576,
+        "height": 1024,
+        "thumb": "c39a3bc30e4cebd97c6d85587b9765bbfd9c74c3e366232aab3beb63e9ace0c7.jpg",
+        "thumb_sha256": "c39a3bc30e4cebd97c6d85587b9765bbfd9c74c3e366232aab3beb63e9ace0c7",
+        "prompt": {
+          "en": "monochrome manga, fine clean lineart, original character, solo, full body. A single adult man aged 32, drawn once, standing with both feet visible and arms relaxed. Fully clothed in a plain long-sleeved shirt and full-length trousers, an ordinary nonsexual pose. Small widely separated dot eyes, no detailed nose and a little curved mouth inside a softly pentagonal head; an adult in loose five-head-tall proportions. Very thin even continuous ink outlines, delicate internal detail, white-paper hair separated by sparse fine strands, a few pale flat halftone patches and broad clean white space. Plain unmarked white background, one uninterrupted unlettered drawing with wide empty margins."
+        },
+        "native_job_id": "6af5da8c000002560000004d0000004d",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5da8c000002560000004d0000004d",
+          "api_seconds": 17.471
+        },
+        "max_rgb_channel_delta": 22
+      },
+      "references": [
+        {
+          "title": "まめきちまめこ・公式公開 秋服とかいう だるい奴",
+          "url": "https://mamekichimameko.blog.jp/archives/91838614.html"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の原PNGです。単体の絵柄見本で、物語の完成ページではありません。指定からの残差と末端の不確かさがあり、未指定seedやネガティブは推測していません。紙地風の色味を含む場合も未加工で保持し、別人物・別場面での再現性は未検証です。",
+        "en": "An actual unmodified generated PNG, a standalone drawing-style example rather than a finished story page. Prompt residuals and uncertain extremities remain; unspecified seed/negative values are not inferred. Paper-like tints are preserved and cross-subject/cross-scene repeatability is untested."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T16:02:32Z"
+    },
+    {
+      "id": "anima-essay-pentagon-taper",
+      "category": "essay",
+      "title": {
+        "ja": "点目の角顔と粗い方向線の生活画",
+        "en": "Angular dot-eye face and coarse directional hatching"
+      },
+      "summary": {
+        "ja": "広い顔と胴体、点状の目と太眉、傾く小さい口、白抜きを残した黒髪。揺らぐ手描き輪郭、黒面と長い斜線・縦線で濃淡を作る単独全身像。紙面や照明むらに見える灰色の地が残ります。手指は省略・重なりがあり詳細未確認です。",
+        "en": "One full figure with a broad face and torso, dot-like eyes, strong brows, a small slanted mouth and black hair with white cuts. Uneven hand-drawn contours, black shapes and long directional hatch lines. A gray paper- or uneven-light-like ground remains; simplified overlapping fingers remain unresolved."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "rough"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Small widely separated dot eyes, no detailed nose and a little curved mouth inside a softly pentagonal head; an adult in loose five-head-tall proportions. Crisp tapered dip-pen contours with strong thick-to-thin variation, a compact solid-black hair mass with a few white cuts, small firm black clothing shadows and a mostly white face."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "9ad89327a003f389c43515c53738fdd848b4bf3a11469033e969072b33a84009.png",
+        "sha256": "9ad89327a003f389c43515c53738fdd848b4bf3a11469033e969072b33a84009",
+        "width": 576,
+        "height": 1024,
+        "thumb": "42bbdc3f91fdabafef5458bfae35f294e0b8aa6050b7c773582756dc5d65e42b.jpg",
+        "thumb_sha256": "42bbdc3f91fdabafef5458bfae35f294e0b8aa6050b7c773582756dc5d65e42b",
+        "prompt": {
+          "en": "monochrome manga, tapered dip-pen lineart, black hair, original character, solo, full body. A single adult man aged 32, drawn once, standing with both feet visible and arms relaxed. Fully clothed in a plain long-sleeved shirt and full-length trousers, an ordinary nonsexual pose. Small widely separated dot eyes, no detailed nose and a little curved mouth inside a softly pentagonal head; an adult in loose five-head-tall proportions. Crisp tapered dip-pen contours with strong thick-to-thin variation, a compact solid-black hair mass with a few white cuts, small firm black clothing shadows and a mostly white face. Plain unmarked white background, one uninterrupted unlettered drawing with wide empty margins."
+        },
+        "native_job_id": "6af5dac2000002560000005000000050",
+        "requested_settings": {
+          "aspect_ratio": "portrait",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "576x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5dac2000002560000005000000050",
+          "api_seconds": 18.664
+        },
+        "max_rgb_channel_delta": 16
+      },
+      "references": [
+        {
+          "title": "まめきちまめこ・公式公開 秋服とかいう だるい奴",
+          "url": "https://mamekichimameko.blog.jp/archives/91838614.html"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の原PNGです。単体の絵柄見本で、物語の完成ページではありません。指定からの残差と末端の不確かさがあり、未指定seedやネガティブは推測していません。紙地風の色味を含む場合も未加工で保持し、別人物・別場面での再現性は未検証です。",
+        "en": "An actual unmodified generated PNG, a standalone drawing-style example rather than a finished story page. Prompt residuals and uncertain extremities remain; unspecified seed/negative values are not inferred. Paper-like tints are preserved and cross-subject/cross-scene repeatability is untested."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T16:02:32Z"
     }
   ]
 }
