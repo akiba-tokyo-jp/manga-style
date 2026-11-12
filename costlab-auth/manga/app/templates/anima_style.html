@@ -11,10 +11,19 @@
 <div class="node has-sample">
 <section class="sample">
 <h2>{{ ui.sample_heading }}</h2>
-<img class="sample-image" src="{{ image_url }}" width="{{ sample.width }}" height="{{ sample.height }}" alt="{{ title }}">
+<div class="sample-pair">
+{% for view in sample_views %}{% set current = view.sample %}
+<article class="anima-example" data-sample-role="{{ current.role|default('example') }}">
+<h3>{% if current.get('role') == 'mixed-gender' %}{{ '男女が登場する場面' if lang == 'ja' else 'Man and woman in one scene' }}{% elif current.get('role') == 'showcase' %}{{ '絵柄の魅力を見せる構図' if lang == 'ja' else 'Style showcase' }}{% else %}{{ ui.sample_heading }}{% endif %}</h3>
+<img class="sample-image" src="{{ view.url }}" width="{{ current.width }}" height="{{ current.height }}" alt="{{ title }} — {{ loop.index }}">
+{% if view.observation %}<p class="quiet-note sample-observation">{{ view.observation }}</p>{% endif %}
 <details class="sample-prompt"><summary>{{ ui.sample_prompt_heading }} — English</summary>
-<p id="sample-prompt-0" lang="en">{{ full_prompt }}</p>
-<button class="button" type="button" data-copy-target="sample-prompt-0" data-copy-prefix="{{ copy_prefix }}" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ newui.sample_copy }}</button><span class="copy-status" aria-live="polite"></span></details>
+<p id="sample-prompt-{{ loop.index0 }}" lang="en">{{ current.prompt.en }}</p>
+<button class="button" type="button" data-copy-target="sample-prompt-{{ loop.index0 }}" data-copy-prefix="{{ copy_prefix }}" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ newui.sample_copy }}</button><span class="copy-status" aria-live="polite"></span></details>
+<dl><dt>{{ '実生成モデル・設定' if lang == 'ja' else 'Actual model and settings' }}</dt><dd>{{ current.reported_settings.model }} · {{ current.reported_settings.steps }} steps · {{ current.reported_settings.sampler }} · requested CFG {{ current.requested_settings.cfg_scale }}</dd><dt>Native job</dt><dd><code>{{ current.native_job_id }}</code></dd></dl>
+</article>
+{% endfor %}
+</div>
 </section>
 <section class="prompt">
 <h2 id="prompt-heading">{{ ui.prompt_heading }} — English</h2>

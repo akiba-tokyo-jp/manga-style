@@ -33,6 +33,50 @@ class AnimaCatalogTests(unittest.TestCase):
         path=root/'catalog.json';path.write_text(json.dumps(registry),encoding='utf-8')
         return path,registry,raw
 
+    def paired_fixture(self,root):
+        import copy
+        path,registry,raw=self.fixture(root)
+        entry=registry['entries'][0];first=entry.pop('sample')
+        first['role']='mixed-gender';first['prompt']={'en':'One adult man and one adult woman with bold ink contours.'}
+        first['visual_review']={'status':'self-reviewed','sha256':first['sha256'],'observation':{'ja':'男女の場面','en':'A man and a woman in one scene'}}
+        second=copy.deepcopy(first);a=io.BytesIO();Image.new('RGB',(64,64),'gray').save(a,'PNG');other=a.getvalue()
+        b=io.BytesIO();Image.new('RGB',(384,512),'gray').save(b,'JPEG');thumb=b.getvalue()
+        second.update(role='showcase',file=hashlib.sha256(other).hexdigest()+'.png',sha256=hashlib.sha256(other).hexdigest(),thumb=hashlib.sha256(thumb).hexdigest()+'.jpg',thumb_sha256=hashlib.sha256(thumb).hexdigest(),native_job_id='2'*32,prompt={'en':'An adult leaning into an expressive pose, bold ink contours.'})
+        second['reported_settings']['native_job_id']='2'*32
+        second['visual_review']={'status':'self-reviewed','sha256':second['sha256'],'observation':{'ja':'魅力を見せる構図','en':'An expressive showcase composition'}}
+        archive=root/'test-anima.zip'
+        with zipfile.ZipFile(archive,'a') as z:z.writestr(entry['id']+'/'+second['file'],other);z.writestr(entry['id']+'/'+second['thumb'],thumb)
+        registry['schema']=2;registry['bundles'][0]['sha256']=hashlib.sha256(archive.read_bytes()).hexdigest();entry['samples']=[first,second]
+        path.write_text(json.dumps(registry),encoding='utf-8')
+        return path,registry,other
+
+    def test_reads_two_independent_required_samples_with_exact_per_image_provenance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path,registry,other=self.paired_fixture(Path(tmp))
+            try:rows=self.module().load_catalog(path,Path(tmp))
+            except ValueError as exc:self.fail('Required two-sample manifest is not supported: '+str(exc))
+            self.assertEqual([s['role'] for s in rows[0]['samples']],['mixed-gender','showcase'])
+            self.assertEqual(rows[0]['samples'][1]['image_bytes'],other)
+            self.assertNotEqual(rows[0]['samples'][0]['native_job_id'],rows[0]['samples'][1]['native_job_id'])
+
+    def test_two_sample_contract_rejects_duplicate_roles_jobs_unreviewed_and_unrelated_prompts(self):
+        import copy
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);path,original,_=self.paired_fixture(root)
+            changes=[
+                lambda e:e['samples'][1].__setitem__('role','mixed-gender'),
+                lambda e:e['samples'][0].__setitem__('role','showcase'),
+                lambda e:(e['samples'][1].__setitem__('native_job_id','1'*32),e['samples'][1]['reported_settings'].__setitem__('native_job_id','1'*32)),
+                lambda e:e['samples'][1].pop('visual_review'),
+                lambda e:e['samples'][1]['visual_review'].__setitem__('sha256','0'*64),
+                lambda e:e['samples'][1]['visual_review']['observation'].__setitem__('en',''),
+                lambda e:e['samples'][1].__setitem__('prompt',{'en':'An unrelated drawing without the selected style recipe.'}),
+            ]
+            for i,change in enumerate(changes):
+                with self.subTest(case=i):
+                    registry=copy.deepcopy(original);change(registry['entries'][0]);path.write_text(json.dumps(registry),encoding='utf-8')
+                    with self.assertRaises(ValueError):self.module().load_catalog(path,root)
+
     def test_reads_verified_model_assets_and_exact_english_only_prompts(self):
         module=self.module()
         with tempfile.TemporaryDirectory() as tmp:
@@ -42,6 +86,33 @@ class AnimaCatalogTests(unittest.TestCase):
             self.assertEqual(rows[0]['prompt'],{'en':'bold ink contours'})
             self.assertEqual(rows[0]['image_bytes'],raw)
             self.assertNotIn('ja',rows[0]['sample']['prompt'])
+
+    def test_export_preserves_both_roles_prompts_settings_images_and_detail_controls(self):
+        sys.path.insert(0,str(ROOT/'costlab-auth/manga'))
+        from app.store import Store
+        spec=importlib.util.spec_from_file_location('export_cloudflare',ROOT/'tools/manga_catalog/export_cloudflare.py')
+        exporter=importlib.util.module_from_spec(spec);spec.loader.exec_module(exporter)
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);path,registry,other=self.paired_fixture(root)
+            store=Store(root/'store',seed_dir=root/'none',compare_dir=root/'none');keep=store.chain('shonen-battle-chibi-comic')
+            for nid in store.order:store.state['nodes'][nid]['published']=nid in keep
+            output=root/'assets';exporter.export_store(store,output,anima_catalog=path,archive_dir=root)
+            pages=json.loads((output/'_data/pages/anima-example.json').read_text())
+            for lang in ('ja','en'):
+                api=json.loads((output/'_data/styles/anima-turbo/anima-example.json').read_text())[lang]
+                self.assertEqual(len(api['samples']),2,'Both independently generated originals must reach the API')
+                self.assertEqual([s['subject'] for s in api['samples']],['mixed-gender','showcase'])
+                html=pages[lang]['anima-turbo']['en']
+                self.assertEqual(html.count('class="sample-image"'),2)
+                for i,sample in enumerate(registry['entries'][0]['samples']):
+                    self.assertEqual(api['samples'][i]['prompt'],sample['prompt'])
+                    self.assertEqual(api['samples'][i]['native_job_id'],sample['native_job_id'])
+                    self.assertEqual(api['samples'][i]['reported_settings'],sample['reported_settings'])
+                    self.assertIn('sample-prompt-'+str(i),html)
+                    self.assertIn(sample['prompt']['en'],html)
+                    self.assertIn(sample['visual_review']['observation'][lang],html)
+                    body=(output/'files/anima-turbo/anima-example'/sample['file']).read_bytes()
+                    self.assertEqual(hashlib.sha256(body).hexdigest(),sample['sha256'])
 
     def test_export_connects_gallery_detail_api_images_and_model_count(self):
         import inspect
