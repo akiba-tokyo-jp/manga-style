@@ -30,6 +30,20 @@
 
 182 Release・121画像ZIP・旧形式6アーカイブをこのprivate repoへ移管し、内容とSHAを再照合しました。[検証記録](migration/ASSET-TRANSFER.md)と[Cloudflare静的化の受入条件](docs/cloudflare-static-migration.md)を参照してください。本番の配備先・管理volumeは未変更です。
 
+## Cloudflareへの配備
+
+Workers + Static Assets向けのビルドと互換Workerを追加しました。詳細は[配備手順](docs/cloudflare-deploy.md)を参照してください。本番コンテナ・DNSはまだ切り替えません。
+
+```sh
+npm ci
+npm run build
+npm run dev
+# 配備せずにWrangler設定を確認:
+npm run check:deploy
+```
+
+Cloudflareではprivate repoの`main`、repo root、Build `npm ci && npm run build`、Deploy `npx wrangler deploy`を指定します。private Release読取用の`GH_TOKEN`がビルドsecretとして必要です。seedからのpreviewと、本番snapshotの引継ぎは別の工程です。
+
 ## 次の段階
 
 このrepoでソースと配布物を検証 → 個別リリース経路を用意 → infra側の参照を切替 → 本番readback → 旧writer/ソースを整理、の順です。マンガのCloudflare本番切替も別段階です。
