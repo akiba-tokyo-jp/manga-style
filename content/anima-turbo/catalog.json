@@ -11,6 +11,11 @@
       "tag": "anima-contemporary-002",
       "asset": "anima-contemporary-002.zip",
       "sha256": "78f78ae570a49d3e9f933eef6c5da218f8cfc51bea5ba440c362635f781ec252"
+    },
+    {
+      "tag": "anima-contemporary-003",
+      "asset": "anima-contemporary-003.zip",
+      "sha256": "b6f44f2d10ce8db3872914eaa79c3d0d02c718ceeb1f16589b64bb42805c670c"
     }
   ],
   "entries": [
@@ -786,6 +791,156 @@
       },
       "version": 1,
       "updated_at": "2026-11-12T13:20:17Z"
+    },
+    {
+      "id": "anima-broad-jaw-stubble",
+      "category": "seinen",
+      "title": {
+        "ja": "四角い顎とひげの骨太な顔",
+        "en": "Broad jaw and stubbled mature face"
+      },
+      "summary": {
+        "ja": "単一人物の胸上像。幅広い四角寄りの顎、無精ひげ、太い眉とやや細い目、額目尻のしわ、太い首と広い肩。太い輪郭と細線、顎下や襟裏の黒影。背景は純白ではなく生成り灰色の紙状質感と薄い筋・輪状模様がある。文字・署名風印・フキダシなし。",
+        "en": "One chest-up figure with a broad near-square jaw, beard stubble, thick brows, somewhat narrow eyes, forehead and eye-corner creases, a thick neck and broad shoulders. Strong contours contrast with fine hatching and dark jaw/collar shadows. The background retains cream-gray paper texture, faint lines and ring-like marks rather than pure white. No writing, signature-like marks or balloons observed."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "realistic"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Black-and-white action-comic drawing with a broad square jaw, thick straight eyebrows, small half-open eyes, a visible nose bridge and short crosshatched beard stubble. A thick neck and broad adult shoulders, strong variable-width contours, short bristly black hair and solid-black clothing shadows. White facial planes with a few fine hatch marks rather than glossy shading."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "3b59864d3ffa3cf5dcc9d107ca82b4041b404590ec31f4d4ab02b5037b590df5.png",
+        "sha256": "3b59864d3ffa3cf5dcc9d107ca82b4041b404590ec31f4d4ab02b5037b590df5",
+        "width": 1024,
+        "height": 1024,
+        "thumb": "9f44f38df2c91e705b9cf88d837fc9bf1aaacfdfdedc0034420d7d4ebbfded7e.jpg",
+        "thumb_sha256": "9f44f38df2c91e705b9cf88d837fc9bf1aaacfdfdedc0034420d7d4ebbfded7e",
+        "prompt": {
+          "en": "An unsigned, unlettered black-ink character illustration on completely blank white paper. Exactly ONE original middle-aged man, a single head-and-shoulders view, alone, with clear empty margins on every side. He has a broad square jaw, thick straight eyebrows, small half-open eyes, a substantial nose and short crosshatched beard stubble. A thick neck and wide shoulders in a plain work jacket. Short bristly black hair, forceful variable-width contours, fine cheek hatch marks, white facial planes and solid-black clothing shadows. A weary small smile. The surrounding paper is entirely empty, with no symbols, bubbles, circles, words, writing, signature or decorative marks. No duplicate figures or insets."
+        },
+        "native_job_id": "6af5c744000002560000001900000019",
+        "requested_settings": {
+          "aspect_ratio": "square",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "1024x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5c744000002560000001900000019",
+          "api_seconds": 30.528
+        },
+        "max_rgb_channel_delta": 22
+      },
+      "references": [
+        {
+          "title": "怪獣８号",
+          "url": "https://shonenjumpplus.com/episode/13933686331674116123"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not established. The unmodified monochrome-requested image may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T14:00:21Z"
+    },
+    {
+      "id": "anima-white-hair-fine-lines",
+      "category": "shonen",
+      "title": {
+        "ja": "白い髪と細い毛束線",
+        "en": "White hair with fine strand lines"
+      },
+      "summary": {
+        "ja": "単一人物の胸像。白地を残した中央分けの髪と細い毛束線、太めの髪外周、細い丸顎、閉じた横線の口、長めの首。眉は太く濃く、短いひげ状線と斑点状の首影が残り、指定の若い細眉・ひげなしとは異なる。額や服はハッチング・網目トーン、紙地は淡い生成り。文字・署名風印・フキダシ・明確な補助線なし。",
+        "en": "One bust with white-paper center-parted hair and fine internal strand lines, heavier hair edges, a narrow rounded chin, a closed line mouth and a long neck. Thick dark brows, short stubble-like marks and a mottled neck shadow differ from the requested youthful clean-shaven thin-browed face. Hatching and mesh-like tone remain on the face and clothing, with pale cream paper texture. No writing, signature-like marks, balloons or clear construction guides observed."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "A restrained black-and-white youth-comic drawing with a small tapered chin, long narrow eyes, thin eyebrows, a small closed mouth, a long slender neck and slim adult shoulders. Light hair stays mostly white paper, divided into broad curved locks by fine sparse lines; long bangs cross the forehead. Thin facial lines, firmer outer clothing lines, pale flat screentone and a few short hatch marks under the chin, no glossy black hair mass."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "sample": {
+        "file": "7959ca0d159bbf50a685343d66ea53904f9d75a8f45e35e5767f275ebfffc8b9.png",
+        "sha256": "7959ca0d159bbf50a685343d66ea53904f9d75a8f45e35e5767f275ebfffc8b9",
+        "width": 1024,
+        "height": 1024,
+        "thumb": "04b9f194895614952d3f98d0ea8c88c8eadb379b0f2832558c1eeebe59b74291.jpg",
+        "thumb_sha256": "04b9f194895614952d3f98d0ea8c88c8eadb379b0f2832558c1eeebe59b74291",
+        "prompt": {
+          "en": "An unsigned monochrome ink character illustration with a pure blank white background and wide empty margins. Exactly one original adult man aged 25, one head-and-shoulders view only, clean-shaven. A small tapered chin, long narrow eyes, thin eyebrows, a small closed mouth, a slender neck and slim shoulders. His light medium-length hair is mostly white paper, separated into broad curved locks by very fine sparse lines, with long bangs crossing his forehead. A simple plain warm-up shirt. Delicate facial lines, slightly firmer clothing outlines, pale flat halftone on the shirt and just a few hatch marks beneath the chin. The paper outside the figure remains completely empty. No signature, symbols, writing, speech balloons, duplicated people or inset views."
+        },
+        "native_job_id": "6af5c7ea000002560000001b0000001b",
+        "requested_settings": {
+          "aspect_ratio": "square",
+          "model": "anima-turbo-v1.1",
+          "steps": 8,
+          "cfg_scale": 1.0,
+          "sampler": "euler",
+          "seed": null,
+          "negative_prompt": null,
+          "references_used": []
+        },
+        "reported_settings": {
+          "model": "anima-turbo-v1.1",
+          "provider": "ps5-anima",
+          "size": "1024x1024",
+          "steps": 8,
+          "sampler": "euler",
+          "mode": "text2img",
+          "native_job_id": "6af5c7ea000002560000001b0000001b",
+          "api_seconds": 29.551
+        },
+        "max_rgb_channel_delta": 26
+      },
+      "references": [
+        {
+          "title": "忘却バッテリー",
+          "url": "https://shonenjumpplus.com/episode/10834108156630506434"
+        }
+      ],
+      "limitations": {
+        "ja": "実生成の見本です。別人物・別場面での再現性は未検証。白黒指定の原画像に微かな色味が残る場合があります。",
+        "en": "Actual generated example. Repeatability across subjects and scenes is not established. The unmodified monochrome-requested image may retain a slight tint."
+      },
+      "version": 1,
+      "updated_at": "2026-11-12T14:00:21Z"
     }
   ]
 }
