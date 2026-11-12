@@ -1,0 +1,19 @@
+{
+  "name": "manga-style-cloudflare",
+  "private": true,
+  "version": "1.0.0",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "build": "node cloudflare/build.mjs",
+    "test": "node --test cloudflare/tests/*.test.mjs",
+    "test:python": "uv run --no-project --python 3.12 --with-requirements costlab-auth/manga/requirements.txt --with httpx python -m unittest discover -s cloudflare/tests -v",
+    "test:browser": "playwright test --config cloudflare/playwright.config.mjs",
+    "dev": "wrangler dev --ip 127.0.0.1 --port 8787 --inspector-port 9237",
+    "check:deploy": "wrangler deploy --dry-run --outdir dist/worker",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.160.1",
+    "@playwright/test": "1.65.0"
+  }
+}

@@ -24,3 +24,12 @@ costlab-auth/manga/app/seed/additions/
 costlab-auth/manga/app/seed/pairs/
 costlab-auth/manga/compare/files/
 costlab-auth/manga/compare/files.new/
+
+# Disposable Cloudflare build inputs, public output and local credentials.
+node_modules/
+dist/
+.build/
+.wrangler/
+.dev.vars*
+playwright-report/
+test-results/
