@@ -1,6 +1,6 @@
 # manga-style — マンガ絵柄カタログ
 
-**private repository / source extraction stage**
+**public repository / Cloudflare Workers + Static Assets**
 
 `akiba-tokyo-jp/akiba-infra` の `ec37450c4ded797a0e1da85711d3d3acdcfb210d` からサービス関連ファイルを抽出しました。
 初回は相対import・既存テストを保つため従来のディレクトリ構造を保持します。Git履歴の書換えではなく、元SHAと全ファイルのblob/SHA-256を `migration/source-manifest.json` に記録したsnapshotです。
@@ -28,7 +28,7 @@
 
 ## 配布資産の移管
 
-182 Release・121画像ZIP・旧形式6アーカイブをこのprivate repoへ移管し、内容とSHAを再照合しました。[検証記録](migration/ASSET-TRANSFER.md)と[Cloudflare静的化の受入条件](docs/cloudflare-static-migration.md)を参照してください。本番の配備先・管理volumeは未変更です。
+182 Releaseの配布資産をこのrepoへ移管し、内容とSHAを再照合しました。127アーカイブ（旧形式6件を含む）を公開Releaseからトークンなしで取得できます。[移管時の検証記録](migration/ASSET-TRANSFER.md)と[Cloudflare静的化の受入条件](docs/cloudflare-static-migration.md)を参照してください。本番の配備先・管理volumeは未変更です。
 
 ## Cloudflareへの配備
 
@@ -42,7 +42,7 @@ npm run dev
 npm run check:deploy
 ```
 
-Cloudflareではprivate repoの`main`、repo root、Build `npm ci && npm run build`、Deploy `npx wrangler deploy`を指定します。private Release読取用の`GH_TOKEN`がビルドsecretとして必要です。seedからのpreviewと、本番snapshotの引継ぎは別の工程です。
+Cloudflareではこのpublic repoの`main`、repo root、Build `npm ci && npm run build`、Deploy `npx wrangler deploy`を指定します。公開画像の取得に`GH_TOKEN`などのビルドsecretは不要です。seedからのpreviewと、本番snapshotの引継ぎは別の工程です。
 
 ## 次の段階
 
