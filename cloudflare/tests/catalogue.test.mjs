@@ -20,3 +20,15 @@ test('static gallery preserves category, topic, AND-search, facets and paginatio
   assert.throws(() => selectPage(index, new URLSearchParams('line=bad'), 'ja'));
   assert.throws(() => selectPage(index, new URLSearchParams('page=1e3'), 'ja'));
 });
+
+test('model-scoped gallery never mixes Anima and GPT records', async () => {
+  const { selectPage } = await import(entry);
+  const record = (id, level, chain, model) => ({ id, level, chain, model, features: { expression: ['mono'] }, labels: { ja: { hay: id }, en: { hay: id } } });
+  const index = { casefold: {}, page_size: 48, facets: { expression: [['mono']] }, records: [
+    record('shonen', 1, ['shonen']), record('gpt-style', 3, ['shonen', 'gpt-style']),
+    record('anima-example', 3, ['shonen', 'anima-example'], 'anima-turbo'),
+  ] };
+  assert.deepEqual(selectPage(index, new URLSearchParams('model=anima-turbo'), 'ja').ids, ['anima-example']);
+  assert.deepEqual(selectPage(index, new URLSearchParams('model=anima-turbo&root=shonen&expression=mono'), 'en').ids, ['anima-example']);
+  assert.deepEqual(selectPage(index, new URLSearchParams(), 'ja').ids, ['shonen', 'gpt-style']);
+});

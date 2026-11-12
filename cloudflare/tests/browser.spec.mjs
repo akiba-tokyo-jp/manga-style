@@ -85,6 +85,48 @@ test('Anima gallery keeps category and search filters through language and model
   await expect(page.locator('.gallery-card, .sample-image, #prompt-text')).toHaveCount(0);
 });
 
+test('Anima gallery, exact English prompts, images and clipboard are live model-specific content', async ({ page, context, request }) => {
+  const models = await (await request.get('/v1/models')).json();
+  const count = models.models.find(model => model.id === 'anima-turbo').style_count;
+  expect(count).toBeGreaterThan(0);
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto('/search?lang=ja&model=anima-turbo');
+  await expect(page.locator('body')).toHaveAttribute('data-gallery-ready', 'true');
+  await expect(page.locator('.gallery-card')).toHaveCount(count);
+  expect(await page.locator('.gallery-card').evaluateAll(cards => cards.every(card => card.dataset.styleId.startsWith('anima-')))).toBe(true);
+  for (const image of await page.locator('.gallery-card img').all()) {
+    await image.scrollIntoViewIfNeeded();
+    await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
+    expect(await image.evaluate(img => new URL(img.src).origin === location.origin)).toBe(true);
+  }
+  await page.screenshot({ path: `dist/verification/${test.info().project.name}-anima-gallery.png` });
+  const id = await page.locator('.gallery-card').first().getAttribute('data-style-id');
+  const api = await (await request.get('/v1/styles/' + id + '?model=anima-turbo&lang=ja')).json();
+  expect(api.prompt.ja).toBeUndefined();
+  expect(api.samples[0].prompt.ja).toBeUndefined();
+  await page.locator('.gallery-card').first().click();
+  await expect(page.locator('#prompt-text')).toHaveAttribute('lang', 'en');
+  await expect(page.locator('#prompt-text')).toHaveValue(api.prompt.en);
+  await expect(page.locator('#sample-prompt-0')).toHaveText(api.samples[0].prompt.en);
+  await expect.poll(() => page.locator('.sample-image').evaluate(image => image.complete && image.naturalWidth > 0)).toBe(true);
+  await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  await page.locator('.sample-prompt > summary').click();
+  await expect(page.locator('button[data-copy-target=sample-prompt-0]')).toBeVisible();
+  await page.locator('button[data-copy-target=sample-prompt-0]').click();
+  await expect.poll(() => page.evaluate(() => navigator.clipboard.readText())).toContain(api.samples[0].prompt.en);
+  await page.screenshot({ path: `dist/verification/${test.info().project.name}-anima-detail.png` });
+  await page.locator('.lang-switch').click();
+  await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+  await expect(page.locator('#prompt-text')).toHaveValue(api.prompt.en);
+  expect((await request.get('/v1/styles/' + id + '?model=gpt-image')).status()).toBe(404);
+  await page.goto('/');
+  await expect(page.locator('body')).toHaveAttribute('data-active-model', 'anima-turbo');
+  await expect(page.locator('body')).toHaveAttribute('data-gallery-ready', 'true');
+  await expect(page.locator('.gallery-card')).toHaveCount(count);
+  expect(errors).toEqual([]);
+});
+
 test('category routes, facet filters, pagination, Genko mode and denied routes', async ({ page, request }) => {
   await page.goto('/n/shonen?lang=ja&model=gpt-image');
   await expect(page.locator('body')).toHaveAttribute('data-gallery-ready', 'true');

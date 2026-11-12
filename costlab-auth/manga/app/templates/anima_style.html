@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<a class="text-link detail-back" href="{{ search_url }}">← {{ newui.back }}</a>
+<div class="node-head">
+<p class="eyebrow">Anima Turbo · {{ newui.detail }}</p>
+<h1>{{ title }}</h1><p class="node-summary">{{ summary }}</p>
+<p class="node-id">ID: <code>{{ entry.id }}</code></p>
+<p class="quiet-note">{{ limitation }}</p>
+</div>
+<div class="node has-sample">
+<section class="sample">
+<h2>{{ ui.sample_heading }}</h2>
+<img class="sample-image" src="{{ image_url }}" width="{{ sample.width }}" height="{{ sample.height }}" alt="{{ title }}">
+<details class="sample-prompt"><summary>{{ ui.sample_prompt_heading }} — English</summary>
+<p id="sample-prompt-0" lang="en">{{ full_prompt }}</p>
+<button class="button" type="button" data-copy-target="sample-prompt-0" data-copy-prefix="{{ copy_prefix }}" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ newui.sample_copy }}</button><span class="copy-status" aria-live="polite"></span></details>
+</section>
+<section class="prompt">
+<h2 id="prompt-heading">{{ ui.prompt_heading }} — English</h2>
+<p class="quiet-note">{{ '日本語は絵柄の説明です。生成に使った指示は英語です。' if lang == 'ja' else 'Descriptions are translated; the generation instructions are English.' }}</p>
+<textarea class="prompt-text" id="prompt-text" rows="12" readonly spellcheck="false" lang="en" aria-labelledby="prompt-heading">{{ style_text }}</textarea>
+<div class="copy-row"><button class="button" type="button" data-copy-target="prompt-text" data-copy-prefix="{{ copy_prefix }}" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ newui.style_copy }}</button><span class="copy-status" aria-live="polite"></span></div>
+<dl><dt>{{ '実生成モデル' if lang == 'ja' else 'Generation model' }}</dt><dd>{{ entry.model_version }}</dd><dt>{{ '生成設定' if lang == 'ja' else 'Generation settings' }}</dt><dd>{{ sample.reported_settings.steps }} steps · {{ sample.reported_settings.sampler }} · requested CFG {{ sample.requested_settings.cfg_scale }}</dd><dt>Seed / Negative prompt</dt><dd>{{ '未指定' if lang == 'ja' else 'Not supplied' }}</dd></dl>
+</section>
+<div class="actions"><div class="url-field"><label class="field-label" for="api-url">{{ ui.api_url_label }}</label><input class="url-input" id="api-url" value="{{ api_url }}" readonly><button class="button" type="button" data-copy-target="api-url" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ ui.copy_url }}</button><span class="copy-status" aria-live="polite"></span></div></div>
+</div>
+{% if entry.references %}<details class="related-styles"><summary>{{ '描法の参考資料（作品そのものの再現ではありません）' if lang == 'ja' else 'Drawing references (not an exact recreation)' }}</summary><ul>{% for source in entry.references %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }}</a></li>{% endfor %}</ul></details>{% endif %}
+{% endblock %}

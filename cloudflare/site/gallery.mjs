@@ -19,7 +19,9 @@ async function render() {
   const genko = current.searchParams.get('client') === 'genko' || Boolean(document.querySelector('input[name=client][value=genko]'));
   const model = document.body.dataset.activeModel;
   const rootFromPath = current.pathname.startsWith('/n/') ? current.pathname.slice(3) : '';
-  const selected = selectPage(index, current.searchParams, lang, rootFromPath);
+  const filterParams = new URLSearchParams(current.searchParams);
+  filterParams.set('model', model);
+  const selected = selectPage(index, filterParams, lang, rootFromPath);
   const byId = new Map(index.records.map(record => [record.id, record]));
   function link(path, extra = {}) {
     const params = new URLSearchParams({ lang, model, ...extra });
@@ -66,8 +68,8 @@ async function render() {
   }
   const clear = document.querySelector('.filter-clear');
   if (clear) clear.href = link('/search', { root: selected.root });
-  // Anima shares navigation only: never construct GPT cards, images or prompts here.
-  if (model !== 'gpt-image') { document.body.dataset.galleryReady = 'true'; return; }
+  // A preparing model has no records; populated models render only their own cards.
+  if (model !== 'gpt-image' && !index.records.some(record => record.model === model)) { document.body.dataset.galleryReady = 'true'; return; }
   const container = document.querySelector('.gallery-results');
   container.setAttribute('aria-label', format(text.results, { n: selected.total }));
   const bar = element('div', 'results-bar');
@@ -77,7 +79,7 @@ async function render() {
     const p = element('p'), a = element('a', 'text-link', text.topic_basic);
     a.href = link('/n/' + selected.topic); p.append(a); container.append(p);
   }
-  if (genko && selected.root) {
+  if (genko && selected.root && model === 'gpt-image') {
     const p = element('p'), a = element('a', 'text-link', ui.use_style + ' — ' + byId.get(selected.root).labels[lang].title);
     a.href = 'genko://use-style?id=' + selected.root; p.append(a); container.append(p);
   }

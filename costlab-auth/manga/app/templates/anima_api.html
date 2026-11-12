@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Anima Turbo API</h1>
+<p>{{ 'Anima専用の画像と英語プロンプトを返します。日本語は名称・特徴説明です。' if lang == 'ja' else 'Returns Anima-specific images and exact English prompts; titles and descriptions are translated.' }}</p>
+<ul><li><a href="/v1/models">/v1/models</a></li><li><a href="/v1/tree?model=anima-turbo&amp;lang={{ lang }}">/v1/tree?model=anima-turbo</a></li><li><a href="/v1/styles/{{ example_id }}?model=anima-turbo&amp;lang={{ lang }}">/v1/styles/{{ example_id }}?model=anima-turbo</a></li></ul>
+<p>{{ 'Animaのtreeは絵柄をフラットに返し、categoryに大分類IDを付けます。prompt.enは絵柄部分、samples[].prompt.enは実際に送信した全文です。日本語の生成プロンプトはありません。' if lang == 'ja' else 'The Anima tree lists styles as flat root nodes with a category ID. prompt.en is reusable style text; samples[].prompt.en is the exact submitted full prompt. No Japanese generation prompt is supplied.' }}</p>
+<p>{{ 'モデルを省略したAPIは従来どおりGPT Imageです。Animaの画像URLには専用の名前空間が付き、GPTの画像やプロンプトを借用しません。' if lang == 'ja' else 'API calls without a model still use GPT Image. Anima images have a separate namespace and never borrow GPT prompts or images.' }}</p>
+<pre>GET /v1/styles/{{ example_id }}?model=anima-turbo&amp;lang={{ lang }}</pre>
+{% endblock %}

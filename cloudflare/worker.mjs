@@ -98,11 +98,17 @@ export default {
       try { model = modelOf(request, url, api || path.startsWith('/files/')); } catch { return error(request, 400, 'unknown model'); }
       const style = path.match(/^\/v1\/styles\/([a-z0-9]+(?:-[a-z0-9]+)*)$/);
       if (style) {
-        if (model !== GPT) return error(request, 404, 'not found');
-        const response = await asset(env, url, `/_data/styles/${style[1]}.json`);
+        const prefix = model === GPT ? '' : 'anima-turbo/';
+        const response = await asset(env, url, `/_data/styles/${prefix}${style[1]}.json`);
         return response.status === 200 ? json((await response.json())[lang], request) : error(request, 404, 'not found');
       }
       if (path === '/v1/tree') return json(await (await asset(env, url, `/_data/tree/${lang}-${model}.json`, true)).json(), request);
+      if (/^\/files\/anima-turbo\/[a-z0-9]+(?:-[a-z0-9]+)*\/[a-zA-Z0-9_.-]+\.(?:png|jpg)$/.test(path)) {
+        if (url.searchParams.has('model') && model !== ANIMA) return error(request, 404, 'not found');
+        const response = await asset(env, url, path);
+        const type = path.endsWith('.png') ? 'image/png' : 'image/jpeg';
+        return response.status === 200 ? result(response.body, request, { type, cache: 'public, max-age=31536000, immutable' }) : error(request, 404, 'not found');
+      }
       if (/^\/files\/[a-z0-9]+(?:-[a-z0-9]+)*\/[a-zA-Z0-9_.-]+\.jpg$/.test(path)) {
         if (model !== GPT) return error(request, 404, 'not found');
         const response = await asset(env, url, path);
@@ -116,7 +122,9 @@ export default {
       const node = path.match(/^\/(n|styles)\/([a-z0-9]+(?:-[a-z0-9]+)*)$/);
       if (node || ['/', '/search', '/api'].includes(path)) {
         const meta = await routes(env, url);
-        if (node && !meta.visible.includes(node[2])) {
+        const rootCategory = node?.[1] === 'n' && meta.roots.includes(node[2]);
+        const visible = model === GPT ? (meta.model_visible?.[GPT] || meta.visible) : meta.visible;
+        if (node && !rootCategory && !visible.includes(node[2])) {
           const body = await (await asset(env, url, `/_data/error/${lang}-${model}.html`, true)).text();
           return result(body.replaceAll(PLACEHOLDER, url.origin), request, { status: 404, type: 'text/html; charset=utf-8', model });
         }
@@ -127,8 +135,9 @@ export default {
         }
         if (path === '/api') return page(await (await asset(env, url, `/_data/guide/${lang}-${model}.html`, true)).text(), request, lang, model, meta);
         const bundle = await (await asset(env, url, `/_data/pages/${node[2]}.json`, true)).json();
-        const plang = model !== GPT ? 'ja' : ['ja', 'en'].includes(url.searchParams.get('plang')) ? url.searchParams.get('plang') : lang;
-        return page(bundle[lang][model][plang], request, lang, model, meta);
+        const plang = model !== GPT ? 'en' : ['ja', 'en'].includes(url.searchParams.get('plang')) ? url.searchParams.get('plang') : lang;
+        const body = bundle[lang][model][plang] ?? bundle[lang][model].ja;
+        return page(body, request, lang, model, meta);
       }
       if (/^\/(?:api|search|v1\/(?:models|tree|styles\/[a-z0-9-]+)|(?:n|styles)\/[a-z0-9-]+)\/$/.test(path)) {
         url.pathname = path.slice(0, -1);
