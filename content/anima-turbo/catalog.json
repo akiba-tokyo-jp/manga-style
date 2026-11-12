@@ -21,6 +21,11 @@
       "tag": "anima-pairs-001-04",
       "asset": "anima-pairs-001-04.zip",
       "sha256": "779ec02856ce4a2c7d3a78867eedb0fd5b57d77f447bebd0d0e743f38dc911e5"
+    },
+    {
+      "tag": "anima-genre-scenes-001",
+      "asset": "anima-genre-scenes-001.zip",
+      "sha256": "9c3c682e5afb960a3b30fe69469ac4e9b4848d1a4dd68513366be1340807918a"
     }
   ],
   "entries": [
@@ -2906,6 +2911,522 @@
           }
         }
       ]
+    },
+    {
+      "id": "anima-horror-mask-bold",
+      "category": "horror",
+      "title": {
+        "ja": "縦長の無表情と黒面の怪談画",
+        "en": "Long impassive faces and graphic horror blacks"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Flat symmetrical oval eyes, a tiny straight nose and a perfectly level mouth in a smooth long oval face; unnaturally still eight-head-tall adult proportions. Thick rounded outlines, simplified interior marks, broad flat areas of pure black and white, black hair and large clothing-shadow silhouettes, with no gray shading or fine texture."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "光が死んだ夏・公式公開告知画の顔と輪郭の観察（表紙範囲のみ）",
+          "url": "https://comic-walker.com/detail/KC_001571_S"
+        }
+      ],
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      },
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "87fe6c9bb76cfac134972e4431947c2e65a92a0e834acd6ea7f92707b5cd0bf4.png",
+          "sha256": "87fe6c9bb76cfac134972e4431947c2e65a92a0e834acd6ea7f92707b5cd0bf4",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "c7c277da796ff77fb754778b3e62f0e85152738259e3ee4f489d26edb141cf7e.jpg",
+          "thumb_sha256": "c7c277da796ff77fb754778b3e62f0e85152738259e3ee4f489d26edb141cf7e",
+          "prompt": {
+            "en": "Flat symmetrical oval eyes, a tiny straight nose and a perfectly level mouth in a smooth long oval face; unnaturally still eight-head-tall adult proportions. Thick rounded outlines, simplified interior marks, broad flat areas of pure black and white, black hair and large clothing-shadow silhouettes, with no gray shading or fine texture. An unlettered black-and-white horror manga drawing with flat graphic blacks. One continuous manga scene in an open forest glade, with one woman on the left and one man on the right. The adult woman, aged 35, has long hair, a smooth female face and wears a long full skirt and high-neck long-sleeved blouse. She stops abruptly and holds one hand near her collar, glancing at the man. The adult man, aged 40, has a shaved head, a small mustache and ordinary covering clothes; he bends beside a bare tree trunk and looks back. Both bare faces are large and clearly visible, unnervingly quiet rather than laughing. Bent shoulders, opposing body angles and a receding path create tension. Only a bare tree, pale ground and a few light distant branches; no buildings, signs, plaques, additional people or writing. One complete scene, no character sheet, separate repeated portraits, signatures, watermark or logos."
+          },
+          "native_job_id": "6af62bde00000256000001a8000001a8",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af62bde00000256000001a8000001a8",
+            "api_seconds": 30.234
+          },
+          "max_rgb_channel_delta": 17,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "87fe6c9bb76cfac134972e4431947c2e65a92a0e834acd6ea7f92707b5cd0bf4",
+            "observation": {
+              "ja": "枯木の中で女性風2人と禿頭・口髭の男性風1人が身を屈める。丸い目と穏やかな表情で、恐怖より滑稽さが強い。太い輪郭・ハッチ・髪や服の黒面。明白な増肢・文字・透かしなし。後方の下半身と腕は遮蔽され未確定です。",
+              "en": "Two feminine figures and one bald mustached man occupy a leafless forest. Calm rounded faces feel more comic than frightening; bold contours, hatching and black shapes. Some anatomy is occluded; no obvious extra limbs, text or watermark."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "4679ce8d1a5a77b0c97250179e0c9260fb29daf8210d9564d003e97b41966f7b.png",
+          "sha256": "4679ce8d1a5a77b0c97250179e0c9260fb29daf8210d9564d003e97b41966f7b",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "cf50ec51d3bb8fb70ec564ae7b105d4f08826d13b4dcc21c4d57cd8f162b6ed4.jpg",
+          "thumb_sha256": "cf50ec51d3bb8fb70ec564ae7b105d4f08826d13b4dcc21c4d57cd8f162b6ed4",
+          "prompt": {
+            "en": "monochrome manga, original human comic characters, purposeful composition and expressive acting. One adult woman aged 38 with a long bare face and visible eyes turns halfway around in a narrow corridor, one hand held near her collar and the other outside the frame. A close three-quarter view, rigid level mouth, calm unsettling gaze, sharply divided black and white wall shapes, and a slanting open door create dread. Ordinary fully covering clothes. No accessory mask, monster, blood or lettering. Draw one complete unlettered scene, no character sheet or repeated separate portraits, no signatures, logos or watermark. Drawing style: Flat symmetrical oval eyes, a tiny straight nose and a perfectly level mouth in a smooth long oval face; unnaturally still eight-head-tall adult proportions. Thick rounded outlines, simplified interior marks, broad flat areas of pure black and white, black hair and large clothing-shadow silhouettes, with no gray shading or fine texture."
+          },
+          "native_job_id": "6af628e100000256000001a1000001a1",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af628e100000256000001a1000001a1",
+            "api_seconds": 29.478
+          },
+          "max_rgb_channel_delta": 11,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "4679ce8d1a5a77b0c97250179e0c9260fb29daf8210d9564d003e97b41966f7b",
+            "observation": {
+              "ja": "前景の大きな無毛の顔と、右奥へ重なる3人の計4人。縦長の顔、広い額、細い目と小さい閉口、太い輪郭と黒面、廊下の斜線が不気味さを作る。指定の単独女性とは異なり、手足は画外ですが、明白な増肢・文字・透かしはありません。",
+              "en": "Four bald figures combine elongated expressionless faces, narrow eyes, small mouths, bold contours and solid blacks in a corridor. Unlike the requested solo woman; extremities are cropped. No obvious extra limbs, text or watermark."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-12T21:36:10.989240+00:00"
+    },
+    {
+      "id": "anima-horror-blankpupil-pencil",
+      "category": "horror",
+      "title": {
+        "ja": "見開く白目と灰色影の恐怖漫画",
+        "en": "Wide pale eyes and layered horror shadows"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [],
+        "finish": [
+          "tone",
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Black-and-white psychological manga drawing with fine restrained ink contours, sparse short hatching, pale flat gray shadows and broad light areas. Long gaunt faces, wide pale eyes with tiny dark pupils, thin raised eyebrows and a small rigid mouth; lean adult anatomy. Construct the face with small planar marks and subtle under-eye folds rather than glossy anime gradients. Hair is lightly outlined; shadows remain shallow rather than large solid-black masses."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "光が死んだ夏・公式公開告知画の顔と輪郭の観察（表紙範囲のみ）",
+          "url": "https://comic-walker.com/detail/KC_001571_S"
+        }
+      ],
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。 ID内のpencilは初期の未採用設計名に由来します。掲載原画は再設計したペン主体の漫画表現で、鉛筆画や純細線の再現を主張していません。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval. The pencil ID suffix comes from an earlier rejected design. Published images use the redesigned pen-based recipe; graphite or pure-fine-line fidelity is not claimed."
+      },
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "7786793a46cbc9d4ba54bcff06b1292873ff8984ba09ee210f0838977234b8c5.png",
+          "sha256": "7786793a46cbc9d4ba54bcff06b1292873ff8984ba09ee210f0838977234b8c5",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "703081ea99261105dcf80cfa8505f8d46330f15b1fa767e7893243b9954c4ad0.jpg",
+          "thumb_sha256": "703081ea99261105dcf80cfa8505f8d46330f15b1fa767e7893243b9954c4ad0",
+          "prompt": {
+            "en": "Black-and-white psychological manga drawing with fine restrained ink contours, sparse short hatching, pale flat gray shadows and broad light areas. Long gaunt faces, wide pale eyes with tiny dark pupils, thin raised eyebrows and a small rigid mouth; lean adult anatomy. Construct the face with small planar marks and subtle under-eye folds rather than glossy anime gradients. Hair is lightly outlined; shadows remain shallow rather than large solid-black masses. Original human comic characters, one unlettered manga scene with expressive acting. One adult woman aged 35 on the left, with long hair, a smooth female face, a high-neck long-sleeved blouse and a full skirt, and one adult man aged 40 on the right, short-haired with a small mustache, plain shirt and trousers. Both adult faces are large and clearly visible. They recoil in opposite directions from a small unmarked floating stone between them. Bent shoulders and raised hands near their own collars show quiet fear. Tight three-quarter manga composition with purposeful overlapping depth. Broad light paper areas and a few abstract gray motion curves, no signs, buildings, labels, room furniture or other figures. No character sheet, repeated portraits, signatures, watermark, logos or lettering."
+          },
+          "native_job_id": "6af630d500000256000001af000001af",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af630d500000256000001af000001af",
+            "api_seconds": 29.964
+          },
+          "max_rgb_channel_delta": 15,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "7786793a46cbc9d4ba54bcff06b1292873ff8984ba09ee210f0838977234b8c5",
+            "observation": {
+              "ja": "拳を上げる女性と目を見開く男性の大写し、中央の回転する石状物で緊迫した対角構図。太い輪郭・黒面・細いハッチと灰色の動線で、指定の純細線とは異なります。明白な増肢・身体破綻・文字・透かしなし。隠れる腕は未確定です。",
+              "en": "A woman raises fists beside a wide-eyed man and spinning stone. Bold contours, black areas, hatching and gray motion, not pure fine-line treatment. No obvious extra limbs, anatomy errors, text or watermark; occluded arms remain uncertain."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "128b49c46c43b7369a5bf62db311c703bca719f8e96202f41430de40996bee81.png",
+          "sha256": "128b49c46c43b7369a5bf62db311c703bca719f8e96202f41430de40996bee81",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "7f135a9a3e97e94228b187571c67401bc973d646b4860d0251451bfb8733f785.jpg",
+          "thumb_sha256": "7f135a9a3e97e94228b187571c67401bc973d646b4860d0251451bfb8733f785",
+          "prompt": {
+            "en": "Black-and-white psychological manga drawing with fine restrained ink contours, sparse short hatching, pale flat gray shadows and broad light areas. Long gaunt faces, wide pale eyes with tiny dark pupils, thin raised eyebrows and a small rigid mouth; lean adult anatomy. Construct the face with small planar marks and subtle under-eye folds rather than glossy anime gradients. Hair is lightly outlined; shadows remain shallow rather than large solid-black masses. Original human comic characters, one unlettered manga scene with expressive acting. One gaunt adult man aged 42 crouches on lightly suggested stone steps, glancing upward with wide pale eyes, tiny pupils and a tense small mouth. A high tilted close viewpoint and bent shoulders convey fear. One hand rests on a stair edge; ordinary fully covering pale clothes, blank light wall and a few pale gray shadows, no other people or writing surfaces. No character sheet, repeated portraits, signatures, watermark, logos or lettering."
+          },
+          "native_job_id": "6af630f400000256000001b0000001b0",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af630f400000256000001b0000001b0",
+            "api_seconds": 29.734
+          },
+          "max_rgb_channel_delta": 17,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "128b49c46c43b7369a5bf62db311c703bca719f8e96202f41430de40996bee81",
+            "observation": {
+              "ja": "前景の男性が目を見開いて上を仰ぎ、右奥には屈む坊主頭の男性。指定の一人とは異なります。細いハッチ・太い輪郭・交差線・灰色面で恐怖を表現。明白な増肢・身体破綻・文字・透かしなし。右下の手と膝の所属は遮蔽で未確定です。",
+              "en": "A startled upward-looking close-up and a crouching bald man, rather than the requested solo. Bold contours, fine hatching and gray planes create fear. Lower-right hand/knee ownership remains occluded; no obvious extra limbs, anatomy errors, text or watermark."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-12T21:36:10.989240+00:00"
+    },
+    {
+      "id": "anima-gekiga-broadnose-bold",
+      "category": "gekiga",
+      "title": {
+        "ja": "立体的な顔と大きい黒面の重厚漫画",
+        "en": "Planar faces and heavy graphic blacks"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Small deep-set eyes, a broad substantial nose, thick cheeks, a large simple mouth and a very wide neck; stout five-and-a-half-head-tall adult anatomy. Thick rounded outlines, simplified interior marks, broad flat areas of pure black and white, black hair and large clothing-shadow silhouettes, with no gray shading or fine texture."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "JUMBO MAX・公式公開告知画の顔と輪郭の観察（表紙範囲のみ）",
+          "url": "https://bigcomics.jp/series/447b79a24332d/new"
+        }
+      ],
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      },
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "3ff55ff5f6dfe708757ce7eede8179dfb55b030e289b5120b9022d4f3cc5e8ef.png",
+          "sha256": "3ff55ff5f6dfe708757ce7eede8179dfb55b030e289b5120b9022d4f3cc5e8ef",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "c72df59aefb3e527a5734b862032b25082d1e1c9cd209e5f937508c5ea45d3ed.jpg",
+          "thumb_sha256": "c72df59aefb3e527a5734b862032b25082d1e1c9cd209e5f937508c5ea45d3ed",
+          "prompt": {
+            "en": "monochrome manga, original human comic characters, purposeful composition and expressive acting. In one continuous manga scene, an adult woman aged 38 with long hair tied back, a smooth female face and a long-sleeved work coat braces a large plain wooden crate. An adult man aged 45 with short hair and a small mustache leans from the opposite side to help push it toward an open workshop door. Both faces are clearly visible and focused, their bodies bend in different directions. A low three-quarter view, the crate diagonal and receding beams create weight and tension. Fully clothed in ordinary work clothes. Two people only; blank walls and no background bystanders, signs or lettering. Draw one complete unlettered scene, no character sheet or repeated separate portraits, no signatures, logos or watermark. Drawing style: Small deep-set eyes, a broad substantial nose, thick cheeks, a large simple mouth and a very wide neck; stout five-and-a-half-head-tall adult anatomy. Thick rounded outlines, simplified interior marks, broad flat areas of pure black and white, black hair and large clothing-shadow silhouettes, with no gray shading or fine texture."
+          },
+          "native_job_id": "6af629b800000256000001a4000001a4",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af629b800000256000001a4000001a4",
+            "api_seconds": 29.855
+          },
+          "max_rgb_channel_delta": 15,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "3ff55ff5f6dfe708757ce7eede8179dfb55b030e289b5120b9022d4f3cc5e8ef",
+            "observation": {
+              "ja": "手前のポニーテール女性と奥の口髭男性が、大きい木箱を斜めに支える。強い遠近、強弱輪郭、髪と服・箱底の黒面、木目のハッチ。鼻は指定ほど幅広ではなく、腕の一部は箱に隠れる。明白な増肢・文字・透かしなし。",
+              "en": "A foreground woman and smaller mustached man support a tilted crate. Strong perspective, weighted outlines, black shapes and wood hatching. Noses are narrower than requested and some arms are occluded; no obvious extra limbs, text or watermark."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "d4047026a4cbee2682edc2e657135941eb98003219fd9c930e92eb5c23e8eab8.png",
+          "sha256": "d4047026a4cbee2682edc2e657135941eb98003219fd9c930e92eb5c23e8eab8",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "e8e04f3a17ce98032aa08cd0c532d56df57fad21a7cf312d243689d8a4e743dc.jpg",
+          "thumb_sha256": "e8e04f3a17ce98032aa08cd0c532d56df57fad21a7cf312d243689d8a4e743dc",
+          "prompt": {
+            "en": "monochrome manga, original human comic characters, purposeful composition and expressive acting. A stout middle-aged man in a fully covering plain work jacket leans forward across a workshop bench, turning his broad face toward the viewer with an intent restrained expression. Low three-quarter close viewpoint, imposing shoulders, bold facial planes and large connected black shadows; one hand rests flat on the bench edge. A few simple beams and a window give depth, no other people or lettering. Draw one complete unlettered scene, no character sheet or repeated separate portraits, no signatures, logos or watermark. Drawing style: Small deep-set eyes, a broad substantial nose, thick cheeks, a large simple mouth and a very wide neck; stout five-and-a-half-head-tall adult anatomy. Thick rounded outlines, simplified interior marks, broad flat areas of pure black and white, black hair and large clothing-shadow silhouettes, with no gray shading or fine texture."
+          },
+          "native_job_id": "6af629d600000256000001a5000001a5",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af629d600000256000001a5000001a5",
+            "api_seconds": 29.393
+          },
+          "max_rgb_channel_delta": 18,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "d4047026a4cbee2682edc2e657135941eb98003219fd9c930e92eb5c23e8eab8",
+            "observation": {
+              "ja": "大柄な男性が卓へ前傾する近接構図。丸い顔と鼻、太眉と見開く目、太い輪郭・黒面・少量のハッチで量感を作る。片手は5指が見え、他方は袖や腕で隠れる。明白な増肢・文字・透かしなし。",
+              "en": "One stocky man leans over a table: rounded features, thick brows, wide eyes, bold contours, black shapes and sparse hatching. Five digits visible on one hand; the other is obscured. No obvious extra limbs, text or watermark."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-12T21:36:10.989240+00:00"
+    },
+    {
+      "id": "anima-gekiga-hooknose-pencil",
+      "category": "gekiga",
+      "title": {
+        "ja": "鉤鼻と面を刻む強弱線の劇画",
+        "en": "Hooked noses and layered planar drama ink"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [],
+        "finish": [
+          "tone",
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "A fine-ink black-and-white character-drama drawing with narrow realistic eyes, prominent hooked noses, long deep cheek planes, angular chins and tight thin lips. Upright elongated adult anatomy. Thin clear contours, many small face-plane marks, sparse directional hatching and pale gray shading. Facial volume is built from small connected planes rather than a few rounded cartoon curves. Keep broad light areas and avoid large filled-black backgrounds."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "JUMBO MAX・公式公開告知画の顔と輪郭の観察（表紙範囲のみ）",
+          "url": "https://bigcomics.jp/series/447b79a24332d/new"
+        }
+      ],
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。 ID内のpencilは初期の未採用設計名に由来します。掲載原画は再設計したペン主体の漫画表現で、鉛筆画や純細線の再現を主張していません。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval. The pencil ID suffix comes from an earlier rejected design. Published images use the redesigned pen-based recipe; graphite or pure-fine-line fidelity is not claimed."
+      },
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "e32c6b7f620d3e1a9aed5f91344787eaee24ba79dcd289870009c9423f1d4110.png",
+          "sha256": "e32c6b7f620d3e1a9aed5f91344787eaee24ba79dcd289870009c9423f1d4110",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "15e4f3f749fdd8b707ae233ad64867c8a499c2317f33e390674a176a0bc9346f.jpg",
+          "thumb_sha256": "15e4f3f749fdd8b707ae233ad64867c8a499c2317f33e390674a176a0bc9346f",
+          "prompt": {
+            "en": "A fine-ink black-and-white character-drama drawing with narrow realistic eyes, prominent hooked noses, long deep cheek planes, angular chins and tight thin lips. Upright elongated adult anatomy. Thin clear contours, many small face-plane marks, sparse directional hatching and pale gray shading. Facial volume is built from small connected planes rather than a few rounded cartoon curves. Keep broad light areas and avoid large filled-black backgrounds. Original human comic characters, one unlettered manga scene with expressive acting. One adult woman aged 35 on the left, with long hair, a smooth female face, a high-neck long-sleeved blouse and a full skirt, and one adult man aged 40 on the right, short-haired with a small mustache, plain shirt and trousers. Both adult faces are large and clearly visible. Both lean in opposing directions to lift one plain cloth bundle, concentrating on the shared task; folded elbows and a diagonal bundle convey weight. Tight three-quarter manga composition with purposeful overlapping depth. Broad light paper areas and a few abstract gray motion curves, no signs, buildings, labels, room furniture or other figures. No character sheet, repeated portraits, signatures, watermark, logos or lettering."
+          },
+          "native_job_id": "6af6311100000256000001b1000001b1",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6311100000256000001b1000001b1",
+            "api_seconds": 30.003
+          },
+          "max_rgb_channel_delta": 25,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e32c6b7f620d3e1a9aed5f91344787eaee24ba79dcd289870009c9423f1d4110",
+            "observation": {
+              "ja": "女性と男性が布束を共同で支える対角構図。大きい目、明瞭な鼻梁と顎、太い外郭・細いハッチ・黒面と灰色の影。指定の純細線にはならず、布で隠れる手腕の接続は未確定。明白な増肢・身体破綻・文字・透かしはありません。",
+              "en": "A woman and man lift folded cloth, with large eyes, defined noses/jaws, weighted contours, fine hatching, black fills and gray shadows—not pure fine lines. Concealed hand connections remain uncertain; no obvious extra limbs, anatomy errors, text or watermark."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "bb4a7bc275b50628e53d8c2ddc744af7864cbb2a4a264080f86b1f97044636e5.png",
+          "sha256": "bb4a7bc275b50628e53d8c2ddc744af7864cbb2a4a264080f86b1f97044636e5",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "c062d0150b3e3975fa978e7b896e8fa64b29503dc4127aff590891c778b17587.jpg",
+          "thumb_sha256": "c062d0150b3e3975fa978e7b896e8fa64b29503dc4127aff590891c778b17587",
+          "prompt": {
+            "en": "A fine-ink black-and-white character-drama drawing with narrow realistic eyes, prominent hooked noses, long deep cheek planes, angular chins and tight thin lips. Upright elongated adult anatomy. Thin clear contours, many small face-plane marks, sparse directional hatching and pale gray shading. Facial volume is built from small connected planes rather than a few rounded cartoon curves. Keep broad light areas and avoid large filled-black backgrounds. Original human comic characters, one unlettered manga scene with expressive acting. One older adult man aged 55 with a long hooked nose, hollow cheeks and an expressive brow turns toward soft window light. Three-quarter close profile of the face and covered shoulders, one hand holding a closed blank notebook low in the frame. A few light window lines and shallow pale gray shadows, ordinary covering pale shirt, no other figures or writing. No character sheet, repeated portraits, signatures, watermark, logos or lettering."
+          },
+          "native_job_id": "6af6313000000256000001b2000001b2",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6313000000256000001b2000001b2",
+            "api_seconds": 29.473
+          },
+          "max_rgb_channel_delta": 19,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "bb4a7bc275b50628e53d8c2ddc744af7864cbb2a4a264080f86b1f97044636e5",
+            "observation": {
+              "ja": "窓辺で本を読む男性の横顔。長い鼻、しわ、骨張る手首を強調した右寄りの大写し。細い輪郭・ハッチと黒面・灰色で顔の面を細分化。明白な増肢・人体破綻・文字・透かしなし。画外や本に隠れた指は未確定です。",
+              "en": "A man reads in profile beside a window: elongated nose, wrinkles and angular wrist in close framing. Fine contours, hatching, black shapes and gray planes divide facial volume. Cropped fingers remain uncertain; no obvious extra limbs, anatomy errors, text or watermark."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-12T21:36:10.989240+00:00"
     }
   ]
 }
