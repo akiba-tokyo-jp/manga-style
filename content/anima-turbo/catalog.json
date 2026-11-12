@@ -26,6 +26,11 @@
       "tag": "anima-genre-scenes-001",
       "asset": "anima-genre-scenes-001.zip",
       "sha256": "9c3c682e5afb960a3b30fe69469ac4e9b4848d1a4dd68513366be1340807918a"
+    },
+    {
+      "tag": "anima-structural-001",
+      "asset": "anima-structural-001.zip",
+      "sha256": "0864e72b1ad6fc879db2656ee70efed9c4224b3798f2dc5dc2496b192803ad7c"
     }
   ],
   "entries": [
@@ -3427,6 +3432,138 @@
         }
       ],
       "updated_at": "2026-11-12T21:36:10.989240+00:00"
+    },
+    {
+      "id": "anima-probe-rubber-round",
+      "category": "gag",
+      "title": {
+        "ja": "ふくらむ丸顔と余白の喜劇輪郭",
+        "en": "Inflated round faces and spare comedy contours"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "rubber-hose cartoon comic, black-and-white. Smooth bold elastic curves, round inflated human heads, very small solid black bean eyes, large circular noses, curved wide mouths and short three-head-tall adult human bodies. Broad white interiors and a few solid black shapes, simplified rounded hands and feet."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "正反対な君と僕",
+          "url": "https://shonenjumpplus.com/episode/3269754496899770338"
+        },
+        {
+          "title": "メダリスト",
+          "url": "https://comic-days.com/episode/13933686331653168477"
+        }
+      ],
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      },
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "5635e206f4a91c75e7739e989449cb3ff21c758b500c1ee74749e63b3e2125d1.png",
+          "sha256": "5635e206f4a91c75e7739e989449cb3ff21c758b500c1ee74749e63b3e2125d1",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "f7ac2ff276df51cc1f4cec409ffb233c5fd66a2f63b55400cc9a2a31d2f8f680.jpg",
+          "thumb_sha256": "f7ac2ff276df51cc1f4cec409ffb233c5fd66a2f63b55400cc9a2a31d2f8f680",
+          "prompt": {
+            "en": "rubber-hose cartoon comic, black-and-white. A single full-bleed unlettered manga panel. Two equal-sized adult people, a woman aged 40 and a man aged 45, are visible together from waist up at one low table. The long-haired woman and short-haired mustached man lean from opposite sides, each using one hand to steady the same plain tray. Both complete faces and shoulders are clear, with their gazes meeting across the tray. Fully covering plain everyday clothes, a continuous shared room. Drawing style: rubber-hose cartoon comic, black-and-white. Smooth bold elastic curves, round inflated human heads, very small solid black bean eyes, large circular noses, curved wide mouths and short three-head-tall adult human bodies. Broad white interiors and a few solid black shapes, simplified rounded hands and feet."
+          },
+          "native_job_id": "6af6500700000256000001ec000001ec",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6500700000256000001ec000001ec",
+            "api_seconds": 30.415
+          },
+          "max_rgb_channel_delta": 10,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "5635e206f4a91c75e7739e989449cb3ff21c758b500c1ee74749e63b3e2125d1",
+            "observation": {
+              "ja": "丸い大きな鼻と小さい目の女性と男性が卓上の平たい物を共有し、笑顔で向き合います。滑らかな強弱輪郭、広い白面と少数の内線で丸みを作ります。文字・透かし・明白な増肢なし。重なる手指や物の種類は未確定。指定の全員3頭身や豆目を厳密には実現していません。",
+              "en": "A woman and man with large round noses and small eyes share a flat tabletop object and smile toward each other. Smooth weighted contours, broad white planes and few internal marks build rounded forms. No visible text, watermark or obvious extra limbs. Overlapping fingers/object identity remain uncertain; exact three-head proportions and bean eyes are not consistently achieved."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "47df680bd7b2739964c698a6ce081ca9bd99177c10dc0c7b8b92635cac3fe06a.png",
+          "sha256": "47df680bd7b2739964c698a6ce081ca9bd99177c10dc0c7b8b92635cac3fe06a",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "cb0fa9bdab6a0d7c9884dba19d89fae60529e42fb395e2ede44d508d24fbfd35.jpg",
+          "thumb_sha256": "cb0fa9bdab6a0d7c9884dba19d89fae60529e42fb395e2ede44d508d24fbfd35",
+          "prompt": {
+            "en": "rubber-hose cartoon comic, black-and-white. A single full-bleed unlettered manga panel. One adult man aged 45 sits sideways at a low table in a waist-up three-quarter view, resting one forearm on the table and turning his complete face toward the viewer with a wry raised eyebrow. The other hand stays below the table. Fully covering plain everyday clothes, a simple window and ground give depth. Drawing style: rubber-hose cartoon comic, black-and-white. Smooth bold elastic curves, round inflated human heads, very small solid black bean eyes, large circular noses, curved wide mouths and short three-head-tall adult human bodies. Broad white interiors and a few solid black shapes, simplified rounded hands and feet."
+          },
+          "native_job_id": "6af6502500000256000001ed000001ed",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6502500000256000001ed000001ed",
+            "api_seconds": 30.269
+          },
+          "max_rgb_channel_delta": 12,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "47df680bd7b2739964c698a6ce081ca9bd99177c10dc0c7b8b92635cac3fe06a",
+            "observation": {
+              "ja": "非常に大きい丸い頭とふくらむ頬の人物が机に向かい、頬に手を添えて大きく口を開けます。滑らかな外郭・少数のしわ線・白面と局所的な黒で愛嬌を示します。明白な文字・透かし・余剰人体なし。指や肘の細部は省略。目は大きな白目付きで、指定の豆目とは異なります。",
+              "en": "A huge round-headed figure with inflated cheeks sits at a desk, touching the cheek and opening the mouth. Smooth contours, few fold marks, white planes and localized blacks create comic appeal. No obvious text, watermark or extra anatomy. Finger/elbow detail is simplified; large white eyes differ from the requested bean eyes."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-12T23:45:41.383119+00:00"
     }
   ]
 }
