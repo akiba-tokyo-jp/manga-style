@@ -76,6 +76,21 @@
       "tag": "anima-img2img-005",
       "asset": "anima-img2img-005-rounded-family-color.zip",
       "sha256": "61fcc68daf784498f8ff60c342ed94f7772ce2de431e351f8e64fb11252d6f8c"
+    },
+    {
+      "tag": "anima-img2img-006",
+      "asset": "anima-img2img-006-round-dot-life.zip",
+      "sha256": "61bb8ee463c2eeea78d5fe4ad0ad03764de53e1723bf19d335eaa4a4036c3350"
+    },
+    {
+      "tag": "anima-img2img-006",
+      "asset": "anima-img2img-006-oval-comedy.zip",
+      "sha256": "51fc2a33aae0e6a1310750783c7f11232132917f129808897bda256a3bc23307"
+    },
+    {
+      "tag": "anima-img2img-006",
+      "asset": "anima-img2img-006-star-round.zip",
+      "sha256": "70861fcb7f28af2b5e67338ab1835681ede4825fa8e1887664ea50cf5bbe1d5b"
     }
   ],
   "entries": [
@@ -5398,6 +5413,645 @@
         }
       ],
       "updated_at": "2026-11-13T09:10:50.329143+00:00"
+    },
+    {
+      "id": "anima-img2img-round-dot-life",
+      "category": "josei",
+      "title": {
+        "ja": "小点目と丸い頬の均一線日常画（画像変換）",
+        "en": "Tiny dot eyes and round cheeks in even-line everyday drawing (img2img)"
+      },
+      "summary": {
+        "ja": "異なるGPT自作入力2枚からの実Anima画像変換2原画。入力専用画像をAnima原画に数えません。",
+        "en": "Two real Anima img2img originals from distinct self-generated GPT inputs; input-only images are not counted as Anima originals."
+      },
+      "limitations": {
+        "ja": "低denoiseの画像変換で入力の構図/描線を多く保持し、text2imgや無条件の新規作画ではありません。実入力PNGと実英語全文、tool_intensity=-50で再投入。要求8stepに対しnative実行3step、denoise約0.305。入力元chatgpt-imageとSHA/変換を明示し、出力原PNGは無加工。native GET未返却prompt/model/seed/samplerは補完せずtool報告と区別。各観察の省略/不確かさを残します。自己点検は人間承認ではありません。丸顔の小点目と小鼻、丸い手足、均一で丸い輪郭/内線、簡素な灰面が共通。既存の大鼻/大口の誇張と黒ベタ、細密な顔体/強弱線/網点とは区別。髪や鍋に微細な陰影もあり、完全な平坦灰ではありません。",
+        "en": "Low-denoise conversion retains much of input layout/drawing, not text2img or unconditioned new drawing. Reuse the actual input PNG and exact English text with tool_intensity=-50. Eight requested steps yielded three native evaluations at about0.305 denoise. GPT input model/SHA/transforms are explicit and output originals unmodified. Native GET omissions for prompt/model/seed/sampler are not filled; tool reports are distinguished. Observational uncertainty remains. Self-review is not human approval. Round small-dot-eye faces/tiny noses, rounded hands/limbs, even rounded outer/interior lines and simple gray patches recur. Unlike existing protruding nose/large-mouth exaggeration or detailed tapered-line/halftone construction. Some hair/pot modeling remains, not perfectly flat gray."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Unlettered gentle everyday comic. Broad rounded heads, tiny filled dot eyes, a short blunt nose and small curved mouth. Soft rounded adult bodies, thick short fingers and smooth rounded joins. Consistent clean medium-weight contours, very sparse interior creases, broad paper-white faces, flat black hair accents and a few simple pale gray patches. Keep facial marks tiny relative to the round head and preserve the same reduced face, body and flat shading grammar."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "画像変換の実入力（GPT自作見本由来・Anima原画に数えない） / Actual conditioning input, GPT-derived, not an Anima sample",
+          "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-6527a44a29576c6c7f52851790bce15dec9342b63e329b245c90e120d540b7fb.png"
+        },
+        {
+          "title": "画像変換の実入力（GPT自作見本由来・Anima原画に数えない） / Actual conditioning input, GPT-derived, not an Anima sample",
+          "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-e9d510e867f5f008d18db5d3d4e2f9babeda62983cfb56624b26f51b68281f6d.png"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "ddad7d1f1055bfcae2a83ce6d6136f4f17a312434c2f28592766f1ff5ca4229a.png",
+          "sha256": "ddad7d1f1055bfcae2a83ce6d6136f4f17a312434c2f28592766f1ff5ca4229a",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "15363661619d7a5f1db229c2a6dc79c310423b5e82ea6ea224b39e86a460d09a.jpg",
+          "thumb_sha256": "15363661619d7a5f1db229c2a6dc79c310423b5e82ea6ea224b39e86a460d09a",
+          "prompt": {
+            "en": "Unlettered gentle everyday comic. Broad rounded heads, tiny filled dot eyes, a short blunt nose and small curved mouth. Soft rounded adult bodies, thick short fingers and smooth rounded joins. Consistent clean medium-weight contours, very sparse interior creases, broad paper-white faces, flat black hair accents and a few simple pale gray patches. Keep facial marks tiny relative to the round head and preserve the same reduced face, body and flat shading grammar. Retain the fully clothed adult woman and adult man talking together over vegetables in the same kitchen workspace. Their hands and gazes connect through the shared preparation."
+          },
+          "native_job_id": "6af6defa000002560000025100000251",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "tool_intensity": -50,
+            "denoise_strength": 0.305,
+            "references_used": [],
+            "source_images_used": [
+              {
+                "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-6527a44a29576c6c7f52851790bce15dec9342b63e329b245c90e120d540b7fb.png",
+                "sha256": "6527a44a29576c6c7f52851790bce15dec9342b63e329b245c90e120d540b7fb",
+                "source_model": {
+                  "id": "chatgpt-image",
+                  "version": "gpt-image-2.6-sunburst"
+                },
+                "source_role": "conditioning-input-only",
+                "original_catalog_style_id": "josei-lifestyle",
+                "original_sha256": "3e45589dd9291fedd2889f527a375c45e4b0b116ac9b5a994fea0760d58b107f",
+                "input_transformation": {
+                  "kind": "centered white padding only",
+                  "source_size": [
+                    1024,
+                    683
+                  ],
+                  "output_size": [
+                    1024,
+                    1024
+                  ],
+                  "paste_xy": [
+                    0,
+                    170
+                  ],
+                  "no_resize": true
+                }
+              }
+            ]
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 3,
+            "sampler": "euler",
+            "mode": "img2img",
+            "native_job_id": "6af6defa000002560000025100000251",
+            "api_seconds": 18.975,
+            "denoise_strength": 0.305,
+            "source_normalized_sha256": "faa17b50a63bae7f0983d54c0ec42bf5514bc4528f48db701f0efba038a47527",
+            "model_evidence": "tool-reported; native GET omits model",
+            "native_fields_not_returned": [
+              "prompt",
+              "model",
+              "seed",
+              "sampler"
+            ]
+          },
+          "max_rgb_channel_delta": 9,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "ddad7d1f1055bfcae2a83ce6d6136f4f17a312434c2f28592766f1ff5ca4229a",
+            "observation": {
+              "ja": "男女が同じ台所で野菜を挟んで会話する場面。丸い頬、小点目、小鼻、小口、丸い手、太さの揃った外内線、広い白場と簡素な灰が2原画共通。明白な文字透かし・重大な人体破綻は見当たりません。画面外の下半身や未知の別ポーズまで同一と保証する評価ではありません。",
+              "en": "A woman and man converse over vegetables in the same kitchen. Rounded cheeks/tiny dot eyes/nose/mouth, round hands, even outer/interior lines, broad whites and simple gray recur. No obvious text/watermark or major anatomy break. Off-frame lower bodies and unseen poses are not guaranteed identical."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "3b0336188ad6164e9af26b7c21c78471036028f8d152c5bf6cbc00bd8ee495e0.png",
+          "sha256": "3b0336188ad6164e9af26b7c21c78471036028f8d152c5bf6cbc00bd8ee495e0",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "9b20196768b15bc6b022809c337e07b3b65185b64a09a85c866f6c5b2f421305.jpg",
+          "thumb_sha256": "9b20196768b15bc6b022809c337e07b3b65185b64a09a85c866f6c5b2f421305",
+          "prompt": {
+            "en": "Unlettered gentle everyday comic. Broad rounded heads, tiny filled dot eyes, a short blunt nose and small curved mouth. Soft rounded adult bodies, thick short fingers and smooth rounded joins. Consistent clean medium-weight contours, very sparse interior creases, broad paper-white faces, flat black hair accents and a few simple pale gray patches. Keep facial marks tiny relative to the round head and preserve the same reduced face, body and flat shading grammar. Retain the fully clothed adult woman carrying a cooking pot with both attached hands. Her careful balancing action in the kitchen expresses the drawing rules."
+          },
+          "native_job_id": "6af6df14000002560000025300000253",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "tool_intensity": -50,
+            "denoise_strength": 0.305,
+            "references_used": [],
+            "source_images_used": [
+              {
+                "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-e9d510e867f5f008d18db5d3d4e2f9babeda62983cfb56624b26f51b68281f6d.png",
+                "sha256": "e9d510e867f5f008d18db5d3d4e2f9babeda62983cfb56624b26f51b68281f6d",
+                "source_model": {
+                  "id": "chatgpt-image",
+                  "version": "gpt-image-2.6-sunburst"
+                },
+                "source_role": "conditioning-input-only",
+                "original_catalog_style_id": "josei-lifestyle",
+                "original_sha256": "7d8d50c85763dd5c186452621be897784c61270a02c76d98141379a8f16144e2",
+                "input_transformation": {
+                  "kind": "centered white padding only",
+                  "source_size": [
+                    683,
+                    1024
+                  ],
+                  "output_size": [
+                    1024,
+                    1024
+                  ],
+                  "paste_xy": [
+                    170,
+                    0
+                  ],
+                  "no_resize": true
+                }
+              }
+            ]
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 3,
+            "sampler": "euler",
+            "mode": "img2img",
+            "native_job_id": "6af6df14000002560000025300000253",
+            "api_seconds": 17.947,
+            "denoise_strength": 0.305,
+            "source_normalized_sha256": "cb883ced814055d722fe3b98ddc8c29d5e51da596f1c557dc06913561727cbdc",
+            "model_evidence": "tool-reported; native GET omits model",
+            "native_fields_not_returned": [
+              "prompt",
+              "model",
+              "seed",
+              "sampler"
+            ]
+          },
+          "max_rgb_channel_delta": 9,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "3b0336188ad6164e9af26b7c21c78471036028f8d152c5bf6cbc00bd8ee495e0",
+            "observation": {
+              "ja": "女性が鍋を両手で持って運ぶ一続きの全身場面。丸い顔手足、小点目と均一丸線が共通し、鍋を支える動作で魅力を示します。脚はやや細長く、髪と鍋に薄い濃淡もあります。明白な文字透かし・重大な人体破綻なし。省略された指の細部は保証しません。",
+              "en": "A woman carries a pot with both hands in one full-figure scene. Round face/hands/limbs, tiny eyes and even curved lines recur; supporting the pot conveys appeal. Legs are somewhat long and hair/pot have light modeling. No obvious text/watermark or major anatomy break; simplified finger details are not guaranteed."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T09:56:33.923767+00:00"
+    },
+    {
+      "id": "anima-img2img-oval-comedy",
+      "category": "josei",
+      "title": {
+        "ja": "楕円目と柔らかい胴の淡い網点喜劇（画像変換）",
+        "en": "Oval eyes, soft torsos and pale halftone comedy (img2img)"
+      },
+      "summary": {
+        "ja": "異なるGPT自作入力2枚からの実Anima画像変換2原画。入力専用画像をAnima原画に数えません。",
+        "en": "Two real Anima img2img originals from distinct self-generated GPT inputs; input-only images are not counted as Anima originals."
+      },
+      "limitations": {
+        "ja": "低denoiseの画像変換で入力の構図/描線を多く保持し、text2imgや無条件の新規作画ではありません。実入力PNGと実英語全文、tool_intensity=-50で再投入。要求8stepに対しnative実行3step、denoise約0.305。入力元chatgpt-imageとSHA/変換を明示し、出力原PNGは無加工。native GET未返却prompt/model/seed/samplerは補完せずtool報告と区別。各観察の省略/不確かさを残します。自己点検は人間承認ではありません。大きな楕円目や丸い顔の語彙は既存チビと近似します。区別するのは大頭短胴より長い胴/四肢、柔らかな肩と頬、強めの外線/控えめな内線、淡い網点/灰面の組合せです。顔だけが全く異なる絵柄とは説明しません。",
+        "en": "Low-denoise conversion retains much of input layout/drawing, not text2img or unconditioned new drawing. Reuse the actual input PNG and exact English text with tool_intensity=-50. Eight requested steps yielded three native evaluations at about0.305 denoise. GPT input model/SHA/transforms are explicit and output originals unmodified. Native GET omissions for prompt/model/seed/sampler are not filled; tool reports are distinguished. Observational uncertainty remains. Self-review is not human approval. Large oval eyes/rounded facial vocabulary overlap the existing chibi style. Distinction is the combination of longer torso/limbs than its huge-head short-body form, soft shoulders/cheeks, emphatic outer/sparse inner lines and pale halftone/gray planes. Not claimed a wholly separate facial tradition."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Unlettered expressive everyday comedy. Large rounded heads, upright oval black eyes with small white glints, tiny noses, broad simple smiling mouths and rounded cheek planes. Slightly compact adult bodies with soft shoulders and simplified rounded hands. Smooth emphatic outer contours, sparse small inner marks, solid dark hair and restrained pale flat halftone shadows. Keep this face-to-body construction on every figure; allow sweat drops and short motion marks but no lettering."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "画像変換の実入力（GPT自作見本由来・Anima原画に数えない） / Actual conditioning input, GPT-derived, not an Anima sample",
+          "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-f24ade1c042023006eed7ed54f26ef8982417add10868867319b6cc23ef76813.png"
+        },
+        {
+          "title": "画像変換の実入力（GPT自作見本由来・Anima原画に数えない） / Actual conditioning input, GPT-derived, not an Anima sample",
+          "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-eb4c29f1a2ad6685ee813139b7b3fea5be545f1437c6c7556ebd745ae768f4dd.png"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "e213179f205c3e705be91bbd04b6e3ba4c702ad6505188537ed6bedd6d530407.png",
+          "sha256": "e213179f205c3e705be91bbd04b6e3ba4c702ad6505188537ed6bedd6d530407",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "6bcc07f5724e1b85228c63c6f072d3cfcfe192ea733991b9b7c50fb299674775.jpg",
+          "thumb_sha256": "6bcc07f5724e1b85228c63c6f072d3cfcfe192ea733991b9b7c50fb299674775",
+          "prompt": {
+            "en": "Unlettered expressive everyday comedy. Large rounded heads, upright oval black eyes with small white glints, tiny noses, broad simple smiling mouths and rounded cheek planes. Slightly compact adult bodies with soft shoulders and simplified rounded hands. Smooth emphatic outer contours, sparse small inner marks, solid dark hair and restrained pale flat halftone shadows. Keep this face-to-body construction on every figure; allow sweat drops and short motion marks but no lettering. Retain the fully clothed adult woman and adult man laughing and pointing toward the same chair in one shared room. Their gestural exchange forms one continuous comic moment."
+          },
+          "native_job_id": "6af6df2e000002560000025500000255",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "tool_intensity": -50,
+            "denoise_strength": 0.305,
+            "references_used": [],
+            "source_images_used": [
+              {
+                "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-f24ade1c042023006eed7ed54f26ef8982417add10868867319b6cc23ef76813.png",
+                "sha256": "f24ade1c042023006eed7ed54f26ef8982417add10868867319b6cc23ef76813",
+                "source_model": {
+                  "id": "chatgpt-image",
+                  "version": "gpt-image-2.6-sunburst"
+                },
+                "source_role": "conditioning-input-only",
+                "original_catalog_style_id": "josei-comedy",
+                "original_sha256": "ee79365e3b8499d8985aef1f8b8e4aad94a6259b16731b3f70363a94ceb9ff3d",
+                "input_transformation": {
+                  "kind": "centered white padding only",
+                  "source_size": [
+                    1024,
+                    683
+                  ],
+                  "output_size": [
+                    1024,
+                    1024
+                  ],
+                  "paste_xy": [
+                    0,
+                    170
+                  ],
+                  "no_resize": true
+                }
+              }
+            ]
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 3,
+            "sampler": "euler",
+            "mode": "img2img",
+            "native_job_id": "6af6df2e000002560000025500000255",
+            "api_seconds": 19.13,
+            "denoise_strength": 0.305,
+            "source_normalized_sha256": "04d3c3f8d81a1d8378e2041a1ab06de5a8f630586e425203debc485ed2d9cf3b",
+            "model_evidence": "tool-reported; native GET omits model",
+            "native_fields_not_returned": [
+              "prompt",
+              "model",
+              "seed",
+              "sampler"
+            ]
+          },
+          "max_rgb_channel_delta": 12,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e213179f205c3e705be91bbd04b6e3ba4c702ad6505188537ed6bedd6d530407",
+            "observation": {
+              "ja": "男女が椅子を挟んで笑い指を差す同じ室内場面。丸顔、楕円目の語彙、滑らかな太め外線と細い内線、淡い網点が共通。女性は閉眼で下半身も画面外のため、全員の開眼/全身比率を完全比較したものではありません。明白な文字透かし・重大な人体破綻なし。",
+              "en": "A woman and man laugh and point across one chair in the same room. Round-face/oval-eye vocabulary, smooth stronger outer/fine inner lines and pale halftone recur. The woman closes her eyes and lower bodies are off-frame; not a complete open-eye/full-body comparison. No obvious text/watermark or major anatomy break."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "2968202586d0e708d8104c88388322fb9cb43c5fb33609a8959209e0fd3d0b36.png",
+          "sha256": "2968202586d0e708d8104c88388322fb9cb43c5fb33609a8959209e0fd3d0b36",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "9f9b936e1c80d6641a4d0cacd4581141a2175662a2d486212371690f17374c83.jpg",
+          "thumb_sha256": "9f9b936e1c80d6641a4d0cacd4581141a2175662a2d486212371690f17374c83",
+          "prompt": {
+            "en": "Unlettered expressive everyday comedy. Large rounded heads, upright oval black eyes with small white glints, tiny noses, broad simple smiling mouths and rounded cheek planes. Slightly compact adult bodies with soft shoulders and simplified rounded hands. Smooth emphatic outer contours, sparse small inner marks, solid dark hair and restrained pale flat halftone shadows. Keep this face-to-body construction on every figure; allow sweat drops and short motion marks but no lettering. Retain the fully clothed adult man staggering slightly while carrying shopping bags. Connected arms, bag weight, short motion strokes and his expressive face make a purposeful single scene."
+          },
+          "native_job_id": "6af6df4b000002560000025700000257",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "tool_intensity": -50,
+            "denoise_strength": 0.305,
+            "references_used": [],
+            "source_images_used": [
+              {
+                "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-eb4c29f1a2ad6685ee813139b7b3fea5be545f1437c6c7556ebd745ae768f4dd.png",
+                "sha256": "eb4c29f1a2ad6685ee813139b7b3fea5be545f1437c6c7556ebd745ae768f4dd",
+                "source_model": {
+                  "id": "chatgpt-image",
+                  "version": "gpt-image-2.6-sunburst"
+                },
+                "source_role": "conditioning-input-only",
+                "original_catalog_style_id": "josei-comedy",
+                "original_sha256": "b94ed172f4ce22d7d03436798740d40571f66d31bddb356687b43d9a5cae5865",
+                "input_transformation": {
+                  "kind": "centered white padding only",
+                  "source_size": [
+                    855,
+                    1024
+                  ],
+                  "output_size": [
+                    1024,
+                    1024
+                  ],
+                  "paste_xy": [
+                    84,
+                    0
+                  ],
+                  "no_resize": true
+                }
+              }
+            ]
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 3,
+            "sampler": "euler",
+            "mode": "img2img",
+            "native_job_id": "6af6df4b000002560000025700000257",
+            "api_seconds": 19.042,
+            "denoise_strength": 0.305,
+            "source_normalized_sha256": "d1b3bb701072f8f6c5cd9fdd3da515b98a768733c773290c7f7bd546c208d18c",
+            "model_evidence": "tool-reported; native GET omits model",
+            "native_fields_not_returned": [
+              "prompt",
+              "model",
+              "seed",
+              "sampler"
+            ]
+          },
+          "max_rgb_channel_delta": 12,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "2968202586d0e708d8104c88388322fb9cb43c5fb33609a8959209e0fd3d0b36",
+            "observation": {
+              "ja": "男性が買物袋を抱えてよろける一続きの全身見本。コンパクトでも既存チビより胴/四肢が長く、丸い肩手と楕円目、滑らか外線/少ない内線、淡い網点と灰影が共通。荷重と動線で魅力を示します。明白な文字透かし・重大な人体破綻なし。未知の表情/角度の再現性は未保証。",
+              "en": "A man staggers with shopping bags in one full-figure scene. Compact but longer torso/limbs than the existing chibi, rounded shoulders/hands/oval eyes, smooth outer/sparse inner lines and pale halftone/gray shadows recur. Load and motion convey appeal. No obvious text/watermark or major anatomy break; unseen expressions/angles unproven."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T09:56:34.803445+00:00"
+    },
+    {
+      "id": "anima-img2img-star-round",
+      "category": "shojo",
+      "title": {
+        "ja": "大きな丸虹彩と丸顔の明瞭線ファンタジー（画像変換）",
+        "en": "Huge circular irises and round faces in clear-line fantasy (img2img)"
+      },
+      "summary": {
+        "ja": "異なるGPT自作入力2枚からの実Anima画像変換2原画。入力専用画像をAnima原画に数えません。",
+        "en": "Two real Anima img2img originals from distinct self-generated GPT inputs; input-only images are not counted as Anima originals."
+      },
+      "limitations": {
+        "ja": "低denoiseの画像変換で入力の構図/描線を多く保持し、text2imgや無条件の新規作画ではありません。実入力PNGと実英語全文、tool_intensity=-50で再投入。要求8stepに対しnative実行3step、denoise約0.305。入力元chatgpt-imageとSHA/変換を明示し、出力原PNGは無加工。native GET未返却prompt/model/seed/samplerは補完せずtool報告と区別。各観察の省略/不確かさを残します。自己点検は人間承認ではありません。巨大な丸い虹彩と小鼻口、短く丸い顔体、明瞭な外輪郭/細い内線、淡い面状灰が共通。既存の長めの顔体/細線/網点と、虹彩をほぼ省く単純黒楕円目/白場チビから組合せで区別します。星形/丸形の反射の違いは可変部であり、反射の厳密一致を保証しません。",
+        "en": "Low-denoise conversion retains much of input layout/drawing, not text2img or unconditioned new drawing. Reuse the actual input PNG and exact English text with tool_intensity=-50. Eight requested steps yielded three native evaluations at about0.305 denoise. GPT input model/SHA/transforms are explicit and output originals unmodified. Native GET omissions for prompt/model/seed/sampler are not filled; tool reports are distinguished. Observational uncertainty remains. Self-review is not human approval. Huge circular irises/tiny nose-mouth, short rounded face/body, clear outer/fine inner lines and pale gray planes recur. The combination differs from longer fine-line/halftone faces and simple black-oval white-plane chibi eyes with little iris structure. Star/round reflections vary; exact reflection identity is not guaranteed."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "chibi"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Unlettered luminous fantasy comic. Rounded youthful stylized faces with enormous circular irises, star-like eye glints, small low noses and tiny mouths. Large heads, short rounded limbs and small softly simplified hands. Clean rounded medium contours, sparse delicate interior lines, broad dark hair shapes and pale bounded gray tones. Tiny radiating light marks frame the figures without separate heads or panels. Preserve the same eye geometry, compact anatomy and clean flat tonal grammar. Fully clothed non-sexual imagery."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "画像変換の実入力（GPT自作見本由来・Anima原画に数えない） / Actual conditioning input, GPT-derived, not an Anima sample",
+          "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-0c47dfb878e4f616b64f3b9441af87e1a4dc674cdf86bb17360322ecd222bff5.png"
+        },
+        {
+          "title": "画像変換の実入力（GPT自作見本由来・Anima原画に数えない） / Actual conditioning input, GPT-derived, not an Anima sample",
+          "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-652bcaa13e47becf1dde51bfc0b16da465e2c75849861954f4d5df770ed040b9.png"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "0dd9b109f0bb5f845a8e5caaba1f719624f46412d47cdfe67166c2c02954447a.png",
+          "sha256": "0dd9b109f0bb5f845a8e5caaba1f719624f46412d47cdfe67166c2c02954447a",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "c44e5c4ade50859de7bd8cec26acf2382265ab0d624dbc71b75ad6b9e0a93b70.jpg",
+          "thumb_sha256": "c44e5c4ade50859de7bd8cec26acf2382265ab0d624dbc71b75ad6b9e0a93b70",
+          "prompt": {
+            "en": "Unlettered luminous fantasy comic. Rounded youthful stylized faces with enormous circular irises, star-like eye glints, small low noses and tiny mouths. Large heads, short rounded limbs and small softly simplified hands. Clean rounded medium contours, sparse delicate interior lines, broad dark hair shapes and pale bounded gray tones. Tiny radiating light marks frame the figures without separate heads or panels. Preserve the same eye geometry, compact anatomy and clean flat tonal grammar. Fully clothed non-sexual imagery. Retain the female and male figures reacting together to one small jewel in the same room. Their gazes and attached hands connect to the shared object."
+          },
+          "native_job_id": "6af6df86000002560000025900000259",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "tool_intensity": -50,
+            "denoise_strength": 0.305,
+            "references_used": [],
+            "source_images_used": [
+              {
+                "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-0c47dfb878e4f616b64f3b9441af87e1a4dc674cdf86bb17360322ecd222bff5.png",
+                "sha256": "0c47dfb878e4f616b64f3b9441af87e1a4dc674cdf86bb17360322ecd222bff5",
+                "source_model": {
+                  "id": "chatgpt-image",
+                  "version": "gpt-image-2.6-sunburst"
+                },
+                "source_role": "conditioning-input-only",
+                "original_catalog_style_id": "shojo-magical",
+                "original_sha256": "45f31203766bc0a777e279baf588d1c3a5566cb867f2669c60a74bde8b621355",
+                "input_transformation": {
+                  "kind": "centered white padding only",
+                  "source_size": [
+                    1024,
+                    683
+                  ],
+                  "output_size": [
+                    1024,
+                    1024
+                  ],
+                  "paste_xy": [
+                    0,
+                    170
+                  ],
+                  "no_resize": true
+                }
+              }
+            ]
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 3,
+            "sampler": "euler",
+            "mode": "img2img",
+            "native_job_id": "6af6df86000002560000025900000259",
+            "api_seconds": 19.118,
+            "denoise_strength": 0.305,
+            "source_normalized_sha256": "3c9d97347cea0f557e65088b44734fba59b744feff4eaebf6bba2ec24d5a28f3",
+            "model_evidence": "tool-reported; native GET omits model",
+            "native_fields_not_returned": [
+              "prompt",
+              "model",
+              "seed",
+              "sampler"
+            ]
+          },
+          "max_rgb_channel_delta": 11,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "0dd9b109f0bb5f845a8e5caaba1f719624f46412d47cdfe67166c2c02954447a",
+            "observation": {
+              "ja": "マント姿の男女が掌の小さい宝石を一緒に見る共有場面。大きな丸い虹彩、小鼻口、丸顔、明瞭な外輪郭と細い内線、淡い灰面が共通。光模様や衣装だけを絵柄差にしません。明白な文字透かし・重大な人体破綻なし。上半身のみで全身体型は保証せず、反射形は見本間で変わります。",
+              "en": "Female and male figures share a scene looking at a small jewel in a palm. Huge circular irises/tiny nose-mouth/round faces, clear outer/fine inner lines and pale gray recur. Not differentiated by costumes/light motifs alone. No obvious text/watermark or major anatomy break. Upper-body view does not prove full-body ratios; reflections vary."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "b718c6735acef7a20a4f1545ef59d71f8406824c3fbcdcfb3a4604ce49688dd7.png",
+          "sha256": "b718c6735acef7a20a4f1545ef59d71f8406824c3fbcdcfb3a4604ce49688dd7",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "12e93041bb6487e71a9a60a9d6b9700a8c9ac27db962a62c5a8785e290cfacf6.jpg",
+          "thumb_sha256": "12e93041bb6487e71a9a60a9d6b9700a8c9ac27db962a62c5a8785e290cfacf6",
+          "prompt": {
+            "en": "Unlettered luminous fantasy comic. Rounded youthful stylized faces with enormous circular irises, star-like eye glints, small low noses and tiny mouths. Large heads, short rounded limbs and small softly simplified hands. Clean rounded medium contours, sparse delicate interior lines, broad dark hair shapes and pale bounded gray tones. Tiny radiating light marks frame the figures without separate heads or panels. Preserve the same eye geometry, compact anatomy and clean flat tonal grammar. Fully clothed non-sexual imagery. Retain the single fully clothed female figure taking a step while raising a wand. Her active pose, expressive large eyes and connected limbs show the drawing rules in one continuous scene."
+          },
+          "native_job_id": "6af6dfa1000002560000025b0000025b",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "tool_intensity": -50,
+            "denoise_strength": 0.305,
+            "references_used": [],
+            "source_images_used": [
+              {
+                "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-006/reference-input-652bcaa13e47becf1dde51bfc0b16da465e2c75849861954f4d5df770ed040b9.png",
+                "sha256": "652bcaa13e47becf1dde51bfc0b16da465e2c75849861954f4d5df770ed040b9",
+                "source_model": {
+                  "id": "chatgpt-image",
+                  "version": "gpt-image-2.6-sunburst"
+                },
+                "source_role": "conditioning-input-only",
+                "original_catalog_style_id": "shojo-magical",
+                "original_sha256": "8970270dbce33b66ccbd6ea9a10737b999feb3d152a310b4c4d5e5b1ae9d81a9",
+                "input_transformation": {
+                  "kind": "centered white padding only",
+                  "source_size": [
+                    683,
+                    1024
+                  ],
+                  "output_size": [
+                    1024,
+                    1024
+                  ],
+                  "paste_xy": [
+                    170,
+                    0
+                  ],
+                  "no_resize": true
+                }
+              }
+            ]
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 3,
+            "sampler": "euler",
+            "mode": "img2img",
+            "native_job_id": "6af6dfa1000002560000025b0000025b",
+            "api_seconds": 19.091,
+            "denoise_strength": 0.305,
+            "source_normalized_sha256": "7f163980b02f1e46c49d96f72a6793611821bd0c7019bc0731314cc391f44e36",
+            "model_evidence": "tool-reported; native GET omits model",
+            "native_fields_not_returned": [
+              "prompt",
+              "model",
+              "seed",
+              "sampler"
+            ]
+          },
+          "max_rgb_channel_delta": 12,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "b718c6735acef7a20a4f1545ef59d71f8406824c3fbcdcfb3a4604ce49688dd7",
+            "observation": {
+              "ja": "着衣の女性風人物が石畳を歩きながら杖を掲げる一続きの全身場面。大きな丸虹彩と短い丸顔体、明瞭な輪郭、淡灰面が共通。眼の反射は丸形に寄り、衣服には濃い影も残ります。明白な文字透かし・重大な人体破綻なし。様式化が幼く、外見から年齢は保証しません。非性的な見本です。",
+              "en": "A clothed female-styled figure walks on paving while raising a wand in one full-figure scene. Huge round irises/short rounded face-body, clear contours and pale gray planes recur. Reflections lean round and some clothing shadows are dark. No obvious text/watermark or major anatomy break. Youthful stylization does not establish age; non-sexual sample."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T09:56:35.706534+00:00"
     }
   ]
 }
