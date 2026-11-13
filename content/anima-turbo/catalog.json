@@ -31,6 +31,11 @@
       "tag": "anima-structural-001",
       "asset": "anima-structural-001.zip",
       "sha256": "0864e72b1ad6fc879db2656ee70efed9c4224b3798f2dc5dc2496b192803ad7c"
+    },
+    {
+      "tag": "anima-structural-002",
+      "asset": "anima-structural-002.zip",
+      "sha256": "8a4b0c0efa01653b624a70f6f72b0013db6db5786bc579e2a9481e1d6a2957b9"
     }
   ],
   "entries": [
@@ -3564,6 +3569,150 @@
         }
       ],
       "updated_at": "2026-11-12T23:45:41.383119+00:00"
+    },
+    {
+      "id": "anima-probe-geometric-clear",
+      "category": "essay",
+      "title": {
+        "ja": "折れ線の顔と均質線の幾何漫画",
+        "en": "Angular faces and even geometric contours"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "geometric minimalist comic, ligne claire, black and white. Rectangular human heads with clipped corners, tiny horizontal dash eyes, long straight triangular noses and small level mouths. Uniform narrow unbroken outlines, flat white interiors, sparse isolated solid black polygons and flat pale-gray planes. Long straight limbs and simplified closed shapes."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "まめきちまめこ・公式公開 秋服とかいう だるい奴",
+          "url": "https://mamekichimameko.blog.jp/archives/91838614.html"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "43c7e9994ae909e8333d03659af1eac3da93db3740f2bdb58f1e0235c41ebd24.png",
+          "sha256": "43c7e9994ae909e8333d03659af1eac3da93db3740f2bdb58f1e0235c41ebd24",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "067376bab58539e30da674a0419139ac10bad90143db372f6b484d0f15822325.jpg",
+          "thumb_sha256": "067376bab58539e30da674a0419139ac10bad90143db372f6b484d0f15822325",
+          "prompt": {
+            "en": "geometric minimalist comic, ligne claire, black and white. Rectangular human heads with clipped corners, tiny horizontal dash eyes, long straight triangular noses and small level mouths. Uniform narrow unbroken outlines, flat white interiors, sparse isolated solid black polygons and flat pale-gray planes. Long straight limbs and simplified closed shapes. A single unlettered continuous comic panel. Two distinct fully clothed adults together at one low table. LEFT: a WOMAN aged 40 with long straight hair and a high-neck long-sleeved dress. RIGHT: a MAN aged 45 with short hair and a small mustache, wearing a plain shirt. They lean toward one another and hold opposite edges of the SAME plain tray. Both people, INCLUDING THE WOMAN, have rectangular clipped-corner heads, tiny horizontal eye marks, simplified triangular noses, flat white faces and the same uniform contour thickness as the reference. Both faces and shoulders are clearly visible, equal scale."
+          },
+          "native_job_id": "6af66195000002560000020f0000020f",
+          "requested_settings": {
+            "transport_client": "ps5-image-front",
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1,
+            "sampler": "euler",
+            "seed": -1,
+            "negative_prompt": "",
+            "references_used": [
+              {
+                "source_role": "showcase",
+                "sha256": "a87d1ab94c44c579f38142fe39c388b955e25401d85e16f07771e24cffc6fff4",
+                "normalized_input_sha256": "a9dbbf1cf392c894d0ebf918b193fc155fbf15e2f61c09916d60f85f3d3b9e81"
+              }
+            ],
+            "reference_adapter": "snapref_cs",
+            "reference_strength": 1
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "snapref_cs",
+            "native_job_id": "6af66195000002560000020f0000020f",
+            "api_seconds": 63.613211,
+            "transport_client": "ps5-image-front",
+            "evidence_origin": "normalized real frontend metadata plus native GET and exact PNG",
+            "native_gpu_verified": true,
+            "reference_gpu_verified": true,
+            "sampler_origin": "frontend-request",
+            "actual_seed": null,
+            "frontend_metadata_sha256": "fe072b3258dd9cab7f43d12c1c8caf2b17db90d602875966646c587ef9887d71"
+          },
+          "max_rgb_channel_delta": 16,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "43c7e9994ae909e8333d03659af1eac3da93db3740f2bdb58f1e0235c41ebd24",
+            "observation": {
+              "ja": "長髪の女性風人物と短髪の男性風人物が同じ卓で向き合い、手を近づけています。折れ線の顎と鼻、短い横目、比較的均質な強い輪郭と少数の内線、白い顔と平坦な灰面が2枚目と共通。読める文字・透かし・明白な余剰人体なし。手指の重なりは不確定。指定のトレー、口髭、ハイネックの明確な実現は確認できず、顔も厳密な矩形ではありません。線の途切れや継ぎ目の突き抜けがあります。2枚目の原画を入力にSnapRef CSで新規生成しました。",
+              "en": "A long-haired woman-presenting adult and short-haired man-presenting adult face each other at one table with nearby hands. Angular jaws and noses, short eye marks, comparatively even strong contours, few interior marks, white faces and flat gray planes recur in the showcase. No readable text, watermark or obvious extra anatomy. Overlapping fingers remain uncertain. The requested tray, mustache and high neckline are not clearly realized; heads are not strictly rectangular, and line breaks/overshoots remain. This new scene used the second original as its SnapRef CS input."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "a87d1ab94c44c579f38142fe39c388b955e25401d85e16f07771e24cffc6fff4.png",
+          "sha256": "a87d1ab94c44c579f38142fe39c388b955e25401d85e16f07771e24cffc6fff4",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "55f2474eb908236485a35fb91e4f3b5062a5a7a28c80e352de2635a6fb92ff23.jpg",
+          "thumb_sha256": "55f2474eb908236485a35fb91e4f3b5062a5a7a28c80e352de2635a6fb92ff23",
+          "prompt": {
+            "en": "geometric minimalist comic, ligne claire, black and white. A single full-bleed unlettered manga panel. One adult man aged 45 sits sideways at a low table in a waist-up three-quarter view, resting one forearm on the table and turning his complete face toward the viewer with a wry raised eyebrow. The other hand stays below the table. Fully covering plain everyday clothes, a simple window and ground give depth. Drawing style: geometric minimalist comic, ligne claire, black and white. Rectangular human heads with clipped corners, tiny horizontal dash eyes, long straight triangular noses and small level mouths. Uniform narrow unbroken outlines, flat white interiors, sparse isolated solid black polygons and flat pale-gray planes. Long straight limbs and simplified closed shapes."
+          },
+          "native_job_id": "6af6506200000256000001ef000001ef",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6506200000256000001ef000001ef",
+            "api_seconds": 30.148
+          },
+          "max_rgb_channel_delta": 14,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "a87d1ab94c44c579f38142fe39c388b955e25401d85e16f07771e24cffc6fff4",
+            "observation": {
+              "ja": "大きい角張った頭の人物が窓前の卓に両腕を置きます。折線の鼻と顎、横線と短い黒形の目、均質に近い輪郭・少数の内線、広い白面と局所的な平坦な灰面で構成。原画内の文字・透かし・明白な余剰人体なし。手と腕の接続は簡略化され、指の細部は確定できません。細く切れない輪郭の指定に対し太い線や途切れがあり、頭身と灰色を置く位置の全場面共通規則は保証できません。",
+              "en": "A large angular-headed figure places both arms on a table before a window. Folded nose/jaw shapes, horizontal eye marks with short black forms, comparatively even contours, few interior marks, broad white planes and localized flat gray build the image. No visible text, watermark or obvious extra anatomy. Hand/arm junctions and fingers are simplified. Contours are thicker and more interrupted than requested; a universal head-to-body ratio or gray-placement rule is not established."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T01:07:21.780783+00:00",
+      "limitations": {
+        "ja": "原画2枚は異なるnative jobの未加工PNGです。1枚目は2枚目の原画を入力とするSnapRef CS生成で、条件なしの独立抽選2回ではありません。再投入時は2枚目を参照にし、1枚目の全文・実設定と参照SHAを使ってください。両方に同じ絵柄部分を実送信していますが、全場面の頭身や灰面位置を保証しません。手指と指定からの残差は各観察を参照。1枚目はseed=-1と空のnegativeを実送信しましたが、確定seedは返っていません。2枚目の未指定値はnullのままです。自己点検は人間承認とは別です。",
+        "en": "The unmodified originals have distinct native jobs. The first was newly generated with the second as its SnapRef CS input, not as an independent unconditioned draw. To reuse it, provide the second original with the first sample full prompt, actual settings and reference SHA. Both received the exact shared style recipe; universal proportions or gray placement are not guaranteed. Per-image notes retain finger uncertainty and prompt residuals. The first actually submitted seed=-1 and an empty negative; no resolved seed was returned. Unspecified controls for the second remain null. Self-review is not human approval."
+      }
     }
   ]
 }
