@@ -3,6 +3,11 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
+      "tag": "anima-text-only-012",
+      "asset": "anima-text-only-012.zip",
+      "sha256": "83980066c073a8c567f86175d826755f0ec390fa326d8b680e7805f112e7e26f"
+    },
+    {
       "tag": "anima-text-only-001",
       "asset": "anima-text-only-001.zip",
       "sha256": "1d5395b1655a11ef14decb8cab4e2ee5d6bc074f9bd3bc3d5fe79767ca5457ce"
@@ -59,6 +64,137 @@
     }
   ],
   "entries": [
+    {
+      "id": "anima-text-rounded-square-face-curve-nose",
+      "category": "gag",
+      "title": {
+        "ja": "広い白顔とU字鼻を太線で描く人物画",
+        "en": "Broad white faces and U-curved noses in firm cartoon ink"
+      },
+      "prompt": {
+        "en": "Clean monochrome cartoon ink illustration. Each clothed adult has one broad nearly square face with rounded lower corners above a very short neck and boxlike connected shoulders and torso. Thick black eyebrow strokes sit over tiny eye marks. A long curved nose line and a small round opening or larger black open mouth remain plainly drawn. Firm outside contours enclose finer interior strokes. Wide white facial fields contrast with local black areas and fine parallel or gridlike gray line patterns. Arms and hands are simplified connected forms rather than finely modeled anatomy."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "酒のほそ道・正規無料公開viewerの表示コマ2,4,6",
+          "url": "https://mechacomic.jp/books/25434"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "ed08f86a4c42d3a9549b742fc6568c9ca841ce34dc2dc6b386b4c723ed57d605.png",
+          "sha256": "ed08f86a4c42d3a9549b742fc6568c9ca841ce34dc2dc6b386b4c723ed57d605",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "97c4e921e0ca5734a479f37a6b4da88646ece65cf879450c15a465aef31fbc3a.jpg",
+          "thumb_sha256": "97c4e921e0ca5734a479f37a6b4da88646ece65cf879450c15a465aef31fbc3a",
+          "prompt": {
+            "en": "One uninterrupted flower-shop interior shows a fully clothed adult woman and adult man working together behind a single wide counter. Clean monochrome cartoon ink illustration. Each clothed adult has one broad nearly square face with rounded lower corners above a very short neck and boxlike connected shoulders and torso. Thick black eyebrow strokes sit over tiny eye marks. A long curved nose line and a small round opening or larger black open mouth remain plainly drawn. Firm outside contours enclose finer interior strokes. Wide white facial fields contrast with local black areas and fine parallel or gridlike gray line patterns. Arms and hands are simplified connected forms rather than finely modeled anatomy. The woman has a simple wavy dark hair shape and a plain long-sleeved blouse. The man has a short dark hair patch, a small dark chin-beard mark and a plain long-sleeved shirt. Both wear trousers. The same vase, stems, shelves, window and floor surround both working figures."
+          },
+          "native_job_id": "6af76dcf00000256000002eb000002eb",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af76dcf00000256000002eb000002eb",
+            "api_seconds": 31.023
+          },
+          "max_rgb_channel_delta": 26,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "ed08f86a4c42d3a9549b742fc6568c9ca841ce34dc2dc6b386b4c723ed57d605",
+            "observation": {
+              "ja": "陶器棚のあるカウンターに女性と男性が両手を置く一場面。大きな白い顔に太眉・小さい点状の眼・U字に曲がる鼻線、黒い髪面と強い外輪郭を確認。女性の鼻は短め、男性は幅広く、長さは一様ではありません。短首は省略表現で、胴は指定の箱形より丸く、陰影も細かい格子より粗い斜線と黒面が強めです。共同で花を整える指定動作は出ていません。",
+              "en": "A woman and man rest both hands on a counter in front of pottery shelves. Large white faces carry heavy brows, small dotlike eyes, U-curved nose lines, black hair masses and firm outlines. The woman has a shorter nose and the man a wider one; length is not uniform. Short necks are simplified rather than fused. Torsos are rounder than the boxlike request, and coarse hatching/black areas replace much of the fine grid gray. Requested joint flower arranging is not achieved."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "79192cf0e603d235efbe35d6ed1ab11d71fe302dc2450669c558a24b28999a74.png",
+          "sha256": "79192cf0e603d235efbe35d6ed1ab11d71fe302dc2450669c558a24b28999a74",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "9121b207e6ff9e2027bebc49d4e275afcab2c8d1211bc3507b3e8d7839e496f7.jpg",
+          "thumb_sha256": "9121b207e6ff9e2027bebc49d4e275afcab2c8d1211bc3507b3e8d7839e496f7",
+          "prompt": {
+            "en": "One uninterrupted flower-shop interior shows a fully clothed adult man behind a wide workbench. He steadies a plain vase with one hand and places a leafy stem with the other, looking up from the vase toward the viewer. The long counter, open wooden shelves, window and floor surround his single working figure. Clean monochrome cartoon ink illustration. Each clothed adult has one broad nearly square face with rounded lower corners above a very short neck and boxlike connected shoulders and torso. Thick black eyebrow strokes sit over tiny eye marks. A long curved nose line and a small round opening or larger black open mouth remain plainly drawn. Firm outside contours enclose finer interior strokes. Wide white facial fields contrast with local black areas and fine parallel or gridlike gray line patterns. Arms and hands are simplified connected forms rather than finely modeled anatomy. His broad rounded-square face and long U-curved nose are visible from the front. He has a simple side-parted dark hair shape and wears a plain long-sleeved work shirt and full trousers."
+          },
+          "native_job_id": "6af76fa200000256000002ed000002ed",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af76fa200000256000002ed000002ed",
+            "api_seconds": 31.664
+          },
+          "max_rgb_channel_delta": 13,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "79192cf0e603d235efbe35d6ed1ab11d71fe302dc2450669c558a24b28999a74",
+            "observation": {
+              "ja": "窓・書棚のある室内で、男性1人が花器の葉枝を両手で整える場面。U字鼻、広い白い顔、太眉・黒い髪面・強い外輪郭を男女画と共有します。顔型は縦長の卵形に変わり、眼も白目付きの丸い描き方で、四角顔・小さい眼の指定は共通していません。衣服の灰色陰影も多く、顔や眼の全指定が再現された組ではありません。手と枝の細部は曖昧ですが、浮遊頭部・シート・明白な増肢や画中の署名・透かしは見られません。",
+              "en": "One man arranges leafy stems in a vase with both hands in a room with shelves and a window. U-curved nose, broad white facial field, heavy brows, black hair and firm outside contours recur with the mixed scene. His face is a longer egg shape and his eyes are round with visible whites, so square faces and tiny eye marks are not consistent. Clothing also has more gray shading; not all requested facial/eye features were reproduced. Hand/stem detail remains ambiguous; no detached head, sheet, obvious extra limb or in-scene signature/watermark was observed."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T20:17:05.204963+00:00",
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
     {
       "id": "anima-text-clean-small-iris",
       "category": "shojo",
