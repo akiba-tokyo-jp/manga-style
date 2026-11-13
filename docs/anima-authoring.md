@@ -24,6 +24,14 @@ SnapRef CSの見本は詳細の観察・制約欄に入力関係を明記する�
 
 PS5 Image Front経由の実出力は `transport_client: ps5-image-front` と証拠の出所を残す。共通の `provider: ps5-anima` はPS5のAnimaバックエンドを指し、Hermes pluginを呼んだとの意味ではない。このクライアントが実送信した `seed: -1` と空文字negativeを、未指定のnullへ置き換えない。返っていない確定seedは不明のままにする。nativeの完了・実step・参照GPU評価・正規化入力SHA、およびnative画像と保存PNGの一致を確認し、参照GPU動作と視覚的な絵柄一致は別に点検する。
 
+### 外部の自作生成見本を入力にする画像変換
+
+`img2img` は入力なしの作画やSnapRefとは区別する。出力の2枚はそれぞれ別native jobの実Anima未加工PNGに限定し、元のGPT自作見本は2枚のAnima原画に数えない。入力画像の元モデルID/version、入力専用role、実際に渡したPNGのSHAとダウンロードURLを `requested_settings.source_images_used` に保持する。元画像を白余白で正方形化した場合は元SHA・寸法・貼付座標も残す。出版社の画像は入力しない。
+
+再投入には各sampleの実入力PNG、実英語全文、`tool_intensity` と実設定を使う。現行providerで `intensity: -50` はdenoise約0.305へ変換される。要求8stepとnative実行3stepを分けて記録し、低denoiseで元の構図・描線を多く保持する変換であることを名称・説明・制約欄で明示する。native GETが返さないprompt/model/seed/samplerを補完せず、tool結果・実送信記録とnativeの入力SHA/出力bytesの証拠範囲を区別する。
+
+実入力PNGはAnimaの原画ZIPと分けた、明示的な入力専用Release assetとして公開し、匿名取得SHAを検証する。原画ZIPは従来どおり2原PNG＋2thumbだけ。`references` にも入力専用と分かるリンクを付ける。入力を公開できない状態、または入力の元モデルをAnimaと誤認させる表示では採用しない。
+
 ## 次の追加
 
 1. 原画と英語全文を生成ごとに保存し、実見して重複人物・文字様印・手足の破綻を点検する。不適合な試行も私有の制作記録には残すが、公開manifestには入れない。
