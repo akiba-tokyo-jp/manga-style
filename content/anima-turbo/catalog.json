@@ -51,6 +51,11 @@
       "tag": "anima-img2img-002",
       "asset": "anima-img2img-002.zip",
       "sha256": "00b262d24a4d7f0ef1aec2483b156fd6242ebdec6b33dea6674e7f83fc6d6623"
+    },
+    {
+      "tag": "anima-img2img-004",
+      "asset": "anima-img2img-004.zip",
+      "sha256": "895aa192a459c706c7c5eef6df3b0327f2c2d47d6737ac8af5076dcba568a241"
     }
   ],
   "entries": [
@@ -4308,6 +4313,222 @@
         }
       ],
       "updated_at": "2026-11-13T05:35:22.295772+00:00"
+    },
+    {
+      "id": "anima-img2img-pale-lace-eyes",
+      "category": "shojo",
+      "title": {
+        "ja": "淡い細線と長い首の大きな瞳（画像変換）",
+        "en": "Pale fine lines, long necks and luminous large eyes (img2img)"
+      },
+      "summary": {
+        "ja": "異なるGPT自作見本2枚を入力にした実Anima画像変換2原画。大きな瞳・細い顎を、強い黒輪郭より淡い細線と柔らかな灰階調でまとめる描法。入力専用画像はAnima原画に数えません。",
+        "en": "Two real Anima img2img originals from different self-generated GPT inputs. Large eyes and narrow jaws combine with pale fine contours and soft gray modeling rather than emphatic black outlines. Input-only images are not Anima originals."
+      },
+      "limitations": {
+        "ja": "低denoise画像変換で入力の構図・描線を多く保持。text2imgや無条件の新規作画ではありません。各source_images_usedの実入力PNG、実英語全文、tool_intensity=-50で再投入。要求8stepに対しnative実行3step、denoise約0.305。入力元モデルchatgpt-imageを明示し、出力原PNGは無加工。大きな瞳・細い顎だけは既存と共通で、新規性の根拠にしません。2枚共通の淡い輪郭/内線の小さい強弱差と柔らかな灰階調で区別。右の細かな瞳ハイライト数、指の全本数、左の画面外の全身比率は不確か。native GET未返却のprompt/model/seed/samplerは推測せず、tool記録とGET入力SHA/出力bytesの証拠範囲を区別。正規販売書影は生成後の一般描法比較のみで、入力や配布には不使用。自己点検は人間承認ではありません。",
+        "en": "Low-denoise conversion retains much of the input layout and drawing; not text2img or unconditioned new drawing. Reuse each source_images_used PNG, exact English text and tool_intensity=-50. Eight requested steps yielded three native evaluations at about0.305 denoise. Source model chatgpt-image is explicit; original outputs are unmodified. Large eyes/narrow jaws alone overlap existing styles and are not novelty evidence. Pale contour/interior lines with small weight differences and soft gray modeling recur in both originals. Right-eye highlight counts, every finger and the off-frame left full-body proportions remain uncertain. Native GET omits prompt/model/seed/sampler; tool reports are distinguished from native input-hash/output-byte proof. The licensed retail cover was compared only after generation, never conditioned or redistributed. Self-review is not human approval."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Unlettered ornamental romance comic. Long narrow adult faces with fine pointed chins, exceptionally large elongated eyes with layered rectangular glints, radiating individual lashes and tiny mouths. Fine flowing contours describe tall slender adults with long necks. Long curls use repeated thin parallel curves and pale gray tone rather than heavy solid-black masses. Small bounded pale shadows, lace-like repeated line patterns and sparse floral ornament frame broad light areas. Refined thin-line hierarchy and softly modeled adult hands."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "正規販売店の公開カラー書影・生成後の一般描法比較のみ（本文未確認・入力/配布不使用）",
+          "url": "https://bookwalker.jp/def259c3f0-d022-4665-aa4c-e9c04ce05db0/"
+        },
+        {
+          "title": "画像変換の実入力（GPT自作見本由来・Anima原画に数えない） / Actual conditioning input, GPT-derived, not an Anima sample",
+          "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-004/reference-input-d68e8e580a79728230a125e2bd96a5452a881345a8e4d553d0ea07b4bbe69308.png"
+        },
+        {
+          "title": "画像変換の実入力（GPT自作見本由来・Anima原画に数えない） / Actual conditioning input, GPT-derived, not an Anima sample",
+          "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-004/reference-input-d8ae873fd6465c371f6d03f6e8428dcdd49a2c02ab593bd09487fc3ad6d494d0.png"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "4a458909abc2a384cbab5f44907009a0daa40d2903644c67100936b3e54d033e.png",
+          "sha256": "4a458909abc2a384cbab5f44907009a0daa40d2903644c67100936b3e54d033e",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "9f028a1925a1c470f2ba9fac720e1169bc8b9cc17758d4bba0ee08c2202e0112.jpg",
+          "thumb_sha256": "9f028a1925a1c470f2ba9fac720e1169bc8b9cc17758d4bba0ee08c2202e0112",
+          "prompt": {
+            "en": "Unlettered ornamental romance comic. Long narrow adult faces with fine pointed chins, exceptionally large elongated eyes with layered rectangular glints, radiating individual lashes and tiny mouths. Fine flowing contours describe tall slender adults with long necks. Long curls use repeated thin parallel curves and pale gray tone rather than heavy solid-black masses. Small bounded pale shadows, lace-like repeated line patterns and sparse floral ornament frame broad light areas. Refined thin-line hierarchy and softly modeled adult hands. Retain the single shared scene of the same fully clothed adult woman and adult man speaking together in one formal hall. Their gazes and one open hand form a gentle conversation, both faces visible in the same space."
+          },
+          "native_job_id": "6af6a8b7000002560000023d0000023d",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "tool_intensity": -50,
+            "denoise_strength": 0.305,
+            "references_used": [],
+            "source_images_used": [
+              {
+                "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-004/reference-input-d68e8e580a79728230a125e2bd96a5452a881345a8e4d553d0ea07b4bbe69308.png",
+                "sha256": "d68e8e580a79728230a125e2bd96a5452a881345a8e4d553d0ea07b4bbe69308",
+                "source_model": {
+                  "id": "chatgpt-image",
+                  "version": "gpt-image-2.6-sunburst"
+                },
+                "source_role": "conditioning-input-only",
+                "original_catalog_style_id": "shojo-palace",
+                "original_sha256": "9601a69209addeb24b50d6a0c409028b85ebb6c7ef3002f208ea97c238609cbf",
+                "input_transformation": {
+                  "kind": "centered white padding only",
+                  "source_size": [
+                    1024,
+                    683
+                  ],
+                  "output_size": [
+                    1024,
+                    1024
+                  ],
+                  "paste_xy": [
+                    0,
+                    170
+                  ],
+                  "no_resize": true
+                }
+              }
+            ]
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 3,
+            "sampler": "euler",
+            "mode": "img2img",
+            "native_job_id": "6af6a8b7000002560000023d0000023d",
+            "api_seconds": 19.484,
+            "denoise_strength": 0.305,
+            "source_normalized_sha256": "99ad379bc00417a2db79eb9291039fbafef47b6b7730c2306bc0380c7470b73a",
+            "model_evidence": "tool-reported; native GET omits model",
+            "native_fields_not_returned": [
+              "prompt",
+              "model",
+              "seed",
+              "sampler"
+            ]
+          },
+          "max_rgb_channel_delta": 16,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "4a458909abc2a384cbab5f44907009a0daa40d2903644c67100936b3e54d033e",
+            "observation": {
+              "ja": "男性風・女性風の着衣人物2人が共通の窓とカーテン前で向き合い、男性の開いた手と相手を見上げる視線が会話を結びます。大きな瞳、細い顎、小さな鼻口、長い首と細い手、輪郭/内線の小さい強弱差、淡い灰での柔らかな立体が2原画共通。目元は局所的に濃く、上着にも暗部があり全てが一様な淡線ではありません。文字透かし・独立頭部・明白な増肢/接続破綻は見当たりません。手は袖から連続しますが重なる指の完全な本数、画面外の全身比率は保証しません。",
+              "en": "Two clothed figures read as a woman and man converse before the same windows and curtains; an open hand and mutual gaze connect them. Large eyes, narrow jaws, tiny nose/mouth, long necks/slender hands, small contour/interior line-weight differences and soft pale-gray volume recur in both outputs. Eyes and the jacket contain local darks, not uniformly faint lines. No readable text/watermark, detached head or obvious extra/disconnected anatomy. The hand continues from its cuff; overlapped finger counts and off-frame full-body proportions are not guaranteed."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "5c413b449e9ff7d0235db6d90230c3b3914ff045b917df0cfb5109d2590a58b2.png",
+          "sha256": "5c413b449e9ff7d0235db6d90230c3b3914ff045b917df0cfb5109d2590a58b2",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "8e57846407fc5e28a384846be2dc7853af011ccc4408da7d38379d7a5d8f0755.jpg",
+          "thumb_sha256": "8e57846407fc5e28a384846be2dc7853af011ccc4408da7d38379d7a5d8f0755",
+          "prompt": {
+            "en": "Unlettered ornamental romance comic. Long narrow adult faces with fine pointed chins, exceptionally large elongated eyes with layered rectangular glints, radiating individual lashes and tiny mouths. Fine flowing contours describe tall slender adults with long necks. Long curls use repeated thin parallel curves and pale gray tone rather than heavy solid-black masses. Small bounded pale shadows, lace-like repeated line patterns and sparse floral ornament frame broad light areas. Refined thin-line hierarchy and softly modeled adult hands. Retain the single full-figure scene of the same fully clothed adult woman turning back on a broad staircase while holding the edge of her long dress. Her face, curls, flowing folds and light ornamental surroundings express the drawing rules."
+          },
+          "native_job_id": "6af6a8d4000002560000023f0000023f",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "tool_intensity": -50,
+            "denoise_strength": 0.305,
+            "references_used": [],
+            "source_images_used": [
+              {
+                "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-004/reference-input-d8ae873fd6465c371f6d03f6e8428dcdd49a2c02ab593bd09487fc3ad6d494d0.png",
+                "sha256": "d8ae873fd6465c371f6d03f6e8428dcdd49a2c02ab593bd09487fc3ad6d494d0",
+                "source_model": {
+                  "id": "chatgpt-image",
+                  "version": "gpt-image-2.6-sunburst"
+                },
+                "source_role": "conditioning-input-only",
+                "original_catalog_style_id": "shojo-palace",
+                "original_sha256": "84115bd240bfc37afbd62a72e24850d8625e6ff8df4ff30d181d50acc215206e",
+                "input_transformation": {
+                  "kind": "centered white padding only",
+                  "source_size": [
+                    683,
+                    1024
+                  ],
+                  "output_size": [
+                    1024,
+                    1024
+                  ],
+                  "paste_xy": [
+                    170,
+                    0
+                  ],
+                  "no_resize": true
+                }
+              }
+            ]
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 3,
+            "sampler": "euler",
+            "mode": "img2img",
+            "native_job_id": "6af6a8d4000002560000023f0000023f",
+            "api_seconds": 19.634,
+            "denoise_strength": 0.305,
+            "source_normalized_sha256": "a29950ef95bae19131dae11e88e35f4c0f2871743834301c1d43d0526b552c9c",
+            "model_evidence": "tool-reported; native GET omits model",
+            "native_fields_not_returned": [
+              "prompt",
+              "model",
+              "seed",
+              "sampler"
+            ]
+          },
+          "max_rgb_channel_delta": 17,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "5c413b449e9ff7d0235db6d90230c3b3914ff045b917df0cfb5109d2590a58b2",
+            "observation": {
+              "ja": "成人風の着衣女性1人が階段で振り返り、片手を手すりに、片手を長いドレスの布に添える一続きの全身場面。細い顎・大きな目・長い首と華奢な体、細い淡線と柔らかな灰階調、目/重なりの局所的な濃色が1枚目と共通。顔・髪・衣服の流れと所作で魅力を示し、白背景棒立ち診断ではありません。文字透かし・独立頭部・明白な増肢/接続破綻は見当たりません。手すり/布と重なる指の細部、瞳の反射の厳密な個数は保留。様式化された顔から年齢を保証する評価ではありません。",
+              "en": "One clothed adult-styled woman turns on a staircase, one hand at the rail and one at her long dress, in a continuous full-figure scene. Narrow jaw, large eyes, long neck/slender body, pale fine lines, soft gray modeling and local eye/overlap darks recur. Face, flowing hair/clothes and gesture express the style, not a neutral white-background standing test. No readable text/watermark, detached head or obvious extra/disconnected anatomy. Rail/cloth-overlapped fingers and exact eye-reflection counts remain uncertain. Stylized appearance is not an age guarantee."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T06:18:32.456560+00:00"
     }
   ]
 }
