@@ -50,6 +50,21 @@ class AnimaCatalogTests(unittest.TestCase):
         path.write_text(json.dumps(registry),encoding='utf-8')
         return path,registry,other
 
+    def test_rejects_all_image_conditioning_in_prompt_only_catalog(self):
+        import copy
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);path,original,_=self.paired_fixture(root)
+            mutations=[
+                lambda s:s['reported_settings'].__setitem__('mode','img2img'),
+                lambda s:s['reported_settings'].__setitem__('mode','snapref_cs'),
+                lambda s:s['requested_settings'].__setitem__('references_used',[{'url':'https://example.com/ref.png'}]),
+                lambda s:s['requested_settings'].__setitem__('source_images_used',[{'url':'https://example.com/input.png'}]),
+            ]
+            for change in mutations:
+                value=copy.deepcopy(original);change(value['entries'][0]['samples'][0]);path.write_text(json.dumps(value),encoding='utf-8')
+                with self.assertRaisesRegex(ValueError,'prompt-only'):
+                    self.module().load_catalog(path,root)
+
     def test_reads_two_independent_required_samples_with_exact_per_image_provenance(self):
         with tempfile.TemporaryDirectory() as tmp:
             path,registry,other=self.paired_fixture(Path(tmp))

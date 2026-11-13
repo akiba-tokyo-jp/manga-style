@@ -85,6 +85,7 @@ def load_catalog(path,archive_dir):
                 observation=review.get('observation')
                 require(isinstance(observation,dict) and all(isinstance(observation.get(lang),str) and observation[lang].strip() for lang in ('ja','en')),'Missing per-image observations')
             reported=sample.get('reported_settings',{});requested=sample.get('requested_settings',{})
+            require(reported.get('mode')=='text2img' and not requested.get('references_used') and not requested.get('source_images_used'),'Anima examples must be prompt-only; image conditioning is not allowed')
             require(reported.get('model')==entry['model_version'] and requested.get('model')==entry['model_version'] and reported.get('provider')=='ps5-anima','Anima provenance model mismatch')
             require(isinstance(sample.get('native_job_id'),str) and re.fullmatch(r'[0-9a-f]{32}',sample['native_job_id']) and reported.get('native_job_id')==sample['native_job_id'],'Missing native generation job')
             for file_key,sha_key,kind in (('file','sha256','PNG'),('thumb','thumb_sha256','JPEG')):
