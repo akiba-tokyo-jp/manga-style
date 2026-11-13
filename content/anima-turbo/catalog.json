@@ -1,6 +1,144 @@
 {
   "schema": 2,
   "repository": "akiba-tokyo-jp/manga-style",
-  "bundles": [],
-  "entries": []
+  "bundles": [
+    {
+      "tag": "anima-text-only-001",
+      "asset": "anima-text-only-001.zip",
+      "sha256": "1d5395b1655a11ef14decb8cab4e2ee5d6bc074f9bd3bc3d5fe79767ca5457ce"
+    }
+  ],
+  "entries": [
+    {
+      "id": "anima-text-clean-small-iris",
+      "category": "shojo",
+      "title": {
+        "ja": "白い肌と小さな鼻口のすっきり日常画",
+        "en": "Clean everyday drawing with white skin and tiny facial marks"
+      },
+      "summary": {
+        "ja": "丸い頬から小さな顎へ絞り、すっきりした線と白場で表情を見せる絵柄。",
+        "en": "Curved cheeks taper to a small chin; economical lines and broad white planes carry expressions."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Clean monochrome slice-of-life manga. Gently tapered cheeks, small rounded chins, slim adult proportions, open white sclera around small dark irises, simply marked small noses and mouths. Smooth modest-weight black outlines with very few internal facial marks. Broad blank white skin, flat dark hair masses, selective light screentone and minimal short creases; no glossy shaded skin."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "正反対な君と僕・公式無料公開本文の顔と線を観察",
+          "url": "https://shonenjumpplus.com/episode/3269754496899770338"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "3546a467026e53fbd6ab8f64549d299b96e88199104388b2106c34b6f882cb6d.png",
+          "sha256": "3546a467026e53fbd6ab8f64549d299b96e88199104388b2106c34b6f882cb6d",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "362797d98e5049164ee4e16a31d68d1ddfd035bcdac2571cfb1cbd2b8a2332e4.jpg",
+          "thumb_sha256": "362797d98e5049164ee4e16a31d68d1ddfd035bcdac2571cfb1cbd2b8a2332e4",
+          "prompt": {
+            "en": "One single unlettered manga panel showing one continuous bookshop interior. One adult woman on the left and one adult man on the right smile toward each other while lifting the same plain paper bag from a counter. Waist-up bodies and naturally connected arms are visible in the shared space. Exactly two complete people, no isolated heads, portrait insets, panels within panels or character studies. Clean monochrome slice-of-life manga. Gently tapered cheeks, small rounded chins, slim adult proportions, open white sclera around small dark irises, simply marked small noses and mouths. Smooth modest-weight black outlines with very few internal facial marks. Broad blank white skin, flat dark hair masses, selective light screentone and minimal short creases; no glossy shaded skin."
+          },
+          "native_job_id": "6af6ee2c000002560000027b0000027b",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6ee2c000002560000027b0000027b",
+            "api_seconds": 30.272
+          },
+          "max_rgb_channel_delta": 33,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "3546a467026e53fbd6ab8f64549d299b96e88199104388b2106c34b6f882cb6d",
+            "observation": {
+              "ja": "一組の男女が書店の同じカウンターで袋を持ち、向き合って笑う場面。白い顔、黒髪、簡潔な輪郭と淡い灰が共通。女性は伏し目で、小さい虹彩の指定が全員に均等に実現したとは言えません。",
+              "en": "A woman and man share one bookshop counter and bag, smiling toward one another. White faces, dark hair, economical contours and pale gray recur. The woman lowers her eyes, so uniformly small irises are not established."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "baa137381e238f24b316fa4773c035eba7bb7efbaadd380443b10b224e7bd13e.png",
+          "sha256": "baa137381e238f24b316fa4773c035eba7bb7efbaadd380443b10b224e7bd13e",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "8a9b0508ed0500d8926c557b9ec8ca880c8f7371dd97e83cfe9cd229e994c14c.jpg",
+          "thumb_sha256": "8a9b0508ed0500d8926c557b9ec8ca880c8f7371dd97e83cfe9cd229e994c14c",
+          "prompt": {
+            "en": "One single unlettered manga panel in a continuous bookshop interior. One adult woman wearing a plainly visible long-sleeved knitted sweater with ribbed cuffs and full-length dark trousers leans over a table, arranging a stack of books with both hands. Three-quarter waist-up view, her expressive face and the clothed torso clearly visible. Only one complete clothed person in one scene, no isolated heads, portrait insets or character studies. Clean monochrome slice-of-life manga. Gently tapered cheeks, small rounded chins, slim adult proportions, open white sclera around small dark irises, simply marked small noses and mouths. Smooth modest-weight black outlines with very few internal facial marks. Broad blank white skin, flat dark hair masses, selective light screentone and minimal short creases; no glossy shaded skin."
+          },
+          "native_job_id": "6af6eef4000002560000027d0000027d",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6eef4000002560000027d0000027d",
+            "api_seconds": 30.976
+          },
+          "max_rgb_channel_delta": 17,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "baa137381e238f24b316fa4773c035eba7bb7efbaadd380443b10b224e7bd13e",
+            "observation": {
+              "ja": "長袖の編み柄セーターと濃色パンツの女性が、書棚前で前屈し机上の本を両手で扱う場面。単一人物の動作と共通する顔線/白黒灰を確認。顔はやや丸く服の線密度は高めです。",
+              "en": "One clothed woman bends over a table and handles books with both hands in a bookshop. Sweater and dark trousers are clear; one continuous action and common face/line/grayscale treatment. Her face is rounder and clothing lines denser."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T10:56:07.496908+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    }
+  ]
 }
