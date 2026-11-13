@@ -36,6 +36,11 @@
       "tag": "anima-structural-002",
       "asset": "anima-structural-002.zip",
       "sha256": "8a4b0c0efa01653b624a70f6f72b0013db6db5786bc579e2a9481e1d6a2957b9"
+    },
+    {
+      "tag": "anima-structural-003",
+      "asset": "anima-structural-003.zip",
+      "sha256": "314a4c11149f56a94f9a798f57aefa2bf5648738a8f1af32f9460c677e720b6d"
     }
   ],
   "entries": [
@@ -3709,6 +3714,150 @@
         }
       ],
       "updated_at": "2026-11-13T01:07:21.780783+00:00",
+      "limitations": {
+        "ja": "原画2枚は異なるnative jobの未加工PNGです。1枚目は2枚目の原画を入力とするSnapRef CS生成で、条件なしの独立抽選2回ではありません。再投入時は2枚目を参照にし、1枚目の全文・実設定と参照SHAを使ってください。両方に同じ絵柄部分を実送信していますが、全場面の頭身や灰面位置を保証しません。手指と指定からの残差は各観察を参照。1枚目はseed=-1と空のnegativeを実送信しましたが、確定seedは返っていません。2枚目の未指定値はnullのままです。自己点検は人間承認とは別です。",
+        "en": "The unmodified originals have distinct native jobs. The first was newly generated with the second as its SnapRef CS input, not as an independent unconditioned draw. To reuse it, provide the second original with the first sample full prompt, actual settings and reference SHA. Both received the exact shared style recipe; universal proportions or gray placement are not guaranteed. Per-image notes retain finger uncertainty and prompt residuals. The first actually submitted seed=-1 and an empty negative; no resolved seed was returned. Unspecified controls for the second remain null. Self-review is not human approval."
+      }
+    },
+    {
+      "id": "anima-probe-flat-microeyes",
+      "category": "yonkoma",
+      "title": {
+        "ja": "小さな黒目と平らな灰影の喜劇線",
+        "en": "Small dark eyes and flat gray comic shadows"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [],
+        "finish": [
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "flat graphic cartoon comic, monochrome. Smooth medium-weight closed contours and broad clean white interiors, solid black tiny dot eyes, low small mouths, broad trapezoid adult human heads and short rectangular noses. Short blocky adult human bodies, flat black clothing shapes and simple pale-gray shadow cutouts."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "悪役令嬢の四畳半・公式公開0588",
+          "url": "https://sai-zen-sen.jp/comics/twi4/yojouhan/0588.html"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "402b37b404e673b86b7321109ca93ba4f9fc89f78960fc097f80ab9ef783295a.png",
+          "sha256": "402b37b404e673b86b7321109ca93ba4f9fc89f78960fc097f80ab9ef783295a",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "166fb77c3bccf96772578a66f8022ac9b40cfa7e72441b371fc6f371d8fa0484.jpg",
+          "thumb_sha256": "166fb77c3bccf96772578a66f8022ac9b40cfa7e72441b371fc6f371d8fa0484",
+          "prompt": {
+            "en": "flat graphic cartoon comic, monochrome. Smooth medium-weight closed contours and broad clean white interiors, solid black tiny dot eyes, low small mouths, broad trapezoid adult human heads and short rectangular noses. Short blocky adult human bodies, flat black clothing shapes and simple pale-gray shadow cutouts. A single unlettered continuous comic panel. TWO distinct fully clothed adults share one low table. LEFT: a WOMAN aged 40 with long straight hair and a long-sleeved blouse. RIGHT: a MAN aged 45 with short hair and a plain shirt. They turn toward each other and jointly hold opposite edges of the SAME plain tray. Both faces and shoulders are clearly visible at equal scale. Apply the reference drawing rules to BOTH people, INCLUDING THE WOMAN: the same face construction, degree of simplification, contour and interior-line hierarchy, and white/black/gray rendering. Preserve one continuous shared scene."
+          },
+          "native_job_id": "6af68086000002560000021700000217",
+          "requested_settings": {
+            "transport_client": "ps5-image-front",
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1,
+            "sampler": "euler",
+            "seed": -1,
+            "negative_prompt": "",
+            "references_used": [
+              {
+                "source_role": "showcase",
+                "sha256": "96d6763a8e2033b46aee2fa56bf0ab28c0a08f6f4006d627dc39be4e0f4724e8",
+                "normalized_input_sha256": "36c94b810fcb2cc1d110e024651f782a0e129f9353f8e23328c2a334c8fd255f"
+              }
+            ],
+            "reference_adapter": "snapref_cs",
+            "reference_strength": 1
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "snapref_cs",
+            "native_job_id": "6af68086000002560000021700000217",
+            "api_seconds": 37.5718671,
+            "transport_client": "ps5-image-front",
+            "evidence_origin": "normalized real frontend metadata plus native GET and exact PNG",
+            "native_gpu_verified": true,
+            "reference_gpu_verified": true,
+            "sampler_origin": "frontend-request",
+            "actual_seed": null,
+            "frontend_metadata_sha256": "b75568aa2ab2a5ec5d81c3fc338aacb757a775e126d3d82a4ce01eea508759fb"
+          },
+          "max_rgb_channel_delta": 35,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "402b37b404e673b86b7321109ca93ba4f9fc89f78960fc097f80ab9ef783295a",
+            "observation": {
+              "ja": "箱状の頭の女性役と短髪の男性役が同じ卓の皿を挟み、手を寄せて向き合います。小さい黒目と簡潔な鼻口、太く閉じた外形と疎な細い内線、境界の明瞭な灰色の落ち影・接触影が2枚目と共通。読める文字・透かし・明白な増肢や断裂なし。手指は重なりと省略があり確定できません。全人物の頭部は同一の箱形ではなく、少数の細線や淡い青灰色も残っています。2枚目を入力にSnapRef CSで新規生成しました。",
+              "en": "A box-headed woman-presenting adult and short-haired man-presenting adult face one another at a shared table/plate. Small dark eyes, sparse facial marks, strong closed contours with thin interior marks, and bounded flat gray contact/cast shadows recur in the showcase. No readable text/watermark or obvious extra/disconnected anatomy. Fingers overlap and remain simplified. Not every head is equally box-shaped; sparse fine lines and a faint blue-gray tint remain. This scene was newly generated with the second original as its SnapRef CS input."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "96d6763a8e2033b46aee2fa56bf0ab28c0a08f6f4006d627dc39be4e0f4724e8.png",
+          "sha256": "96d6763a8e2033b46aee2fa56bf0ab28c0a08f6f4006d627dc39be4e0f4724e8",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "2f20a431cf9aad006040bb6f4982c3456edfc658efcb92591efdc0b6e683c294.jpg",
+          "thumb_sha256": "2f20a431cf9aad006040bb6f4982c3456edfc658efcb92591efdc0b6e683c294",
+          "prompt": {
+            "en": "flat graphic cartoon comic, monochrome. A single full-bleed unlettered manga panel. One adult man aged 45 sits sideways at a low table in a waist-up three-quarter view, resting one forearm on the table and turning his complete face toward the viewer with a wry raised eyebrow. The other hand stays below the table. Fully covering plain everyday clothes, a simple window and ground give depth. Drawing style: flat graphic cartoon comic, monochrome. Smooth medium-weight closed contours and broad clean white interiors, solid black tiny dot eyes, low small mouths, broad trapezoid adult human heads and short rectangular noses. Short blocky adult human bodies, flat black clothing shapes and simple pale-gray shadow cutouts."
+          },
+          "native_job_id": "6af6522500000256000001fd000001fd",
+          "requested_settings": {
+            "aspect_ratio": "square",
+            "model": "anima-turbo-v1.1",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": [],
+            "size": "1024x1024"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6522500000256000001fd000001fd",
+            "api_seconds": 30.192
+          },
+          "max_rgb_channel_delta": 22,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "96d6763a8e2033b46aee2fa56bf0ab28c0a08f6f4006d627dc39be4e0f4724e8",
+            "observation": {
+              "ja": "箱状の大頭で目鼻口を小さくまとめた人物が椅子に座り、卓で頬に手を添えます。滑らかな太い外形、少数の細い内線、白い顔と手、黒面と境界の明瞭な薄灰の接触影で形を整理。読める文字・透かし・明白な余剰人体なし。手首や指の細部は省略され、頭身を他の場面にも保証するものではありません。薄い青灰色や少量の補助線は未加工で保持しています。",
+              "en": "A large box-headed figure with small facial marks sits at a desk with a hand at the cheek. Smooth strong outer contours, sparse thin interior marks, white face/hands, black masses and sharply bounded pale-gray contact shadows organize the forms. No readable text/watermark or obvious extra anatomy. Wrists/fingers are simplified and universal body proportions are not established. Faint blue-gray tint and minor auxiliary lines are retained unmodified."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T03:17:59.597647+00:00",
       "limitations": {
         "ja": "原画2枚は異なるnative jobの未加工PNGです。1枚目は2枚目の原画を入力とするSnapRef CS生成で、条件なしの独立抽選2回ではありません。再投入時は2枚目を参照にし、1枚目の全文・実設定と参照SHAを使ってください。両方に同じ絵柄部分を実送信していますが、全場面の頭身や灰面位置を保証しません。手指と指定からの残差は各観察を参照。1枚目はseed=-1と空のnegativeを実送信しましたが、確定seedは返っていません。2枚目の未指定値はnullのままです。自己点検は人間承認とは別です。",
         "en": "The unmodified originals have distinct native jobs. The first was newly generated with the second as its SnapRef CS input, not as an independent unconditioned draw. To reuse it, provide the second original with the first sample full prompt, actual settings and reference SHA. Both received the exact shared style recipe; universal proportions or gray placement are not guaranteed. Per-image notes retain finger uncertainty and prompt residuals. The first actually submitted seed=-1 and an empty negative; no resolved seed was returned. Unspecified controls for the second remain null. Self-review is not human approval."
