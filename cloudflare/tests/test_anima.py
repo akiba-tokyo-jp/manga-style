@@ -121,11 +121,14 @@ class AnimaCatalogTests(unittest.TestCase):
                 self.assertEqual(html.count('class="sample-image"'),2)
                 for i,sample in enumerate(registry['entries'][0]['samples']):
                     self.assertEqual(api['samples'][i]['prompt'],sample['prompt'])
-                    self.assertEqual(api['samples'][i]['native_job_id'],sample['native_job_id'])
-                    self.assertEqual(api['samples'][i]['reported_settings'],sample['reported_settings'])
+                    for key in ('native_job_id','reported_settings','settings','sha256','visual_review'):
+                        self.assertNotIn(key,api['samples'][i])
+                    self.assertNotIn('Native job',html)
+                    self.assertNotIn('requested CFG',html)
+                    self.assertNotIn('Seed / Negative prompt',html)
                     self.assertIn('sample-prompt-'+str(i),html)
                     self.assertIn(sample['prompt']['en'],html)
-                    self.assertIn(sample['visual_review']['observation'][lang],html)
+                    self.assertNotIn('class="quiet-note sample-observation"',html)
                     body=(output/'files/anima-turbo/anima-example'/sample['file']).read_bytes()
                     self.assertEqual(hashlib.sha256(body).hexdigest(),sample['sha256'])
 

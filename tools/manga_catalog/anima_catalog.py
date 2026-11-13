@@ -147,18 +147,15 @@ def add_to_export(stage,rows,store,main,write,image_records):
             payload={'id':sid,'path':[],'level':1,'category':root,'title':title,'summary':summary,
                      'expression':row['features']['expression'][0],
                      'model':{'id':MODEL,'version':row['model_version']},'prompt':row['prompt'],'avoid':[],
-                     'samples':[{'subject':s.get('role','example'),'url':image_url(row,'file',s),'prompt':s['prompt'],
-                                 'settings':s['requested_settings'],'reported_settings':s['reported_settings'],
-                                 'sha256':s['sha256'],'native_job_id':s['native_job_id'],
-                                 'visual_review':s.get('visual_review')} for s in row['samples']],
+                     'samples':[{'subject':s.get('role','example'),'url':image_url(row,'file',s),'prompt':s['prompt']} for s in row['samples']],
                      'reference':0,'children':[],'comparisons':[],'version':row.get('version',1),'updated_at':row.get('updated_at'),
                      'license':{'generated':True,'artist_names':False,'terms':main.LICENSE_TERMS},
-                     'limitations':row['limitations'][lang],'references':row.get('references',[])}
+                     'references':row.get('references',[])}
             payloads[lang]=payload
             if root=='other':payload.update(reference_context=row['reference_context'],sample_content=row['sample_content'])
             ctx=context(lang,'/styles/'+sid,title)
             ctx.update(entry=row,title=title,summary=summary,limitation=row['limitations'][lang],
-                       sample_views=[{'sample':s,'url':image_url(row,'file',s),'observation':s.get('visual_review',{}).get('observation',{}).get(lang,'')} for s in row['samples']],
+                       sample_views=[{'sample':s,'url':image_url(row,'file',s)} for s in row['samples']],
                        sample=sample,style_text=row['prompt']['en'],
                        full_prompt=sample['prompt']['en'],api_url=main.SITE_ORIGIN+'/v1/styles/'+sid+'?model='+MODEL,
                        copy_prefix='Anima Turbo / '+category_title(root,lang)+' / '+sid,
