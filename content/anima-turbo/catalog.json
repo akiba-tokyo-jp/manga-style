@@ -51,6 +51,11 @@
       "tag": "anima-text-only-010",
       "asset": "anima-text-only-010.zip",
       "sha256": "55cf0017f68140e74e1ff0a3a53bbc0bb71273be7b74e13a73adfe696e0a4b65"
+    },
+    {
+      "tag": "anima-text-only-011",
+      "asset": "anima-text-only-011.zip",
+      "sha256": "4eaa4d3933a464beb2f0c2e986ff4ae0f7df2c7283985944534c7cee0dd781a5"
     }
   ],
   "entries": [
@@ -2537,6 +2542,137 @@
         }
       ],
       "updated_at": "2026-11-13T17:59:28.724689+00:00",
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-round-white-eyes-fine-lids",
+      "category": "seinen",
+      "title": {
+        "ja": "大きな丸白目と黒点瞳の簡略人物画",
+        "en": "Broad round white eyes and black-dot pupils in simplified character ink"
+      },
+      "prompt": {
+        "en": "Monochrome drawn character manga. Each clothed adult has one head linked through its neck to connected shoulders and arms. Broad round open white eyes contain very small black pupils; a firm upper arc and a fine lower arc outline the large white opening. Brows use overlapping fine curved strokes. A long nose bridge uses a thin line and one side shadow; curved nostril marks and local black define the nose tip. A short lightly closed mouth sits above a rounded-to-angular cheek and chin contour. Weighted outside lines and finer interior creases leave white skin, with parallel and crossed hatch gray and local black recesses."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "ヒストリエ・正規無料本文6,7の可視顔断片",
+          "url": "https://comic-days.com/episode/13932016480029471716"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "5f42b66cce5a68d9ae1f132c6c74f0c6d4a8d429a08ddb9dd51c478ec59dc304.png",
+          "sha256": "5f42b66cce5a68d9ae1f132c6c74f0c6d4a8d429a08ddb9dd51c478ec59dc304",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "eb2a90a50fae8cc15dfc9a5e2e2f184dd4c831fe9122dd602da94765b3acd649.jpg",
+          "thumb_sha256": "eb2a90a50fae8cc15dfc9a5e2e2f184dd4c831fe9122dd602da94765b3acd649",
+          "prompt": {
+            "en": "One continuous flower-shop drawing shows a fully clothed adult woman and adult man working together at one long counter. Monochrome drawn character manga. Each clothed adult has one head linked through its neck to connected shoulders and arms. Broad round open white eyes contain very small black pupils; a firm upper arc and a fine lower arc outline the large white opening. Brows use overlapping fine curved strokes. A long nose bridge uses a thin line and one side shadow; curved nostril marks and local black define the nose tip. A short lightly closed mouth sits above a rounded-to-angular cheek and chin contour. Weighted outside lines and finer interior creases leave white skin, with parallel and crossed hatch gray and local black recesses. The woman has wavy hair drawn as one simple black shape and a plain long-sleeved blouse. The man has a short black hair patch, a small black moustache stroke and a plain long-sleeved shirt. Both wear trousers and handle the vase and stems on the same counter; floor, shelves and window join the room."
+          },
+          "native_job_id": "6af75ec800000256000002e3000002e3",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af75ec800000256000002e3000002e3",
+            "api_seconds": 31.486
+          },
+          "max_rgb_channel_delta": 15,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "5f42b66cce5a68d9ae1f132c6c74f0c6d4a8d429a08ddb9dd51c478ec59dc304",
+            "observation": {
+              "ja": "花器とカウンターのある店内に、波髪・ブラウスの女性と短髪・小口髭の男性が立つ一場面。女性は腕組み、男性は手を背後に回しており、指定した花の共同作業は出ていません。大きな丸い白目と独立した黒点瞳、白い顔面と少ない顔線、黒灰の衣服面を確認。鼻は長い鼻筋の陰影より突出する輪郭が主で、女性服の斜線も密です。",
+              "en": "A woman with wavy hair/blouse and a man with short hair/small moustache stand in one flower-shop interior. The woman folds her arms and the man holds his hands behind him; requested shared flower arranging is not achieved. Broad round whites, separate black-dot pupils, white faces, few face marks and black-gray clothing surfaces recur. Noses project in outline rather than showing long-bridge shadow; female clothing hatching is dense."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "fa73e1be68291dabcdae39503db9338338a07bc29544efe65938124f1e25cb02.png",
+          "sha256": "fa73e1be68291dabcdae39503db9338338a07bc29544efe65938124f1e25cb02",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "3e16ab309b5b4164dec5d61f402e443bae698d59662fde8e66a3a6a1ca48ca70.jpg",
+          "thumb_sha256": "3e16ab309b5b4164dec5d61f402e443bae698d59662fde8e66a3a6a1ca48ca70",
+          "prompt": {
+            "en": "One continuous flower-shop drawing shows a fully clothed adult woman arranging leafy stems in a vase on one long counter. Monochrome drawn character manga. Each clothed adult has one head linked through its neck to connected shoulders and arms. Broad round open white eyes contain very small black pupils; a firm upper arc and a fine lower arc outline the large white opening. Brows use overlapping fine curved strokes. A long nose bridge uses a thin line and one side shadow; curved nostril marks and local black define the nose tip. A short lightly closed mouth sits above a rounded-to-angular cheek and chin contour. Weighted outside lines and finer interior creases leave white skin, with parallel and crossed hatch gray and local black recesses. The woman has wavy hair drawn as one simple black shape and a plain long-sleeved blouse with full trousers. Her hands hold the vase and stems; her waist, shoulders, neck and arms form one working figure. Floor, shelves and window join the same room."
+          },
+          "native_job_id": "6af75f7800000256000002e4000002e4",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af75f7800000256000002e4000002e4",
+            "api_seconds": 31.476
+          },
+          "max_rgb_channel_delta": 15,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "fa73e1be68291dabcdae39503db9338338a07bc29544efe65938124f1e25cb02",
+            "observation": {
+              "ja": "女性4人が奥行きのある共通の作業台で鉢の植物を扱う場面。1人を指定した文ですが、複数の人物が一つの店内に繋がっている構図です。大きな丸白目、黒点瞳、少ない顔線、白顔と黒灰面を男女画と共有。一部の瞳は下縁に接しており、すべてが独立しているわけではありません。細い下瞼や長い鼻影も弱い状態です。",
+              "en": "Four women handle potted plants along one shared counter in a connected shop interior, rather than the requested single woman. Broad round whites, black-dot pupils, sparse face marks and white/black/gray surfaces recur with the mixed scene. Some pupils touch the lower eye edge rather than floating independently; fine lower lids and long nose shadow remain weak. No sheet, detached head, neck-body fusion or obvious extra limb was observed."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T18:57:45.597706+00:00",
       "summary": {
         "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
         "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
