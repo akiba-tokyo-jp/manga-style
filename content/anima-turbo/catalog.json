@@ -46,6 +46,11 @@
       "tag": "anima-text-only-009",
       "asset": "anima-text-only-009.zip",
       "sha256": "13fb6901a2c40468ef7d31b63611c126f2dd1a5141bc6594e09dd0a6810ee0aa"
+    },
+    {
+      "tag": "anima-text-only-010",
+      "asset": "anima-text-only-010.zip",
+      "sha256": "55cf0017f68140e74e1ff0a3a53bbc0bb71273be7b74e13a73adfe696e0a4b65"
     }
   ],
   "entries": [
@@ -2405,6 +2410,137 @@
         }
       ],
       "updated_at": "2026-11-13T17:23:02.618941+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-broad-block-jaw-small-eyes",
+      "category": "gag",
+      "title": {
+        "ja": "幅広い頬顎と黒口を強調する角張り人物画",
+        "en": "Broad angular cheeks and jaw with emphatic black mouths"
+      },
+      "prompt": {
+        "en": "Bold monochrome comic caricature with broad angular cheeks and a heavy square jaw. Each clothed adult has one strongly blocklike head joined through its neck to connected shoulders and arms. Very small white eyes with tiny black pupils sit under thick blunt black brows. A large blunt nose projects with firm nostril accents; a wide expressive mouth opens into a strong black shape. Thick firm outside contours and finer short crease strokes emphasize the exaggerated face. Slanted hatching, dotted gray and hard local black masses build the cheek and chin volume while leaving bright white planes."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "アゴなしゲンとオレ物語・正規無料本文4,5の幅広い側の可視顔断片",
+          "url": "https://comic-days.com/episode/13932016480030382024"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "cec5ae25e39870018ea2d52ac3295def1b3af116469010ce12693c1e294583c2.png",
+          "sha256": "cec5ae25e39870018ea2d52ac3295def1b3af116469010ce12693c1e294583c2",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "4b7871ff5cd73e8b306274c78c3f641789bc7daa6936c4c7b69b6b7436a94bd3.jpg",
+          "thumb_sha256": "4b7871ff5cd73e8b306274c78c3f641789bc7daa6936c4c7b69b6b7436a94bd3",
+          "prompt": {
+            "en": "A candid unlettered working moment in a small flower shop. A twenty-eight-year-old woman with short wavy hair and a twenty-nine-year-old man with close-cropped hair stand beside one counter and arrange a plain wide vase of flowers together. Both wear plain long-sleeved shirts and full trousers. Their adult faces, connected necks, shoulders and arms, vase, flowers, counter and nearby shelves share one coherent space. Bold monochrome comic caricature with broad angular cheeks and a heavy square jaw. Each clothed adult has one strongly blocklike head joined through its neck to connected shoulders and arms. Very small white eyes with tiny black pupils sit under thick blunt black brows. A large blunt nose projects with firm nostril accents; a wide expressive mouth opens into a strong black shape. Thick firm outside contours and finer short crease strokes emphasize the exaggerated face. Slanted hatching, dotted gray and hard local black masses build the cheek and chin volume while leaving bright white planes."
+          },
+          "native_job_id": "6af7512900000256000002d9000002d9",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7512900000256000002d9000002d9",
+            "api_seconds": 31.579
+          },
+          "max_rgb_channel_delta": 16,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "cec5ae25e39870018ea2d52ac3295def1b3af116469010ce12693c1e294583c2",
+            "observation": {
+              "ja": "花店で男女2人が花器を両側から支える一場面。幅広い頬から顎まで重さを保つ箱形の下顔、黒く開く口、太い外線と細い内線、斜線・点描の灰を確認。既存の縦長で削げた成熟角顔とは顔形と内側の配置が異なります。目鼻口を圧縮する指定は弱く、鼻は大きく出ています。重なる手元はやや読みにくい状態です。",
+              "en": "Two adults, a man and a woman, support a flower vessel in one shop space. Heavy broad boxlike lower faces, black open mouths, bold outer/fine inner lines, hatching and dotted gray recur. Face shape and internal arrangement differ from the existing tall hollow-cheeked mature angular family. Requested compact eye/nose/mouth placement is weak and noses are large; overlapping hands remain somewhat hard to read."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "f4e6bfcf7ed8a99904ca42510725d6cf1e07fb2eefc8cb8985e1550ae61f829c.png",
+          "sha256": "f4e6bfcf7ed8a99904ca42510725d6cf1e07fb2eefc8cb8985e1550ae61f829c",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "65d8c054afb0e659c0eb7dfef0ea203ef4d9ca9b5c75c2376463ad61e625320e.jpg",
+          "thumb_sha256": "65d8c054afb0e659c0eb7dfef0ea203ef4d9ca9b5c75c2376463ad61e625320e",
+          "prompt": {
+            "en": "A candid unlettered working moment in a small flower shop. A twenty-eight-year-old woman with short wavy hair wears a plain long-sleeved shirt and full trousers. She stands beside a window at one counter, holding a plain vase steady with one hand while arranging a long leafy stem with the other. Her adult face, connected shoulders and arms, vase, stem, counter and shop shelves share one coherent space. Bold monochrome comic caricature with broad angular cheeks and a heavy square jaw. Each clothed adult has one strongly blocklike head joined through its neck to connected shoulders and arms. Very small white eyes with tiny black pupils sit under thick blunt black brows. A large blunt nose projects with firm nostril accents; a wide expressive mouth opens into a strong black shape. Thick firm outside contours and finer short crease strokes emphasize the exaggerated face. Slanted hatching, dotted gray and hard local black masses build the cheek and chin volume while leaving bright white planes."
+          },
+          "native_job_id": "6af751e900000256000002da000002da",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af751e900000256000002da000002da",
+            "api_seconds": 31.543
+          },
+          "max_rgb_channel_delta": 13,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "f4e6bfcf7ed8a99904ca42510725d6cf1e07fb2eefc8cb8985e1550ae61f829c",
+            "observation": {
+              "ja": "着衣の人物1人が花瓶の枝葉に手を添え、店内の鏡に人物が映る場面。鏡像を別の人物見本とは数えていません。幅広い箱形下顔、黒口、強い外線と細い内線、斜線の灰を男女画と共有。横顔の顎先はやや細く、鏡像との顔形の差が残ります。目鼻口の強い圧縮も十分ではありません。浮遊頭部や明白な増肢は見当たりません。",
+              "en": "One clothed person touches branches in a vase while reflected in a shop mirror; the reflection is not counted as a separate character study. Broad boxlike lower-face mass, black mouth, strong outer/fine inner lines and hatch gray recur with the mixed scene. The profile chin tapers somewhat, reflection face shape differs, and strong compacting of the internal features is not fully achieved. No detached heads or obvious extra limbs were observed."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T17:59:28.724689+00:00",
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
       "limitations": {
         "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
         "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
