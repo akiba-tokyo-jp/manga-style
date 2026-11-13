@@ -26,6 +26,11 @@
       "tag": "anima-text-only-005",
       "asset": "anima-text-only-005.zip",
       "sha256": "62348518a3f1bbdf8ce6cfe0aab6275ae7763a0d0792c4b873b6d9c59119e51d"
+    },
+    {
+      "tag": "anima-text-only-006",
+      "asset": "anima-text-only-006.zip",
+      "sha256": "ef4ee9aaf3240a1737f10a1e72b7393658bbc3910f9a3f013dd166fc304c8391"
     }
   ],
   "entries": [
@@ -1465,6 +1470,270 @@
         }
       ],
       "updated_at": "2026-11-13T14:43:30.957243+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-swept-lids-soft-color",
+      "category": "other",
+      "title": {
+        "ja": "細長い頬と濃い上瞼の柔らかな彩色画",
+        "en": "Tapered cheeks and dark upper lids in soft color"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Soft-color clean-ink character drawing. Original mature adult faces are elongated, with smooth long cheeks narrowing to short pointed chins. Narrow curved almond eyes sit under thick sweeping upper lids; lower lids use light fine lines. A short nose-ridge curve and small nostril shadow define the nose. Upper and lower lip shapes remain clearly separated with subdued lip color. Controlled dark contours and very sparse facial accents. Smooth bounded tonal gradients model the cheek, neck and hands; broad glossy hair planes have long dark strand separations. Muted peach skin, gray, deep teal and soft umber organize the color."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "G-taste1・正規配信ページの公開表紙のみ",
+          "url": "https://comic-days.com/volume/10834108156633070124"
+        }
+      ],
+      "version": 1,
+      "reference_context": "adult-manga",
+      "sample_content": "non-explicit-fully-clothed-adult",
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "d9f0ebcaa782333f36b8d7a0b2c1904cc11e7af1acc4c1a61e1edb9aa7b62d1a.png",
+          "sha256": "d9f0ebcaa782333f36b8d7a0b2c1904cc11e7af1acc4c1a61e1edb9aa7b62d1a",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "6957b28e83b61a572a038338ac67e75aaa19f78e5ba4e93b66f8f6375e2a0164.jpg",
+          "thumb_sha256": "6957b28e83b61a572a038338ac67e75aaa19f78e5ba4e93b66f8f6375e2a0164",
+          "prompt": {
+            "en": "Soft-color clean-ink character drawing. Original mature adult faces are elongated, with smooth long cheeks narrowing to short pointed chins. Narrow curved almond eyes sit under thick sweeping upper lids; lower lids use light fine lines. A short nose-ridge curve and small nostril shadow define the nose. Upper and lower lip shapes remain clearly separated with subdued lip color. Controlled dark contours and very sparse facial accents. Smooth bounded tonal gradients model the cheek, neck and hands; broad glossy hair planes have long dark strand separations. Muted peach skin, gray, deep teal and soft umber organize the color. One unlettered working moment inside a pottery studio. A forty-year-old woman with short brown hair and a forty-year-old man with short gray hair stand beside one counter and carry a tray of plain small ceramic cups together. Both wear opaque long-sleeved work shirts and full trousers. Their adult faces, connected arms, hands on the same tray, counter and shelves of cups share one continuous medium view."
+          },
+          "native_job_id": "6af7296e00000256000002ba000002ba",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7296e00000256000002ba000002ba",
+            "api_seconds": 31.56
+          },
+          "max_rgb_channel_delta": 129,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "d9f0ebcaa782333f36b8d7a0b2c1904cc11e7af1acc4c1a61e1edb9aa7b62d1a",
+            "observation": {
+              "ja": "着衣の成人男女が陶芸工房でカップ5個を載せた盆を一緒に支える場面。長めの頬と絞る顎、濃い上瞼、鼻翼と上下唇の境界、面の濃淡を確認。制作の途中より盆を見せる静止感があり、男性の頬と口周りの皺・質感は女性や魅力画より多めです。",
+              "en": "Clothed adult woman and man jointly hold a tray of five cups in a pottery studio. Long cheeks, tapered chin, dark upper lids, nasal/lip boundaries and modeled tone recur. The pose is static rather than active making; male cheek/mouth creases and texture are busier than the woman/showcase."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "c7f52eeb8120ffa3d8ec66fab96768114c96151998d98dc1c45867968fcde62a.png",
+          "sha256": "c7f52eeb8120ffa3d8ec66fab96768114c96151998d98dc1c45867968fcde62a",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "aa791ed84c7b8ce1e10fc1ecaa667220c3d1d2e0a3d326c1b4499583904e25a6.jpg",
+          "thumb_sha256": "aa791ed84c7b8ce1e10fc1ecaa667220c3d1d2e0a3d326c1b4499583904e25a6",
+          "prompt": {
+            "en": "Soft-color clean-ink character drawing. Original mature adult faces are elongated, with smooth long cheeks narrowing to short pointed chins. Narrow curved almond eyes sit under thick sweeping upper lids; lower lids use light fine lines. A short nose-ridge curve and small nostril shadow define the nose. Upper and lower lip shapes remain clearly separated with subdued lip color. Controlled dark contours and very sparse facial accents. Smooth bounded tonal gradients model the cheek, neck and hands; broad glossy hair planes have long dark strand separations. Muted peach skin, gray, deep teal and soft umber organize the color. One unlettered working moment inside a pottery studio. A forty-year-old woman with short brown hair wears an opaque long-sleeved work shirt and full trousers. She leans slightly over one counter and carefully polishes a large plain ceramic bowl with a folded cloth, smiling calmly. Her adult face, connected shoulders and arms, bowl, cloth, counter and shelves share one continuous medium view."
+          },
+          "native_job_id": "6af72acd00000256000002bd000002bd",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af72acd00000256000002bd000002bd",
+            "api_seconds": 31.581
+          },
+          "max_rgb_channel_delta": 110,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "c7f52eeb8120ffa3d8ec66fab96768114c96151998d98dc1c45867968fcde62a",
+            "observation": {
+              "ja": "着衣の成人女性1人が作業台の大鉢の縁に手を添え、もう一方の手で道具を使う陶芸場面。長い頬と絞る顎、濃い上瞼、鼻と上下唇、輪郭と面陰影を共有。指定の布で磨く動作は明瞭でなく、男女画より顔線が少なく滑らかな仕上がりです。",
+              "en": "One clothed adult woman braces a large ceramic bowl rim and works with a tool at the studio counter. Long cheeks, tapered chin, dark upper lids, defined nose/lips, contours and modeled tone recur. Cloth-polishing is not clearly realized; facial marks are fewer and the finish smoother than in the mixed scene."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T15:33:40.749389+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-tiny-marks-egg-heads",
+      "category": "essay",
+      "title": {
+        "ja": "大きな卵形頭と小さな目口の小柄な人物画",
+        "en": "Oversized egg-shaped heads and tiny features on compact bodies"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "rough"
+        ],
+        "proportion": [
+          "chibi"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Loose monochrome everyday cartoon. Each clothed adult has one large round-to-egg head, wider than the narrow rounded shoulders beneath it. Tiny dot or short-arc eyes, a tiny nose stroke and a little curved mouth sit within broad blank cheeks. A slim neck links that head to a simply rounded torso and thin simplified forearms. Slightly trembling dark outlines vary gently in width, with very few inner marks and short diagonal cheek creases. Flat midgray clothing tone, sparse parallel fold strokes, compact black hair and large white facial areas."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "妻に恋する66の方法・公式無料本文画像2,3",
+          "url": "https://comic-days.com/episode/13932016480029569938"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "434e81652abb76e44d666ec4fa5c88399c6722bad704234b9bc7bffa9b75cd28.png",
+          "sha256": "434e81652abb76e44d666ec4fa5c88399c6722bad704234b9bc7bffa9b75cd28",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "a5b2be106bffb95de5f534aae013686725df18f29fd45671b4ee01464db1db27.jpg",
+          "thumb_sha256": "a5b2be106bffb95de5f534aae013686725df18f29fd45671b4ee01464db1db27",
+          "prompt": {
+            "en": "One unlettered working moment in a community kitchen. A forty-year-old woman with short gray hair and a forty-year-old man with wavy hair stand beside one table and jointly set a large plain bowl onto it. Both wear plain long-sleeved work shirts and full trousers. Their adult faces, connected arms, bowl, tabletop and kitchen shelves occupy one continuous medium view. Loose monochrome everyday cartoon. Each clothed adult has one large round-to-egg head, wider than the narrow rounded shoulders beneath it. Tiny dot or short-arc eyes, a tiny nose stroke and a little curved mouth sit within broad blank cheeks. A slim neck links that head to a simply rounded torso and thin simplified forearms. Slightly trembling dark outlines vary gently in width, with very few inner marks and short diagonal cheek creases. Flat midgray clothing tone, sparse parallel fold strokes, compact black hair and large white facial areas."
+          },
+          "native_job_id": "6af72f7a00000256000002c2000002c2",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af72f7a00000256000002c2000002c2",
+            "api_seconds": 30.775
+          },
+          "max_rgb_channel_delta": 58,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "434e81652abb76e44d666ec4fa5c88399c6722bad704234b9bc7bffa9b75cd28",
+            "observation": {
+              "ja": "着衣の成人男女2人が台所で大鉢を共同で支える一場面。大きな卵形～丸い頭、小さな目口、細い首肩と小さな胴、白い顔と灰面を確認。外線は指定ほど揺れず滑らかで、濃茶の色味が残っています。",
+              "en": "Two clothed adults jointly support a large bowl in one kitchen scene. Oversized egg/round heads, tiny facial marks, thin neck/shoulders, compact torsos and white/gray fields recur. Contours are smoother than the trembling-line request and dark brown tint remains."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "9210031874d568d6fede5c40e26a5446aee01775150b87453c0157ccb9d4bbfe.png",
+          "sha256": "9210031874d568d6fede5c40e26a5446aee01775150b87453c0157ccb9d4bbfe",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "0da360f28b2efa74d78e05ca0794204d491548298e4c16049f249c71c8faf32a.jpg",
+          "thumb_sha256": "0da360f28b2efa74d78e05ca0794204d491548298e4c16049f249c71c8faf32a",
+          "prompt": {
+            "en": "One unlettered working moment in a community kitchen. A forty-year-old woman with short gray hair wears a plain long-sleeved work shirt and full trousers. She leans over one table and mixes a large plain bowl with a wooden spoon, smiling softly. Her adult face, connected shoulders and arms, spoon, bowl, tabletop and simple cupboards share one continuous medium view. Loose monochrome everyday cartoon. Each clothed adult has one large round-to-egg head, wider than the narrow rounded shoulders beneath it. Tiny dot or short-arc eyes, a tiny nose stroke and a little curved mouth sit within broad blank cheeks. A slim neck links that head to a simply rounded torso and thin simplified forearms. Slightly trembling dark outlines vary gently in width, with very few inner marks and short diagonal cheek creases. Flat midgray clothing tone, sparse parallel fold strokes, compact black hair and large white facial areas."
+          },
+          "native_job_id": "6af72f9800000256000002c3000002c3",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af72f9800000256000002c3000002c3",
+            "api_seconds": 30.707
+          },
+          "max_rgb_channel_delta": 88,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "9210031874d568d6fede5c40e26a5446aee01775150b87453c0157ccb9d4bbfe",
+            "observation": {
+              "ja": "着衣人物1人が片手で鉢を混ぜ、もう一方の手を台につく連続した台所場面。大きな頭、小さな目口、細い首肩と灰面を共有。男女画より頭身が低く、線の揺れは主に周囲の震え記号として現れ、濃茶の線と茶色の道具が残っています。",
+              "en": "One clothed figure mixes the bowl with one hand and rests the other on the counter in a continuous kitchen scene. Large head, tiny facial marks, thin neck/shoulders and gray fields recur. Proportions are more compact than the mixed image; wobble appears mostly as surrounding motion marks, with dark brown lines and a brown utensil."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T15:33:40.749389+00:00",
       "limitations": {
         "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
         "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
