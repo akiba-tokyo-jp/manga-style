@@ -3,6 +3,11 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
+      "tag": "anima-text-only-014",
+      "asset": "anima-text-only-014.zip",
+      "sha256": "46135cf4434b9653373f349f053c69c4dd6d2e07b4577d7b20049dfe52d9fc9e"
+    },
+    {
       "tag": "anima-text-only-013",
       "asset": "anima-text-only-013.zip",
       "sha256": "725d095f0a607f11abe543a1465511c75b62c3b89b3df22acf600283d4a89755"
@@ -69,6 +74,399 @@
     }
   ],
   "entries": [
+    {
+      "id": "anima-text-slender-quiet-eyes-fine-planes",
+      "category": "josei",
+      "title": {
+        "ja": "余白と細線を生かす端正な女性漫画風",
+        "en": "slender quiet eyes fine planes"
+      },
+      "prompt": {
+        "en": "Restrained fine-pen figure drawing. Each clothed adult has one long oval-to-angular face joined through a slender neck to connected shoulders and arms. Narrow horizontal eyes have a dark upper edge, while a fine nose bridge and a small mouth remain spare. Clear modest-weight outside lines enclose finer short facial marks and parallel clothing lines. Broad white facial areas contrast with local black clothing masses and light flat gray shading."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "大奥・正規無料公開試読の表示画像3,5,6",
+          "url": "https://mechacomic.jp/books/123055"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "f58875d35020ebb34deadea8b4ef972ff4cf1a213c66e26819f9fb7fb88d3fb0.png",
+          "sha256": "f58875d35020ebb34deadea8b4ef972ff4cf1a213c66e26819f9fb7fb88d3fb0",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "3227b03f3385dd4bc6e30f5d926410bfab0b9567dfe4e07fb3451dd7cc0207d5.jpg",
+          "thumb_sha256": "3227b03f3385dd4bc6e30f5d926410bfab0b9567dfe4e07fb3451dd7cc0207d5",
+          "prompt": {
+            "en": "A candid working moment in one flower shop. A fully clothed adult woman and adult man stand behind one counter and arrange plain vases of leafy stems. Restrained fine-pen figure drawing. Each clothed adult has one long oval-to-angular face joined through a slender neck to connected shoulders and arms. Narrow horizontal eyes have a dark upper edge, while a fine nose bridge and a small mouth remain spare. Clear modest-weight outside lines enclose finer short facial marks and parallel clothing lines. Broad white facial areas contrast with local black clothing masses and light flat gray shading. The woman has a simple wavy dark hair shape and a plain long-sleeved blouse. The man has short dark hair, a small chin-beard mark and a plain long-sleeved shirt. Both wear trousers. The counter, shelves, window and floor join one continuous room."
+          },
+          "native_job_id": "6af7a0b800000256000002f4000002f4",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7a0b800000256000002f4000002f4",
+            "api_seconds": 30.342
+          },
+          "max_rgb_channel_delta": 11,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "f58875d35020ebb34deadea8b4ef972ff4cf1a213c66e26819f9fb7fb88d3fb0",
+            "observation": {
+              "ja": "男女が店内の花器を扱う場面。細線と余白、淡い灰色面による端正な女性漫画風の仕上がりです。",
+              "en": "A woman and man handle vases in one shop. Fine lines, white space and light gray areas give a clean, balanced female-manga-like drawing."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "5ba34a4fdb9102dc46038dde10fca11f365ad2ce82d44548068f68adf4788f58.png",
+          "sha256": "5ba34a4fdb9102dc46038dde10fca11f365ad2ce82d44548068f68adf4788f58",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "8fe9f136eccbd8595e393fcf4be8cdea0a6f8e964bff5e83b8afa2a5ec87d0f1.jpg",
+          "thumb_sha256": "8fe9f136eccbd8595e393fcf4be8cdea0a6f8e964bff5e83b8afa2a5ec87d0f1",
+          "prompt": {
+            "en": "A candid working moment in one flower shop. A fully clothed adult woman stands behind one counter and arranges a plain vase of leafy stems. Restrained fine-pen figure drawing. Each clothed adult has one long oval-to-angular face joined through a slender neck to connected shoulders and arms. Narrow horizontal eyes have a dark upper edge, while a fine nose bridge and a small mouth remain spare. Clear modest-weight outside lines enclose finer short facial marks and parallel clothing lines. Broad white facial areas contrast with local black clothing masses and light flat gray shading. She has a simple dark bob and wears a plain long-sleeved blouse and trousers. Her vase, hands, counter, shelves, window and floor join one continuous room."
+          },
+          "native_job_id": "6af7a24a00000256000002f7000002f7",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7a24a00000256000002f7000002f7",
+            "api_seconds": 30.358
+          },
+          "max_rgb_channel_delta": 23,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "5ba34a4fdb9102dc46038dde10fca11f365ad2ce82d44548068f68adf4788f58",
+            "observation": {
+              "ja": "女性1人が大きな花器に両手を添える場面。端正な細線人物の雰囲気を共有し、男女画より背景と陰影は密になっています。",
+              "en": "One woman places both hands on a large vase. The clean fine-pen figure mood recurs, with denser background and shading than the mixed scene."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T23:43:21.605072+00:00",
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-fine-contour-crosshatch-volume",
+      "category": "gekiga",
+      "title": {
+        "ja": "密な線陰影で描く写実的な劇画風",
+        "en": "fine contour crosshatch volume"
+      },
+      "prompt": {
+        "en": "Detailed fine-ink figurative drawing. Each clothed adult has one connected head, neck, shoulders and arms. Within each complete face a stronger upper eyelid surrounds a separately marked iris and pupil; the nose bridge, nostrils and closed lips use precise fine lines. Clear fine contours change weight at overlaps and bends. Short parallel and crossing strokes build cheek, jaw, neck, hand and fabric shadows, leaving bright areas white and deep recesses dark."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "愛蔵版 シグルイ・正規無料公開試読の表示画像3,5,6",
+          "url": "https://mechacomic.jp/books/302195"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "9d29dc6f95010930757cce09de4c40fccc8cc3cd14e9d33ca54ff642f9d58563.png",
+          "sha256": "9d29dc6f95010930757cce09de4c40fccc8cc3cd14e9d33ca54ff642f9d58563",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "1f5d5c90f2f5ed56e7bf6688c328301804a2695d46bf539cec0bde6ee94ab73b.jpg",
+          "thumb_sha256": "1f5d5c90f2f5ed56e7bf6688c328301804a2695d46bf539cec0bde6ee94ab73b",
+          "prompt": {
+            "en": "A candid working moment in one flower shop. A fully clothed adult woman and adult man stand behind one counter and arrange plain vases of leafy stems. Detailed fine-ink figurative drawing. Each clothed adult has one connected head, neck, shoulders and arms. Within each complete face a stronger upper eyelid surrounds a separately marked iris and pupil; the nose bridge, nostrils and closed lips use precise fine lines. Clear fine contours change weight at overlaps and bends. Short parallel and crossing strokes build cheek, jaw, neck, hand and fabric shadows, leaving bright areas white and deep recesses dark. The woman has a simple wavy dark hair shape and a plain long-sleeved blouse. The man has short dark hair, a small chin-beard mark and a plain long-sleeved shirt. Both wear trousers. The counter, shelves, window and floor join one continuous room."
+          },
+          "native_job_id": "6af7a0d700000256000002f5000002f5",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7a0d700000256000002f5000002f5",
+            "api_seconds": 34.513
+          },
+          "max_rgb_channel_delta": 15,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "9d29dc6f95010930757cce09de4c40fccc8cc3cd14e9d33ca54ff642f9d58563",
+            "observation": {
+              "ja": "男女が店内で植物を扱う場面。顔や衣服の密な線陰影により、立体感のある写実劇画風が出ています。交差線より平行線が中心です。",
+              "en": "A woman and man handle plants in one shop. Dense face/clothing line shading gives realistic gekiga-like volume, primarily with parallel rather than crossed strokes."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "56b8316bd4dd9ac30e7cbffe8861a3ece9f76aafcff6c0f19583bbda9119ebcf.png",
+          "sha256": "56b8316bd4dd9ac30e7cbffe8861a3ece9f76aafcff6c0f19583bbda9119ebcf",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "a3484d73384df36e841dc2bd3ce65e5b049deb5a679b374e3bd4de02efbac374.jpg",
+          "thumb_sha256": "a3484d73384df36e841dc2bd3ce65e5b049deb5a679b374e3bd4de02efbac374",
+          "prompt": {
+            "en": "A candid working moment in one flower shop. A fully clothed adult woman stands behind one counter and arranges a plain vase of leafy stems. Detailed fine-ink figurative drawing. Each clothed adult has one connected head, neck, shoulders and arms. Within each complete face a stronger upper eyelid surrounds a separately marked iris and pupil; the nose bridge, nostrils and closed lips use precise fine lines. Clear fine contours change weight at overlaps and bends. Short parallel and crossing strokes build cheek, jaw, neck, hand and fabric shadows, leaving bright areas white and deep recesses dark. She has a simple dark bob and wears a plain long-sleeved blouse and trousers. Her vase, hands, counter, shelves, window and floor join one continuous room."
+          },
+          "native_job_id": "6af7a26800000256000002f8000002f8",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7a26800000256000002f8000002f8",
+            "api_seconds": 30.645
+          },
+          "max_rgb_channel_delta": 26,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "56b8316bd4dd9ac30e7cbffe8861a3ece9f76aafcff6c0f19583bbda9119ebcf",
+            "observation": {
+              "ja": "女性2人が花器を支え植物に手を添える場面。細かな線陰影の劇画風を共有します。1人指定とは人数が異なり、顔型も近似しています。",
+              "en": "Two women support a vase and touch the plants. Detailed line-shaded gekiga-like drawing recurs. Cast differs from the single-woman request and the face shapes are similar."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T23:43:21.605072+00:00",
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-wavering-small-marks-round-body",
+      "category": "essay",
+      "title": {
+        "ja": "ゆるい省略線の手描きエッセイ風",
+        "en": "wavering small marks round body"
+      },
+      "prompt": {
+        "en": "Spontaneous economical pen-doodle figure drawing. Each clothed adult has one complete head linked through its neck to connected rounded shoulders, torso and arms. Small short lines and black dots mark the eyes; a bent stroke marks the nose and a short line or plainly open outline marks the mouth. Thin-to-medium contours wobble slightly and vary in width. Sparse short inside curves suggest expression and movement, while wide white areas, small local black patches and a few pale gray strokes keep the form lightly drawn."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "伊豆漫玉エレジー・正規無料公開試読の表示画像3,5,6",
+          "url": "https://mechacomic.jp/books/153095"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "e057a2e456b90a823929c788a112c64d64a34db5ea596797b45a62800e37cb2a.png",
+          "sha256": "e057a2e456b90a823929c788a112c64d64a34db5ea596797b45a62800e37cb2a",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "fd833a36682824640e14ac165573a0aa55a31c5050d6e22ec6c5582cd69a6303.jpg",
+          "thumb_sha256": "fd833a36682824640e14ac165573a0aa55a31c5050d6e22ec6c5582cd69a6303",
+          "prompt": {
+            "en": "A candid working moment in one flower shop. A fully clothed adult woman and adult man stand behind one counter and arrange plain vases of leafy stems. Spontaneous economical pen-doodle figure drawing. Each clothed adult has one complete head linked through its neck to connected rounded shoulders, torso and arms. Small short lines and black dots mark the eyes; a bent stroke marks the nose and a short line or plainly open outline marks the mouth. Thin-to-medium contours wobble slightly and vary in width. Sparse short inside curves suggest expression and movement, while wide white areas, small local black patches and a few pale gray strokes keep the form lightly drawn. The woman has a simple wavy dark hair shape and a plain long-sleeved blouse. The man has short dark hair, a small chin-beard mark and a plain long-sleeved shirt. Both wear trousers. The counter, shelves, window and floor join one continuous room."
+          },
+          "native_job_id": "6af7a0fa00000256000002f6000002f6",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7a0fa00000256000002f6000002f6",
+            "api_seconds": 32.756
+          },
+          "max_rgb_channel_delta": 21,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e057a2e456b90a823929c788a112c64d64a34db5ea596797b45a62800e37cb2a",
+            "observation": {
+              "ja": "男女が同じ店内の植物を扱う場面。省略した顔、やや揺れる太めの輪郭と灰色の面が、ゆるい手描きエッセイ風になっています。",
+              "en": "A woman and man handle plants in one shop. Abbreviated faces, slightly wavering thicker contours and gray patches give a relaxed hand-drawn essay-like effect."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "4645c7875290cada067ae52b87385248541f97cefd528775021692ec28bd7509.png",
+          "sha256": "4645c7875290cada067ae52b87385248541f97cefd528775021692ec28bd7509",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "9c142983d551ef589d9b2d621cfa574ba10c6d334c93b32179cff960ae12dbf3.jpg",
+          "thumb_sha256": "9c142983d551ef589d9b2d621cfa574ba10c6d334c93b32179cff960ae12dbf3",
+          "prompt": {
+            "en": "A candid working moment in one flower shop. A fully clothed adult woman stands behind one counter and arranges a plain vase of leafy stems. Spontaneous economical pen-doodle figure drawing. Each clothed adult has one complete head linked through its neck to connected rounded shoulders, torso and arms. Small short lines and black dots mark the eyes; a bent stroke marks the nose and a short line or plainly open outline marks the mouth. Thin-to-medium contours wobble slightly and vary in width. Sparse short inside curves suggest expression and movement, while wide white areas, small local black patches and a few pale gray strokes keep the form lightly drawn. She has a simple dark bob and wears a plain long-sleeved blouse and trousers. Her vase, hands, counter, shelves, window and floor join one continuous room."
+          },
+          "native_job_id": "6af7a28700000256000002f9000002f9",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7a28700000256000002f9000002f9",
+            "api_seconds": 30.458
+          },
+          "max_rgb_channel_delta": 18,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "4645c7875290cada067ae52b87385248541f97cefd528775021692ec28bd7509",
+            "observation": {
+              "ja": "女性3人が花器を囲み手を添える場面。省略顔と揺れる輪郭、灰面のエッセイ風を共有します。1人指定との人数差はそのまま残しています。",
+              "en": "Three women gather around and touch a vase. Simplified faces, wavering contours and gray areas retain the essay-like mood; the single-woman request is not achieved."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T23:43:21.605072+00:00",
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
     {
       "id": "anima-text-tapered-black-upperlid-fine-white",
       "category": "shojo",
