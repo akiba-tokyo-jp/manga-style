@@ -11,6 +11,11 @@
       "tag": "anima-text-only-002",
       "asset": "anima-text-only-002.zip",
       "sha256": "0ecc31c9430701285d41aaed32ac68739ab1986f2c48261edf5ff2e1a7acea77"
+    },
+    {
+      "tag": "anima-text-only-003",
+      "asset": "anima-text-only-003.zip",
+      "sha256": "917188fe5ca59ca695d8e7d71b92444425556d391468a89427a224b8bae4f507"
     }
   ],
   "entries": [
@@ -533,6 +538,268 @@
         }
       ],
       "updated_at": "2026-11-13T11:39:24.435284+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-flat-report-ink",
+      "category": "essay",
+      "title": {
+        "ja": "簡略な顔線と黒灰の面でまとめる取材画",
+        "en": "Clear-faced reportage built from flat black and gray"
+      },
+      "summary": {
+        "ja": "少ない顔線と明瞭な輪郭を、黒ベタ・白・均一灰の面で読みやすくまとめる取材画。",
+        "en": "Economical facial marks and clear contours organized into solid black, white and uniform gray planes."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Monochrome simplified reportage cartoon. Adult faces are broad rounded rectangles with a few gentle corners, tiny black dot eyes beneath short flat brows, single crooked-line noses and expressive mouths that change from a short stroke to a large open gray shape. Adult upper bodies are broad simple blocks with uncomplicated arms and mitten-like hands. Clear steady medium-weight outlines and minimal interior marks, black hair as blunt solid shapes without strand rendering. Large solid black garment planes, unshaded white faces and a few uniform light-gray tone areas; no facial hatching, realistic skin shadows or glossy anime eyes."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "すすめ！ジャンプへっぽこ探検隊！118話・公式公開資料の顔と描線を私的観察",
+          "url": "https://shonenjumpplus.com/article/entry/heppoko_118"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "ea216b0c9aebbf89cbee6f5eab384df11cf4b040ec7d55ad83bcdcc50688be24.png",
+          "sha256": "ea216b0c9aebbf89cbee6f5eab384df11cf4b040ec7d55ad83bcdcc50688be24",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "31c274444a73008a68c64ff22147febed960d15e6b7272d7a0ca3d3946ff2eea.jpg",
+          "thumb_sha256": "31c274444a73008a68c64ff22147febed960d15e6b7272d7a0ca3d3946ff2eea",
+          "prompt": {
+            "en": "One single unlettered manga panel in a continuous warehouse aisle with plain shelves and boxes without labels. An adult woman and an adult man in long-sleeved work jackets and trousers jointly push one empty flatbed trolley past the shelves, chatting cheerfully. Both complete waist-up adults and naturally attached arms belong to the same space and action. No detached heads, portrait insets or character sheets. Monochrome simplified reportage cartoon. Adult faces are broad rounded rectangles with a few gentle corners, tiny black dot eyes beneath short flat brows, single crooked-line noses and expressive mouths that change from a short stroke to a large open gray shape. Adult upper bodies are broad simple blocks with uncomplicated arms and mitten-like hands. Clear steady medium-weight outlines and minimal interior marks, black hair as blunt solid shapes without strand rendering. Large solid black garment planes, unshaded white faces and a few uniform light-gray tone areas; no facial hatching, realistic skin shadows or glossy anime eyes."
+          },
+          "native_job_id": "6af701ae000002560000028c0000028c",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af701ae000002560000028c0000028c",
+            "api_seconds": 31.306
+          },
+          "max_rgb_channel_delta": 12,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "ea216b0c9aebbf89cbee6f5eab384df11cf4b040ec7d55ad83bcdcc50688be24",
+            "observation": {
+              "ja": "箱棚と台車の同じ空間で作業員4人が会話する場面。中央の男性的な人物と左右の女性的な人物を確認。簡略な顔内部、明瞭な外形、黒い塊と均一灰の面が共通。全員が同じ台車を押しているとは読み取れません。",
+              "en": "Four clothed workers converse in the same warehouse space with a trolley. The central male-presenting figure and female-presenting neighbors are visible. Simplified facial marks, clear outlines, solid black and uniform gray recur. Not everyone visibly pushes the trolley."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "a048014d82588ca16a8c01a3018eb8403d945fa34d8c8146c4db3ee88de5a5e6.png",
+          "sha256": "a048014d82588ca16a8c01a3018eb8403d945fa34d8c8146c4db3ee88de5a5e6",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "0259764625cbeb0e6403701e1d110ca3f57baeed36362f5acab5812974b84a8e.jpg",
+          "thumb_sha256": "0259764625cbeb0e6403701e1d110ca3f57baeed36362f5acab5812974b84a8e",
+          "prompt": {
+            "en": "A single unlettered candid medium shot inside a kitchen: a thirty-five-year-old woman with short dark hair wears a black long-sleeved shirt, a white full apron and trousers. She pours rice from a plain pitcher into a stockpot on the worktop, grinning enthusiastically. Her shoulders connect to both arms and both hands work on the pitcher. The woman, pot, counter and kitchen cupboards are one uninterrupted scene. Monochrome simplified reportage cartoon. Adult faces are broad rounded rectangles with a few gentle corners, tiny black dot eyes beneath short flat brows, single crooked-line noses and expressive mouths that change from a short stroke to a large open gray shape. Adult upper bodies are broad simple blocks with uncomplicated arms and mitten-like hands. Clear steady medium-weight outlines and minimal interior marks, black hair as blunt solid shapes without strand rendering. Large solid black garment planes, unshaded white faces and a few uniform light-gray tone areas; no facial hatching, realistic skin shadows or glossy anime eyes."
+          },
+          "native_job_id": "6af7044a000002560000029700000297",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7044a000002560000029700000297",
+            "api_seconds": 31.218
+          },
+          "max_rgb_channel_delta": 14,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "a048014d82588ca16a8c01a3018eb8403d945fa34d8c8146c4db3ee88de5a5e6",
+            "observation": {
+              "ja": "厨房で着衣の大人2人が容器を一緒に傾け、鍋に米を入れる一場面。黒ベタ・白・均一灰、少ない顔線が共通し、近景の目や睫毛は豊か。送信文は女性の作業を述べましたが、実画にはもう1人登場しています。",
+              "en": "Two clothed adults tilt a pitcher together and pour rice into a pot. Solid black, white and uniform gray with economical face marks recur; the close faces have richer eyes/lashes. The submitted scene describes a woman, but the actual result includes a second adult."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T12:34:13.382167+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-warm-etched-caricature",
+      "category": "gag",
+      "title": {
+        "ja": "曲面の刻み線と暖色で膨らむ誇張画",
+        "en": "Warm etched caricature with swollen features"
+      },
+      "summary": {
+        "ja": "膨らむ目鼻と深い表情じわを、曲面に沿う細密線と暖色の重なりで強調する戯画。",
+        "en": "Warm etched caricature with swollen features"
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "rough"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Colored etched caricature manga. Broad original adult faces with bulging spherical eyes and tiny central pupils, rounded protruding noses, deep uneven eye bags and cheek folds, broad elastic mouths with simply separated teeth. Short sturdy fully clothed adult bodies. Strong irregular contour accents alternate with extremely fine curved parallel strokes following swollen facial surfaces; dense crosshatching in creases, dark open mouths and small stipple marks. Warm ochre, amber and muted brick-red skin washes with pale highlights; muted teal and olive clothing. Rough hand-worked color and ink, no polished glossy anime skin or soft doll faces."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "漫古☆知新・公式公開資料の顔と描線を私的観察",
+          "url": "https://shonenjumpplus.com/episode/316190246946132654"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "78ef823c6c81877495b6f65a6654b65b23dd5c630b91a30ea0eb1a150bfb4abb.png",
+          "sha256": "78ef823c6c81877495b6f65a6654b65b23dd5c630b91a30ea0eb1a150bfb4abb",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "2b18593c4a40efe41ea6a76499de8a36ed899ce4358b4b97a3b029292bc81d97.jpg",
+          "thumb_sha256": "2b18593c4a40efe41ea6a76499de8a36ed899ce4358b4b97a3b029292bc81d97",
+          "prompt": {
+            "en": "A single unlettered candid medium shot in a furniture workshop: a middle-aged woman with a long braid, small earrings and a long-sleeved teal work coat braces a small cabinet while a middle-aged man with short stubble and a long-sleeved olive work jacket pulls its stuck drawer. Both wear full trousers. Their exaggerated frustrated faces, shoulders, connected arms and hands on the same cabinet belong to one uninterrupted working moment. Colored etched caricature manga. Broad original adult faces with bulging spherical eyes and tiny central pupils, rounded protruding noses, deep uneven eye bags and cheek folds, broad elastic mouths with simply separated teeth. Short sturdy fully clothed adult bodies. Strong irregular contour accents alternate with extremely fine curved parallel strokes following swollen facial surfaces; dense crosshatching in creases, dark open mouths and small stipple marks. Warm ochre, amber and muted brick-red skin washes with pale highlights; muted teal and olive clothing. Rough hand-worked color and ink, no polished glossy anime skin or soft doll faces."
+          },
+          "native_job_id": "6af704a7000002560000029a0000029a",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af704a7000002560000029a0000029a",
+            "api_seconds": 31.837
+          },
+          "max_rgb_channel_delta": 188,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "78ef823c6c81877495b6f65a6654b65b23dd5c630b91a30ea0eb1a150bfb4abb",
+            "observation": {
+              "ja": "編み髪と耳飾りの中年女性、無精髭の中年男性が同じ家具の引出しを扱う場面。膨らむ目鼻、深い目袋と頬口元のしわ、曲面の細線と暖色が共通。女性側の影が重めで、正確な引出しの力関係には曖昧さが残ります。",
+              "en": "A braided middle-aged woman with earrings and a stubbled middle-aged man work on the same cabinet drawer. Swollen eyes/noses, deep eye-bag and cheek/mouth folds, curved fine lines and warm color recur. Her shadows are heavier and the exact drawer force/contact remains somewhat ambiguous."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "605984e3ace599fca44fed45cc435c123ccd152fd8fb4d2b466cb1483e566bd7.png",
+          "sha256": "605984e3ace599fca44fed45cc435c123ccd152fd8fb4d2b466cb1483e566bd7",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "32ea0a965af87d30193cdf97efbf755168b517811324b49e454a7fd292ce1e36.jpg",
+          "thumb_sha256": "32ea0a965af87d30193cdf97efbf755168b517811324b49e454a7fd292ce1e36",
+          "prompt": {
+            "en": "A single unlettered candid medium shot in a kitchen: a middle-aged woman with a braided bun, small earrings, a long-sleeved teal work coat and full trousers rolls stiff dough on a wooden worktop using both hands on one rolling pin. Her wide-eyed grin expresses effort and amusement. The woman, rolling pin, dough, worktop and kitchen shelves belong to the same uninterrupted room. Colored etched caricature manga. Broad original adult faces with bulging spherical eyes and tiny central pupils, rounded protruding noses, deep uneven eye bags and cheek folds, broad elastic mouths with simply separated teeth. Short sturdy fully clothed adult bodies. Strong irregular contour accents alternate with extremely fine curved parallel strokes following swollen facial surfaces; dense crosshatching in creases, dark open mouths and small stipple marks. Warm ochre, amber and muted brick-red skin washes with pale highlights; muted teal and olive clothing. Rough hand-worked color and ink, no polished glossy anime skin or soft doll faces."
+          },
+          "native_job_id": "6af704c7000002560000029b0000029b",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af704c7000002560000029b0000029b",
+            "api_seconds": 31.47
+          },
+          "max_rgb_channel_delta": 178,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "605984e3ace599fca44fed45cc435c123ccd152fd8fb4d2b466cb1483e566bd7",
+            "observation": {
+              "ja": "編み髪をまとめた着衣の中年女性が麺棒で生地をのばし、目を開き歯を見せて笑う場面。丸い顔の量感、目袋・頬の深いしわ、曲面ハッチと桃橙の肌を共有。男女場面より白いハイライトが強く、同一の陰影量ではありません。",
+              "en": "One clothed middle-aged woman rolls dough, grinning with wide eyes and visible teeth. Round facial masses, eye bags/deep cheek folds, curved hatching and peach-orange skin recur. White highlights are stronger than in the shared scene, not an identical shadow distribution."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T12:34:13.382167+00:00",
       "limitations": {
         "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
         "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
