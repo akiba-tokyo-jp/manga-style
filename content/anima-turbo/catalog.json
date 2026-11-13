@@ -41,6 +41,11 @@
       "tag": "anima-text-only-008",
       "asset": "anima-text-only-008.zip",
       "sha256": "8998b3caf10c04ea1e5217e0a2138fdc1b2bdbcd68e2f9e049d0ad599c8f41ed"
+    },
+    {
+      "tag": "anima-text-only-009",
+      "asset": "anima-text-only-009.zip",
+      "sha256": "13fb6901a2c40468ef7d31b63611c126f2dd1a5141bc6594e09dd0a6810ee0aa"
     }
   ],
   "entries": [
@@ -2269,6 +2274,137 @@
         }
       ],
       "updated_at": "2026-11-13T16:43:16.565128+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-small-oval-eyes-waver-ink",
+      "category": "essay",
+      "title": {
+        "ja": "丸い頬顎と太い輪郭の簡潔な人物画",
+        "en": "Rounded cheeks and jaw with bold sparse character ink"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Simple monochrome everyday comic ink. Each clothed adult has one round-to-vertically-oval head, softly narrowed at the chin, joined through a visible neck to rounded shoulders and connected arms. The small open eye is a white oval enclosed by a fine line with one compact dark pupil. A short projecting nose stroke and a small curved mouth remain lightly marked. The outside face and body contour is bold and gently uneven, while nose, cheek and crease marks stay thin and sparse. Broad white facial fields, small local black accents and flat dotted gray clothing patches keep the drawing clear."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "とりぱん・公式無料本文画像4,5の人間顔部分",
+          "url": "https://comic-days.com/episode/13932016480030180895"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "e1b282e6e563ff72b90f4f980b04a06a4b70bd49599a6cd97c9d193cf38b8c3b.png",
+          "sha256": "e1b282e6e563ff72b90f4f980b04a06a4b70bd49599a6cd97c9d193cf38b8c3b",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "b2c7a53774096e3b533817a925ee5c83e2715f94732b5cb6246d413c54f68ee7.jpg",
+          "thumb_sha256": "b2c7a53774096e3b533817a925ee5c83e2715f94732b5cb6246d413c54f68ee7",
+          "prompt": {
+            "en": "A candid unlettered working moment in a small flower shop. A thirty-five-year-old woman with short wavy hair and a forty-year-old man with close-cropped hair stand beside one counter and arrange a plain wide vase of flowers together. Both wear plain long-sleeved shirts and full trousers. Their adult faces, connected necks, shoulders and arms, vase, flowers, counter and nearby shelves share one coherent space. Simple monochrome everyday comic ink. Each clothed adult has one round-to-vertically-oval head, softly narrowed at the chin, joined through a visible neck to rounded shoulders and connected arms. The small open eye is a white oval enclosed by a fine line with one compact dark pupil. A short projecting nose stroke and a small curved mouth remain lightly marked. The outside face and body contour is bold and gently uneven, while nose, cheek and crease marks stay thin and sparse. Broad white facial fields, small local black accents and flat dotted gray clothing patches keep the drawing clear."
+          },
+          "native_job_id": "6af747cd00000256000002d5000002d5",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af747cd00000256000002d5000002d5",
+            "api_seconds": 31.588
+          },
+          "max_rgb_channel_delta": 13,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e1b282e6e563ff72b90f4f980b04a06a4b70bd49599a6cd97c9d193cf38b8c3b",
+            "observation": {
+              "ja": "着衣の成人男女2人が台越しに向き合い、花瓶の前で手を寄せる一場面。丸みのある頬顎、立体的な鼻口、太い外輪郭、少ない顔内線、白地と局所黒・灰点描を確認。既存の成熟角顔系との近さは残りますが、輪郭は丸く陰影線は少なめです。線の揺れと小白楕円目は指定どおりではなく、重なる手元もやや読み取りにくい状態です。",
+              "en": "Two clothed adults face one another across the counter and bring their hands together by a vase. Rounded cheek/jaw contours, modeled nose/mouth, bold outlines, sparse facial marks and white/local black/dotted gray recur. Related to the existing mature angular family, but rounder and less shadow-hatched. Wavering lines and tiny white oval eyes are not fully achieved; overlapping hands are somewhat hard to read."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "fd337632a35d4228ce0d0a176b1e93030c2896b7d8998035902f6257f7aa5968.png",
+          "sha256": "fd337632a35d4228ce0d0a176b1e93030c2896b7d8998035902f6257f7aa5968",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "a5d80006e0973d75951fa15e951c5996d68569532369a2e1896a1d154f8ce8d9.jpg",
+          "thumb_sha256": "a5d80006e0973d75951fa15e951c5996d68569532369a2e1896a1d154f8ce8d9",
+          "prompt": {
+            "en": "A candid unlettered working moment in a small flower shop. A thirty-five-year-old woman with short wavy hair wears a plain long-sleeved shirt and full trousers. She stands beside a window at one counter, holding a plain vase steady with one hand while arranging a long leafy stem with the other. Her adult face, connected shoulders and arms, vase, stem, counter and shop shelves share one coherent space. Simple monochrome everyday comic ink. Each clothed adult has one round-to-vertically-oval head, softly narrowed at the chin, joined through a visible neck to rounded shoulders and connected arms. The small open eye is a white oval enclosed by a fine line with one compact dark pupil. A short projecting nose stroke and a small curved mouth remain lightly marked. The outside face and body contour is bold and gently uneven, while nose, cheek and crease marks stay thin and sparse. Broad white facial fields, small local black accents and flat dotted gray clothing patches keep the drawing clear."
+          },
+          "native_job_id": "6af747ed00000256000002d6000002d6",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af747ed00000256000002d6000002d6",
+            "api_seconds": 32.714
+          },
+          "max_rgb_channel_delta": 12,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "fd337632a35d4228ce0d0a176b1e93030c2896b7d8998035902f6257f7aa5968",
+            "observation": {
+              "ja": "着衣の成人女性1人が両手で花瓶と枝葉を整える、店内につながる場面。丸い頬顎、明瞭な鼻と微笑む口、太外線と比較的少ない顔線、白黒と灰を共有。浮いた頭部はありません。輪郭は均整的で揺れが乏しく、目の簡略化も弱いため、当初の小目漫画の忠実な再現とはしていません。",
+              "en": "One clothed adult woman arranges a vase and branches with both hands in one connected shop interior. Rounded cheeks/jaw, defined nose and smiling mouth, bold outlines, relatively sparse face marks and white/black/gray recur, without detached heads. Contours are regular rather than wavering and eye simplification is weak; this is not claimed as faithful realization of the initially intended tiny-eye cartoon."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T17:23:02.618941+00:00",
       "limitations": {
         "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
         "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
