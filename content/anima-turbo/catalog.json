@@ -16,6 +16,11 @@
       "tag": "anima-text-only-003",
       "asset": "anima-text-only-003.zip",
       "sha256": "917188fe5ca59ca695d8e7d71b92444425556d391468a89427a224b8bae4f507"
+    },
+    {
+      "tag": "anima-text-only-004",
+      "asset": "anima-text-only-004.zip",
+      "sha256": "38029d73c3b5a0d4a6ef3c8cbb142e3e37d3242e4119534e2014c934295626be"
     }
   ],
   "entries": [
@@ -800,6 +805,399 @@
         }
       ],
       "updated_at": "2026-11-13T12:34:13.382167+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-wedge-zigzag-ink",
+      "category": "gekiga",
+      "title": {
+        "ja": "突き出す楔鼻と折線口の角張る劇画",
+        "en": "Protruding wedge noses and angular zigzag mouths"
+      },
+      "summary": {
+        "ja": "長い楔形の鼻、尖る顎、角のある白目と折線の口を、強い輪郭と平行線で組み立てる描法。",
+        "en": "Protruding wedge noses and angular zigzag mouths"
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Monochrome angular graphic manga. Long adult faces taper into sharply pointed chins; noses project as long triangular wedges. Wide angular white eyes contain tiny dark pupils beneath heavy straight brows. Mouths use tense zigzag lip lines and hard corners. Firm dark contours, straight cheek creases and close parallel forehead hatching. Hair and deep clothing shadows form hard black shapes; broad white facial planes and restrained flat gray complete the drawing."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "転職黙示録カイジ・公式無料本文の顔と描線を私的観察",
+          "url": "https://comic-days.com/episode/2550912965721848103"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "3fe18b2e0df6774bc01908da77441bbdcf7520b3d20c0c875d96f6a19019e8db.png",
+          "sha256": "3fe18b2e0df6774bc01908da77441bbdcf7520b3d20c0c875d96f6a19019e8db",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "45b8e2d31a6e969faee81815e372d4ecf72587a08ac0afc6e472374705425b51.jpg",
+          "thumb_sha256": "45b8e2d31a6e969faee81815e372d4ecf72587a08ac0afc6e472374705425b51",
+          "prompt": {
+            "en": "Monochrome angular graphic manga. Long adult faces taper into sharply pointed chins; noses project as long triangular wedges. Wide angular white eyes contain tiny dark pupils beneath heavy straight brows. Mouths use tense zigzag lip lines and hard corners. Firm dark contours, straight cheek creases and close parallel forehead hatching. Hair and deep clothing shadows form hard black shapes; broad white facial planes and restrained flat gray complete the drawing. A single unlettered candid moment in a garden: an adult woman with a low ponytail and small earrings holds a garden hose while an adult man with short dark hair adjusts the tap beside her. Both wear plain long-sleeved work coats and full trousers. Their tense puzzled faces turn toward the same leaking hose connection. A medium view keeps their faces, naturally connected arms, tap and flowerpots in one continuous place."
+          },
+          "native_job_id": "6af715a800000256000002ab000002ab",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af715a800000256000002ab000002ab",
+            "api_seconds": 30.581
+          },
+          "max_rgb_channel_delta": 15,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "3fe18b2e0df6774bc01908da77441bbdcf7520b3d20c0c875d96f6a19019e8db",
+            "observation": {
+              "ja": "成人男女の大きな顔と園芸の手元を同じ画面に置く共有場面。長い楔鼻、角のある白目、折線口、尖顎と強い黒白が明瞭。顔が大きく作業部分は小さめで、通常の距離の構図ではありません。",
+              "en": "Clothed adults share a garden work scene with oversized faces and smaller hose/tap action. Long wedge noses, angular whites, zigzag mouths, pointed chins and strong black-white contrast are clear. Faces dominate over the small task area."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "a4083380756fed113fef2e48704834c07cd55dbff2352251cafd455febcf0735.png",
+          "sha256": "a4083380756fed113fef2e48704834c07cd55dbff2352251cafd455febcf0735",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "679385921ea0193df63c9f4dcba28f9c2f10be9d70fee1d17ce3eb5bd5a8ad93.jpg",
+          "thumb_sha256": "679385921ea0193df63c9f4dcba28f9c2f10be9d70fee1d17ce3eb5bd5a8ad93",
+          "prompt": {
+            "en": "A single unlettered working moment in a plain workshop, viewed from the side at medium distance. An adult man with short swept-back hair wears a long-sleeved work coat and full trousers. He leans over one workbench and uses both hands to turn a stubborn metal tap fixed to a pipe. His sharp profile, shoulders, elbows, hands, tap and bench are parts of the same continuous action. His determined mouth is tense and his eyes narrow toward the tap. Monochrome angular graphic manga. Long adult faces taper into sharply pointed chins; noses project as long triangular wedges. Wide angular white eyes contain tiny dark pupils beneath heavy straight brows. Mouths use tense zigzag lip lines and hard corners. Firm dark contours, straight cheek creases and close parallel forehead hatching. Hair and deep clothing shadows form hard black shapes; broad white facial planes and restrained flat gray complete the drawing."
+          },
+          "native_job_id": "6af7180100000256000002b1000002b1",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7180100000256000002b1000002b1",
+            "api_seconds": 30.728
+          },
+          "max_rgb_channel_delta": 18,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "a4083380756fed113fef2e48704834c07cd55dbff2352251cafd455febcf0735",
+            "observation": {
+              "ja": "長袖の上着を着た成人男性が台へ前屈し、蛇口に両手を寄せる単一作業。楔鼻、角張る目眉、折線口と尖顎を共有。男女画より誇張は控えめで服の灰面が広く、手元はやや詰まっています。",
+              "en": "One clothed adult man bends toward a tap in a continuous workshop. Wedge nose, angular eyes/brows, bent mouth and pointed chin recur. Exaggeration is milder and clothing gray broader; hand/tap contact is compact."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T13:53:47.578428+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-broad-cheek-crescents",
+      "category": "josei",
+      "title": {
+        "ja": "張った頬と丸い目元の量感ある日常画",
+        "en": "Full cheeks and boldly rounded eyes in everyday caricature"
+      },
+      "summary": {
+        "ja": "頬から顎の量感と弧状の目元を、強めの外線と顔の内線、線・網点の灰で描く日常画。",
+        "en": "Broad cheek/jaw masses and arched eyes supported by firm contours, facial marks and hatched/toned gray."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Monochrome everyday caricature manga. Adult faces have broad full lower cheeks, a tiny rounded chin, narrow crescent-shaped eyelids, small dark iris marks and a very small bent nose. Short off-center mouths and lifted brow strokes carry mild reactions. Elastic fine-to-medium contour lines, brief delicate face marks, broad matte black hair shapes and white facial space. Clothing has a few simple creases and small pale grainy tone areas; the face remains mostly unshaded."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "海月姫・公式無料本文の顔と描線を私的観察",
+          "url": "https://comic-days.com/episode/10834108156628456677"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "0518f61f33b91c144afe73fc7f533624c0f18fe91d8c2d3beea4594bce866365.png",
+          "sha256": "0518f61f33b91c144afe73fc7f533624c0f18fe91d8c2d3beea4594bce866365",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "9c20c40fbf4ecb4c72e8d0b5a3b1a4db111ceee2cdaee407ed409c1922bd591a.jpg",
+          "thumb_sha256": "9c20c40fbf4ecb4c72e8d0b5a3b1a4db111ceee2cdaee407ed409c1922bd591a",
+          "prompt": {
+            "en": "Monochrome everyday caricature manga. Adult faces have broad full lower cheeks, a tiny rounded chin, narrow crescent-shaped eyelids, small dark iris marks and a very small bent nose. Short off-center mouths and lifted brow strokes carry mild reactions. Elastic fine-to-medium contour lines, brief delicate face marks, broad matte black hair shapes and white facial space. Clothing has a few simple creases and small pale grainy tone areas; the face remains mostly unshaded. A single unlettered candid moment in a sewing room: an adult woman with short curly hair and an adult man with a neat side part sit at one worktable and compare two ends of a plain folded curtain. Both wear fully covering long-sleeved shirts and trousers. They look at the same fabric and smile quietly. The medium view includes their naturally connected arms, the tabletop, shelves and window in one continuous room."
+          },
+          "native_job_id": "6af715c700000256000002ac000002ac",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af715c700000256000002ac000002ac",
+            "api_seconds": 30.878
+          },
+          "max_rgb_channel_delta": 24,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "0518f61f33b91c144afe73fc7f533624c0f18fe91d8c2d3beea4594bce866365",
+            "observation": {
+              "ja": "成人男女が横並びで布状の物を持つ室内場面。幅のある頬顎、太い弧の瞼、鼻先と口周辺の線、斜線と網点の灰を確認。持つ物は冊子にも見え、瞼と輪郭は指定より太く鼻口も極小ではありません。",
+              "en": "Clothed adults sit together holding folded material in a room. Broad cheek/jaw masses, bold arched lids, nasal/mouth marks and hatched/toned gray recur. The material can read as a booklet; lids/contours are bolder and features less tiny than requested."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "d99da877ec3509ae6ba20a03966ad2e2a31950d9fe13a38c28cb1e9f1f16f357.png",
+          "sha256": "d99da877ec3509ae6ba20a03966ad2e2a31950d9fe13a38c28cb1e9f1f16f357",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "26c85045b02252d902dda804473e392d3f7b1304a0948a5902654c9567c3d716.jpg",
+          "thumb_sha256": "26c85045b02252d902dda804473e392d3f7b1304a0948a5902654c9567c3d716",
+          "prompt": {
+            "en": "Monochrome everyday caricature manga. Adult faces have broad full lower cheeks, a tiny rounded chin, narrow crescent-shaped eyelids, small dark iris marks and a very small bent nose. Short off-center mouths and lifted brow strokes carry mild reactions. Elastic fine-to-medium contour lines, brief delicate face marks, broad matte black hair shapes and white facial space. Clothing has a few simple creases and small pale grainy tone areas; the face remains mostly unshaded. A single unlettered candid moment in a sewing room: an adult woman with short curly hair, wearing a loose long-sleeved blouse and full trousers, leans over a worktable to smooth a broad piece of plain fabric with both hands. Her full cheeks and small amused smile are clear in the same medium view as her connected arms, fabric and sewing room shelves."
+          },
+          "native_job_id": "6af716e100000256000002af000002af",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af716e100000256000002af000002af",
+            "api_seconds": 30.968
+          },
+          "max_rgb_channel_delta": 22,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "d99da877ec3509ae6ba20a03966ad2e2a31950d9fe13a38c28cb1e9f1f16f357",
+            "observation": {
+              "ja": "着衣の成人女性が作業台に前屈し両手で布をならす場面。幅のある下顔面から短い丸顎、描き込まれた瞼鼻口、強い外線と線網点の陰影が共通。男女画と口形や目の大きさ・線密度には差が残ります。",
+              "en": "One clothed adult woman leans over fabric on a worktable. Broad lower face, short rounded chin, articulated lids/nose/mouth, firm contours and hatched/toned shading recur. Mouth shape, eye size and line density vary from the shared scene."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T13:53:47.578428+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-staring-scratch-shadow",
+      "category": "horror",
+      "title": {
+        "ja": "眼窩と頬を密な線で刻む暗い緊張画",
+        "en": "Dark expressive faces in dense contour hatching"
+      },
+      "summary": {
+        "ja": "眼窩と頬の面を、太い影側の輪郭と密な縦斜ハッチ、黒灰の塊で立てる緊張感のある描法。",
+        "en": "Eye-socket and cheek planes modeled with heavy shadow-side edges, dense vertical/oblique hatching and black-gray masses."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "rough"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Stark monochrome suspense manga. Adult faces have wide staring white sclera around small dark irises, heavy upper eyelids, strongly defined nose wings, hollow cheek planes and tense lower-lip edges. Thick irregular shadow-side contours contrast with fine interior marks. Tight vertical and oblique hatch strokes build grainy shadows across eye sockets, cheeks and necks, deepening into abrupt black patches. Hair has rough dark clumps, skin keeps hard white highlights, clothing uses compact black and gray masses."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "彼岸島・公式無料本文の顔と描線を私的観察",
+          "url": "https://comic-days.com/episode/13932016480029857273"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "fff55969933e955f6106bd0cf447d5c57bec907c94822fb52c4d557b28b9dfa6.png",
+          "sha256": "fff55969933e955f6106bd0cf447d5c57bec907c94822fb52c4d557b28b9dfa6",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "5aa964da607112a7a05257eb5a02aa707929d244c09e59547a8be66d0287dc09.jpg",
+          "thumb_sha256": "5aa964da607112a7a05257eb5a02aa707929d244c09e59547a8be66d0287dc09",
+          "prompt": {
+            "en": "Stark monochrome suspense manga. Adult faces have wide staring white sclera around small dark irises, heavy upper eyelids, strongly defined nose wings, hollow cheek planes and tense lower-lip edges. Thick irregular shadow-side contours contrast with fine interior marks. Tight vertical and oblique hatch strokes build grainy shadows across eye sockets, cheeks and necks, deepening into abrupt black patches. Hair has rough dark clumps, skin keeps hard white highlights, clothing uses compact black and gray masses. A single unlettered candid moment in a dim storeroom: an adult woman with a long braid and an adult man with short hair stand at opposite sides of an old wooden crate, each gripping its edge. Both wear fully covering long-sleeved work jackets and trousers. They pause and stare toward the same open doorway with alert uneasy expressions. Their faces, naturally connected shoulders and arms, crate and surrounding shelves occupy one continuous medium view."
+          },
+          "native_job_id": "6af715e600000256000002ad000002ad",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af715e600000256000002ad000002ad",
+            "api_seconds": 31.318
+          },
+          "max_rgb_channel_delta": 48,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "fff55969933e955f6106bd0cf447d5c57bec907c94822fb52c4d557b28b9dfa6",
+            "observation": {
+              "ja": "着衣の成人男女が暗い物置で同じ木箱に手を添えて向かい合う場面。眼窩・頬の面、太い影側線、細密ハッチと黒灰を共有。実画は戸口でなく互いを向き、凝視白目は強く実現していません。",
+              "en": "Clothed adults face one another across a wooden crate in a dim storeroom. Modeled eye sockets/cheeks, heavy shadow-side edges, fine hatching and black-gray masses recur. They look at each other rather than the doorway; staring whites are weak."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "b044b0f7cccc50ef1ccbb5e3277f182fad61622d10b4ae06d235f238bd37ebb5.png",
+          "sha256": "b044b0f7cccc50ef1ccbb5e3277f182fad61622d10b4ae06d235f238bd37ebb5",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "ada2c6640360d2e6148e0f4eb5a2815e09388c2a6e5cc041981c2c8836c6e47c.jpg",
+          "thumb_sha256": "ada2c6640360d2e6148e0f4eb5a2815e09388c2a6e5cc041981c2c8836c6e47c",
+          "prompt": {
+            "en": "A single unlettered working moment in a dim storeroom, viewed from the side at medium distance. An adult man with cropped hair wears a long-sleeved work jacket and full trousers. He bends to pick up a dropped metal lantern from the floor; one hand reaches its handle and the other braces his knee. His uneasy face, bent clothed torso, connected arms, lantern and surrounding shelves belong to the same continuous room. Stark monochrome suspense manga. Adult faces have wide staring white sclera around small dark irises, heavy upper eyelids, strongly defined nose wings, hollow cheek planes and tense lower-lip edges. Thick irregular shadow-side contours contrast with fine interior marks. Tight vertical and oblique hatch strokes build grainy shadows across eye sockets, cheeks and necks, deepening into abrupt black patches. Hair has rough dark clumps, skin keeps hard white highlights, clothing uses compact black and gray masses."
+          },
+          "native_job_id": "6af7182000000256000002b2000002b2",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7182000000256000002b2000002b2",
+            "api_seconds": 31.375
+          },
+          "max_rgb_channel_delta": 14,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "b044b0f7cccc50ef1ccbb5e3277f182fad61622d10b4ae06d235f238bd37ebb5",
+            "observation": {
+              "ja": "着衣の成人男性が棚の間でかがみ床のランタンをつかむ単一場面。顔の面、太い暗部輪郭、縦斜ハッチと黒灰が共通。俯き顔の頬線は男女画より少なく、服の大きな黒面が目立ちます。",
+              "en": "One clothed adult man bends between shelves to grasp a lantern near the floor. Facial planes, thick dark edges, vertical/oblique hatching and black-gray masses recur. His lowered face has less cheek hatching; large black clothing folds dominate."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T13:53:47.578428+00:00",
       "limitations": {
         "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
         "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
