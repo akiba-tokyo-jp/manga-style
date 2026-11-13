@@ -6,6 +6,11 @@
       "tag": "anima-text-only-001",
       "asset": "anima-text-only-001.zip",
       "sha256": "1d5395b1655a11ef14decb8cab4e2ee5d6bc074f9bd3bc3d5fe79767ca5457ce"
+    },
+    {
+      "tag": "anima-text-only-002",
+      "asset": "anima-text-only-002.zip",
+      "sha256": "0ecc31c9430701285d41aaed32ac68739ab1986f2c48261edf5ff2e1a7acea77"
     }
   ],
   "entries": [
@@ -135,6 +140,399 @@
         }
       ],
       "updated_at": "2026-11-13T10:56:07.496908+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-mature-cut-planes",
+      "category": "seinen",
+      "title": {
+        "ja": "四角い顎と切り込む黒影の成熟顔",
+        "en": "Mature square jaws and cut black shadow planes"
+      },
+      "summary": {
+        "ja": "四角い顎、細くかぶる瞼と目尻の短線を、白い顔面と角のある黒影で組み立てる描法。",
+        "en": "Long square jaws, hooded eyes and sparse age creases against white facial planes and hard black shadow cuts."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Monochrome mature-character manga. Middle-aged adult faces built from long rectangular heads, broad square jaws and flat chin tips. Narrow hooded eyes under low straight brows, a long angular nose, short mouth folds, two short outer-eye creases and a distinct cheekbone edge on each face. Broad adult shoulders and straight substantial necks. Firm clean contour lines with sparse sharply placed interior marks. Large hard-edged solid black wedges under cheekbones, jaw and clothing folds contrast with unshaded white facial planes; reserve fine halftone for clothing, no glossy gradients or soft doll faces."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "SPY×FAMILY・公式無料本文の年長男性の顔と黒白を私的観察",
+          "url": "https://shonenjumpplus.com/episode/10834108156648240735"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "9185baa4bc155184f89d98510c798efe1948b3920b799d4f111f971297bc0d84.png",
+          "sha256": "9185baa4bc155184f89d98510c798efe1948b3920b799d4f111f971297bc0d84",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "f74830c49043ace61f9f1886587648015c495ed5f9a8409085372ba2cf5f9ad9.jpg",
+          "thumb_sha256": "f74830c49043ace61f9f1886587648015c495ed5f9a8409085372ba2cf5f9ad9",
+          "prompt": {
+            "en": "One single unlettered manga panel in a continuous bicycle repair shop. A middle-aged woman with short gray hair and a middle-aged man with a receding hairline examine the same loose bicycle wheel on a workbench. The woman holds its rim while the man points at the hub. Both wear plainly visible long-sleeved work shirts and trousers. Three-quarter waist-up view of both fully clothed adults and naturally connected arms in one shared scene. No portrait insets, detached heads or character sheets. Monochrome mature-character manga. Middle-aged adult faces built from long rectangular heads, broad square jaws and flat chin tips. Narrow hooded eyes under low straight brows, a long angular nose, short mouth folds, two short outer-eye creases and a distinct cheekbone edge on each face. Broad adult shoulders and straight substantial necks. Firm clean contour lines with sparse sharply placed interior marks. Large hard-edged solid black wedges under cheekbones, jaw and clothing folds contrast with unshaded white facial planes; reserve fine halftone for clothing, no glossy gradients or soft doll faces."
+          },
+          "native_job_id": "6af6f829000002560000028400000284",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6f829000002560000028400000284",
+            "api_seconds": 31.652
+          },
+          "max_rgb_channel_delta": 19,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "9185baa4bc155184f89d98510c798efe1948b3920b799d4f111f971297bc0d84",
+            "observation": {
+              "ja": "中年の男女が作業台の同じ車輪を扱う共有場面。鼻から頬・口元・顎の面を内線で分け、かぶる瞼と首の影が共通。女性の顎には丸みが残り、黒い面より細線の灰が目立ちます。",
+              "en": "Middle-aged adults work on the same wheel. Nose/cheek/mouth/jaw planes, hooded lids and neck shadows recur. Her jaw stays rounder and hatching dominates over solid shadow cuts."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "4a2269372171b49246597eb699b23813f0390c3ea1a99a8954d976de69513fae.png",
+          "sha256": "4a2269372171b49246597eb699b23813f0390c3ea1a99a8954d976de69513fae",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "debcdda89d32d49632961f06c8e43c20f5b1811f212d969a879e2d9fbaf97b1e.jpg",
+          "thumb_sha256": "debcdda89d32d49632961f06c8e43c20f5b1811f212d969a879e2d9fbaf97b1e",
+          "prompt": {
+            "en": "One single unlettered manga panel in a continuous greenhouse. A middle-aged woman with short gray hair, wearing a long-sleeved canvas jacket and full-length trousers, stoops slightly to tip a plain metal watering can toward potted plants. Her weathered calm face, shoulders, waist and both connected arms are clearly visible in a three-quarter view. One complete clothed person actively working in one place, no detached heads, portrait insets or character sheets. Monochrome mature-character manga. Middle-aged adult faces built from long rectangular heads, broad square jaws and flat chin tips. Narrow hooded eyes under low straight brows, a long angular nose, short mouth folds, two short outer-eye creases and a distinct cheekbone edge on each face. Broad adult shoulders and straight substantial necks. Firm clean contour lines with sparse sharply placed interior marks. Large hard-edged solid black wedges under cheekbones, jaw and clothing folds contrast with unshaded white facial planes; reserve fine halftone for clothing, no glossy gradients or soft doll faces."
+          },
+          "native_job_id": "6af6f849000002560000028500000285",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6f849000002560000028500000285",
+            "api_seconds": 31.544
+          },
+          "max_rgb_channel_delta": 22,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "4a2269372171b49246597eb699b23813f0390c3ea1a99a8954d976de69513fae",
+            "observation": {
+              "ja": "長袖の上着とパンツの女性が温室でじょうろを傾ける単一動作。目尻・頬骨・鼻・顎の面分割と角張る顎下の黒が明瞭。水流は弱く、持ち手と手の重なりは込み入っていますが明白な接続破綻は見当たりません。",
+              "en": "One clothed woman tips a watering can in a greenhouse. Eye-corner creases, cheek/nose/jaw planes and angular under-jaw black are clear. Water flow is weak and handle/hand overlap is complex, without an obvious disconnection."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T11:39:24.435284+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-angular-dense-acting",
+      "category": "shonen",
+      "title": {
+        "ja": "鋭い目と密な内線で動く表情画",
+        "en": "Angular expressive faces and densely articulated ink"
+      },
+      "summary": {
+        "ja": "尖る顎と重い上瞼、表情の短線を軸に、黒髪の白い筋と細かな内線・局所的な斜線を組み合わせる描法。",
+        "en": "Angular expressive faces and densely articulated ink"
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Monochrome expressive manga. Sharply pointed chins below wide cheekbones, large slanted eyes with heavy upper lids and compact layered irises, a visible nose bridge, creased expressive mouths and short diagonal cheek marks. Wiry adult shoulders and limbs. Firm tapering outer contours contrast with close-set fine strokes inside hair and cloth. Dense flat black hair masses broken by narrow white ribbons, patterned gray clothing and short crosshatched shadow accents under jaws and wrists; keep broad white facial planes. Strong eyebrows and asymmetrical mouth acting, no glossy gradient skin."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "ダンダダン・公式無料本文の顔と線を私的観察",
+          "url": "https://shonenjumpplus.com/episode/3269632237310729754"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "e393c6b2f063a839aca7494802b9bab670ad72955fcc39e32c8b435e38ba854e.png",
+          "sha256": "e393c6b2f063a839aca7494802b9bab670ad72955fcc39e32c8b435e38ba854e",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "2773044050e99627a1751414d8534212b85efe69f62c816382da74e7d01960db.jpg",
+          "thumb_sha256": "2773044050e99627a1751414d8534212b85efe69f62c816382da74e7d01960db",
+          "prompt": {
+            "en": "One single unlettered manga panel in a continuous rainy park with leafy trees and a plain wooden railing, no buildings, signs or lettering. An adult man in a zipped rain jacket holds one plain umbrella over himself and an adult woman in a long-sleeved coat. The woman points ahead and laughs while the man looks startled toward her. Both fully clothed, shown from the waist up with their arms naturally connected in one shared space. No other people, no isolated heads, portrait insets or character sheets. Monochrome expressive manga. Sharply pointed chins below wide cheekbones, large slanted eyes with heavy upper lids and compact layered irises, a visible nose bridge, creased expressive mouths and short diagonal cheek marks. Wiry adult shoulders and limbs. Firm tapering outer contours contrast with close-set fine strokes inside hair and cloth. Dense flat black hair masses broken by narrow white ribbons, patterned gray clothing and short crosshatched shadow accents under jaws and wrists; keep broad white facial planes. Strong eyebrows and asymmetrical mouth acting, no glossy gradient skin."
+          },
+          "native_job_id": "6af6f869000002560000028600000286",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6f869000002560000028600000286",
+            "api_seconds": 31.812
+          },
+          "max_rgb_channel_delta": 35,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e393c6b2f063a839aca7494802b9bab670ad72955fcc39e32c8b435e38ba854e",
+            "observation": {
+              "ja": "樹木と木柵の公園で、男女が同じ傘に入り女性が進行方向を指す一場面。角張る鼻・顎、外線の強弱、目鼻口の内線と頬首の局所ハッチが共通。髪の白筋と瞼の重さには人物差が残ります。文字看板はありません。",
+              "en": "A man and woman share an umbrella in a leafy park, she points ahead. Angular noses/jaws, weighted contours, facial marks and local cheek/neck hatching recur. Hair ribbons and lid weight vary between people. No sign lettering."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "2d562d9d16699d0057f4e5aaf9896b074cdcc0758e0c2253a393ea3a4a03d0e2.png",
+          "sha256": "2d562d9d16699d0057f4e5aaf9896b074cdcc0758e0c2253a393ea3a4a03d0e2",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "328799bf07d086a6f7adc334985c8d3668f91ce9092f68f2e324341ecee0c971.jpg",
+          "thumb_sha256": "328799bf07d086a6f7adc334985c8d3668f91ce9092f68f2e324341ecee0c971",
+          "prompt": {
+            "en": "One single unlettered manga panel inside a small office. One adult man wearing a long-sleeved collared shirt and dark trousers leans over a desk, trying to catch a few loose blank sheets while clutching a folder against his chest. His lively startled face and connected shoulders and arms are clear in a three-quarter waist-up view. One clothed person, one continuous action; no separate heads, portrait insets or character sheets. Monochrome expressive manga. Sharply pointed chins below wide cheekbones, large slanted eyes with heavy upper lids and compact layered irises, a visible nose bridge, creased expressive mouths and short diagonal cheek marks. Wiry adult shoulders and limbs. Firm tapering outer contours contrast with close-set fine strokes inside hair and cloth. Dense flat black hair masses broken by narrow white ribbons, patterned gray clothing and short crosshatched shadow accents under jaws and wrists; keep broad white facial planes. Strong eyebrows and asymmetrical mouth acting, no glossy gradient skin."
+          },
+          "native_job_id": "6af6f692000002560000028100000281",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6f692000002560000028100000281",
+            "api_seconds": 31.273
+          },
+          "max_rgb_channel_delta": 14,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "2d562d9d16699d0057f4e5aaf9896b074cdcc0758e0c2253a393ea3a4a03d0e2",
+            "observation": {
+              "ja": "長袖シャツの男性が机で紙を掲げ本類を抱え、驚く一続きの動作。太い眉・角張る鼻顎・頬首の短いハッチと細い内線が明瞭。髪内部の白筋は乏しく、上瞼より太い眉と見開き目が強く出ています。",
+              "en": "A clothed man reacts at a desk while holding a sheet and books. Strong brows, angular nose/jaw, short cheek/neck hatching and fine interior marks are clear. Hair ribbons are sparse; brows and wide-open eyes dominate over heavy upper lids."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T11:39:24.435284+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-white-round-comedy",
+      "category": "gag",
+      "title": {
+        "ja": "大きな楕円の目と白い頬の丸顔コメディ",
+        "en": "Round comedy faces with broad white cheeks"
+      },
+      "summary": {
+        "ja": "丸い頬と大きな楕円の目、豆形に開く口を、太めの滑らかな輪郭と広い白場で読みやすく見せる描法。",
+        "en": "Round comedy faces with broad white cheeks"
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Monochrome round-faced comedy manga. Broad curved cheeks taper to a very small rounded jaw; wide oval eyes have simple black irises with tiny white highlights, a tiny wedge nose and large bean-shaped expressive mouths. Clearly adult people with softly rounded shoulders and simplified adult arms, not child bodies. Smooth medium-bold silhouette lines and thin sparse interior marks. Hair forms broad pale scalloped tufts with few strand lines; flat black pupils and compact black collar or apron shapes. Big white cheeks, a few short blush strokes and limited uniform gray shadows, no facial crosshatching."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "姫様“拷問”の時間です・公式無料本文の顔と線を私的観察",
+          "url": "https://shonenjumpplus.com/episode/10834108156649530410"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "2ce209962a9431933c5a46c9df6a93b15ddacc35839a0a939309f27b92e5cb90.png",
+          "sha256": "2ce209962a9431933c5a46c9df6a93b15ddacc35839a0a939309f27b92e5cb90",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "d6f57384fa08628fa75e72a25eaf7ee6433c90d9c13fc738c5bed2510d9f1268.jpg",
+          "thumb_sha256": "d6f57384fa08628fa75e72a25eaf7ee6433c90d9c13fc738c5bed2510d9f1268",
+          "prompt": {
+            "en": "One single unlettered manga panel in one continuous bakery kitchen. An adult woman and an adult man, both wearing plain long-sleeved shirts and full aprons over trousers, stand on opposite sides of one counter and decorate the same round fruit tart. She holds a small bowl while he places one berry on the tart, both delighted. Two complete waist-up clothed people with naturally connected arms, one shared scene. No isolated heads, portrait insets or character sheets. Monochrome round-faced comedy manga. Broad curved cheeks taper to a very small rounded jaw; wide oval eyes have simple black irises with tiny white highlights, a tiny wedge nose and large bean-shaped expressive mouths. Clearly adult people with softly rounded shoulders and simplified adult arms, not child bodies. Smooth medium-bold silhouette lines and thin sparse interior marks. Hair forms broad pale scalloped tufts with few strand lines; flat black pupils and compact black collar or apron shapes. Big white cheeks, a few short blush strokes and limited uniform gray shadows, no facial crosshatching."
+          },
+          "native_job_id": "6af6f6b1000002560000028200000282",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6f6b1000002560000028200000282",
+            "api_seconds": 31.342
+          },
+          "max_rgb_channel_delta": 12,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "2ce209962a9431933c5a46c9df6a93b15ddacc35839a0a939309f27b92e5cb90",
+            "observation": {
+              "ja": "長袖とエプロンの成人男女がタルトを一緒に仕上げる共有場面。丸い頬、大きな縦楕円の黒い目、滑らかな太めの輪郭と少ない内線が共通。白い頬の指定に対して灰面と斜線が残ります。",
+              "en": "Clothed adult bakery staff jointly finish a tart. Round cheeks, large vertical oval eyes, smooth bold silhouettes and sparse inner marks recur. Gray blush planes and strokes remain despite white-cheek wording."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "b275e3cae25ff590a97a390935e262fa73945cd8a40e0b0ecb986d2666688911.png",
+          "sha256": "b275e3cae25ff590a97a390935e262fa73945cd8a40e0b0ecb986d2666688911",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "1142d0fa5ce8f9a28c3e609d2e5c5032b2579cc258a5a5fce0d0f9adfd8b6270.jpg",
+          "thumb_sha256": "1142d0fa5ce8f9a28c3e609d2e5c5032b2579cc258a5a5fce0d0f9adfd8b6270",
+          "prompt": {
+            "en": "One single unlettered manga panel showing a continuous bakery kitchen with an oven and a work counter. An adult woman in a plainly visible long-sleeved shirt and full apron over trousers is bent forward pulling a hot tray of round rolls from the oven using both oven-mitted hands. Her delighted face is in the same action, not a separate portrait. Three-quarter waist-up view with both arms naturally connected to her clothed body. One person performing one action in one room, no inset panels, isolated heads, extra poses or character sheets. Monochrome round-faced comedy manga. Broad curved cheeks taper to a very small rounded jaw; wide oval eyes have simple black irises with tiny white highlights, a tiny wedge nose and large bean-shaped expressive mouths. Clearly adult people with softly rounded shoulders and simplified adult arms, not child bodies. Smooth medium-bold silhouette lines and thin sparse interior marks. Hair forms broad pale scalloped tufts with few strand lines; flat black pupils and compact black collar or apron shapes. Big white cheeks, a few short blush strokes and limited uniform gray shadows, no facial crosshatching."
+          },
+          "native_job_id": "6af6f889000002560000028700000287",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af6f889000002560000028700000287",
+            "api_seconds": 31.557
+          },
+          "max_rgb_channel_delta": 13,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "b275e3cae25ff590a97a390935e262fa73945cd8a40e0b0ecb986d2666688911",
+            "observation": {
+              "ja": "長袖・エプロン・パンツの成人女性がオーブンからパンのトレーを引き出す単一動作。丸顔と大きな楕円目、太い外線と簡略内線が共通。頬の灰と目の外周線は強め。独立頭部はなく、オーブン表示は小さな点状記号です。",
+              "en": "One clothed adult woman pulls a tray of rolls from an oven. Round face, large oval eyes, bold contours and simplified internal marks recur. Gray cheeks and eye outlines are stronger. No detached heads; the oven display has small dot-like marks."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T11:39:24.435284+00:00",
       "limitations": {
         "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
         "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
