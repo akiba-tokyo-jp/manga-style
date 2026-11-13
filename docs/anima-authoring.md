@@ -16,6 +16,14 @@ Animaの各絵柄は別々に生成した原画を2枚持つ。1枚目 `mixed-ge
 
 API `samples[]` と詳細ページは2枚それぞれの原画、全文コピー、設定・job ID、観察説明を返す。旧 `schema: 1` は過去データの読み込み互換のため維持するだけで、新しい2枚要件への適合を意味しない。旧原画/プロンプトは履歴と不変Releaseに保持し、意図的改訂でversionを上げる。GPT Imageの定義/2枚組は変更しない。
 
+### 自作原画を参照した見本
+
+参照を使う場合も、2枚は別native jobの未加工原PNGとする。同一項目のもう一方を入力にした場合は、`requested_settings.references_used` にその `source_role` と原PNGの `sha256` を保存し、実際にダウンロードできる原画と一致させる。条件付き生成を「条件なしの独立抽選2回」と説明しない。出版社画像を入力へ流用しない。
+
+SnapRef CSの見本は詳細の観察・制約欄に入力関係を明記する。再投入する人は、参照元の原画、該当画像の実英語全文、`reference_adapter: snapref_cs` 等の実設定を使う。英語文のコピーだけで同じ参照条件を再現したことにはならない。APIではこれらの設定を `samples[].settings` に返す。
+
+PS5 Image Front経由の実出力は `transport_client: ps5-image-front` と証拠の出所を残す。共通の `provider: ps5-anima` はPS5のAnimaバックエンドを指し、Hermes pluginを呼んだとの意味ではない。このクライアントが実送信した `seed: -1` と空文字negativeを、未指定のnullへ置き換えない。返っていない確定seedは不明のままにする。nativeの完了・実step・参照GPU評価・正規化入力SHA、およびnative画像と保存PNGの一致を確認し、参照GPU動作と視覚的な絵柄一致は別に点検する。
+
 ## 次の追加
 
 1. 原画と英語全文を生成ごとに保存し、実見して重複人物・文字様印・手足の破綻を点検する。不適合な試行も私有の制作記録には残すが、公開manifestには入れない。
