@@ -31,6 +31,11 @@
       "tag": "anima-text-only-006",
       "asset": "anima-text-only-006.zip",
       "sha256": "ef4ee9aaf3240a1737f10a1e72b7393658bbc3910f9a3f013dd166fc304c8391"
+    },
+    {
+      "tag": "anima-text-only-007",
+      "asset": "anima-text-only-007.zip",
+      "sha256": "7e0776b8e4334cff500a694e6d3300ce29e2199260709573ad16b390b659dd80"
     }
   ],
   "entries": [
@@ -1734,6 +1739,268 @@
         }
       ],
       "updated_at": "2026-11-13T15:33:40.749389+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-flat-lids-long-jaw",
+      "category": "yonkoma",
+      "title": {
+        "ja": "水平の重い瞼と網灰の縦長顔",
+        "en": "Flat dark lids and elongated jaws in dotted gray"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Dry deadpan monochrome cartoon. Each adult has a long narrow head with cheeks tapering toward an angular chin. Almost horizontal dark upper eyelids and level brows dominate slim white eyes with small dark pupils. A straight thin nose bridge ends in a projecting tip, and the mouth is a very short flat stroke. Sparse lip, nostril and ear marks sit on broad white skin. Fairly even dark outside contours, finer interior lines, flat dotted gray hair and clothing patches and selective black eye accents; facial shading stays minimal. A narrow neck links the head to a plainly clothed adult torso."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "クレムリン・公式無料本文画像4,5の人間顔部分",
+          "url": "https://comic-days.com/episode/3269632237242901387"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "42781305139e5f1be49ffd388a8f71e01bd7b0cce478b62eea93f1b1ca729424.png",
+          "sha256": "42781305139e5f1be49ffd388a8f71e01bd7b0cce478b62eea93f1b1ca729424",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "fcfe3919177afd085422cc71bcb7e1c5f100cce1de275a69f74a4db77fd809f7.jpg",
+          "thumb_sha256": "fcfe3919177afd085422cc71bcb7e1c5f100cce1de275a69f74a4db77fd809f7",
+          "prompt": {
+            "en": "A candid unlettered working moment at a community laundry table. A thirty-five-year-old woman with short wavy hair and a forty-year-old man with short straight hair hold opposite corners of one large plain towel and fold it together. Both wear plain long-sleeved shirts and full trousers. Their adult faces, connected necks, shoulders and arms, towel, table and folded fabric stacks share one continuous medium view. Dry deadpan monochrome cartoon. Each adult has a long narrow head with cheeks tapering toward an angular chin. Almost horizontal dark upper eyelids and level brows dominate slim white eyes with small dark pupils. A straight thin nose bridge ends in a projecting tip, and the mouth is a very short flat stroke. Sparse lip, nostril and ear marks sit on broad white skin. Fairly even dark outside contours, finer interior lines, flat dotted gray hair and clothing patches and selective black eye accents; facial shading stays minimal. A narrow neck links the head to a plainly clothed adult torso."
+          },
+          "native_job_id": "6af733b400000256000002c5000002c5",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af733b400000256000002c5000002c5",
+            "api_seconds": 31.457
+          },
+          "max_rgb_channel_delta": 12,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "42781305139e5f1be49ffd388a8f71e01bd7b0cce478b62eea93f1b1ca729424",
+            "observation": {
+              "ja": "着衣の成人男女が台の上の同じ布を広げる一場面。水平寄りの重い瞼、短い口、長い頬顎、白い顔と網灰を確認。男性の眉や頬の斜線が強く、魅力画より顔の点描や線が多めです。",
+              "en": "Clothed adults spread the same cloth over a table in one space. Heavy near-horizontal lids, short mouths, long cheeks/jaws, white faces and dotted gray recur. Male brows/cheek hatching are stronger, with more facial stipple and lines than in the showcase."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "93c247e8d4f256cebf756973bb20e1cf5b8d99e9a7fbe91fe38340c8d6646bc6.png",
+          "sha256": "93c247e8d4f256cebf756973bb20e1cf5b8d99e9a7fbe91fe38340c8d6646bc6",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "6667ee623cb232dae473ef50d3726100455516436c5b58996c9e96068b0cb449.jpg",
+          "thumb_sha256": "6667ee623cb232dae473ef50d3726100455516436c5b58996c9e96068b0cb449",
+          "prompt": {
+            "en": "A candid unlettered working moment at a community laundry table. A forty-year-old man with short straight hair wears a plain long-sleeved shirt and full trousers. He leans over the table and smooths a large plain folded towel with both hands, looking calmly down at it. His adult face, connected shoulders and arms, towel, tabletop and fabric shelves share one continuous medium view. Dry deadpan monochrome cartoon. Each adult has a long narrow head with cheeks tapering toward an angular chin. Almost horizontal dark upper eyelids and level brows dominate slim white eyes with small dark pupils. A straight thin nose bridge ends in a projecting tip, and the mouth is a very short flat stroke. Sparse lip, nostril and ear marks sit on broad white skin. Fairly even dark outside contours, finer interior lines, flat dotted gray hair and clothing patches and selective black eye accents; facial shading stays minimal. A narrow neck links the head to a plainly clothed adult torso."
+          },
+          "native_job_id": "6af734fc00000256000002c9000002c9",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af734fc00000256000002c9000002c9",
+            "api_seconds": 31.218
+          },
+          "max_rgb_channel_delta": 13,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "93c247e8d4f256cebf756973bb20e1cf5b8d99e9a7fbe91fe38340c8d6646bc6",
+            "observation": {
+              "ja": "着衣の成人男性1人が布棚の前で前屈し、両手で台上の布を押さえ整える場面。水平の重瞼、短い口、長い頬顎、少ない顔線と平坦な網灰を共有。男女画より眉や頬の描き込みが少なく、灰面が整っています。",
+              "en": "One clothed adult man bends before fabric shelves and smooths cloth on a table with both hands. Flat heavy lids, short mouth, long cheek/jaw shape, sparse face lines and regular flat gray recur. Brow/cheek marks are fewer and gray fields cleaner than in the mixed sample."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T15:58:29.385342+00:00",
+      "limitations": {
+        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
+        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+      }
+    },
+    {
+      "id": "anima-text-pale-face-dark-weave",
+      "category": "horror",
+      "title": {
+        "ja": "白い細顔と暗部の刻線を対比する硬質画",
+        "en": "Pale spare faces against densely worked dark masses"
+      },
+      "summary": {
+        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
+        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "rough"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "prompt": {
+        "en": "Hard-ink monochrome manga. Each original adult has a pale narrow face tapering toward a small chin, a slim horizontal eye with a dark upper edge and quiet small pupil, a short dark nose mark and a small flat mouth with a shadow below it. Keep facial marks sparse inside a fine slightly broken contour. Short oblique and parallel strokes weave gray across clothing and overlaps, while connected black masses form deep shadow and broad white patches hold the light. Dark hair retains a few thin white strand gaps. A visible neck connects the quiet face to the clothed shoulders and arms."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "BLAME!・公式無料本文画像6,7の可視顔と描線",
+          "url": "https://comic-days.com/episode/13932016480029861973"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "753a8c8363e5962ba76f25a2fa9933ae9cfd1f4b32ea0a3821e13e719882c69d.png",
+          "sha256": "753a8c8363e5962ba76f25a2fa9933ae9cfd1f4b32ea0a3821e13e719882c69d",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "8599dde587a6e45f9b960e1e558a2d806e175610cadfe3634a10c83c4286718a.jpg",
+          "thumb_sha256": "8599dde587a6e45f9b960e1e558a2d806e175610cadfe3634a10c83c4286718a",
+          "prompt": {
+            "en": "A candid unlettered working moment in a dim household storeroom. A forty-year-old woman with tied-back dark hair and a forty-year-old man with short dark hair stand beside a shelf and jointly lift a plain wooden box onto a low table. Both wear plain long-sleeved work jackets and full trousers. Their adult faces, connected necks, shoulders and arms, hands, box, table and storage shelves share one continuous medium view. Hard-ink monochrome manga. Each original adult has a pale narrow face tapering toward a small chin, a slim horizontal eye with a dark upper edge and quiet small pupil, a short dark nose mark and a small flat mouth with a shadow below it. Keep facial marks sparse inside a fine slightly broken contour. Short oblique and parallel strokes weave gray across clothing and overlaps, while connected black masses form deep shadow and broad white patches hold the light. Dark hair retains a few thin white strand gaps. A visible neck connects the quiet face to the clothed shoulders and arms."
+          },
+          "native_job_id": "6af733f300000256000002c7000002c7",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af733f300000256000002c7000002c7",
+            "api_seconds": 31.855
+          },
+          "max_rgb_channel_delta": 17,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "753a8c8363e5962ba76f25a2fa9933ae9cfd1f4b32ea0a3821e13e719882c69d",
+            "observation": {
+              "ja": "着衣の成人男女が棚のある物置で木箱を共同で運ぶ一場面。白い細顔を少ない顔線と小さな目口で抜き、服の暗部に刻線と黒を集めています。指定ほど黒の塊は強くなく、人物は作業途中より正面寄りの静止感があります。",
+              "en": "Clothed adults jointly carry a wooden box in a shelved storeroom. Pale narrow faces use sparse marks and small features, while clothing gathers hatching and dark masses. Black massing is weaker than requested and the pose is relatively static/frontal."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "00dcf274a8fff0e59b49b00d8dfea5bedea2b66c43ae707ec5cb0a0e4dd33ccb.png",
+          "sha256": "00dcf274a8fff0e59b49b00d8dfea5bedea2b66c43ae707ec5cb0a0e4dd33ccb",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "ce3c3e4b47a50b6978664f2bf283ae87133548ad03d54823bee0e88ee30fa55c.jpg",
+          "thumb_sha256": "ce3c3e4b47a50b6978664f2bf283ae87133548ad03d54823bee0e88ee30fa55c",
+          "prompt": {
+            "en": "A candid unlettered working moment in a dim household storeroom. A forty-year-old woman with tied-back dark hair wears a plain long-sleeved work jacket and full trousers. She bends toward a low table, holding a plain small metal lantern in one hand while steadying a wooden box with the other. Her adult face, connected neck, shoulders and arms, lantern, box, table and shelves share one continuous medium view. Hard-ink monochrome manga. Each original adult has a pale narrow face tapering toward a small chin, a slim horizontal eye with a dark upper edge and quiet small pupil, a short dark nose mark and a small flat mouth with a shadow below it. Keep facial marks sparse inside a fine slightly broken contour. Short oblique and parallel strokes weave gray across clothing and overlaps, while connected black masses form deep shadow and broad white patches hold the light. Dark hair retains a few thin white strand gaps. A visible neck connects the quiet face to the clothed shoulders and arms."
+          },
+          "native_job_id": "6af7351b00000256000002ca000002ca",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af7351b00000256000002ca000002ca",
+            "api_seconds": 32.037
+          },
+          "max_rgb_channel_delta": 58,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "00dcf274a8fff0e59b49b00d8dfea5bedea2b66c43ae707ec5cb0a0e4dd33ccb",
+            "observation": {
+              "ja": "着衣の成人女性1人が前屈し、一方の手でランタンを吊り、もう一方を箱に添える場面。滑らかな白い細顔、疎な顔内線、小さな目口と、服の曲面に沿う刻線・まとまった黒を共有。男女画と黒量や顔の見える角度には差が残ります。",
+              "en": "One clothed adult woman bends forward, suspending a lantern in one hand and bracing a box with the other. Smooth pale narrow face, sparse inner marks, small features, curved clothing hatching and grouped black recur. Black coverage and face angle vary from the mixed scene."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-13T15:58:29.385342+00:00",
       "limitations": {
         "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
         "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
