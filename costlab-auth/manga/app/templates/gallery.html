@@ -23,7 +23,7 @@
       <label>{{ newui.category }}<select name="root"><option value="">{{ newui.all }}</option>{% for c in roots %}<option value="{{ c.id }}"{% if c.id == selected.root %} selected{% endif %}>{{ c.title }}</option>{% endfor %}</select></label>
       <label>{{ newui.topic }}<select name="topic"><option value="">{{ newui.all }}</option>{% for t in topics %}<option value="{{ t.id }}"{% if t.id == selected.topic %} selected{% endif %}>{{ t.title }}</option>{% endfor %}</select></label>
       {% for name, options in facet_options.items() %}<label>{{ newui[name] }}<select name="{{ name }}"><option value="">{{ newui.all }}</option>{% for opt in options %}<option value="{{ opt.value }}"{% if selected[name] == opt.value %} selected{% endif %}>{{ opt.label }}</option>{% endfor %}</select></label>{% endfor %}
-      <button class="button button-primary" type="submit">{{ newui.apply }}</button><a class="filter-clear" href="{{ clear_url }}">{{ newui.clear }}</a><p class="filter-note">{{ newui.filter_note }}</p>
+      <button class="button button-primary" type="submit">{{ newui.apply }}</button><a class="filter-clear" href="{{ clear_url }}">{{ newui['clear'] }}</a><p class="filter-note">{{ newui.filter_note }}</p>
     </form>
   </details>
   <section class="gallery-results" id="gallery-results" aria-label="{{ newui.results.format(n=total) }}">

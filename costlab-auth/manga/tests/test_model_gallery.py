@@ -126,6 +126,16 @@ class ModelGalleryTests(unittest.TestCase):
         for path in ['/?model=unknown', '/search?model=unknown', '/n/gag?model=unknown', '/v1/tree?model=unknown']:
             self.assertEqual(self.client.get(path).status_code, 400, path)
 
+    def test_clear_filters_label_is_localized_text_not_dict_method(self):
+        for lang, label in (('ja', '条件をクリア'), ('en', 'Clear filters')):
+            with self.subTest(lang=lang):
+                # The dynamic Anima fixture is intentionally empty; populated
+                # static galleries share this template with the GPT gallery.
+                response = self.client.get(f'/search?model=gpt-image&lang={lang}')
+                self.assertEqual(response.status_code, 200)
+                self.assertRegex(response.text, r'class="filter-clear"[^>]*>' + label + r'</a>')
+                self.assertNotIn('built-in method', response.text)
+
     def test_gallery_pagination_retains_filters_and_model(self):
         r = self.client.get('/search?root=shonen&model=gpt-image&lang=en&page=2')
         self.assertEqual(r.status_code, 200)
