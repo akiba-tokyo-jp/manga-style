@@ -41,6 +41,11 @@
       "tag": "anima-structural-003",
       "asset": "anima-structural-003.zip",
       "sha256": "314a4c11149f56a94f9a798f57aefa2bf5648738a8f1af32f9460c677e720b6d"
+    },
+    {
+      "tag": "anima-img2img-001",
+      "asset": "anima-img2img-001.zip",
+      "sha256": "0866f574463920f676cc209ec9a75344e336e6cfab91d880ea9652504bfb3896"
     }
   ],
   "entries": [
@@ -3862,6 +3867,224 @@
         "ja": "原画2枚は異なるnative jobの未加工PNGです。1枚目は2枚目の原画を入力とするSnapRef CS生成で、条件なしの独立抽選2回ではありません。再投入時は2枚目を参照にし、1枚目の全文・実設定と参照SHAを使ってください。両方に同じ絵柄部分を実送信していますが、全場面の頭身や灰面位置を保証しません。手指と指定からの残差は各観察を参照。1枚目はseed=-1と空のnegativeを実送信しましたが、確定seedは返っていません。2枚目の未指定値はnullのままです。自己点検は人間承認とは別です。",
         "en": "The unmodified originals have distinct native jobs. The first was newly generated with the second as its SnapRef CS input, not as an independent unconditioned draw. To reuse it, provide the second original with the first sample full prompt, actual settings and reference SHA. Both received the exact shared style recipe; universal proportions or gray placement are not guaranteed. Per-image notes retain finger uncertainty and prompt residuals. The first actually submitted seed=-1 and an empty negative; no resolved seed was returned. Unspecified controls for the second remain null. Self-review is not human approval."
       }
+    },
+    {
+      "id": "anima-img2img-dry-ink",
+      "category": "gekiga",
+      "title": {
+        "ja": "細線の擦れと粒状灰の成熟漫画（画像変換）",
+        "en": "Fine scraped lines and grainy gray (img2img)"
+      },
+      "summary": {
+        "ja": "異なる2枚のGPT自作見本を入力にした実Anima画像変換2原画。入力画像も別途取得可能で、入力をAnima見本として数えません。",
+        "en": "Two real Anima img2img originals from two distinct self-generated GPT inputs, separately downloadable and not counted as Anima samples."
+      },
+      "limitations": {
+        "ja": "これはtext2imgや条件なしの新規作画ではなく、低denoiseで元画像の構図・描線を多く残すAnima画像変換です。再投入には各sampleのsource_images_usedの実入力PNG・英語全文・tool_intensity=-50を使用。要求8stepに対しnative実行は3step、denoiseは約0.305です。入力の元モデルはchatgpt-imageとして明示。原PNGは無加工です。背景形状、手指、2枚の描線密度差の不確かさを観察に残し、完璧な再現や人体を保証しません。native GETはprompt/model/seed/samplerを返さず、モデルと全文はtool結果・送信記録に基づきます。自己点検は人間承認ではありません。",
+        "en": "These are low-denoise Anima image conversions retaining much of the input composition/drawing, not text-only or unconditioned new drawings. Reuse each sample source_images_used PNG with its exact English prompt and tool_intensity=-50. Eight requested steps yielded three native evaluations at about0.305 denoise. The source model is explicitly chatgpt-image. Original outputs are unmodified. Observations retain background/finger and density uncertainties; perfect anatomy/reproduction is not promised. Native GET omits prompt/model/seed/sampler; model and exact text rely on tool/submission records. Self-review is not human approval."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "rough"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "tone",
+          "solid"
+        ]
+      },
+      "prompt": {
+        "en": "Unlettered black-and-white mature comic drawing. Adults with angular cheeks and jaws, compressed expressive eyes, broad brows, substantial necks and forearms, large jointed hands, compact practical adult bodies. Strong uneven outer contours with dry dragging breaks; thin interior creases and facial marks. Large rough black hair and collar shapes, sharp black fold wedges, broad white skin planes and broken grainy gray shadow patches. Dry scraped ink edges and sparse short hatching organize contact shadows, with restrained background detail."
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "JUMBO MAX・公式公開告知画の顔と輪郭の観察（表紙範囲のみ）",
+          "url": "https://bigcomics.jp/series/447b79a24332d/new"
+        },
+        {
+          "title": "画像変換の実入力（GPT自作見本由来・Anima原画に数えない） / Actual conditioning input, GPT-derived, not an Anima sample",
+          "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-001/reference-input-01386a1aec0e8af657cfd54340362ebf50309696163e5416ffdd717d93322211.png"
+        },
+        {
+          "title": "画像変換の実入力（GPT自作見本由来・Anima原画に数えない） / Actual conditioning input, GPT-derived, not an Anima sample",
+          "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-001/reference-input-9ab4497db26746d0c6c55b88104e60f4175296721198feb9350c24b4c274f417.png"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-13T05:08:45.837081+00:00",
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "a58f9aa617847f1488a0802aea182fd5ef9cc3c5b3e29f9607d0953b0908d94e.png",
+          "sha256": "a58f9aa617847f1488a0802aea182fd5ef9cc3c5b3e29f9607d0953b0908d94e",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "d3f5f75d05b9e65d121ed14c8ffc005887599b1a3016a74cbf4ecdecda31ed60.jpg",
+          "thumb_sha256": "d3f5f75d05b9e65d121ed14c8ffc005887599b1a3016a74cbf4ecdecda31ed60",
+          "prompt": {
+            "en": "Unlettered black-and-white mature comic drawing. Adults with angular cheeks and jaws, compressed expressive eyes, broad brows, substantial necks and forearms, large jointed hands, compact practical adult bodies. Strong uneven outer contours with dry dragging breaks; thin interior creases and facial marks. Large rough black hair and collar shapes, sharp black fold wedges, broad white skin planes and broken grainy gray shadow patches. Dry scraped ink edges and sparse short hatching organize contact shadows, with restrained background detail. Retain the single scene of the same fully clothed adult woman and adult man working together on one timber door handle. Both figures remain connected to their bodies and occupy this same shared scene, faces prominent. Preserve the rough drawing rules across people, clothing and timber."
+          },
+          "native_job_id": "6af69af1000002560000023100000231",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "tool_intensity": -50,
+            "denoise_strength": 0.305,
+            "references_used": [],
+            "source_images_used": [
+              {
+                "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-001/reference-input-01386a1aec0e8af657cfd54340362ebf50309696163e5416ffdd717d93322211.png",
+                "sha256": "01386a1aec0e8af657cfd54340362ebf50309696163e5416ffdd717d93322211",
+                "source_model": {
+                  "id": "chatgpt-image",
+                  "version": "gpt-image-2.6-sunburst"
+                },
+                "source_role": "conditioning-input-only",
+                "original_catalog_style_id": "gekiga-grotesque-inkwash-quiet",
+                "original_sha256": "5f89bd7e64791c4e8690b65043e71817fd6b1c88551836b8f552bb4f5e4f1306",
+                "input_transformation": {
+                  "kind": "centered white padding only",
+                  "source_size": [
+                    1024,
+                    683
+                  ],
+                  "output_size": [
+                    1024,
+                    1024
+                  ],
+                  "paste_xy": [
+                    0,
+                    170
+                  ],
+                  "no_resize": true
+                }
+              }
+            ]
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 3,
+            "sampler": "euler",
+            "mode": "img2img",
+            "native_job_id": "6af69af1000002560000023100000231",
+            "api_seconds": 17.386,
+            "denoise_strength": 0.305,
+            "source_normalized_sha256": "e9f47f20499d2d0ade47715bc60a4d589eeb98742fbaef937094facaf0033ecd",
+            "model_evidence": "tool-reported; native GET omits model",
+            "native_fields_not_returned": [
+              "prompt",
+              "model",
+              "seed",
+              "sampler"
+            ]
+          },
+          "max_rgb_channel_delta": 11,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "a58f9aa617847f1488a0802aea182fd5ef9cc3c5b3e29f9607d0953b0908d94e",
+            "observation": {
+              "ja": "着衣の成人男女が同じ木戸の縦把手を握る近接場面。細い不均一線が頬・首・衣服の粒状灰へつながり、黒髪や襟に擦れた白抜きが残ります。手指は把手に重なり一部不確か。読める文字・透かし・明白な増肢なし。左奥の淡い背景は屋根状にも顔状にも見えますが、拡大でも明瞭な目鼻口や閉じた頭部輪郭は確認できず、背景物とも断定していません。入力に由来する構図を多く保持した画像変換です。",
+              "en": "Two clothed adults, read as a woman and man, grip the same timber-door handle. Fine irregular contours blend into grainy gray on cheek/neck/clothing, with scraped white gaps in black hair/collars. Handle-overlapped fingers remain uncertain. No readable text/watermark or obvious extra limbs. A faint left-background shape can suggest a roof or face, but enlargement shows neither clear facial features nor a closed head outline; its identity is not asserted. This conversion substantially retains the input composition."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "492c06aa913efe237bb9ee0837b866b9e44ef44b01148bafa2dc98417d308951.png",
+          "sha256": "492c06aa913efe237bb9ee0837b866b9e44ef44b01148bafa2dc98417d308951",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "dde62dd2ffad50116c7565ec81e85ce5766e13c2f1bd5b4581544b2a439b2a4e.jpg",
+          "thumb_sha256": "dde62dd2ffad50116c7565ec81e85ce5766e13c2f1bd5b4581544b2a439b2a4e",
+          "prompt": {
+            "en": "Unlettered black-and-white mature comic drawing. Adults with angular cheeks and jaws, compressed expressive eyes, broad brows, substantial necks and forearms, large jointed hands, compact practical adult bodies. Strong uneven outer contours with dry dragging breaks; thin interior creases and facial marks. Large rough black hair and collar shapes, sharp black fold wedges, broad white skin planes and broken grainy gray shadow patches. Dry scraped ink edges and sparse short hatching organize contact shadows, with restrained background detail. Retain the single scene of the same fully clothed adult woman at one timber workbench arranging a small house model and simple blocks. Her full figure and both connected hands belong to this one shared workspace. Preserve the rough drawing rules across the person, clothing and timber."
+          },
+          "native_job_id": "6af69b5b000002560000023300000233",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "tool_intensity": -50,
+            "denoise_strength": 0.305,
+            "references_used": [],
+            "source_images_used": [
+              {
+                "url": "https://github.com/akiba-tokyo-jp/manga-style/releases/download/anima-img2img-001/reference-input-9ab4497db26746d0c6c55b88104e60f4175296721198feb9350c24b4c274f417.png",
+                "sha256": "9ab4497db26746d0c6c55b88104e60f4175296721198feb9350c24b4c274f417",
+                "source_model": {
+                  "id": "chatgpt-image",
+                  "version": "gpt-image-2.6-sunburst"
+                },
+                "source_role": "conditioning-input-only",
+                "original_catalog_style_id": "gekiga-grotesque-inkwash-quiet",
+                "original_sha256": "f83908d9bf15a373c358835d31393eb7f8b67c6cba40a114147255b3a75c6cf1",
+                "input_transformation": {
+                  "kind": "centered white padding only",
+                  "source_size": [
+                    683,
+                    1024
+                  ],
+                  "output_size": [
+                    1024,
+                    1024
+                  ],
+                  "paste_xy": [
+                    170,
+                    0
+                  ],
+                  "no_resize": true
+                }
+              }
+            ]
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 3,
+            "sampler": "euler",
+            "mode": "img2img",
+            "native_job_id": "6af69b5b000002560000023300000233",
+            "api_seconds": 20.149,
+            "denoise_strength": 0.305,
+            "source_normalized_sha256": "b68a1f7079c7e7bf31e970d05e3b2e780f082998168d28ad378102541f2bda25",
+            "model_evidence": "tool-reported; native GET omits model",
+            "native_fields_not_returned": [
+              "prompt",
+              "model",
+              "seed",
+              "sampler"
+            ]
+          },
+          "max_rgb_channel_delta": 14,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "492c06aa913efe237bb9ee0837b866b9e44ef44b01148bafa2dc98417d308951",
+            "observation": {
+              "ja": "着衣の成人女性が木製作業台で家形模型と角材に手を添える一続きの全身場面。細いかすれ線、黒髪の白抜き、衣服と木部の粒状灰を共有しますが、1枚目より白場が多く清潔な描写です。明白な余剰人体・断裂・読める文字透かしなし。指先と道具の境は省略があり完全な正常は保証しません。元のGPT自作見本に近い配置を保持した実Anima画像変換です。",
+              "en": "A clothed adult woman handles a small house model and blocks at one timber workbench in a continuous full-figure scene. Fine broken contours, white gaps in black hair and grainy gray on cloth/wood recur, though it is cleaner and more open than the first output. No obvious extra bodies/disconnection or readable text/watermark. Fingertip/tool boundaries remain simplified, not guaranteed anatomically perfect. This real Anima conversion retains much of the self-generated GPT input arrangement."
+            }
+          }
+        }
+      ]
     }
   ]
 }
