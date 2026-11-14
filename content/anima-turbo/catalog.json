@@ -18,9 +18,9 @@
       "sha256": "3410a1a33460ba6b7dad705f1c6b2ce3445222490091e8df5b29901afa586644"
     },
     {
-      "tag": "anima-text-only-015",
-      "asset": "anima-text-only-015-04.zip",
-      "sha256": "a6a71465fc719a44d5ce43fec2a339d2d1390efe156d960e9b38cd3330f18ff4"
+      "tag": "anima-text-only-016",
+      "asset": "anima-text-only-016.zip",
+      "sha256": "328149e7b5e45fe0d0bfdc71b08e7d2acd206d60a5182e34e542bdc94a5e46c8"
     },
     {
       "tag": "anima-text-only-015",
@@ -3055,12 +3055,12 @@
       "id": "anima-text-tiny-marks-egg-heads",
       "category": "essay",
       "title": {
-        "ja": "軽い省略線と小さな目鼻の日常エッセイ漫画風",
+        "ja": "大きな卵形頭と小さな目口の小柄な人物画",
         "en": "Oversized egg-shaped heads and tiny features on compact bodies"
       },
       "summary": {
-        "ja": "男女を含む場面と、描法の雰囲気を見せる別構図の原画2枚。掲載した英語全文だけで実際に生成した見本です。",
-        "en": "Two original examples, including a man-and-woman scene and another composition showing the drawing mood, actually generated from the displayed full English text only."
+        "ja": "小さな目鼻と卵形の頭、白い顔と灰面を使う日常エッセイ漫画風。男女場面と別構図の未加工原画2枚を、実際に使った英語全文とともに掲載。",
+        "en": "Everyday essay-comic examples with small features, oval heads, white faces and gray areas. Two untouched originals and their exact submitted English."
       },
       "features": {
         "expression": [
@@ -3078,7 +3078,7 @@
         ]
       },
       "prompt": {
-        "en": "Very lightly inked everyday diary-comic drawing. Rounded oval human faces use tiny dot or short-stroke eyes, a small bent nose and a short mouth. Fine informal slightly uneven contours and very few inner marks keep the faces and bodies simply drawn. Broad white areas, small flat gray clothing patches and local black hair accents make a modest unpolished doodle rather than a heavy smooth vector cartoon."
+        "en": "Loose monochrome everyday cartoon. Each clothed adult has one large round-to-egg head, wider than the narrow rounded shoulders beneath it. Tiny dot or short-arc eyes, a tiny nose stroke and a little curved mouth sit within broad blank cheeks. A slim neck links that head to a simply rounded torso and thin simplified forearms. Slightly trembling dark outlines vary gently in width, with very few inner marks and short diagonal cheek creases. Flat midgray clothing tone, sparse parallel fold strokes, compact black hair and large white facial areas."
       },
       "model_version": "anima-turbo-v1.1",
       "references": [
@@ -3087,25 +3087,20 @@
           "url": "https://comic-days.com/episode/13932016480029569938"
         }
       ],
-      "version": 2,
-      "updated_at": "2026-11-14T01:11:21.297097+00:00",
-      "limitations": {
-        "ja": "参考の描法へ文章で近づけた実生成例です。顔・線・人数や構図には出力ごとの差があり、元絵や全指定との一致を保証するものではありません。",
-        "en": "Actual text-only approximations of an observed drawing tendency. Faces, lines, cast and composition vary; exact source or prompt matching is not guaranteed."
-      },
+      "version": 3,
       "samples": [
         {
           "role": "mixed-gender",
-          "file": "2834a98d81ff398a359f92df85b7180e456d28262b03e0ef93c3213a502d7ab6.png",
-          "sha256": "2834a98d81ff398a359f92df85b7180e456d28262b03e0ef93c3213a502d7ab6",
+          "file": "434e81652abb76e44d666ec4fa5c88399c6722bad704234b9bc7bffa9b75cd28.png",
+          "sha256": "434e81652abb76e44d666ec4fa5c88399c6722bad704234b9bc7bffa9b75cd28",
           "width": 1024,
           "height": 1024,
-          "thumb": "fb59785a90bee8d8fd04cf0aca6fea81a7e89bec0a564517b38862a558795fe4.jpg",
-          "thumb_sha256": "fb59785a90bee8d8fd04cf0aca6fea81a7e89bec0a564517b38862a558795fe4",
+          "thumb": "a5b2be106bffb95de5f534aae013686725df18f29fd45671b4ee01464db1db27.jpg",
+          "thumb_sha256": "a5b2be106bffb95de5f534aae013686725df18f29fd45671b4ee01464db1db27",
           "prompt": {
-            "en": "A modest drawn working scene of a clothed adult woman and adult man arranging plain plants at one counter. The faces use only tiny dot or short-stroke eyes and small nose and mouth marks, with light informal pen contours and much white space. The whole scene reads as a modest hand-drawn diary comic. Very lightly inked everyday diary-comic drawing. Rounded oval human faces use tiny dot or short-stroke eyes, a small bent nose and a short mouth. Fine informal slightly uneven contours and very few inner marks keep the faces and bodies simply drawn. Broad white areas, small flat gray clothing patches and local black hair accents make a modest unpolished doodle rather than a heavy smooth vector cartoon. The woman has a simple wavy dark hair shape and wears a plain long-sleeved blouse and full trousers. The man has short dark hair, a small drawn moustache mark and wears a plain long-sleeved collared shirt and full trousers. Heads, connected shoulders, working arms, plant, counter and simple shelves occupy one continuous room."
+            "en": "One unlettered working moment in a community kitchen. A forty-year-old woman with short gray hair and a forty-year-old man with wavy hair stand beside one table and jointly set a large plain bowl onto it. Both wear plain long-sleeved work shirts and full trousers. Their adult faces, connected arms, bowl, tabletop and kitchen shelves occupy one continuous medium view. Loose monochrome everyday cartoon. Each clothed adult has one large round-to-egg head, wider than the narrow rounded shoulders beneath it. Tiny dot or short-arc eyes, a tiny nose stroke and a little curved mouth sit within broad blank cheeks. A slim neck links that head to a simply rounded torso and thin simplified forearms. Slightly trembling dark outlines vary gently in width, with very few inner marks and short diagonal cheek creases. Flat midgray clothing tone, sparse parallel fold strokes, compact black hair and large white facial areas."
           },
-          "native_job_id": "6af7b6a1000002560000030b0000030b",
+          "native_job_id": "6af72f7a00000256000002c2000002c2",
           "requested_settings": {
             "model": "anima-turbo-v1.1",
             "aspect_ratio": "square",
@@ -3124,31 +3119,31 @@
             "steps": 8,
             "sampler": "euler",
             "mode": "text2img",
-            "native_job_id": "6af7b6a1000002560000030b0000030b",
-            "api_seconds": 31.133
+            "native_job_id": "6af72f7a00000256000002c2000002c2",
+            "api_seconds": 30.775
           },
-          "max_rgb_channel_delta": 29,
+          "max_rgb_channel_delta": 58,
           "visual_review": {
             "status": "self-reviewed",
-            "sha256": "2834a98d81ff398a359f92df85b7180e456d28262b03e0ef93c3213a502d7ab6",
+            "sha256": "434e81652abb76e44d666ec4fa5c88399c6722bad704234b9bc7bffa9b75cd28",
             "observation": {
-              "ja": "男女が同じ作業場に描かれた場面。卵形の頭と点状の目鼻、簡略線が参考の日常エッセイ漫画へ近づいています。魅力画は背景と陰影が細密になっています。",
-              "en": "A man-and-woman working scene. Oval heads, dotlike facial marks and abbreviated lines approach the diary-comic reference, with denser background and shading in the showcase."
+              "ja": "男女を含む場面。小さな目鼻と卵形の輪郭は参考に一部近く、整った描線と淡い灰面により白黒対比は弱めです。",
+              "en": "A man-and-woman scene partly approaches the simple features and oval contours of the reference, with more regular lines and weaker white/black contrast."
             }
           }
         },
         {
           "role": "showcase",
-          "file": "0a688651fbb9539860a7d99ae2e107d95034bbcbc20515bab0503cb696967e33.png",
-          "sha256": "0a688651fbb9539860a7d99ae2e107d95034bbcbc20515bab0503cb696967e33",
+          "file": "9210031874d568d6fede5c40e26a5446aee01775150b87453c0157ccb9d4bbfe.png",
+          "sha256": "9210031874d568d6fede5c40e26a5446aee01775150b87453c0157ccb9d4bbfe",
           "width": 1024,
           "height": 1024,
-          "thumb": "ca0d11769be0a4c941ff6a1c5b7b65efd43c5539731e1169a208276d3b2c823b.jpg",
-          "thumb_sha256": "ca0d11769be0a4c941ff6a1c5b7b65efd43c5539731e1169a208276d3b2c823b",
+          "thumb": "0da360f28b2efa74d78e05ca0794204d491548298e4c16049f249c71c8faf32a.jpg",
+          "thumb_sha256": "0da360f28b2efa74d78e05ca0794204d491548298e4c16049f249c71c8faf32a",
           "prompt": {
-            "en": "A candid working moment in a small flower shop. A fully clothed adult woman stands at one workbench, holding a plain vase steady and arranging leafy stems. Very lightly inked everyday diary-comic drawing. Rounded oval human faces use tiny dot or short-stroke eyes, a small bent nose and a short mouth. Fine informal slightly uneven contours and very few inner marks keep the faces and bodies simply drawn. Broad white areas, small flat gray clothing patches and local black hair accents make a modest unpolished doodle rather than a heavy smooth vector cartoon. She has a simple dark bob and wears a plain long-sleeved blouse and full trousers. Her face, connected shoulders and working arms, vase, workbench, shelves and window belong to one room."
+            "en": "One unlettered working moment in a community kitchen. A forty-year-old woman with short gray hair wears a plain long-sleeved work shirt and full trousers. She leans over one table and mixes a large plain bowl with a wooden spoon, smiling softly. Her adult face, connected shoulders and arms, spoon, bowl, tabletop and simple cupboards share one continuous medium view. Loose monochrome everyday cartoon. Each clothed adult has one large round-to-egg head, wider than the narrow rounded shoulders beneath it. Tiny dot or short-arc eyes, a tiny nose stroke and a little curved mouth sit within broad blank cheeks. A slim neck links that head to a simply rounded torso and thin simplified forearms. Slightly trembling dark outlines vary gently in width, with very few inner marks and short diagonal cheek creases. Flat midgray clothing tone, sparse parallel fold strokes, compact black hair and large white facial areas."
           },
-          "native_job_id": "6af7b3e7000002560000030300000303",
+          "native_job_id": "6af72f9800000256000002c3000002c3",
           "requested_settings": {
             "model": "anima-turbo-v1.1",
             "aspect_ratio": "square",
@@ -3167,20 +3162,29 @@
             "steps": 8,
             "sampler": "euler",
             "mode": "text2img",
-            "native_job_id": "6af7b3e7000002560000030300000303",
-            "api_seconds": 30.228
+            "native_job_id": "6af72f9800000256000002c3000002c3",
+            "api_seconds": 30.707
           },
-          "max_rgb_channel_delta": 23,
+          "max_rgb_channel_delta": 88,
           "visual_review": {
             "status": "self-reviewed",
-            "sha256": "0a688651fbb9539860a7d99ae2e107d95034bbcbc20515bab0503cb696967e33",
+            "sha256": "9210031874d568d6fede5c40e26a5446aee01775150b87453c0157ccb9d4bbfe",
             "observation": {
-              "ja": "人物と植物を使う別構図の魅力見本。卵形の頭と点状の目鼻、簡略線が参考の日常エッセイ漫画へ近づいています。魅力画は背景と陰影が細密になっています。",
-              "en": "A separate figure-and-plant showcase. Oval heads, dotlike facial marks and abbreviated lines approach the diary-comic reference, with denser background and shading in the showcase."
+              "ja": "人物を描く別構図の見本。顔の省略と輪郭・内線の強弱は参考に一部近く、太く滑らかな輪郭と多めの灰面が特徴です。",
+              "en": "Another figure composition partly approaches the face simplification and line hierarchy of the reference, with smoother heavy outlines and more gray areas."
             }
           }
         }
-      ]
+      ],
+      "updated_at": "2026-11-14",
+      "limitations": {
+        "ja": "描線と顔の省略が参考の傾向へ一部近づいた見本です。参考より輪郭は整い、灰面の量や白黒の対比には違いがあります。",
+        "en": "The simplified faces and lines partly approach the reference. Contours are more regular, with differences in gray areas and white/black contrast."
+      },
+      "name": {
+        "ja": "小さな目鼻と卵形頭の日常エッセイ漫画風",
+        "en": "Everyday essay comics with small features and oval heads"
+      }
     },
     {
       "id": "anima-text-flat-lids-long-jaw",
