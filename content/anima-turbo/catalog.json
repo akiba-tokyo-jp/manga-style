@@ -3,6 +3,11 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
+      "tag": "anima-text-only-019",
+      "asset": "anima-text-only-019.zip",
+      "sha256": "e2644adfaa22abc804a5c49ef9884b1fbe5a2b8944e224a608c39a2993b6ef86"
+    },
+    {
       "tag": "anima-text-only-018",
       "asset": "anima-text-only-018.zip",
       "sha256": "ae83ff4439b48085a50bcbdc010210fba43e4ab1710159d4d9a34ee9e157c750"
@@ -44,6 +49,268 @@
     }
   ],
   "entries": [
+    {
+      "id": "anima-text-spare-round-dot-office-ink",
+      "category": "yonkoma",
+      "title": {
+        "ja": "点目と白場のすっきり日常4コマ漫画風",
+        "en": "spare round dot office ink"
+      },
+      "prompt": {
+        "en": "Simple black-and-white office-cartoon linework. Rounded complete faces with small black dot or short-line eyes, brief eyebrows, a short curved nose and tiny expressive mouths. Clean fine nearly even contours, very few interior marks, small flat black hair and clothing accents. Broad empty white faces and clothing dominate; shading is limited to a few short strokes. Plain small background objects use the same economical line. Keep the drawing light, readable and unmodeled."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "かりあげクン・正規無料試読の可視断片を観察",
+          "url": "https://mechacomic.jp/books/65283"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "c00756218c44ec795376eca3f4fe9873fcaab10568fd4d12ed9dc5aac0a398e4.png",
+          "sha256": "c00756218c44ec795376eca3f4fe9873fcaab10568fd4d12ed9dc5aac0a398e4",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "115b7e5f5272a3b83167be9e7cab23ef507127ce0524c88a8b2dd764776f8b0c.jpg",
+          "thumb_sha256": "115b7e5f5272a3b83167be9e7cab23ef507127ce0524c88a8b2dd764776f8b0c",
+          "prompt": {
+            "en": "Simple black-and-white office-cartoon linework. Rounded complete faces with small black dot or short-line eyes, brief eyebrows, a short curved nose and tiny expressive mouths. Clean fine nearly even contours, very few interior marks, small flat black hair and clothing accents. Broad empty white faces and clothing dominate; shading is limited to a few short strokes. Plain small background objects use the same economical line. Keep the drawing light, readable and unmodeled. A continuous everyday working scene: an adult woman with wavy hair and an adult man with short hair and a small plain moustache arrange a plain vase together at one counter. Both wear ordinary long-sleeved shirts and trousers. Their smiling faces, connected necks and arms, the vase and nearby shelves belong to one simply drawn room."
+          },
+          "native_job_id": "6af86ae2000002560000032000000320",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af86ae2000002560000032000000320",
+            "api_seconds": 30.281
+          },
+          "max_rgb_channel_delta": 14,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "c00756218c44ec795376eca3f4fe9873fcaab10568fd4d12ed9dc5aac0a398e4",
+            "observation": {
+              "ja": "点目と顔の省略、白場は参考に一部近づいています。輪郭は丸く整い、線は太めで均質です。",
+              "en": "Small abbreviated facial marks, rounded contours and white/black organization partly approach the observed source. The actual result retains heavier regular outlines and more facial or tonal detail."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "fe332ce2024b3a30b7c3b2c51dffa987101e6e048a8ee12ae5c09d6b1d0f863f.png",
+          "sha256": "fe332ce2024b3a30b7c3b2c51dffa987101e6e048a8ee12ae5c09d6b1d0f863f",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "509f56525b9eb30b05acf86e6525862df2ec21ba37a3cee7f11132a1fda43b98.jpg",
+          "thumb_sha256": "509f56525b9eb30b05acf86e6525862df2ec21ba37a3cee7f11132a1fda43b98",
+          "prompt": {
+            "en": "Simple black-and-white office-cartoon linework. Rounded complete faces with small black dot or short-line eyes, brief eyebrows, a short curved nose and tiny expressive mouths. Clean fine nearly even contours, very few interior marks, small flat black hair and clothing accents. Broad empty white faces and clothing dominate; shading is limited to a few short strokes. Plain small background objects use the same economical line. Keep the drawing light, readable and unmodeled. A candid unlettered working moment in a small flower shop. A thirty-five-year-old woman with short wavy hair wears a plain long-sleeved shirt and full trousers. She stands beside a window at one counter, holding a plain vase steady with one hand while arranging a long leafy stem with the other. Her adult face, connected shoulders and arms, vase, stem, counter and shop shelves share one coherent space."
+          },
+          "native_job_id": "6af86c2f000002560000032500000325",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af86c2f000002560000032500000325",
+            "api_seconds": 30.639
+          },
+          "max_rgb_channel_delta": 11,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "fe332ce2024b3a30b7c3b2c51dffa987101e6e048a8ee12ae5c09d6b1d0f863f",
+            "observation": {
+              "ja": "点目と顔の省略、広い白場は参考に一部近づいています。男女画より輪郭が面長で、黒ベタは少なめです。",
+              "en": "Small abbreviated facial marks, rounded contours and white/black organization partly approach the observed source. The actual result retains heavier regular outlines and more facial or tonal detail."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-14T14:10:10.600509+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "参考の顔・線・陰影や色面へ文章で近づけた見本です。輪郭の太さや顔立ち、灰色面には参考や見本同士との差があります。完全一致を保証するものではありません。",
+        "en": "Text-only approximations of observed facial, line and tonal/color tendencies. Contour weight, features and gray areas vary from the reference and between samples; exact matching is not guaranteed."
+      }
+    },
+    {
+      "id": "anima-text-soft-box-jaw-small-mark-ink",
+      "category": "yonkoma",
+      "title": {
+        "ja": "小さな目口と角丸の顎の日常4コマ漫画風",
+        "en": "soft box jaw small mark ink"
+      },
+      "prompt": {
+        "en": "Light black-and-white everyday-comic penwork. Rounded faces with short softly squared jaws, small dot or oval eyes and brief curved brows, tiny curved noses and short expressive mouths. Thin mostly even ink outlines, slightly firmer at contours and overlapping forms. Local solid black hair and small clothing accents balance abundant white skin and room surfaces. Only sparse little hatch or stipple patches give gray; faces remain clear and lightly abbreviated."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "OL進化論 42巻・正規無料試読の可視断片を観察",
+          "url": "https://mechacomic.jp/books/55586/volume/42"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "0d0b4872469991df3347ecaabdcdfaa5fdaf137da0e1a77fd6a9d2a1d206bd55.png",
+          "sha256": "0d0b4872469991df3347ecaabdcdfaa5fdaf137da0e1a77fd6a9d2a1d206bd55",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "c4b6683f52d13a5303c7dd88e400f5f437a6ca9412d9543c0902b43e20dcb8cc.jpg",
+          "thumb_sha256": "c4b6683f52d13a5303c7dd88e400f5f437a6ca9412d9543c0902b43e20dcb8cc",
+          "prompt": {
+            "en": "Light black-and-white everyday-comic penwork. Rounded faces with short softly squared jaws, small dot or oval eyes and brief curved brows, tiny curved noses and short expressive mouths. Thin mostly even ink outlines, slightly firmer at contours and overlapping forms. Local solid black hair and small clothing accents balance abundant white skin and room surfaces. Only sparse little hatch or stipple patches give gray; faces remain clear and lightly abbreviated. A continuous everyday working scene: an adult woman with wavy hair and an adult man with short hair and a small plain moustache arrange a plain vase together at one counter. Both wear ordinary long-sleeved shirts and trousers. Their smiling faces, connected necks and arms, the vase and nearby shelves belong to one simply drawn room."
+          },
+          "native_job_id": "6af86b1f000002560000032200000322",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af86b1f000002560000032200000322",
+            "api_seconds": 30.208
+          },
+          "max_rgb_channel_delta": 15,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "0d0b4872469991df3347ecaabdcdfaa5fdaf137da0e1a77fd6a9d2a1d206bd55",
+            "observation": {
+              "ja": "小さな目鼻と丸みのある顎、黒髪の面が参考に一部近づいています。輪郭は太く、髪線と陰影は多めです。",
+              "en": "Small abbreviated facial marks, rounded contours and white/black organization partly approach the observed source. The actual result retains heavier regular outlines and more facial or tonal detail."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "858aa93ee03b301d9507898754b0048455d45c85c6cec92504166030dfc874d3.png",
+          "sha256": "858aa93ee03b301d9507898754b0048455d45c85c6cec92504166030dfc874d3",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "0c29a4454793a2fa0250f9ab33eabb8600271d3f4bbbb3b2f76947bbc47d2d29.jpg",
+          "thumb_sha256": "0c29a4454793a2fa0250f9ab33eabb8600271d3f4bbbb3b2f76947bbc47d2d29",
+          "prompt": {
+            "en": "Light black-and-white everyday-comic penwork. Rounded faces with short softly squared jaws, small dot or oval eyes and brief curved brows, tiny curved noses and short expressive mouths. Thin mostly even ink outlines, slightly firmer at contours and overlapping forms. Local solid black hair and small clothing accents balance abundant white skin and room surfaces. Only sparse little hatch or stipple patches give gray; faces remain clear and lightly abbreviated. A cartoon working moment with one smiling adult man, with short plain hair and a little moustache, in an ordinary long-sleeved shirt and trousers. His eyes open wide with cheerful surprise as he adds a long leafy stem to a simple vase at a counter. His face joins his neck and body naturally; his attached arms, the vase and the counter occupy this single continuous room scene."
+          },
+          "native_job_id": "6af86d4c000002560000032900000329",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af86d4c000002560000032900000329",
+            "api_seconds": 30.737
+          },
+          "max_rgb_channel_delta": 18,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "858aa93ee03b301d9507898754b0048455d45c85c6cec92504166030dfc874d3",
+            "observation": {
+              "ja": "男性1人の見本。点目と小口、丸みのある角顎と白場は参考に一部近づいています。鼻や髭、陰影の描写は多めです。",
+              "en": "Small abbreviated facial marks, rounded contours and white/black organization partly approach the observed source. The actual result retains heavier regular outlines and more facial or tonal detail."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-14T14:10:10.600509+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "参考の顔・線・陰影や色面へ文章で近づけた見本です。輪郭の太さや顔立ち、灰色面には参考や見本同士との差があります。完全一致を保証するものではありません。",
+        "en": "Text-only approximations of observed facial, line and tonal/color tendencies. Contour weight, features and gray areas vary from the reference and between samples; exact matching is not guaranteed."
+      }
+    },
     {
       "id": "anima-text-even-round-oval-pupil-ink",
       "category": "kodomo",
