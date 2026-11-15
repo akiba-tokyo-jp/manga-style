@@ -3,6 +3,11 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
+      "tag": "anima-text-only-045",
+      "asset": "anima-text-only-045.zip",
+      "sha256": "b3238659c405c0f97e7bf4e61808fc3a423e78801e5604f42bcace626121d158"
+    },
+    {
       "tag": "anima-text-only-044",
       "asset": "anima-text-only-044.zip",
       "sha256": "2291e2f4b482ee5fee8e1ad1739ccb53abf0b9ca437bea18b0ac2fb6ef45a662"
@@ -174,6 +179,799 @@
     }
   ],
   "entries": [
+    {
+      "id": "anima-text-flowing-cheek-lines-dark-eye-white-tone",
+      "category": "shojo",
+      "title": {
+        "ja": "流れる頬線と白黒灰の青春少女漫画風",
+        "en": "Flowing cheek lines and white-black-gray shojo manga"
+      },
+      "prompt": {
+        "en": "black and white Japanese shojo character manga. Original youthful human faces use flowing cheek-to-chin curves, clearly accented upper eyelids and fine lashes, dark eye centers and small paper-white light areas. Brief nose and mouth marks leave the skin planes mostly white, while a few light profile turns define the nose and chin. Strong eye accents meet finer face contours, selective black shapes, fine line-built gray and soft local tone. Keep complete ordinary independently designed faces and gentle youthful expressions, with readable original body anatomy rather than copied cast identities."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "11人いる!・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/218582"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "f0f1fd3e334c44111aa2282be67449c8f57ada6284285aba5f5308016b6a31a2.png",
+          "sha256": "f0f1fd3e334c44111aa2282be67449c8f57ada6284285aba5f5308016b6a31a2",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "76298263f2205b6d2374b8848e186dc092c926fea30174ff896fcd892491e8e8.jpg",
+          "thumb_sha256": "76298263f2205b6d2374b8848e186dc092c926fea30174ff896fcd892491e8e8",
+          "prompt": {
+            "en": "A seventeen-year-old girl and a seventeen-year-old boy watch a small ordinary sailboat from a public city-canal bridge. The girl wears an original simple knee-length summer dress with a loose light overshirt and rests one hand on the rail. The boy wears an original plain short-sleeved tee and knee-length shorts and points lightly toward the water. Both whole youthful faces and connected upper bodies are visible at eye level, with a few airy bridge and water lines. black and white Japanese shojo character manga. Original youthful human faces use flowing cheek-to-chin curves, clearly accented upper eyelids and fine lashes, dark eye centers and small paper-white light areas. Brief nose and mouth marks leave the skin planes mostly white, while a few light profile turns define the nose and chin. Strong eye accents meet finer face contours, selective black shapes, fine line-built gray and soft local tone. Keep complete ordinary independently designed faces and gentle youthful expressions, with readable original body anatomy rather than copied cast identities."
+          },
+          "native_job_id": "6af9c06a000002560000044500000445",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c06a000002560000044500000445",
+            "api_seconds": 31.63
+          },
+          "max_rgb_channel_delta": 12,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "f0f1fd3e334c44111aa2282be67449c8f57ada6284285aba5f5308016b6a31a2",
+            "observation": {
+              "ja": "港や船、街並みを背に、若い男女が手すりへ寄りかかっています。流れる頬線、大きな暗い瞳、白い肌面と薄い灰に部分的な寄せがあります。参考より現代的で均整の強い顔と線で、繊細な線の抑揚や濃淡差は控えめです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "b9a3ddc5cf4a544900b3981f01c10d1f4480217e74eb64b6fe69779716efa117.png",
+          "sha256": "b9a3ddc5cf4a544900b3981f01c10d1f4480217e74eb64b6fe69779716efa117",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "fcf6024e3af7703e92be642514730da3fb282b6080cab528f2b16a478050d34b.jpg",
+          "thumb_sha256": "fcf6024e3af7703e92be642514730da3fb282b6080cab528f2b16a478050d34b",
+          "prompt": {
+            "en": "A seventeen-year-old boy in an original plain short-sleeved tee appears in an eye-level front three-quarter head-to-waist view beside a city-canal bridge. His complete youthful face and both eyes are visible as he gives a small thoughtful smile, one hand resting on a shoulder-bag strap. Fine bridge curves and soft gray water planes leave a broad white area around his face. black and white Japanese shojo character manga. Original youthful human faces use flowing cheek-to-chin curves, clearly accented upper eyelids and fine lashes, dark eye centers and small paper-white light areas. Brief nose and mouth marks leave the skin planes mostly white, while a few light profile turns define the nose and chin. Strong eye accents meet finer face contours, selective black shapes, fine line-built gray and soft local tone. Keep complete ordinary independently designed faces and gentle youthful expressions, with readable original body anatomy rather than copied cast identities."
+          },
+          "native_job_id": "6af9c3bc000002560000044b0000044b",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c3bc000002560000044b0000044b",
+            "api_seconds": 31.274
+          },
+          "max_rgb_channel_delta": 19,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "b9a3ddc5cf4a544900b3981f01c10d1f4480217e74eb64b6fe69779716efa117",
+            "observation": {
+              "ja": "橋と川を背に、肩紐を持つ若い男性の胸上を描いています。流れる頬輪郭、黒い瞳と白場主体の描き方が続きます。参考特有の顔型まで一致せず、現代の一般的な漫画表現寄りです。頭腰像の指定より寄っています。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T14:36:31.153492+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-smooth-cheek-strong-upper-eye-short-hatch",
+      "category": "shonen",
+      "title": {
+        "ja": "丸い頬と濃い目元・網点の少年漫画風",
+        "en": "Round cheeks with dark eye accents and shonen screentone"
+      },
+      "prompt": {
+        "en": "black and white Japanese youthful shonen comedy-adventure manga. Original youthful human faces use smooth rounded cheek-to-chin turns with darker upper-eye contours and clear dark-white eye interiors. Separate short brows, brief nose marks and a small clean mouth or broad simple grin carry direct expressions. Fine short oblique strokes near cheeks and light local dotted gray add weight while leaving broad white face planes. Outer face and clothing strokes are firmer than sparse inner facial marks; solid black accents and lively folds keep the drawing energetic without giving every teen a heavily aged face. All heads and bodies are complete ordinary original human forms."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "うえきの法則・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/45998"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "3e241e744dc1da076a70bd44f8b249f7d571b02760d4c37794516849ae939ad7.png",
+          "sha256": "3e241e744dc1da076a70bd44f8b249f7d571b02760d4c37794516849ae939ad7",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "45c97bf2b79a1df6f61fdfd430900337c98be331fb88a41273e4713acac83bba.jpg",
+          "thumb_sha256": "45c97bf2b79a1df6f61fdfd430900337c98be331fb88a41273e4713acac83bba",
+          "prompt": {
+            "en": "A seventeen-year-old boy and a seventeen-year-old girl pause at the shallow steps of a public skate park as a small ball rolls across the boy’s shoe. The boy wears an original plain short-sleeved sports tee and knee-length shorts and raises one hand with an amused open-eyed grin. The girl wears an original loose sports sweater and a modest knee-length skirt and points toward the ball with a bright smile. Both whole youthful faces and attached bodies are visible with a few dynamic step and rail lines in one eye-level scene. black and white Japanese youthful shonen comedy-adventure manga. Original youthful human faces use smooth rounded cheek-to-chin turns with darker upper-eye contours and clear dark-white eye interiors. Separate short brows, brief nose marks and a small clean mouth or broad simple grin carry direct expressions. Fine short oblique strokes near cheeks and light local dotted gray add weight while leaving broad white face planes. Outer face and clothing strokes are firmer than sparse inner facial marks; solid black accents and lively folds keep the drawing energetic without giving every teen a heavily aged face. All heads and bodies are complete ordinary original human forms."
+          },
+          "native_job_id": "6af9c0c4000002560000044600000446",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c0c4000002560000044600000446",
+            "api_seconds": 31.82
+          },
+          "max_rgb_channel_delta": 22,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "3e241e744dc1da076a70bd44f8b249f7d571b02760d4c37794516849ae939ad7",
+            "observation": {
+              "ja": "階段と柵の前で、少年が片手を上げて球状の物に足を乗せ、少女が両手で身ぶりをしています。丸い頬、強い上まぶた、短いハッチと黒・網点に寄せがあります。参考より幼く丸い顔で、鋭さや表情の癖は薄めです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "bba4c6e554c70a6272023837af4dbdbe2f9cb422f0a6312079922325cd2ffcab.png",
+          "sha256": "bba4c6e554c70a6272023837af4dbdbe2f9cb422f0a6312079922325cd2ffcab",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "5b7f65f678a764279286c4e246ecfbdfcdcdd9d0a6880cdb8ed2950c7b68d6d3.jpg",
+          "thumb_sha256": "5b7f65f678a764279286c4e246ecfbdfcdcdd9d0a6880cdb8ed2950c7b68d6d3",
+          "prompt": {
+            "en": "A seventeen-year-old girl in an original loose sports sweater appears in an energetic eye-level front three-quarter head-to-waist view beside a public skate-park rail. Her entire youthful face and both eyes remain visible as she laughs with raised brows and a simple broad open mouth, one hand held near her shoulder. Short cheek hatching and a few strong diagonal rail marks contrast with white space. black and white Japanese youthful shonen comedy-adventure manga. Original youthful human faces use smooth rounded cheek-to-chin turns with darker upper-eye contours and clear dark-white eye interiors. Separate short brows, brief nose marks and a small clean mouth or broad simple grin carry direct expressions. Fine short oblique strokes near cheeks and light local dotted gray add weight while leaving broad white face planes. Outer face and clothing strokes are firmer than sparse inner facial marks; solid black accents and lively folds keep the drawing energetic without giving every teen a heavily aged face. All heads and bodies are complete ordinary original human forms."
+          },
+          "native_job_id": "6af9c3f6000002560000044c0000044c",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c3f6000002560000044c0000044c",
+            "api_seconds": 31.468
+          },
+          "max_rgb_channel_delta": 13,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "bba4c6e554c70a6272023837af4dbdbe2f9cb422f0a6312079922325cd2ffcab",
+            "observation": {
+              "ja": "髪を後ろでまとめた若い人物が、大きく口を開けて笑う胸上像です。滑らかな頬、強い目元、短い頬線、服の細かな網点が続きます。参考のギャグ的な線勢より、立体感と丁寧な陰影を使う写実寄りの漫画顔です。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T14:36:31.153492+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-small-lid-marks-bent-nose-fine-gray-ink",
+      "category": "seinen",
+      "title": {
+        "ja": "細い顔線と短い鼻口線の人物漫画風",
+        "en": "Fine face contours and brief nose-mouth marks"
+      },
+      "prompt": {
+        "en": "black and white Japanese quiet character manga. Original youthful-adult human faces use a modest amount of detail: short light upper-eye curves with small dark centers, a brief bent nose or simple profile turn, and a small horizontal mouth mark. Fine selective inner strokes sit within clearer flowing cheek and jaw contours, leaving much of the face paper-white. Surrounding clothing and ordinary scenery accumulate finer repeated pen strokes and small dark marks to build gray, with occasional substantial black shapes and bright white gaps. Original front-facing eye arrangements are independently designed, both eyes readable when the face turns toward the viewer; no specific hidden facial feature is inferred."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "蟲師・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/55696"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "6d8e1a83e2f3fe5a3b1849792539839ba98f2de1259a6e20054dd19871eb9bb6.png",
+          "sha256": "6d8e1a83e2f3fe5a3b1849792539839ba98f2de1259a6e20054dd19871eb9bb6",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "572133c5b741aa0258a2d270ceb9742f32d5fe5acca39bbd32de385a9ed3a926.jpg",
+          "thumb_sha256": "572133c5b741aa0258a2d270ceb9742f32d5fe5acca39bbd32de385a9ed3a926",
+          "prompt": {
+            "en": "A twenty-two-year-old woman and a twenty-three-year-old man stand at a public tram-stop map board, quietly discussing a route. The woman wears an original loose short-sleeved top and a long simple skirt and holds a folded blank route leaflet. The man wears an original light open casual jacket over a plain tee and full trousers and gestures gently toward the board. Both complete original young-adult faces and connected bodies are visible at eye level, with fine board-frame, paving and distant-tree lines. black and white Japanese quiet character manga. Original youthful-adult human faces use a modest amount of detail: short light upper-eye curves with small dark centers, a brief bent nose or simple profile turn, and a small horizontal mouth mark. Fine selective inner strokes sit within clearer flowing cheek and jaw contours, leaving much of the face paper-white. Surrounding clothing and ordinary scenery accumulate finer repeated pen strokes and small dark marks to build gray, with occasional substantial black shapes and bright white gaps. Original front-facing eye arrangements are independently designed, both eyes readable when the face turns toward the viewer; no specific hidden facial feature is inferred."
+          },
+          "native_job_id": "6af9c142000002560000044700000447",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c142000002560000044700000447",
+            "api_seconds": 31.857
+          },
+          "max_rgb_channel_delta": 13,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "6d8e1a83e2f3fe5a3b1849792539839ba98f2de1259a6e20054dd19871eb9bb6",
+            "observation": {
+              "ja": "屋外の案内図の前で、書類を持つ女性と手を広げる男性が話しています。小さめの男性の目や鼻筋の折れ、細線と灰に部分的な寄せがあります。女性の目は大きく、参考より両者とも整った顔で、細かな灰の集積や空気感は弱く斜線主体です。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "240a477afbb96f681a087f95d6decf22d19e8b2fdfffedc7838b1d2e05f3c42e.png",
+          "sha256": "240a477afbb96f681a087f95d6decf22d19e8b2fdfffedc7838b1d2e05f3c42e",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "522d7629fb24f31ca9b9fbfb794cbd6c0d9ba09d66079b8c7f3fe9cd16a7417d.jpg",
+          "thumb_sha256": "522d7629fb24f31ca9b9fbfb794cbd6c0d9ba09d66079b8c7f3fe9cd16a7417d",
+          "prompt": {
+            "en": "A twenty-two-year-old woman in an original loose short-sleeved everyday top sits on a public tram-stop bench reading a folded blank leaflet. Her complete originally designed face, both eyes and connected upper body are visible in an eye-level front three-quarter composition. Fine bench, cloth-fold and window-frame strokes form local gray around the white face and a few clear black hair areas. black and white Japanese quiet character manga. Original youthful-adult human faces use a modest amount of detail: short light upper-eye curves with small dark centers, a brief bent nose or simple profile turn, and a small horizontal mouth mark. Fine selective inner strokes sit within clearer flowing cheek and jaw contours, leaving much of the face paper-white. Surrounding clothing and ordinary scenery accumulate finer repeated pen strokes and small dark marks to build gray, with occasional substantial black shapes and bright white gaps. Original front-facing eye arrangements are independently designed, both eyes readable when the face turns toward the viewer; no specific hidden facial feature is inferred."
+          },
+          "native_job_id": "6af9c42a000002560000044d0000044d",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c42a000002560000044d0000044d",
+            "api_seconds": 31.289
+          },
+          "max_rgb_channel_delta": 17,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "240a477afbb96f681a087f95d6decf22d19e8b2fdfffedc7838b1d2e05f3c42e",
+            "observation": {
+              "ja": "開いた本から顔を上げる女性の近景で、板壁や窓枠風の直線背景を描いています。細いハッチと少数の鼻口線に部分的な寄せがありますが、参考より滑らかな白い顔と大きい目で、灰の描き込みや鼻の屈曲は弱めです。折った葉書ではなく開いた本です。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T14:36:31.153492+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-fine-brown-contours-dark-lash-pale-color",
+      "category": "yonkoma",
+      "title": {
+        "ja": "濃い目元と淡い頬色の4コマ漫画風",
+        "en": "Dark eye accents and pale cheek-color everyday comic"
+      },
+      "prompt": {
+        "en": "colored Japanese youthful four-panel-comic illustration. Original youthful human faces have rounded cheek contours gently narrowing at the chin, large clear eye openings with dark upper-lid and lash accents, warm dark eye interiors and small white highlights. Nose marks are tiny, mouths use short curves or clean open outlines, and a few fine cheek strokes and pale pink blush keep the expression direct. Fine dark-brown or black contours contrast with much stronger upper-eye accents. Light cream and pink face planes, restrained local shade, gentle pastel background colors and broad white space keep the drawing flat and readable rather than continuously modeled. Treat any glasses as separate objects from the eyes."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "三者三葉・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/187413"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "be930c512aa4421acdde6c41f4348442a761831bad08944ea44fbb4da3c9febc.png",
+          "sha256": "be930c512aa4421acdde6c41f4348442a761831bad08944ea44fbb4da3c9febc",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "594a2f9d594c1eac39e58c4674bfa616630f90026558bdcd6b619d9bd2f3e096.jpg",
+          "thumb_sha256": "594a2f9d594c1eac39e58c4674bfa616630f90026558bdcd6b619d9bd2f3e096",
+          "prompt": {
+            "en": "A seventeen-year-old boy and a seventeen-year-old girl stand beside a public aquarium ticket stand before entering. The boy wears an original simple striped short-sleeved tee and knee-length shorts and holds two small blank tickets. The girl wears an original loose pale knee-length summer dress and smiles toward him with both eyes open. Both complete youthful faces and connected upper bodies are visible at eye level with light booth-frame lines, pale blue-green panels and warm cream accents. colored Japanese youthful four-panel-comic illustration. Original youthful human faces have rounded cheek contours gently narrowing at the chin, large clear eye openings with dark upper-lid and lash accents, warm dark eye interiors and small white highlights. Nose marks are tiny, mouths use short curves or clean open outlines, and a few fine cheek strokes and pale pink blush keep the expression direct. Fine dark-brown or black contours contrast with much stronger upper-eye accents. Light cream and pink face planes, restrained local shade, gentle pastel background colors and broad white space keep the drawing flat and readable rather than continuously modeled. Treat any glasses as separate objects from the eyes."
+          },
+          "native_job_id": "6af9c1c2000002560000044800000448",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c1c2000002560000044800000448",
+            "api_seconds": 31.626
+          },
+          "max_rgb_channel_delta": 149,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "be930c512aa4421acdde6c41f4348442a761831bad08944ea44fbb4da3c9febc",
+            "observation": {
+              "ja": "改札風の設備の前で若い男女が向き合い、紙片や眼鏡状の小物を持っています。大きい暗い目、頬の赤み、クリームと青系の薄い色に寄せがあります。参考の細い茶線より黒線が強く顔も簡略で、小物の周辺の線は込み合っています。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "9de29554cec20466cd4559b3d30f4af49600e45f82f7a74d4dab1ef5c88e48ba.png",
+          "sha256": "9de29554cec20466cd4559b3d30f4af49600e45f82f7a74d4dab1ef5c88e48ba",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "e34a0b7dcb3a3ba83c684dd5c4b49e720204745519e3f1b30fff8c4142adbe5e.jpg",
+          "thumb_sha256": "e34a0b7dcb3a3ba83c684dd5c4b49e720204745519e3f1b30fff8c4142adbe5e",
+          "prompt": {
+            "en": "A seventeen-year-old girl in an original loose pale summer dress appears in an eye-level front three-quarter head-to-waist view beside a public aquarium banner. Her whole youthful face and both eyes are visible as she smiles and lifts a small blank ticket near one shoulder. A few pale blue, peach and green planes contrast with dark upper-eye and lash strokes and white space. colored Japanese youthful four-panel-comic illustration. Original youthful human faces have rounded cheek contours gently narrowing at the chin, large clear eye openings with dark upper-lid and lash accents, warm dark eye interiors and small white highlights. Nose marks are tiny, mouths use short curves or clean open outlines, and a few fine cheek strokes and pale pink blush keep the expression direct. Fine dark-brown or black contours contrast with much stronger upper-eye accents. Light cream and pink face planes, restrained local shade, gentle pastel background colors and broad white space keep the drawing flat and readable rather than continuously modeled. Treat any glasses as separate objects from the eyes."
+          },
+          "native_job_id": "6af9c463000002560000044e0000044e",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c463000002560000044e0000044e",
+            "api_seconds": 31.58
+          },
+          "max_rgb_channel_delta": 121,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "9de29554cec20466cd4559b3d30f4af49600e45f82f7a74d4dab1ef5c88e48ba",
+            "observation": {
+              "ja": "複数の顔の近景と、淡いワンピースの若い人物を中央で重ねた見本です。濃いまつ毛、細い顔線と淡い肌色が続きます。参考より黒寄りの輪郭と大きい目で、一つの頭腰像ではなく表情・目元の複合構図です。若い人物の表情と目元を複数見せる構図です。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T14:36:31.153492+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-elongated-lids-cream-rose-soft-face-color",
+      "category": "other",
+      "title": {
+        "ja": "淡い肌色面と濃い上まぶたの成人漫画参考風",
+        "en": "Pale skin-color planes and dark upper lids adult-reference drawing"
+      },
+      "prompt": {
+        "en": "colored Japanese adult character illustration with independently designed clearly adult people. Smooth cheek contours taper into a small rounded chin, with horizontally extended eye openings, stronger dark upper lids and much finer lower edges. Blue-gray eye accents and small light areas sit within readable dark-white eye structures. Short fine nose marks and pale local nose shade accompany a small originally designed closed mouth with a muted rose lip accent. Light cream skin planes meet soft pink cheeks and pale brown side-face or chin shade, with softly blended local color modeling and restrained contour emphasis. Every character wears loose fully covering everyday clothes in a calm nonsexual scene."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "妻ノ雫～肉嫁ミユキ29歳～・正規公開の可視描法を私的観察",
+          "url": "https://www.wani.com/comics/9784862690821/"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "9786ac61c0995ec44aef1826d7ba27c4d67ad2cca082588b5647546364f501c4.png",
+          "sha256": "9786ac61c0995ec44aef1826d7ba27c4d67ad2cca082588b5647546364f501c4",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "a8fcdc1aabee24bfd001e4543a282e789780ce36b19a40b792cd33b77f79cf7b.jpg",
+          "thumb_sha256": "a8fcdc1aabee24bfd001e4543a282e789780ce36b19a40b792cd33b77f79cf7b",
+          "prompt": {
+            "en": "A thirty-year-old woman and a thirty-two-year-old man talk beside the window of a public library reading area. The woman wears an original loose fully buttoned long-sleeved blouse and a long plain skirt and holds a closed unmarked book at waist height. The man wears a different loose long-sleeved casual shirt and full trousers and rests one relaxed hand on a chair back. Both complete adult faces and connected upper bodies are visible at eye level in gentle diffuse daylight, with pale blue-gray window and warm cream shelf planes. colored Japanese adult character illustration with independently designed clearly adult people. Smooth cheek contours taper into a small rounded chin, with horizontally extended eye openings, stronger dark upper lids and much finer lower edges. Blue-gray eye accents and small light areas sit within readable dark-white eye structures. Short fine nose marks and pale local nose shade accompany a small originally designed closed mouth with a muted rose lip accent. Light cream skin planes meet soft pink cheeks and pale brown side-face or chin shade, with softly blended local color modeling and restrained contour emphasis. Every character wears loose fully covering everyday clothes in a calm nonsexual scene."
+          },
+          "native_job_id": "6af9c20e000002560000044900000449",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c20e000002560000044900000449",
+            "api_seconds": 31.742
+          },
+          "max_rgb_channel_delta": 111,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "9786ac61c0995ec44aef1826d7ba27c4d67ad2cca082588b5647546364f501c4",
+            "observation": {
+              "ja": "窓辺で、ボブ髪の女性が薄い冊子状の物を持ち、短髪男性がカウンターへ手を預けています。両者とも着衣した成人の非性的な日常場面です。参考の見える横長の目元と柔らかな肌色に部分的に寄りますが、鼻顎や服の影は硬く、頬の赤みは控えめです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "8502096b8a4dda2ab09c68784da048f2df8077dab5247207f8489abc46cf4354.png",
+          "sha256": "8502096b8a4dda2ab09c68784da048f2df8077dab5247207f8489abc46cf4354",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "987fdb05ba38eb375daf13802c6ba5d173cb98b287e2ff94c74155824f5f0658.jpg",
+          "thumb_sha256": "987fdb05ba38eb375daf13802c6ba5d173cb98b287e2ff94c74155824f5f0658",
+          "prompt": {
+            "en": "A thirty-year-old woman in an original loose fully buttoned long-sleeved blouse appears in an eye-level front three-quarter head-and-shoulders view beside a library window. Her whole original adult face, both eyes, nose and small relaxed closed mouth remain visible above fully covered shoulders. Soft cream-pink facial planes and pale brown local shade meet a few cool blue-gray background shapes in diffuse light. colored Japanese adult character illustration with independently designed clearly adult people. Smooth cheek contours taper into a small rounded chin, with horizontally extended eye openings, stronger dark upper lids and much finer lower edges. Blue-gray eye accents and small light areas sit within readable dark-white eye structures. Short fine nose marks and pale local nose shade accompany a small originally designed closed mouth with a muted rose lip accent. Light cream skin planes meet soft pink cheeks and pale brown side-face or chin shade, with softly blended local color modeling and restrained contour emphasis. Every character wears loose fully covering everyday clothes in a calm nonsexual scene."
+          },
+          "native_job_id": "6af9c499000002560000044f0000044f",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c499000002560000044f0000044f",
+            "api_seconds": 31.539
+          },
+          "max_rgb_channel_delta": 116,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "8502096b8a4dda2ab09c68784da048f2df8077dab5247207f8489abc46cf4354",
+            "observation": {
+              "ja": "本棚と窓を背に、襟付きシャツの成人女性を正面寄りの胸上で描いています。着衣・非性的な肖像で、横長寄りの目元とクリーム色の顔に寄せがあります。参考の柔らかな陰影より頬・鼻・額の色面境界が硬く、より写実的な仕上がりです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T14:36:31.153492+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      },
+      "reference_context": "adult-manga",
+      "sample_content": "non-explicit-fully-clothed-adult"
+    },
+    {
+      "id": "anima-text-angled-dark-lids-cool-violet-face-shade",
+      "category": "other",
+      "title": {
+        "ja": "濃い目元と赤桃の顔影の成人漫画参考風",
+        "en": "Dark eye accents and red-pink facial shade adult-reference drawing"
+      },
+      "prompt": {
+        "en": "limited-color Japanese adult character manga with original unambiguously adult people. Slightly angled narrow eye openings use heavy black upper-lid and lash strokes against much finer lower-edge marks, charcoal-gray dark centers and small white glints. A brief nose mark and pale surrounding shade keep the nose selective; the original calm mouth is a small closed curve with a soft muted pink lip edge. Pale warm-pink skin meets cool gray-violet shade around eye and cheek edges, with a few thin curving face-edge strokes and clear dark hair masses. Keep the original complete faces readable and independently constructed. All people wear loose fully covering everyday clothes in a relaxed nonsexual scene."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "ヒトヅマニア・正規公開の可視描法を私的観察",
+          "url": "https://www.wani.com/comics/9784898297759/"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "8794908b32b77fd9ba54a92211ed0da567104fbef6d7a55552f9c9f26696294b.png",
+          "sha256": "8794908b32b77fd9ba54a92211ed0da567104fbef6d7a55552f9c9f26696294b",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "611c48958dc1ec9a13c4b8310827e768905ba99081a854feb580e185a14d13c2.jpg",
+          "thumb_sha256": "611c48958dc1ec9a13c4b8310827e768905ba99081a854feb580e185a14d13c2",
+          "prompt": {
+            "en": "A thirty-three-year-old woman and a thirty-five-year-old man wait together on a public ferry-terminal terrace beneath a plain fabric awning. The woman wears an original loose fully buttoned long-sleeved shirt and full trousers and holds a small unmarked souvenir mug. The man wears a different loose short-sleeved linen shirt and full trousers and looks toward her with a calm small smile. Both complete original adult faces and connected upper bodies are clearly visible at eye level, with cool gray-violet shade, pale warm face light and a few simple rail and wall shapes. limited-color Japanese adult character manga with original unambiguously adult people. Slightly angled narrow eye openings use heavy black upper-lid and lash strokes against much finer lower-edge marks, charcoal-gray dark centers and small white glints. A brief nose mark and pale surrounding shade keep the nose selective; the original calm mouth is a small closed curve with a soft muted pink lip edge. Pale warm-pink skin meets cool gray-violet shade around eye and cheek edges, with a few thin curving face-edge strokes and clear dark hair masses. Keep the original complete faces readable and independently constructed. All people wear loose fully covering everyday clothes in a relaxed nonsexual scene."
+          },
+          "native_job_id": "6af9c28b000002560000044a0000044a",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c28b000002560000044a0000044a",
+            "api_seconds": 32.503
+          },
+          "max_rgb_channel_delta": 100,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "8794908b32b77fd9ba54a92211ed0da567104fbef6d7a55552f9c9f26696294b",
+            "observation": {
+              "ja": "日除けと手すりのある場所で、カップを持つ女性と白いトップスの男性が並んでいます。成人の着衣・非性的な日常場面として成立しています。濃い上まぶたと黒髪の線には弱い寄せがありますが、参考の鋭い目元や紫寄りの顔影は薄く、穏やかな表情と平坦な肌色になっています。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "a76d5ec7931d23b10aeb634d0e72564e2a0d1f0ab70aa52aa44fbe0f5d2bfe63.png",
+          "sha256": "a76d5ec7931d23b10aeb634d0e72564e2a0d1f0ab70aa52aa44fbe0f5d2bfe63",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "8c2aee02deacd7f95c46b443af44d82e76ef0a3e773103277bcacf8687faf500.jpg",
+          "thumb_sha256": "8c2aee02deacd7f95c46b443af44d82e76ef0a3e773103277bcacf8687faf500",
+          "prompt": {
+            "en": "A thirty-five-year-old man in an original loose plain short-sleeved linen shirt appears in an eye-level front three-quarter head-and-shoulders view on a public ferry-terminal terrace. His complete adult face, both eyes, nose and small closed mouth remain inside the frame above covered shoulders. He gives a relaxed small smile while cool gray-violet local face shade and black upper-eye accents contrast with warm pink-white skin and pale background planes. limited-color Japanese adult character manga with original unambiguously adult people. Slightly angled narrow eye openings use heavy black upper-lid and lash strokes against much finer lower-edge marks, charcoal-gray dark centers and small white glints. A brief nose mark and pale surrounding shade keep the nose selective; the original calm mouth is a small closed curve with a soft muted pink lip edge. Pale warm-pink skin meets cool gray-violet shade around eye and cheek edges, with a few thin curving face-edge strokes and clear dark hair masses. Keep the original complete faces readable and independently constructed. All people wear loose fully covering everyday clothes in a relaxed nonsexual scene."
+          },
+          "native_job_id": "6af9c4cc000002560000045000000450",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9c4cc000002560000045000000450",
+            "api_seconds": 32.146
+          },
+          "max_rgb_channel_delta": 122,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "a76d5ec7931d23b10aeb634d0e72564e2a0d1f0ab70aa52aa44fbe0f5d2bfe63",
+            "observation": {
+              "ja": "襟付きの服を着た、太い眉と無精ひげのある成人男性の顔の近景です。着衣・非性的で、濃い目元や鋭い線、顔を区切る影に部分的な寄せがあります。参考の冷たい紫より朱・桃の色が強く、ひげや顔の細線も多く加わっています。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T14:36:31.153492+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      },
+      "reference_context": "adult-manga",
+      "sample_content": "non-explicit-fully-clothed-adult"
+    },
     {
       "id": "anima-text-short-eye-mouth-lines-clean-deadpan-tone",
       "category": "gag",
