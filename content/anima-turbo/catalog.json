@@ -1727,12 +1727,12 @@
       ],
       "updated_at": "2026-11-15T10:07:17.553083+00:00",
       "summary": {
-        "ja": "若い少年少女の冒険場面と、ヒロインの表情・動きを見せる別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
-        "en": "Two untouched text-only originals: a youthful boy-and-girl adventure scene and a separate expressive heroine composition, each with its exact submitted English."
+        "ja": "若い男女の日常場面と、ヒロインの表情や細い描線を見せる別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals: a youthful everyday boy-and-girl scene and a separate composition highlighting the heroine’s expression and delicate linework, each with its exact submitted English."
       },
       "limitations": {
-        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。 指定年齢より幼く見え、参考より丸く親しみやすい少年漫画の顔です。",
-        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals. The figures look younger than the requested age and use rounder, more approachable shonen faces than the source."
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。 この見本は独自の若い少女漫画の人物を描いており、参考の人物や構図の再現ではありません。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals. These examples depict original youthful shojo characters rather than reproducing the source cast or composition."
       }
     },
     {
