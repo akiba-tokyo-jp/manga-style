@@ -3,6 +3,11 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
+      "tag": "anima-text-only-053",
+      "asset": "anima-text-only-053.zip",
+      "sha256": "70e281b10df0b4b992dca1d4f8afa43d37e3c03ce72f7f55eaf3f5f3d7baa347"
+    },
+    {
       "tag": "anima-text-only-052",
       "asset": "anima-text-only-052.zip",
       "sha256": "ffde69a2b9c94572ce3a35f8fa5a405720c7849a251b9e43dd08c2e0ba94520a"
@@ -214,6 +219,666 @@
     }
   ],
   "entries": [
+    {
+      "id": "anima-text-round-open-eyes-tapered-contours-varied-horror-ink",
+      "category": "horror",
+      "title": {
+        "ja": "入り抜き線と白い顔・網点の怪奇漫画風",
+        "en": "Uncanny manga with varied pen strokes white faces and dotted tone"
+      },
+      "prompt": {
+        "en": "monochrome Japanese uncanny manga with ordinary youthful human faces, variable pen lineart. Rounded readable eye openings use firmer curved upper-eyelid strokes and finer lower edges around dark-white eye areas. Short bent nose marks and brief curved mouths or small clear openings remain sparse inside smooth cheeks tapering to a clean chin. Vary outer contours between thicker overlap turns and finer ending strokes, keeping the face interiors mostly white. Selected solid black shapes, dotted-gray areas and a few short slanted strokes contrast with broad white openings. Every original complete human head connects normally through its neck to one fully clothed youthful figure."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "学校怪談・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/231993"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "3e94e6d404d33bc9a13b025cc785bffb580c7db26494f05465ca4b1bdd00811d.png",
+          "sha256": "3e94e6d404d33bc9a13b025cc785bffb580c7db26494f05465ca4b1bdd00811d",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "0a2b9e353495c48f5e3a9703cd5d62786206c74bbe6467987f8d99164536e241.jpg",
+          "thumb_sha256": "0a2b9e353495c48f5e3a9703cd5d62786206c74bbe6467987f8d99164536e241",
+          "prompt": {
+            "en": "One quiet moment beside an old public library passage window. An eighteen-year-old woman with original straight dark hair cut just above the shoulders in a loose fully covered plain light top and long skirt holds a closed unmarked book near her waist. Beside her an eighteen-year-old man with original short plain dark hair in a loose closed jacket and full trousers looks toward a dim stairwell with a curious open-eyed expression. Both whole original ordinary youthful human faces and attached upper bodies remain visible together among a few window and stair lines. monochrome Japanese uncanny manga with ordinary youthful human faces, variable pen lineart. Rounded readable eye openings use firmer curved upper-eyelid strokes and finer lower edges around dark-white eye areas. Short bent nose marks and brief curved mouths or small clear openings remain sparse inside smooth cheeks tapering to a clean chin. Vary outer contours between thicker overlap turns and finer ending strokes, keeping the face interiors mostly white. Selected solid black shapes, dotted-gray areas and a few short slanted strokes contrast with broad white openings. Every original complete human head connects normally through its neck to one fully clothed youthful figure."
+          },
+          "native_job_id": "6afa2e0e00000256000004a8000004a8",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afa2e0e00000256000004a8000004a8",
+            "api_seconds": 32.371
+          },
+          "max_rgb_channel_delta": 21,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "3e94e6d404d33bc9a13b025cc785bffb580c7db26494f05465ca4b1bdd00811d",
+            "observation": {
+              "ja": "窓と階段のある屋内で、女性が本を抱え男性と並ぶ一場面です。普通の若い人間漫画顔、輪郭や衣服線の太細・入り抜き、黒髪・白い肌・網点灰に部分的な寄せがあります。参考より目は横長で穏やかで、網点や端正な人物処理が強めです。本の文字風の線は判読できません。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "ed5d896373a15004a71bb42eef9841451baa1aaba6b245fc2de259d3fabf38ad.png",
+          "sha256": "ed5d896373a15004a71bb42eef9841451baa1aaba6b245fc2de259d3fabf38ad",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "980467c4d4499cdd75969af637d2e205ef9913ebc66f9151fa8a917c2c3d12c5.jpg",
+          "thumb_sha256": "980467c4d4499cdd75969af637d2e205ef9913ebc66f9151fa8a917c2c3d12c5",
+          "prompt": {
+            "en": "An eighteen-year-old woman with original straight dark hair cut just above the shoulders in a loose fully covered plain light top turns near a public library passage window. Her whole original ordinary youthful human face and both eye areas remain visible in a front three-quarter head-and-shoulders view with a curious quiet expression. Broad white cheek light and sparse face marks contrast with a dark doorway and selected dotted gray. monochrome Japanese uncanny manga with ordinary youthful human faces, variable pen lineart. Rounded readable eye openings use firmer curved upper-eyelid strokes and finer lower edges around dark-white eye areas. Short bent nose marks and brief curved mouths or small clear openings remain sparse inside smooth cheeks tapering to a clean chin. Vary outer contours between thicker overlap turns and finer ending strokes, keeping the face interiors mostly white. Selected solid black shapes, dotted-gray areas and a few short slanted strokes contrast with broad white openings. Every original complete human head connects normally through its neck to one fully clothed youthful figure."
+          },
+          "native_job_id": "6afa2f8200000256000004ad000004ad",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afa2f8200000256000004ad000004ad",
+            "api_seconds": 36.213
+          },
+          "max_rgb_channel_delta": 18,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "ed5d896373a15004a71bb42eef9841451baa1aaba6b245fc2de259d3fabf38ad",
+            "observation": {
+              "ja": "黒髪の女性の顔を大きく描き、白い顔と丸く開いた眼、黒ベタ髪、壁の網点を対比させた近景です。外輪郭と細い内線、白黒灰の傾向が続きます。参考より頬の補助線や背景の密度は強めですが、普通の人間顔として描いています。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T22:15:22.867463+00:00",
+      "summary": {
+        "ja": "線の入り抜き、白い顔と黒髪・網点を組み合わせた怪奇漫画風。静かな若い男女の場面と、丸い開眼を見せる女性の近景を掲載しています。",
+        "en": "Variable pen contours, white faces, black hair and dotted gray form an uncanny manga look. Includes a quiet youthful mixed-gender scene and a female close view with rounded open eyes."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-faint-broken-sketch-lines-white-daily-cartoon",
+      "category": "essay",
+      "title": {
+        "ja": "淡灰と余白・強弱輪郭のエッセイ漫画風",
+        "en": "Essay manga with pale gray open space and varied contour weight"
+      },
+      "prompt": {
+        "en": "rough monochrome pencil sketch, very light gray fine broken linework on white paper, sparse everyday comic drawing. Thin gently wavering contour fragments and a few faint short repeated marks describe independently designed ordinary human faces and clothed figures. Leave most hair, cheeks and clothing white. Use only a few darker eye-nose-mouth ticks and small softly rubbed gray accents. Every original complete human head attaches through its neck to its own relaxed clothed body."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "きょうの猫村さん・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/210003"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "6e03c22c022266df04249557fd42487a4b1839a7f6fe2c7e9b1c98d6c1bdf59f.png",
+          "sha256": "6e03c22c022266df04249557fd42487a4b1839a7f6fe2c7e9b1c98d6c1bdf59f",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "200baaad975075dea0ddb2806dde7d734f807df0585dca5ad02e02c8f6538e77.jpg",
+          "thumb_sha256": "200baaad975075dea0ddb2806dde7d734f807df0585dca5ad02e02c8f6538e77",
+          "prompt": {
+            "en": "A young-adult woman with original short plain hair and a young-adult man with different original short hair pause beside a park bicycle stand. Both wear loose fully covering plain everyday clothes, their entire ordinary human cartoon faces and attached upper bodies visible together as they smile at a fallen leaf. rough monochrome pencil sketch, very light gray fine broken linework on white paper, sparse everyday comic drawing. Thin gently wavering contour fragments and a few faint short repeated marks describe independently designed ordinary human faces and clothed figures. Leave most hair, cheeks and clothing white. Use only a few darker eye-nose-mouth ticks and small softly rubbed gray accents. Every original complete human head attaches through its neck to its own relaxed clothed body."
+          },
+          "native_job_id": "6afa301c00000256000004b0000004b0",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afa301c00000256000004b0000004b0",
+            "api_seconds": 38.097
+          },
+          "max_rgb_channel_delta": 35,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "6e03c22c022266df04249557fd42487a4b1839a7f6fe2c7e9b1c98d6c1bdf59f",
+            "observation": {
+              "ja": "自転車のハンドルを持つ女性と、その隣の男性が笑う日常の一場面です。独自の普通人間顔で、動物の顔耳体型は移していません。細い衣服線、柔らかい灰、広い白場に描画処理の部分寄せがありますが、髪顔服の輪郭は参考より濃く連続し、灰も多めです。指定した落葉を見る動作は変わっています。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "e3e21e40258619229f7ef764d1168416ea74e122862f8ceebde95c6f5ba6091c.png",
+          "sha256": "e3e21e40258619229f7ef764d1168416ea74e122862f8ceebde95c6f5ba6091c",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "920aa097e965b75ea53aa1ff77c0d93c8e7309fbf412b2b1deff382e65c37856.jpg",
+          "thumb_sha256": "920aa097e965b75ea53aa1ff77c0d93c8e7309fbf412b2b1deff382e65c37856",
+          "prompt": {
+            "en": "A young-adult woman with original short plain hair in a loose fully covering everyday top pauses beside a park bicycle stand. Her entire independently designed ordinary human cartoon face and attached upper body are visible as she smiles gently with one hand resting low beside her waist. A few faint stand-edge marks surround broad white paper space. rough monochrome pencil sketch, very light gray fine broken linework on white paper, sparse everyday comic drawing. Thin gently wavering contour fragments and a few faint short repeated marks describe independently designed ordinary human faces and clothed figures. Leave most hair, cheeks and clothing white. Use only a few darker eye-nose-mouth ticks and small softly rubbed gray accents. Every original complete human head attaches through its neck to its own relaxed clothed body."
+          },
+          "native_job_id": "6afa30ea00000256000004b2000004b2",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afa30ea00000256000004b2000004b2",
+            "api_seconds": 31.751
+          },
+          "max_rgb_channel_delta": 10,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e3e21e40258619229f7ef764d1168416ea74e122862f8ceebde95c6f5ba6091c",
+            "observation": {
+              "ja": "ボブ髪の女性の上半身と自転車ハンドルを、広い余白に配置した別構図です。軽い内線や毛流れ、部分的な線の途切れ、衣服の薄い影と白場が続きます。肩腕髪の外周は強く連続し、首頬のハッチングや薄灰の地もあるため、鉛筆や全細線の再現とは呼びません。普通の人間顔は独自設計です。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T22:15:22.867463+00:00",
+      "summary": {
+        "ja": "淡灰と広い余白、細い内線と強弱ある輪郭を組み合わせたエッセイ漫画風。動物造形ではなく描画処理だけを参考に、独自の人間を2構図で描いています。",
+        "en": "Soft gray, open space, fine inner strokes and varied stronger contours form an essay-manga look. Two independently designed human compositions study rendering only, not animal morphology."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。 この絵柄では参考の可視の線・色面・階調だけを比較し、顔立ちは独自に設計しています。参考人物の再現や顔の細部の一致を意味しません。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals. For this style only visible line, color-area and tonal rendering is compared. Facial designs are independent; this does not reproduce source people or claim detailed facial matching."
+      }
+    },
+    {
+      "id": "anima-text-soft-cheek-taper-fine-nose-lip-gray-drama",
+      "category": "josei",
+      "title": {
+        "ja": "滑らかな頬顎と軽い鼻口・白場の女性漫画風",
+        "en": "Josei manga with smooth cheek-jaw light nose-mouth marks and white space"
+      },
+      "prompt": {
+        "en": "black and white Japanese josei character-drama manga, fine pen lineart. Independently designed ordinary young-adult human faces combine smooth rounded cheeks with a clean tapering chin, gently curved-to-horizontal dark upper-eyelid strokes and fine partial lower edges. Clear dark-white eye areas, a few light nose-bridge and tip accents and a brief curved mouth or small clean opening sit within broad white facial planes. Use a few separate lip marks, restrained cheek short lines and pale dotted gray. Selected firmer boundary strokes and black hair areas contrast with the fine sparse inner features. Original complete adult heads link normally to their own clothed connected figures."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "高台家の人々・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/91126"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "22e5f4e6ee2e18885f56aadfb5093024a50153194402fd5585e094c0a0fe9791.png",
+          "sha256": "22e5f4e6ee2e18885f56aadfb5093024a50153194402fd5585e094c0a0fe9791",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "9bb25b0b0e1216cdcd93f4a358c4cf1a820e30e09dfa7818e4fd06d02263af4d.jpg",
+          "thumb_sha256": "9bb25b0b0e1216cdcd93f4a358c4cf1a820e30e09dfa7818e4fd06d02263af4d",
+          "prompt": {
+            "en": "One gentle everyday moment beside a public botanical-garden pond rail. A twenty-five-year-old woman with original dark hair tied into a simple low ponytail in a loose plain light blouse and full trousers smiles toward a twenty-six-year-old man with original short plain dark hair in a loose closed everyday jacket and full trousers. The woman holds a closed small plain umbrella low at her side; the man holds an unmarked visitor leaflet near his waist. Both whole original ordinary adult human faces and connected upper bodies remain visible together at eye level. black and white Japanese josei character-drama manga, fine pen lineart. Independently designed ordinary young-adult human faces combine smooth rounded cheeks with a clean tapering chin, gently curved-to-horizontal dark upper-eyelid strokes and fine partial lower edges. Clear dark-white eye areas, a few light nose-bridge and tip accents and a brief curved mouth or small clean opening sit within broad white facial planes. Use a few separate lip marks, restrained cheek short lines and pale dotted gray. Selected firmer boundary strokes and black hair areas contrast with the fine sparse inner features. Original complete adult heads link normally to their own clothed connected figures."
+          },
+          "native_job_id": "6afa2e6d00000256000004aa000004aa",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afa2e6d00000256000004aa000004aa",
+            "api_seconds": 32.228
+          },
+          "max_rgb_channel_delta": 21,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "22e5f4e6ee2e18885f56aadfb5093024a50153194402fd5585e094c0a0fe9791",
+            "observation": {
+              "ja": "柵の前で女性と男性が互いを見る、普通の成人男女の一場面です。滑らかな頬から顎、軽い鼻口、控えめな顔面の陰影へ部分的な寄せがあります。淡い顔面トーンは弱く頬の短線は目立ち、指定の閉じた傘や案内紙に対して袋状の小物も描かれています。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "90aac0a434232b18efaa2d83e75f8b423a10db18716393d58dd66636f98089d6.png",
+          "sha256": "90aac0a434232b18efaa2d83e75f8b423a10db18716393d58dd66636f98089d6",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "fa607e83b77c9d2c45a56b37b5a57f09b3f862c8b27090574c5ee773e4c4c963.jpg",
+          "thumb_sha256": "fa607e83b77c9d2c45a56b37b5a57f09b3f862c8b27090574c5ee773e4c4c963",
+          "prompt": {
+            "en": "A twenty-five-year-old woman with original dark hair tied into a simple low ponytail in a loose plain light blouse pauses beside a botanical-garden pond rail. Her entire original ordinary adult human face and both eyes remain visible in a front three-quarter head-and-shoulders view with a small thoughtful smile. White cheeks, fine nose-mouth marks and pale gray meet a few soft rail and leaf strokes. black and white Japanese josei character-drama manga, fine pen lineart. Independently designed ordinary young-adult human faces combine smooth rounded cheeks with a clean tapering chin, gently curved-to-horizontal dark upper-eyelid strokes and fine partial lower edges. Clear dark-white eye areas, a few light nose-bridge and tip accents and a brief curved mouth or small clean opening sit within broad white facial planes. Use a few separate lip marks, restrained cheek short lines and pale dotted gray. Selected firmer boundary strokes and black hair areas contrast with the fine sparse inner features. Original complete adult heads link normally to their own clothed connected figures."
+          },
+          "native_job_id": "6afa2fbb00000256000004ae000004ae",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afa2fbb00000256000004ae000004ae",
+            "api_seconds": 36.274
+          },
+          "max_rgb_channel_delta": 20,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "90aac0a434232b18efaa2d83e75f8b423a10db18716393d58dd66636f98089d6",
+            "observation": {
+              "ja": "黒髪の成人女性の振り向き寄り近景です。滑らかな頬、細い鼻口線、白い顔と唇などの淡灰、髪瞳の黒が続きます。参考より顎下や耳鼻に斜線、背景に細密線が残りますが、顔全体の描込みは控えめです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T22:15:22.867463+00:00",
+      "summary": {
+        "ja": "滑らかな頬顎、軽い鼻口と白い顔を見せる女性漫画風。柵前の成人男女と、淡い唇や局所斜線を含む女性の近景を掲載しています。",
+        "en": "Smooth cheek-jaw curves, light nose-mouth marks and white faces form this josei manga look. Includes an adult mixed-gender scene and a female close view with pale lips and local hatching."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-tall-dark-eye-marks-rounded-cheeks-crisp-kid-ink",
+      "category": "kodomo",
+      "title": {
+        "ja": "強い頬顎の外線と黒瞳・白い頬の児童漫画風",
+        "en": "Child manga with firm cheek-jaw edges dark pupils and white cheeks"
+      },
+      "prompt": {
+        "en": "black and white Japanese lively child-comic ink, crisp strong outer lineart and sparse inner marks. Original ordinary human children have broad white eye areas with tall dark central eye shapes beneath curved upper-eye and separate brow strokes. A short small nose mark and a simple mouth curve or clear broad opening sit inside rounded cheeks that narrow gently to a complete small chin. Keep outer head and figure boundaries stronger than the brief nose-mouth and cheek accents. Black hair shapes and selected dotted-gray areas contrast with clean white faces and clothing. Each original complete ordinary child head connects naturally through its neck to its own youthful clothed figure."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "新ドラベース・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/218465"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "01d39563a7f5f72f429af3c12fd57e9758325c2fdede33229db72dd86bb953fa.png",
+          "sha256": "01d39563a7f5f72f429af3c12fd57e9758325c2fdede33229db72dd86bb953fa",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "226bc0d77018e02a7cb1175f737543f7d54aa803ea5292e7d6b73742d2a7a859.jpg",
+          "thumb_sha256": "226bc0d77018e02a7cb1175f737543f7d54aa803ea5292e7d6b73742d2a7a859",
+          "prompt": {
+            "en": "black and white Japanese lively child-comic ink, crisp strong outer lineart and sparse inner marks. Original ordinary human children have broad white eye areas with tall dark central eye shapes beneath curved upper-eye and separate brow strokes. A short small nose mark and a simple mouth curve or clear broad opening sit inside rounded cheeks that narrow gently to a complete small chin. Keep outer head and figure boundaries stronger than the brief nose-mouth and cheek accents. Black hair shapes and selected dotted-gray areas contrast with clean white faces and clothing. Each original complete ordinary child head connects naturally through its neck to its own youthful clothed figure. One lively moment at a public riverside stepping-stone path. An eleven-year-old boy with original short plain dark hair in a loose light tee and knee-length shorts stands safely on the broad bank and holds a folded unmarked paper boat at shoulder height. An eleven-year-old girl with original straight dark hair in one simple low ponytail in a loose fully covered top and knee-length skirt stands beside him and points toward the water with a cheerful smile. Both whole original ordinary Japanese child-comic faces and connected upper bodies remain visible together in one eye-level childhood scene."
+          },
+          "native_job_id": "6afa2e9e00000256000004ab000004ab",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afa2e9e00000256000004ab000004ab",
+            "api_seconds": 32.002
+          },
+          "max_rgb_channel_delta": 15,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "01d39563a7f5f72f429af3c12fd57e9758325c2fdede33229db72dd86bb953fa",
+            "observation": {
+              "ja": "屋外で少年と少女が紙舟や紙飛行機のような物を扱う一場面です。人間の子供顔として、縦長の黒目と白い領域、丸い頬、太い頬顎の外周と小さい鼻口内線の強弱、黒白灰に部分的な寄せがあります。参考より幼いマスコット寄りで瞳の光も強めです。ロボット猫の造形は使っていません。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "5c156773cf3418bc290abc80a56e47a8f43c5e83389e60168bb51e106f4aa443.png",
+          "sha256": "5c156773cf3418bc290abc80a56e47a8f43c5e83389e60168bb51e106f4aa443",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "15a7d54955776d83263352b30569d318b4d4d60b12da731958ffb30876ec2db4.jpg",
+          "thumb_sha256": "15a7d54955776d83263352b30569d318b4d4d60b12da731958ffb30876ec2db4",
+          "prompt": {
+            "en": "black and white Japanese lively child-comic ink, crisp strong outer lineart and sparse inner marks. Original ordinary human children have broad white eye areas with tall dark central eye shapes beneath curved upper-eye and separate brow strokes. A short small nose mark and a simple mouth curve or clear broad opening sit inside rounded cheeks that narrow gently to a complete small chin. Keep outer head and figure boundaries stronger than the brief nose-mouth and cheek accents. Black hair shapes and selected dotted-gray areas contrast with clean white faces and clothing. Each original complete ordinary child head connects naturally through its neck to its own youthful clothed figure. An eleven-year-old boy with original short plain dark hair in a loose light tee appears in a front three-quarter head-to-waist view on a safe broad riverside bank. His whole original ordinary human child face and both eye areas remain visible as he grins with a simple clear open mouth and raises one folded plain paper boat beside his shoulder. Firm outer-eye contours, brief nose-mouth strokes and dark-white areas carry the expression."
+          },
+          "native_job_id": "6afa2feb00000256000004af000004af",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afa2feb00000256000004af000004af",
+            "api_seconds": 34.921
+          },
+          "max_rgb_channel_delta": 13,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "5c156773cf3418bc290abc80a56e47a8f43c5e83389e60168bb51e106f4aa443",
+            "observation": {
+              "ja": "笑う男児の顔を大きく見せ、紙舟を添えた近景です。強い頬顎の外線と小さい鼻口内線の太細差、黒瞳の白い光、黒髪・白場・網点やハッチングが続きます。指定の腰までより近い構図で、鼻口の立体線や頬の点調は参考より多めです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T22:15:22.867463+00:00",
+      "summary": {
+        "ja": "太い頬顎の外線と小さな鼻口の内線、黒瞳と白い頬が明快な児童漫画風。少年少女の一場面と、紙舟を添えた男児の近景です。",
+        "en": "Firm cheek-jaw boundaries contrast with tiny inner nose-mouth marks, dark eyes and white cheeks in this child-comic look. Includes a boy-and-girl scene and a boy close view with a paper boat."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-pale-violet-face-tones-fine-edges-color-drama",
+      "category": "gekiga",
+      "title": {
+        "ja": "白い顔面と淡い灰紫影・細線の彩色劇画風",
+        "en": "Colored dramatic manga with white face light pale violet shadow and fine lines"
+      },
+      "prompt": {
+        "en": "pale lavender gray face shading, fine lineart, delicate colored manga illustration. Soft very light gray-violet wash shapes model the nose sides, cheek edges and under the chin of each independently designed original ordinary adult human face. Cream-white forehead and cheek light meet brief pale-pink lips, fine dark eyelid boundaries and light nose-mouth lines. Fine hair strands and a few local dark eye accents contrast with the luminous pale facial planes. Original complete adult human heads connect normally to fully clothed bodies in nonsexual scenes."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "イノサン・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/89184"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "daae1c61d86f7ad3ac05430e2dd9fc8bcd57aaa5783530559db2da1ca8b07b79.png",
+          "sha256": "daae1c61d86f7ad3ac05430e2dd9fc8bcd57aaa5783530559db2da1ca8b07b79",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "b9d307e1767a550e23effc0971c2563459d39b3e3e71e154da75dab6dda6b835.jpg",
+          "thumb_sha256": "b9d307e1767a550e23effc0971c2563459d39b3e3e71e154da75dab6dda6b835",
+          "prompt": {
+            "en": "One quiet fully clothed nonsexual everyday moment beside a public art-museum courtyard rail. A twenty-eight-year-old woman with original shoulder-length straight dark hair in a loose fully closed plain light long-sleeved top and full trousers talks to a twenty-nine-year-old man with original short dark side-parted hair in a loose fully covered plain jacket and full trousers. The woman holds a small closed unmarked booklet at her waist; the man rests one hand on the rail. Both complete original ordinary adult human faces and attached upper bodies remain visible together at eye level with calm open-eyed expressions. pale lavender gray face shading, fine lineart, delicate colored manga illustration. Soft very light gray-violet wash shapes model the nose sides, cheek edges and under the chin of each independently designed original ordinary adult human face. Cream-white forehead and cheek light meet brief pale-pink lips, fine dark eyelid boundaries and light nose-mouth lines. Fine hair strands and a few local dark eye accents contrast with the luminous pale facial planes. Original complete adult human heads connect normally to fully clothed bodies in nonsexual scenes."
+          },
+          "native_job_id": "6afa305000000256000004b1000004b1",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afa305000000256000004b1000004b1",
+            "api_seconds": 34.195
+          },
+          "max_rgb_channel_delta": 63,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "daae1c61d86f7ad3ac05430e2dd9fc8bcd57aaa5783530559db2da1ca8b07b79",
+            "observation": {
+              "ja": "紙片を持つ女性と上着姿の男性が向き合う、成人・完全着衣・非性的な一場面です。実際に読めたカラー表紙の細い顔輪郭、白い光、局所の暗部に部分的な寄せがあります。顔は淡桃から弱い灰紫で、指定の灰紫は顔より服背景の寒色に強く出ています。本文の顔立ちを確認・再現した意味ではありません。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "43f3f118c5509ea4d0e2d8da777ebadcac73e6b8763bde71bb2c768d6c894b04.png",
+          "sha256": "43f3f118c5509ea4d0e2d8da777ebadcac73e6b8763bde71bb2c768d6c894b04",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "b1a2e1540860d653ba12eb15439d572fdd699b4c96ae963d7c4e0fc469fcdda7.jpg",
+          "thumb_sha256": "b1a2e1540860d653ba12eb15439d572fdd699b4c96ae963d7c4e0fc469fcdda7",
+          "prompt": {
+            "en": "A twenty-eight-year-old woman with original shoulder-length straight dark hair in a loose fully closed plain light long-sleeved top pauses near an art-museum courtyard wall. Her whole original ordinary adult human face and both eye areas remain visible in a front three-quarter head-and-shoulders view with a small calm smile. Fine face contours and pale gray-violet nose-cheek-jaw tones meet cream-white light and small pale-pink lip accents. This is a fully clothed nonsexual portrait. pale lavender gray face shading, fine lineart, delicate colored manga illustration. Soft very light gray-violet wash shapes model the nose sides, cheek edges and under the chin of each independently designed original ordinary adult human face. Cream-white forehead and cheek light meet brief pale-pink lips, fine dark eyelid boundaries and light nose-mouth lines. Fine hair strands and a few local dark eye accents contrast with the luminous pale facial planes. Original complete adult human heads connect normally to fully clothed bodies in nonsexual scenes."
+          },
+          "native_job_id": "6afa311800000256000004b3000004b3",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afa311800000256000004b3000004b3",
+            "api_seconds": 37.006
+          },
+          "max_rgb_channel_delta": 83,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "43f3f118c5509ea4d0e2d8da777ebadcac73e6b8763bde71bb2c768d6c894b04",
+            "observation": {
+              "ja": "暗い髪と白い光、淡い灰紫や桃肌で顔面を見せる成人女性の着衣・非性的な近景です。細輪郭、淡い顔面トーン、髪首周辺の暗部に共通傾向があります。参考の表紙より鼻筋・小鼻・口周りの線と立体感が強く、頬首の灰紫も広く硬い面となり、写実的で重い残差があります。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T22:15:22.867463+00:00",
+      "summary": {
+        "ja": "細い輪郭と白い顔面、淡桃から灰紫の影を使う彩色劇画風。顔の参考範囲は実表示のカラー表紙のみで、男女の場面と陰影の強い女性近景を掲載しています。",
+        "en": "Fine contours, white facial light and pale pink-to-gray-violet shadows form a colored dramatic manga look. Facial observation is cover-only; includes a mixed-gender scene and a more strongly shaded female close view."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
     {
       "id": "anima-text-dark-upper-lid-fine-lower-edge-lyrical-youth",
       "category": "shojo",
