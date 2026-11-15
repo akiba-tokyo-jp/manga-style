@@ -3,6 +3,11 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
+      "tag": "anima-text-only-039",
+      "asset": "anima-text-only-039.zip",
+      "sha256": "53e29a37a7a04cdc9c45cb58caf80432d7cc362169b300cfc974e65a8d401b79"
+    },
+    {
       "tag": "anima-text-only-038",
       "asset": "anima-text-only-038.zip",
       "sha256": "df89f6ead620af78f0a107a65247505e7deb648a30d68c40a6c0c3146c6de01d"
@@ -144,6 +149,660 @@
     }
   ],
   "entries": [
+    {
+      "id": "anima-text-curved-lash-edges-short-nose-shojo-tone",
+      "category": "shojo",
+      "title": {
+        "ja": "弧の目元と短い鼻口線の淡い少女漫画風",
+        "en": "Curved eye accents and short nose-mouth marks in delicate monochrome comics"
+      },
+      "prompt": {
+        "en": "black and white delicate character manga, smooth cheek contours narrowing into softly rounded chins. Strong curved upper eyelid and lash accents contrast with thin lower eye edges and simply dark eye interiors with a little white light. A separate arched brow, a few short angled or curved nose marks and two shallow mouth curves leave broad white face planes. Thin-to-medium outer contours and selected stronger eye or nose marks combine with restrained dot-gray and short fine hatching. Ordinary original adult anatomy is independently designed."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "赤ちゃんと僕・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/67420"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "d8f53e3fecc4ceee176762d1a1474e0374ea3a4724c6a04591448b62beb11275.png",
+          "sha256": "d8f53e3fecc4ceee176762d1a1474e0374ea3a4724c6a04591448b62beb11275",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "690d0722b7e54f7945de28baf26db7db871ea8bb978883152c76d254436c8ad8.jpg",
+          "thumb_sha256": "690d0722b7e54f7945de28baf26db7db871ea8bb978883152c76d254436c8ad8",
+          "prompt": {
+            "en": "An adult woman and an adult man work together at a small neighborhood paper-repair counter. The woman has simply tied hair, a plain long-sleeved work jacket and full trousers, and holds a little empty wooden tray. The man has short hair, a small moustache, a plain work shirt and full trousers, and places a folded cloth on the same counter. Both ordinary adult faces, forearms and hands are visible in the same room with lightly drawn shelves. black and white delicate character manga, smooth cheek contours narrowing into softly rounded chins. Strong curved upper eyelid and lash accents contrast with thin lower eye edges and simply dark eye interiors with a little white light. A separate arched brow, a few short angled or curved nose marks and two shallow mouth curves leave broad white face planes. Thin-to-medium outer contours and selected stronger eye or nose marks combine with restrained dot-gray and short fine hatching. Ordinary original adult anatomy is independently designed."
+          },
+          "native_job_id": "6af969b000000256000003d5000003d5",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af969b000000256000003d5000003d5",
+            "api_seconds": 31.144
+          },
+          "max_rgb_channel_delta": 28,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "d8f53e3fecc4ceee176762d1a1474e0374ea3a4724c6a04591448b62beb11275",
+            "observation": {
+              "ja": "棚とカウンターのある室内で成人女性が浅いトレー、成人男性が畳んだ布状の物を扱っています。丸い目や上まぶたの強調、小さな鼻口、細い内側の顔線と白黒の灰に寄せがあります。乳幼児の頭身や固有の人物関係は転用していません。参考より整った現代的な成人漫画寄りで、特に男性の繊細さは控えめです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "d50a28ca551b96b8cd0f421f0818b7a9289ef38ac32a5336c61548fc44f26ad8.png",
+          "sha256": "d50a28ca551b96b8cd0f421f0818b7a9289ef38ac32a5336c61548fc44f26ad8",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "7d29851b9bf16270787ae57ba43c8831a6c453c900702e070da3357db82dc583.jpg",
+          "thumb_sha256": "7d29851b9bf16270787ae57ba43c8831a6c453c900702e070da3357db82dc583",
+          "prompt": {
+            "en": "An adult woman with short swept hair, a plain long-sleeved cardigan and full trousers sits beside a bright garden window holding a small closed notebook in her lap. Her open-eyed face, hands and attached upper body are clear beside a few fine leaf and window lines. black and white delicate character manga, smooth cheek contours narrowing into softly rounded chins. Strong curved upper eyelid and lash accents contrast with thin lower eye edges and simply dark eye interiors with a little white light. A separate arched brow, a few short angled or curved nose marks and two shallow mouth curves leave broad white face planes. Thin-to-medium outer contours and selected stronger eye or nose marks combine with restrained dot-gray and short fine hatching. Ordinary original adult anatomy is independently designed."
+          },
+          "native_job_id": "6af96b1000000256000003db000003db",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af96b1000000256000003db000003db",
+            "api_seconds": 30.382
+          },
+          "max_rgb_channel_delta": 17,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "d50a28ca551b96b8cd0f421f0818b7a9289ef38ac32a5336c61548fc44f26ad8",
+            "observation": {
+              "ja": "ショートボブの成人女性が窓辺のベンチに座り、閉じたリングノートに両手を添えています。曲線的な顔輪郭、目元のまつ毛、小さな鼻と細い髪線・網点が続きます。参考より現代的で整理された顔と画面です。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T08:19:35.706965+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-angular-nose-brow-white-tooth-adventure-ink",
+      "category": "shonen",
+      "title": {
+        "ja": "強い眉と鼻口線の白黒冒険漫画風",
+        "en": "Strong brow and nose-mouth ink in expressive monochrome character comics"
+      },
+      "prompt": {
+        "en": "black and white expressive adventure character manga, clear outer face edges and strongly marked brows and upper eyelids. Original ordinary adult human faces keep simple dark eye areas inside clear white openings. Nose bridges use a long open contour with shorter tip and nostril accents rather than a closed outline. Open mouths have a firm edge, black interior and white tooth area, while closed mouths use a horizontal line and a short lower mark. Fine inner strokes, selected black shapes, white face planes, local angled hatch and small dot-gray areas separate line roles."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "Dr.STONE・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/106449"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "0c99be55f116ea1c4981fa21c63919e8269e843b080b505e818b11b690fc5cd2.png",
+          "sha256": "0c99be55f116ea1c4981fa21c63919e8269e843b080b505e818b11b690fc5cd2",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "92d6412344986268b82632a35c27588e2b12d2b380fa61b86cf1494d29789ea1.jpg",
+          "thumb_sha256": "92d6412344986268b82632a35c27588e2b12d2b380fa61b86cf1494d29789ea1",
+          "prompt": {
+            "en": "An adult woman and an adult man work together at a small neighborhood frame-making counter. The woman has simply tied hair, a plain long-sleeved work jacket and full trousers, and holds a little empty wooden tray. The man has short hair, a small moustache, a plain work shirt and full trousers, and places a folded cloth on the same counter. Both ordinary adult faces, forearms and hands are visible in the same room with lightly drawn shelves. black and white expressive adventure character manga, clear outer face edges and strongly marked brows and upper eyelids. Original ordinary adult human faces keep simple dark eye areas inside clear white openings. Nose bridges use a long open contour with shorter tip and nostril accents rather than a closed outline. Open mouths have a firm edge, black interior and white tooth area, while closed mouths use a horizontal line and a short lower mark. Fine inner strokes, selected black shapes, white face planes, local angled hatch and small dot-gray areas separate line roles."
+          },
+          "native_job_id": "6af969cf00000256000003d6000003d6",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af969cf00000256000003d6000003d6",
+            "api_seconds": 31.284
+          },
+          "max_rgb_channel_delta": 18,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "0c99be55f116ea1c4981fa21c63919e8269e843b080b505e818b11b690fc5cd2",
+            "observation": {
+              "ja": "成人女性が浅いトレー、成人男性が台上の柔らかい布やクッション状の物を扱う白黒の日常場面です。男性の眉と目の近さ、鼻顎の線、頬や首の短線、口の白黒に寄せがあります。石化や亀裂等は一般描法へ転用していません。参考の鋭い目鼻や輪郭への寄せは控えめで、特に女性は汎用的な漫画顔です。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "4de35c65c2c8a67913f5fb63024937dac9239cb20e9483e211a07a0650e69129.png",
+          "sha256": "4de35c65c2c8a67913f5fb63024937dac9239cb20e9483e211a07a0650e69129",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "f9bf7d83abc44a89f32f3015ac208c1d99fbdcbd13ecc5cc8fcf045e168abc1c.jpg",
+          "thumb_sha256": "f9bf7d83abc44a89f32f3015ac208c1d99fbdcbd13ecc5cc8fcf045e168abc1c",
+          "prompt": {
+            "en": "An adult man with short swept hair, a small moustache, a plain long-sleeved work shirt and full trousers stands beside a low workshop shelf holding a closed wooden toolbox in both hands. His open-eyed face, attached shoulders and forearms are large in view, with a few light shelf lines behind him. black and white expressive adventure character manga, clear outer face edges and strongly marked brows and upper eyelids. Original ordinary adult human faces keep simple dark eye areas inside clear white openings. Nose bridges use a long open contour with shorter tip and nostril accents rather than a closed outline. Open mouths have a firm edge, black interior and white tooth area, while closed mouths use a horizontal line and a short lower mark. Fine inner strokes, selected black shapes, white face planes, local angled hatch and small dot-gray areas separate line roles."
+          },
+          "native_job_id": "6af96b2f00000256000003dc000003dc",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af96b2f00000256000003dc000003dc",
+            "api_seconds": 30.499
+          },
+          "max_rgb_channel_delta": 35,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "4de35c65c2c8a67913f5fb63024937dac9239cb20e9483e211a07a0650e69129",
+            "observation": {
+              "ja": "成人男性が棚や引き出しのある作業台前で閉じた工具箱を持ち、目を見開いて口を縦に大きく開けています。強い眉、大きい鼻、黒い口内と白い歯、太い外周と細線・網点が続きます。下顔面や開口は大きく誇張されていますが、二眼・鼻・口が顔輪郭内にあり首胴につながる、普通に読める漫画の驚き顔です。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T08:19:35.706965+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-dark-brows-yellow-green-gray-color-ink",
+      "category": "seinen",
+      "title": {
+        "ja": "濃い眉と黄橙・緑灰の面色の人物漫画風",
+        "en": "Dark brows with yellow-orange and green-gray color planes"
+      },
+      "prompt": {
+        "en": "direct colored character comic, firm outer facial curves and finer brief inner marks. Original ordinary adult faces use dark brows and upper eyelid strokes, simple dark pupil areas and clear white eye spaces. Short nose marks and a lightly bent mouth line with a small lower stroke remain visible within bright face planes. Pale yellow-orange skin areas combine with white light openings and restrained green-gray or brown local shadow shapes. Fine parallel and angled marks beside stronger black edges keep the drawing hand-inked rather than uniformly outlined."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "BLUE GIANT・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/94797"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "028ea1ccc8468b850d5471970fd3585527571d0f797f43050c7d4b961364be49.png",
+          "sha256": "028ea1ccc8468b850d5471970fd3585527571d0f797f43050c7d4b961364be49",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "07efa2b7d923a3a4ac08cba07cdff8cd60d208982c3ba41d43a4de31f855b0a7.jpg",
+          "thumb_sha256": "07efa2b7d923a3a4ac08cba07cdff8cd60d208982c3ba41d43a4de31f855b0a7",
+          "prompt": {
+            "en": "An adult woman and an adult man work together at a small neighborhood box-repair counter. The woman has simply tied hair, a plain long-sleeved work jacket and full trousers, and holds a little empty wooden tray. The man has short hair, a small moustache, a plain work shirt and full trousers, and places a folded cloth on the same counter. Both ordinary adult faces, forearms and hands are visible in the same room with lightly drawn shelves. direct colored character comic, firm outer facial curves and finer brief inner marks. Original ordinary adult faces use dark brows and upper eyelid strokes, simple dark pupil areas and clear white eye spaces. Short nose marks and a lightly bent mouth line with a small lower stroke remain visible within bright face planes. Pale yellow-orange skin areas combine with white light openings and restrained green-gray or brown local shadow shapes. Fine parallel and angled marks beside stronger black edges keep the drawing hand-inked rather than uniformly outlined."
+          },
+          "native_job_id": "6af969ef00000256000003d7000003d7",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af969ef00000256000003d7000003d7",
+            "api_seconds": 31.4
+          },
+          "max_rgb_channel_delta": 226,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "028ea1ccc8468b850d5471970fd3585527571d0f797f43050c7d4b961364be49",
+            "observation": {
+              "ja": "共通の棚背景を持つ男女の二分割パネルです。女性はトレー、男性は別のトレーや布状の物を扱っています。実際に見えたカラー章扉の眉や上まぶた、鼻口の短線、黄橙・緑灰・褐色と白の面に寄せがあります。顔なしの本文から顔特徴を補ったものではありません。参考より硬い色面と白抜きが強く、一つの台を共有する連続構図ではなく同じ場所の並列提示です。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "ccf5cc00dff414c251c7f4cd707e6f2c0a04473b0332582a1a6054477aa08ae5.png",
+          "sha256": "ccf5cc00dff414c251c7f4cd707e6f2c0a04473b0332582a1a6054477aa08ae5",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "f8791e97287e77ccbe5cd25d977d7df5e7156b2e15e46e1af143249e4459cf3c.jpg",
+          "thumb_sha256": "f8791e97287e77ccbe5cd25d977d7df5e7156b2e15e46e1af143249e4459cf3c",
+          "prompt": {
+            "en": "An adult man with short swept hair, a small moustache, a plain loose long-sleeved work shirt and full trousers sits beside a station window with a closed small toolbox on his knees. His open-eyed face, forearms and seated upper body are large in view, with a few bench and window lines. direct colored character comic, firm outer facial curves and finer brief inner marks. Original ordinary adult faces use dark brows and upper eyelid strokes, simple dark pupil areas and clear white eye spaces. Short nose marks and a lightly bent mouth line with a small lower stroke remain visible within bright face planes. Pale yellow-orange skin areas combine with white light openings and restrained green-gray or brown local shadow shapes. Fine parallel and angled marks beside stronger black edges keep the drawing hand-inked rather than uniformly outlined."
+          },
+          "native_job_id": "6af96b4e00000256000003dd000003dd",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af96b4e00000256000003dd000003dd",
+            "api_seconds": 30.542
+          },
+          "max_rgb_channel_delta": 201,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "ccf5cc00dff414c251c7f4cd707e6f2c0a04473b0332582a1a6054477aa08ae5",
+            "observation": {
+              "ja": "成人男性が駅の待合席を思わせる窓辺のベンチに座っています。閉じた工具箱は膝間の手前に置かれ、下端で一部が切れています。濃い眉と顔輪郭、黄土色の肌影、灰緑の服影と白抜きが続きます。参考より平面的で静かな仕上がりです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T08:19:35.706965+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-warm-fine-contours-pink-cheek-light-color",
+      "category": "yonkoma",
+      "title": {
+        "ja": "淡い頬色と短い顔線のカラー日常漫画風",
+        "en": "Pale cheek color and brief facial marks in everyday character comics"
+      },
+      "prompt": {
+        "en": "light colored everyday character manga, fine warm cheek-to-chin contour curves and clearly stronger dark upper eyelids. Original ordinary adult faces use softly curved brows where visible, a tiny warm nose mark and a small brief mouth stroke or rounded open mouth with a red-pink interior. Simple eye color areas are darker above and lighter below with small white lights, without intricate iris patterning. Pale cream skin planes, a little pink cheek color and thin warm local shade keep faces bright, with fine inner lines and selected black eye accents."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "ご注文はうさぎですか?・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/185595"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "81af092bdd053d555fdd5edd1a620599e927295b3e34d859aad953912d8293e3.png",
+          "sha256": "81af092bdd053d555fdd5edd1a620599e927295b3e34d859aad953912d8293e3",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "cf59574b16eac0a9a5f01ac473721a361280028623f147b576aece58f6dde0e0.jpg",
+          "thumb_sha256": "cf59574b16eac0a9a5f01ac473721a361280028623f147b576aece58f6dde0e0",
+          "prompt": {
+            "en": "An adult woman and an adult man work together at a small neighborhood notebook-repair counter. The woman has simply tied hair, a plain long-sleeved work jacket and full trousers, and holds a little empty wooden tray. The man has short hair, a small moustache, a plain work shirt and full trousers, and places a folded cloth on the same counter. Both ordinary adult faces, forearms and hands are visible in the same room with lightly drawn shelves. light colored everyday character manga, fine warm cheek-to-chin contour curves and clearly stronger dark upper eyelids. Original ordinary adult faces use softly curved brows where visible, a tiny warm nose mark and a small brief mouth stroke or rounded open mouth with a red-pink interior. Simple eye color areas are darker above and lighter below with small white lights, without intricate iris patterning. Pale cream skin planes, a little pink cheek color and thin warm local shade keep faces bright, with fine inner lines and selected black eye accents."
+          },
+          "native_job_id": "6af96a0e00000256000003d8000003d8",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af96a0e00000256000003d8000003d8",
+            "api_seconds": 31.02
+          },
+          "max_rgb_channel_delta": 116,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "81af092bdd053d555fdd5edd1a620599e927295b3e34d859aad953912d8293e3",
+            "observation": {
+              "ja": "書棚とカウンターのある室内で成人女性が茶色いトレー、成人男性が台上の紙や布状の束を扱っています。実カラー本文で見えた頬の短線、暖かい肌色、短い鼻口線や目元の強調に寄せがあります。参考より輪郭や髪・服の影は太く濃く、淡い描線の軽さは控えめです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "cf0499380f7bc23a6aaa2019c930511458f9872409456c66c9a51a5eb05eda70.png",
+          "sha256": "cf0499380f7bc23a6aaa2019c930511458f9872409456c66c9a51a5eb05eda70",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "77b4bf5817ceefef4a646f772a02c6a2a1544fbc102639e1409b51d8c08d7abf.jpg",
+          "thumb_sha256": "77b4bf5817ceefef4a646f772a02c6a2a1544fbc102639e1409b51d8c08d7abf",
+          "prompt": {
+            "en": "An adult woman with simply tied hair, a plain long-sleeved loose jacket and full trousers sits near a bright garden window with a closed notebook in both hands. Her open-eyed face, hands and seated figure are clear with a little table and lightly drawn leaves behind her. light colored everyday character manga, fine warm cheek-to-chin contour curves and clearly stronger dark upper eyelids. Original ordinary adult faces use softly curved brows where visible, a tiny warm nose mark and a small brief mouth stroke or rounded open mouth with a red-pink interior. Simple eye color areas are darker above and lighter below with small white lights, without intricate iris patterning. Pale cream skin planes, a little pink cheek color and thin warm local shade keep faces bright, with fine inner lines and selected black eye accents."
+          },
+          "native_job_id": "6af96b6c00000256000003de000003de",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af96b6c00000256000003de000003de",
+            "api_seconds": 30.183
+          },
+          "max_rgb_channel_delta": 140,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "cf0499380f7bc23a6aaa2019c930511458f9872409456c66c9a51a5eb05eda70",
+            "observation": {
+              "ja": "成人女性が窓辺に座り、膝上の開いたノートに両手を置いています。上まぶたを強く鼻口を細い短線にする処理、淡い肌と頬色が続きます。閉じた本の指定とは異なります。参考より黒い外周と境界の明瞭な面影が強く、柔らかな色の重なりは控えめです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T08:19:35.706965+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-fine-cheek-turns-short-red-brown-mouth-color",
+      "category": "other",
+      "title": {
+        "ja": "短い口線と頬の短線の淡彩人物漫画風",
+        "en": "Short mouth lines and cheek hatching in light-colored character comics"
+      },
+      "prompt": {
+        "en": "light colored character comic, fine cheek edges tapering gently toward a small chin and broad bright cream face areas. Original ordinary adult human faces use darker slightly thicker upper eyelid lines and faint thin lower eye marks. Eye interiors have simple red-brown color areas and small light spaces without intricate iris marks. A nose is indicated by a very brief pale mark and a little local shade. The mouth is a short light red-brown line rather than a densely modeled lip. Small soft pink areas near cheeks and nose keep the facial shading sparse and the inner strokes brief."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "エロっち♡若奥様・正規公開の可視描法を私的観察",
+          "url": "https://www.wani.com/comics/9784862691316/"
+        }
+      ],
+      "version": 1,
+      "reference_context": "adult-manga",
+      "sample_content": "non-explicit-fully-clothed-adult",
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "f5e0c050403df45a80752300ff2e05ae6ddf491617d0ab898d637ae5fed5bf8a.png",
+          "sha256": "f5e0c050403df45a80752300ff2e05ae6ddf491617d0ab898d637ae5fed5bf8a",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "dbf1102e617ad04aec9dead9e7eaa22daa86c29c298b12c7da03c968f98039d0.jpg",
+          "thumb_sha256": "dbf1102e617ad04aec9dead9e7eaa22daa86c29c298b12c7da03c968f98039d0",
+          "prompt": {
+            "en": "An adult woman and an adult man work together at a small neighborhood tray-repair counter. The woman has simply tied hair, a plain long-sleeved work jacket and full trousers, and holds a little empty wooden tray. The man has short hair, a small moustache, a plain work shirt and full trousers, and places a folded cloth on the same counter. Both ordinary adult faces, forearms and hands are visible in the same room with lightly drawn shelves. light colored character comic, fine cheek edges tapering gently toward a small chin and broad bright cream face areas. Original ordinary adult human faces use darker slightly thicker upper eyelid lines and faint thin lower eye marks. Eye interiors have simple red-brown color areas and small light spaces without intricate iris marks. A nose is indicated by a very brief pale mark and a little local shade. The mouth is a short light red-brown line rather than a densely modeled lip. Small soft pink areas near cheeks and nose keep the facial shading sparse and the inner strokes brief."
+          },
+          "native_job_id": "6af96a4c00000256000003da000003da",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af96a4c00000256000003da000003da",
+            "api_seconds": 31.268
+          },
+          "max_rgb_channel_delta": 134,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "f5e0c050403df45a80752300ff2e05ae6ddf491617d0ab898d637ae5fed5bf8a",
+            "observation": {
+              "ja": "成人女性がトレーを差し出し、成人男性も布状の物を載せた小さなトレーを持って、互いに少し向き合う日常場面です。公式表紙の顔付近で見えた細い頬線、小さな口、淡い肌や頬の短線に寄せがあります。本文や隠れた虹彩細部は未観測です。参考の赤茶の目口や柔らかな赤みより控えめで、服には硬い面影があります。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "8bd623b23aff5a21b09454a6e88e0c11deeb3346f02853f0c60bc221c3a62504.png",
+          "sha256": "8bd623b23aff5a21b09454a6e88e0c11deeb3346f02853f0c60bc221c3a62504",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "aa4c8cc4cc6441ec3d021b95c31c67e3288fc260a3a0650e27baeea50e6b94b7.jpg",
+          "thumb_sha256": "aa4c8cc4cc6441ec3d021b95c31c67e3288fc260a3a0650e27baeea50e6b94b7",
+          "prompt": {
+            "en": "An adult woman with simply tied hair, a plain long-sleeved loose jacket and full trousers stands beside a bright park shelter holding an empty small ceramic pot in both hands. Her open-eyed face, forearms and figure are clear against a few light posts and leaves. light colored character comic, fine cheek edges tapering gently toward a small chin and broad bright cream face areas. Original ordinary adult human faces use darker slightly thicker upper eyelid lines and faint thin lower eye marks. Eye interiors have simple red-brown color areas and small light spaces without intricate iris marks. A nose is indicated by a very brief pale mark and a little local shade. The mouth is a short light red-brown line rather than a densely modeled lip. Small soft pink areas near cheeks and nose keep the facial shading sparse and the inner strokes brief."
+          },
+          "native_job_id": "6af96ba900000256000003e0000003e0",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af96ba900000256000003e0000003e0",
+            "api_seconds": 30.517
+          },
+          "max_rgb_channel_delta": 139,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "8bd623b23aff5a21b09454a6e88e0c11deeb3346f02853f0c60bc221c3a62504",
+            "observation": {
+              "ja": "植物のある場所で着衣の成人女性が両手でカップを持ち、周囲に目・頬・口の拡大図を配しています。細く抜ける鼻口、先細りの目元線や赤茶系の輪郭、頬の短線が続きます。空鉢の指定とは異なり、参考より大きめの目、円形の頬色とセル状の影が目立ちます。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T08:19:35.706965+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
     {
       "id": "anima-text-angled-soft-cheeks-dry-brow-ink",
       "category": "gag",
