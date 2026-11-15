@@ -3,6 +3,11 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
+      "tag": "anima-text-only-049",
+      "asset": "anima-text-only-049.zip",
+      "sha256": "5683ffe0f7da26e9043a28eb680f0074cccf1387aa7919f4e49e60a19b85e76e"
+    },
+    {
       "tag": "anima-text-only-048",
       "asset": "anima-text-only-048.zip",
       "sha256": "fce478ceff1fa0a0f3025cf77d3ad6f33917577864f86657d0e08cbcc84695c2"
@@ -194,6 +199,271 @@
     }
   ],
   "entries": [
+    {
+      "id": "anima-text-narrow-lid-dashes-bent-nose-sparse-gag",
+      "category": "gag",
+      "title": {
+        "ja": "短い顔線と白場の静かなギャグ漫画風",
+        "en": "Quiet gag manga with short facial pen marks and white space"
+      },
+      "prompt": {
+        "en": "cartoon, manga, monochrome, simple eyes, narrow eyes, lineart, simple background. Sparse Japanese deadpan gag pen drawing with original youthful human people. Short nearly horizontal upper-lid dashes and small dark eye marks, separate brief brows, a short bent nose and a small straight or crooked mouth line carry dry reactions. Smooth cheek lines meet a firm little angular jaw or chin turn. Clear outer outlines and much finer sparse inner marks leave faces flat white, with selected small black areas and a little pale gray in clothing. The original faces have ordinary human hair, forehead, two eyes, nose, mouth and chin on naturally connected youthful comic figures."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "増田こうすけ劇場 ギャグマンガ日和・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/125867"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "3ccd8dfae8fe91f3507463d2def7e5816e6af04a7a8118f9152aac852b382406.png",
+          "sha256": "3ccd8dfae8fe91f3507463d2def7e5816e6af04a7a8118f9152aac852b382406",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "2e66d019cdee7b35867a2b5ef9c6e8dac99c63ea06b44c1b026d5b936a2ae83f.jpg",
+          "thumb_sha256": "2e66d019cdee7b35867a2b5ef9c6e8dac99c63ea06b44c1b026d5b936a2ae83f",
+          "prompt": {
+            "en": "cartoon, manga, monochrome, simple eyes, narrow eyes, lineart, simple background. Sparse Japanese deadpan gag pen drawing with original youthful human people. Short nearly horizontal upper-lid dashes and small dark eye marks, separate brief brows, a short bent nose and a small straight or crooked mouth line carry dry reactions. Smooth cheek lines meet a firm little angular jaw or chin turn. Clear outer outlines and much finer sparse inner marks leave faces flat white, with selected small black areas and a little pale gray in clothing. The original faces have ordinary human hair, forehead, two eyes, nose, mouth and chin on naturally connected youthful comic figures. A sixteen-year-old boy with original short straight black hair and a sixteen-year-old girl with an original short dark bob stand beside a public park picnic table. The boy in a loose plain tee and knee-length shorts holds an awkwardly folded plain map near his waist. The girl in a loose light long-sleeved top and full trousers points at a different paper edge. Their whole original youthful human faces show dry little eyelid-and-mouth reactions as they look toward each other in one quiet comic moment, with sparse table and tree lines."
+          },
+          "native_job_id": "6af9f348000002560000047800000478",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9f348000002560000047800000478",
+            "api_seconds": 31.938
+          },
+          "max_rgb_channel_delta": 15,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "3ccd8dfae8fe91f3507463d2def7e5816e6af04a7a8118f9152aac852b382406",
+            "observation": {
+              "ja": "公園の机やベンチのそばで、紙や冊子を持つ少年たちとボブ髪の若い女性が一つの場面に並んでいます。細い目元、少ない鼻口線、白い顔、黒髪と薄い灰に部分的な寄せがあります。指定の少年少女2人より人数が増え、女性は他の少年より年上に見えます。参考より輪郭や服の皺は整い、素朴な折れ鼻や省略の強さは控えめです。 モノクロ基調ですが、未加工の原PNGにはわずかな色差も残っています。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "920690ddc40aebad9e8a2ae12d0730eba87060889d4519fdfe11ee18fc55ac21.png",
+          "sha256": "920690ddc40aebad9e8a2ae12d0730eba87060889d4519fdfe11ee18fc55ac21",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "5ba497e2da5cf4bcfd9a6af4ed80fc73b6f8afc0cd6d64f38a85ffc1ba8492df.jpg",
+          "thumb_sha256": "5ba497e2da5cf4bcfd9a6af4ed80fc73b6f8afc0cd6d64f38a85ffc1ba8492df",
+          "prompt": {
+            "en": "A candid quiet moment beside a public park picnic table. A sixteen-year-old girl with an original short dark bob tucked behind her ears wears a loose plain long-sleeved top. She pauses while folding a small plain map at waist level, tilts her head and gives a dry little mouth-line smile toward the viewer. Her entire ordinary youthful human face, both eye areas and connected upper body are visible together in one eye-level view, with a few table-edge and tree strokes. cartoon, manga, monochrome, simple eyes, narrow eyes, lineart, simple background. Sparse Japanese deadpan gag pen drawing with original youthful human people. Short nearly horizontal upper-lid dashes and small dark eye marks, separate brief brows, a short bent nose and a small straight or crooked mouth line carry dry reactions. Smooth cheek lines meet a firm little angular jaw or chin turn. Clear outer outlines and much finer sparse inner marks leave faces flat white, with selected small black areas and a little pale gray in clothing. The original faces have ordinary human hair, forehead, two eyes, nose, mouth and chin on naturally connected youthful comic figures."
+          },
+          "native_job_id": "6af9f702000002560000047d0000047d",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9f702000002560000047d0000047d",
+            "api_seconds": 31.648
+          },
+          "max_rgb_channel_delta": 15,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "920690ddc40aebad9e8a2ae12d0730eba87060889d4519fdfe11ee18fc55ac21",
+            "observation": {
+              "ja": "屋外の机で、ボブ髪の若い人物が格子状の紙を両手で持つ一場面です。細めの上まぶた、短い鼻口線、少数の頬線、黒髪と白い顔の整理が続きます。参考より線は滑らかで、髪の艶、服の影、背景の描き込みが多く、穏やかな一般漫画寄りです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T18:09:51.376381+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals: a mixed-gender scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
+    {
+      "id": "anima-text-small-black-pupils-rounded-cheeks-child-comic",
+      "category": "kodomo",
+      "title": {
+        "ja": "丸い黒瞳と白い頬の簡潔な児童漫画風",
+        "en": "Simple child manga with rounded dark pupils and white cheeks"
+      },
+      "prompt": {
+        "en": "cartoon, manga, monochrome, dot eyes, black pupils, white sclera, lineart. Flat Japanese children's comic pen drawing with independently designed ordinary human children. Small definite black pupils sit in simple rounded white eye areas below clear upper-eye curves. Full rounded cheeks and a small clear chin meet short separate eyebrow strokes, a tiny nose mark and simple mouth curves or clean open smiles. A complete ordinary human hairline and forehead surround the eyes; each original face has two eyes, a nose, a mouth and a chin. Clear outer face and body contours meet sparse short inner marks, selected black shapes, broad white skin and light local parallel-line gray. Heads connect normally to necks and youthful human bodies."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "chibi",
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "ウソツキ!ゴクオーくん完全版・正規公開の可視描法を私的観察",
+          "url": "https://mechacomic.jp/books/217325"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "35154e0857edb1c5e51c0617f41fce7dc81925acf2c44ab9fb1bd48fbdd2e905.png",
+          "sha256": "35154e0857edb1c5e51c0617f41fce7dc81925acf2c44ab9fb1bd48fbdd2e905",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "d9270f43f281e42788ba374590f05618a526a224c5de6bc7beb6a4e0722a812e.jpg",
+          "thumb_sha256": "d9270f43f281e42788ba374590f05618a526a224c5de6bc7beb6a4e0722a812e",
+          "prompt": {
+            "en": "One candid childhood moment at a public park craft table. An eleven-year-old boy with original short straight black hair in a loose plain tee and knee-length shorts stands to the left of an eleven-year-old girl with an original plain black bob, a loose light top and knee-length skirt. The boy raises one folded plain paper fan while the girl points toward it and smiles. Their entire ordinary human child faces, clearly inked black pupils and normally connected upper bodies are visible together in the same eye-level view, with a few table-edge and tree lines. cartoon, manga, monochrome, dot eyes, black pupils, white sclera, lineart. Flat Japanese children's comic pen drawing with independently designed ordinary human children. Small definite black pupils sit in simple rounded white eye areas below clear upper-eye curves. Full rounded cheeks and a small clear chin meet short separate eyebrow strokes, a tiny nose mark and simple mouth curves or clean open smiles. A complete ordinary human hairline and forehead surround the eyes; each original face has two eyes, a nose, a mouth and a chin. Clear outer face and body contours meet sparse short inner marks, selected black shapes, broad white skin and light local parallel-line gray. Heads connect normally to necks and youthful human bodies."
+          },
+          "native_job_id": "6af9f581000002560000047a0000047a",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9f581000002560000047a0000047a",
+            "api_seconds": 32.509
+          },
+          "max_rgb_channel_delta": 20,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "35154e0857edb1c5e51c0617f41fce7dc81925acf2c44ab9fb1bd48fbdd2e905",
+            "observation": {
+              "ja": "木やベンチのある屋外で、扇状のものを掲げる少年と両手の指を立てる少女を描いています。普通の子どもの丸顔、黒い瞳、短い鼻口、黒髪と白い顔、簡潔な輪郭に部分的な寄せがあります。指定より瞳は大きい楕円で、参考の強い誇張や太線の勢いより穏やかな教材挿絵寄りです。 モノクロ基調ですが、未加工の原PNGにはわずかな色差も残っています。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "ec29af80d819baad34fb5b3b65393944f7ffe4c9b9183ee6c43a4b4bb46d6f31.png",
+          "sha256": "ec29af80d819baad34fb5b3b65393944f7ffe4c9b9183ee6c43a4b4bb46d6f31",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "5273fceb42890104b689a21ed90f85f52198ea21ca12b149415e1b34a6091ba9.jpg",
+          "thumb_sha256": "5273fceb42890104b689a21ed90f85f52198ea21ca12b149415e1b34a6091ba9",
+          "prompt": {
+            "en": "cartoon, manga, monochrome, dot eyes, black pupils, white sclera, lineart. Flat Japanese children's comic pen drawing with independently designed ordinary human children. Small definite black pupils sit in simple rounded white eye areas below clear upper-eye curves. Full rounded cheeks and a small clear chin meet short separate eyebrow strokes, a tiny nose mark and simple mouth curves or clean open smiles. A complete ordinary human hairline and forehead surround the eyes; each original face has two eyes, a nose, a mouth and a chin. Clear outer face and body contours meet sparse short inner marks, selected black shapes, broad white skin and light local parallel-line gray. Heads connect normally to necks and youthful human bodies. An eleven-year-old boy with original short straight dark hair and an original loose plain tee appears in an eye-level front three-quarter head-to-waist view beside a park craft table. His whole original ordinary human child face and both clearly inked small black pupils remain visible as he raises his eyebrows, smiles and holds a folded plain paper fan near one shoulder, with attached upper body, sparse table lines and light local gray."
+          },
+          "native_job_id": "6af9f6cb000002560000047c0000047c",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 1.0,
+            "sampler": "euler",
+            "seed": null,
+            "negative_prompt": null,
+            "references_used": []
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6af9f6cb000002560000047c0000047c",
+            "api_seconds": 31.854
+          },
+          "max_rgb_channel_delta": 20,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "ec29af80d819baad34fb5b3b65393944f7ffe4c9b9183ee6c43a4b4bb46d6f31",
+            "observation": {
+              "ja": "短髪・丸頬の子どもの胸上像を2×2に並べ、口元などを少し変えた顔中心の見本です。黒い瞳と髪、短い眉鼻口、白い顔の描法が続きます。指定した単独の少年と扇の構図にはならず、下段には鉛筆状の小物が一部入っています。瞳は極小ではなく、表情差も小さめで、参考より均整のよい児童イラスト寄りです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-15T18:09:51.376381+00:00",
+      "summary": {
+        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals: a mixed-gender scene and another composition. Each sample carries its exact submitted English."
+      },
+      "limitations": {
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+      }
+    },
     {
       "id": "anima-text-round-lash-eyes-white-face-fine-shojo-ink",
       "category": "shojo",
