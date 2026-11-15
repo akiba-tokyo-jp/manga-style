@@ -188,9 +188,9 @@
       "sha256": "328149e7b5e45fe0d0bfdc71b08e7d2acd206d60a5182e34e542bdc94a5e46c8"
     },
     {
-      "tag": "anima-text-only-015",
-      "asset": "anima-text-only-015-05.zip",
-      "sha256": "22db1ee6126756b96bb90478ff8842e3c664e231be2fb2722f7e603c167c1347"
+      "tag": "anima-genre-correction-004",
+      "asset": "anima-genre-correction-004.zip",
+      "sha256": "9932f399e46c52fb38e38a586cbb3a97bd711a6166b9a1e796620e3eaf43549d"
     },
     {
       "tag": "anima-text-only-015",
@@ -23465,14 +23465,6 @@
     {
       "id": "anima-text-acute-brows-small-whites",
       "category": "shonen",
-      "title": {
-        "ja": "細い白目と鼻頬の短線を使う成熟画",
-        "en": "Narrow eye whites and fine nose-cheek marks in mature faces"
-      },
-      "summary": {
-        "ja": "男女が登場する場面と、絵柄の魅力を見せる構図の実生成2枚。各画像の観察説明に、実際の表情・動作・描線と指定からの残差を記載しています。",
-        "en": "Two actual generated examples: a shared man-and-woman scene and a style showcase. Per-image observations describe actual acting, composition, drawing and prompt residuals."
-      },
       "features": {
         "expression": [
           "mono"
@@ -23488,30 +23480,34 @@
           "tone"
         ]
       },
-      "prompt": {
-        "en": "Spare sharp-angle monochrome manga. Each original adult face tapers through white cheeks toward an inverted-triangle jaw. Small angular eye whites hold tiny dark pupils beneath heavy brows falling steeply toward the bridge of the nose; the brow and upper lid sit close together. The nose is a compact thin pen mark rather than a large solid wedge. Thin upper and lower mouth curves remain short and controlled. Dark accents collect at brows, eye rims and the mouth gap, with very few marks across the cheeks. Clear outside contours, local fine diagonal hatching and restrained dotted gray define the clothed neck, shoulders and connected arms."
-      },
-      "model_version": "anima-turbo-v1.1",
       "references": [
         {
           "title": "エンジェル伝説・公式無料本文画像8,9の可視顔と線",
           "url": "https://shonenjumpplus.com/episode/13932016480028833007"
         }
       ],
-      "version": 1,
+      "model_version": "anima-turbo-v1.1",
+      "title": {
+        "ja": "濃い目元と短い顔線・白黒灰の青春少年漫画風",
+        "en": "Youthful shonen manga with dark eye accents brief face marks and white-black tone"
+      },
+      "prompt": {
+        "en": "Sharp-angle black and white Japanese youthful shonen manga. Each original teenager's ordinary human face tapers through slim white cheeks toward a clear small angular chin. Narrow angular white eye openings hold small dark pupils beneath strong slanting brows near the bridge of the nose, with a clear forehead and separately readable eyes, nose, mouth and chin. The nose uses compact fine pen marks rather than a large filled wedge. Short upper and lower mouth curves or a clean open smile carry the expression. Dark accents collect at brows, eye rims and mouth gaps while most cheeks remain white. Clear outside contours, fine local diagonal strokes and restrained dotted gray define youthful clothed necks, shoulders and naturally connected figures."
+      },
+      "version": 2,
       "samples": [
         {
           "role": "mixed-gender",
-          "file": "d459128eab9de8528f025deacaec5f9a98d7960240bbc92e6af6642df3369262.png",
-          "sha256": "d459128eab9de8528f025deacaec5f9a98d7960240bbc92e6af6642df3369262",
+          "file": "ead0487f85afb93a661d1d5749d69d3f89973e22abc0ed86e0e784a251a588ba.png",
+          "sha256": "ead0487f85afb93a661d1d5749d69d3f89973e22abc0ed86e0e784a251a588ba",
           "width": 1024,
           "height": 1024,
-          "thumb": "e0a2955a8e6ac7dfa7a3888882c7aa4cb35a3aeda18fae312d573750ac263c06.jpg",
-          "thumb_sha256": "e0a2955a8e6ac7dfa7a3888882c7aa4cb35a3aeda18fae312d573750ac263c06",
+          "thumb": "4d6369f1b0e42857060588bfce678f05cc203ce4efb3b753b042676131dd1800.jpg",
+          "thumb_sha256": "4d6369f1b0e42857060588bfce678f05cc203ce4efb3b753b042676131dd1800",
           "prompt": {
-            "en": "A candid unlettered working moment in a small bicycle workshop. A thirty-five-year-old woman with tied-back dark hair and a forty-year-old man with short gray hair stand beside one bench and support a plain bicycle wheel while checking its rim. Both wear plain long-sleeved work shirts and full trousers. Their adult faces, connected shoulders and arms, wheel, bench and tool shelves share one coherent space. Spare sharp-angle monochrome manga. Each original adult face tapers through white cheeks toward an inverted-triangle jaw. Small angular eye whites hold tiny dark pupils beneath heavy brows falling steeply toward the bridge of the nose; the brow and upper lid sit close together. The nose is a compact thin pen mark rather than a large solid wedge. Thin upper and lower mouth curves remain short and controlled. Dark accents collect at brows, eye rims and the mouth gap, with very few marks across the cheeks. Clear outside contours, local fine diagonal hatching and restrained dotted gray define the clothed neck, shoulders and connected arms."
+            "en": "One lively everyday moment at a public park craft table. A seventeen-year-old girl with original straight shoulder-length dark hair wears a loose plain short-sleeved blouse and a simple knee-length skirt and points at a folded plain paper glider on the table. Beside her, a seventeen-year-old boy with original short wavy dark hair wears a loose plain short-sleeved tee and full trousers and holds a different folded paper glider with an amused open-eyed smile. Both whole original ordinary youthful Japanese manga faces and attached upper bodies are visible together at eye level with a few table-edge and tree lines. Sharp-angle black and white Japanese youthful shonen manga. Each original teenager's ordinary human face tapers through slim white cheeks toward a clear small angular chin. Narrow angular white eye openings hold small dark pupils beneath strong slanting brows near the bridge of the nose, with a clear forehead and separately readable eyes, nose, mouth and chin. The nose uses compact fine pen marks rather than a large filled wedge. Short upper and lower mouth curves or a clean open smile carry the expression. Dark accents collect at brows, eye rims and mouth gaps while most cheeks remain white. Clear outside contours, fine local diagonal strokes and restrained dotted gray define youthful clothed necks, shoulders and naturally connected figures."
           },
-          "native_job_id": "6af73e9400000256000002ce000002ce",
+          "native_job_id": "6afa05bf000002560000048900000489",
           "requested_settings": {
             "model": "anima-turbo-v1.1",
             "aspect_ratio": "square",
@@ -23530,31 +23526,31 @@
             "steps": 8,
             "sampler": "euler",
             "mode": "text2img",
-            "native_job_id": "6af73e9400000256000002ce000002ce",
-            "api_seconds": 31.692
+            "native_job_id": "6afa05bf000002560000048900000489",
+            "api_seconds": 32.503
           },
-          "max_rgb_channel_delta": 18,
+          "max_rgb_channel_delta": 25,
           "visual_review": {
             "status": "self-reviewed",
-            "sha256": "d459128eab9de8528f025deacaec5f9a98d7960240bbc92e6af6642df3369262",
+            "sha256": "ead0487f85afb93a661d1d5749d69d3f89973e22abc0ed86e0e784a251a588ba",
             "observation": {
-              "ja": "着衣の成人男女2人が作業場で車輪を支え、軸付近を扱う一場面。細い白目、小鼻と曲線の口、白い頬に鼻梁・頬顎の短線を添える立体化を確認。指定の眉間への急角度や逆三角顎は弱く、局所面より点描と斜線が多めです。",
-              "en": "Two clothed adults support a bicycle wheel and work near its hub in one workshop. Narrow whites, small nose, curved mouth and white cheeks with short nasal/cheek/jaw marks model the face. Steep inward brows and inverted-triangle jaw are weak; stipple/hatching exceed the requested small flat local gray."
+              "ja": "公園の工作台で紙の折り物を指す少女と、別の折り物を持って笑う少年の場面です。若い日本少年漫画の普通顔として読め、短い鼻口線、濃い目元と黒髪、白い顔と局所の灰に部分的な寄せがあります。指定より頬顎は丸く滑らかで黒目も大きく、首腕や服の細かな影は多めです。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
             }
           }
         },
         {
           "role": "showcase",
-          "file": "eaa9d9d2c25c93b15d107e4a4c818cc1773ee5c43bba400e419ae3f788c1e92c.png",
-          "sha256": "eaa9d9d2c25c93b15d107e4a4c818cc1773ee5c43bba400e419ae3f788c1e92c",
+          "file": "14a6b073b37ca6920438e0d3f60cb3b9c9c1ac64f3d92dab62d60aef1c764718.png",
+          "sha256": "14a6b073b37ca6920438e0d3f60cb3b9c9c1ac64f3d92dab62d60aef1c764718",
           "width": 1024,
           "height": 1024,
-          "thumb": "2449a74486de9af799f4d232af1c75dc21d671f4719c13aa6f4ae0683ae1baa8.jpg",
-          "thumb_sha256": "2449a74486de9af799f4d232af1c75dc21d671f4719c13aa6f4ae0683ae1baa8",
+          "thumb": "2e506227227c7ff9b01134a28ae8259d682cd0b87c57f8a74dfbb5d4624f96a9.jpg",
+          "thumb_sha256": "2e506227227c7ff9b01134a28ae8259d682cd0b87c57f8a74dfbb5d4624f96a9",
           "prompt": {
-            "en": "A candid unlettered working moment in a small bicycle workshop. A forty-year-old man with short gray hair wears a plain long-sleeved work shirt and full trousers. He bends over one bench and steadies a plain bicycle wheel with one hand while wiping its rim with a folded cloth in the other. His adult face, connected neck, shoulders and arms, wheel, cloth, bench and shelves share one coherent space. Spare sharp-angle monochrome manga. Each original adult face tapers through white cheeks toward an inverted-triangle jaw. Small angular eye whites hold tiny dark pupils beneath heavy brows falling steeply toward the bridge of the nose; the brow and upper lid sit close together. The nose is a compact thin pen mark rather than a large solid wedge. Thin upper and lower mouth curves remain short and controlled. Dark accents collect at brows, eye rims and the mouth gap, with very few marks across the cheeks. Clear outside contours, local fine diagonal hatching and restrained dotted gray define the clothed neck, shoulders and connected arms."
+            "en": "A seventeen-year-old boy with original short wavy dark hair in a loose plain short-sleeved tee pauses beside a public park craft table. His whole original ordinary youthful Japanese manga face and both eyes are visible in an eye-level front three-quarter head-and-shoulders view as he gives a lively small open smile toward the viewer. Strong angled brow and upper-eye accents meet white cheeks, compact fine nose marks, short mouth curves and a little local gray above normally attached covered shoulders. Sharp-angle black and white Japanese youthful shonen manga. Each original teenager's ordinary human face tapers through slim white cheeks toward a clear small angular chin. Narrow angular white eye openings hold small dark pupils beneath strong slanting brows near the bridge of the nose, with a clear forehead and separately readable eyes, nose, mouth and chin. The nose uses compact fine pen marks rather than a large filled wedge. Short upper and lower mouth curves or a clean open smile carry the expression. Dark accents collect at brows, eye rims and mouth gaps while most cheeks remain white. Clear outside contours, fine local diagonal strokes and restrained dotted gray define youthful clothed necks, shoulders and naturally connected figures."
           },
-          "native_job_id": "6af73fcc00000256000002d0000002d0",
+          "native_job_id": "6afa0679000002560000048a0000048a",
           "requested_settings": {
             "model": "anima-turbo-v1.1",
             "aspect_ratio": "square",
@@ -23573,24 +23569,28 @@
             "steps": 8,
             "sampler": "euler",
             "mode": "text2img",
-            "native_job_id": "6af73fcc00000256000002d0000002d0",
-            "api_seconds": 31.527
+            "native_job_id": "6afa0679000002560000048a0000048a",
+            "api_seconds": 32.311
           },
-          "max_rgb_channel_delta": 35,
+          "max_rgb_channel_delta": 23,
           "visual_review": {
             "status": "self-reviewed",
-            "sha256": "eaa9d9d2c25c93b15d107e4a4c818cc1773ee5c43bba400e419ae3f788c1e92c",
+            "sha256": "14a6b073b37ca6920438e0d3f60cb3b9c9c1ac64f3d92dab62d60aef1c764718",
             "observation": {
-              "ja": "着衣の成人男性1人が前屈し、布でタイヤ上部を拭く作業場面。小さな白目、近い眉と上瞼、小鼻口、白い頬と細かな強弱の線を共有。男女画より重い瞼と長い顎が目立ち、服の面灰と斜線が主体になっています。",
-              "en": "One clothed adult man bends forward and wipes the upper tire with a cloth. Small whites, close brow/lid, small features, white cheeks and varied fine marks recur. Heavy lids and jaw length are stronger than in the mixed scene; clothing uses broader gray and hatching."
+              "ja": "短い黒髪の少年が台の前で身を寄せ、歯を見せて笑う胸上像です。若い顔、強弱のある上まぶた、短い頬線、髪瞳口内の黒と顔の白、服や首の灰が続きます。狭い白目と小さい瞳の指定より黒目は大きく、鼻下・口元の線と歯列、身体の陰影も細かくなっています。",
+              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
             }
           }
         }
       ],
-      "updated_at": "2026-11-13T16:43:16.565128+00:00",
+      "updated_at": "2026-11-15T19:15:12.247265+00:00",
+      "summary": {
+        "ja": "少年少女の紙工作の場面と、少年が身を寄せて笑う近景の未加工原画2枚。各見本に実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals: a youthful boy-and-girl paper-craft scene and a close view of a boy leaning forward and smiling. Each sample carries its exact submitted English."
+      },
       "limitations": {
-        "ja": "原画2枚は別々の実生成です。同じ絵柄部分を使っていますが、顔・線・陰影や構図の指定への一致、他場面での再現性は保証していません。手指・道具や画外の部分の不確かさは各見本に記載。紙地風の色味も未加工で保持し、未指定seed/ネガティブは推測していません。点検は自己視覚レビューであり、人間の承認とは別です。",
-        "en": "Two independently generated originals share the exact style recipe; adherence and cross-scene consistency are not guaranteed. Per-image notes retain uncertain fingers, props and cropped areas. Paper tints are unmodified; unspecified seed/negative are not inferred. Self-review is distinct from human approval."
+        "ja": "正規公開本文の可視範囲で観察した顔線・眉目・短い鼻口線・白黒と灰の配分へ文章だけで近づけた見本です。人物は独自の少年少女で、参考より頬顎や眼は丸く、黒目も大きくなっています。近景では鼻口や歯列、首服の陰影が増え、鋭い角線や小瞳の指定は弱めです。実際の結果と指定との差を各原画の説明に残しています。",
+        "en": "Text-only partial approximations of face contours, brow-eye marks, brief nose-mouth lines and white-black-gray organization observed in legally public body panels. These are original youthful people with rounder cheeks and eyes and larger dark pupils than the source. The close view adds nose-mouth, teeth and neck-clothing shade detail, while sharp angles and tiny pupils remain weaker than requested. Per-image observations retain actual outcomes and prompt residuals."
       }
     },
     {
