@@ -78,9 +78,9 @@
       "sha256": "f3fd2432141d8927548cb145ebe502573f937cf79c340c1dccca094381a46a08"
     },
     {
-      "tag": "anima-text-only-031",
-      "asset": "anima-text-only-031.zip",
-      "sha256": "4fdea6e3112adf1c6385c3968340527b01c965977770441129385f6357eeaf90"
+      "tag": "anima-genre-correction-003",
+      "asset": "anima-genre-correction-003.zip",
+      "sha256": "df888ecf0af0ee4da77c32c4710398e837b123cf08a371ca5cfa1e923e74c978"
     },
     {
       "tag": "anima-text-only-030",
@@ -10442,13 +10442,6 @@
     {
       "id": "anima-text-large-white-eye-light-pupil-comedy-ink",
       "category": "kodomo",
-      "title": {
-        "ja": "大きな白い目と明快な輪郭のコメディ漫画風",
-        "en": "large white eye light pupil comedy ink"
-      },
-      "prompt": {
-        "en": "monochrome, cheerful everyday cartoon manga, large white oval eye openings with small definite dark pupils, clear black contours. Original ordinary adult human faces use softly rounded cheeks and a short simple chin. Bold upper eye arcs contrast with brief lower lines and simple separate brows. A tiny curved nose and a short mouth line can become a broadly outlined light mouth opening with only a little tooth detail. Firmer outer curves and fine interior marks keep faces clear. Selected flat blacks, sparse folds and pale local gray accompany simple everyday objects and lightly lined surroundings."
-      },
       "features": {
         "expression": [
           "mono"
@@ -10457,6 +10450,7 @@
           "thick"
         ],
         "proportion": [
+          "chibi",
           "standard"
         ],
         "finish": [
@@ -10471,20 +10465,27 @@
           "url": "https://mechacomic.jp/books/217525"
         }
       ],
-      "version": 1,
+      "title": {
+        "ja": "丸い頬と濃い目元・白黒灰の少年少女漫画風",
+        "en": "Rounded cheeks and dark eye accents youthful comic ink"
+      },
+      "prompt": {
+        "en": "black and white Japanese children’s everyday gag manga, small black dot pupils in large white oval eyes, lively rounded child faces and brisk ink contours. Original human boy and girl faces have soft full cheek curves turning into short clear chins. Broad white eye interiors and small definite dark pupils sit beneath bold upper-eye arcs and fine brief lower edges, with independent expressive brows. Tiny curved nose marks and short mouth lines can open into broad clean comic smiles. Firmer outer face and body curves meet fine short inner marks; white skin, selected flat black shapes, sparse folds and pale local dotted gray keep the drawing light and direct. Compact youthful comic figures have complete ordinary original human heads, readable eyes, attached necks and bodies, and playful childlike expressions."
+      },
+      "version": 2,
       "samples": [
         {
           "role": "mixed-gender",
-          "file": "482bcbc1311b6f7dd26327444a85559c57866f25ae36f4f80ee949eaab971f6c.png",
-          "sha256": "482bcbc1311b6f7dd26327444a85559c57866f25ae36f4f80ee949eaab971f6c",
+          "file": "bba38930c8dc0c46d9f7d9f8a638044bfe1f216ac483ab8b230631f2473059bd.png",
+          "sha256": "bba38930c8dc0c46d9f7d9f8a638044bfe1f216ac483ab8b230631f2473059bd",
           "width": 1024,
           "height": 1024,
-          "thumb": "9fc9bc7e50e04246a75062cf8e02c73ce7065cd80b9d5dc6f25bb7825de03e1a.jpg",
-          "thumb_sha256": "9fc9bc7e50e04246a75062cf8e02c73ce7065cd80b9d5dc6f25bb7825de03e1a",
+          "thumb": "54ae7408d6c45766cdc924e8992f73e46f36f321f4a95c8cc0b1829491137afa.jpg",
+          "thumb_sha256": "54ae7408d6c45766cdc924e8992f73e46f36f321f4a95c8cc0b1829491137afa",
           "prompt": {
-            "en": "One continuous scene at a small community-garden stall. An adult woman in her forties on the left, with a neat short bob, a plain light cardigan and full trousers, holds a round empty basket. An adult man in his fifties on the right, with short gray hair, a small moustache and a plain work shirt, places a little pot onto a table. Both original adult human faces are visible in a friendly exchange beside a few crates and simple plants. monochrome, cheerful everyday cartoon manga, large white oval eye openings with small definite dark pupils, clear black contours. Original ordinary adult human faces use softly rounded cheeks and a short simple chin. Bold upper eye arcs contrast with brief lower lines and simple separate brows. A tiny curved nose and a short mouth line can become a broadly outlined light mouth opening with only a little tooth detail. Firmer outer curves and fine interior marks keep faces clear. Selected flat blacks, sparse folds and pale local gray accompany simple everyday objects and lightly lined surroundings."
+            "en": "An eleven-year-old boy and an eleven-year-old girl compare their own simple folded paper birds at a public library terrace table. The boy wears an original plain short-sleeved tee and knee-length shorts and holds a small folded bird near his chest with a surprised open-eyed smile. The girl wears an original loose light hooded top and a simple knee-length skirt and laughs with open eyes as she shows a different folded bird. Their whole ordinary youthful human faces and connected child-comic bodies are visible at eye level, with a few light table, terrace and book-display lines in a nonsexual childhood scene. black and white Japanese children’s everyday gag manga, small black dot pupils in large white oval eyes, lively rounded child faces and brisk ink contours. Original human boy and girl faces have soft full cheek curves turning into short clear chins. Broad white eye interiors and small definite dark pupils sit beneath bold upper-eye arcs and fine brief lower edges, with independent expressive brows. Tiny curved nose marks and short mouth lines can open into broad clean comic smiles. Firmer outer face and body curves meet fine short inner marks; white skin, selected flat black shapes, sparse folds and pale local dotted gray keep the drawing light and direct. Compact youthful comic figures have complete ordinary original human heads, readable eyes, attached necks and bodies, and playful childlike expressions."
           },
-          "native_job_id": "6af8cd3c000002560000039000000390",
+          "native_job_id": "6af9d485000002560000045d0000045d",
           "requested_settings": {
             "model": "anima-turbo-v1.1",
             "aspect_ratio": "square",
@@ -10503,31 +10504,31 @@
             "steps": 8,
             "sampler": "euler",
             "mode": "text2img",
-            "native_job_id": "6af8cd3c000002560000039000000390",
-            "api_seconds": 31.121
+            "native_job_id": "6af9d485000002560000045d0000045d",
+            "api_seconds": 32.746
           },
-          "max_rgb_channel_delta": 12,
+          "max_rgb_channel_delta": 20,
           "visual_review": {
             "status": "self-reviewed",
-            "sha256": "482bcbc1311b6f7dd26327444a85559c57866f25ae36f4f80ee949eaab971f6c",
+            "sha256": "bba38930c8dc0c46d9f7d9f8a638044bfe1f216ac483ab8b230631f2473059bd",
             "observation": {
-              "ja": "浅い鉢状の容器を持つ女性と、植木鉢を持つ男性が園芸台の前にいます。明快な輪郭、簡略な鼻口、白地と灰、白目と黒瞳の構成に寄せがあります。参考ほど白目は大きく丸くなく、瞳は縦長で大きめです。籠を指定した女性の持ち物も容器状になっています。",
+              "ja": "Tシャツと短パンの少年、パーカーとスカートの少女が、机の前で小鳥や折り紙状のものを持っています。丸い頬、短い顎、小さい鼻口で普通の漫画的な少年少女として読め、黒ベタ・白場・網点・軽快な輪郭に部分的な寄せがあります。開いた少年の黒目は大きく、指定した広い白目と小さい瞳は弱めです。",
               "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
             }
           }
         },
         {
           "role": "showcase",
-          "file": "6e43bd76b8c951f3680f73c06d718472c4076244920ff783925fa2c5f504490c.png",
-          "sha256": "6e43bd76b8c951f3680f73c06d718472c4076244920ff783925fa2c5f504490c",
+          "file": "f9683b497a3a76647b1f087aeeecdff3535fa6a819b9fa2b7cea97b839418504.png",
+          "sha256": "f9683b497a3a76647b1f087aeeecdff3535fa6a819b9fa2b7cea97b839418504",
           "width": 1024,
           "height": 1024,
-          "thumb": "e5a56b82fd520a2e6276a282f8bd7e452547cc3ef278a7871b237b10e4795118.jpg",
-          "thumb_sha256": "e5a56b82fd520a2e6276a282f8bd7e452547cc3ef278a7871b237b10e4795118",
+          "thumb": "34419b5c814f3b47f0eceaef4fa84b114a72c8fe0e2001c71ba1db2d6e17f8ab.jpg",
+          "thumb_sha256": "34419b5c814f3b47f0eceaef4fa84b114a72c8fe0e2001c71ba1db2d6e17f8ab",
           "prompt": {
-            "en": "One continuous scene beside a sunny park bench. An adult woman in her forties with simply tied hair, a plain loose jacket and full trousers sits holding a little folded map in both hands. Her attentive open-eyed smiling face, forearms and seated figure are clearly visible, with a low hedge and a broad bright sky. monochrome, cheerful everyday cartoon manga, large white oval eye openings with small definite dark pupils, clear black contours. Original ordinary adult human faces use softly rounded cheeks and a short simple chin. Bold upper eye arcs contrast with brief lower lines and simple separate brows. A tiny curved nose and a short mouth line can become a broadly outlined light mouth opening with only a little tooth detail. Firmer outer curves and fine interior marks keep faces clear. Selected flat blacks, sparse folds and pale local gray accompany simple everyday objects and lightly lined surroundings."
+            "en": "An eleven-year-old girl in an original loose light hooded top appears in an eye-level front three-quarter head-to-waist view beside a public library terrace table. Her entire original youthful human face and both large white eyes remain visible as she raises her eyebrows and gives a broad amused open-mouth smile, holding one small folded paper bird near her shoulder. A few brisk terrace-rail and paper-edge strokes leave white space around her face. black and white Japanese children’s everyday gag manga, small black dot pupils in large white oval eyes, lively rounded child faces and brisk ink contours. Original human boy and girl faces have soft full cheek curves turning into short clear chins. Broad white eye interiors and small definite dark pupils sit beneath bold upper-eye arcs and fine brief lower edges, with independent expressive brows. Tiny curved nose marks and short mouth lines can open into broad clean comic smiles. Firmer outer face and body curves meet fine short inner marks; white skin, selected flat black shapes, sparse folds and pale local dotted gray keep the drawing light and direct. Compact youthful comic figures have complete ordinary original human heads, readable eyes, attached necks and bodies, and playful childlike expressions."
           },
-          "native_job_id": "6af8ce21000002560000039400000394",
+          "native_job_id": "6af9d4b6000002560000045e0000045e",
           "requested_settings": {
             "model": "anima-turbo-v1.1",
             "aspect_ratio": "square",
@@ -10546,28 +10547,28 @@
             "steps": 8,
             "sampler": "euler",
             "mode": "text2img",
-            "native_job_id": "6af8ce21000002560000039400000394",
-            "api_seconds": 30.423
+            "native_job_id": "6af9d4b6000002560000045e0000045e",
+            "api_seconds": 32.308
           },
-          "max_rgb_channel_delta": 14,
+          "max_rgb_channel_delta": 16,
           "visual_review": {
             "status": "self-reviewed",
-            "sha256": "6e43bd76b8c951f3680f73c06d718472c4076244920ff783925fa2c5f504490c",
+            "sha256": "f9683b497a3a76647b1f087aeeecdff3535fa6a819b9fa2b7cea97b839418504",
             "observation": {
-              "ja": "女性が公園の木製ベンチに座り、地図状の紙を両手で開いて持っています。丸い輪郭、目と少ない鼻口線、白黒と薄い灰を別構図で見せています。紙は指定より大きく地図記号は明瞭ではなく、まつ毛や髪の艶、陰影は参考より多めです。",
+              "ja": "ボブ髪でそばかすのある、パーカー姿の少女が小鳥とともに笑う胸上の近景です。子どもとして読め、丸い顔、黒い目元と白場、細線・灰の対比が続きます。参考より虹彩が大きく、鼻・歯列・斜線の描き込みが多くて硬めの写実・挿絵寄りです。手元の鳥も折り紙の指定より実物の小鳥に見えます。",
               "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
             }
           }
         }
       ],
-      "updated_at": "2026-11-14T21:03:54.503094+00:00",
+      "updated_at": "2026-11-15T15:43:41.848850+00:00",
       "summary": {
-        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
-        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+        "ja": "少年少女が机の前で笑い合う場面と、少女の笑顔と手元を大きく見せた近景の未加工原画2枚。各見本に実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals: a boy-and-girl scene at a terrace table and a close view of a girl’s smile and hands, each with its exact submitted English."
       },
       "limitations": {
-        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
-        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+        "ja": "正規公開の扉と本文で見える顔線・目鼻口の省略・黒白と灰の配分への文章だけの部分寄せです。見本の黒目は大きく、指定した広い白目と小さい瞳は弱めです。近景は鼻・歯・斜線の描き込みが増え、参考より写実的で硬い線です。",
+        "en": "Text-only partial approximations of visible face contours, brief features and black-white-gray organization in the licensed title and body pages. The generated pupils/irises are large rather than the requested small pupils in broad eye whites. The close view adds nose, teeth and hatch detail and is more modeled and hard-lined than the source."
       }
     },
     {
