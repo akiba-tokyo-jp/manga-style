@@ -8,9 +8,9 @@
       "sha256": "b20fad828aa734f2404092d7fb44eb7430c24d51a4d773b9bcd12886b6adcffb"
     },
     {
-      "tag": "anima-text-only-039",
-      "asset": "anima-text-only-039.zip",
-      "sha256": "53e29a37a7a04cdc9c45cb58caf80432d7cc362169b300cfc974e65a8d401b79"
+      "tag": "anima-genre-correction-001",
+      "asset": "anima-genre-correction-001.zip",
+      "sha256": "87705dc60cb914488b92e72168d2ad6396df675a008c9e11466ec9f9efda43e2"
     },
     {
       "tag": "anima-text-only-038",
@@ -1078,11 +1078,11 @@
       "id": "anima-text-angular-nose-brow-white-tooth-adventure-ink",
       "category": "shonen",
       "title": {
-        "ja": "強い眉と鼻口線の白黒冒険漫画風",
-        "en": "Strong brow and nose-mouth ink in expressive monochrome character comics"
+        "ja": "若い主人公と強弱線の白黒冒険少年漫画風",
+        "en": "Youthful protagonists in expressive black-and-white shonen adventure ink"
       },
       "prompt": {
-        "en": "black and white expressive adventure character manga, clear outer face edges and strongly marked brows and upper eyelids. Original ordinary adult human faces keep simple dark eye areas inside clear white openings. Nose bridges use a long open contour with shorter tip and nostril accents rather than a closed outline. Open mouths have a firm edge, black interior and white tooth area, while closed mouths use a horizontal line and a short lower mark. Fine inner strokes, selected black shapes, white face planes, local angled hatch and small dot-gray areas separate line roles."
+        "en": "black and white Japanese shonen adventure manga. Original youthful teenage protagonists have smooth youthful cheeks, compact angled chins and expressive human eyes within complete readable face outlines. Strong slanting eyebrows and crisp upper eyelids frame simple dark pupils and clear white eye openings; short lower eye marks stay lighter. Noses use brief angular pen marks, and mouths use expressive clear outlines with black interiors and light tooth areas when open. Stylized youthful manga figures and clear energetic silhouettes are drawn with firm outer contours, finer inner facial strokes and tapered clothing folds. Broad white face planes, concentrated black shapes and selective short hatch or dotted gray give the scene graphic depth. Faces and bodies are designed as young manga heroes and heroines, with economical facial detail and lively poses."
       },
       "features": {
         "expression": [
@@ -1106,20 +1106,20 @@
           "url": "https://mechacomic.jp/books/106449"
         }
       ],
-      "version": 1,
+      "version": 2,
       "samples": [
         {
           "role": "mixed-gender",
-          "file": "0c99be55f116ea1c4981fa21c63919e8269e843b080b505e818b11b690fc5cd2.png",
-          "sha256": "0c99be55f116ea1c4981fa21c63919e8269e843b080b505e818b11b690fc5cd2",
+          "file": "c9a7328d72935737484ea5f60b5f247dc579422f18e920ca4924caa8d2e90d3b.png",
+          "sha256": "c9a7328d72935737484ea5f60b5f247dc579422f18e920ca4924caa8d2e90d3b",
           "width": 1024,
           "height": 1024,
-          "thumb": "92d6412344986268b82632a35c27588e2b12d2b380fa61b86cf1494d29789ea1.jpg",
-          "thumb_sha256": "92d6412344986268b82632a35c27588e2b12d2b380fa61b86cf1494d29789ea1",
+          "thumb": "18a664cbdb840c0a5cc33ffceee6a4b2e5b418dcdf93448355b28eac57471645.jpg",
+          "thumb_sha256": "18a664cbdb840c0a5cc33ffceee6a4b2e5b418dcdf93448355b28eac57471645",
           "prompt": {
-            "en": "An adult woman and an adult man work together at a small neighborhood frame-making counter. The woman has simply tied hair, a plain long-sleeved work jacket and full trousers, and holds a little empty wooden tray. The man has short hair, a small moustache, a plain work shirt and full trousers, and places a folded cloth on the same counter. Both ordinary adult faces, forearms and hands are visible in the same room with lightly drawn shelves. black and white expressive adventure character manga, clear outer face edges and strongly marked brows and upper eyelids. Original ordinary adult human faces keep simple dark eye areas inside clear white openings. Nose bridges use a long open contour with shorter tip and nostril accents rather than a closed outline. Open mouths have a firm edge, black interior and white tooth area, while closed mouths use a horizontal line and a short lower mark. Fine inner strokes, selected black shapes, white face planes, local angled hatch and small dot-gray areas separate line roles."
+            "en": "An eighteen-year-old boy hero and an eighteen-year-old girl heroine race up a broad outdoor stone stairway together in one continuous adventure scene. The youthful boy has short untidy dark hair, a simple original athletic jacket, full-length trousers and sneakers; he runs toward the viewer with an eager open-eyed grin. The youthful girl has a short ponytail, a different simple athletic jacket, full-length trousers and sneakers; she runs beside him and points forward while looking toward the route. Their youthful faces, connected heads, necks and complete running bodies are clearly readable. A low viewpoint and a few diagonal stair rails emphasize their shared forward movement. black and white Japanese shonen adventure manga. Original youthful teenage protagonists have smooth youthful cheeks, compact angled chins and expressive human eyes within complete readable face outlines. Strong slanting eyebrows and crisp upper eyelids frame simple dark pupils and clear white eye openings; short lower eye marks stay lighter. Noses use brief angular pen marks, and mouths use expressive clear outlines with black interiors and light tooth areas when open. Stylized youthful manga figures and clear energetic silhouettes are drawn with firm outer contours, finer inner facial strokes and tapered clothing folds. Broad white face planes, concentrated black shapes and selective short hatch or dotted gray give the scene graphic depth. Faces and bodies are designed as young manga heroes and heroines, with economical facial detail and lively poses."
           },
-          "native_job_id": "6af969cf00000256000003d6000003d6",
+          "native_job_id": "6af973d900000256000003e8000003e8",
           "requested_settings": {
             "model": "anima-turbo-v1.1",
             "aspect_ratio": "square",
@@ -1138,31 +1138,31 @@
             "steps": 8,
             "sampler": "euler",
             "mode": "text2img",
-            "native_job_id": "6af969cf00000256000003d6000003d6",
-            "api_seconds": 31.284
+            "native_job_id": "6af973d900000256000003e8000003e8",
+            "api_seconds": 32.632
           },
-          "max_rgb_channel_delta": 18,
+          "max_rgb_channel_delta": 15,
           "visual_review": {
             "status": "self-reviewed",
-            "sha256": "0c99be55f116ea1c4981fa21c63919e8269e843b080b505e818b11b690fc5cd2",
+            "sha256": "c9a7328d72935737484ea5f60b5f247dc579422f18e920ca4924caa8d2e90d3b",
             "observation": {
-              "ja": "成人女性が浅いトレー、成人男性が台上の柔らかい布やクッション状の物を扱う白黒の日常場面です。男性の眉と目の近さ、鼻顎の線、頬や首の短線、口の白黒に寄せがあります。石化や亀裂等は一般描法へ転用していません。参考の鋭い目鼻や輪郭への寄せは控えめで、特に女性は汎用的な漫画顔です。",
+              "ja": "短い黒髪の少年と髪を結んだ少女が、階段をこちらへ走ってきます。滑らかな頬、小さく省略された鼻、短い顎、明快な目口、漫画的な全身と黒ベタ・網点によって、若い主人公とヒロインの少年漫画方向を描いています。指定年齢より幼く、参考の鋭く密な描き込みより丸く親しみやすい絵柄です。腕の重なりは少し窮屈で、冒険というより明るい階段ランに見えます。",
               "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
             }
           }
         },
         {
           "role": "showcase",
-          "file": "4de35c65c2c8a67913f5fb63024937dac9239cb20e9483e211a07a0650e69129.png",
-          "sha256": "4de35c65c2c8a67913f5fb63024937dac9239cb20e9483e211a07a0650e69129",
+          "file": "6a57f93c63d5d965b28561801afe0fa4291b00c989353f06b527a3d071f2ad4d.png",
+          "sha256": "6a57f93c63d5d965b28561801afe0fa4291b00c989353f06b527a3d071f2ad4d",
           "width": 1024,
           "height": 1024,
-          "thumb": "f9bf7d83abc44a89f32f3015ac208c1d99fbdcbd13ecc5cc8fcf045e168abc1c.jpg",
-          "thumb_sha256": "f9bf7d83abc44a89f32f3015ac208c1d99fbdcbd13ecc5cc8fcf045e168abc1c",
+          "thumb": "fa0ac20f28f5fadb5c97d969b16592c632e84b9d6847811648fcb6887f6e4664.jpg",
+          "thumb_sha256": "fa0ac20f28f5fadb5c97d969b16592c632e84b9d6847811648fcb6887f6e4664",
           "prompt": {
-            "en": "An adult man with short swept hair, a small moustache, a plain long-sleeved work shirt and full trousers stands beside a low workshop shelf holding a closed wooden toolbox in both hands. His open-eyed face, attached shoulders and forearms are large in view, with a few light shelf lines behind him. black and white expressive adventure character manga, clear outer face edges and strongly marked brows and upper eyelids. Original ordinary adult human faces keep simple dark eye areas inside clear white openings. Nose bridges use a long open contour with shorter tip and nostril accents rather than a closed outline. Open mouths have a firm edge, black interior and white tooth area, while closed mouths use a horizontal line and a short lower mark. Fine inner strokes, selected black shapes, white face planes, local angled hatch and small dot-gray areas separate line roles."
+            "en": "Eye-level front three-quarter head-to-waist view of an eighteen-year-old girl heroine in a loose original athletic jacket. Her entire youthful face, both open eyes, connected neck, shoulders and upper body are clearly inside the frame. She turns toward the viewer with a confident bright grin and raises one naturally bent fist beside her shoulder in an eager adventure pose. Her short ponytail sweeps in a light breeze. A few diagonal trees and short motion strokes sit behind her, leaving her youthful face and expression prominent. black and white Japanese shonen adventure manga. Original youthful teenage protagonists have smooth youthful cheeks, compact angled chins and expressive human eyes within complete readable face outlines. Strong slanting eyebrows and crisp upper eyelids frame simple dark pupils and clear white eye openings; short lower eye marks stay lighter. Noses use brief angular pen marks, and mouths use expressive clear outlines with black interiors and light tooth areas when open. Stylized youthful manga figures and clear energetic silhouettes are drawn with firm outer contours, finer inner facial strokes and tapered clothing folds. Broad white face planes, concentrated black shapes and selective short hatch or dotted gray give the scene graphic depth. Faces and bodies are designed as young manga heroes and heroines, with economical facial detail and lively poses."
           },
-          "native_job_id": "6af96b2f00000256000003dc000003dc",
+          "native_job_id": "6af97a9400000256000003f6000003f6",
           "requested_settings": {
             "model": "anima-turbo-v1.1",
             "aspect_ratio": "square",
@@ -1181,28 +1181,28 @@
             "steps": 8,
             "sampler": "euler",
             "mode": "text2img",
-            "native_job_id": "6af96b2f00000256000003dc000003dc",
-            "api_seconds": 30.499
+            "native_job_id": "6af97a9400000256000003f6000003f6",
+            "api_seconds": 32.324
           },
-          "max_rgb_channel_delta": 35,
+          "max_rgb_channel_delta": 20,
           "visual_review": {
             "status": "self-reviewed",
-            "sha256": "4de35c65c2c8a67913f5fb63024937dac9239cb20e9483e211a07a0650e69129",
+            "sha256": "6a57f93c63d5d965b28561801afe0fa4291b00c989353f06b527a3d071f2ad4d",
             "observation": {
-              "ja": "成人男性が棚や引き出しのある作業台前で閉じた工具箱を持ち、目を見開いて口を縦に大きく開けています。強い眉、大きい鼻、黒い口内と白い歯、太い外周と細線・網点が続きます。下顔面や開口は大きく誇張されていますが、二眼・鼻・口が顔輪郭内にあり首胴につながる、普通に読める漫画の驚き顔です。",
+              "ja": "ポニーテールの若いヒロインが拳を頬の脇へ上げ、口を開けて笑う近景です。大きい目、簡略な鼻口、小さい顎と頬、強弱の線や網点が続き、若い顔と勢いを大きく見せています。眼の高さで顔は正面寄りですが、胴は振り返って肩背中側を見せています。頭から腰ではなく胸・上胴までの構図で、指定より幼い印象も残ります。",
               "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
             }
           }
         }
       ],
-      "updated_at": "2026-11-15T08:19:35.706965+00:00",
+      "updated_at": "2026-11-15T09:16:24.975770+00:00",
       "summary": {
-        "ja": "文章だけで生成した男女場面と別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
-        "en": "Two untouched text-only originals, including a man-and-woman scene and another composition. Each sample carries its exact submitted English."
+        "ja": "若い少年少女の冒険場面と、ヒロインの表情・動きを見せる別構図の未加工原画2枚。各見本には実際に送信した英語全文を掲載しています。",
+        "en": "Two untouched text-only originals: a youthful boy-and-girl adventure scene and a separate expressive heroine composition, each with its exact submitted English."
       },
       "limitations": {
-        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。",
-        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals."
+        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。 指定年齢より幼く見え、参考より丸く親しみやすい少年漫画の顔です。",
+        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals. The figures look younger than the requested age and use rounder, more approachable shonen faces than the source."
       }
     },
     {
