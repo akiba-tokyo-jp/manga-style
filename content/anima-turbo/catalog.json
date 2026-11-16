@@ -3,6 +3,11 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
+      "tag": "anima-text-only-066",
+      "asset": "anima-text-only-066.zip",
+      "sha256": "84bd8e84a14087864a3e12a67d2248ba9d78e9b83c593b8e0cf7b2479e9e1315"
+    },
+    {
       "tag": "anima-text-only-065",
       "asset": "anima-text-only-065.zip",
       "sha256": "b125f6b291d25d3b8950f944f213b1e17b52e35196b3f24dbc3f4d2e4a077515"
@@ -279,6 +284,414 @@
     }
   ],
   "entries": [
+    {
+      "id": "anima-text-grainy-face-shadows-fine-josei-lids",
+      "category": "josei",
+      "title": {
+        "ja": "細い頬顎と太上細下瞼・白肌灰の女性漫画風",
+        "en": "Fine cheek-jaw curves and upper-lower-lid contrast in white-gray josei-like ink"
+      },
+      "prompt": {
+        "en": "monochrome, Japanese adult character comic illustration. Smooth fine cheek curves narrow into a softly rounded chin. Broad black upper eyelids and a few lashes contrast with thin lower lids and shallow fine arched brows. Dark and gray eyes have small white reflections and visible eye whites. Use a fine bent nose stroke, a short nostril shadow and a slightly open mouth with light lip tone. Clear outer contours and smaller inner strokes surround white skin with small grainy shadows on the cheeks, beside the nose and below the mouth."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "きみはペット・正規コマタテ本文6・可視範囲の一般描法を参考",
+          "url": "https://mechacomic.jp/books/56993/sample_download"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "45b79f306905bdbacf1e96fc6f532b1296aa75ad84ed98d2cfcb8cf30686fd38.png",
+          "sha256": "45b79f306905bdbacf1e96fc6f532b1296aa75ad84ed98d2cfcb8cf30686fd38",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "85a492a44e47d7a19748b90232a7d5f9a833a4c29e9af801e734265765b7559f.jpg",
+          "thumb_sha256": "85a492a44e47d7a19748b90232a7d5f9a833a4c29e9af801e734265765b7559f",
+          "prompt": {
+            "en": "One continuous quiet courtyard moment, shown from the waist upward. An original twenty-five-year-old woman with straight shoulder-length brown hair and a plain light blouse stands on the left holding a closed notebook at her side. An original twenty-six-year-old man with short dark hair and a simple casual shirt stands beside her on the right. Both fully clothed adults look toward each other with small calm smiles by the same low wall. monochrome, Japanese adult character comic illustration. Smooth fine cheek curves narrow into a softly rounded chin. Broad black upper eyelids and a few lashes contrast with thin lower lids and shallow fine arched brows. Dark and gray eyes have small white reflections and visible eye whites. Use a fine bent nose stroke, a short nostril shadow and a slightly open mouth with light lip tone. Clear outer contours and smaller inner strokes surround white skin with small grainy shadows on the cheeks, beside the nose and below the mouth."
+          },
+          "native_job_id": "6afb147d000002560000055d0000055d",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7001,
+            "negative_prompt": "heavy square jaw, thick full outer contour, skin pores, glossy digital gradients, photorealism, comic strip, face grid, multiple panels, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "mode": "text2img",
+            "native_job_id": "6afb147d000002560000055d0000055d",
+            "api_seconds": 57.8861197,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 13,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "45b79f306905bdbacf1e96fc6f532b1296aa75ad84ed98d2cfcb8cf30686fd38",
+            "observation": {
+              "ja": "本を抱える女性と短髪男性が横並びで見つめ合う単一場面。細頬顎/上太下細瞼/軽鼻口/白肌灰。",
+              "en": "A woman holding a book and a short-haired man look toward one another in one scene, with fine cheek-jaw curves, lid-weight contrast, light features and white-gray skin."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "15ff4c6f8e30260112f4e50c2548703d9896ab6cd54a6add8e8cc10bace37ba5.png",
+          "sha256": "15ff4c6f8e30260112f4e50c2548703d9896ab6cd54a6add8e8cc10bace37ba5",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "09ab33a641355656430cee28f41906957444441f321408456f96e85a09d6752e.jpg",
+          "thumb_sha256": "09ab33a641355656430cee28f41906957444441f321408456f96e85a09d6752e",
+          "prompt": {
+            "en": "A single original twenty-five-year-old woman with straight shoulder-length brown hair and a plain light shirt sits sideways by an open courtyard window. In a close three-quarter upper-body view she turns her ordinary adult face gently toward the viewer with a small quiet smile. Her relaxed forearms and a closed notebook rest across her lap. monochrome, Japanese adult character comic illustration. Smooth fine cheek curves narrow into a softly rounded chin. Broad black upper eyelids and a few lashes contrast with thin lower lids and shallow fine arched brows. Dark and gray eyes have small white reflections and visible eye whites. Use a fine bent nose stroke, a short nostril shadow and a slightly open mouth with light lip tone. Clear outer contours and smaller inner strokes surround white skin with small grainy shadows on the cheeks, beside the nose and below the mouth."
+          },
+          "native_job_id": "6afb16aa000002560000056000000560",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7011,
+            "negative_prompt": "heavy square jaw, thick full outer contour, skin pores, glossy digital gradients, photorealism, comic strip, face grid, multiple panels, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "mode": "text2img",
+            "native_job_id": "6afb16aa000002560000056000000560",
+            "api_seconds": 57.9541694,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 214,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "15ff4c6f8e30260112f4e50c2548703d9896ab6cd54a6add8e8cc10bace37ba5",
+            "observation": {
+              "ja": "開いた窓辺で机に向かう女性の斜め上半身。白肌と灰ベタ/太上細下瞼、厚唇と茶髪が残る。",
+              "en": "An oblique upper-body woman sits at a desk by an open window, retaining white skin, gray planes and lid-weight contrast alongside fuller lips and brown hair."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-16T14:42:10.287690+00:00",
+      "summary": {
+        "ja": "細めの頬顎、太い上瞼と細い下瞼、簡潔な鼻口、白肌と灰ベタを組み合わせた女性漫画風。本を抱える女性と男性が向き合う場面と、開いた窓辺で机に向かう女性の斜め上半身です。 見本はCFG2と絵柄共通のネガティブを使い、掲載英語全文だけから生成しています。",
+        "en": "Josei-like ink combines fine cheek-jaw curves, bold upper/fine lower lids, simple nose-mouth marks and white skin with gray planes. The originals show a woman holding a book facing a man, and an oblique upper-body woman at a desk by an open window. Both were generated from the displayed full English with CFG 2 and one shared negative prompt, without image inputs."
+      },
+      "limitations": {
+        "ja": "参考は正規コマタテ本文パネルの可視顔で、女性顔が中心です。原画は丸く大きい眼と均一線・平板な灰が残り、粒状の顔陰影は未達。第二は厚めの唇と茶髪、指定の膝上ノートとは異なる机前構図です。 白黒指定にも色味が残る箇所があります。",
+        "en": "The reference is visible faces in authorized panel reading, mainly a woman. The originals retain round large eyes, regularized lines and flat gray; grainy face shadows were not achieved. The second has fuller lips and brown hair, at a desk rather than the requested notebook-on-lap scene. Some color remains despite monochrome wording."
+      }
+    },
+    {
+      "id": "anima-text-fine-cheek-edge-black-eye-accents-youthful-shonen",
+      "category": "shonen",
+      "title": {
+        "ja": "白肌と黒い目元・軽い鼻口の少年漫画風",
+        "en": "White skin and dark eye accents with brief features in youthful shonen-like ink"
+      },
+      "prompt": {
+        "en": "monochrome, Japanese youthful adventure comic illustration. Fine cheek contours taper toward a small pointed chin, with more angular jaw edges for the boy. Strong black upper eyelids, dark pupils with white glints and clear brows contrast with the delicate face outline and brief lower lids. Keep nose and mouth marks short and spare. Broad white skin, localized black eye accents, a little fine diagonal shading and restrained gray screen patches form the drawing."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "武装錬金7巻・第55話扉・可視範囲の一般描法を参考",
+          "url": "https://mechacomic.jp/books/116339/volume/7/sample_download"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "d56d7fba0c0caad5e93fe909f4863392666c56a9df11052e47df1c48a91a5595.png",
+          "sha256": "d56d7fba0c0caad5e93fe909f4863392666c56a9df11052e47df1c48a91a5595",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "dc81da0e236384b1e0d9458e2ef81ca0a99d6ee6a5666c66017857e6e4008c21.jpg",
+          "thumb_sha256": "dc81da0e236384b1e0d9458e2ef81ca0a99d6ee6a5666c66017857e6e4008c21",
+          "prompt": {
+            "en": "One continuous lively park-walk moment, shown from the knees upward. An original sixteen-year-old girl with shoulder-length brown hair and a plain pullover walks on the left, holding a small sketchbook beside her hip. An original seventeen-year-old boy with short dark hair and a simple casual jacket walks alongside her on the right. They turn toward each other with bright open-eyed expressions beside the same low stone railing. monochrome, Japanese youthful adventure comic illustration. Fine cheek contours taper toward a small pointed chin, with more angular jaw edges for the boy. Strong black upper eyelids, dark pupils with white glints and clear brows contrast with the delicate face outline and brief lower lids. Keep nose and mouth marks short and spare. Broad white skin, localized black eye accents, a little fine diagonal shading and restrained gray screen patches form the drawing."
+          },
+          "native_job_id": "6afb14fb000002560000055e0000055e",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7002,
+            "negative_prompt": "scar, facial wound, skin pores, fully modeled lips, long realistic nose, dense facial crosshatching, photorealism, comic strip, face grid, multiple panels, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "mode": "text2img",
+            "native_job_id": "6afb14fb000002560000055e0000055e",
+            "api_seconds": 58.0160929,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 24,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "d56d7fba0c0caad5e93fe909f4863392666c56a9df11052e47df1c48a91a5595",
+            "observation": {
+              "ja": "欄干脇でノートを持つ少女と少年が向き合う単一場面。白肌/黒目元/短鼻口/小斜線灰、幼い顔。",
+              "en": "A girl holding a notebook faces a boy by a railing in one scene, with white skin, dark eyes, brief features, small hatches and gray, with younger-looking faces."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "e4dfbdc465810a9d99e7a6adbec6931d35f20ccd84979cfb7c4744d40b90a495.png",
+          "sha256": "e4dfbdc465810a9d99e7a6adbec6931d35f20ccd84979cfb7c4744d40b90a495",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "3fa42f88a8c69b1715fe5a9668ce2c4ea3a86d7f791d1f934d09d37bbd440e2d.jpg",
+          "thumb_sha256": "3fa42f88a8c69b1715fe5a9668ce2c4ea3a86d7f791d1f934d09d37bbd440e2d",
+          "prompt": {
+            "en": "A single original seventeen-year-old boy with short dark hair and a simple light casual jacket sits sideways on a low park wall. In an oblique waist-up view he turns his ordinary youthful face toward the viewer with a bright open-eyed smile. His forearms rest loosely above his knees and the same low stone wall runs behind him. monochrome, Japanese youthful adventure comic illustration. Fine cheek contours taper toward a small pointed chin, with more angular jaw edges for the boy. Strong black upper eyelids, dark pupils with white glints and clear brows contrast with the delicate face outline and brief lower lids. Keep nose and mouth marks short and spare. Broad white skin, localized black eye accents, a little fine diagonal shading and restrained gray screen patches form the drawing."
+          },
+          "native_job_id": "6afb1752000002560000056100000561",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7012,
+            "negative_prompt": "scar, facial wound, skin pores, fully modeled lips, long realistic nose, dense facial crosshatching, photorealism, comic strip, face grid, multiple panels, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "mode": "text2img",
+            "native_job_id": "6afb1752000002560000056100000561",
+            "api_seconds": 57.0944528,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 59,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e4dfbdc465810a9d99e7a6adbec6931d35f20ccd84979cfb7c4744d40b90a495",
+            "observation": {
+              "ja": "階段へ座り膝へ腕を伸ばして振り向き笑う少年単独。白肌黒目元と頬短斜線・灰影。",
+              "en": "A solo boy sits on steps, reaches his arms toward his knees and turns with a smile, retaining white skin, dark eyes, short cheek hatches and gray shadows."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-16T14:42:10.287690+00:00",
+      "summary": {
+        "ja": "白い肌に黒い目元と短い鼻口、頬の短斜線と灰影、部分的な細い顎線を組み合わせた少年漫画風。欄干脇でノートを持つ少女と少年が向き合う場面と、階段に座って振り向き笑う少年の2原画です。 見本はCFG2と絵柄共通のネガティブを使い、掲載英語全文だけから生成しています。",
+        "en": "Youthful shonen-like ink combines white skin, dark eyes, brief nose-mouth marks, short cheek hatches, gray shadows and locally fine jaw lines. The originals show a notebook-holding girl facing a boy by a railing, and a seated boy turning and smiling on steps. Both were generated from the displayed full English with CFG 2 and one shared negative prompt, without image inputs."
+      },
+      "limitations": {
+        "ja": "参考は正規巻試読の話扉と人物紹介の普通人間型顔で、通常本文頁は未見です。細頬・切れ長眼・硬質輪郭は未達。第一は丸顎大眼で指定16/17歳より幼く見え、第二は指定の低い壁より階段寄りです。 白黒指定にも色味が残る箇所があります。",
+        "en": "The reference is ordinary human faces in an authorized chapter illustration and character introduction; regular interior panels were not seen. Slender cheeks, elongated eyes and harder contours were not achieved. The first looks younger than the requested16/17, with rounder chins and larger eyes; the second is on steps rather than the requested low wall. Some color remains despite monochrome wording."
+      }
+    },
+    {
+      "id": "anima-text-thin-enclosed-white-eyes-oval-pupils-kodomo",
+      "category": "kodomo",
+      "title": {
+        "ja": "丸頬と疎な内線・平坦影の児童漫画風",
+        "en": "Rounded cheeks, sparse inner marks and flat shadows in playful children comic ink"
+      },
+      "prompt": {
+        "en": "monochrome, Japanese playful children comic illustration. Round cheeks taper into a small rounded chin. A thin continuous boundary encloses each tall white eye field, separated from its black oval pupil and small white glint. Fine curved eyebrows, a brief curved nose and a broad open smile with white upper teeth are simple inner marks. Firm rounded outer contours contrast with thin eye and nose strokes. Leave skin mostly white with pale cheek screen patches and black-gray mouth interiors."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "ペンギンの問題8巻・人物紹介4下段の人間型・可視範囲の一般描法を参考",
+          "url": "https://mechacomic.jp/books/222280/volume/8/sample_download"
+        }
+      ],
+      "version": 1,
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "b1555c38b4af3238c8ca492c552df09f6e3483fac5e81b8f63a136a71a350860.png",
+          "sha256": "b1555c38b4af3238c8ca492c552df09f6e3483fac5e81b8f63a136a71a350860",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "10041fb821e9d1f2f559903435cf0e9bc7a2f11e9adc3c4d1d5cceec38deaeb4.jpg",
+          "thumb_sha256": "10041fb821e9d1f2f559903435cf0e9bc7a2f11e9adc3c4d1d5cceec38deaeb4",
+          "prompt": {
+            "en": "One continuous cheerful park moment, shown from the knees upward. An original ten-year-old girl with a short brown bob and a plain light shirt stands on the left holding a little paper pinwheel. An original eleven-year-old boy with short dark hair and a simple pullover stands beside her on the right holding a closed small book at his side. Both children look at one another with open-eyed smiles near the same low park bench. monochrome, Japanese playful children comic illustration. Round cheeks taper into a small rounded chin. A thin continuous boundary encloses each tall white eye field, separated from its black oval pupil and small white glint. Fine curved eyebrows, a brief curved nose and a broad open smile with white upper teeth are simple inner marks. Firm rounded outer contours contrast with thin eye and nose strokes. Leave skin mostly white with pale cheek screen patches and black-gray mouth interiors."
+          },
+          "native_job_id": "6afb1572000002560000055f0000055f",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7003,
+            "negative_prompt": "solid black eye without white field, thick double eye border, heavy eyelashes, long realistic nose, dense facial stippling, realistic skin pores, photorealism, comic strip, face grid, multiple panels, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "mode": "text2img",
+            "native_job_id": "6afb1572000002560000055f0000055f",
+            "api_seconds": 57.7697378,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 10,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "b1555c38b4af3238c8ca492c552df09f6e3483fac5e81b8f63a136a71a350860",
+            "observation": {
+              "ja": "ベンチ前の男女児単一場面。女児が風車、男児が本。丸頬小顎/楕円黒目/短鼻口/疎内線と平坦影。",
+              "en": "A girl with a pinwheel and a boy with a book share one bench-side scene, with rounded cheeks, small chins, oval pupils, brief features, sparse inner lines and flat shadows."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "8832ed10aa027a8cc287a86ec1d2cb0c58da965ef0260a198bdf3b51652ed39c.png",
+          "sha256": "8832ed10aa027a8cc287a86ec1d2cb0c58da965ef0260a198bdf3b51652ed39c",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "42bd3bd50d2c2505cc0c00b949f99470286e71737c75aba08606e16f0b1236c9.jpg",
+          "thumb_sha256": "42bd3bd50d2c2505cc0c00b949f99470286e71737c75aba08606e16f0b1236c9",
+          "prompt": {
+            "en": "A single original ten-year-old girl with a short brown bob and a plain light pullover sits sideways on a wooden park bench. The waist-up view shows her turning toward the viewer with an open-eyed cheerful smile. Her ordinary head, shoulders, torso and both relaxed forearms are clearly visible, with her hands near her knees in one continuous scene. monochrome, Japanese playful children comic illustration. Round cheeks taper into a small rounded chin. A thin continuous boundary encloses each tall white eye field, separated from its black oval pupil and small white glint. Fine curved eyebrows, a brief curved nose and a broad open smile with white upper teeth are simple inner marks. Firm rounded outer contours contrast with thin eye and nose strokes. Leave skin mostly white with pale cheek screen patches and black-gray mouth interiors."
+          },
+          "native_job_id": "6afb17ef000002560000056200000562",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7013,
+            "negative_prompt": "solid black eye without white field, thick double eye border, heavy eyelashes, long realistic nose, dense facial stippling, realistic skin pores, photorealism, comic strip, face grid, multiple panels, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "mode": "text2img",
+            "native_job_id": "6afb17ef000002560000056200000562",
+            "api_seconds": 58.1225163,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 29,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "8832ed10aa027a8cc287a86ec1d2cb0c58da965ef0260a198bdf3b51652ed39c",
+            "observation": {
+              "ja": "ボブ女児がベンチで両手を膝に置く2コマ。太外細内線と平坦影、縦長顔/細密な服皺や背景線。",
+              "en": "Two panels show a bob-haired girl seated on a bench with hands near her knees, using bold outer/fine inner lines and flat shadows, with longer faces and finer folds/background marks."
+            }
+          }
+        }
+      ],
+      "updated_at": "2026-11-16T14:42:10.287690+00:00",
+      "summary": {
+        "ja": "丸い頬と小顎、楕円黒目と短い鼻口、太い外線と細い内線、平坦な陰影を組み合わせた児童漫画風。ベンチ前で女児が風車、男児が本を持つ場面と、ベンチ着座女児の2コマ原画です。 見本はCFG2と絵柄共通のネガティブを使い、掲載英語全文だけから生成しています。",
+        "en": "Playful children comic-like ink combines rounded cheeks, small chins, oval dark pupils, brief features, bold outer/fine inner lines and flat shadows. The originals show a girl with a pinwheel and a boy with a book by a bench, and two seated-girl panels. Both were generated from the displayed full English with CFG 2 and one shared negative prompt, without image inputs."
+      },
+      "limitations": {
+        "ja": "参考は正規人物紹介の下段人間型顔だけで、動物顔や年齢皺は使っていません。本文漫画は未見です。細い眼の全周囲みは両原画で未達、第一の頬は網点でなく斜線。第二は縦長顔と長眉、指爪・服皺・背景線が細かく、単独場面指定から2コマへ変わっています。 白黒指定にも色味が残る箇所があります。",
+        "en": "Only a human face in an authorized character introduction informed the recipe, excluding animal faces and age creases; regular interior panels were not seen. Complete thin eye enclosures were not achieved; first cheeks use hatches rather than screens. The second has longer faces/brows and finer nail, fold and background lines, becoming two panels rather than the requested single scene. Some color remains despite monochrome wording."
+      }
+    },
     {
       "id": "anima-text-bold-outer-ink-tall-black-glint-eyes-soft-gag",
       "category": "gag",
