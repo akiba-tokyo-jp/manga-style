@@ -85,6 +85,8 @@ def load_catalog(path,archive_dir):
                 observation=review.get('observation')
                 require(isinstance(observation,dict) and all(isinstance(observation.get(lang),str) and observation[lang].strip() for lang in ('ja','en')),'Missing per-image observations')
             reported=sample.get('reported_settings',{});requested=sample.get('requested_settings',{})
+            negative=requested.get('negative_prompt')
+            require(negative is None or (isinstance(negative,str) and len(negative.encode('utf-8'))<=4096),'Invalid Anima negative prompt')
             require(reported.get('mode')=='text2img' and not requested.get('references_used') and not requested.get('source_images_used'),'Anima examples must be prompt-only; image conditioning is not allowed')
             require(reported.get('model')==entry['model_version'] and requested.get('model')==entry['model_version'] and reported.get('provider')=='ps5-anima','Anima provenance model mismatch')
             require(isinstance(sample.get('native_job_id'),str) and re.fullmatch(r'[0-9a-f]{32}',sample['native_job_id']) and reported.get('native_job_id')==sample['native_job_id'],'Missing native generation job')
@@ -147,7 +149,8 @@ def add_to_export(stage,rows,store,main,write,image_records):
             payload={'id':sid,'path':[],'level':1,'category':root,'title':title,'summary':summary,
                      'expression':row['features']['expression'][0],
                      'model':{'id':MODEL,'version':row['model_version']},'prompt':row['prompt'],'avoid':[],
-                     'samples':[{'subject':s.get('role','example'),'url':image_url(row,'file',s),'prompt':s['prompt']} for s in row['samples']],
+                     'samples':[{'subject':s.get('role','example'),'url':image_url(row,'file',s),'prompt':s['prompt'],
+                                 'negative_prompt':({'en':s['requested_settings']['negative_prompt']} if s['requested_settings'].get('negative_prompt') is not None else None)} for s in row['samples']],
                      'reference':0,'children':[],'comparisons':[],'version':row.get('version',1),'updated_at':row.get('updated_at'),
                      'license':{'generated':True,'artist_names':False,'terms':main.LICENSE_TERMS},
                      'references':row.get('references',[])}

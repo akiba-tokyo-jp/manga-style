@@ -111,7 +111,7 @@ test('Anima gallery, exact English prompts, images and clipboard are live model-
   expect(api.samples.map(sample => sample.subject)).toEqual(['mixed-gender', 'showcase']);
   expect(new Set(api.samples.map(sample => sample.url)).size).toBe(2);
   for (const sample of api.samples) {
-    expect(Object.keys(sample).sort()).toEqual(['prompt', 'subject', 'url']);
+    expect(Object.keys(sample).sort()).toEqual(['negative_prompt', 'prompt', 'subject', 'url']);
   }
   await page.locator('.gallery-card').first().click();
   await expect(page.locator('#prompt-text')).toHaveAttribute('lang', 'en');
@@ -124,6 +124,17 @@ test('Anima gallery, exact English prompts, images and clipboard are live model-
     const sample = api.samples[i];
     expect(sample.prompt.ja).toBeUndefined();
     await expect(page.locator('#sample-prompt-' + i)).toHaveText(sample.prompt.en);
+    await expect(page.locator('#sample-negative-prompt-' + i)).toHaveValue(sample.negative_prompt?.en ?? '');
+    const negativeCopy = page.locator('button[data-copy-target=sample-negative-prompt-' + i + ']');
+    if (sample.negative_prompt?.en) {
+      await negativeCopy.click();
+      await expect.poll(() => page.evaluate(() => navigator.clipboard.readText())).toBe(sample.negative_prompt.en);
+    } else {
+      await expect(negativeCopy).toHaveCount(0);
+      if (sample.negative_prompt === null) {
+        await expect(page.locator('#negative-not-specified-' + i)).toBeVisible();
+      }
+    }
     const image = page.locator('.sample-image').nth(i);
     await image.scrollIntoViewIfNeeded();
     await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
