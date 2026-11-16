@@ -20,6 +20,13 @@
 <details class="sample-prompt"><summary>{{ ui.sample_prompt_heading }} — English</summary>
 <p id="sample-prompt-{{ loop.index0 }}" lang="en">{{ current.prompt.en }}</p>
 <button class="button" type="button" data-copy-target="sample-prompt-{{ loop.index0 }}" data-copy-prefix="{{ copy_prefix }}" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ newui.sample_copy }}</button><span class="copy-status" aria-live="polite"></span></details>
+{% set negative = current.requested_settings.get('negative_prompt') %}
+<h4 id="negative-heading-{{ loop.index0 }}">{{ 'ネガティブプロンプト' if lang == 'ja' else 'Negative prompt' }} — English</h4>
+<textarea class="prompt-text" id="sample-negative-prompt-{{ loop.index0 }}" rows="4" readonly spellcheck="false" lang="en" aria-labelledby="negative-heading-{{ loop.index0 }}" data-copy-value="{{ negative|tojson|forceescape }}">
+{{ negative if negative is not none else '' }}</textarea>
+{% if negative is none %}<p class="quiet-note" id="negative-not-specified-{{ loop.index0 }}">{{ '未指定（この見本は通常プロンプトのみで生成）' if lang == 'ja' else 'Not supplied (this sample was generated with the positive prompt only).' }}</p>
+{% elif not negative %}<p class="quiet-note">{{ '空欄（追加の除外指定なし）' if lang == 'ja' else 'Empty (no additional exclusions supplied).' }}</p>
+{% else %}<div class="copy-row"><button class="button" type="button" data-copy-target="sample-negative-prompt-{{ loop.index0 }}" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ 'ネガティブをコピー' if lang == 'ja' else 'Copy negative prompt' }}</button><span class="copy-status" aria-live="polite"></span></div>{% endif %}
 
 </article>
 {% endfor %}

@@ -70,7 +70,14 @@
   };
 
   const copy = async (el, prefix) => {
-    const text = prefix ? `${prefix}\n${textOf(el)}` : textOf(el);
+    let value;
+    try {
+      value = el.dataset.copyValue === undefined ? textOf(el) : JSON.parse(el.dataset.copyValue);
+    } catch (err) {
+      return false;
+    }
+    if (typeof value !== 'string') return false;
+    const text = prefix ? `${prefix}\n${value}` : value;
     if (navigator.clipboard && navigator.clipboard.writeText) {
       try {
         await navigator.clipboard.writeText(text);
@@ -78,6 +85,11 @@
       } catch (err) {
         // Not allowed here (permission, insecure page, old WebView): try the older way.
       }
+    }
+    if (el.dataset.copyValue !== undefined) {
+      // Textareas normalize CR; refuse a lossy fallback for exact raw text.
+      if (text.includes('\r')) return false;
+      return copyText(text);
     }
     if (prefix && copyText(text)) {
       return true;
