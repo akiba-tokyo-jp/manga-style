@@ -11,12 +11,13 @@ ROOT = fixtures.ROOT
 
 
 class AnimaNegativeTests(unittest.TestCase):
-    def render_negative_page(self, values, lang='ja'):
+    def render_negative_page(self, values, lang='ja', style_text='Fixture style.',
+                             positive='Fixture positive prompt.'):
         from jinja2 import Environment, FileSystemLoader, select_autoescape
         env = Environment(loader=FileSystemLoader(ROOT / 'costlab-auth/manga/app/templates'),
                           autoescape=select_autoescape(['html']))
         samples = [dict(role=role, width=64, height=64,
-                        prompt={'en': 'Fixture positive prompt.'},
+                        prompt={'en': positive},
                         requested_settings={'negative_prompt': value})
                    for role, value in zip(('mixed-gender', 'showcase'), values)]
         return env.get_template('anima_style.html').render(
@@ -24,7 +25,54 @@ class AnimaNegativeTests(unittest.TestCase):
             active_model='anima-turbo', entry=dict(id='anima-fixture',
                 model_version='anima-turbo-v1.1', references=[]),
             sample_views=[dict(sample=sample, url='/fixture.png') for sample in samples],
-            style_text='Fixture style.', copy_prefix='Fixture prefix')
+            style_text=style_text, copy_prefix='Fixture prefix')
+
+    def test_positive_copy_keeps_submitted_english_on_the_first_line(self):
+        from html.parser import HTMLParser
+
+        class CopyFields(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.buttons = []
+                self.values = {}
+                self.active = None
+
+            def handle_starttag(self, tag, attrs):
+                attrs = dict(attrs)
+                target = attrs.get('data-copy-target', '')
+                if tag == 'button' and (target == 'prompt-text' or
+                                       target.startswith('sample-prompt-')):
+                    self.buttons.append(attrs)
+                field_id = attrs.get('id', '')
+                if tag in ('textarea', 'p') and (field_id == 'prompt-text' or
+                                                field_id.startswith('sample-prompt-')):
+                    self.active = field_id
+                    self.values[field_id] = ''
+
+            def handle_data(self, data):
+                if self.active is not None:
+                    self.values[self.active] += data
+
+            def handle_endtag(self, tag):
+                if tag in ('textarea', 'p'):
+                    self.active = None
+
+        common = 'ye-pop\nLight ink with <white> space & small marks.'
+        positive = 'ye-pop\nAn original woman and man in one comic scene.'
+        for lang in ('ja', 'en'):
+            with self.subTest(lang=lang):
+                parser = CopyFields()
+                parser.feed(self.render_negative_page(
+                    ['hatching', 'hatching'], lang, common, positive))
+                self.assertEqual(len(parser.buttons), 3)
+                for button in parser.buttons:
+                    target = button['data-copy-target']
+                    value = parser.values[target]
+                    prefix = button.get('data-copy-prefix', '')
+                    copied = prefix + '\n' + value if prefix else value
+                    expected = common if target == 'prompt-text' else positive
+                    self.assertEqual(copied, expected)
+                    self.assertEqual(copied.splitlines()[0], 'ye-pop')
 
     def test_shared_negative_is_shown_once_outside_sample_cards(self):
         import html
