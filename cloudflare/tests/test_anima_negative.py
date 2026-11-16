@@ -11,6 +11,59 @@ ROOT = fixtures.ROOT
 
 
 class AnimaNegativeTests(unittest.TestCase):
+    def render_negative_page(self, values, lang='ja'):
+        from jinja2 import Environment, FileSystemLoader, select_autoescape
+        env = Environment(loader=FileSystemLoader(ROOT / 'costlab-auth/manga/app/templates'),
+                          autoescape=select_autoescape(['html']))
+        samples = [dict(role=role, width=64, height=64,
+                        prompt={'en': 'Fixture positive prompt.'},
+                        requested_settings={'negative_prompt': value})
+                   for role, value in zip(('mixed-gender', 'showcase'), values)]
+        return env.get_template('anima_style.html').render(
+            lang=lang, ui={}, newui={}, title='Fixture', summary='Fixture summary',
+            active_model='anima-turbo', entry=dict(id='anima-fixture',
+                model_version='anima-turbo-v1.1', references=[]),
+            sample_views=[dict(sample=sample, url='/fixture.png') for sample in samples],
+            style_text='Fixture style.', copy_prefix='Fixture prefix')
+
+    def test_shared_negative_is_shown_once_outside_sample_cards(self):
+        import html
+        import re
+        negative = '\r\n hatching\r<gloss> & fabric\n '
+        for lang in ('ja', 'en'):
+            with self.subTest(lang=lang):
+                rendered = self.render_negative_page([negative, negative], lang)
+                fields = re.findall(r'<textarea[^>]*id="negative-prompt-text"[^>]*>(.*?)</textarea>', rendered, re.S)
+                self.assertEqual(len(fields), 1, 'One shared negative field per style')
+                self.assertEqual(rendered.count('data-copy-target="negative-prompt-text"'), 1)
+                self.assertNotIn('sample-negative-prompt-', rendered)
+                self.assertNotIn('negative-heading-', rendered)
+                self.assertTrue(all('negative-prompt-text' not in card for card in
+                    re.findall(r'<article class="anima-example".*?</article>', rendered, re.S)))
+                raw = re.search(r'id="negative-prompt-text"[^>]*data-copy-value="([^"]*)"', rendered)
+                self.assertEqual(json.loads(html.unescape(raw.group(1))), negative)
+                self.assertNotIn('<gloss>', rendered)
+
+    def test_different_sample_negatives_are_not_presented_as_a_shared_value(self):
+        for values in ([None, 'hatching'], ['', None], ['hatching', 'gloss']):
+            for lang in ('ja', 'en'):
+                with self.subTest(values=values, lang=lang):
+                    rendered = self.render_negative_page(values, lang)
+                    self.assertIn('id="negative-not-shared"', rendered)
+                    self.assertNotIn('id="negative-prompt-text"', rendered)
+                    self.assertNotIn('data-copy-target="negative-prompt-text"', rendered)
+                    self.assertNotIn('id="negative-not-specified"', rendered)
+                    self.assertNotIn('sample-negative-prompt-', rendered)
+
+    def test_shared_unspecified_and_empty_have_one_field_and_no_copy(self):
+        for value, note_id in ((None, 'negative-not-specified'), ('', 'negative-empty')):
+            for lang in ('ja', 'en'):
+                with self.subTest(value=value, lang=lang):
+                    rendered = self.render_negative_page([value, value], lang)
+                    self.assertEqual(rendered.count('id="negative-prompt-text"'), 1)
+                    self.assertEqual(rendered.count('id="' + note_id + '"'), 1)
+                    self.assertNotIn('data-copy-target="negative-prompt-text"', rendered)
+
     def test_reader_preserves_omitted_null_empty_and_utf8_boundary(self):
         import copy
         with tempfile.TemporaryDirectory() as tmp:
@@ -62,19 +115,12 @@ class AnimaNegativeTests(unittest.TestCase):
                 self.assertIsNone(samples[0]['negative_prompt'])
                 self.assertEqual(samples[1]['negative_prompt'], {'en': negative})
                 self.assertEqual(set(samples[1]), {'subject', 'url', 'prompt', 'negative_prompt'})
-                import html
-                import re
                 pages = json.loads((output / '_data/pages/anima-example.json').read_text(encoding='utf-8'))
                 rendered = pages[lang]['anima-turbo']['en']
-                field = re.search(r'<textarea[^>]*id="sample-negative-prompt-1"[^>]*>(.*?)</textarea>', rendered, re.S)
-                self.assertIsNotNone(field, 'Each sample needs its actual negative field')
-                display = html.unescape(field.group(1)).replace('\r\n', '\n').replace('\r', '\n').removeprefix('\n')
-                self.assertEqual(display, negative.replace('\r\n', '\n').replace('\r', '\n'))
-                copy_value = re.search(r'id="sample-negative-prompt-1"[^>]*data-copy-value="([^"]*)"', rendered)
-                self.assertIsNotNone(copy_value, 'Raw copy text must survive HTML newline normalization')
-                self.assertEqual(json.loads(html.unescape(copy_value.group(1))), negative)
-                self.assertIn('data-copy-target="sample-negative-prompt-1"', rendered)
-                self.assertIn('negative-not-specified-0', rendered)
+                self.assertEqual(rendered.count('id="negative-heading"'), 1)
+                self.assertIn('id="negative-not-shared"', rendered)
+                self.assertNotIn('id="negative-prompt-text"', rendered)
+                self.assertNotIn('sample-negative-prompt-', rendered)
                 self.assertNotIn('<gloss>', rendered)
 
 
