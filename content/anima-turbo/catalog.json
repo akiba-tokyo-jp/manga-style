@@ -3,9 +3,9 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
-      "tag": "anima-text-only-059",
-      "asset": "anima-text-only-059.zip",
-      "sha256": "9170c150345b3435240d57959167ffd74f535b3375c6818f447a5bcae41e5a4e"
+      "tag": "anima-negative-correction-001",
+      "asset": "anima-negative-correction-001.zip",
+      "sha256": "82a24b7e800a20afdc391d2a887794d039cb1b0a209f8e78a6adccbdf9778bd3"
     },
     {
       "tag": "anima-text-only-058",
@@ -546,103 +546,107 @@
           "url": "https://mechacomic.jp/books/116138"
         }
       ],
-      "version": 1,
+      "version": 2,
       "samples": [
         {
           "role": "mixed-gender",
-          "file": "2ffae40558a8d6f7a85adc45fc3bab6bd3daecbf12e187741064e6217e545b6c.png",
-          "sha256": "2ffae40558a8d6f7a85adc45fc3bab6bd3daecbf12e187741064e6217e545b6c",
+          "file": "be511246dfef4178ad2d98e7bb3310d0e93789d865b355e049e2d3be383c64f0.png",
+          "sha256": "be511246dfef4178ad2d98e7bb3310d0e93789d865b355e049e2d3be383c64f0",
           "width": 1024,
           "height": 1024,
-          "thumb": "8480d7d0438cf6a609175cbb912df435005bf69799a7e9f9acf13cc47daeb6c9.jpg",
-          "thumb_sha256": "8480d7d0438cf6a609175cbb912df435005bf69799a7e9f9acf13cc47daeb6c9",
+          "thumb": "56aebfd0c6684f45433cbe8c9cef94042beb09137f03916a4cf376d24cd368b3.jpg",
+          "thumb_sha256": "56aebfd0c6684f45433cbe8c9cef94042beb09137f03916a4cf376d24cd368b3",
           "prompt": {
             "en": "At a public outdoor ceramic-tile display, an original twenty-six-year-old woman with shoulder-length plain dark hair and a twenty-seven-year-old man with short plain dark hair stand beside a low table. Both wear loose fully covering plain casual tops and full trousers. The woman holds a small blank square tile low while the man points toward another plain tile on the tabletop. Their complete independently designed ordinary adult faces and connected upper bodies remain visible together in a nonsexual everyday scene. Japanese everyday character manga in fine contour ink with light gray and broad white intervals. Shift line thickness and local detail density between fine base boundaries, repeated short strokes and a few small hatch groups. Selected black patches and pale dotted or fine-line gray sit among open white figure and setting regions. Independently designed ordinary young-adult human faces have readable separate eyes, a brief nose and small mouth within complete cheeks and jaw; normal heads connect naturally through necks to fully clothed torsos. Apply the fine-contour and restrained-density rendering to the original figures, casual fabric folds and a simple public setting."
           },
-          "native_job_id": "6afa5e1e00000256000004f5000004f5",
+          "native_job_id": "6afa8201000002560000050a0000050a",
           "requested_settings": {
             "model": "anima-turbo-v1.1",
-            "aspect_ratio": "square",
             "size": "1024x1024",
             "steps": 8,
-            "cfg_scale": 1.0,
+            "cfg_scale": 2,
             "sampler": "euler",
-            "seed": null,
-            "negative_prompt": null,
-            "references_used": []
+            "seed": 2051,
+            "negative_prompt": "crosshatching, hatching, stippling, screentone, textured fabric, detailed irises, glossy eyes, detailed nose, full lips, glossy hair, gradients, complex shading",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
           },
           "reported_settings": {
             "model": "anima-turbo-v1.1",
             "provider": "ps5-anima",
             "size": "1024x1024",
             "steps": 8,
-            "sampler": "euler",
             "mode": "text2img",
-            "native_job_id": "6afa5e1e00000256000004f5000004f5",
-            "api_seconds": 31.747
+            "native_job_id": "6afa8201000002560000050a0000050a",
+            "api_seconds": 53.918703,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
           },
-          "max_rgb_channel_delta": 36,
+          "max_rgb_channel_delta": 46,
           "visual_review": {
             "status": "self-reviewed",
-            "sha256": "2ffae40558a8d6f7a85adc45fc3bab6bd3daecbf12e187741064e6217e545b6c",
+            "sha256": "be511246dfef4178ad2d98e7bb3310d0e93789d865b355e049e2d3be383c64f0",
             "observation": {
-              "ja": "流し台状の作業台を前に、四角い紙状の物を持つ女性と、手元を示す男性が同じ場面にいる一枚です。参考の前顔は十分に観測できていないため独自の顔とし、細輪郭、顔や胴の白場、黒髪と灰の服、袖や台縁の線密度差へ描画処理の部分寄せをしています。指定の屋外やタイルは台・紙状の物に変わっています。",
-              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+              "ja": "男女が机越しに並ぶ白黒の一場面です。細い輪郭と広い白場、局所的な黒や線影が主体で、旧原画の衣服全面の点描は抑えられています。ズボンの斜線は残り、中央で重なる手指には長さや接続の曖昧さがあります。指定のタイルは紙状に描かれています。",
+              "en": "A man and woman share one desk-side scene with fine contours, broad white intervals and localized dark/hatch accents. Broad clothing stipple is reduced relative to the predecessor; trouser hatching and uncertain overlapping fingers remain. The requested tiles appear paper-like."
             }
           }
         },
         {
           "role": "showcase",
-          "file": "11ce8b9fc13762cfb98d421f489e2e69a18e49c7d750e7eed9ab5ce2d829c996.png",
-          "sha256": "11ce8b9fc13762cfb98d421f489e2e69a18e49c7d750e7eed9ab5ce2d829c996",
+          "file": "707ee530b228af8b70a949048a18ae815016a8e48e32f839b891ca3b056991a2.png",
+          "sha256": "707ee530b228af8b70a949048a18ae815016a8e48e32f839b891ca3b056991a2",
           "width": 1024,
           "height": 1024,
-          "thumb": "148d4c41a9930eba73d7a8d37ccd8bf1d2acaad31d4d155a4285d4f0c5762021.jpg",
-          "thumb_sha256": "148d4c41a9930eba73d7a8d37ccd8bf1d2acaad31d4d155a4285d4f0c5762021",
+          "thumb": "1be2285e8f90b2c6f0a2b7b33a98415d907216b7f24001993a347c701e37c1ff.jpg",
+          "thumb_sha256": "1be2285e8f90b2c6f0a2b7b33a98415d907216b7f24001993a347c701e37c1ff",
           "prompt": {
             "en": "An original twenty-six-year-old woman with shoulder-length plain dark hair in a loose fully covering light casual top stands at an outdoor ceramic-tile display. Her complete independently designed ordinary adult human face and connected upper body remain visible in a front three-quarter view as she smiles and holds one blank square tile low. Fine contour density shifts and pale gray describe her clothes and a few display-table edges around broad white space. Japanese everyday character manga in fine contour ink with light gray and broad white intervals. Shift line thickness and local detail density between fine base boundaries, repeated short strokes and a few small hatch groups. Selected black patches and pale dotted or fine-line gray sit among open white figure and setting regions. Independently designed ordinary young-adult human faces have readable separate eyes, a brief nose and small mouth within complete cheeks and jaw; normal heads connect naturally through necks to fully clothed torsos. Apply the fine-contour and restrained-density rendering to the original figures, casual fabric folds and a simple public setting."
           },
-          "native_job_id": "6afa61f500000256000004fd000004fd",
+          "native_job_id": "6afa82e8000002560000050b0000050b",
           "requested_settings": {
             "model": "anima-turbo-v1.1",
-            "aspect_ratio": "square",
             "size": "1024x1024",
             "steps": 8,
-            "cfg_scale": 1.0,
+            "cfg_scale": 2,
             "sampler": "euler",
-            "seed": null,
-            "negative_prompt": null,
-            "references_used": []
+            "seed": 2052,
+            "negative_prompt": "crosshatching, hatching, stippling, screentone, textured fabric, detailed irises, glossy eyes, detailed nose, full lips, glossy hair, gradients, complex shading",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
           },
           "reported_settings": {
             "model": "anima-turbo-v1.1",
             "provider": "ps5-anima",
             "size": "1024x1024",
             "steps": 8,
-            "sampler": "euler",
             "mode": "text2img",
-            "native_job_id": "6afa61f500000256000004fd000004fd",
-            "api_seconds": 31.381
+            "native_job_id": "6afa82e8000002560000050b0000050b",
+            "api_seconds": 58.1636021,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
           },
-          "max_rgb_channel_delta": 19,
+          "max_rgb_channel_delta": 61,
           "visual_review": {
             "status": "self-reviewed",
-            "sha256": "11ce8b9fc13762cfb98d421f489e2e69a18e49c7d750e7eed9ab5ce2d829c996",
+            "sha256": "707ee530b228af8b70a949048a18ae815016a8e48e32f839b891ca3b056991a2",
             "observation": {
-              "ja": "卓の向こうで白い長方形の板状物を支える女性の別構図です。細い輪郭、髪の黒と抜き、服の短線や網点の疎密、広い白場が続きます。第一原画より頬や胸元の網点は増えています。参考人物の顔や未見本文の顔立ちを再現したものではありません。",
-              "en": "A partly source-directed text-only approximation in the actually observed line, black-white, tone or facial handling. Where no normal source face was visible only rendering is compared. The Japanese observation records actual composition, detail and prompt residuals."
+              "ja": "成人女性の上半身像です。顔と胸上部の点描が旧原画より減り、細い輪郭、広い白場、髪の黒を保っています。首元・袖・腹部の点描と指先の曖昧さは残り、指定の小さなタイルは台形の大きな板状に描かれています。",
+              "en": "An adult woman upper-body composition with reduced facial and upper-chest stipple compared with the predecessor, preserving fine contours, white intervals and dark hair accents. Neck, sleeve and lower-torso stipple and uncertain fingertips remain; the small tile became a large trapezoidal board."
             }
           }
         }
       ],
-      "updated_at": "2026-11-16T01:51:35.156739+00:00",
+      "updated_at": "2026-11-16T04:06:46.537847+00:00",
       "summary": {
-        "ja": "細い輪郭の疎密、白場と淡い灰を使う女性漫画風。前顔資料が不足するため顔は独自設計とし、男女の台前の場面と板を支える女性で描画処理だけを参考にしています。",
-        "en": "Fine-contour density shifts, white intervals and pale gray form this josei-like rendering. With insufficient front-face evidence, independent faces appear in a counter-side pair and woman holding a panel; only rendering is studied."
+        "ja": "細い輪郭と白い間隔、局所的な黒灰で描く日常漫画風。男女の机前場面と女性の上半身像です。CFG 2と各画像に掲載したネガティブを併用して生成しています。",
+        "en": "Everyday manga-like fine contours, white intervals and local black-gray accents, shown in a desk-side pair and a woman upper-body composition. Generated at CFG 2 with the negative text supplied for each sample."
       },
       "limitations": {
-        "ja": "正規公開漫画の可視範囲で観察した描線・顔の省略・色面・階調などへ文章で近づけた見本です。線の整い方、陰影、顔立ちや場面には参考や見本同士との差があり、完全一致を保証しません。各画像に実際の結果と指定との差を記載しています。 この絵柄では参考の可視の線・色面・階調だけを比較し、顔立ちは独自に設計しています。参考人物の再現や顔の細部の一致を意味しません。",
-        "en": "Text-only approximations of line, facial simplification, color areas and tonal features observed in legally public manga. Line regularity, shading, faces and scenes vary; exact matching is not guaranteed. Per-image observations retain actual outcomes and prompt residuals. For this style only visible line, color-area and tonal rendering is compared. Facial designs are independent; this does not reproduce source people or claim detailed facial matching."
+        "ja": "参考は正規公開部分の描線・白場・局所陰影に限定し、比較できる正面顔がないため顔の絵柄を再現したとは扱いません。点描・ズボンの斜線や指先の曖昧さは残ります。原PNGは未加工です。",
+        "en": "Reference comparison is limited to line, white intervals and local shading in the public material; no source frontal face was available. Residual stipple, trouser hatching and uncertain fingers remain. PNG originals are untouched."
       }
     },
     {
