@@ -120,21 +120,24 @@ test('Anima gallery, exact English prompts, images and clipboard are live model-
   await expect(page.locator('body')).not.toContainText('Native job');
   await expect(page.locator('body')).not.toContainText('requested CFG');
   await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  const sharedNegative = api.samples[0].negative_prompt?.en ?? null;
+  expect(api.samples.every(sample => (sample.negative_prompt?.en ?? null) === sharedNegative)).toBe(true);
+  await expect(page.locator('#negative-prompt-text')).toHaveCount(1);
+  await expect(page.locator('.anima-example [id^=sample-negative-prompt-]')).toHaveCount(0);
+  await expect(page.locator('.prompt #negative-prompt-text')).toHaveCount(1);
+  await expect(page.locator('#negative-prompt-text')).toHaveValue((sharedNegative ?? '').replace(/\r\n?/g, '\n'));
+  const negativeCopy = page.locator('button[data-copy-target=negative-prompt-text]');
+  if (sharedNegative) {
+    await negativeCopy.click();
+    await expect.poll(() => page.evaluate(() => navigator.clipboard.readText())).toBe(sharedNegative);
+  } else {
+    await expect(negativeCopy).toHaveCount(0);
+    await expect(page.locator(sharedNegative === null ? '#negative-not-specified' : '#negative-empty')).toBeVisible();
+  }
   for (let i = 0; i < api.samples.length; i++) {
     const sample = api.samples[i];
     expect(sample.prompt.ja).toBeUndefined();
     await expect(page.locator('#sample-prompt-' + i)).toHaveText(sample.prompt.en);
-    await expect(page.locator('#sample-negative-prompt-' + i)).toHaveValue(sample.negative_prompt?.en ?? '');
-    const negativeCopy = page.locator('button[data-copy-target=sample-negative-prompt-' + i + ']');
-    if (sample.negative_prompt?.en) {
-      await negativeCopy.click();
-      await expect.poll(() => page.evaluate(() => navigator.clipboard.readText())).toBe(sample.negative_prompt.en);
-    } else {
-      await expect(negativeCopy).toHaveCount(0);
-      if (sample.negative_prompt === null) {
-        await expect(page.locator('#negative-not-specified-' + i)).toBeVisible();
-      }
-    }
     const image = page.locator('.sample-image').nth(i);
     await image.scrollIntoViewIfNeeded();
     await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
