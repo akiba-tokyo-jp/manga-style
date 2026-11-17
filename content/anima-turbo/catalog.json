@@ -3,6 +3,11 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
+      "tag": "anima-text-only-069",
+      "asset": "anima-text-only-069.zip",
+      "sha256": "615a6f2e59dcc78e126efd15dfe7a6eefa270279be0e559cb6a0658f309c5bdc"
+    },
+    {
       "tag": "anima-text-only-068",
       "asset": "anima-text-only-068.zip",
       "sha256": "7fd69dd099e7c603e79803f7ff4c67e98c6dbbe0241c270960424c53c0ec6614"
@@ -294,6 +299,285 @@
     }
   ],
   "entries": [
+    {
+      "id": "anima-text-rounded-dot-stroke-faces-spare-white-gray-essay",
+      "category": "essay",
+      "title": {
+        "ja": "点・短線の目と白場が主体のエッセイ漫画風",
+        "en": "Essay-comic-like dot-and-stroke eyes with broad white planes"
+      },
+      "prompt": {
+        "en": "monochrome, simple Japanese essay comic, sparse face marks, dot eyes.\nRound cheek curves lead into a small rounded chin. Eyes are brief dots or short black strokes, a nose is one tiny curve and a mouth is a small plain line or opening. Slightly stronger outer ink contours surround very few light inner marks. Leave broad white facial planes and generous white space, with selected solid blacks and a few pale-gray screentone patches."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "失踪日記【電子限定特典付き】1巻・正規無料試読の可視描法",
+          "url": "https://mechacomic.jp/books/259507/volume/1/sample_download"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-16T23:56:56.921182+00:00",
+      "summary": {
+        "ja": "点や短線の目、小さな鼻口、少ない顔内線と白場・黒ベタ・灰網点を使うエッセイ漫画風。男女の場面と丸卓脇の女性です。CFG 2と共通ネガティブを使い、画像入力なしで生成しています。",
+        "en": "An essay-comic-like tendency with dot or short-stroke eyes, small nose-mouth marks, sparse inner lines, white space, solid black and gray tone. A mixed-gender scene and a woman beside a round table, generated text-only at CFG 2 with one shared negative."
+      },
+      "limitations": {
+        "ja": "参考は正規無料試読の導入本文です。実在人物の顔・身体・生活は転用せず、描法だけを参考にしています。資料より縦長で整った輪郭と広い灰網点が残り、鼻や持物にも差があります。原PNGは未加工で、元絵や全指定との完全一致は保証しません。 白黒指定でも少量の色味が残っています。",
+        "en": "Based on visible introductory narrative art in a licensed free preview, using drawing choices rather than the real person, body or life. Faces are longer and more regular, gray tone is broader, and nose and prop shapes vary. Untouched PNGs; exact source or prompt matching is not guaranteed. Small color accents remain despite the monochrome request."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "49071de4e2f05d69a5deca94cd8dfae830a8c0debd440242c76a589087aff86e.png",
+          "sha256": "49071de4e2f05d69a5deca94cd8dfae830a8c0debd440242c76a589087aff86e",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "987882f13b3f64e9684864d02300b90f3c57637e0ded26c912f2daaad87511c6.jpg",
+          "thumb_sha256": "987882f13b3f64e9684864d02300b90f3c57637e0ded26c912f2daaad87511c6",
+          "prompt": {
+            "en": "A quiet everyday comic moment beside one low garden wall, framed from the waist up. An original twenty-four-year-old woman with a plain dark bob and a plain short-sleeved shirt stands on the left holding a small envelope. An original twenty-five-year-old man with short brown hair and a plain pullover stands beside her on the right, looking toward her with a small smile. Both occupy the same continuous courtyard. monochrome, simple Japanese essay comic, sparse face marks, dot eyes.\nRound cheek curves lead into a small rounded chin. Eyes are brief dots or short black strokes, a nose is one tiny curve and a mouth is a small plain line or opening. Slightly stronger outer ink contours surround very few light inner marks. Leave broad white facial planes and generous white space, with selected solid blacks and a few pale-gray screentone patches."
+          },
+          "native_job_id": "6afb9615000002560000057900000579",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7301,
+            "negative_prompt": "detailed irises, sparkling eyes, layered eyelashes, modeled nose bridge, full realistic lips, deep facial wrinkles, dense face hatching, glossy gradients, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afb9615000002560000057900000579",
+            "api_seconds": 57.7209434,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 96,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "49071de4e2f05d69a5deca94cd8dfae830a8c0debd440242c76a589087aff86e",
+            "observation": {
+              "ja": "同じ場所に立つ男女。点・短線の目と小さな鼻口、少ない顔内線、白場と黒灰が見えます。男性の首は長めで、手指の分離はやや曖昧。封筒指定は冊子・端末のような矩形物になっています。",
+              "en": "A man and woman in one shared place, with dot-and-stroke eyes, small nose-mouth marks, sparse inner lines and white-black-gray. The man has a long neck and finger separation is somewhat ambiguous; the requested envelope appears as a booklet/device-like rectangle."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "14f4ab90cb669f1fb2f0cdc8d90d11c25c26855cd65d73866f934a3f667e4f9e.png",
+          "sha256": "14f4ab90cb669f1fb2f0cdc8d90d11c25c26855cd65d73866f934a3f667e4f9e",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "ff761bd0cb18dd037392fff5da0461e5113d3069b39ed0a89e7f584121db87d9.jpg",
+          "thumb_sha256": "ff761bd0cb18dd037392fff5da0461e5113d3069b39ed0a89e7f584121db87d9",
+          "prompt": {
+            "en": "An original twenty-four-year-old woman with a plain dark bob and a loose fully covering shirt sits sideways at a small outdoor table, shown from the waist up in three-quarter view. She holds a single envelope loosely at her side and glances upward with a small amused smile. Her one complete human head connects through her neck to her clothed torso. A simple wall and the table belong to one quiet place. monochrome, simple Japanese essay comic, sparse face marks, dot eyes.\nRound cheek curves lead into a small rounded chin. Eyes are brief dots or short black strokes, a nose is one tiny curve and a mouth is a small plain line or opening. Slightly stronger outer ink contours surround very few light inner marks. Leave broad white facial planes and generous white space, with selected solid blacks and a few pale-gray screentone patches."
+          },
+          "native_job_id": "6afb97e4000002560000057b0000057b",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7321,
+            "negative_prompt": "detailed irises, sparkling eyes, layered eyelashes, modeled nose bridge, full realistic lips, deep facial wrinkles, dense face hatching, glossy gradients, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afb97e4000002560000057b0000057b",
+            "api_seconds": 56.7058442,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 51,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "14f4ab90cb669f1fb2f0cdc8d90d11c25c26855cd65d73866f934a3f667e4f9e",
+            "observation": {
+              "ja": "丸卓脇に座る女性の別構図。丸頬と小さな顔内の印、白黒灰の簡潔さが続きます。資料より縦長で均整のある輪郭と広めの網点が残り、鼻や紙の形も指定どおりではありません。",
+              "en": "A separate composition with a woman seated beside a round table. Rounded cheeks, small face marks and simple white-black-gray recur. The contour is longer and more regular, tone areas broader, and nose and paper shapes differ from the request."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-fine-contours-rose-violet-eyes-soft-peach-daily",
+      "category": "yonkoma",
+      "title": {
+        "ja": "濃い上瞼と細内線、淡肌桃頬の日常漫画風",
+        "en": "Daily-comic-like dark upper lids, fine inner lines and pale peach cheeks"
+      },
+      "prompt": {
+        "en": "color, delicate Japanese daily comic illustration, large clear eyes, soft pale shading.\nRound cheeks narrow into a small chin. Large rose or violet eyes have dark upper eyelid strokes and clear small white glints, while the nose is a brief thin mark and the mouth a small simple opening. Fine outer contours and sparse light inner marks contrast with the stronger upper lids. Keep pale peach skin, a little soft pink on the cheeks and lightly blended shadow color along the jaw, with a few brief cheek strokes and clean gentle color areas."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "幸腹グラフィティ1・正規無料試読の可視描法",
+          "url": "https://mechacomic.jp/books/178445/sample_download"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-16T23:56:56.921182+00:00",
+      "summary": {
+        "ja": "丸い頬、濃い上瞼と細い顔内線、明るい肌と桃色の頬を使う日常漫画風。台・壁際の男女と窓辺で見上げる少女です。CFG 2と共通ネガティブを使い、画像入力なしで生成しています。",
+        "en": "A daily-comic-like tendency with rounded cheeks, dark upper lids, fine inner face lines and pale peach-pink skin. A mixed scene beside a low surface and a girl looking up by a window, generated text-only at CFG 2 with one shared negative."
+      },
+      "limitations": {
+        "ja": "参考は正規無料試読のカラー本文の顔です。眼は資料より小さく暗色で、白い光も控えめ。第二は長い下顔面と首、外周線の太さが残ります。指定の紙鳥は小鳥のように描かれています。原PNGは未加工で、元絵や全指定との完全一致は保証しません。",
+        "en": "Based on visible faces in a licensed color narrative preview. Eyes are smaller and darker with weaker white glints; the second has a longer lower face and neck and a heavier outer contour. The requested paper bird looks like a small bird. Untouched PNGs; exact matching is not guaranteed."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "a964c9b46d1587348678e3786d782f264fe953cbff4f26abef4083aa2f945ada.png",
+          "sha256": "a964c9b46d1587348678e3786d782f264fe953cbff4f26abef4083aa2f945ada",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "f2f31ab0537a5aa37297f400b4742d751a2c65df11e9a4d243468c8144f7977c.jpg",
+          "thumb_sha256": "f2f31ab0537a5aa37297f400b4742d751a2c65df11e9a4d243468c8144f7977c",
+          "prompt": {
+            "en": "One continuous bright courtyard moment, framed from the thighs upward. An original sixteen-year-old girl with plain shoulder-length brown hair and a loose light-blue pullover stands on the left of a low wall. An original seventeen-year-old boy with short dark hair and a plain cream shirt stands beside her on the right. The girl holds a small folded paper bird low in one hand, and the boy smiles toward her. Both share the same low wall and daylight. color, delicate Japanese daily comic illustration, large clear eyes, soft pale shading.\nRound cheeks narrow into a small chin. Large rose or violet eyes have dark upper eyelid strokes and clear small white glints, while the nose is a brief thin mark and the mouth a small simple opening. Fine outer contours and sparse light inner marks contrast with the stronger upper lids. Keep pale peach skin, a little soft pink on the cheeks and lightly blended shadow color along the jaw, with a few brief cheek strokes and clean gentle color areas."
+          },
+          "native_job_id": "6afb969a000002560000057a0000057a",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7302,
+            "negative_prompt": "heavy uniform black contour, deep facial creases, long realistic nose, full modeled lips, dense facial crosshatching, dark brown face shadows, hard dramatic lighting, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afb969a000002560000057a0000057a",
+            "api_seconds": 57.5988184,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 94,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "a964c9b46d1587348678e3786d782f264fe953cbff4f26abef4083aa2f945ada",
+            "observation": {
+              "ja": "低い台・壁際に並ぶ少女と少年。少女は指に小鳥のようなものを載せ、濃い上瞼・細い顔内線・明るい肌と桃頬が見えます。眼と白光は控えめで、少年の首と手先は硬めです。",
+              "en": "A girl and boy beside a low surface, with a small bird-like form on her finger. Dark upper lids, fine face marks and pale peach cheeks are visible. Eyes and white glints are subdued; the boy has a somewhat stiff neck and hands."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "67e0e09370f1ec5be03efd1e66b6ea9611d613245356ac8ae05b4502b9bae266.png",
+          "sha256": "67e0e09370f1ec5be03efd1e66b6ea9611d613245356ac8ae05b4502b9bae266",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "7032eb1dbb2127605d64f21b58c25b55021d7176ffbb7f0730847470c73fd413.jpg",
+          "thumb_sha256": "7032eb1dbb2127605d64f21b58c25b55021d7176ffbb7f0730847470c73fd413",
+          "prompt": {
+            "en": "An original sixteen-year-old girl with plain shoulder-length brown hair and a loose light-blue pullover sits sideways on a broad low window ledge, shown from the waist upward in three-quarter view. She glances upward with a small open smile. Her one complete ordinary human head connects naturally through her neck to her fully clothed torso. A simple sunlit window and a plain curtain form one continuous background. color, delicate Japanese daily comic illustration, large clear eyes, soft pale shading.\nRound cheeks narrow into a small chin. Large rose or violet eyes have dark upper eyelid strokes and clear small white glints, while the nose is a brief thin mark and the mouth a small simple opening. Fine outer contours and sparse light inner marks contrast with the stronger upper lids. Keep pale peach skin, a little soft pink on the cheeks and lightly blended shadow color along the jaw, with a few brief cheek strokes and clean gentle color areas."
+          },
+          "native_job_id": "6afb989c000002560000057c0000057c",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7322,
+            "negative_prompt": "heavy uniform black contour, deep facial creases, long realistic nose, full modeled lips, dense facial crosshatching, dark brown face shadows, hard dramatic lighting, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afb989c000002560000057c0000057c",
+            "api_seconds": 56.639389,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 72,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "67e0e09370f1ec5be03efd1e66b6ea9611d613245356ac8ae05b4502b9bae266",
+            "observation": {
+              "ja": "窓辺で見上げる少女の上半身。丸頬、濃い上瞼と少ない内線、桃頬と薄い肌影が続きます。下顔面と首は長めで、外周も太めに残っています。",
+              "en": "A girl looking upward by a window. Rounded cheeks, dark upper lids, sparse inner marks, pink cheeks and light skin shading recur. Her lower face and neck are longer, and the outer contour remains heavier."
+            }
+          }
+        }
+      ]
+    },
     {
       "id": "anima-text-tapered-chin-black-upper-lids-brief-lip-shonen",
       "category": "shonen",
