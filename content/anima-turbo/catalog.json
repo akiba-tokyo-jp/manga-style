@@ -3,6 +3,11 @@
   "repository": "akiba-tokyo-jp/manga-style",
   "bundles": [
     {
+      "tag": "anima-text-only-074",
+      "asset": "anima-text-only-074.zip",
+      "sha256": "b484eabf6c58f122ef0cd184553e3c9aa614f45841a36bbcfc3b205d705be32a"
+    },
+    {
       "tag": "anima-text-only-073",
       "asset": "anima-text-only-073.zip",
       "sha256": "54969cd47f6c004dbd0e4028b74fdfb9f972156cca576d80e7392be01a2e1f22"
@@ -319,6 +324,425 @@
     }
   ],
   "entries": [
+    {
+      "id": "anima-text-slanted-brows-white-eyes-ochre-suspense",
+      "category": "horror",
+      "title": {
+        "ja": "白目と薄橙肌のクラシック怪奇漫画",
+        "en": "Classic suspense comics with eye whites and pale ochre skin"
+      },
+      "prompt": {
+        "en": "color, classic Japanese suspense-comic drawing, tapering cheeks, strong slanted brows and plainly inked white eye fields.\nUse strong black eyebrow strokes, clear large eye shapes, a briefly outlined nose and a small open mouth inside complete youthful human faces. Let the cheek edges narrow toward a firm chin. Pale ochre skin carries compact brown-gray shadows around the eyes, beside the nose and along one cheek, while bold black facial edges remain clear against lighter color areas."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "恐怖新聞　1巻・正規表紙の普通少年顔のみ",
+          "url": "https://ebookjapan.yahoo.co.jp/books/102160/A000005713/"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T04:37:49.938897+00:00",
+      "summary": {
+        "ja": "正規表紙の普通の少年顔で読めた太線、白目、黒線の鼻、薄橙色の肌と局所影を一般化する方向です。本文は未見で、人外・血・身体状態や固有役は転用していません。第一は丸顎で口を閉じ、第二は鼻口が誇張され、斜め眉は両方弱めです。 共通negativeとCFG 2で生成しています。",
+        "en": "Generalizes bold lines, visible eye whites, an inked nose, pale ochre skin and local shadows read from the ordinary boy face on a licensed cover. Interior pages were not observed; creatures, blood, physical conditions and specific roles are excluded. The first has a rounded chin and closed mouth; the second exaggerates nose/mouth, and angled brows are weaker in both. Generated with the shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一丸顎/閉口、第二鼻口誇張、両方斜眉弱め。本文未見、表紙の普通少年顔の可読範囲だけ参考。",
+        "en": "Generalizes bold lines, visible eye whites, an inked nose, pale ochre skin and local shadows read from the ordinary boy face on a licensed cover. Interior pages were not observed; creatures, blood, physical conditions and specific roles are excluded. The first has a rounded chin and closed mouth; the second exaggerates nose/mouth, and angled brows are weaker in both."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "441030097b9ea0c1e784ab556fe4c6a669871c1c716dd5cf24b5bc3aa3c39842.png",
+          "sha256": "441030097b9ea0c1e784ab556fe4c6a669871c1c716dd5cf24b5bc3aa3c39842",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "364d22deb907190dfc6a322bd4c49f3bfe9b1a13d9562d56870428823cce4ea4.jpg",
+          "thumb_sha256": "364d22deb907190dfc6a322bd4c49f3bfe9b1a13d9562d56870428823cce4ea4",
+          "prompt": {
+            "en": "One continuous daylight moment on an open stair landing, framed from the waist upward. An original eighteen-year-old young woman with a short dark bob and a plain light jacket stands on the left. An original nineteen-year-old young man with short black hair and a pale hooded shirt stands beside her on the right. They look toward each other with attentive ordinary expressions, sharing one landing beside a low wall. color, classic Japanese suspense-comic drawing, tapering cheeks, strong slanted brows and plainly inked white eye fields.\nUse strong black eyebrow strokes, clear large eye shapes, a briefly outlined nose and a small open mouth inside complete youthful human faces. Let the cheek edges narrow toward a firm chin. Pale ochre skin carries compact brown-gray shadows around the eyes, beside the nose and along one cheek, while bold black facial edges remain clear against lighter color areas."
+          },
+          "native_job_id": "6afbd6f5000002560000059900000599",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7801,
+            "negative_prompt": "mature wrinkles, mustache, giant modeled nose, glossy multiring irises, small dot eyes, soft airbrush faces, uniform vector icons, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afbd6f5000002560000059900000599",
+            "api_seconds": 58.5053711,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 193,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "441030097b9ea0c1e784ab556fe4c6a669871c1c716dd5cf24b5bc3aa3c39842",
+            "observation": {
+              "ja": "同じ階段脇の空間で向き合う男女。太線・白目・薄橙肌と頬色。",
+              "en": "Man and woman share a stair-side space; bold lines, eye whites, pale ochre skin and cheek color."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "d2e5ae349147b83d6ebbc8748e8c6768ec5643a7296d827a70238ade1dc276eb.png",
+          "sha256": "d2e5ae349147b83d6ebbc8748e8c6768ec5643a7296d827a70238ade1dc276eb",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "586732213c065c284fb0be91a083e004c6bc1de4055575a7aab1cd917726b592.jpg",
+          "thumb_sha256": "586732213c065c284fb0be91a083e004c6bc1de4055575a7aab1cd917726b592",
+          "prompt": {
+            "en": "An original eighteen-year-old young man with short dark hair and a plain pale shirt pauses beside a stair railing. Framed from the waist upward, he turns toward the viewer with an attentive ordinary expression and a slightly parted mouth. One continuous daylight moment with his complete face plainly visible. color, classic Japanese suspense-comic drawing, tapering cheeks, strong slanted brows and plainly inked white eye fields.\nUse strong black eyebrow strokes, clear large eye shapes, a briefly outlined nose and a small open mouth inside complete youthful human faces. Let the cheek edges narrow toward a firm chin. Pale ochre skin carries compact brown-gray shadows around the eyes, beside the nose and along one cheek, while bold black facial edges remain clear against lighter color areas."
+          },
+          "native_job_id": "6afbd95f000002560000059c0000059c",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7821,
+            "negative_prompt": "mature wrinkles, mustache, giant modeled nose, glossy multiring irises, small dot eyes, soft airbrush faces, uniform vector icons, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afbd95f000002560000059c0000059c",
+            "api_seconds": 58.4924167,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 147,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "d2e5ae349147b83d6ebbc8748e8c6768ec5643a7296d827a70238ade1dc276eb",
+            "observation": {
+              "ja": "少年の顔近景。白目と太線、鼻口の誇張と薄橙肌。",
+              "en": "Young man close view; eye whites, bold lines, exaggerated nose/mouth and pale ochre skin."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-angular-narrow-eyes-firm-nose-slant-hatch-gekiga",
+      "category": "gekiga",
+      "title": {
+        "ja": "角輪郭と斜線陰影の劇画",
+        "en": "Angular contours and slant-hatched dramatic comics"
+      },
+      "prompt": {
+        "en": "monochrome, angular Japanese dramatic comic ink, narrow horizontal eyes, firm nose bridges and compact straight mouths.\nGive complete ordinary young-adult faces angular cheek turns and a firmly defined chin. Narrow eyes sit beneath dark upper-lid strokes; an inked nose bridge and small nostril edge accompany a short horizontal mouth. Strong black outer contours contrast with finer slanting strokes that build gray on cheek, neck and fabric, leaving bright skin planes and selected solid-black recesses."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "御用牙1・正規表紙のみ（本文未見）",
+          "url": "https://piccoma.com/web/product/90209/episodes?etype=V"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T04:37:49.938897+00:00",
+      "summary": {
+        "ja": "正規表紙だけを参考に、角輪郭、細い目、太線の鼻筋と小鼻、横線の口、太い黒線と細い斜線で立体を作る方向です。本文は未見です。第一女性の顔は柔らかめで、線は資料より均整的。手に硬さや重なりがあり、橋や石壁の指定に対して卓・台面に見えます。白黒指定でも背景などに黄みのある紙色が広く残ります。 共通negativeとCFG 2で生成しています。",
+        "en": "Based only on a licensed cover: angular contours, narrow eyes, firm nose-bridge/nostril lines, short horizontal mouths and volume from bold black lines with fine slanting hatches. Interiors were not observed. The first woman is softer and lines more regular than the source. Hands are stiff/overlapping, and bridge/wall requests read as table-like surfaces. Warm yellowish paper tint covers broad areas despite the monochrome request. Generated with the shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一女性の目と輪郭が柔らかめ、線が均整的で資料の荒い圧/誇張は弱い。手に硬さ/重なり。第一は卓様、第二も台面に見える。",
+        "en": "Based only on a licensed cover: angular contours, narrow eyes, firm nose-bridge/nostril lines, short horizontal mouths and volume from bold black lines with fine slanting hatches. Interiors were not observed. The first woman is softer and lines more regular than the source. Hands are stiff/overlapping, and bridge/wall requests read as table-like surfaces. Warm yellowish paper tint covers broad areas despite the monochrome request."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "e4dcf54679dd54c573ebbe164625094ee2e835c29ccc22f10ebceea7ac4aeacc.png",
+          "sha256": "e4dcf54679dd54c573ebbe164625094ee2e835c29ccc22f10ebceea7ac4aeacc",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "f06585d4f915086cf7cb9ab876e846995d37d7a054a1ad0e5f47ef361a825700.jpg",
+          "thumb_sha256": "f06585d4f915086cf7cb9ab876e846995d37d7a054a1ad0e5f47ef361a825700",
+          "prompt": {
+            "en": "One continuous quiet stone-bridge moment, framed from the waist upward. An original twenty-four-year-old woman with a plain dark bob and a simple pale shirt stands on the left. An original twenty-six-year-old man with short dark hair and a plain dark jacket stands beside her on the right. Their forearms rest independently on the same stone parapet, and they turn toward each other with calm ordinary expressions. monochrome, angular Japanese dramatic comic ink, narrow horizontal eyes, firm nose bridges and compact straight mouths.\nGive complete ordinary young-adult faces angular cheek turns and a firmly defined chin. Narrow eyes sit beneath dark upper-lid strokes; an inked nose bridge and small nostril edge accompany a short horizontal mouth. Strong black outer contours contrast with finer slanting strokes that build gray on cheek, neck and fabric, leaving bright skin planes and selected solid-black recesses."
+          },
+          "native_job_id": "6afbd7da000002560000059a0000059a",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7802,
+            "negative_prompt": "giant round sparkling irises, button nose, dot eyes, tiny child face, full glossy lips, flat vector icons, smooth airbrushed skin, photorealism, dense facial wrinkles, mustache, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afbd7da000002560000059a0000059a",
+            "api_seconds": 58.5416311,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 42,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e4dcf54679dd54c573ebbe164625094ee2e835c29ccc22f10ebceea7ac4aeacc",
+            "observation": {
+              "ja": "卓様の面で並ぶ男女。角顔、太線鼻筋と斜線陰影。",
+              "en": "Man and woman share a table-like surface; angular faces, firm nose lines and slant hatching."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "af93e1087055955419189611ece64abd07ad703bf990fcbc993f5398f73fb88c.png",
+          "sha256": "af93e1087055955419189611ece64abd07ad703bf990fcbc993f5398f73fb88c",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "04b938caebf4e25357ab4147a4d5344f9a7dbbc2410930c781e768879ebcd398.jpg",
+          "thumb_sha256": "04b938caebf4e25357ab4147a4d5344f9a7dbbc2410930c781e768879ebcd398",
+          "prompt": {
+            "en": "An original twenty-five-year-old man with short dark hair and a simple pale jacket leans one forearm on a low stone wall. Framed from the waist upward at a three-quarter angle, he turns his ordinary face toward the viewer with a calm firm expression. One continuous daylight moment. monochrome, angular Japanese dramatic comic ink, narrow horizontal eyes, firm nose bridges and compact straight mouths.\nGive complete ordinary young-adult faces angular cheek turns and a firmly defined chin. Narrow eyes sit beneath dark upper-lid strokes; an inked nose bridge and small nostril edge accompany a short horizontal mouth. Strong black outer contours contrast with finer slanting strokes that build gray on cheek, neck and fabric, leaving bright skin planes and selected solid-black recesses."
+          },
+          "native_job_id": "6afbda49000002560000059d0000059d",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7822,
+            "negative_prompt": "giant round sparkling irises, button nose, dot eyes, tiny child face, full glossy lips, flat vector icons, smooth airbrushed skin, photorealism, dense facial wrinkles, mustache, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afbda49000002560000059d0000059d",
+            "api_seconds": 58.2853977,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 74,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "af93e1087055955419189611ece64abd07ad703bf990fcbc993f5398f73fb88c",
+            "observation": {
+              "ja": "台に腕を重ねる男性。細眼と角顎、強い黒白と顔量感。",
+              "en": "Man rests his arms on a counter-like surface; narrow eyes, angular chin and stronger dark-light facial volume."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-slim-oval-narrow-eyes-fine-pale-romance",
+      "category": "other",
+      "title": {
+        "ja": "淡肌と簡潔な顔線の大人恋愛漫画",
+        "en": "Pale skin and spare face marks in adult romance comics"
+      },
+      "prompt": {
+        "en": "color, delicate Japanese adult romantic manga drawing, slim oval faces with a faint angular chin turn, narrow calm eyes and fine face contours.\nKeep ordinary adult faces lightly described: slender upper lids, simple dark irises, a small finely marked nose and a short thin mouth. Long cheek curves turn gently into a restrained chin. Thin tapering hair strokes and fine facial lines sit over pale peach-white skin, slight pink cheek color and very restrained soft shadows, with open light areas around the figures."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "30歳まで童貞だと魔法使いになれるらしい・成人設定作品の正規カラー表紙のみ",
+          "url": "https://mechacomic.jp/books/126265"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T04:37:49.938897+00:00",
+      "summary": {
+        "ja": "30歳の成人設定作品の正規カラー表紙だけを参考に、細めから角形の輪郭、切れ長の眼、小鼻口と淡い肌を描く方向です。第一は資料より太い線、簡略な鼻と平坦な頬色。第二は相対的に細い線と髪服の描写が増え、首も長めです。本文と女性顔は資料未見で比較外。原画は全着衣・非性的な独自成人です。 共通negativeとCFG 2で生成しています。",
+        "en": "Based only on a licensed color cover from a story with a thirty-year-old adult protagonist: slender-to-angular contours, narrow eyes, small facial marks and pale skin. The first uses heavier lines, a simpler nose and flat cheek color; the second has finer lines and more hair/clothing detail, with a long neck. Unseen interiors and source female-face matching are excluded. Outputs depict original fully clothed nonsexual adults. Generated with the shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は太線と簡略鼻/平坦頬色。首が長め。第二は第一より細かい線と髪服の描写。女性顔/本文は資料未見。",
+        "en": "Based only on a licensed color cover from a story with a thirty-year-old adult protagonist: slender-to-angular contours, narrow eyes, small facial marks and pale skin. The first uses heavier lines, a simpler nose and flat cheek color; the second has finer lines and more hair/clothing detail, with a long neck. Unseen interiors and source female-face matching are excluded. Outputs depict original fully clothed nonsexual adults."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "2b5391fc6cebe131f9eacf7f2d412a127d5242970bec6ebfd6794ea68dce099f.png",
+          "sha256": "2b5391fc6cebe131f9eacf7f2d412a127d5242970bec6ebfd6794ea68dce099f",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "42aa4ff61981324bbde4c5bc04296ef247883bb1ab5ce8a96d63f05a5a74595e.jpg",
+          "thumb_sha256": "42aa4ff61981324bbde4c5bc04296ef247883bb1ab5ce8a96d63f05a5a74595e",
+          "prompt": {
+            "en": "One continuous quiet park-bench moment, framed from the waist upward. An original twenty-four-year-old adult woman with a simple short dark haircut and a pale blouse sits on the left. An original twenty-six-year-old adult man with short brown hair and a plain pale-green shirt sits beside her on the right. They turn their shoulders toward each other and share a small relaxed smile on the same bench, both fully clothed and nonsexual. color, delicate Japanese adult romantic manga drawing, slim oval faces with a faint angular chin turn, narrow calm eyes and fine face contours.\nKeep ordinary adult faces lightly described: slender upper lids, simple dark irises, a small finely marked nose and a short thin mouth. Long cheek curves turn gently into a restrained chin. Thin tapering hair strokes and fine facial lines sit over pale peach-white skin, slight pink cheek color and very restrained soft shadows, with open light areas around the figures."
+          },
+          "native_job_id": "6afbd898000002560000059b0000059b",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7803,
+            "negative_prompt": "huge sparkling eyes, thick uniform face outlines, giant modeled nose, full modeled lips, heavy cheek hatching, coarse dotted skin, dark skin masks, brown face-shadow planes, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afbd898000002560000059b0000059b",
+            "api_seconds": 57.8360975,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 78,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "2b5391fc6cebe131f9eacf7f2d412a127d5242970bec6ebfd6794ea68dce099f",
+            "observation": {
+              "ja": "同じベンチに座る成人男女。淡肌、簡潔な目鼻と太め輪郭。",
+              "en": "Adult man and woman share a bench; pale skin, spare face marks and heavier contours."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "605755783726fd3b218a0fe7030f1ea2c74a991238ae08da9ce2ae5bb0d248ba.png",
+          "sha256": "605755783726fd3b218a0fe7030f1ea2c74a991238ae08da9ce2ae5bb0d248ba",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "6bfc97913fb01550302259476864cf2780323d1c0b0b9a1b88c0adcbf1637a0c.jpg",
+          "thumb_sha256": "6bfc97913fb01550302259476864cf2780323d1c0b0b9a1b88c0adcbf1637a0c",
+          "prompt": {
+            "en": "An original twenty-five-year-old adult woman with a plain short dark bob and a pale casual blouse turns back beside a park bench. Framed from the waist upward at a three-quarter angle, she looks toward the viewer with a small relaxed smile. One continuous light daytime moment; fully clothed and nonsexual. color, delicate Japanese adult romantic manga drawing, slim oval faces with a faint angular chin turn, narrow calm eyes and fine face contours.\nKeep ordinary adult faces lightly described: slender upper lids, simple dark irises, a small finely marked nose and a short thin mouth. Long cheek curves turn gently into a restrained chin. Thin tapering hair strokes and fine facial lines sit over pale peach-white skin, slight pink cheek color and very restrained soft shadows, with open light areas around the figures."
+          },
+          "native_job_id": "6afbdb19000002560000059e0000059e",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 7823,
+            "negative_prompt": "huge sparkling eyes, thick uniform face outlines, giant modeled nose, full modeled lips, heavy cheek hatching, coarse dotted skin, dark skin masks, brown face-shadow planes, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afbdb19000002560000059e0000059e",
+            "api_seconds": 57.742261,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 57,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "605755783726fd3b218a0fe7030f1ea2c74a991238ae08da9ce2ae5bb0d248ba",
+            "observation": {
+              "ja": "ベンチで振り返る成人女性。淡肌と頬色、細めの顔線と髪服。",
+              "en": "Adult woman turns back by a bench; pale skin, cheek color, finer face lines and detailed hair/clothing."
+            }
+          }
+        }
+      ],
+      "reference_context": "adult-manga",
+      "sample_content": "non-explicit-fully-clothed-adult"
+    },
     {
       "id": "anima-text-smooth-cheek-tapers-fine-black-eyes-white-shojo",
       "category": "shojo",
