@@ -331,6 +331,11 @@
       "tag": "anima-text-only-076",
       "asset": "anima-text-only-076.zip",
       "sha256": "81a834c26caa7d8190a468136aaf9b887069c6838d473f238b7f0e2c8ed8e49c"
+    },
+    {
+      "tag": "anima-text-only-077",
+      "asset": "anima-text-only-077.zip",
+      "sha256": "cbadf88f1962d641dafe3a63bf8cb3d96479cafc805023c59298ca94bc2e1c8e"
     }
   ],
   "entries": [
@@ -42813,6 +42818,1538 @@
             "observation": {
               "ja": "第一は着衣の成人男女、第二は窓辺の女性。端正な輪郭と淡色の成人恋愛漫画調です。参考より写実寄りの顔で、均一な輪郭と硬い面状の影が特徴です。",
               "en": "A fully clothed nonsexual adult man-and-woman scene and a woman at a window use regular contours and light colors. Faces are more modeled than the cover, with uniform outlines and harder shadow planes instead of its vivid exaggeration."
+            }
+          }
+        }
+      ],
+      "reference_context": "adult-manga",
+      "sample_content": "non-explicit-fully-clothed-adult"
+    },
+    {
+      "id": "anima-text-fine-cream-round-eyed-romance",
+      "category": "shojo",
+      "title": {
+        "ja": "淡彩と濃い髪線の青春少女漫画風",
+        "en": "Light colors and dark hair ink in youthful shojo-like comics"
+      },
+      "prompt": {
+        "en": "color, light Japanese youthful romantic manga ink, rounded expressive faces, warm brown eyes and small clear facial marks.\nFine dark contours surround pale cream skin with very light warm shadows, leaving broad bright cheeks. Small white eye lights and light hair strokes give the drawing an airy gentle feeling."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "ミントな僕ら 1・正規可視範囲（説明参照）",
+          "url": "https://booklive.jp/product/index/title_id/318110/vol_no/001"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "正規表紙の可視範囲だけを手がかりにした、文章だけによる近い描き味の見本です。 第一は男女の場面、第二は女性単独。明るい淡彩の少女漫画調で、第一は細線寄り、第二は太線と黒ベタが強め。参考より平坦な塗りです。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "A text-only near-style example based only on the visible licensed cover. A man-and-woman scene and a separate female composition have a bright light-color shojo-like feeling. The first is finer-lined; the showcase has heavier contours and hair blacks. Colors are flatter than the cover. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は男女の場面、第二は女性単独。明るい淡彩の少女漫画調で、第一は細線寄り、第二は太線と黒ベタが強め。参考より平坦な塗りです。",
+        "en": "A man-and-woman scene and a separate female composition have a bright light-color shojo-like feeling. The first is finer-lined; the showcase has heavier contours and hair blacks. Colors are flatter than the cover."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "934d960732f3c2f3106ab3c436b63b6cb33088ae8be996a7d9b707a68e8d09e0.png",
+          "sha256": "934d960732f3c2f3106ab3c436b63b6cb33088ae8be996a7d9b707a68e8d09e0",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "be4c5acf911a73642a500c1e1fb9eff1b96200d43a3b2de7b58182f970ebd0e8.jpg",
+          "thumb_sha256": "be4c5acf911a73642a500c1e1fb9eff1b96200d43a3b2de7b58182f970ebd0e8",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside a riverside promenade. An original 16-year-old girl with a simple short dark bob and a plain pale casual top stands on the left. An original 17-year-old boy with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. color, light Japanese youthful romantic manga ink, rounded expressive faces, warm brown eyes and small clear facial marks.\nFine dark contours surround pale cream skin with very light warm shadows, leaving broad bright cheeks. Small white eye lights and light hair strokes give the drawing an airy gentle feeling."
+          },
+          "native_job_id": "6afc302200000256000005d0000005d0",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8101,
+            "negative_prompt": "thick uniform face borders, heavy black cheek shadows, giant modeled nose, full glossy lips, dense skin hatching, hard orange face masks, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc302200000256000005d0000005d0",
+            "api_seconds": 56.8177687,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 98,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "934d960732f3c2f3106ab3c436b63b6cb33088ae8be996a7d9b707a68e8d09e0",
+            "observation": {
+              "ja": "第一は男女の場面、第二は女性単独。明るい淡彩の少女漫画調で、第一は細線寄り、第二は太線と黒ベタが強め。参考より平坦な塗りです。",
+              "en": "A man-and-woman scene and a separate female composition have a bright light-color shojo-like feeling. The first is finer-lined; the showcase has heavier contours and hair blacks. Colors are flatter than the cover."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "84297636183720fe1ad88fd01a8e5b8bb6b6c59aabeb5fb48c66a4a12a835d50.png",
+          "sha256": "84297636183720fe1ad88fd01a8e5b8bb6b6c59aabeb5fb48c66a4a12a835d50",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "8e82aac39b6d56561974f4900ab24dd8ac89645d0071343055b54ec2e84b5bd7.jpg",
+          "thumb_sha256": "8e82aac39b6d56561974f4900ab24dd8ac89645d0071343055b54ec2e84b5bd7",
+          "prompt": {
+            "en": "A quiet afternoon on a riverside bench. An original sixteen-year-old girl with a simple dark bob and a pale casual jacket sits turned three-quarters toward the viewer, shown in a close upper-body composition with open sky and one low railing behind her. color, light Japanese youthful romantic manga ink, rounded expressive faces, warm brown eyes and small clear facial marks.\nFine dark contours surround pale cream skin with very light warm shadows, leaving broad bright cheeks. Small white eye lights and light hair strokes give the drawing an airy gentle feeling."
+          },
+          "native_job_id": "6afc352a00000256000005db000005db",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8121,
+            "negative_prompt": "thick uniform face borders, heavy black cheek shadows, giant modeled nose, full glossy lips, dense skin hatching, hard orange face masks, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc352a00000256000005db000005db",
+            "api_seconds": 57.0570942,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 106,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "84297636183720fe1ad88fd01a8e5b8bb6b6c59aabeb5fb48c66a4a12a835d50",
+            "observation": {
+              "ja": "第一は男女の場面、第二は女性単独。明るい淡彩の少女漫画調で、第一は細線寄り、第二は太線と黒ベタが強め。参考より平坦な塗りです。",
+              "en": "A man-and-woman scene and a separate female composition have a bright light-color shojo-like feeling. The first is finer-lined; the showcase has heavier contours and hair blacks. Colors are flatter than the cover."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-angular-dark-eyes-ochre-blue-adventure",
+      "category": "shonen",
+      "title": {
+        "ja": "黒線・黄土肌と青影の少年冒険漫画風",
+        "en": "Black ink, ochre skin and blue shadows in shonen-like adventure comics"
+      },
+      "prompt": {
+        "en": "color, forceful angular Japanese shonen comic ink, youthful faces with slender corners and quiet dark eye shapes.\nCrisp black pen lines and firmly marked noses and mouths contrast with pale ochre cheeks and small blue-gray shadow areas. Keep lively character expression and clear open spaces around the strongly defined features."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "月光条例 ２４・正規可視範囲（説明参照）",
+          "url": "https://shogakukan-comic.jp/book?isbn=9784091243614"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "24巻の小さい正規表紙だけを参考にしています。微細な描写は未読です。 第一は男女の場面、第二は少年単独。黒線・黄土肌と青灰影が特徴で、参考より平塗り。第一は写実寄り、第二は太線・黒ベタと水色が強く出ています。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "Based only on the small licensed volume-24 cover; fine details were unreadable. A man-and-woman scene and a solo boy use black ink, ochre skin and blue-gray shadows. Rendering is flatter than the cover: the first is more modeled, the second bolder with stronger blacks and cyan. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は男女の場面、第二は少年単独。黒線・黄土肌と青灰影が特徴で、参考より平塗り。第一は写実寄り、第二は太線・黒ベタと水色が強く出ています。",
+        "en": "A man-and-woman scene and a solo boy use black ink, ochre skin and blue-gray shadows. Rendering is flatter than the cover: the first is more modeled, the second bolder with stronger blacks and cyan."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "e8ae9da8c21bce944af590fb1f75f3e00f1b06ded6c5cbd75877062c98bbc078.png",
+          "sha256": "e8ae9da8c21bce944af590fb1f75f3e00f1b06ded6c5cbd75877062c98bbc078",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "124a97dd79d6b4fb9589f4cc161f4dda23e7e8037c48eab51694932d8efd989e.jpg",
+          "thumb_sha256": "124a97dd79d6b4fb9589f4cc161f4dda23e7e8037c48eab51694932d8efd989e",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside a broad pedestrian footbridge. An original 16-year-old girl with a simple short dark bob and a plain pale casual top stands on the left. An original 17-year-old boy with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. color, forceful angular Japanese shonen comic ink, youthful faces with slender corners and quiet dark eye shapes.\nCrisp black pen lines and firmly marked noses and mouths contrast with pale ochre cheeks and small blue-gray shadow areas. Keep lively character expression and clear open spaces around the strongly defined features."
+          },
+          "native_job_id": "6afc309200000256000005d1000005d1",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8102,
+            "negative_prompt": "baby round face, giant sparkling irises, full glossy lips, soft airbrushed beauty makeup, mature wrinkles, circular red blush stamps, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc309200000256000005d1000005d1",
+            "api_seconds": 57.4676675,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 148,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e8ae9da8c21bce944af590fb1f75f3e00f1b06ded6c5cbd75877062c98bbc078",
+            "observation": {
+              "ja": "第一は男女の場面、第二は少年単独。黒線・黄土肌と青灰影が特徴で、参考より平塗り。第一は写実寄り、第二は太線・黒ベタと水色が強く出ています。",
+              "en": "A man-and-woman scene and a solo boy use black ink, ochre skin and blue-gray shadows. Rendering is flatter than the cover: the first is more modeled, the second bolder with stronger blacks and cyan."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "ce3a1e8fe95b563717b206a92c7123f1c781fee0c55928069bddd6705df1315b.png",
+          "sha256": "ce3a1e8fe95b563717b206a92c7123f1c781fee0c55928069bddd6705df1315b",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "45b074e3c43f65305002a31b79fd9ca57cab221d6a8f592632b5a62a3056a484.jpg",
+          "thumb_sha256": "45b074e3c43f65305002a31b79fd9ca57cab221d6a8f592632b5a62a3056a484",
+          "prompt": {
+            "en": "A bright windy moment on a pedestrian footbridge. An original seventeen-year-old boy with short dark hair and a plain light hoodie leans forward with an alert comic expression, framed from a slightly low waist-up angle. The railing and distant path share the same space. color, forceful angular Japanese shonen comic ink, youthful faces with slender corners and quiet dark eye shapes.\nCrisp black pen lines and firmly marked noses and mouths contrast with pale ochre cheeks and small blue-gray shadow areas. Keep lively character expression and clear open spaces around the strongly defined features."
+          },
+          "native_job_id": "6afc35d200000256000005dc000005dc",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8122,
+            "negative_prompt": "baby round face, giant sparkling irises, full glossy lips, soft airbrushed beauty makeup, mature wrinkles, circular red blush stamps, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc35d200000256000005dc000005dc",
+            "api_seconds": 57.6454088,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 158,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "ce3a1e8fe95b563717b206a92c7123f1c781fee0c55928069bddd6705df1315b",
+            "observation": {
+              "ja": "第一は男女の場面、第二は少年単独。黒線・黄土肌と青灰影が特徴で、参考より平塗り。第一は写実寄り、第二は太線・黒ベタと水色が強く出ています。",
+              "en": "A man-and-woman scene and a solo boy use black ink, ochre skin and blue-gray shadows. Rendering is flatter than the cover: the first is more modeled, the second bolder with stronger blacks and cyan."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-long-dark-brows-ochre-brown-figurative",
+      "category": "seinen",
+      "title": {
+        "ja": "黄褐肌と彫刻的な影の人物漫画風",
+        "en": "Ochre skin and sculpted brown shadows in figurative comics"
+      },
+      "prompt": {
+        "en": "color, elongated expressive Japanese figurative comic faces, narrow chins, dark brow strokes and quiet horizontal eyes.\nBrown-black pen contours define readable noses and restrained mouths. Muted ochre skin and compact brown shadows give the faces a calmly sculpted feeling, balanced by open pale areas."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "イムリ　1巻・正規可視範囲（説明参照）",
+          "url": "https://booklive.jp/product/index/title_id/11200/vol_no/001"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "正規表紙の可視範囲だけを手がかりにした、文章だけによる近い描き味の見本です。 第一は男女の場面、第二は女性単独。黒褐線と黄褐肌・褐色影の人物漫画調です。第一は太線と平面感、第二は濃い影と彫刻的な立体感が強く出ています。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "A text-only near-style example based only on the visible licensed cover. A man-and-woman scene and a solo woman use brown-black ink, ochre skin and brown shadows. The first is bolder and flatter; the showcase has stronger dark shading and a more sculpted, illustrative feeling. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は男女の場面、第二は女性単独。黒褐線と黄褐肌・褐色影の人物漫画調です。第一は太線と平面感、第二は濃い影と彫刻的な立体感が強く出ています。",
+        "en": "A man-and-woman scene and a solo woman use brown-black ink, ochre skin and brown shadows. The first is bolder and flatter; the showcase has stronger dark shading and a more sculpted, illustrative feeling."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "39f6e1eba3dd0c42b5589873670d4291c70e51363d1c5158aa24dfbaa4d11dc5.png",
+          "sha256": "39f6e1eba3dd0c42b5589873670d4291c70e51363d1c5158aa24dfbaa4d11dc5",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "d358e19d4a5da84a2b79634cb8ed872c01b559c47e9b55c28c2901bd2b74ada0.jpg",
+          "thumb_sha256": "d358e19d4a5da84a2b79634cb8ed872c01b559c47e9b55c28c2901bd2b74ada0",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside a quiet museum side hall. An original 22-year-old woman with a simple short dark bob and a plain pale casual top stands on the left. An original 24-year-old man with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. color, elongated expressive Japanese figurative comic faces, narrow chins, dark brow strokes and quiet horizontal eyes.\nBrown-black pen contours define readable noses and restrained mouths. Muted ochre skin and compact brown shadows give the faces a calmly sculpted feeling, balanced by open pale areas."
+          },
+          "native_job_id": "6afc310f00000256000005d2000005d2",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8103,
+            "negative_prompt": "baby cheeks, huge sparkling irises, thick pink blush discs, glossy lipstick, uniform flat vector icons, dense random skin dots, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc310f00000256000005d2000005d2",
+            "api_seconds": 59.3228104,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 117,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "39f6e1eba3dd0c42b5589873670d4291c70e51363d1c5158aa24dfbaa4d11dc5",
+            "observation": {
+              "ja": "第一は男女の場面、第二は女性単独。黒褐線と黄褐肌・褐色影の人物漫画調です。第一は太線と平面感、第二は濃い影と彫刻的な立体感が強く出ています。",
+              "en": "A man-and-woman scene and a solo woman use brown-black ink, ochre skin and brown shadows. The first is bolder and flatter; the showcase has stronger dark shading and a more sculpted, illustrative feeling."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "2a322914fa08453c59a87bd62e918d0e24d408f8d3dc1084332e1c19936e3a60.png",
+          "sha256": "2a322914fa08453c59a87bd62e918d0e24d408f8d3dc1084332e1c19936e3a60",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "ed97005d233cdbef21bc815d914c904cc46ebc0f9f192563fd5e20d2a6c1dbd0.jpg",
+          "thumb_sha256": "ed97005d233cdbef21bc815d914c904cc46ebc0f9f192563fd5e20d2a6c1dbd0",
+          "prompt": {
+            "en": "A quiet museum moment. An original twenty-two-year-old woman with a simple dark bob and a plain light collared shirt turns toward the viewer in a close three-quarter view. One pale wall and the edge of a low bench provide a restrained background. color, elongated expressive Japanese figurative comic faces, narrow chins, dark brow strokes and quiet horizontal eyes.\nBrown-black pen contours define readable noses and restrained mouths. Muted ochre skin and compact brown shadows give the faces a calmly sculpted feeling, balanced by open pale areas."
+          },
+          "native_job_id": "6afc363000000256000005dd000005dd",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8123,
+            "negative_prompt": "baby cheeks, huge sparkling irises, thick pink blush discs, glossy lipstick, uniform flat vector icons, dense random skin dots, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc363000000256000005dd000005dd",
+            "api_seconds": 57.590849,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 98,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "2a322914fa08453c59a87bd62e918d0e24d408f8d3dc1084332e1c19936e3a60",
+            "observation": {
+              "ja": "第一は男女の場面、第二は女性単独。黒褐線と黄褐肌・褐色影の人物漫画調です。第一は太線と平面感、第二は濃い影と彫刻的な立体感が強く出ています。",
+              "en": "A man-and-woman scene and a solo woman use brown-black ink, ochre skin and brown shadows. The first is bolder and flatter; the showcase has stronger dark shading and a more sculpted, illustrative feeling."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-airy-upper-lid-oval-pale-romance",
+      "category": "josei",
+      "title": {
+        "ja": "淡肌と繊細な髪線の現代恋愛漫画風",
+        "en": "Pale skin and delicate hair ink in contemporary romantic comics"
+      },
+      "prompt": {
+        "en": "color, airy softly inked contemporary Japanese romantic manga, slim oval faces, expressive eyes with clear upper-lid accents and small facial strokes.\nFine varied contours and gently separated hair strands surround pale skin with shallow soft shadows. Keep broad quiet light areas and delicate natural expressions."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "カカフカカ（１）・正規可視範囲（説明参照）",
+          "url": "https://sp.handycomic.jp/product/index/title_id/277246/vol_no/001"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "正規表紙の可視範囲だけを手がかりにした、文章だけによる近い描き味の見本です。 第一は余白の広い男女の場面、第二は女性の寄り。淡い肌と軽い線の現代恋愛漫画調で、第二では髪・まつ毛・陰影がより細密になっています。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "A text-only near-style example based only on the visible licensed cover. The first is an open man-and-woman scene, the second a closer female composition. Pale skin and light lines give a contemporary romantic-comic feeling, with more detailed hair, lashes and shadows in the showcase. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は余白の広い男女の場面、第二は女性の寄り。淡い肌と軽い線の現代恋愛漫画調で、第二では髪・まつ毛・陰影がより細密になっています。",
+        "en": "The first is an open man-and-woman scene, the second a closer female composition. Pale skin and light lines give a contemporary romantic-comic feeling, with more detailed hair, lashes and shadows in the showcase."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "efa665266bda7a649e36fe479366a9e839a52dc552fe02ffa31b04326807e492.png",
+          "sha256": "efa665266bda7a649e36fe479366a9e839a52dc552fe02ffa31b04326807e492",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "2e5d97f785c83e46f1c78f0a3290a1e2bf4389ce0b296797c2e42d58a23928da.jpg",
+          "thumb_sha256": "2e5d97f785c83e46f1c78f0a3290a1e2bf4389ce0b296797c2e42d58a23928da",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside an outdoor reading terrace. An original 24-year-old woman with a simple short dark bob and a plain pale casual top stands on the left. An original 26-year-old man with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. color, airy softly inked contemporary Japanese romantic manga, slim oval faces, expressive eyes with clear upper-lid accents and small facial strokes.\nFine varied contours and gently separated hair strands surround pale skin with shallow soft shadows. Keep broad quiet light areas and delicate natural expressions."
+          },
+          "native_job_id": "6afc318200000256000005d3000005d3",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8104,
+            "negative_prompt": "heavy uniform black face outlines, giant realistic nose, deep angular cheek blocks, thick red blush discs, dense facial crosshatching, glossy modeled lips, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc318200000256000005d3000005d3",
+            "api_seconds": 56.8222868,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 74,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "efa665266bda7a649e36fe479366a9e839a52dc552fe02ffa31b04326807e492",
+            "observation": {
+              "ja": "第一は余白の広い男女の場面、第二は女性の寄り。淡い肌と軽い線の現代恋愛漫画調で、第二では髪・まつ毛・陰影がより細密になっています。",
+              "en": "The first is an open man-and-woman scene, the second a closer female composition. Pale skin and light lines give a contemporary romantic-comic feeling, with more detailed hair, lashes and shadows in the showcase."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "2bc0e722f7dbecda1e0b3feff048aa60eaf071d525fd881f2b1716e61865f57a.png",
+          "sha256": "2bc0e722f7dbecda1e0b3feff048aa60eaf071d525fd881f2b1716e61865f57a",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "be1ddff8363e582302542188d28a0522e9569a1dc70d7b05290eb04a1b97463f.jpg",
+          "thumb_sha256": "be1ddff8363e582302542188d28a0522e9569a1dc70d7b05290eb04a1b97463f",
+          "prompt": {
+            "en": "A soft daylight pause at a garden terrace. An original twenty-four-year-old woman with shoulder-length brown hair and a plain pale blouse looks gently back toward the viewer, framed from the chest upward beside one low garden wall. color, airy softly inked contemporary Japanese romantic manga, slim oval faces, expressive eyes with clear upper-lid accents and small facial strokes.\nFine varied contours and gently separated hair strands surround pale skin with shallow soft shadows. Keep broad quiet light areas and delicate natural expressions."
+          },
+          "native_job_id": "6afc369a00000256000005de000005de",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8124,
+            "negative_prompt": "heavy uniform black face outlines, giant realistic nose, deep angular cheek blocks, thick red blush discs, dense facial crosshatching, glossy modeled lips, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc369a00000256000005de000005de",
+            "api_seconds": 57.1026852,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 121,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "2bc0e722f7dbecda1e0b3feff048aa60eaf071d525fd881f2b1716e61865f57a",
+            "observation": {
+              "ja": "第一は余白の広い男女の場面、第二は女性の寄り。淡い肌と軽い線の現代恋愛漫画調で、第二では髪・まつ毛・陰影がより細密になっています。",
+              "en": "The first is an open man-and-woman scene, the second a closer female composition. Pale skin and light lines give a contemporary romantic-comic feeling, with more detailed hair, lashes and shadows in the showcase."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-clear-expressive-light-shaded-adventure-kids",
+      "category": "kodomo",
+      "title": {
+        "ja": "明快な輪郭と青橙色の児童冒険漫画風",
+        "en": "Clear outlines and blue-orange colors in youthful adventure comics"
+      },
+      "prompt": {
+        "en": "color, clear upbeat Japanese children's adventure comic ink, ordinary youthful human faces with expressive eyes and simple readable nose and mouth marks.\nCrisp outside pen strokes and lighter inside lines frame bright skin with only a few shallow color shadows. Keep the lively facial expressions and clean open color areas easy to read."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "新装版 ロックマンエグゼ 08・正規可視範囲（説明参照）",
+          "url": "https://booklive.jp/product/index/title_id/1024278/vol_no/008"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "正規表紙の可視範囲だけを手がかりにした、文章だけによる近い描き味の見本です。 第一は階段前の男女児、第二は挙手する少年。明快な児童漫画の線が特徴です。第一は細めの線と淡い青緑、第二は太線と鮮やかな青・橙で描かれています。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "A text-only near-style example based only on the visible licensed cover. A girl-and-boy scene by steps and a boy raising his arm use clear youthful comic ink. The first has finer lines and pale blue-green; the second bolder outlines and vivid blue-orange colors. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は階段前の男女児、第二は挙手する少年。明快な児童漫画の線が特徴です。第一は細めの線と淡い青緑、第二は太線と鮮やかな青・橙で描かれています。",
+        "en": "A girl-and-boy scene by steps and a boy raising his arm use clear youthful comic ink. The first has finer lines and pale blue-green; the second bolder outlines and vivid blue-orange colors."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "b78ac1c5a7ba96d0f3715dfa5b80680f9bfb12389b527e36db365d4a1544b13e.png",
+          "sha256": "b78ac1c5a7ba96d0f3715dfa5b80680f9bfb12389b527e36db365d4a1544b13e",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "b809a53e58e7a7fd49162ab7efc1962e398ab5b26f6064c9425deae9da2d0119.jpg",
+          "thumb_sha256": "b809a53e58e7a7fd49162ab7efc1962e398ab5b26f6064c9425deae9da2d0119",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside wide park steps. An original 11-year-old girl with a simple short dark bob and a plain pale casual top stands on the left. An original 12-year-old boy with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. color, clear upbeat Japanese children's adventure comic ink, ordinary youthful human faces with expressive eyes and simple readable nose and mouth marks.\nCrisp outside pen strokes and lighter inside lines frame bright skin with only a few shallow color shadows. Keep the lively facial expressions and clean open color areas easy to read."
+          },
+          "native_job_id": "6afc31e900000256000005d4000005d4",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8105,
+            "negative_prompt": "floating teeth, detached mouth, extra heads, mature wrinkles, mustache, full realistic lips, giant modeled nose, dark skin masks, glossy layered irises, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc31e900000256000005d4000005d4",
+            "api_seconds": 57.4391635,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 123,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "b78ac1c5a7ba96d0f3715dfa5b80680f9bfb12389b527e36db365d4a1544b13e",
+            "observation": {
+              "ja": "第一は階段前の男女児、第二は挙手する少年。明快な児童漫画の線が特徴です。第一は細めの線と淡い青緑、第二は太線と鮮やかな青・橙で描かれています。",
+              "en": "A girl-and-boy scene by steps and a boy raising his arm use clear youthful comic ink. The first has finer lines and pale blue-green; the second bolder outlines and vivid blue-orange colors."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "e711d9f1cb5ab2749e74dec84c596a4158d2cb63997cff40ab228f7f45b19a7a.png",
+          "sha256": "e711d9f1cb5ab2749e74dec84c596a4158d2cb63997cff40ab228f7f45b19a7a",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "e856c0b4d6ea638598153bf1131fceed63c56c2147c76e357eefa1efb3c0c154.jpg",
+          "thumb_sha256": "e856c0b4d6ea638598153bf1131fceed63c56c2147c76e357eefa1efb3c0c154",
+          "prompt": {
+            "en": "A lively daylight pause beside park steps. An original twelve-year-old boy with short dark hair and a plain light sweatshirt lifts one arm in a cheerful greeting. His ordinary youthful face and connected upper body fill a clear medium composition, with a simple path behind him. color, clear upbeat Japanese children's adventure comic ink, ordinary youthful human faces with expressive eyes and simple readable nose and mouth marks.\nCrisp outside pen strokes and lighter inside lines frame bright skin with only a few shallow color shadows. Keep the lively facial expressions and clean open color areas easy to read."
+          },
+          "native_job_id": "6afc370d00000256000005df000005df",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8125,
+            "negative_prompt": "floating teeth, detached mouth, extra heads, mature wrinkles, mustache, full realistic lips, giant modeled nose, dark skin masks, glossy layered irises, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc370d00000256000005df000005df",
+            "api_seconds": 57.353698,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 167,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e711d9f1cb5ab2749e74dec84c596a4158d2cb63997cff40ab228f7f45b19a7a",
+            "observation": {
+              "ja": "第一は階段前の男女児、第二は挙手する少年。明快な児童漫画の線が特徴です。第一は細めの線と淡い青緑、第二は太線と鮮やかな青・橙で描かれています。",
+              "en": "A girl-and-boy scene by steps and a boy raising his arm use clear youthful comic ink. The first has finer lines and pale blue-green; the second bolder outlines and vivid blue-orange colors."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-spare-round-thin-ink-pale-daily",
+      "category": "yonkoma",
+      "title": {
+        "ja": "丸輪郭と淡肌のやわらか日常漫画風",
+        "en": "Rounded contours and pale skin in gentle daily-life comics"
+      },
+      "prompt": {
+        "en": "color, spare gently drawn Japanese daily-life comic, rounded simplified heads and small readable facial marks.\nLight black contours frame pale skin and quiet flat colors with very little shadow. Keep the faces soft and complete, the interior marks few, and generous bright space around the characters."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "はるみねーしょん・正規可視範囲（説明参照）",
+          "url": "https://sp.handycomic.jp/product/index/title_id/175198"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "正規表紙の可視範囲だけを手がかりにした、文章だけによる近い描き味の見本です。 第一は男女同席、第二は女性単独。淡い肌と簡略な丸輪郭の柔らかな日常漫画調です。第一は太めの線、第二は丸顔・頬紅と輪郭の重ね線が目立ちます。資料の微細な目鼻口は未読です。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "A text-only near-style example based only on the visible licensed cover. A seated man-and-woman scene and a solo woman use pale skin and simplified rounded contours. The first has heavier lines; the showcase emphasizes round cheeks, blush and overlapping contour strokes. Fine cover eye/nose/mouth details were unreadable. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は男女同席、第二は女性単独。淡い肌と簡略な丸輪郭の柔らかな日常漫画調です。第一は太めの線、第二は丸顔・頬紅と輪郭の重ね線が目立ちます。資料の微細な目鼻口は未読です。",
+        "en": "A seated man-and-woman scene and a solo woman use pale skin and simplified rounded contours. The first has heavier lines; the showcase emphasizes round cheeks, blush and overlapping contour strokes. Fine cover eye/nose/mouth details were unreadable."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "bf9235743e0eb35a5c650c9ba5cdc777e32cc4045aed8c19c54aa654043b5422.png",
+          "sha256": "bf9235743e0eb35a5c650c9ba5cdc777e32cc4045aed8c19c54aa654043b5422",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "cc4e762dcec27e5ce34ebd8a3666e09e1a9532307e3dff5f4ddecc39df7852e0.jpg",
+          "thumb_sha256": "cc4e762dcec27e5ce34ebd8a3666e09e1a9532307e3dff5f4ddecc39df7852e0",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside a quiet school-garden wall. An original 16-year-old girl with a simple short dark bob and a plain pale casual top stands on the left. An original 17-year-old boy with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. color, spare gently drawn Japanese daily-life comic, rounded simplified heads and small readable facial marks.\nLight black contours frame pale skin and quiet flat colors with very little shadow. Keep the faces soft and complete, the interior marks few, and generous bright space around the characters."
+          },
+          "native_job_id": "6afc325200000256000005d5000005d5",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8106,
+            "negative_prompt": "heavy black face borders, giant realistic nose, modeled lips, elaborate glossy irises, dense cheek hatching, deep orange skin blocks, mature wrinkles, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc325200000256000005d5000005d5",
+            "api_seconds": 56.7230236,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 55,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "bf9235743e0eb35a5c650c9ba5cdc777e32cc4045aed8c19c54aa654043b5422",
+            "observation": {
+              "ja": "第一は男女同席、第二は女性単独。淡い肌と簡略な丸輪郭の柔らかな日常漫画調です。第一は太めの線、第二は丸顔・頬紅と輪郭の重ね線が目立ちます。資料の微細な目鼻口は未読です。",
+              "en": "A seated man-and-woman scene and a solo woman use pale skin and simplified rounded contours. The first has heavier lines; the showcase emphasizes round cheeks, blush and overlapping contour strokes. Fine cover eye/nose/mouth details were unreadable."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "957545e92cd971be1a9af5735ba1727ff2dec5af9dd95b24aba1787ba4379f07.png",
+          "sha256": "957545e92cd971be1a9af5735ba1727ff2dec5af9dd95b24aba1787ba4379f07",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "f18ffcb3b28d5394889f50bb3b0534ac47dcbe01ca2f18b73722b4d88b53d6a7.jpg",
+          "thumb_sha256": "f18ffcb3b28d5394889f50bb3b0534ac47dcbe01ca2f18b73722b4d88b53d6a7",
+          "prompt": {
+            "en": "A quiet window-seat moment. An original sixteen-year-old girl with a simple short dark bob and a plain pale casual top sits beside the window and smiles toward the viewer. A slightly high angle shows her upper body and the simple bright room. color, spare gently drawn Japanese daily-life comic, rounded simplified heads and small readable facial marks.\nLight black contours frame pale skin and quiet flat colors with very little shadow. Keep the faces soft and complete, the interior marks few, and generous bright space around the characters."
+          },
+          "native_job_id": "6afc37b800000256000005e0000005e0",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8126,
+            "negative_prompt": "heavy black face borders, giant realistic nose, modeled lips, elaborate glossy irises, dense cheek hatching, deep orange skin blocks, mature wrinkles, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc37b800000256000005e0000005e0",
+            "api_seconds": 56.8786857,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 48,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "957545e92cd971be1a9af5735ba1727ff2dec5af9dd95b24aba1787ba4379f07",
+            "observation": {
+              "ja": "第一は男女同席、第二は女性単独。淡い肌と簡略な丸輪郭の柔らかな日常漫画調です。第一は太めの線、第二は丸顔・頬紅と輪郭の重ね線が目立ちます。資料の微細な目鼻口は未読です。",
+              "en": "A seated man-and-woman scene and a solo woman use pale skin and simplified rounded contours. The first has heavier lines; the showcase emphasizes round cheeks, blush and overlapping contour strokes. Fine cover eye/nose/mouth details were unreadable."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-bold-angular-orange-pen-comedy",
+      "category": "gag",
+      "title": {
+        "ja": "太黒線と彫り深い陰影のコメディ劇画風",
+        "en": "Bold black ink and deeply carved shadows in dramatic comedy comics"
+      },
+      "prompt": {
+        "en": "color, bold expressive Japanese gag-comic ink, angular ordinary human faces with strong brow strokes and clear readable features.\nThick black outside contours interleave finer black shadow strokes. Yellow-orange skin and small red accents contrast with selected dark masses, while the faces keep an energetic comic expression."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "激烈バカ（１）・正規可視範囲（説明参照）",
+          "url": "https://booklive.jp/product/index/title_id/24850/vol_no/001"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "正規表紙の可視範囲だけを手がかりにした、文章だけによる近い描き味の見本です。 第一は男女の場面、第二は成人男性と独立した顔アップを含む実構図。太黒線・黄橙肌・細線陰影が特徴で、参考より写実・劇画寄りの彫り深い描き味です。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "A text-only near-style example based only on the visible licensed cover. The first shows a man and woman, the second an adult man plus an independently placed face close-up. Bold black ink, yellow-orange skin and fine shadow strokes approach the reference, with a more modeled, deeply carved dramatic feeling and less comic lightness. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は男女の場面、第二は成人男性と独立した顔アップを含む実構図。太黒線・黄橙肌・細線陰影が特徴で、参考より写実・劇画寄りの彫り深い描き味です。",
+        "en": "The first shows a man and woman, the second an adult man plus an independently placed face close-up. Bold black ink, yellow-orange skin and fine shadow strokes approach the reference, with a more modeled, deeply carved dramatic feeling and less comic lightness."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "2d5390ca880c1ba801574a18fe18e497f0d543878dc6aa8ca88259a526a2fd02.png",
+          "sha256": "2d5390ca880c1ba801574a18fe18e497f0d543878dc6aa8ca88259a526a2fd02",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "82029002966efb7c9f82ae1dc0d4fd47291b5468fb4e4582417f7ef7f2a8ffe5.jpg",
+          "thumb_sha256": "82029002966efb7c9f82ae1dc0d4fd47291b5468fb4e4582417f7ef7f2a8ffe5",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside a quiet market-street corner. An original 20-year-old woman with a simple short dark bob and a plain pale casual top stands on the left. An original 22-year-old man with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. color, bold expressive Japanese gag-comic ink, angular ordinary human faces with strong brow strokes and clear readable features.\nThick black outside contours interleave finer black shadow strokes. Yellow-orange skin and small red accents contrast with selected dark masses, while the faces keep an energetic comic expression."
+          },
+          "native_job_id": "6afc32b300000256000005d6000005d6",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8107,
+            "negative_prompt": "huge glossy irises, tiny doll mouth, soft airbrushed beauty makeup, pale watercolor wash, floating teeth, detached mouth, fused faces, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc32b300000256000005d6000005d6",
+            "api_seconds": 57.4736909,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 255,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "2d5390ca880c1ba801574a18fe18e497f0d543878dc6aa8ca88259a526a2fd02",
+            "observation": {
+              "ja": "第一は男女の場面、第二は成人男性と独立した顔アップを含む実構図。太黒線・黄橙肌・細線陰影が特徴で、参考より写実・劇画寄りの彫り深い描き味です。",
+              "en": "The first shows a man and woman, the second an adult man plus an independently placed face close-up. Bold black ink, yellow-orange skin and fine shadow strokes approach the reference, with a more modeled, deeply carved dramatic feeling and less comic lightness."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "51ff86638eb51cb79e43b3d6f820fe6de0024f5c11844bdebdf1d5364c9cff86.png",
+          "sha256": "51ff86638eb51cb79e43b3d6f820fe6de0024f5c11844bdebdf1d5364c9cff86",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "7df61531dc029570989277fbf8ae56890f9f77eda0e5ecffa53822b48e5ada58.jpg",
+          "thumb_sha256": "7df61531dc029570989277fbf8ae56890f9f77eda0e5ecffa53822b48e5ada58",
+          "prompt": {
+            "en": "An everyday amused pause at a street corner. An original twenty-two-year-old man with short dark hair and a plain light casual shirt turns toward the viewer with an expressive ordinary smile. His waist-up figure stands beside one low wall in a continuous setting. color, bold expressive Japanese gag-comic ink, angular ordinary human faces with strong brow strokes and clear readable features.\nThick black outside contours interleave finer black shadow strokes. Yellow-orange skin and small red accents contrast with selected dark masses, while the faces keep an energetic comic expression."
+          },
+          "native_job_id": "6afc381f00000256000005e1000005e1",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8127,
+            "negative_prompt": "huge glossy irises, tiny doll mouth, soft airbrushed beauty makeup, pale watercolor wash, floating teeth, detached mouth, fused faces, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc381f00000256000005e1000005e1",
+            "api_seconds": 57.5198265,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 255,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "51ff86638eb51cb79e43b3d6f820fe6de0024f5c11844bdebdf1d5364c9cff86",
+            "observation": {
+              "ja": "第一は男女の場面、第二は成人男性と独立した顔アップを含む実構図。太黒線・黄橙肌・細線陰影が特徴で、参考より写実・劇画寄りの彫り深い描き味です。",
+              "en": "The first shows a man and woman, the second an adult man plus an independently placed face close-up. Bold black ink, yellow-orange skin and fine shadow strokes approach the reference, with a more modeled, deeply carved dramatic feeling and less comic lightness."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-fine-large-eyes-black-halftone-eerie",
+      "category": "horror",
+      "title": {
+        "ja": "白場・黒髪と細網点の怪奇人物漫画風",
+        "en": "Open white, dark hair and fine gray tone in eerie character comics"
+      },
+      "prompt": {
+        "en": "monochrome, finely inked Japanese eerie character comic, expressive large eyes inside complete ordinary human faces and densely stroked dark hair against white cheeks.\nCrisp fine facial lines and selected deep black masses work with gray halftone and open paper white. Keep the expressions readable and quietly tense rather than copying any specific character or bodily condition."
+      },
+      "features": {
+        "expression": [
+          "mono"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid",
+          "tone"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "不思議のたたりちゃん・正規可視範囲（説明参照）",
+          "url": "https://piccoma.com/web/product/1326?etype=episode"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "通常無料導線で実際に見えた扉絵風ページの線と白黒処理を参考にしています。本文は未観察です。 第一は男女の場面、第二は女性の顔アップ。黒髪のベタ・細線・網点と白場を使う怪奇人物漫画調です。参考より明るく整然としており、怪奇味は控えめです。 白黒調ですが原画に一部色味が残ります。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "Based on line and black/gray/white treatment in an actually visible title-page-like illustration reached through the normal free-reading link; body pages were unobserved. A man-and-woman scene and a female close-up combine black hair masses, fine lines, gray tone and white space. The rendering is related but brighter and more orderly than the visible title-page-like art, with less eerie intensity. These black-and-white-like originals retain some color tint. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は男女の場面、第二は女性の顔アップ。黒髪のベタ・細線・網点と白場を使う怪奇人物漫画調です。参考より明るく整然としており、怪奇味は控えめです。 白黒調ですが原画に一部色味が残ります。",
+        "en": "A man-and-woman scene and a female close-up combine black hair masses, fine lines, gray tone and white space. The rendering is related but brighter and more orderly than the visible title-page-like art, with less eerie intensity. These black-and-white-like originals retain some color tint."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "91b85c3bba37cfe43aeb209ebe0d224613f820e051d580ce2c411c88aa74ac4e.png",
+          "sha256": "91b85c3bba37cfe43aeb209ebe0d224613f820e051d580ce2c411c88aa74ac4e",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "f562fa8b6291756c3abe67b04487143ec5fef782989133e0afa9208908b1003b.jpg",
+          "thumb_sha256": "f562fa8b6291756c3abe67b04487143ec5fef782989133e0afa9208908b1003b",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside a softly lit library walkway. An original 18-year-old woman with a simple short dark bob and a plain pale casual top stands on the left. An original 19-year-old man with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. monochrome, finely inked Japanese eerie character comic, expressive large eyes inside complete ordinary human faces and densely stroked dark hair against white cheeks.\nCrisp fine facial lines and selected deep black masses work with gray halftone and open paper white. Keep the expressions readable and quietly tense rather than copying any specific character or bodily condition."
+          },
+          "native_job_id": "6afc331e00000256000005d7000005d7",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8108,
+            "negative_prompt": "eye as whole head, detached face parts, floating eyes, headless body, photorealism, glossy color painting, gore, injury, comic strip, face grid, repeated character, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc331e00000256000005d7000005d7",
+            "api_seconds": 58.1570209,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 25,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "91b85c3bba37cfe43aeb209ebe0d224613f820e051d580ce2c411c88aa74ac4e",
+            "observation": {
+              "ja": "第一は男女の場面、第二は女性の顔アップ。黒髪のベタ・細線・網点と白場を使う怪奇人物漫画調です。参考より明るく整然としており、怪奇味は控えめです。 白黒調ですが原画に一部色味が残ります。",
+              "en": "A man-and-woman scene and a female close-up combine black hair masses, fine lines, gray tone and white space. The rendering is related but brighter and more orderly than the visible title-page-like art, with less eerie intensity. These black-and-white-like originals retain some color tint."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "0171d811b73f5ba72fd3e21e897e289b517d924d1e291377b5ab03a719452bc5.png",
+          "sha256": "0171d811b73f5ba72fd3e21e897e289b517d924d1e291377b5ab03a719452bc5",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "9d77251f787c4ba3db94472e22593fdf02217205b7cf7fc351c08189679c75a2.jpg",
+          "thumb_sha256": "9d77251f787c4ba3db94472e22593fdf02217205b7cf7fc351c08189679c75a2",
+          "prompt": {
+            "en": "A quiet nonviolent daylight moment in a library walkway. An original eighteen-year-old woman with shoulder-length dark hair and a plain light top looks toward the viewer in a close three-quarter upper-body view. One pale wall and shaded shelves recede behind her. monochrome, finely inked Japanese eerie character comic, expressive large eyes inside complete ordinary human faces and densely stroked dark hair against white cheeks.\nCrisp fine facial lines and selected deep black masses work with gray halftone and open paper white. Keep the expressions readable and quietly tense rather than copying any specific character or bodily condition."
+          },
+          "native_job_id": "6afc388500000256000005e2000005e2",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8128,
+            "negative_prompt": "eye as whole head, detached face parts, floating eyes, headless body, photorealism, glossy color painting, gore, injury, comic strip, face grid, repeated character, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc388500000256000005e2000005e2",
+            "api_seconds": 57.0076906,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 39,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "0171d811b73f5ba72fd3e21e897e289b517d924d1e291377b5ab03a719452bc5",
+            "observation": {
+              "ja": "第一は男女の場面、第二は女性の顔アップ。黒髪のベタ・細線・網点と白場を使う怪奇人物漫画調です。参考より明るく整然としており、怪奇味は控えめです。 白黒調ですが原画に一部色味が残ります。",
+              "en": "A man-and-woman scene and a female close-up combine black hair masses, fine lines, gray tone and white space. The rendering is related but brighter and more orderly than the visible title-page-like art, with less eerie intensity. These black-and-white-like originals retain some color tint."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-round-taper-short-marks-flat-essay",
+      "category": "essay",
+      "title": {
+        "ja": "簡略輪郭と丸頬色の生活エッセイ漫画風",
+        "en": "Simplified outlines and round blush in everyday essay comics"
+      },
+      "prompt": {
+        "en": "color, simple Japanese everyday essay comic, softly tapered round cheeks and sparse readable facial marks.\nA short nose stroke and a small red open mouth sit inside each complete face. Black contours surround pale flat skin and simple quiet color fields, with very little shading and a relaxed hand-drawn feeling."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "理系の人々・正規可視範囲（説明参照）",
+          "url": "https://booklive.jp/product/index/title_id/282678/vol_no/001"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "正規表紙の可視範囲だけを手がかりにした、文章だけによる近い描き味の見本です。 第一は男女の場面、第二は前腕を机に置く指定に対して頬杖をつく女性の実構図。簡略な輪郭と淡肌の平塗りが特徴で、参考より丸い輪郭と大きい頬色面が出ています。資料の眼は眼鏡と分離できず、眼形の根拠にはしていません。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "A text-only near-style example based only on the visible licensed cover. The first shows a man and woman. The showcase actually rests her cheek on her hand rather than only placing forearms on the table. Simplified contours and pale flat skin have rounder faces and larger cheek-color areas than the cover. Eyewear could not be separated from eye shape in the source, so it was not used as eye-shape evidence. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は男女の場面、第二は前腕を机に置く指定に対して頬杖をつく女性の実構図。簡略な輪郭と淡肌の平塗りが特徴で、参考より丸い輪郭と大きい頬色面が出ています。資料の眼は眼鏡と分離できず、眼形の根拠にはしていません。",
+        "en": "The first shows a man and woman. The showcase actually rests her cheek on her hand rather than only placing forearms on the table. Simplified contours and pale flat skin have rounder faces and larger cheek-color areas than the cover. Eyewear could not be separated from eye shape in the source, so it was not used as eye-shape evidence."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "c88940600d061c7c405157481bbe51b0424a4ffbc467b0545985f4914d14af7d.png",
+          "sha256": "c88940600d061c7c405157481bbe51b0424a4ffbc467b0545985f4914d14af7d",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "078473bf8f6468338ad77294fb5c36e103424d414daa1c57d25cab9f981296d5.jpg",
+          "thumb_sha256": "078473bf8f6468338ad77294fb5c36e103424d414daa1c57d25cab9f981296d5",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside a quiet home entryway. An original 27-year-old woman with a simple short dark bob and a plain pale casual top stands on the left. An original 29-year-old man with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. color, simple Japanese everyday essay comic, softly tapered round cheeks and sparse readable facial marks.\nA short nose stroke and a small red open mouth sit inside each complete face. Black contours surround pale flat skin and simple quiet color fields, with very little shading and a relaxed hand-drawn feeling."
+          },
+          "native_job_id": "6afc338a00000256000005d8000005d8",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8109,
+            "negative_prompt": "giant modeled nose, full realistic lips, elaborate glossy irises, dense face hatching, deep skin planes, photographic texture, opaque eyeglass lenses, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc338a00000256000005d8000005d8",
+            "api_seconds": 56.8171453,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 148,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "c88940600d061c7c405157481bbe51b0424a4ffbc467b0545985f4914d14af7d",
+            "observation": {
+              "ja": "第一は男女の場面、第二は前腕を机に置く指定に対して頬杖をつく女性の実構図。簡略な輪郭と淡肌の平塗りが特徴で、参考より丸い輪郭と大きい頬色面が出ています。資料の眼は眼鏡と分離できず、眼形の根拠にはしていません。",
+              "en": "The first shows a man and woman. The showcase actually rests her cheek on her hand rather than only placing forearms on the table. Simplified contours and pale flat skin have rounder faces and larger cheek-color areas than the cover. Eyewear could not be separated from eye shape in the source, so it was not used as eye-shape evidence."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "a9689282bd68b52fd149edba332095d5504646441aecdf7e2f7490c6660ed1f8.png",
+          "sha256": "a9689282bd68b52fd149edba332095d5504646441aecdf7e2f7490c6660ed1f8",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "48d5179a03798e0ac5bcf77465ff276d9b2b39f40a2695f7d119f83b0b3466e4.jpg",
+          "thumb_sha256": "48d5179a03798e0ac5bcf77465ff276d9b2b39f40a2695f7d119f83b0b3466e4",
+          "prompt": {
+            "en": "An ordinary relaxed pause at a small home table. An original twenty-seven-year-old woman with a simple dark bob and a pale casual top rests her forearms on the tabletop and gives the viewer a small smile. One plain chair and a light wall complete the room. color, simple Japanese everyday essay comic, softly tapered round cheeks and sparse readable facial marks.\nA short nose stroke and a small red open mouth sit inside each complete face. Black contours surround pale flat skin and simple quiet color fields, with very little shading and a relaxed hand-drawn feeling."
+          },
+          "native_job_id": "6afc38fb00000256000005e3000005e3",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8129,
+            "negative_prompt": "giant modeled nose, full realistic lips, elaborate glossy irises, dense face hatching, deep skin planes, photographic texture, opaque eyeglass lenses, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc38fb00000256000005e3000005e3",
+            "api_seconds": 56.7198491,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 249,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "a9689282bd68b52fd149edba332095d5504646441aecdf7e2f7490c6660ed1f8",
+            "observation": {
+              "ja": "第一は男女の場面、第二は前腕を机に置く指定に対して頬杖をつく女性の実構図。簡略な輪郭と淡肌の平塗りが特徴で、参考より丸い輪郭と大きい頬色面が出ています。資料の眼は眼鏡と分離できず、眼形の根拠にはしていません。",
+              "en": "The first shows a man and woman. The showcase actually rests her cheek on her hand rather than only placing forearms on the table. Simplified contours and pale flat skin have rounder faces and larger cheek-color areas than the cover. Eyewear could not be separated from eye shape in the source, so it was not used as eye-shape evidence."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-long-angular-thick-ink-orange-brown-drama",
+      "category": "gekiga",
+      "title": {
+        "ja": "太黒線と暖色面影のカラー人物劇画風",
+        "en": "Heavy black ink and warm shadow planes in dramatic color comics"
+      },
+      "prompt": {
+        "en": "color, heavy-black-line Japanese dramatic character comic, long angular faces, quiet narrow eyes and firm thin closed mouths.\nClear nose strokes cut across warm yellow-orange cheeks with compact dark brown shadows and bright highlights. Selected thin interior strokes contrast with the bold contour edges, keeping the expressions direct and readable."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "白竜・正規可視範囲（説明参照）",
+          "url": "https://manga.line.me/product/periodic?id=S117966"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "正規表紙の可視範囲だけを手がかりにした、文章だけによる近い描き味の見本です。 第一は男女の場面、第二は成人女性単独。太黒線と暖色肌・褐影・明部のカラー人物劇画調です。第一は陰影が簡略、第二は刻線と黄色い明部が強く出ています。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "A text-only near-style example based only on the visible licensed cover. A man-and-woman scene and a solo adult woman use heavy black ink, warm skin, brown shadows and highlights. The first simplifies the shadows; the showcase has stronger engraved strokes and yellow highlights. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は男女の場面、第二は成人女性単独。太黒線と暖色肌・褐影・明部のカラー人物劇画調です。第一は陰影が簡略、第二は刻線と黄色い明部が強く出ています。",
+        "en": "A man-and-woman scene and a solo adult woman use heavy black ink, warm skin, brown shadows and highlights. The first simplifies the shadows; the showcase has stronger engraved strokes and yellow highlights."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "e75dfd5f6e3229e563662ecb463ac209311f9401fca3c92b33de989654b0ec4f.png",
+          "sha256": "e75dfd5f6e3229e563662ecb463ac209311f9401fca3c92b33de989654b0ec4f",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "0e74fa3950691813d15ceab9bf453f43db098b48a3ee9b80625b6646b50b1191.jpg",
+          "thumb_sha256": "0e74fa3950691813d15ceab9bf453f43db098b48a3ee9b80625b6646b50b1191",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside a river-bridge overlook. An original 27-year-old woman with a simple short dark bob and a plain pale casual top stands on the left. An original 29-year-old man with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. color, heavy-black-line Japanese dramatic character comic, long angular faces, quiet narrow eyes and firm thin closed mouths.\nClear nose strokes cut across warm yellow-orange cheeks with compact dark brown shadows and bright highlights. Selected thin interior strokes contrast with the bold contour edges, keeping the expressions direct and readable."
+          },
+          "native_job_id": "6afc33f900000256000005d9000005d9",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8110,
+            "negative_prompt": "baby round cheeks, giant sparkling irises, circular pink blush discs, soft airbrush beauty makeup, tiny button nose, uniform vector symbols, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc33f900000256000005d9000005d9",
+            "api_seconds": 57.2873357,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 179,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "e75dfd5f6e3229e563662ecb463ac209311f9401fca3c92b33de989654b0ec4f",
+            "observation": {
+              "ja": "第一は男女の場面、第二は成人女性単独。太黒線と暖色肌・褐影・明部のカラー人物劇画調です。第一は陰影が簡略、第二は刻線と黄色い明部が強く出ています。",
+              "en": "A man-and-woman scene and a solo adult woman use heavy black ink, warm skin, brown shadows and highlights. The first simplifies the shadows; the showcase has stronger engraved strokes and yellow highlights."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "82a845c57d6de31c5ad627c467a44a9c30f7b2569e5c31cbcf339d28949aa9dc.png",
+          "sha256": "82a845c57d6de31c5ad627c467a44a9c30f7b2569e5c31cbcf339d28949aa9dc",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "7d73ac3f575693e89a6a6139a8f2f7992ac08b5839274e2aa3b486c540a1eaca.jpg",
+          "thumb_sha256": "7d73ac3f575693e89a6a6139a8f2f7992ac08b5839274e2aa3b486c540a1eaca",
+          "prompt": {
+            "en": "A calm daylight pause at a river overlook. An original twenty-seven-year-old woman with short dark hair and a plain dark collared shirt turns three-quarters toward the viewer, framed from the chest upward with a distant bridge behind her. color, heavy-black-line Japanese dramatic character comic, long angular faces, quiet narrow eyes and firm thin closed mouths.\nClear nose strokes cut across warm yellow-orange cheeks with compact dark brown shadows and bright highlights. Selected thin interior strokes contrast with the bold contour edges, keeping the expressions direct and readable."
+          },
+          "native_job_id": "6afc396700000256000005e4000005e4",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8130,
+            "negative_prompt": "baby round cheeks, giant sparkling irises, circular pink blush discs, soft airbrush beauty makeup, tiny button nose, uniform vector symbols, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc396700000256000005e4000005e4",
+            "api_seconds": 57.2221115,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 255,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "82a845c57d6de31c5ad627c467a44a9c30f7b2569e5c31cbcf339d28949aa9dc",
+            "observation": {
+              "ja": "第一は男女の場面、第二は成人女性単独。太黒線と暖色肌・褐影・明部のカラー人物劇画調です。第一は陰影が簡略、第二は刻線と黄色い明部が強く出ています。",
+              "en": "A man-and-woman scene and a solo adult woman use heavy black ink, warm skin, brown shadows and highlights. The first simplifies the shadows; the showcase has stronger engraved strokes and yellow highlights."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anima-text-fine-slender-pale-red-brown-romance",
+      "category": "other",
+      "title": {
+        "ja": "淡肌と端正な線の大人恋愛漫画風",
+        "en": "Pale skin and regular contours in adult romantic comics"
+      },
+      "prompt": {
+        "en": "color, finely lined contemporary adult romantic comic, slender complete human faces with restrained readable features.\nDelicate nose-bridge strokes and soft thin mouth lines accompany pale skin and gentle red-brown shadow. Fine contours and lightly separated hair strands preserve a calm intimate illustration feeling."
+      },
+      "features": {
+        "expression": [
+          "color"
+        ],
+        "line": [
+          "thin",
+          "thick"
+        ],
+        "proportion": [
+          "standard"
+        ],
+        "finish": [
+          "solid"
+        ]
+      },
+      "model_version": "anima-turbo-v1.1",
+      "references": [
+        {
+          "title": "恋が落ちたら・正規可視範囲（説明参照）",
+          "url": "https://drap.coremagazine.co.jp/comics/8566"
+        }
+      ],
+      "version": 1,
+      "updated_at": "2026-11-17T11:18:29.866766+00:00",
+      "summary": {
+        "ja": "現在の成人文脈を確認した正規表紙を参考に、独自の全着衣・非性的成人を描いています。 第一は指定の男女二人に対し、成人女性一人・成人男性二人が淡青の壁面を共有する実構図で、下半身が白く薄れています。第二は女性。端正な線と淡肌の恋愛漫画調で、第二は写実寄りの太線と陰影が強めです。資料の女性顔と本文は未見です。 共通のネガティブプロンプトとCFG 2で生成しています。",
+        "en": "Based on a licensed cover with current adult context confirmed; the original cast is fully clothed, adult and nonsexual. The first actually shows one adult woman and two adult men sharing a pale blue wall instead of only the requested couple, with lower bodies fading into white. The second shows a woman. Regular contours and pale skin have a related adult-romantic feeling; the showcase has bolder, more modeled shading. Female source faces and body pages were unobserved. Generated with one shared negative prompt at CFG 2."
+      },
+      "limitations": {
+        "ja": "第一は指定の男女二人に対し、成人女性一人・成人男性二人が淡青の壁面を共有する実構図で、下半身が白く薄れています。第二は女性。端正な線と淡肌の恋愛漫画調で、第二は写実寄りの太線と陰影が強めです。資料の女性顔と本文は未見です。",
+        "en": "The first actually shows one adult woman and two adult men sharing a pale blue wall instead of only the requested couple, with lower bodies fading into white. The second shows a woman. Regular contours and pale skin have a related adult-romantic feeling; the showcase has bolder, more modeled shading. Female source faces and body pages were unobserved."
+      },
+      "samples": [
+        {
+          "role": "mixed-gender",
+          "file": "cf40f0c6c8e129568c003a02bbbdabf8349ebd296c0069671e131d5946f24055.png",
+          "sha256": "cf40f0c6c8e129568c003a02bbbdabf8349ebd296c0069671e131d5946f24055",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "3ee60859ae05c93e429822b247ce88693dfe1791c9fd1a2190f8a9180bc79bd6.jpg",
+          "thumb_sha256": "3ee60859ae05c93e429822b247ce88693dfe1791c9fd1a2190f8a9180bc79bd6",
+          "prompt": {
+            "en": "One continuous quiet daylight moment beside a quiet museum gallery bench. An original 29-year-old woman with a simple short dark bob and a plain pale casual top stands on the left. An original 31-year-old man with short brown hair and a plain light casual jacket stands beside her on the right. They turn gently toward the viewer in one waist-up scene with the same simple background. Both are adults, fully clothed and nonsexual. color, finely lined contemporary adult romantic comic, slender complete human faces with restrained readable features.\nDelicate nose-bridge strokes and soft thin mouth lines accompany pale skin and gentle red-brown shadow. Fine contours and lightly separated hair strands preserve a calm intimate illustration feeling."
+          },
+          "native_job_id": "6afc345b00000256000005da000005da",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8111,
+            "negative_prompt": "connected noses, shared nose, merged heads, baby face, giant sparkling irises, thick black face borders, hard orange skin blocks, full glossy lipstick, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc345b00000256000005da000005da",
+            "api_seconds": 57.3867968,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 74,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "cf40f0c6c8e129568c003a02bbbdabf8349ebd296c0069671e131d5946f24055",
+            "observation": {
+              "ja": "第一は指定の男女二人に対し、成人女性一人・成人男性二人が淡青の壁面を共有する実構図で、下半身が白く薄れています。第二は女性。端正な線と淡肌の恋愛漫画調で、第二は写実寄りの太線と陰影が強めです。資料の女性顔と本文は未見です。",
+              "en": "The first actually shows one adult woman and two adult men sharing a pale blue wall instead of only the requested couple, with lower bodies fading into white. The second shows a woman. Regular contours and pale skin have a related adult-romantic feeling; the showcase has bolder, more modeled shading. Female source faces and body pages were unobserved."
+            }
+          }
+        },
+        {
+          "role": "showcase",
+          "file": "d42da69ac639cbc731ba93697bf27f7badbefc28520a945083a3890e80deeeca.png",
+          "sha256": "d42da69ac639cbc731ba93697bf27f7badbefc28520a945083a3890e80deeeca",
+          "width": 1024,
+          "height": 1024,
+          "thumb": "8b2fdeac21ca97a7e1205c99bf3dae27d5f1471f6e2bad09ef255e257eb18f16.jpg",
+          "thumb_sha256": "8b2fdeac21ca97a7e1205c99bf3dae27d5f1471f6e2bad09ef255e257eb18f16",
+          "prompt": {
+            "en": "A quiet afternoon at a gallery window seat. An original twenty-nine-year-old woman with a simple dark bob and a pale casual blouse sits turned three-quarters toward the viewer. Her ordinary adult face and upper body share one calm space with the window frame. The scene is fully clothed and nonsexual. color, finely lined contemporary adult romantic comic, slender complete human faces with restrained readable features.\nDelicate nose-bridge strokes and soft thin mouth lines accompany pale skin and gentle red-brown shadow. Fine contours and lightly separated hair strands preserve a calm intimate illustration feeling."
+          },
+          "native_job_id": "6afc39dd00000256000005e5000005e5",
+          "requested_settings": {
+            "model": "anima-turbo-v1.1",
+            "aspect_ratio": "square",
+            "size": "1024x1024",
+            "steps": 8,
+            "cfg_scale": 2,
+            "sampler": "euler",
+            "seed": 8131,
+            "negative_prompt": "connected noses, shared nose, merged heads, baby face, giant sparkling irises, thick black face borders, hard orange skin blocks, full glossy lipstick, photorealism, comic strip, face grid, split screen, repeated character, floating face parts, headless body",
+            "references_used": [],
+            "source_images_used": [],
+            "transport_client": "ps5-image-front"
+          },
+          "reported_settings": {
+            "model": "anima-turbo-v1.1",
+            "provider": "ps5-anima",
+            "size": "1024x1024",
+            "steps": 8,
+            "sampler": "euler",
+            "mode": "text2img",
+            "native_job_id": "6afc39dd00000256000005e5000005e5",
+            "api_seconds": 57.4656619,
+            "transport_client": "ps5-image-front",
+            "actual_seed": null
+          },
+          "max_rgb_channel_delta": 115,
+          "visual_review": {
+            "status": "self-reviewed",
+            "sha256": "d42da69ac639cbc731ba93697bf27f7badbefc28520a945083a3890e80deeeca",
+            "observation": {
+              "ja": "第一は指定の男女二人に対し、成人女性一人・成人男性二人が淡青の壁面を共有する実構図で、下半身が白く薄れています。第二は女性。端正な線と淡肌の恋愛漫画調で、第二は写実寄りの太線と陰影が強めです。資料の女性顔と本文は未見です。",
+              "en": "The first actually shows one adult woman and two adult men sharing a pale blue wall instead of only the requested couple, with lower bodies fading into white. The second shows a woman. Regular contours and pale skin have a related adult-romantic feeling; the showcase has bolder, more modeled shading. Female source faces and body pages were unobserved."
             }
           }
         }
