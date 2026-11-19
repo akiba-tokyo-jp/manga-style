@@ -132,6 +132,33 @@ class AnimaCatalogTests(unittest.TestCase):
                     body=(output/'files/anima-turbo/anima-example'/sample['file']).read_bytes()
                     self.assertEqual(hashlib.sha256(body).hexdigest(),sample['sha256'])
 
+    def test_export_omits_drawing_references_from_all_detail_languages(self):
+        sys.path.insert(0,str(ROOT/'costlab-auth/manga'))
+        from app.store import Store
+        spec=importlib.util.spec_from_file_location('export_cloudflare',ROOT/'tools/manga_catalog/export_cloudflare.py')
+        exporter=importlib.util.module_from_spec(spec);spec.loader.exec_module(exporter)
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);path,registry,_=self.paired_fixture(root)
+            reference={'title':'Reference work that must not be displayed',
+                       'url':'https://example.com/drawing-reference'}
+            registry['entries'][0]['references']=[reference]
+            path.write_text(json.dumps(registry),encoding='utf-8')
+            store=Store(root/'store',seed_dir=root/'none',compare_dir=root/'none')
+            keep=store.chain('shonen-battle-chibi-comic')
+            for nid in store.order:store.state['nodes'][nid]['published']=nid in keep
+            output=root/'assets';exporter.export_store(store,output,anima_catalog=path,archive_dir=root)
+            pages=json.loads((output/'_data/pages/anima-example.json').read_text())
+            for lang,models in pages.items():
+                for plang,rendered in models['anima-turbo'].items():
+                    with self.subTest(lang=lang,plang=plang):
+                        self.assertNotIn('描法の参考資料',rendered)
+                        self.assertNotIn('Drawing references',rendered)
+                        self.assertNotIn(reference['title'],rendered)
+                        self.assertNotIn(reference['url'],rendered)
+                        self.assertEqual(rendered.count('class="sample-image"'),2)
+                        self.assertIn('id="prompt-text"',rendered)
+                        self.assertIn('id="negative-heading"',rendered)
+
     def test_export_connects_gallery_detail_api_images_and_model_count(self):
         import inspect
         sys.path.insert(0,str(ROOT/'costlab-auth/manga'))
