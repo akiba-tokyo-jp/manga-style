@@ -48,5 +48,4 @@
 </section>
 <div class="actions"><div class="url-field"><label class="field-label" for="api-url">{{ ui.api_url_label }}</label><input class="url-input" id="api-url" value="{{ api_url }}" readonly><button class="button" type="button" data-copy-target="api-url" data-copied="{{ ui.copied }}" data-failed="{{ ui.copy_failed }}">{{ ui.copy_url }}</button><span class="copy-status" aria-live="polite"></span></div></div>
 </div>
-{% if entry.references %}<details class="related-styles"><summary>{{ '描法の参考資料（作品そのものの再現ではありません）' if lang == 'ja' else 'Drawing references (not an exact recreation)' }}</summary><ul>{% for source in entry.references %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }}</a></li>{% endfor %}</ul></details>{% endif %}
 {% endblock %}
